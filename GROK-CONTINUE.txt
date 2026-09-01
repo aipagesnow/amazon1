@@ -1,0 +1,20 @@
+Continue this existing UK product-discovery and comparison magazine. Do not start over. Do not turn it into a shop. Do not add thin pages to look large.
+
+Local folder (this is the only working copy):
+
+C:\Users\chris\OneDrive\Desktop\Sites\lock-desk
+
+GitHub repo:
+
+https://github.com/aipagesnow/amazon1
+
+Save and push this project to that repo. Keep this local folder and that repo in sync. Do not create a second folder on the Desktop.
+
+Read GROK.md, AMAZON-SITE.md, data/products.json, data/seo.json, and the files already in the folder. Carry on from what is there. Stay inside the niche cluster.
+
+Site: Lock Desk
+Domain: lockdesk.co.uk
+Niche: Bike locks (D-locks and chains)
+
+Same rules as before: UK ASINs, See on Amazon buttons, AMAZON_ASSOCIATE_TAG as env, unique editorial, first-launch page set if it is still incomplete.
+Use kit/ for Amazon URLs. Read data/seo.json. Do not invent traffic numbers or fake hands-on tests.

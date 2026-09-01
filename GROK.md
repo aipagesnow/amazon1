@@ -1,0 +1,53 @@
+# Lock Desk
+
+This folder is a **product-discovery and comparison publication** for **Lock Desk**. It earns with UK Amazon Associates. It is not a shop and not a second copy of Amazon.
+
+- Domain: `lockdesk.co.uk`
+- Slug: `lock-desk`
+- Niche: Bike locks (D-locks and chains)
+- Kind: Amazon UK review magazine (Flippa)
+- Audience: UK commuters and cyclists who need a lock their insurer will accept and that they will still carry
+- Primary query: best bike lock UK
+- Angle: Sold Secure ratings, insurance, and what you will actually carry — not a shop of every cable lock
+
+It is **not a shop**. Do not add a cart, checkout, inventory, or marketplace UI.
+
+The job is to become a site UK readers trust when they are deciding what to buy in this niche. Organic search is the traffic plan. Amazon links are the first (and, at launch, only) monetisation layer. Do not write thin doorway pages. Do not add extra URLs to look large.
+
+Build **one topical cluster** around the niche (pillar, best-of, reviews, two highest-intent comparisons, two use-cases). Follow `data/seo.json`. Unique editorial voice: verdict-led, The good / The bad / Best for / Skip it if. Never claim a hands-on test you did not do.
+
+## Skill
+
+Use the **amazon-affiliate-site** skill from the first file. Follow it for architecture, disclosure, URLs, SEO rules, and the first-launch page set.
+
+## Products
+
+The product slice for this site is `data/products.json`.
+
+- Facts only: asin, name, brand, category, specs.
+- Do not invent ASINs.
+- Do not put an associate tag in that file.
+
+Site identity is in `data/site.json`. Search brief is in `data/seo.json` — use it as a brief, never invent traffic numbers.
+
+## Associate tag
+
+Outbound Amazon links are built at request time by `kit/amazon.ts` (copy into `src/lib/amazon.ts`):
+
+```
+https://www.amazon.co.uk/dp/{ASIN}?tag={process.env.AMAZON_ASSOCIATE_TAG}
+```
+
+The tag is an environment variable. Copy `.env.example` to `.env.local` for development. Never commit a real tag. Never write a real tag into this repository.
+
+Button copy: **See on Amazon**. `rel="nofollow sponsored"`.
+
+## Layout
+
+Follow `AMAZON-SITE.md` in this folder. That file is the house visual template (magazine + catalogue). Refine in place; do not replace it with a generic ecommerce theme.
+
+Copy `kit/SeeOnAmazon.tsx` and `kit/DisclosureStrip.tsx` into `src/components`.
+
+## Handover
+
+Keep `HANDOVER.md` and `handover/spec.json` current for the getaipages desk. This project is listed on Flippa as domain + code + this slice. The buyer does not receive Mothership. The buyer sets `AMAZON_ASSOCIATE_TAG` on Vercel after purchase.

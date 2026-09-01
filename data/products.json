@@ -1,0 +1,173 @@
+[
+  {
+    "asin": "B074K6KSY5",
+    "name": "Evolution Mini-7 U-lock with 4 ft KryptoFlex cable",
+    "brand": "Kryptonite",
+    "category": "Bike locks",
+    "specs": {
+      "shackleMm": 13,
+      "frameMount": true,
+      "cableIncluded": true,
+      "type": "D-lock",
+      "angleGrinderResistant": false,
+      "weightKg": 1.61,
+      "keys": 3,
+      "lockingArea": "83 x 178 mm",
+      "soldSecurePedal": "Gold"
+    }
+  },
+  {
+    "asin": "B0CW175JJ8",
+    "name": "New York Fahgettaboudit Mini U-lock",
+    "brand": "Kryptonite",
+    "category": "Bike locks",
+    "specs": {
+      "shackleMm": 18,
+      "frameMount": false,
+      "cableIncluded": false,
+      "type": "D-lock",
+      "angleGrinderResistant": false,
+      "weightKg": 2.06,
+      "keys": 3,
+      "lockingArea": "83 x 153 mm",
+      "soldSecurePedal": "Gold"
+    }
+  },
+  {
+    "asin": "B073W8N26F",
+    "name": "New York Fahgettaboudit 1410 chain (100 cm) with New York disc lock",
+    "brand": "Kryptonite",
+    "category": "Bike locks",
+    "specs": {
+      "frameMount": false,
+      "cableIncluded": false,
+      "type": "Chain",
+      "lockingLength": "100 cm",
+      "angleGrinderResistant": false,
+      "chainMm": 14,
+      "keys": 3,
+      "weightKg": 4.9,
+      "soldSecurePedal": "Gold"
+    }
+  },
+  {
+    "asin": "B0D77XJR4Z",
+    "name": "D1000 anti-angle-grinder D-lock",
+    "brand": "Hiplok",
+    "category": "Bike locks",
+    "specs": {
+      "shackleMm": 20,
+      "frameMount": false,
+      "cableIncluded": false,
+      "type": "D-lock",
+      "soldSecurePowered": "Diamond",
+      "angleGrinderResistant": true,
+      "weightKg": 1.9,
+      "keys": 3,
+      "lockingArea": "92 x 155 mm",
+      "soldSecurePedal": "Diamond"
+    }
+  },
+  {
+    "asin": "B0D7JVP6QL",
+    "name": "DX1000 anti-angle-grinder D-lock",
+    "brand": "Hiplok",
+    "category": "Bike locks",
+    "specs": {
+      "shackleMm": 32,
+      "frameMount": false,
+      "cableIncluded": false,
+      "type": "D-lock",
+      "soldSecurePowered": "Diamond",
+      "angleGrinderResistant": true,
+      "weightKg": 2.75,
+      "keys": 3,
+      "lockingArea": "112 x 205 mm",
+      "soldSecurePedal": "Diamond"
+    }
+  },
+  {
+    "asin": "B0944HG7MK",
+    "name": "Granit XPlus 540 U-lock (300 mm shackle) with EaZy KF bracket",
+    "brand": "ABUS",
+    "category": "Bike locks",
+    "specs": {
+      "shackleMm": 13,
+      "frameMount": true,
+      "cableIncluded": false,
+      "type": "D-lock",
+      "soldSecurePowered": "Gold",
+      "angleGrinderResistant": false,
+      "weightKg": 1.8,
+      "keys": 2,
+      "lockingArea": "108 x 300 mm",
+      "soldSecurePedal": "Diamond"
+    }
+  },
+  {
+    "asin": "B0BLT59NFJ",
+    "name": "X1 armoured D-lock",
+    "brand": "Litelok",
+    "category": "Bike locks",
+    "specs": {
+      "shackleMm": 21,
+      "frameMount": false,
+      "cableIncluded": false,
+      "type": "D-lock",
+      "soldSecurePowered": "Diamond",
+      "angleGrinderResistant": true,
+      "weightKg": 1.7,
+      "keys": 2,
+      "lockingArea": "101 x 197 mm",
+      "soldSecurePedal": "Diamond"
+    }
+  },
+  {
+    "asin": "B07DXW7YJJ",
+    "name": "Pitbull DT 8005 U-lock with cable",
+    "brand": "OnGuard",
+    "category": "Bike locks",
+    "specs": {
+      "soldSecurePedal": "Gold",
+      "cableIncluded": true,
+      "lockingArea": "115 x 230 mm",
+      "keys": 5,
+      "type": "D-lock",
+      "shackleMm": 14,
+      "angleGrinderResistant": false,
+      "frameMount": true
+    }
+  },
+  {
+    "asin": "B01A6ZRMEK",
+    "name": "Pitbull STD 8003 U-lock",
+    "brand": "OnGuard",
+    "category": "Bike locks",
+    "specs": {
+      "soldSecurePedal": "Gold",
+      "cableIncluded": false,
+      "lockingArea": "115 x 230 mm",
+      "keys": 5,
+      "type": "D-lock",
+      "shackleMm": 14,
+      "angleGrinderResistant": false,
+      "frameMount": true
+    }
+  },
+  {
+    "asin": "B01KT86YWU",
+    "name": "Pitbull LS 8002 long-shackle U-lock",
+    "brand": "OnGuard",
+    "category": "Bike locks",
+    "specs": {
+      "soldSecurePedal": "Gold",
+      "cableIncluded": false,
+      "lockingArea": "115 x 292 mm",
+      "keys": 5,
+      "type": "D-lock",
+      "shackleMm": 14,
+      "angleGrinderResistant": false,
+      "frameMount": true
+    }
+  }
+]

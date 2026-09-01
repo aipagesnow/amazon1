@@ -1,0 +1,19 @@
+{
+  "slug": "lock-desk",
+  "projectName": "Lock Desk",
+  "channel": "flippa",
+  "listingUrl": "",
+  "includedDomain": "lockdesk.co.uk",
+  "description": "UK Amazon Associates review and comparison magazine at lockdesk.co.uk. Editorial pages (reviews, best-of, comparisons, how-to-choose) that link out with See on Amazon. Domain, Vercel hosting, and the product slice included. Buyer sets AMAZON_ASSOCIATE_TAG. Not a shop. Not Amazon.",
+  "template": "flippa-vercel",
+  "theme": {
+    "accent": "#c45c26",
+    "accentHover": "#9a4318",
+    "paper": "#f4efe6",
+    "ink": "#1c1914",
+    "logoUrl": "",
+    "previewUrl": ""
+  },
+  "notesMarkdown": "# Lock Desk\n\nKeep the Flippa thread for anything official. This page is extra help for the transfer.\n\n## What you already have\n- A finished UK Amazon Associates review and comparison magazine, not a mockup\n- The web domain **lockdesk.co.uk** (Flippa sites always include a domain)\n- Hosting on Vercel\n- Source on GitHub if you want the repo (https://github.com/aipagesnow/amazon1)\n- The product slice in `data/products.json` (ASINs and facts only)\n\nYou do **not** receive Mothership, the seller's central catalogue.\n\n## Amazon Associates\nOutbound buttons say **See on Amazon**. After you have the Vercel project, set this environment variable to your own UK Associates tag (usually ending in `-21`):\n\n```\nAMAZON_ASSOCIATE_TAG\n```\n\nWithout it, links will not credit you. We do not transfer an Amazon Associates account. You apply for amazon.co.uk Associates yourself.\n\n`.env.example` in the repo shows the shape only (`your-tag-21`). Never commit a real tag.\n\n## What we need from you\n1. The registrar account that should receive **lockdesk.co.uk** (often GoDaddy)\n2. The email for Vercel\n3. A GitHub username if you want the repository\n\nUse the form on this page. After you send it, we do the moving.\n\n## If you get stuck\nUse the chat. Extra help (Grok) can join, find a YouTube video, and mark the bits to look at. We transfer Vercel and push the domain — you accept those emails. After you send the form, this page shows how-tos for your setup (GoDaddy is simplest; another registrar is fine). GitHub only appears if you asked for the repo.\n",
+  "adminNotes": "Created from Mothership. Kind: amazon-uk.\nNiche: Bike locks (D-locks and chains)\nDomain: lockdesk.co.uk\nBuyer must set AMAZON_ASSOCIATE_TAG on Vercel (UK tag).\nDo not ship mothership.json or the studio app.\nPrimary query: best bike lock UK"
+}

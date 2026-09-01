@@ -1,0 +1,124 @@
+{
+  "kind": "amazon-uk",
+  "name": "Lock Desk",
+  "domain": "lockdesk.co.uk",
+  "slug": "lock-desk",
+  "niche": "Bike locks (D-locks and chains)",
+  "audience": "UK commuters and cyclists who need a lock their insurer will accept and that they will still carry",
+  "primaryKeyword": "best bike lock UK",
+  "angle": "Sold Secure ratings, insurance, and what you will actually carry — not a shop of every cable lock",
+  "locale": "en-GB",
+  "market": "United Kingdom",
+  "store": "amazon.co.uk",
+  "seedQueries": [
+    "how to choose a bike lock",
+    "Sold Secure Gold vs Diamond",
+    "best bike lock UK",
+    "best D lock UK",
+    "Kryptonite Evolution vs Hiplok D1000",
+    "D lock vs chain lock",
+    "Hiplok D1000 review",
+    "Kryptonite Evolution Mini review",
+    "best bike lock for commuting",
+    "best bike lock for insurance",
+    "best alternatives to Kryptonite New York",
+    "best bike lock for ebikes"
+  ],
+  "productCount": 10,
+  "cluster": {
+    "principle": "Every indexable page belongs to one topical cluster around the niche. Later pages stay inside it. Do not publish random products or extra URLs to look large.",
+    "fromSeeds": {
+      "pillar": [
+        "how to choose a bike lock"
+      ],
+      "bestOf": [
+        "best bike lock UK",
+        "best D lock UK"
+      ],
+      "versus": [
+        "Sold Secure Gold vs Diamond",
+        "Kryptonite Evolution vs Hiplok D1000",
+        "D lock vs chain lock"
+      ],
+      "review": [
+        "Hiplok D1000 review",
+        "Kryptonite Evolution Mini review"
+      ],
+      "useCase": [
+        "best bike lock for commuting",
+        "best bike lock for insurance",
+        "best bike lock for ebikes"
+      ],
+      "alternatives": [
+        "best alternatives to Kryptonite New York"
+      ],
+      "other": []
+    }
+  },
+  "firstLaunch": [
+    {
+      "type": "home",
+      "route": "/",
+      "intent": "navigational",
+      "notes": "Magazine hub. Editor's pick. Not a product grid. Not fake issue numbers."
+    },
+    {
+      "type": "how-to-choose",
+      "route": "/guide",
+      "intent": "informational",
+      "notes": "Pillar. Criteria, trade-offs, mistakes, editorial chooser. Works without affiliate links."
+    },
+    {
+      "type": "best-of",
+      "route": "/best",
+      "intent": "commercial",
+      "notes": "Spec table of five from the slice, or every product if fewer. No price or rating columns. Short chooser."
+    },
+    {
+      "type": "review",
+      "route": "/reviews/[slug]",
+      "intent": "commercial",
+      "notes": "Six reviews, or every product if the slice is smaller. 'Is it worth it?' is the verdict, not a second URL."
+    },
+    {
+      "type": "versus",
+      "route": "/vs/[pair]",
+      "intent": "commercial",
+      "notes": "Two highest-intent head-to-heads only. Winner for a defined reader. Do not emit every pair."
+    },
+    {
+      "type": "use-case",
+      "route": "/for/[use]",
+      "intent": "commercial",
+      "notes": "Two situation, problem, or audience pages (one if the slice is under four products)."
+    },
+    {
+      "type": "alternatives",
+      "route": "/alternatives/[hero]",
+      "intent": "commercial",
+      "notes": "Optional. One page only if seeds and a flagship support it. Otherwise keep alternatives on reviews."
+    },
+    {
+      "type": "methodology",
+      "route": "/method",
+      "intent": "informational",
+      "notes": "How the site researches. Not fake lab tests."
+    },
+    {
+      "type": "about",
+      "route": "/about",
+      "intent": "navigational",
+      "notes": "About, disclosure, privacy."
+    }
+  ],
+  "rules": [
+    "Do not invent search volumes, rankings, or difficulty scores.",
+    "Do not emit AggregateRating or star markup you did not collect.",
+    "UK English. UK ASINs. amazon.co.uk only.",
+    "Primary click on a card is the review, not Amazon.",
+    "Disclosure before the first affiliate link.",
+    "Spec tables from the slice only. Never Price or Amazon rating columns.",
+    "Do not generate a comparison URL for every product pair.",
+    "First launch is Amazon Associates only — no other retailer networks, newsletters, ads, or quiz apps."
+  ]
+}

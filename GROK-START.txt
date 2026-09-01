@@ -1,0 +1,41 @@
+Local folder (this is the only working copy):
+
+C:\Users\chris\OneDrive\Desktop\Sites\lock-desk
+
+GitHub repo:
+
+https://github.com/aipagesnow/amazon1
+
+Save and push this project to that repo. Keep this local folder and that repo in sync. Do not create a second folder on the Desktop.
+
+Start a NEW UK product-discovery and comparison magazine that earns with Amazon Associates. Not a shop. Not a second copy of Amazon. Do not mix in any other project.
+
+Site: Lock Desk
+Domain: lockdesk.co.uk
+Niche: Bike locks (D-locks and chains)
+
+Read first:
+- GROK.md
+- AMAZON-SITE.md
+- data/products.json (product facts only — do not invent ASINs)
+- data/seo.json (search brief and topical cluster)
+- the amazon-affiliate-site skill
+
+Build the first-launch page set only: home hub with an Editor's pick, one how-to-choose pillar (ends with an editorial chooser), one best-of spec table, six product reviews (or every product in the slice if fewer), two highest-intent head-to-heads, two use-case guides (one if the slice is under four products), methodology, About, disclosure, privacy.
+Optional: one alternatives-to-hero page if seo.json seeds support it and the slice has a clear flagship.
+
+Voice: verdict-led. The good / The bad / Best for / Skip it if / What we'd change. 'Is it worth it?' is the review verdict, not a second URL.
+Quality: fewer excellent pages beat many thin ones. Do not generate a vs URL for every product pair. Do not add other retailer networks, newsletters, ads, or a quiz app.
+
+Copy kit/ into src/ (see kit/README.txt). Amazon URLs only via that helper.
+Read data/seo.json as the search brief. Do not invent traffic numbers.
+
+Audience: UK commuters and cyclists who need a lock their insurer will accept and that they will still carry
+Primary query: best bike lock UK
+Angle: Sold Secure ratings, insurance, and what you will actually carry — not a shop of every cable lock
+
+Amazon URL shape: https://www.amazon.co.uk/dp/{ASIN}?tag={process.env.AMAZON_ASSOCIATE_TAG}
+rel="nofollow sponsored". Button copy: See on Amazon. Never Buy now or Check price.
+The associate tag is an environment variable. Never put it in git, markdown, or product JSON.
+
+Keep this site separate from every other Mothership project.
