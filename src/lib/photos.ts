@@ -1,16 +1,16 @@
 export const photos = {
-  cover: "/images/cover-night.jpg",
-  pick: "/images/pick-dlock.jpg",
-  commute: "/images/commute-station.jpg",
-  insurance: "/images/insurance-desk.jpg",
-  vs: "/images/vs-bench.jpg",
-  fit: "/images/fit-shackle.jpg",
-  chain: "/images/chain-wet.jpg",
-  bannerTight: "/images/banner-tight.jpg",
-  bannerCommute: "/images/banner-commute.jpg",
-  bannerLong: "/images/banner-long.jpg",
-  bannerHouse: "/images/banner-house.jpg",
-  bannerThick: "/images/banner-thick.jpg",
+  cover: "/images/cover-night.webp",
+  pick: "/images/pick-dlock.webp",
+  commute: "/images/commute-station.webp",
+  insurance: "/images/insurance-desk.webp",
+  vs: "/images/vs-bench.webp",
+  fit: "/images/fit-shackle.webp",
+  chain: "/images/chain-wet.webp",
+  bannerTight: "/images/banner-tight.webp",
+  bannerCommute: "/images/banner-commute.webp",
+  bannerLong: "/images/banner-long.webp",
+  bannerHouse: "/images/banner-house.webp",
+  bannerThick: "/images/banner-thick.webp",
 } as const;
 
 export const photoAlt = {

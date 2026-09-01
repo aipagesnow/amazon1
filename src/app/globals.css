@@ -164,8 +164,6 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(transparent, rgba(11, 16, 14, 0.78));
 }
 .cover-photo img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 .cover-shade {
@@ -340,13 +338,12 @@ img { max-width: 100%; display: block; }
   color: #8b9890;
 }
 .page-hero-media {
+  position: relative;
   margin: 0;
   height: min(46vh, 420px);
   overflow: hidden;
 }
 .page-hero-media img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 .page-hero-copy {
@@ -381,8 +378,8 @@ img { max-width: 100%; display: block; }
   margin: 0.8rem 0 0;
 }
 
-.photo { margin: 0; }
-.photo img { width: 100%; height: auto; }
+.photo { margin: 0; position: relative; }
+.photo img { object-fit: cover; }
 .photo figcaption,
 .pick-art figcaption {
   font-family: var(--mono);
@@ -469,12 +466,17 @@ p { margin: 0 0 1rem; }
   margin: 0;
   min-height: 280px;
   background: var(--night-2);
+  display: flex;
+  flex-direction: column;
+}
+.pick-art-frame {
+  position: relative;
+  display: block;
+  min-height: 280px;
+  flex: 1 1 auto;
 }
 .pick-art img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  min-height: 280px;
 }
 
 .panel, .card {
@@ -539,9 +541,14 @@ p { margin: 0 0 1rem; }
   background: var(--night);
   overflow: hidden;
 }
-.feature-story img {
-  width: 100%;
+.feature-story-art {
+  position: relative;
+  display: block;
   height: 240px;
+  overflow: hidden;
+  background: var(--night-2);
+}
+.feature-story-art img {
   object-fit: cover;
 }
 .feature-story .copy {
@@ -1030,7 +1037,7 @@ table.spec tr.spec-group th {
   table.spec { min-width: 28rem; }
 }
 @media (max-width: 800px) {
-  .pick-art, .pick-art img { min-height: 220px; }
+  .pick-art, .pick-art-frame { min-height: 220px; }
   .cover { min-height: 0; }
   .page-hero-overlay { min-height: 0; }
   .page-hero-overlay.tight-hero { min-height: 0; }
@@ -1066,7 +1073,7 @@ table.spec tr.spec-group th {
   .goodbad { grid-template-columns: 1fr; }
   .lock-board, .cards, .reviewed-list { grid-template-columns: 1fr; }
   .lock-strip { grid-template-columns: 1fr; }
-  .feature-story img { height: 180px; }
+  .feature-story-art { height: 180px; }
   .review-sticky { display: flex; }
   body:has(.review-sticky) { padding-bottom: 3.6rem; }
   .briefing {

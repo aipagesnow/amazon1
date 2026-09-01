@@ -3,6 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   eslint: { ignoreDuringBuilds: true },
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
   async redirects() {
     return [
       { source: "/privacy", destination: "/about#privacy", statusCode: 301 },

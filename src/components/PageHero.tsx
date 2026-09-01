@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Photo } from "@/components/Photo";
+import { SiteImage } from "@/components/SiteImage";
 
 type Props = {
   image: string;
@@ -28,8 +29,7 @@ export function PageHero({
     return (
       <header className={`page-hero page-hero-overlay${tight ? " tight-hero" : ""}`}>
         <figure className="cover-photo">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={image} alt={alt} />
+          <SiteImage src={image} alt={alt} priority sizes="100vw" />
           <div className="cover-shade" aria-hidden="true" />
           {caption ? <figcaption>{caption}</figcaption> : null}
         </figure>

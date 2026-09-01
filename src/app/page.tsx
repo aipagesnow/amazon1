@@ -4,6 +4,7 @@ import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
 import { LockTile } from "@/components/LockTile";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
+import { SiteImage } from "@/components/SiteImage";
 import { websiteJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
@@ -39,8 +40,7 @@ export default function HomePage() {
       <JsonLd data={websiteJsonLd()} />
       <section className="cover">
         <div className="cover-photo">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={photos.cover} alt={photoAlt.cover} />
+          <SiteImage src={photos.cover} alt={photoAlt.cover} priority sizes="100vw" />
         </div>
         <div className="cover-shade" aria-hidden="true" />
         <div className="wrap cover-copy">
@@ -87,8 +87,13 @@ export default function HomePage() {
         </p>
         <section className="pick">
           <figure className="pick-art">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={photos.pick} alt={photoAlt.pick} />
+            <div className="pick-art-frame">
+              <SiteImage
+                src={photos.pick}
+                alt={photoAlt.pick}
+                sizes="(max-width: 980px) 100vw, 42vw"
+              />
+            </div>
             <figcaption>{EDITORIAL_CREDIT}</figcaption>
           </figure>
           <div className="pick-copy">
@@ -146,8 +151,13 @@ export default function HomePage() {
         </p>
         <div className="feature-pair">
           <Link href="/for/commuting" className="feature-story">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={photos.commute} alt={photoAlt.commute} />
+            <span className="feature-story-art">
+              <SiteImage
+                src={photos.commute}
+                alt={photoAlt.commute}
+                sizes="(max-width: 980px) 100vw, 50vw"
+              />
+            </span>
             <div className="copy">
               <p className="kicker">Commuting</p>
               <h3>Best bike lock for commuting</h3>
@@ -155,8 +165,13 @@ export default function HomePage() {
             </div>
           </Link>
           <Link href="/for/insurance" className="feature-story">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={photos.insurance} alt={photoAlt.insurance} />
+            <span className="feature-story-art">
+              <SiteImage
+                src={photos.insurance}
+                alt={photoAlt.insurance}
+                sizes="(max-width: 980px) 100vw, 50vw"
+              />
+            </span>
             <div className="copy">
               <p className="kicker">Insurance</p>
               <h3>Best bike lock for insurance</h3>
