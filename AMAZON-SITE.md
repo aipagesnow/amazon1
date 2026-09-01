@@ -1,10 +1,10 @@
-# AMAZON-SITE — house template v1
+# AMAZON-SITE — Lock Desk art direction
 
-This is **v1** of the Aivora Digital layout for UK Amazon Associates review/comparison sites. Treat it as the visual contract. Refine it over time; do not throw it away for a generic shop theme.
+This file is **this magazine’s** visual contract. It is not a skin for other Mothership sites.
 
-Tone: a small editorial magazine that also keeps a catalogue. Paper, ink, one warm accent. Not SaaS. Not Amazon. Not ecommerce.
+Lock Desk is a night-commute cycling paper: wet Sheffield stands, Sold Secure grades, the lock you will still carry. It must not look like Mothership or getaipages (cream paper, terracotta, Fraunces, Figtree, dashboard cards). It must not look like a shop.
 
-The site should look commissioned. It should read as if a person is trying to help a UK buyer choose, then offering a See on Amazon button. Unique reason to visit: honest comparison in one niche, not a second copy of Amazon.
+Tone: a small editorial magazine that also keeps a catalogue. Unique reason to visit: honest comparison of UK D-locks and chains, not a second copy of Amazon.
 
 ## What this is not
 
@@ -16,20 +16,29 @@ The site should look commissioned. It should read as if a person is trying to he
 - Not a pile of keyword landing pages with the same review pasted six times
 - Not a fake newsroom (“Issue 7”, “TODAY”) on a brand-new site
 - Not a comparison URL for every product pair the slice can generate
+- Not the studio dashboard
 
 Outbound product action is a text button: **See on Amazon**. Never “Buy now” or “Check price on Amazon”.
 
-## Colour and type
+## Colour and type (this site only)
 
-Lock Desk is a night-commute cycling paper. It must not look like Mothership or getaipages (those use cream paper, terracotta, Fraunces and Figtree).
+Night-commute paper. High-vis tape as the accent, not a SaaS pill.
 
-- Night `#101714`
-- Paper `#e8ece6`
-- Ink `#121a16`
-- High-vis `#d4b43a` / `#9a8224`
-- Steel `#2f4f46`
+- Night `#0b100e` / `#141c18`
+- Paper `#e6ebe3`
+- Ink `#0e1512`
+- High-vis `#d4b43a` / `#8d761c`
+- Steel `#2a4a42`
+- Gold stamp `#c4a028`
+- Diamond stamp `#9aafb8`
 
-Display: Source Serif 4. Body: IBM Plex Sans. Dark masthead, high-vis accent. Do not use Inter, Fraunces, Figtree, or studio terracotta.
+Display: Source Serif 4. Body: IBM Plex Sans. Specs and kickers: IBM Plex Mono. Dark masthead with a high-vis rule. Sharp corners, like a lock body.
+
+Do not use Inter, Fraunces, Figtree, or studio terracotta.
+
+## Photography
+
+Editorial photographs live in `public/images/`. They are atmosphere: UK streets, Sheffield stands, unbranded D-locks and chains. Caption them as editorial. Never pass them off as a photograph of a named ASIN. Never fake a lab test. Never Amazon branding.
 
 ## Voice
 
@@ -56,19 +65,19 @@ Also state that the operator is not Amazon, and that prices and availability cha
 Home is an editorial front page, not a product grid.
 
 1. Masthead: site name, niche in a quiet line, no Amazon branding.
-2. Disclosure strip.
-3. Opening essay (one screen): who this niche is for, what the site will and will not do.
-4. **Editor’s pick** — one product, verdict-led:
+2. Full-bleed cover photograph with the opening line on the night street.
+3. Disclosure strip.
+4. Three briefing facts: grade, fit, carry.
+5. **Editor’s pick** — one product, verdict-led:
    - Why we like it
    - Who it is for
    - What we’d change
    - Best alternative (link to that review)
    - See on Amazon (secondary; primary click is the review)
-5. Best-of strip (link to the full table).
-6. Two head-to-head teasers.
-7. How-to-choose teaser.
-8. Two use-case teasers.
-9. Catalogue peek: three to six cards that go to review pages, not to Amazon as the primary click. **See on Amazon** is secondary on the card.
+6. Numbered desk contents (best-of, two vs, guide, two use-cases).
+7. Five-from-the-slice board (weight as a giant figure, grade stamp) linking to the full table.
+8. Two photographic use-case features.
+9. Catalogue peek: six review entries. **See on Amazon** is secondary on the card.
 10. Footer: About, methodology, disclosure, privacy, contact.
 
 ## Catalogue cards
@@ -77,19 +86,20 @@ Each card:
 
 - Product name (serif)
 - Brand and category
+- Sold Secure stamp
 - One-line editorial hook (from the review, not from Amazon)
 - Link to the review (primary)
 - **See on Amazon** (secondary, `rel="nofollow sponsored"`)
 
-No star widgets invented from nothing. No scraped price.
+No star widgets invented from nothing. No scraped price. No fake product shot of that ASIN.
 
 ## Review page
 
 Recipe, in this order:
 
-1. Title, brand, ASIN in small type (ASIN is a fact, not decoration).
+1. Title, brand, ASIN in small type (ASIN is a fact, not decoration). Grade stamp. Editorial type photograph with a caption that it is not this model.
 2. Disclosure strip if this is the first link context.
-3. **Verdict** — first, not after a thousand words. Answers “is it worth it?” here. No second URL for that question.
+3. **Desk verdict** — first, not after a thousand words. Answers “is it worth it?” here. No second URL for that question.
 4. **Best for / Skip it if**
 5. **The good**
 6. **The bad** — required, at least two honest ones.
@@ -99,11 +109,9 @@ Recipe, in this order:
 10. **FAQ**
 11. Closing **See on Amazon**
 
-Photos: only if the operator supplies them. Do not fake lifestyle shots. Manufacturer-neutral diagrams are acceptable if credited.
-
 ## Best-of
 
-One page. A real table: product, comparable specs from the slice, best for, main caveat, link to review, See on Amazon. Five rows from the slice (or every product if fewer). A short intro explains the criteria. No “number one for everyone” theatre.
+One page. Photographic opener, then a five-lock board, then a real table: product, comparable specs from the slice, best for, main caveat, link to review, See on Amazon. Five rows from the slice (or every product if fewer). A short intro explains the criteria. No “number one for everyone” theatre.
 
 Never add Price or Amazon rating columns. Omit a spec column when the slice does not have it.
 
@@ -173,6 +181,7 @@ Fewer excellent pages beat many thin ones. Do not add routes to look large.
 - 1 how-to-choose guide
 - 1 best-of
 - 6 reviews (or every product in the slice if fewer than six; never invent ASINs to pad)
+- Reviews index
 - 2 head-to-heads (highest-intent pairs)
 - 2 use-case guides (1 if the slice is under four products)
 - Methodology

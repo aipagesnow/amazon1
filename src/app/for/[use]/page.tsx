@@ -3,8 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
+import { PageHero } from "@/components/PageHero";
 import { ProductCard } from "@/components/ProductCard";
 import { articleJsonLd } from "@/lib/jsonld";
+import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { productBySlug } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
 
@@ -84,11 +86,17 @@ export default async function UseCasePage({ params }: Props) {
           path: `/for/${item.slug}`,
         })}
       />
-      <article className="prose wrap">
-        <p className="kicker">Use case</p>
-        <h1>{item.title}</h1>
-        <p className="lede">{item.description}</p>
+      <PageHero
+        image={item.slug === "insurance" ? photos.insurance : photos.commute}
+        alt={item.slug === "insurance" ? photoAlt.insurance : photoAlt.commute}
+        kicker="Use case"
+        title={item.title}
+        lede={item.description}
+        caption={EDITORIAL_CREDIT}
+      >
         <DisclosureStrip />
+      </PageHero>
+      <article className="prose wrap tight">
         <p>
           <strong>Not for:</strong> {item.notFor}
         </p>

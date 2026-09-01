@@ -3,8 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
+import { PageHero } from "@/components/PageHero";
 import { ProductCard } from "@/components/ProductCard";
 import { articleJsonLd } from "@/lib/jsonld";
+import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { displayName, productBySlug } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
 
@@ -52,15 +54,17 @@ export default async function AlternativesPage({ params }: Props) {
           path: `/alternatives/${HERO}`,
         })}
       />
-      <article className="prose wrap">
-        <p className="kicker">Alternatives</p>
-        <h1>Best alternatives to the Kryptonite New York Fahgettaboudit Mini</h1>
-        <p className="lede">
-          The New York Mini is an 18 mm Gold D-lock at 2.06 kg with no mount in our spec. Most
-          people who type this query want either something they will carry, or Diamond, or a chain
-          with reach.
-        </p>
+      <PageHero
+        image={photos.pick}
+        alt={photoAlt.pick}
+        kicker="Alternatives"
+        title="Best alternatives to the Kryptonite New York Fahgettaboudit Mini"
+        lede="The New York Mini is an 18 mm Gold D-lock at 2.06 kg with no mount in our spec. Most people who type this query want either something they will carry, or Diamond, or a chain with reach."
+        caption={EDITORIAL_CREDIT}
+      >
         <DisclosureStrip />
+      </PageHero>
+      <article className="prose wrap tight">
         <p>
           Flagship in this slice:{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">{displayName(hero)}</Link>.

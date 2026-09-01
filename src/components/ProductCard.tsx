@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GradeStamp } from "@/components/GradeStamp";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { hookFor } from "@/content/editorial";
 import { displayName, Product, reviewHref } from "@/lib/products";
@@ -9,7 +10,9 @@ export function ProductCard({ product }: { product: Product }) {
     <article className="card">
       <p className="meta">
         {product.brand} · {product.category}
-        {product.specs?.soldSecurePedal ? ` · Sold Secure ${product.specs.soldSecurePedal}` : ""}
+      </p>
+      <p className="stamp-row">
+        <GradeStamp grade={product.specs?.soldSecurePedal} />
       </p>
       <h3>{displayName(product)}</h3>
       <p className="hook">{hookFor(product)}</p>

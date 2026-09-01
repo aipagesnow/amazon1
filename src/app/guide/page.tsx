@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
+import { PageHero } from "@/components/PageHero";
 import { articleJsonLd } from "@/lib/jsonld";
+import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { pageUrl, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -14,6 +16,7 @@ export const metadata: Metadata = {
     title: "How to choose a bike lock · Lock Desk",
     description: "Gold vs Diamond, insurance, fit, and a chooser for the locks in our slice.",
     url: pageUrl("/guide"),
+    images: [{ url: photos.fit, alt: photoAlt.fit }],
   },
 };
 
@@ -27,15 +30,33 @@ export default function GuidePage() {
           path: "/guide",
         })}
       />
-      <article className="prose wrap">
-        <p className="kicker">How to choose</p>
-        <h1>How to choose a bike lock</h1>
-        <p className="lede">
-          Start with the policy, then the rack, then the weight you will actually take out of the
-          house. Brand comes last.
-        </p>
+      <PageHero
+        image={photos.fit}
+        alt={photoAlt.fit}
+        kicker="How to choose"
+        title="How to choose a bike lock"
+        lede="Start with the policy, then the rack, then the weight you will actually take out of the house. Brand comes last."
+        caption={EDITORIAL_CREDIT}
+      >
         <DisclosureStrip />
-
+      </PageHero>
+      <section className="briefing-bar" aria-label="Three specs that matter">
+        <div className="wrap briefing">
+          <article>
+            <h3>Grade</h3>
+            <p>Gold and Diamond are different tests. Neither means angle-grinder proof. Read the policy first.</p>
+          </article>
+          <article>
+            <h3>Fit</h3>
+            <p>A Mini that will not close around the stand is a paperweight. Measure post plus frame tube.</p>
+          </article>
+          <article>
+            <h3>Weight</h3>
+            <p>The lock you leave in the hall does not protect the bike at the station. Carry is a spec.</p>
+          </article>
+        </div>
+      </section>
+      <article className="prose wrap tight">
         <p>
           This page is the pillar for {site.name}. It should still help if every Amazon link
           vanished. We have not run lab attacks. Grades come from Sold Secure; dimensions and

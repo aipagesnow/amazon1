@@ -3,9 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
+import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { CompareTable } from "@/components/SpecTable";
 import { articleJsonLd } from "@/lib/jsonld";
+import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { displayName, Product, productBySlug, reviewHref } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
 
@@ -78,22 +80,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pair = pairOf(slug);
   if (!pair) return {};
   const url = pageUrl(`/vs/${pair.slug}`);
+  const image = pair.slug === "d-lock-vs-chain" ? photos.vs : photos.pick;
+  const alt = pair.slug === "d-lock-vs-chain" ? photoAlt.vs : photoAlt.pick;
   return {
     title: pair.title,
     description: pair.description,
     alternates: { canonical: url },
-    openGraph: { title: `${pair.title} · Lock Desk`, description: pair.description, url },
+    openGraph: {
+      title: `${pair.title} · Lock Desk`,
+      description: pair.description,
+      url,
+      images: [{ url: image, alt }],
+    },
   };
 }
 
-function ProductCol({ product }: { product: Product }) {
+function ProductCol({
+  product,
+  kicker,
+}: {
+  product: Product;
+  kicker: string;
+}) {
   const href = reviewHref(product);
   return (
-    <div className="panel">
+    <div className="vs-col">
+      <p className="kicker">{kicker}</p>
       <h3>{displayName(product)}</h3>
       {href ? (
         <p>
-          <Link href={href}>Review</Link>
+          <Link href={href}>Read the review</Link>
         </p>
       ) : null}
       <SeeOnAmazon asin={product.asin} className="see-on-amazon" />
@@ -119,14 +135,20 @@ export default async function VsPage({ params }: Props) {
           path: `/vs/${pair.slug}`,
         })}
       />
-      <article className="prose wrap">
-        <p className="kicker">Head to head</p>
-        <h1>{pair.title}</h1>
-        <p className="lede">{pair.intro}</p>
+      <PageHero
+        image={pair.slug === "d-lock-vs-chain" ? photos.vs : photos.pick}
+        alt={pair.slug === "d-lock-vs-chain" ? photoAlt.vs : photoAlt.pick}
+        kicker="Head to head"
+        title={pair.title}
+        lede={pair.intro}
+        caption={EDITORIAL_CREDIT}
+      >
         <DisclosureStrip />
-        <div className="grid-2">
-          <ProductCol product={a} />
-          <ProductCol product={b} />
+      </PageHero>
+      <article className="prose wrap tight">
+        <div className="vs-split">
+          <ProductCol product={a} kicker="Lock A" />
+          <ProductCol product={b} kicker="Lock B" />
         </div>
         <h2>Specs from the slice</h2>
         <CompareTable products={[a, b]} />

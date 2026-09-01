@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/guide",
     "/best",
+    "/reviews",
     "/method",
     "/about",
     "/vs/evolution-mini-7-vs-d1000",

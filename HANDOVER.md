@@ -37,7 +37,7 @@ They need an Amazon Associates account for amazon.co.uk. We do not transfer an A
 
 ## What this site is
 
-A UK product-discovery and comparison magazine that earns with Amazon Associates. Not a shop. Not Amazon. Editorial pages (how-to-choose, best-of, reviews, comparisons) that link out.
+A UK product-discovery and comparison magazine that earns with Amazon Associates. Not a shop. Not Amazon. Editorial pages (how-to-choose, best-of, reviews, comparisons) that link out. Night-commute art direction (high-vis on dark, Source Serif 4) — not the getaipages / Mothership studio look.
 
 Traffic is expected to come from organic search over time. A brand-new site has no ranking or commission history unless the listing says otherwise with evidence.
 

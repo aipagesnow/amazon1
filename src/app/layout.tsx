@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
+import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { photos } from "@/lib/photos";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -18,6 +19,13 @@ const body = IBM_Plex_Sans({
   display: "swap",
 });
 
+const mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
@@ -30,13 +38,19 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_GB",
     type: "website",
+    images: [
+      {
+        url: photos.cover,
+        alt: "A bicycle locked to a Sheffield stand on a wet UK street at night.",
+      },
+    ],
   },
   alternates: { canonical: site.url },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" className={`${display.variable} ${body.variable}`}>
+    <html lang="en-GB" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <body>
         <SiteHeader />
         <main>{children}</main>

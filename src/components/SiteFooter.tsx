@@ -10,6 +10,7 @@ export function SiteFooter() {
         <nav aria-label="Footer">
           <Link href="/guide">How to choose</Link>
           <Link href="/best">Best bike locks</Link>
+          <Link href="/reviews">Reviews</Link>
           <Link href="/for/commuting">For commuting</Link>
           <Link href="/for/insurance">For insurance</Link>
           <Link href="/method">Methodology</Link>
@@ -20,6 +21,10 @@ export function SiteFooter() {
         <p>
           {DISCLOSURE} {site.name} is operated by {site.operator}. We are not Amazon. Prices and
           availability change on Amazon.
+        </p>
+        <p>
+          Photographs on this site are editorial. They are not pictures of the named products in
+          the slice.
         </p>
         <p>
           Contact: <a href={`mailto:${site.contact}`}>{site.contact}</a>

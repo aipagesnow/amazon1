@@ -43,6 +43,10 @@ export default function MethodPage() {
           <li>We do not invent weights, shackle sizes, or grades. If a spec is missing, we omit it.</li>
           <li>We do not print live prices. They change on Amazon.</li>
           <li>We do not republish Amazon customer reviews or star ratings.</li>
+          <li>
+            Photographs are editorial atmosphere — generic streets and unbranded locks — not pictures
+            of the named ASINs.
+          </li>
         </ul>
         <h2>Amazon</h2>
         <p>

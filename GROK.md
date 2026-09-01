@@ -44,7 +44,7 @@ Button copy: **See on Amazon**. `rel="nofollow sponsored"`.
 
 ## Layout
 
-Follow `AMAZON-SITE.md` in this folder. That file is the house visual template (magazine + catalogue). Refine in place; do not replace it with a generic ecommerce theme.
+Follow `AMAZON-SITE.md` in this folder. That file is **this site’s** art direction — a night-commute lock paper — not the Mothership or getaipages studio look, and not a generic shop theme.
 
 Copy `kit/SeeOnAmazon.tsx` and `kit/DisclosureStrip.tsx` into `src/components`.
 

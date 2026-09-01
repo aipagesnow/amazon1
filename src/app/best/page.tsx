@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
+import { LockTile } from "@/components/LockTile";
+import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { articleJsonLd, itemListJsonLd } from "@/lib/jsonld";
+import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
   BEST_OF_ASINS,
   displayName,
@@ -23,6 +26,7 @@ export const metadata: Metadata = {
     title: "Best bike locks UK · Lock Desk",
     description: "Sold Secure, weight, and fit — not a 50-product shop grid.",
     url: pageUrl("/best"),
+    images: [{ url: photos.cover, alt: photoAlt.cover }],
   },
 };
 
@@ -69,20 +73,38 @@ export default function BestPage() {
           ),
         ]}
       />
-      <article className="prose wrap">
-        <p className="kicker">Best of</p>
-        <h1>Best bike locks UK</h1>
-        <p className="lede">
-          Five from our slice. Criteria: Sold Secure pedal grade, whether we think you will carry
-          it, and whether the shackle will close. Not number one for everyone.
-        </p>
+      <PageHero
+        image={photos.cover}
+        alt={photoAlt.cover}
+        kicker="Best of"
+        title="Best bike locks UK"
+        lede="Five from our slice. Criteria: Sold Secure pedal grade, whether we think you will carry it, and whether the shackle will close. Not number one for everyone."
+        caption={EDITORIAL_CREDIT}
+      >
         <DisclosureStrip />
+      </PageHero>
+      <article className="prose wrap tight">
         <p>
           We reviewed six products in full. The OnGuard Pitbulls and the Hiplok DX1000 stay in the
           catalogue without a first-launch review — they are real ASINs, not filler pages. Prices
           change on Amazon; we do not print them.
         </p>
 
+        <div className="lock-board">
+          {rows.map((p) => (
+            <LockTile
+              key={p.asin}
+              product={p}
+              bestFor={verdicts[p.asin]?.bestFor}
+              caveat={verdicts[p.asin]?.caveat}
+            />
+          ))}
+        </div>
+
+        <h2>The workshop sheet</h2>
+        <p>
+          Same five, as a table, if you are comparing locking area and grade in one glance.
+        </p>
         <table className="spec">
           <thead>
             <tr>

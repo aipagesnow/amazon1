@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
+import { GradeStamp } from "@/components/GradeStamp";
+import { Photo } from "@/components/Photo";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { SpecTable } from "@/components/SpecTable";
 import { ReviewCopy } from "@/content/editorial";
+import { EDITORIAL_CREDIT, typePhoto } from "@/lib/photos";
 import { displayName, Product, productBySlug, reviewHref } from "@/lib/products";
 
 function Alt({ slug, why }: { slug: string; why: string }) {
@@ -18,17 +21,29 @@ function Alt({ slug, why }: { slug: string; why: string }) {
 }
 
 export function ReviewArticle({ product, copy }: { product: Product; copy: ReviewCopy }) {
+  const art = typePhoto(product.specs?.type);
   return (
     <article className="prose wrap">
-      <p className="kicker">
-        {product.brand} · {product.specs?.type} · ASIN {product.asin}
-      </p>
-      <h1>{displayName(product)}</h1>
-      <p className="lede">{copy.hook}</p>
+      <div className="review-top">
+        <div>
+          <p className="kicker">
+            {product.brand} · {product.specs?.type} · ASIN {product.asin}
+          </p>
+          <h1>{displayName(product)}</h1>
+          <p className="stamp-row">
+            <GradeStamp grade={product.specs?.soldSecurePedal} />
+          </p>
+          <p className="lede">{copy.hook}</p>
+        </div>
+        <Photo src={art.src} alt={art.alt} caption={EDITORIAL_CREDIT} className="review-photo" />
+      </div>
       <DisclosureStrip />
 
-      <h2>Verdict</h2>
-      <p>{copy.verdict}</p>
+      <div className="desk-verdict">
+        <p className="kicker">Desk verdict</p>
+        <h2>Is it worth it?</h2>
+        <p>{copy.verdict}</p>
+      </div>
 
       <div className="grid-2">
         <div className="panel">
@@ -93,6 +108,8 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         <Link href="/guide">How to choose a bike lock</Link>
         {" · "}
         <Link href="/best">Best bike locks</Link>
+        {" · "}
+        <Link href="/reviews">All reviews</Link>
         {" · "}
         <Link href="/method">How we research</Link>
       </p>
