@@ -62,19 +62,19 @@ Also state that the operator is not Amazon, and that prices and availability cha
 
 ## Home (hub)
 
-Home is an editorial front page, not a product grid. Editor’s pick is the only lock tile on the cover. The six-card catalogue lives only on `/reviews`.
+Home is an editorial front page, not a shop. Editor’s pick is the featured lock. One compact five-lock strip sits under the pick. The six-card catalogue lives only on `/reviews`. Do not add a second home catalogue or a “Six ways in” index.
 
-1. Masthead: site name, niche in a quiet line, no Amazon branding. Header: How to choose, Best of, Reviews, Mini-7 vs D1000, About.
+1. Masthead: site name, niche in a quiet line, no Amazon branding. Header: How to choose, Best of, Reviews, Compare, Commuting, About. Compare points at `/vs/evolution-mini-7-vs-d1000`. Commuting points at `/for/commuting`. Insurance and Methodology stay in the footer.
 2. Full-bleed cover photograph with the opening line on the night street.
 3. H1, dek, then one-line Associate disclosure (under the H1), then cover CTAs: How to choose (primary) + Best of (text).
 4. Three briefing facts as one strip: grade, fit, carry.
-5. **Editor’s pick** — the only product tile:
+5. **Editor’s pick** — the featured product:
    - H2 Editor’s pick, product name as H3
    - Why we like it / Who it is for / What we’d change
    - Best alternative (link to that review)
    - Read the review + See on Amazon
    - Editorial photograph with the same caption as review pages
-6. Five we compared as a text line to `/best` (not a tile strip). One also-reviewed line for the New York Mini.
+6. One compact lock strip of the five compared (X1, Mini-7, D1000, 540, 1410). Each small card: name, grade, one-line stamp, Read the review, Amazon as text. Caption under the strip: Five we compared / Open the full table → `/best`. One also-reviewed line for the New York Mini.
 7. Two photographic use-case features (commuting, insurance). No spec chips, no Amazon on the home versions.
 8. Footer in three groups: Guides, Reviews (including Instead of the New York Mini), About this desk.
 

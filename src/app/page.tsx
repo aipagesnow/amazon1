@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
+import { LockTile } from "@/components/LockTile";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { websiteJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
@@ -11,7 +12,6 @@ import {
   EDITOR_PICK_ASIN,
   productByAsin,
   productBySlug,
-  shortName,
 } from "@/lib/products";
 import { site } from "@/lib/site";
 
@@ -119,17 +119,17 @@ export default function HomePage() {
           </div>
         </section>
 
-        <p className="five-line">
-          <strong>Five we compared.</strong>{" "}
-          {five.map((product, i) => (
-            <span key={product.asin}>
-              {i > 0 ? " · " : ""}
-              {shortName(product)}
-            </span>
-          ))}
-          .{" "}
-          <Link href="/best">Open the full table</Link>
-        </p>
+        <section className="compared-strip" aria-label="Five we compared">
+          <div className="lock-strip">
+            {five.map((product) => (
+              <LockTile key={product.asin} product={product} compact />
+            ))}
+          </div>
+          <p className="five-line">
+            <strong>Five we compared.</strong>{" "}
+            <Link href="/best">Open the full table</Link>
+          </p>
+        </section>
         <p className="also-reviewed">
           Also reviewed: the{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">

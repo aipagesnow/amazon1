@@ -30,7 +30,8 @@ export function SiteHeader() {
             <Link href="/guide">How to choose</Link>
             <Link href="/best">Best of</Link>
             <Link href="/reviews">Reviews</Link>
-            <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link>
+            <Link href="/vs/evolution-mini-7-vs-d1000">Compare</Link>
+            <Link href="/for/commuting">Commuting</Link>
             <Link href="/about">About</Link>
           </nav>
         </details>
