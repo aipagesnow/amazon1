@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
+import { LockPoster } from "@/components/LockMark";
 import { ProductCard } from "@/components/ProductCard";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { websiteJsonLd } from "@/lib/jsonld";
@@ -35,52 +36,59 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={websiteJsonLd()} />
-      <div className="wrap">
-        <DisclosureStrip />
-        <section className="hero-essay">
-          <p className="kicker">{site.niche}</p>
+      <section className="cover">
+        <div className="wrap">
+          <DisclosureStrip />
+          <p className="cover-kicker">D-locks and chains · United Kingdom</p>
           <h1>The lock you will still carry is the only lock that counts.</h1>
           <p className="lede">
-            Lock Desk is a UK comparison magazine for D-locks and chains. We write for commuters
-            and cyclists who need a rating their insurer will accept — and a weight they will not
-            leave in the hall. We are not a shop. We do not pretend we spent six weeks attacking
-            these with grinders.
+            A UK comparison magazine for commuters who need a Sold Secure grade their insurer will
+            accept — and a weight they will not leave in the hall. Not a shop. Not a test lab.
           </p>
           <p className="measure">
-            Gold and Diamond are different Sold Secure grades. A cable in the box is usually not
-            part of the approval. Mini shackles do not fit every Sheffield stand. That is the job
-            of this site: say those things plainly, then point you at a review and a See on Amazon
-            button.
+            Gold and Diamond are different grades. A cable in the box is usually not part of the
+            approval. Mini shackles do not fit every Sheffield stand. We say those things plainly,
+            then offer a review and a See on Amazon button.
           </p>
-        </section>
-
+        </div>
+      </section>
+      <div className="wrap">
+        <p className="folio">
+          <span>Lock Desk</span>
+          <span>Editor’s pick</span>
+        </p>
         <section className="pick">
-          <p className="kicker">Editor’s pick</p>
-          <h2>{displayName(pick)}</h2>
-          <p>
-            <strong>Why we like it.</strong> Pedal Diamond and powered Diamond, 1.7 kg, and a 101 ×
-            197 mm locking area. That is the overlap of “insurer will listen” and “you might take it
-            on the train.”
-          </p>
-          <p>
-            <strong>Who it is for.</strong> A bike you would be sick to lose, parked in public, when
-            Gold feels thin.
-          </p>
-          <p>
-            <strong>What we’d change.</strong> Put a mount in the box. A Diamond lock that stays
-            under the desk is a Gold lock in real life.
-          </p>
-          <p>
-            <strong>Best alternative.</strong>{" "}
-            <Link href="/reviews/hiplok-d1000">{displayName(alt)}</Link> if you want Hiplok’s smaller
-            anti-grinder D-lock and you have already measured the rack.
-          </p>
-          <p>
-            <Link href="/reviews/litelok-x1" className="primary-link">
-              Read the X1 review
-            </Link>
-          </p>
-          <SeeOnAmazon asin={pick.asin} className="btn-amazon" />
+          <div className="pick-copy">
+            <p className="kicker">We’d buy this one</p>
+            <h2>{displayName(pick)}</h2>
+            <p>
+              <strong>Why we like it.</strong> Pedal Diamond and powered Diamond, 1.7 kg, and a 101 ×
+              197 mm locking area. That is the overlap of “insurer will listen” and “you might take
+              it on the train.”
+            </p>
+            <p>
+              <strong>Who it is for.</strong> A bike you would be sick to lose, parked in public,
+              when Gold feels thin.
+            </p>
+            <p>
+              <strong>What we’d change.</strong> Put a mount in the box. A Diamond lock that stays
+              under the desk is a Gold lock in real life.
+            </p>
+            <p>
+              <strong>Best alternative.</strong>{" "}
+              <Link href="/reviews/hiplok-d1000">{displayName(alt)}</Link> if you want Hiplok’s
+              smaller anti-grinder D-lock and you have already measured the rack.
+            </p>
+            <p>
+              <Link href="/reviews/litelok-x1" className="primary-link">
+                Read the X1 review
+              </Link>
+            </p>
+            <SeeOnAmazon asin={pick.asin} className="btn-amazon" />
+          </div>
+          <div className="pick-art">
+            <LockPoster />
+          </div>
         </section>
 
         <section>

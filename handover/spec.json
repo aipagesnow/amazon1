@@ -7,10 +7,10 @@
   "description": "UK Amazon Associates review and comparison magazine at lockdesk.co.uk. Editorial pages (reviews, best-of, comparisons, how-to-choose) that link out with See on Amazon. Domain, Vercel hosting, and the product slice included. Buyer sets AMAZON_ASSOCIATE_TAG. Not a shop. Not Amazon.",
   "template": "flippa-vercel",
   "theme": {
-    "accent": "#c45c26",
-    "accentHover": "#9a4318",
-    "paper": "#f4efe6",
-    "ink": "#1c1914",
+    "accent": "#d4b43a",
+    "accentHover": "#9a8224",
+    "paper": "#e8ece6",
+    "ink": "#121a16",
     "logoUrl": "",
     "previewUrl": ""
   },

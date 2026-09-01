@@ -1,16 +1,18 @@
 import Link from "next/link";
+import { LockMark } from "@/components/LockMark";
 import { site } from "@/lib/site";
 
 export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="wrap masthead">
-        <div>
-          <Link href="/" className="wordmark">
-            {site.name}
-          </Link>
-          <p className="tagline">Bike locks · Sold Secure · what you will carry</p>
-        </div>
+        <Link href="/" className="brand-lockup">
+          <LockMark className="mark" />
+          <span>
+            <span className="wordmark">{site.name}</span>
+            <span className="tagline">UK lock magazine</span>
+          </span>
+        </Link>
         <nav className="nav" aria-label="Magazine">
           <Link href="/guide">How to choose</Link>
           <Link href="/best">Best locks</Link>

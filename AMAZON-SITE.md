@@ -21,16 +21,15 @@ Outbound product action is a text button: **See on Amazon**. Never “Buy now”
 
 ## Colour and type
 
-Warm paper ground, dark ink, one terracotta accent, one forest green for lived-in status. Distinctive serif for headlines (display, a little sharp). Human sans for body. Generous margins. Long measure on essays; tighter measure on cards.
+Lock Desk is a night-commute cycling paper. It must not look like Mothership or getaipages (those use cream paper, terracotta, Fraunces and Figtree).
 
-House tokens (use these unless the niche truly needs a different paper):
+- Night `#101714`
+- Paper `#e8ece6`
+- Ink `#121a16`
+- High-vis `#d4b43a` / `#9a8224`
+- Steel `#2f4f46`
 
-- Paper `#f4efe6`
-- Ink `#1c1914`
-- Terracotta `#c45c26` / `#9a4318`
-- Forest `#2f4a3c`
-
-Do not use Inter / system UI as the personality of the site.
+Display: Source Serif 4. Body: IBM Plex Sans. Dark masthead, high-vis accent. Do not use Inter, Fraunces, Figtree, or studio terracotta.
 
 ## Voice
 

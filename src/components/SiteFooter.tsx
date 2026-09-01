@@ -6,6 +6,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="wrap">
+        <p className="wordmark">{site.name}</p>
         <nav aria-label="Footer">
           <Link href="/guide">How to choose</Link>
           <Link href="/best">Best bike locks</Link>
