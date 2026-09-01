@@ -31,11 +31,13 @@ export function PageHero({
         </div>
         <div className="cover-shade" aria-hidden="true" />
         <div className="wrap cover-copy">
-          <p className="kicker">{kicker}</p>
-          <h1>{title}</h1>
-          {lede ? <p className="lede">{lede}</p> : null}
-          {children}
-          {caption ? <p className="photo-credit">{caption}</p> : null}
+          <div className="hero-panel">
+            <p className="kicker">{kicker}</p>
+            <h1>{title}</h1>
+            {lede ? <p className="lede">{lede}</p> : null}
+            {children}
+            {caption ? <p className="photo-credit">{caption}</p> : null}
+          </div>
         </div>
       </header>
     );

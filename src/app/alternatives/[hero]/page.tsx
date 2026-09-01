@@ -55,12 +55,13 @@ export default async function AlternativesPage({ params }: Props) {
         })}
       />
       <PageHero
-        image={photos.pick}
-        alt={photoAlt.pick}
+        image={photos.bannerThick}
+        alt={photoAlt.bannerThick}
         kicker="Alternatives"
         title="Best alternatives to the Kryptonite New York Fahgettaboudit Mini"
         lede="The New York Mini is an 18 mm Gold D-lock at 2.06 kg with no mount in our spec. Most people who type this query want either something they will carry, or Diamond, or a chain with reach."
         caption={EDITORIAL_CREDIT}
+        overlay
       >
         <DisclosureStrip />
       </PageHero>

@@ -80,6 +80,7 @@ export default function BestPage() {
         title="Best bike locks UK"
         lede="Five from our slice. Criteria: Sold Secure pedal grade, whether we think you will carry it, and whether the shackle will close. Not number one for everyone."
         caption={EDITORIAL_CREDIT}
+        overlay
       >
         <DisclosureStrip />
       </PageHero>

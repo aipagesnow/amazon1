@@ -8,10 +8,10 @@ export const site = {
   audience: siteJson.audience,
   primaryKeyword: siteJson.primaryKeyword,
   angle: siteJson.angle,
-  url: `https://${siteJson.domain}`,
+  url: `https://www.${siteJson.domain}`,
   locale: "en-GB",
   operator: "Aivora Digital",
-  contact: "hello@lockdesk.co.uk",
+  contact: "",
 } as const;
 
 export function pageUrl(path: string): string {

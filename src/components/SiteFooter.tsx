@@ -11,6 +11,7 @@ export function SiteFooter() {
           <Link href="/guide">How to choose</Link>
           <Link href="/best">Best bike locks</Link>
           <Link href="/reviews">Reviews</Link>
+          <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>
           <Link href="/for/commuting">For commuting</Link>
           <Link href="/for/insurance">For insurance</Link>
           <Link href="/method">Methodology</Link>
@@ -25,9 +26,6 @@ export function SiteFooter() {
         <p>
           Photographs on this site are editorial. They are not pictures of the named products in
           the slice.
-        </p>
-        <p>
-          Contact: <a href={`mailto:${site.contact}`}>{site.contact}</a>
         </p>
       </div>
     </footer>

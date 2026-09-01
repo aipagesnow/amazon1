@@ -86,13 +86,15 @@ export default function HomePage() {
         </div>
         <div className="cover-shade" aria-hidden="true" />
         <div className="wrap cover-copy">
-          <DisclosureStrip />
-          <p className="cover-kicker">D-locks and chains · United Kingdom</p>
-          <h1>The lock you will still carry is the only lock that counts.</h1>
-          <p className="lede">
-            A UK comparison magazine for commuters who need a Sold Secure grade their insurer will
-            accept — and a weight they will not leave in the hall. Not a shop. Not a test lab.
-          </p>
+          <div className="hero-panel">
+            <DisclosureStrip />
+            <p className="cover-kicker">D-locks and chains · United Kingdom</p>
+            <h1>The lock you will still carry is the only lock that counts.</h1>
+            <p className="lede">
+              A UK comparison magazine for commuters who need a Sold Secure grade their insurer will
+              accept — and a weight they will not leave in the hall. Not a shop. Not a test lab.
+            </p>
+          </div>
         </div>
       </section>
 

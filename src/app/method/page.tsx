@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { articleJsonLd } from "@/lib/jsonld";
 import { pageUrl, site } from "@/lib/site";
@@ -26,10 +27,15 @@ export default function MethodPage() {
         })}
       />
       <article className="prose wrap">
-        <p className="kicker">E-E-A-T</p>
+        <p className="kicker">How we work</p>
         <h1>How Lock Desk researches locks</h1>
         <p className="lede">
           These pages are desk research. They are not a test lab and they are not a shop.
+        </p>
+        <p>
+          If a sentence would only be true because we attacked a lock for six weeks, we do not write
+          it. The job is to help a UK rider match Sold Secure grade, fit, and carry — from facts we
+          can stand behind.
         </p>
         <h2>What we use</h2>
         <ul>
@@ -45,9 +51,17 @@ export default function MethodPage() {
           <li>We do not republish Amazon customer reviews or star ratings.</li>
           <li>
             Photographs are editorial atmosphere — generic streets and unbranded locks — not pictures
-            of the named ASINs.
+            of the named ASINs. Real listing photos need Amazon’s Product Advertising API, which we
+            do not have yet.
           </li>
         </ul>
+        <h2>How a review is built</h2>
+        <p>
+          Verdict first: who it is for, who should skip it. Then Best for / Skip, The good, The
+          bad, What we’d change, the spec sheet, alternatives from the same slice, and a short FAQ.
+          Internal links go up to the <Link href="/guide">how-to-choose guide</Link> and across to
+          other reviews.
+        </p>
         <h2>Amazon</h2>
         <p>
           {site.name} is not Amazon. Outbound buttons say See on Amazon. As an Amazon Associate we
@@ -55,7 +69,8 @@ export default function MethodPage() {
           not transfer an Associates account.
         </p>
         <p>
-          Operator: {site.operator}. Contact: {site.contact}.
+          Operator: {site.operator}. We do not publish a contact mailbox yet; see{" "}
+          <Link href="/about">About</Link>.
         </p>
       </article>
     </>

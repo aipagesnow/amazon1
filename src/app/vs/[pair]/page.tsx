@@ -136,12 +136,13 @@ export default async function VsPage({ params }: Props) {
         })}
       />
       <PageHero
-        image={pair.slug === "d-lock-vs-chain" ? photos.vs : photos.pick}
-        alt={pair.slug === "d-lock-vs-chain" ? photoAlt.vs : photoAlt.pick}
+        image={pair.slug === "d-lock-vs-chain" ? photos.vs : photos.bannerCommute}
+        alt={pair.slug === "d-lock-vs-chain" ? photoAlt.vs : photoAlt.bannerCommute}
         kicker="Head to head"
         title={pair.title}
         lede={pair.intro}
         caption={EDITORIAL_CREDIT}
+        overlay
       >
         <DisclosureStrip />
       </PageHero>

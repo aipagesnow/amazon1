@@ -49,6 +49,7 @@ export default function ReviewsIndexPage() {
         title="Reviewed on this desk"
         lede="Six locks. Each page says who it is for, who should skip it, and what we would change. We have not cut these open."
         caption={EDITORIAL_CREDIT}
+        overlay
       >
         <DisclosureStrip />
       </PageHero>

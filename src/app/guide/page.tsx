@@ -37,6 +37,7 @@ export default function GuidePage() {
         title="How to choose a bike lock"
         lede="Start with the policy, then the rack, then the weight you will actually take out of the house. Brand comes last."
         caption={EDITORIAL_CREDIT}
+        overlay
       >
         <DisclosureStrip />
       </PageHero>

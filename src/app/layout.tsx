@@ -26,6 +26,10 @@ const mono = IBM_Plex_Mono({
   display: "swap",
 });
 
+export const viewport = {
+  themeColor: "#0b100e",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
@@ -46,6 +50,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: { canonical: site.url },
+  icons: { icon: "/icon.svg" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

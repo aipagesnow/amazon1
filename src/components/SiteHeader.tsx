@@ -15,10 +15,9 @@ export function SiteHeader() {
         </Link>
         <nav className="nav" aria-label="Magazine">
           <Link href="/guide">How to choose</Link>
-          <Link href="/best">Best locks</Link>
+          <Link href="/best">Best of</Link>
           <Link href="/reviews">Reviews</Link>
           <Link href="/vs/evolution-mini-7-vs-d1000">Compare</Link>
-          <Link href="/method">Method</Link>
           <Link href="/about">About</Link>
         </nav>
       </div>
