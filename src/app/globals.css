@@ -219,6 +219,29 @@ img { max-width: 100%; display: block; }
   background: var(--night);
   color: #e7ece6;
 }
+.page-hero-overlay {
+  position: relative;
+  min-height: min(74vh, 700px);
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+}
+.page-hero-overlay .cover-copy {
+  padding: 3.4rem 0 2.8rem;
+  max-width: 40rem;
+}
+.page-hero-overlay h1 {
+  font-size: clamp(2.4rem, 5.6vw, 3.9rem);
+  max-width: 14ch;
+  margin: 0 0 0.85rem;
+}
+.page-hero-overlay .lede {
+  color: #d5ddd6;
+  font-size: 1.18rem;
+}
+.page-hero-overlay .photo-credit {
+  color: #8b9890;
+}
 .page-hero-media {
   margin: 0;
   height: min(46vh, 420px);

@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ReviewArticle } from "@/components/ReviewArticle";
 import { reviewCopy } from "@/content/editorial";
 import { articleJsonLd, faqJsonLd, productJsonLd } from "@/lib/jsonld";
+import { reviewBanner } from "@/lib/photos";
 import { displayName, productBySlug, REVIEW_SLUGS } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
 
@@ -21,11 +22,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `${displayName(product)} review`;
   const description = copy.verdict.slice(0, 158);
   const url = pageUrl(`/reviews/${product.slug}`);
+  const banner = reviewBanner(product.slug);
   return {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title: `${title} · Lock Desk`, description, url },
+    openGraph: {
+      title: `${title} · Lock Desk`,
+      description,
+      url,
+      images: [{ url: banner.src, alt: banner.alt }],
+    },
   };
 }
 

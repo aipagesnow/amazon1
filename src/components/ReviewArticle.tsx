@@ -5,7 +5,7 @@ import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { SpecFigures, SpecTable } from "@/components/SpecTable";
 import { ReviewCopy } from "@/content/editorial";
-import { EDITORIAL_CREDIT, typePhoto } from "@/lib/photos";
+import { EDITORIAL_CREDIT, reviewBanner } from "@/lib/photos";
 import {
   displayName,
   Product,
@@ -68,7 +68,7 @@ function ReviewNav({ slug }: { slug: string }) {
 }
 
 export function ReviewArticle({ product, copy }: { product: Product; copy: ReviewCopy }) {
-  const art = typePhoto(product.specs?.type);
+  const art = reviewBanner(product.slug);
   const isChain = (product.specs?.type ?? "").toLowerCase().includes("chain");
   const vsHref = isChain
     ? "/vs/d-lock-vs-chain"
@@ -86,6 +86,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         title={displayName(product)}
         lede={copy.hook}
         caption={EDITORIAL_CREDIT}
+        overlay
       >
         <p className="stamp-row">
           <GradeStamp grade={product.specs?.soldSecurePedal} />

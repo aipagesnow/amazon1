@@ -8,10 +8,39 @@ type Props = {
   title: string;
   lede?: string;
   caption?: string;
+  overlay?: boolean;
   children?: ReactNode;
 };
 
-export function PageHero({ image, alt, kicker, title, lede, caption, children }: Props) {
+export function PageHero({
+  image,
+  alt,
+  kicker,
+  title,
+  lede,
+  caption,
+  overlay,
+  children,
+}: Props) {
+  if (overlay) {
+    return (
+      <header className="page-hero page-hero-overlay">
+        <div className="cover-photo">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={image} alt={alt} />
+        </div>
+        <div className="cover-shade" aria-hidden="true" />
+        <div className="wrap cover-copy">
+          <p className="kicker">{kicker}</p>
+          <h1>{title}</h1>
+          {lede ? <p className="lede">{lede}</p> : null}
+          {children}
+          {caption ? <p className="photo-credit">{caption}</p> : null}
+        </div>
+      </header>
+    );
+  }
+
   return (
     <header className="page-hero">
       <Photo src={image} alt={alt} className="page-hero-media" priority />
