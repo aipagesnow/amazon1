@@ -164,6 +164,10 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(transparent, rgba(11, 16, 14, 0.78));
 }
 .cover-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .cover-shade {
@@ -283,7 +287,7 @@ img { max-width: 100%; display: block; }
   border-right: 1px solid rgba(212, 180, 58, 0.22);
 }
 .briefing article:last-child { border-right: 0; }
-.briefing h3 {
+.briefing h2 {
   font-family: var(--mono);
   font-size: 0.68rem;
   letter-spacing: 0.16em;
@@ -1038,9 +1042,9 @@ table.spec tr.spec-group th {
 }
 @media (max-width: 800px) {
   .pick-art, .pick-art-frame { min-height: 220px; }
-  .cover { min-height: 0; }
-  .page-hero-overlay { min-height: 0; }
-  .page-hero-overlay.tight-hero { min-height: 0; }
+  .cover { min-height: min(70svh, 640px); }
+  .page-hero-overlay { min-height: min(62svh, 560px); }
+  .page-hero-overlay.tight-hero { min-height: min(52svh, 480px); }
   .cover-copy {
     padding: 1.15rem 0 1.35rem;
   }

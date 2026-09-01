@@ -40,7 +40,14 @@ export default function HomePage() {
       <JsonLd data={websiteJsonLd()} />
       <section className="cover">
         <div className="cover-photo">
-          <SiteImage src={photos.cover} alt={photoAlt.cover} priority sizes="100vw" />
+          <SiteImage
+            src={photos.cover}
+            alt={photoAlt.cover}
+            priority
+            sizes="100vw"
+            width={1280}
+            height={720}
+          />
         </div>
         <div className="cover-shade" aria-hidden="true" />
         <div className="wrap cover-copy">
@@ -66,15 +73,15 @@ export default function HomePage() {
       <section className="briefing-bar" aria-label="How we compare bike locks">
         <div className="wrap briefing">
           <article>
-            <h3>Grade</h3>
+            <h2>Grade</h2>
             <p>Sold Secure Gold is what many UK cycle policies still ask for. Diamond is the higher grade. A cable in the box is usually not part of the approval.</p>
           </article>
           <article>
-            <h3>Fit</h3>
+            <h2>Fit</h2>
             <p>Mini D-locks do not fit every bike rack. Measure the stand plus your frame tube before you buy.</p>
           </article>
           <article>
-            <h3>Carry</h3>
+            <h2>Carry</h2>
             <p>If a lock is too heavy, you will leave it at home. Then it does not protect the bike at the station.</p>
           </article>
         </div>

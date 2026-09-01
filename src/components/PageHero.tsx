@@ -29,7 +29,14 @@ export function PageHero({
     return (
       <header className={`page-hero page-hero-overlay${tight ? " tight-hero" : ""}`}>
         <figure className="cover-photo">
-          <SiteImage src={image} alt={alt} priority sizes="100vw" />
+          <SiteImage
+            src={image}
+            alt={alt}
+            priority
+            sizes="100vw"
+            width={1280}
+            height={720}
+          />
           <div className="cover-shade" aria-hidden="true" />
           {caption ? <figcaption>{caption}</figcaption> : null}
         </figure>
