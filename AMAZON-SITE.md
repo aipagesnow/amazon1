@@ -64,7 +64,7 @@ Also state that the operator is not Amazon, and that prices and availability cha
 
 Home is an editorial front page, not a shop. Editor’s pick is the featured lock. One compact five-lock strip sits under the pick. The six-card catalogue lives only on `/reviews`. Do not add a second home catalogue or a “Six ways in” index.
 
-1. Masthead: site name, niche in a quiet line, no Amazon branding. Header: How to choose, Best of, Reviews, Compare, Commuting, About. Compare points at `/vs/evolution-mini-7-vs-d1000`. Commuting points at `/for/commuting`. Insurance and Methodology stay in the footer.
+1. Masthead: site name, niche in a quiet line, no Amazon branding. Header: How to choose, Best of, Reviews, About. Mini-7 vs D1000, commuting, insurance, and methodology stay in the footer.
 2. Full-bleed cover photograph with the opening line on the night street.
 3. H1, dek, then one-line Associate disclosure (under the H1), then cover CTAs: How to choose (primary) + Best of (text).
 4. Three briefing facts as one strip: grade, fit, carry.

@@ -45,10 +45,9 @@ Copy-pass things that must **stay** unless Chris says otherwise: magazine voice,
 
 Fill-in things that must **stay** unless Chris says otherwise:
 
-- Header: How to choose · Best of · Reviews · Compare · Commuting · About
-- Compare → `/vs/evolution-mini-7-vs-d1000` (not a `/compare` index; `/compare` 301s to `/best`)
-- Commuting → `/for/commuting`
-- Insurance and Methodology stay in the **footer**, not the header
+- Header: How to choose · Best of · Reviews · About
+- Mini-7 vs D1000, commuting, insurance, and methodology stay in the **footer**
+- `/compare` 301s to `/best`. Do not add a `/compare` index. Do not put Compare or Commuting back in the header.
 - Home: one compact five-lock strip under Editor’s pick (X1, Mini-7, D1000, 540, 1410). Name, grade, one-line stamp, Read the review, Amazon as **text**
 - Caption under the strip: Five we compared / Open the full table → `/best`
 - Also-reviewed line for the New York Mini
@@ -70,9 +69,9 @@ Fill-in things that must **stay** unless Chris says otherwise:
 | `/reviews/abus-granit-xplus-540` | Pedal Diamond stamp (powered is Gold) |
 | `/reviews/kryptonite-new-york-fahgettaboudit-mini` | Reviewed, not a commute pick |
 | `/reviews/kryptonite-new-york-fahgettaboudit-1410` | House chain |
-| `/vs/evolution-mini-7-vs-d1000` | Header Compare |
+| `/vs/evolution-mini-7-vs-d1000` | Footer (Mini-7 vs D1000) |
 | `/vs/d-lock-vs-chain` | Footer only |
-| `/for/commuting` | Header Commuting |
+| `/for/commuting` | Footer + home photo card |
 | `/for/insurance` | Footer + home photo card |
 | `/alternatives/kryptonite-new-york-fahgettaboudit-mini` | Footer chip, not in header |
 | `/method` | Footer, not in header |

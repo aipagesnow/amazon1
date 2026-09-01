@@ -16,6 +16,9 @@ export function SiteFooter() {
                 <Link href="/guide">How to choose</Link>
               </li>
               <li>
+                <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link>
+              </li>
+              <li>
                 <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>
               </li>
               <li>

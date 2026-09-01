@@ -63,7 +63,7 @@ They need an Amazon Associates account for amazon.co.uk. We do not transfer an A
 
 A UK product-discovery and comparison magazine that earns with Amazon Associates. Not a shop. Not Amazon. Editorial pages (how-to-choose, best-of, reviews, comparisons) that link out. Night-commute art direction (high-vis on dark, Source Serif 4) — not the getaipages / Mothership studio look.
 
-Header: How to choose · Best of · Reviews · Compare · Commuting · About. Compare is Mini-7 vs D1000. Insurance, methodology, and alternatives to the New York Mini sit in the footer.
+Header: How to choose · Best of · Reviews · About. Mini-7 vs D1000, commuting, insurance, methodology, and alternatives to the New York Mini sit in the footer.
 
 Traffic is expected to come from organic search over time. A brand-new site has no ranking or commission history unless the listing says otherwise with evidence.
 
