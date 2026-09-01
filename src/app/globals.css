@@ -117,12 +117,16 @@ img { max-width: 100%; display: block; }
   color: var(--hivis);
   border-bottom-color: var(--hivis);
 }
+.nav-desktop {
+  margin-left: auto;
+}
 .nav-details {
+  display: none;
   margin-left: auto;
 }
 .nav-details .nav { display: flex; }
 .nav-details summary.nav-toggle {
-  display: none;
+  display: inline-flex;
   list-style: none;
   cursor: pointer;
   font-family: var(--mono);
@@ -1007,7 +1011,8 @@ table.spec tr.spec-group th {
 @media (max-width: 980px) {
   .lock-board, .cards, .reviewed-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .lock-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .nav-details summary.nav-toggle { display: inline-flex; }
+  .nav-desktop { display: none; }
+  .nav-details { display: block; }
   .nav-details .nav {
     display: none;
     position: absolute;
