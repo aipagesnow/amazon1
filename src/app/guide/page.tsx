@@ -138,6 +138,7 @@ export default function GuidePage() {
         <div className="chooser" id="chooser">
           <h2>Which lock on this site fits your situation</h2>
           <p>These picks are from the locks reviewed on this site. It is not a shop filter.</p>
+          <div className="spec-scroll">
           <table className="spec">
             <thead>
               <tr>
@@ -186,6 +187,7 @@ export default function GuidePage() {
               </tr>
             </tbody>
           </table>
+          </div>
           <p>
             Full table: <Link href="/best">best bike locks UK</Link>. Comparison:{" "}
             <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs D1000</Link>.

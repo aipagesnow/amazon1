@@ -23,7 +23,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
 #disclosure, #privacy, #about, #chooser { scroll-margin-top: 5rem; }
-html, body { margin: 0; }
+html, body { margin: 0; max-width: 100%; overflow-x: clip; }
 body {
   background: var(--paper);
   color: var(--ink);
@@ -43,6 +43,7 @@ img { max-width: 100%; display: block; }
 
 .wrap {
   width: min(var(--wrap), calc(100% - 2.4rem));
+  max-width: 100%;
   margin-inline: auto;
 }
 .measure { max-width: var(--measure); }
@@ -173,10 +174,12 @@ img { max-width: 100%; display: block; }
     linear-gradient(0deg, rgba(11, 16, 14, 0.7) 0%, transparent 50%);
 }
 .hero-panel {
-  background: rgba(11, 16, 14, 0.82);
+  background: rgba(11, 16, 14, 0.88);
   padding: 1.35rem 1.5rem 1.45rem;
   border-left: 4px solid var(--hivis);
-  max-width: 38rem;
+  max-width: min(38rem, 100%);
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 .hero-panel h1 {
   color: #ffffff;
@@ -211,18 +214,20 @@ img { max-width: 100%; display: block; }
   position: relative;
   z-index: 3;
   padding: 4.2rem 0 3.4rem;
-  max-width: 40rem;
+  max-width: min(40rem, 100%);
+  min-width: 0;
 }
 .cover h1 {
   font-family: var(--serif);
-  font-size: clamp(2.6rem, 6.4vw, 4.4rem);
-  line-height: 0.98;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.15rem, 8vw, 4.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
   font-weight: 600;
   margin: 0 0 1.05rem;
-  max-width: 13ch;
+  max-width: 16ch;
   color: #f6f8f4;
   text-wrap: balance;
+  overflow-wrap: break-word;
 }
 .cover .lede {
   font-size: 1.18rem;
@@ -319,11 +324,12 @@ img { max-width: 100%; display: block; }
 }
 .page-hero-overlay .cover-copy {
   padding: 3.4rem 0 3.6rem;
-  max-width: 40rem;
+  max-width: min(40rem, 100%);
 }
 .page-hero-overlay h1 {
-  font-size: clamp(2.4rem, 5.6vw, 3.9rem);
-  max-width: 14ch;
+  font-size: clamp(1.85rem, 7vw, 3.9rem);
+  max-width: 18ch;
+  line-height: 1.12;
   margin: 0 0 0.85rem;
 }
 .page-hero-overlay .lede {
@@ -715,6 +721,8 @@ p { margin: 0 0 1rem; }
 
 .spec-scroll {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
   margin: 1rem 0 1.5rem;
 }
 table.spec {
@@ -1013,7 +1021,8 @@ table.spec tr.spec-group th {
     line-height: 1.35;
   }
   .feature-pair, .desk-toc, .vs-split, .review-top, .pick,
-  .spec-figures, .alt-grid, .review-nav, .fork-list, .footer-grid {
+  .spec-figures, .alt-grid, .review-nav, .fork-list, .footer-grid,
+  .who-each, .fold-block {
     grid-template-columns: 1fr;
   }
   .spec-figures > div { border-right: 0; border-bottom: 1px solid rgba(212, 180, 58, 0.22); }
@@ -1022,9 +1031,36 @@ table.spec tr.spec-group th {
 }
 @media (max-width: 800px) {
   .pick-art, .pick-art img { min-height: 220px; }
-  .cover { min-height: 64vh; }
-  .page-hero-overlay { min-height: min(62vh, 560px); }
-  .page-hero-overlay.tight-hero { min-height: min(52vh, 480px); }
+  .cover { min-height: 0; }
+  .page-hero-overlay { min-height: 0; }
+  .page-hero-overlay.tight-hero { min-height: 0; }
+  .cover-copy {
+    padding: 1.15rem 0 1.35rem;
+  }
+  .page-hero-overlay .cover-copy {
+    padding: 1.15rem 0 2.75rem;
+  }
+  .hero-panel {
+    padding: 1rem 1rem 1.1rem;
+    background: rgba(11, 16, 14, 0.92);
+  }
+  .cover h1,
+  .page-hero-overlay h1 {
+    max-width: none;
+    font-size: clamp(1.7rem, 7.4vw, 2.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.7rem;
+  }
+  .cover .lede,
+  .page-hero-overlay .lede,
+  .hero-panel .lede {
+    font-size: 1rem;
+  }
+  .cover-photo figcaption {
+    padding: 0.4rem 0.85rem 0.5rem;
+    font-size: 0.58rem;
+  }
 }
 @media (max-width: 720px) {
   .goodbad { grid-template-columns: 1fr; }
@@ -1033,6 +1069,18 @@ table.spec tr.spec-group th {
   .feature-story img { height: 180px; }
   .review-sticky { display: flex; }
   body:has(.review-sticky) { padding-bottom: 3.6rem; }
+  .briefing {
+    grid-template-columns: 1fr;
+  }
+  .briefing article {
+    padding: 0.85rem 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(212, 180, 58, 0.22);
+  }
+  .briefing article:last-child { border-bottom: 0; }
+  .briefing p { font-size: 0.92rem; line-height: 1.45; }
+  .start-here { font-size: 0.95rem; }
+  table.spec { min-width: 22rem; }
 }
 
 .amazon-text {

@@ -45,7 +45,7 @@ export default function HomePage() {
         <div className="cover-shade" aria-hidden="true" />
         <div className="wrap cover-copy">
           <div className="hero-panel">
-            <p className="cover-kicker">D-locks and chains · United Kingdom</p>
+            <p className="cover-kicker">D-locks and chains · UK</p>
             <h1>UK bike lock reviews and comparisons</h1>
             <p className="lede">
               We compare D-locks and chains on Sold Secure grade, insurance wording, and weight. The
