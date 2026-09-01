@@ -1,11 +1,11 @@
 # Lock Desk
 
-This folder is a **product-discovery and comparison publication** for **Lock Desk**. It earns with UK Amazon Associates. It is not a shop and not a second copy of Amazon.
+This folder is a **UK Amazon Associates review and comparison site** for **Lock Desk**. It earns with UK Amazon Associates. It is not a shop and not a second copy of Amazon.
 
 - Domain: `lockdesk.co.uk`
 - Slug: `lock-desk`
 - Niche: Bike locks (D-locks and chains)
-- Kind: Amazon UK review magazine (Flippa)
+- Kind: Amazon UK review site (Flippa)
 - Audience: UK commuters and cyclists who need a lock their insurer will accept and that they will still carry
 - Primary query: best bike lock UK
 - Angle: Sold Secure ratings, insurance, and what you will actually carry — not a shop of every cable lock
@@ -15,6 +15,10 @@ It is **not a shop**. Do not add a cart, checkout, inventory, or marketplace UI.
 The job is to become a site UK readers trust when they are deciding what to buy in this niche. Organic search is the traffic plan. Amazon links are the first (and, at launch, only) monetisation layer. Do not write thin doorway pages. Do not add extra URLs to look large.
 
 Build **one topical cluster** around the niche (pillar, best-of, reviews, two highest-intent comparisons, two use-cases). Follow `data/seo.json`. Unique editorial voice: verdict-led, The good / The bad / Best for / Skip it if. Never claim a hands-on test you did not do.
+
+## Website copy voice (locked)
+
+Write for a UK visitor scanning a phone, not for a novel reader. Short sentences. One idea each. Headlines name the job. No literary cadence, aphorisms, or chapter-hook H1s. Never read `HUMAN-AUTHOR-CRAFT.md` or anything in KDP-BOOKS while working in this folder.
 
 ## Skill
 

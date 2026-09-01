@@ -19,12 +19,12 @@ import { pageUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Bike lock reviews",
   description:
-    "Six UK D-lock and chain reviews from Lock Desk. Verdict first. Not hands-on lab tests. Not a shop.",
+    "Six UK D-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks. Not hands-on lab tests.",
   alternates: { canonical: pageUrl("/reviews") },
   openGraph: {
     title: "Bike lock reviews · Lock Desk",
     description:
-      "Six UK D-lock and chain reviews from Lock Desk. Verdict first. Not hands-on lab tests. Not a shop.",
+      "Six UK D-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks. Not hands-on lab tests.",
     url: pageUrl("/reviews"),
     images: [{ url: photos.pick, alt: photoAlt.pick }],
   },
@@ -32,19 +32,19 @@ export const metadata: Metadata = {
 
 const GROUPS = [
   {
-    title: "Diamond, on the bike",
+    title: "Sold Secure Diamond D-locks",
     blurb:
       "X1 (1.7 kg, pedal and powered Diamond, 101 × 197 mm); D1000 (1.9 kg, 92 × 155 mm, no mount); 540 (1.8 kg, 108 × 300 mm, pedal Diamond / powered Gold).",
     slugs: ["litelok-x1", "hiplok-d1000", "abus-granit-xplus-540"],
   },
   {
-    title: "Gold you’ll carry",
+    title: "Sold Secure Gold D-locks",
     blurb:
-      "Mini-7 (1.61 kg, mount, cable — cable is not Gold); New York Mini (2.06 kg, 18 mm, no mount).",
+      "Mini-7 (1.61 kg, mount, cable — the cable is not Gold); New York Mini (2.06 kg, 18 mm, no mount).",
     slugs: ["kryptonite-evolution-mini-7", "kryptonite-new-york-fahgettaboudit-mini"],
   },
   {
-    title: "House chain",
+    title: "Chain for home and extra length",
     blurb: "1410 (100 cm, 14 mm, 4.9 kg).",
     slugs: ["kryptonite-new-york-fahgettaboudit-1410"],
   },
@@ -74,8 +74,8 @@ export default function ReviewsIndexPage() {
         image={photos.pick}
         alt={photoAlt.pick}
         kicker="Reviews"
-        title="Six reviews. Verdict first."
-        lede="Six locks, Gold to Diamond, 1.61 kg to 4.9 kg. Each page says who it is for, who should skip it, and what we would change. We have not cut these open."
+        title="Bike lock reviews"
+        lede="Six D-locks and chains, from Sold Secure Gold to Diamond. Each review says who it is for, who should skip it, and the main drawbacks. These are not hands-on lab tests."
         caption={EDITORIAL_CREDIT}
         overlay
       >
@@ -83,8 +83,8 @@ export default function ReviewsIndexPage() {
       </PageHero>
       <article className="prose wrap tight">
         <p className="alt-chip">
-          Looking for something{" "}
-          <Link href={ALTERNATIVES_PATH}>instead of the New York Mini</Link>?
+          Looking for{" "}
+          <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>?
         </p>
         {GROUPS.map((group) => (
           <section className="card-group" key={group.title}>

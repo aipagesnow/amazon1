@@ -18,11 +18,12 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: `${site.name} — UK bike lock comparisons`,
   description:
-    "A small UK magazine on D-locks and chains. Sold Secure, insurance, and the lock you will still take to work. Not a shop.",
+    "Independent UK reviews of D-locks and chains. Sold Secure grades, insurance, and which lock you will actually carry. Not a shop.",
   alternates: { canonical: site.url },
   openGraph: {
     title: `${site.name} — UK bike lock comparisons`,
-    description: "Sold Secure, insurance, and the lock you will still carry. A UK magazine, not a shop.",
+    description:
+      "Sold Secure grades, insurance, and which lock you will actually carry. UK D-lock and chain comparisons. Not a shop.",
     url: site.url,
     images: [{ url: photos.cover, alt: photoAlt.cover }],
   },
@@ -45,10 +46,11 @@ export default function HomePage() {
         <div className="wrap cover-copy">
           <div className="hero-panel">
             <p className="cover-kicker">D-locks and chains · United Kingdom</p>
-            <h1>The lock you will still carry is the only lock that counts.</h1>
+            <h1>UK bike lock reviews and comparisons</h1>
             <p className="lede">
-              A UK magazine for people who need a Sold Secure grade their insurer will accept, and a
-              weight they will still take out of the house. Not a shop. Not a test lab.
+              We compare D-locks and chains on Sold Secure grade, insurance wording, and weight. The
+              aim is a lock your insurer will accept, and that you will still take to work. Not a
+              shop. Not a test lab.
             </p>
             <DisclosureStrip />
             <p className="cover-ctas">
@@ -61,19 +63,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="briefing-bar" aria-label="What this magazine is for">
+      <section className="briefing-bar" aria-label="How we compare bike locks">
         <div className="wrap briefing">
           <article>
             <h3>Grade</h3>
-            <p>Gold and Diamond are different Sold Secure grades. A cable in the box is usually not part of the approval.</p>
+            <p>Sold Secure Gold is what many UK cycle policies still ask for. Diamond is the higher grade. A cable in the box is usually not part of the approval.</p>
           </article>
           <article>
             <h3>Fit</h3>
-            <p>Mini shackles do not close on every Sheffield stand. Measure the post plus the frame tube before you buy.</p>
+            <p>Mini D-locks do not fit every bike rack. Measure the stand plus your frame tube before you buy.</p>
           </article>
           <article>
             <h3>Carry</h3>
-            <p>A Diamond lock under the desk is a Gold lock in real life. Weight is a security spec.</p>
+            <p>If a lock is too heavy, you will leave it at home. Then it does not protect the bike at the station.</p>
           </article>
         </div>
       </section>
@@ -93,17 +95,17 @@ export default function HomePage() {
             <h2>Editor’s pick</h2>
             <h3>{displayName(pick)}</h3>
             <p>
-              <strong>Why we like it.</strong> Pedal Diamond and powered Diamond, 1.7 kg, and a 101 ×
-              197 mm locking area. That is the overlap of “insurer will listen” and “you might take
-              it on the train.”
+              <strong>Why we like it.</strong> Sold Secure Diamond for pedal bikes and e-bikes, 1.7
+              kg, and a 101 × 197 mm locking area. High enough for many insurance policies, and
+              light enough that you might still take it on a commute.
             </p>
             <p>
-              <strong>Who it is for.</strong> A bike you would be sick to lose, parked in public,
-              when Gold feels thin.
+              <strong>Who it is for.</strong> Higher-value bikes parked in public, especially if
+              Gold is not enough for your policy.
             </p>
             <p>
-              <strong>What we’d change.</strong> Put a mount in the box. A Diamond lock that stays
-              under the desk is a Gold lock in real life.
+              <strong>What we’d change.</strong> Include a frame mount. Without one, some people
+              will not carry 1.7 kg every day.
             </p>
             <p>
               <strong>Best alternative.</strong>{" "}
@@ -135,12 +137,12 @@ export default function HomePage() {
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
             New York Fahgettaboudit Mini
           </Link>{" "}
-          — 18 mm Gold, 2.06 kg, no mount. Not a commute pick. Read the review.
+          — 18 mm Gold, 2.06 kg, no mount. Most commuters are better with the Evolution Mini-7.
         </p>
 
         <p className="folio">
-          <span>Use cases</span>
-          <span>Carry · claim</span>
+          <span>Guides</span>
+          <span>Commuting and insurance</span>
         </p>
         <div className="feature-pair">
           <Link href="/for/commuting" className="feature-story">
@@ -149,7 +151,7 @@ export default function HomePage() {
             <div className="copy">
               <p className="kicker">Commuting</p>
               <h3>Best bike lock for commuting</h3>
-              <p>If you will not carry it, it is not your commute lock.</p>
+              <p>Gold Mini with a mount, or Diamond if the bike is worth the extra weight.</p>
             </div>
           </Link>
           <Link href="/for/insurance" className="feature-story">
@@ -158,7 +160,7 @@ export default function HomePage() {
             <div className="copy">
               <p className="kicker">Insurance</p>
               <h3>Best bike lock for insurance</h3>
-              <p>Match the grade on the policy, then check the approved list.</p>
+              <p>Match the Sold Secure grade on your policy, then check the insurer’s approved list.</p>
             </div>
           </Link>
         </div>

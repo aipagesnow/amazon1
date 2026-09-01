@@ -12,9 +12,9 @@ import { pageUrl } from "@/lib/site";
 
 const HERO = "kryptonite-new-york-fahgettaboudit-mini";
 
-const TITLE = "Instead of the New York Mini";
+const TITLE = "Best alternatives to the Kryptonite New York Mini";
 const META =
-  "2.06 kg, no mount, 18 mm Gold. If that is too heavy or too small, carry the Evolution Mini-7, step to Diamond, or keep a New York chain at home.";
+  "The New York Mini is 2.06 kg, 18 mm Gold, with no mount. Better options: Evolution Mini-7 to carry, Litelok X1 for Diamond, or a New York chain at home.";
 
 const FAQS = [
   {
@@ -23,7 +23,7 @@ const FAQS = [
   },
   {
     q: "Is the Mini on the best-of page?",
-    a: "No. Five we would pick live on best bike locks UK. This Mini is reviewed because people type the name, not because we would commute with it.",
+    a: "No. The best-of page lists five locks we would pick. This Mini is reviewed because people search the name, not because we would commute with it.",
   },
 ];
 
@@ -70,8 +70,8 @@ export default async function AlternativesPage({ params }: Props) {
         image={photos.bannerThick}
         alt={photoAlt.bannerThick}
         kicker="Alternatives"
-        title="The New York Mini is famous. It is usually the wrong lock."
-        lede="The Fahgettaboudit Mini is an 18 mm Sold Secure Gold D-lock at 2.06 kg, with no mount and no cable on our records. People search it because of the name. Most of them need a lock they will carry, or Diamond, or a metre of chain by the door."
+        title="Best alternatives to the Kryptonite New York Mini"
+        lede="The Fahgettaboudit Mini is an 18 mm Sold Secure Gold D-lock at 2.06 kg, with no mount and no cable on our records. People search it because of the name. Most riders need a lock they will actually carry, a Diamond lock for insurance, or a long chain to leave at home."
         caption={EDITORIAL_CREDIT}
         overlay
         tight
@@ -80,10 +80,9 @@ export default async function AlternativesPage({ params }: Props) {
       </PageHero>
       <article className="prose wrap tight">
         <p>
-          Stay with it only if you want an 18 mm Gold Mini as a second lock on a heavy bike, and you
-          will not miss a mount or a cable. The review is{" "}
+          Keep the New York Mini only if you want an 18 mm Gold Mini as a second lock on a heavy
+          bike, and you do not need a mount or a cable. The review is{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">{displayName(hero)}</Link>.
-          There is no See on Amazon for this Mini on this page.
         </p>
         <p className="first-pick">
           First pick if you will carry a lock to work:{" "}
@@ -132,7 +131,7 @@ export default async function AlternativesPage({ params }: Props) {
                 {displayName(chain)}
               </Link>
             </h2>
-            <p>100 cm, 14 mm, 4.9 kg. A house lock, not a bag lock.</p>
+            <p>100 cm, 14 mm, 4.9 kg. A home lock, not a commute lock.</p>
             <p>
               <Link href="/reviews/kryptonite-new-york-fahgettaboudit-1410" className="primary-link">
                 Read the review
@@ -150,9 +149,10 @@ export default async function AlternativesPage({ params }: Props) {
               <p>
                 {faq.q === "Is the Mini on the best-of page?" ? (
                   <>
-                    No. Five we would pick live on{" "}
-                    <Link href="/best">best bike locks UK</Link>. This Mini is reviewed because
-                    people type the name, not because we would commute with it.
+                    No. The{" "}
+                    <Link href="/best">best bike locks UK</Link> page lists five locks we would
+                    pick. This Mini is reviewed because people search the name, not because we
+                    would commute with it.
                   </>
                 ) : (
                   faq.a

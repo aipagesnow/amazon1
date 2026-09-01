@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`,
   },
   description:
-    "Independent UK comparisons of D-locks and chains: Sold Secure ratings, insurance, and what you will actually carry. Not a shop.",
+    "Independent UK reviews of D-locks and chains. Sold Secure grades, insurance, and which lock you will actually carry. Not a shop.",
   openGraph: {
     siteName: site.name,
     locale: "en_GB",

@@ -10,11 +10,12 @@ import { pageUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "How to choose a bike lock",
   description:
-    "Sold Secure Gold vs Diamond, insurance lists, D-lock vs chain, and why a lock you will not carry is not a lock. UK English. Not a shop.",
+    "How to choose a bike lock in the UK: Sold Secure Gold vs Diamond, insurance lists, D-lock vs chain, and a weight you will actually carry.",
   alternates: { canonical: pageUrl("/guide") },
   openGraph: {
     title: "How to choose a bike lock · Lock Desk",
-    description: "Gold vs Diamond, insurance, fit, and a chooser for the locks on this site.",
+    description:
+      "Sold Secure Gold vs Diamond, insurance, fit, and which lock on this site suits which job.",
     url: pageUrl("/guide"),
     images: [{ url: photos.fit, alt: photoAlt.fit }],
   },
@@ -35,30 +36,30 @@ export default function GuidePage() {
         alt={photoAlt.fit}
         kicker="How to choose"
         title="How to choose a bike lock"
-        lede="Start with the policy, then the rack, then the weight you will actually take out of the house. Brand comes last."
+        lede="Start with your insurance policy, then check the lock will fit your rack, then pick a weight you will actually carry. Brand comes last."
         caption={EDITORIAL_CREDIT}
         overlay
       >
         <p className="kicker">Start here</p>
         <ol className="start-here">
-          <li>Policy first.</li>
-          <li>Then the rack.</li>
-          <li>Then the weight you will take out of the house.</li>
+          <li>Check the Sold Secure grade your policy asks for.</li>
+          <li>Measure the rack plus your frame.</li>
+          <li>Pick a weight you will take out of the house.</li>
         </ol>
         <p>
           <a href="#chooser" className="primary-link">
-            Jump to the chooser
+            Jump to which lock to pick
           </a>
         </p>
         <DisclosureStrip />
       </PageHero>
       <article className="prose wrap tight">
         <p>
-          This page should still help if every Amazon link vanished. Grades from Sold Secure.
-          Weights and sizes from the product records here. We have not run lab attacks.
+          This guide still works if every Amazon link disappeared. Grades come from Sold Secure.
+          Weights and sizes come from the product records on this site. We have not run lab tests.
         </p>
 
-        <h2>Sold Secure is not a vibe</h2>
+        <h2>What Sold Secure Gold and Diamond mean</h2>
         <p>
           Sold Secure is a UK test house owned by the Master Locksmiths Association. Bicycle locks
           are graded Bronze, Silver, Gold, and Diamond. There is a separate powered-cycle programme
@@ -67,8 +68,8 @@ export default function GuidePage() {
         </p>
         <p>
           Gold is still what a lot of UK household cycle insurance asks for. Diamond is the higher
-          pedal grade. Neither grade means “angle-grinder proof.” Diamond includes a tougher tool
-          set than Gold. Treat manufacturer “20× more resistant” lines as marketing unless an
+          pedal grade. Neither grade means angle-grinder proof. Diamond includes a tougher tool set
+          than Gold. Treat manufacturer “20× more resistant” lines as marketing unless an
           independent grade is on the lock.
         </p>
         <p>
@@ -76,24 +77,24 @@ export default function GuidePage() {
           not keep a live insurer list.
         </p>
 
-        <h2>The cable is usually not the lock</h2>
+        <h2>The cable is usually not Sold Secure graded</h2>
         <p>
           Plenty of Gold D-locks ship with a loop cable. On Kryptonite’s Mini-7 notes, that cable is
           not part of the Sold Secure approval. Use it for a quick-release wheel if you must. Do not
-          tell yourself you bought two Gold locks.
+          treat it as a second Gold lock.
         </p>
 
-        <h2>Fit is a security spec</h2>
+        <h2>Will the lock close on your rack?</h2>
         <p>
-          A Mini that will not close around the stand is a paperweight. Compare locking area (the
-          hole) with the post plus the frame tube. Longer shackles (the ABUS 540 here is
+          A Mini that will not close around the stand does not protect the bike. Compare locking
+          area (the hole) with the post plus the frame tube. Longer shackles (the ABUS 540 here is
           300 mm) close more easily and also give a thief more room for a tool. Tight Minis (the
           D1000 is 92 × 155 mm) are awkward on fat tyres and some cargo frames.
         </p>
 
-        <h2>Weight is a behaviour spec</h2>
+        <h2>Will you actually carry it?</h2>
         <p>
-          The lock you leave in the hall does not protect the bike at the station. On this site the
+          The lock you leave at home does not protect the bike at the station. On this site the
           Evolution Mini-7 is 1.61 kg with a mount; the Litelok X1 is 1.7 kg; the D1000 is 1.9 kg
           with no mount listed; the New York Mini is 2.06 kg with no mount; the New York 1410 chain
           is 4.9 kg. If you already skip 1.6 kg, do not buy 2 kg because the name sounds tougher.
@@ -101,13 +102,13 @@ export default function GuidePage() {
 
         <h2>D-lock or chain</h2>
         <p>
-          A D-lock is for a tight rack on a commute. A chain is for reach: home, a ground anchor,
-          two bikes, a post a Mini cannot hug.{" "}
-          <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> is the long version. Many careful
+          A D-lock is for a tight rack on a commute. A chain is for extra length: home, a ground
+          anchor, two bikes, or a post a Mini cannot close around.{" "}
+          <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> is the longer comparison. Many
           riders use both and only carry the D-lock.
         </p>
 
-        <h2>Who should ignore which spec</h2>
+        <h2>Which specs you can ignore</h2>
         <ul>
           <li>
             <strong>Ignore anti-grinder marketing</strong> if you park in sight for ten minutes and
@@ -122,11 +123,11 @@ export default function GuidePage() {
             only names pedal Gold.
           </li>
           <li>
-            <strong>Ignore a 4.9 kg chain</strong> as a commute plan. That is a house lock.
+            <strong>Ignore a 4.9 kg chain</strong> as a commute lock. That is a home lock.
           </li>
         </ul>
 
-        <h2>Mistakes we keep seeing</h2>
+        <h2>Common mistakes</h2>
         <ul>
           <li>Locking a wheel to the stand and leaving the frame open.</li>
           <li>Trusting a cable as if it were Gold.</li>
@@ -135,8 +136,8 @@ export default function GuidePage() {
         </ul>
 
         <div className="chooser" id="chooser">
-          <h2>Chooser — which of these is for you</h2>
-          <p>From the locks on this site only. Not a shop filter. Not a price quiz.</p>
+          <h2>Which lock on this site fits your situation</h2>
+          <p>These picks are from the locks reviewed on this site. It is not a shop filter.</p>
           <table className="spec">
             <thead>
               <tr>
@@ -181,12 +182,12 @@ export default function GuidePage() {
                     New York 1410 chain
                   </Link>
                 </td>
-                <td>100 cm, 4.9 kg. Not a bag lock.</td>
+                <td>100 cm, 4.9 kg. Not a commute lock.</td>
               </tr>
             </tbody>
           </table>
           <p>
-            Full table: <Link href="/best">best bike locks UK</Link>. Pair we see searched:{" "}
+            Full table: <Link href="/best">best bike locks UK</Link>. Comparison:{" "}
             <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs D1000</Link>.
           </p>
         </div>

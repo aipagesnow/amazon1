@@ -26,7 +26,7 @@ export function SiteHeader() {
         </Link>
         <details className="nav-details" ref={detailsRef}>
           <summary className="nav-toggle">Menu</summary>
-          <nav className="nav" aria-label="Magazine">
+          <nav className="nav" aria-label="Main">
             <Link href="/guide">How to choose</Link>
             <Link href="/best">Best of</Link>
             <Link href="/reviews">Reviews</Link>

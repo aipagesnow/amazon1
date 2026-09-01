@@ -155,6 +155,6 @@ export function specLine(product: Product): string[] {
 export function compareCell(product: Product, key: keyof ProductSpecs): string {
   const value = specValue(product, key);
   if (value) return value;
-  if (key === "soldSecurePowered") return "n/a on our records";
+  if (key === "soldSecurePowered") return "Not listed on our records";
   return "n/a";
 }

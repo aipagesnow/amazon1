@@ -38,7 +38,7 @@ export const photoAlt = {
 } as const;
 
 export const EDITORIAL_CREDIT =
-  "Editorial photograph of a generic lock or street. We have not photographed the named products in this magazine.";
+  "Editorial photograph of a generic lock or street. We have not photographed the named products on this site.";
 
 export function typePhoto(type?: string): { src: string; alt: string } {
   if ((type ?? "").toLowerCase().includes("chain")) {

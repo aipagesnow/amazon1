@@ -37,15 +37,15 @@ const PAIRS: Pair[] = [
     a: "kryptonite-evolution-mini-7",
     b: "hiplok-d1000",
     intro:
-      "The Gold commuter Mini versus the Diamond lock with the anti-grinder story. They are not rivals for the same rider.",
+      "This compares a Sold Secure Gold commute Mini with a Diamond D-lock sold as anti-grinder. They suit different riders.",
     whoEach: [
-      "Mini-7 is Gold you will carry: 1.61 kg, mount, cable.",
-      "D1000 is Diamond with a tight shackle: 1.9 kg, no mount, 92 × 155 mm.",
+      "The Mini-7 is Gold you will carry: 1.61 kg, a mount, and a cable.",
+      "The D1000 is Diamond with a tight shackle: 1.9 kg, no mount, 92 × 155 mm.",
     ],
     afterTable: [
-      "The Evolution Mini-7 is 1.61 kg, Gold, a frame mount, a cable in the box. The cable is not Gold. If that meets the policy, this is the lock that will actually be on the bike.",
-      "The D1000 is pedal and powered Diamond, sold as anti-grinder, 1.9 kg, no mount, a 92 × 155 mm hole. Worth it on a known-bad rack you have measured. If you will not carry 1.9 kg with no mount, it is a hall lock.",
-      "If neither shackle will close, look at the [ABUS 540](/reviews/abus-granit-xplus-540) — not a thicker Mini. If you wanted Diamond with a usable hole and 1.7 kg, that is the [Litelok X1](/reviews/litelok-x1), not this head-to-head.",
+      "The Evolution Mini-7 is 1.61 kg, Gold, a frame mount, and a cable in the box. The cable is not Gold. If that meets the policy, this is the lock that will actually be on the bike.",
+      "The D1000 is pedal and powered Diamond, sold as anti-grinder, 1.9 kg, no mount, and a 92 × 155 mm hole. Worth it on a known high-theft rack you have measured. If you will not carry 1.9 kg with no mount, it will stay at home.",
+      "If neither shackle will close, look at the [ABUS 540](/reviews/abus-granit-xplus-540) — not a thicker Mini. If you wanted Diamond with a usable hole and 1.7 kg, that is the [Litelok X1](/reviews/litelok-x1), not this comparison.",
     ],
     faqs: [
       {
@@ -65,17 +65,20 @@ const PAIRS: Pair[] = [
     slug: "d-lock-vs-chain",
     title: "D-lock vs chain lock",
     description:
-      "A Gold Mini D-lock versus a 100 cm New York chain. Carry versus reach. Using both is common; commuting with 4.9 kg is not.",
+      "A Gold Mini D-lock versus a 100 cm New York chain. Carry versus extra length. Using both is common; commuting with 4.9 kg is not.",
     a: "kryptonite-evolution-mini-7",
     b: "kryptonite-new-york-fahgettaboudit-1410",
     intro:
-      "A D-lock and a chain do different jobs. The Mini-7 is what you take on the bike. The New York 1410 is 4.9 kg of Gold chain for when the only solid object is too far for a Mini. Using both is common. Pretending the chain is a commute lock is how it stays in the shed.",
-    whoEach: ["Mini-7 is carry.", "1410 is reach at home."],
+      "A D-lock and a chain do different jobs. The Mini-7 is the lock you take on the bike. The New York 1410 is a 4.9 kg Gold chain for when a Mini cannot reach the only solid object. Using both is common. Commuting with the chain is not.",
+    whoEach: [
+      "The Mini-7 is for carrying on a commute.",
+      "The 1410 is for extra length at home.",
+    ],
     afterTable: [
-      "A D-lock hugs a rack. A chain buys length. That is the whole distinction.",
+      "A D-lock is for a tight rack. A chain is for extra length. That is the main difference.",
       "The Evolution Mini-7 is what you take on the bike: 1.61 kg, a mount, Gold. You will carry it. You will not carry 4.9 kg twice a day.",
-      "The New York 1410 is 100 cm of 14 mm Gold chain for a home, a garden, a ground anchor, or a post a Mini cannot hug. Leave it where the bike lives.",
-      "The mistake is treating these as rivals. Careful riders use both and only carry the D-lock. If the Mini will not close, neither of these is the answer — see the [ABUS 540](/reviews/abus-granit-xplus-540).",
+      "The New York 1410 is 100 cm of 14 mm Gold chain for a home, a garden, a ground anchor, or a post a Mini cannot close around. Leave it where the bike is stored.",
+      "These are not rivals. Careful riders use both and only carry the D-lock. If the Mini will not close, neither of these is the answer — see the [ABUS 540](/reviews/abus-granit-xplus-540).",
     ],
     faqs: [
       {
@@ -160,7 +163,7 @@ export default async function VsPage({ params }: Props) {
       <PageHero
         image={pair.slug === "d-lock-vs-chain" ? photos.vs : photos.bannerCommute}
         alt={pair.slug === "d-lock-vs-chain" ? photoAlt.vs : photoAlt.bannerCommute}
-        kicker="Head to head"
+        kicker="Comparison"
         title={pair.title}
         lede={pair.intro}
         caption={EDITORIAL_CREDIT}
@@ -185,10 +188,10 @@ export default async function VsPage({ params }: Props) {
             <RichText text={paragraph} />
           </p>
         ))}
-        <h2>The two locks</h2>
+        <h2>Read the reviews</h2>
         <div className="vs-split">
-          <ProductCol product={a} kicker="Lock A" />
-          <ProductCol product={b} kicker="Lock B" />
+          <ProductCol product={a} kicker={a.specs?.type ?? "Lock"} />
+          <ProductCol product={b} kicker={b.specs?.type ?? "Lock"} />
         </div>
         <h2>Common questions</h2>
         <div className="faq-list">

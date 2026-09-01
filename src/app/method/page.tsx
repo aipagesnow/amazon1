@@ -5,7 +5,7 @@ import { articleJsonLd } from "@/lib/jsonld";
 import { pageUrl, site } from "@/lib/site";
 
 const META =
-  "Lock Desk is desk research, not a test lab. Sold Secure grades, manufacturer specs, and UK insurance wording. We do not pretend we attacked these locks.";
+  "Lock Desk is desk research, not a test lab. Sold Secure grades, manufacturer specs, and UK insurance wording. We have not attacked these locks.";
 
 export const metadata: Metadata = {
   title: "How we research bike locks",
@@ -29,12 +29,12 @@ export default function MethodPage() {
         })}
       />
       <article className="prose wrap">
-        <p className="kicker">How we work</p>
+        <p className="kicker">Methodology</p>
         <h1>How we research bike locks</h1>
         <div className="method-box">
           <p>
-            Desk research. We have not cut these locks open. If a sentence would only be true
-            because we attacked a lock, we do not write it.
+            This is desk research, not a test lab. We have not cut these locks open. We only write
+            claims we can back with specs, Sold Secure grades, and manufacturer information.
           </p>
         </div>
 
@@ -49,9 +49,9 @@ export default function MethodPage() {
           </li>
         </ul>
         <p>
-          The verdict comes first, labelled Verdict: who it is for, and who should skip it. Then
-          Best for / Skip, The good, The bad, What we’d change, the spec sheet, alternatives from
-          the same set of locks, and Common questions. Every review links up to{" "}
+          Each review opens with a verdict: who it is for, and who should skip it. Then Best for /
+          Skip, The good, The bad, What we’d change, the spec sheet, alternatives from the same set
+          of locks, and Common questions. Every review links up to{" "}
           <Link href="/guide">how to choose a bike lock</Link> and across to other reviews.
         </p>
 
@@ -73,10 +73,10 @@ export default function MethodPage() {
           earn from qualifying purchases. Prices and stock are Amazon’s, on the day you click.
         </p>
 
-        <h2>What this means for you</h2>
+        <h2>Why this matters</h2>
         <p>
-          You should know what stands behind a verdict. We help a UK rider match Sold Secure grade,
-          fit, and carry — from facts we can stand behind.
+          A verdict here is our reading of the specs and grades, not a lab result. Use it to match
+          Sold Secure grade, fit, and carry to your bike, from facts we can stand behind.
         </p>
       </article>
     </>

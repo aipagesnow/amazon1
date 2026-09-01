@@ -104,7 +104,6 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
 
       <div className="wrap prose tight">
         <div className="desk-verdict">
-          <p className="kicker">Desk verdict</p>
           <h2>Verdict</h2>
           <p>{copy.verdict}</p>
           <SeeOnAmazon asin={product.asin} className="btn-amazon" />
@@ -175,10 +174,10 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         </p>
         <SpecTable product={product} />
 
-        <h2>If not this lock</h2>
+        <h2>Better alternatives</h2>
         <div className="alt-grid">
-          <AltCard slug={copy.altBest} why={copy.altBestWhy} kicker="Better if" />
-          <AltCard slug={copy.altSecond} why={copy.altSecondWhy} kicker="Or this, if" />
+          <AltCard slug={copy.altBest} why={copy.altBestWhy} kicker="Better alternative" />
+          <AltCard slug={copy.altSecond} why={copy.altSecondWhy} kicker="Also consider" />
         </div>
 
         {copy.relatedWell ? (
@@ -206,12 +205,12 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         <p>
           Start with <Link href="/guide">how to choose a bike lock</Link> if you have not measured
           the rack. Compare the set on <Link href="/best">best bike locks UK</Link>. Pair this
-          with <Link href={vsHref}>{vsLabel}</Link>. How we work:{" "}
+          with <Link href={vsHref}>{vsLabel}</Link>. How we research:{" "}
           <Link href="/method">methodology</Link>.
         </p>
 
         <div className="review-close">
-          <p>Different job. Read the review before Amazon.</p>
+          <p>Read the review before you click through to Amazon.</p>
           <Link href="/reviews" className="primary-link">
             All reviews
           </Link>
