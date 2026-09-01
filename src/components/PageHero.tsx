@@ -9,6 +9,7 @@ type Props = {
   lede?: string;
   caption?: string;
   overlay?: boolean;
+  tight?: boolean;
   children?: ReactNode;
 };
 
@@ -20,23 +21,24 @@ export function PageHero({
   lede,
   caption,
   overlay,
+  tight,
   children,
 }: Props) {
   if (overlay) {
     return (
-      <header className="page-hero page-hero-overlay">
-        <div className="cover-photo">
+      <header className={`page-hero page-hero-overlay${tight ? " tight-hero" : ""}`}>
+        <figure className="cover-photo">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={image} alt={alt} />
-        </div>
-        <div className="cover-shade" aria-hidden="true" />
+          <div className="cover-shade" aria-hidden="true" />
+          {caption ? <figcaption>{caption}</figcaption> : null}
+        </figure>
         <div className="wrap cover-copy">
           <div className="hero-panel">
             <p className="kicker">{kicker}</p>
             <h1>{title}</h1>
             {lede ? <p className="lede">{lede}</p> : null}
             {children}
-            {caption ? <p className="photo-credit">{caption}</p> : null}
           </div>
         </div>
       </header>
@@ -45,13 +47,12 @@ export function PageHero({
 
   return (
     <header className="page-hero">
-      <Photo src={image} alt={alt} className="page-hero-media" priority />
+      <Photo src={image} alt={alt} caption={caption} className="page-hero-media" priority />
       <div className="wrap page-hero-copy">
         <p className="kicker">{kicker}</p>
         <h1>{title}</h1>
         {lede ? <p className="lede">{lede}</p> : null}
         {children}
-        {caption ? <p className="photo-credit">{caption}</p> : null}
       </div>
     </header>
   );

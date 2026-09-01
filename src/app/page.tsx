@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
-import { LockTile } from "@/components/LockTile";
-import { ProductCard } from "@/components/ProductCard";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { websiteJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
@@ -13,7 +11,7 @@ import {
   EDITOR_PICK_ASIN,
   productByAsin,
   productBySlug,
-  REVIEW_SLUGS,
+  shortName,
 } from "@/lib/products";
 import { site } from "@/lib/site";
 
@@ -24,57 +22,16 @@ export const metadata: Metadata = {
   alternates: { canonical: site.url },
   openGraph: {
     title: `${site.name} — UK bike lock comparisons`,
-    description:
-      "Sold Secure ratings, insurance, and what you will actually carry. Editorial comparisons, not a product grid.",
+    description: "Sold Secure, insurance, and the lock you will still carry. A UK magazine, not a shop.",
     url: site.url,
     images: [{ url: photos.cover, alt: photoAlt.cover }],
   },
 };
 
-const DESK = [
-  {
-    n: "01",
-    href: "/best",
-    title: "Best bike locks UK",
-    blurb: "Five locks, compared on grade, weight, and whether the shackle will close.",
-  },
-  {
-    n: "02",
-    href: "/vs/evolution-mini-7-vs-d1000",
-    title: "Mini-7 vs D1000",
-    blurb: "Gold you will carry, or Diamond you might not.",
-  },
-  {
-    n: "03",
-    href: "/vs/d-lock-vs-chain",
-    title: "D-lock vs chain",
-    blurb: "A Mini on the bike versus a 4.9 kg chain by the door.",
-  },
-  {
-    n: "04",
-    href: "/guide",
-    title: "Sold Secure, insurance, fit",
-    blurb: "The pillar. Gold vs Diamond, why cables do not count, a chooser at the end.",
-  },
-  {
-    n: "05",
-    href: "/for/commuting",
-    title: "For commuting",
-    blurb: "If you will not carry it, it is not your commute lock.",
-  },
-  {
-    n: "06",
-    href: "/for/insurance",
-    title: "For insurance",
-    blurb: "Match the grade on the policy, then check the approved list.",
-  },
-] as const;
-
 export default function HomePage() {
   const pick = productByAsin(EDITOR_PICK_ASIN)!;
   const alt = productBySlug("hiplok-d1000")!;
-  const peek = REVIEW_SLUGS.map((slug) => productBySlug(slug)!).filter(Boolean).slice(0, 6);
-  const board = BEST_OF_ASINS.map((asin) => productByAsin(asin)!).filter(Boolean);
+  const five = BEST_OF_ASINS.map((asin) => productByAsin(asin)!).filter(Boolean);
 
   return (
     <>
@@ -87,12 +44,18 @@ export default function HomePage() {
         <div className="cover-shade" aria-hidden="true" />
         <div className="wrap cover-copy">
           <div className="hero-panel">
-            <DisclosureStrip />
             <p className="cover-kicker">D-locks and chains · United Kingdom</p>
             <h1>The lock you will still carry is the only lock that counts.</h1>
             <p className="lede">
-              A UK comparison magazine for commuters who need a Sold Secure grade their insurer will
-              accept — and a weight they will not leave in the hall. Not a shop. Not a test lab.
+              A UK magazine for people who need a Sold Secure grade their insurer will accept, and a
+              weight they will still take out of the house. Not a shop. Not a test lab.
+            </p>
+            <DisclosureStrip />
+            <p className="cover-ctas">
+              <Link href="/guide" className="primary-link">
+                How to choose
+              </Link>
+              <Link href="/best">Best of</Link>
             </p>
           </div>
         </div>
@@ -127,8 +90,8 @@ export default function HomePage() {
             <figcaption>{EDITORIAL_CREDIT}</figcaption>
           </figure>
           <div className="pick-copy">
-            <p className="kicker">We’d buy this one</p>
-            <h2>{displayName(pick)}</h2>
+            <h2>Editor’s pick</h2>
+            <h3>{displayName(pick)}</h3>
             <p>
               <strong>Why we like it.</strong> Pedal Diamond and powered Diamond, 1.7 kg, and a 101 ×
               197 mm locking area. That is the overlap of “insurer will listen” and “you might take
@@ -156,42 +119,24 @@ export default function HomePage() {
           </div>
         </section>
 
-        <p className="folio">
-          <span>This desk</span>
-          <span>Six ways in</span>
-        </p>
-        <nav className="desk-toc" aria-label="Magazine contents">
-          {DESK.map((item) => (
-            <Link key={item.n} href={item.href}>
-              <span className="num">{item.n}</span>
-              <span>
-                <h3>{item.title}</h3>
-                <p>{item.blurb}</p>
-              </span>
-            </Link>
+        <p className="five-line">
+          <strong>Five we compared.</strong>{" "}
+          {five.map((product, i) => (
+            <span key={product.asin}>
+              {i > 0 ? " · " : ""}
+              {shortName(product)}
+            </span>
           ))}
-        </nav>
-
-        <div className="section-head">
-          <div>
-            <p className="kicker">Best of</p>
-            <h2>
-              <Link href="/best">Five we compared</Link>
-            </h2>
-          </div>
-          <Link href="/best" className="primary-link">
-            Open the full table
-          </Link>
-        </div>
-        <p className="measure">
-          Compared on Sold Secure pedal grade, weight, and locking area. No “number one for
-          everyone.” No frozen prices.
+          .{" "}
+          <Link href="/best">Open the full table</Link>
         </p>
-        <div className="lock-board">
-          {board.map((product) => (
-            <LockTile key={product.asin} product={product} />
-          ))}
-        </div>
+        <p className="also-reviewed">
+          Also reviewed: the{" "}
+          <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
+            New York Fahgettaboudit Mini
+          </Link>{" "}
+          — 18 mm Gold, 2.06 kg, no mount. Not a commute pick. Read the review.
+        </p>
 
         <p className="folio">
           <span>Use cases</span>
@@ -217,20 +162,6 @@ export default function HomePage() {
             </div>
           </Link>
         </div>
-
-        <section>
-          <p className="kicker">Catalogue</p>
-          <h2>Reviewed on this desk</h2>
-          <p className="measure">
-            Six full reviews. Two more locks appear on the best-of table as context — we did not
-            invent extra review pages to look larger.
-          </p>
-          <div className="reviewed-list">
-            {peek.map((product) => (
-              <ProductCard key={product.asin} product={product} />
-            ))}
-          </div>
-        </section>
       </div>
     </>
   );

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
-import { LockTile } from "@/components/LockTile";
 import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
+import { GHOST_NOTE_SHORT } from "@/content/editorial";
 import { articleJsonLd, itemListJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
@@ -24,7 +24,8 @@ export const metadata: Metadata = {
   alternates: { canonical: pageUrl("/best") },
   openGraph: {
     title: "Best bike locks UK · Lock Desk",
-    description: "Sold Secure, weight, and fit — not a 50-product shop grid.",
+    description:
+      "Five D-locks and chains compared on Sold Secure grade, weight, and locking area. No number one for everyone.",
     url: pageUrl("/best"),
     images: [{ url: photos.cover, alt: photoAlt.cover }],
   },
@@ -32,24 +33,24 @@ export const metadata: Metadata = {
 
 const verdicts: Record<string, { bestFor: string; caveat: string }> = {
   B0BLT59NFJ: {
-    bestFor: "Most people who will carry Diamond",
-    caveat: "Mount not in the box on this listing",
+    bestFor: "Diamond you will still carry (pedal and powered).",
+    caveat: "Mount not in the box on this listing.",
   },
   B074K6KSY5: {
-    bestFor: "Gold commute with a cable and a bracket",
-    caveat: "Cable is not Sold Secure approved",
+    bestFor: "Gold commute with a cable and a bracket.",
+    caveat: "Cable is not Sold Secure approved.",
   },
   B0D77XJR4Z: {
-    bestFor: "High-theft racks you have measured",
-    caveat: "92 × 155 mm shackle is tight; no mount listed",
+    bestFor: "High-theft racks you have measured.",
+    caveat: "92 × 155 mm shackle is tight; no mount listed.",
   },
   B0944HG7MK: {
-    bestFor: "When a Mini will not close",
-    caveat: "Powered Sold Secure is Gold, not Diamond",
+    bestFor: "When a Mini will not close.",
+    caveat: "Powered Sold Secure is Gold, not Diamond.",
   },
   B073W8N26F: {
-    bestFor: "Length at home, not in a backpack",
-    caveat: "4.9 kg",
+    bestFor: "Length at home, not in a backpack.",
+    caveat: "4.9 kg. Not a commute lock.",
   },
 };
 
@@ -77,78 +78,21 @@ export default function BestPage() {
         image={photos.cover}
         alt={photoAlt.cover}
         kicker="Best of"
-        title="Best bike locks UK"
-        lede="Five locks. Criteria: Sold Secure pedal grade, whether we think you will carry it, and whether the shackle will close. Not number one for everyone."
+        title="Five locks. Not one winner."
+        lede="Five we would pick. A sixth reviewed lock is the Mini we would not commute with. Criteria: Sold Secure pedal grade, whether you will carry it, and whether the shackle will close. Not number one for everyone."
         caption={EDITORIAL_CREDIT}
         overlay
       >
         <DisclosureStrip />
       </PageHero>
       <article className="prose wrap tight">
-        <p>
-          We wrote six full reviews. The OnGuard Pitbulls and the Hiplok DX1000 are real products;
-          they sit in the catalogue as context and do not get their own review pages yet. Prices
-          change on Amazon; we do not print them.
-        </p>
+        <aside className="ghost-note">
+          <p className="kicker">Not reviewed yet</p>
+          <p>{GHOST_NOTE_SHORT}</p>
+        </aside>
 
-        <div className="lock-board">
-          {rows.map((p) => (
-            <LockTile
-              key={p.asin}
-              product={p}
-              bestFor={verdicts[p.asin]?.bestFor}
-              caveat={verdicts[p.asin]?.caveat}
-            />
-          ))}
-        </div>
-
-        <h2>The workshop sheet</h2>
-        <p>
-          Same five, as a table, if you are comparing locking area and grade in one glance.
-        </p>
-        <div className="spec-scroll">
-        <table className="spec">
-          <thead>
-            <tr>
-              <th>Lock</th>
-              <th>Type</th>
-              <th>Sold Secure (pedal)</th>
-              <th>Weight</th>
-              <th>Locking area / length</th>
-              <th>Best for</th>
-              <th>Caveat</th>
-              <th> </th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((p) => {
-              const href = reviewHref(p);
-              const extra = verdicts[p.asin];
-              return (
-                <tr key={p.asin}>
-                  <td>
-                    {href ? <Link href={href}>{displayName(p)}</Link> : displayName(p)}
-                  </td>
-                  <td>{specValue(p, "type") ?? "—"}</td>
-                  <td>{specValue(p, "soldSecurePedal") ?? "—"}</td>
-                  <td>{specValue(p, "weightKg") ?? "—"}</td>
-                  <td>
-                    {specValue(p, "lockingArea") ?? specValue(p, "lockingLength") ?? "—"}
-                  </td>
-                  <td>{extra?.bestFor}</td>
-                  <td>{extra?.caveat}</td>
-                  <td>
-                    <SeeOnAmazon asin={p.asin} className="see-on-amazon" />
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-        </div>
-
-        <div className="chooser">
-          <h2>Chooser</h2>
+        <div className="chooser" id="chooser">
+          <h2>Start here — pick your case</h2>
           <ul>
             <li>
               Carry Diamond on an insured bike:{" "}
@@ -170,11 +114,60 @@ export default function BestPage() {
               <Link href="/reviews/kryptonite-new-york-fahgettaboudit-1410">New York 1410</Link>.
             </li>
           </ul>
+          <p>
+            How we picked the grades: <Link href="/guide">how to choose</Link> ·{" "}
+            <Link href="/method">methodology</Link>.
+          </p>
         </div>
-        <p>
-          How we picked the grades: <Link href="/guide">how to choose</Link> ·{" "}
-          <Link href="/method">methodology</Link>.
-        </p>
+
+        <h2>Spec sheet</h2>
+        <div className="spec-scroll">
+          <table className="spec">
+            <caption>D-locks first, then the house chain. Weights from our records.</caption>
+            <thead>
+              <tr>
+                <th>Lock</th>
+                <th>Sold Secure</th>
+                <th>Weight</th>
+                <th>Locking area</th>
+                <th>Best for</th>
+                <th>Caveat</th>
+                <th>Review</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((p) => {
+                const href = reviewHref(p);
+                const extra = verdicts[p.asin];
+                return (
+                  <tr key={p.asin}>
+                    <td>
+                      <span className="kicker">{specValue(p, "type") ?? "Lock"}</span>
+                      <br />
+                      {href ? <Link href={href}>{displayName(p)}</Link> : displayName(p)}
+                    </td>
+                    <td>{specValue(p, "soldSecurePedal") ?? "n/a"}</td>
+                    <td>{specValue(p, "weightKg") ?? "n/a"}</td>
+                    <td>
+                      {specValue(p, "lockingArea") ?? specValue(p, "lockingLength") ?? "n/a"}
+                    </td>
+                    <td>{extra?.bestFor}</td>
+                    <td>{extra?.caveat}</td>
+                    <td>
+                      {href ? (
+                        <Link href={href} className="primary-link">
+                          Read the review
+                        </Link>
+                      ) : null}
+                      <br />
+                      <SeeOnAmazon asin={p.asin} variant="text" />
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       </article>
     </>
   );

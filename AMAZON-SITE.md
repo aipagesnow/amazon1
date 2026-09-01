@@ -62,23 +62,21 @@ Also state that the operator is not Amazon, and that prices and availability cha
 
 ## Home (hub)
 
-Home is an editorial front page, not a product grid.
+Home is an editorial front page, not a product grid. Editor’s pick is the only lock tile on the cover. The six-card catalogue lives only on `/reviews`.
 
-1. Masthead: site name, niche in a quiet line, no Amazon branding.
+1. Masthead: site name, niche in a quiet line, no Amazon branding. Header: How to choose, Best of, Reviews, Mini-7 vs D1000, About.
 2. Full-bleed cover photograph with the opening line on the night street.
-3. Disclosure strip.
-4. Three briefing facts: grade, fit, carry.
-5. **Editor’s pick** — one product, verdict-led:
-   - Why we like it
-   - Who it is for
-   - What we’d change
+3. H1, dek, then one-line Associate disclosure (under the H1), then cover CTAs: How to choose (primary) + Best of (text).
+4. Three briefing facts as one strip: grade, fit, carry.
+5. **Editor’s pick** — the only product tile:
+   - H2 Editor’s pick, product name as H3
+   - Why we like it / Who it is for / What we’d change
    - Best alternative (link to that review)
-   - See on Amazon (secondary; primary click is the review)
-6. Numbered desk contents (best-of, two vs, guide, two use-cases).
-7. Five-from-the-slice board (weight as a giant figure, grade stamp) linking to the full table.
-8. Two photographic use-case features.
-9. Catalogue peek: six review entries. **See on Amazon** is secondary on the card.
-10. Footer: About, methodology, disclosure, privacy, contact.
+   - Read the review + See on Amazon
+   - Editorial photograph with the same caption as review pages
+6. Five we compared as a text line to `/best` (not a tile strip). One also-reviewed line for the New York Mini.
+7. Two photographic use-case features (commuting, insurance). No spec chips, no Amazon on the home versions.
+8. Footer in three groups: Guides, Reviews (including Instead of the New York Mini), About this desk.
 
 ## Catalogue cards
 
@@ -88,8 +86,8 @@ Each card:
 - Brand and category
 - Sold Secure stamp
 - One-line editorial hook (from the review, not from Amazon)
-- Link to the review (primary)
-- **See on Amazon** (secondary, `rel="nofollow sponsored"`)
+- Link to the review (primary, styled **Read the review**)
+- **See on Amazon** as a text link on listing pages (`rel="nofollow sponsored"`)
 
 No star widgets invented from nothing. No scraped price. No fake product shot of that ASIN.
 
@@ -99,19 +97,20 @@ Recipe, in this order:
 
 1. Title, brand, ASIN in small type (ASIN is a fact, not decoration). Grade stamp. Editorial type photograph with a caption that it is not this model.
 2. Disclosure strip if this is the first link context.
-3. **Desk verdict** — first, not after a thousand words. Answers “is it worth it?” here. No second URL for that question.
-4. **Best for / Skip it if**
-5. **The good**
-6. **The bad** — required, at least two honest ones.
-7. **What we’d change**
-8. **Specs** from the slice. If a spec is missing, omit it. Do not invent it.
-9. **Best alternative** from the same slice, with who should pick it instead, plus one more alternative, with links to those reviews.
-10. **FAQ**
-11. Closing **See on Amazon**
+3. **Verdict** — first, under the job-line. The subject lock’s **See on Amazon** sits under that verdict. No second URL for “is it worth it?”
+4. Spec figures, then **Best for / Skip it if**
+5. Body with short subheads over existing paragraphs
+6. **The good**
+7. **The bad** — required, at least two honest ones.
+8. **What we’d change**
+9. **Spec sheet** grouped as Grade / Size & weight / In the box. If a spec is missing, omit it. Do not invent it.
+10. **Better if** alternatives from the same set, after the subject Amazon button
+11. **Common questions**
+12. Closer: Different job. Read the review before Amazon.
 
 ## Best-of
 
-One page. Photographic opener, then a five-lock board, then a real table: product, comparable specs from the slice, best for, main caveat, link to review, See on Amazon. Five rows from the slice (or every product if fewer). A short intro explains the criteria. No “number one for everyone” theatre.
+One page. Photographic opener, then a chooser, then a real table: product, comparable specs from the records, best for, main caveat, Read the review, Amazon as a text link. Five rows. No five-card board duplicating the table. A short intro explains the criteria. No “number one for everyone” theatre.
 
 Never add Price or Amazon rating columns. Omit a spec column when the slice does not have it.
 

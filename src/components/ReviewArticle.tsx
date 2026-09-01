@@ -2,6 +2,7 @@ import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { GradeStamp } from "@/components/GradeStamp";
 import { PageHero } from "@/components/PageHero";
+import { RichText } from "@/components/RichText";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { SpecFigures, SpecTable } from "@/components/SpecTable";
 import { ReviewCopy } from "@/content/editorial";
@@ -30,7 +31,7 @@ function AltCard({ slug, why, kicker }: { slug: string; why: string; kicker: str
           </Link>
         </p>
       ) : (
-        <p className="meta">In the comparison set; no full review yet.</p>
+        <p className="meta">On our records; no full review yet.</p>
       )}
       <SeeOnAmazon asin={product.asin} className="see-on-amazon" />
     </article>
@@ -76,6 +77,12 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
       ? "/vs/evolution-mini-7-vs-d1000"
       : "/vs/d-lock-vs-chain";
   const vsLabel = vsHref === "/vs/d-lock-vs-chain" ? "D-lock vs chain" : "Mini-7 vs D1000";
+  const lead = copy.body[0];
+  const headed = copy.subheads.map((heading, i) => ({
+    heading,
+    text: copy.body[i + 1],
+  }));
+  const rest = copy.body.slice(copy.subheads.length + 1);
 
   return (
     <article>
@@ -89,20 +96,21 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         overlay
       >
         <p className="stamp-row">
-          <GradeStamp grade={product.specs?.soldSecurePedal} />
+          <GradeStamp grade={product.specs?.soldSecurePedal} label={copy.stamp} />
         </p>
         <p className="job-line">{copy.job}</p>
         <DisclosureStrip />
       </PageHero>
 
       <div className="wrap prose tight">
-        <SpecFigures product={product} />
-
         <div className="desk-verdict">
           <p className="kicker">Desk verdict</p>
-          <h2>Is it worth it?</h2>
+          <h2>Verdict</h2>
           <p>{copy.verdict}</p>
+          <SeeOnAmazon asin={product.asin} className="btn-amazon" />
         </div>
+
+        <SpecFigures product={product} />
 
         <div className="grid-2">
           <div className="panel">
@@ -123,7 +131,16 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
           </div>
         </div>
 
-        {copy.body.map((paragraph) => (
+        {lead ? <p>{lead}</p> : null}
+        {headed.map((section) =>
+          section.text ? (
+            <section key={section.heading}>
+              <h3>{section.heading}</h3>
+              <p>{section.text}</p>
+            </section>
+          ) : null,
+        )}
+        {rest.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
 
@@ -151,7 +168,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
           <p>{copy.change}</p>
         </div>
 
-        <h2>The workshop sheet</h2>
+        <h2>Spec sheet</h2>
         <p>
           Figures from our records only. If a number is missing, we omit it rather than guess. ASIN{" "}
           {product.asin} is the UK listing this page is about.
@@ -159,18 +176,29 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         <SpecTable product={product} />
 
         <h2>If not this lock</h2>
-        <p>Same magazine. Different job. Read the review before the Amazon button.</p>
         <div className="alt-grid">
-          <AltCard slug={copy.altBest} why={copy.altBestWhy} kicker="Buy this instead if" />
+          <AltCard slug={copy.altBest} why={copy.altBestWhy} kicker="Better if" />
           <AltCard slug={copy.altSecond} why={copy.altSecondWhy} kicker="Or this, if" />
         </div>
 
-        <h2>Questions we keep getting</h2>
+        {copy.relatedWell ? (
+          <aside className="chooser">
+            <p className="kicker">Related</p>
+            <h3>
+              <Link href={copy.relatedWell.href}>{copy.relatedWell.title}</Link>
+            </h3>
+            <p>{copy.relatedWell.blurb}</p>
+          </aside>
+        ) : null}
+
+        <h2>Common questions</h2>
         <div className="faq-list">
           {copy.faqs.map((faq) => (
             <div className="faq-item" key={faq.q}>
               <h3>{faq.q}</h3>
-              <p>{faq.a}</p>
+              <p>
+                <RichText text={faq.a} />
+              </p>
             </div>
           ))}
         </div>
@@ -183,17 +211,20 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         </p>
 
         <div className="review-close">
-          <p>
-            Desk research, not a test lab. Grades come from Sold Secure; weights and sizes come
-            from our records. Prices change on Amazon — we do not print them.
-          </p>
-          <SeeOnAmazon asin={product.asin} className="btn-amazon" />
+          <p>Different job. Read the review before Amazon.</p>
           <Link href="/reviews" className="primary-link">
             All reviews
           </Link>
         </div>
 
         <ReviewNav slug={product.slug} />
+      </div>
+
+      <div className="review-sticky">
+        <span className="sticky-name">{displayName(product)}</span>
+        <GradeStamp grade={product.specs?.soldSecurePedal} label={copy.stamp} />
+        <SeeOnAmazon asin={product.asin} className="btn-amazon" />
+        <span className="sticky-aff">affiliate</span>
       </div>
     </article>
   );

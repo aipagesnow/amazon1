@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const copy = reviewCopy[slug];
   if (!product || !copy) return {};
   const title = `${displayName(product)} review`;
-  const description = copy.verdict.slice(0, 158);
+  const description = copy.meta;
   const url = pageUrl(`/reviews/${product.slug}`);
   const banner = reviewBanner(product.slug);
   return {
@@ -49,7 +49,7 @@ export default async function ReviewPage({ params }: Props) {
         data={[
           articleJsonLd({
             title,
-            description: copy.verdict,
+            description: copy.meta,
             path: `/reviews/${product.slug}`,
           }),
           faqJsonLd(copy.faqs),

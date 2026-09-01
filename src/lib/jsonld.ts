@@ -1,5 +1,5 @@
-import { amazonUrl } from "@/lib/amazon";
 import { Product } from "@/lib/products";
+import { stripLinks } from "@/lib/rich";
 import { pageUrl, site } from "@/lib/site";
 
 export function websiteJsonLd() {
@@ -42,7 +42,7 @@ export function faqJsonLd(faqs: { q: string; a: string }[]) {
     mainEntity: faqs.map((item) => ({
       "@type": "Question",
       name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a },
+      acceptedAnswer: { "@type": "Answer", text: stripLinks(item.a) },
     })),
   };
 }
@@ -68,9 +68,5 @@ export function productJsonLd(product: Product) {
     brand: { "@type": "Brand", name: product.brand },
     sku: product.asin,
     mpn: product.asin,
-    offers: {
-      "@type": "Offer",
-      url: amazonUrl(product.asin),
-    },
   };
 }

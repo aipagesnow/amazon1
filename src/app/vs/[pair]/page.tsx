@@ -4,12 +4,15 @@ import { notFound } from "next/navigation";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
+import { RichText } from "@/components/RichText";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { CompareTable } from "@/components/SpecTable";
-import { articleJsonLd } from "@/lib/jsonld";
+import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { displayName, Product, productBySlug, reviewHref } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
+
+type Faq = { q: string; a: string };
 
 type Pair = {
   slug: string;
@@ -18,8 +21,11 @@ type Pair = {
   a: string;
   b: string;
   intro: string;
-  winnerFor: { product: string; reader: string; why: string };
-  otherFor: { product: string; reader: string; why: string };
+  whoEach: [string, string];
+  afterTable: string[];
+  faqs: Faq[];
+  leadWithAntiGrinder?: boolean;
+  tableNote?: string;
 };
 
 const PAIRS: Pair[] = [
@@ -27,41 +33,60 @@ const PAIRS: Pair[] = [
     slug: "evolution-mini-7-vs-d1000",
     title: "Kryptonite Evolution Mini-7 vs Hiplok D1000",
     description:
-      "Gold Mini with a cable versus a Diamond anti-grinder D-lock. Who each is for, from our UK slice.",
+      "Gold Mini with a cable versus a Diamond anti-grinder D-lock. Who each is for, and who should skip both for the X1.",
     a: "kryptonite-evolution-mini-7",
     b: "hiplok-d1000",
     intro:
-      "This is the search we keep seeing: the Gold commuter Mini versus the Diamond lock with the anti-grinder story. They are not rivals for the same rider. One is the lock you will carry. The other is the lock you buy when the street is ugly and the policy is fussy.",
-    winnerFor: {
-      product: "kryptonite-evolution-mini-7",
-      reader: "a weekday commuter whose policy names Gold",
-      why: "1.61 kg, frame mount, cable in the box. You will take it. The cable is not Gold.",
-    },
-    otherFor: {
-      product: "hiplok-d1000",
-      reader: "someone parking a high-value bike on a known-bad rack, who has measured 92 × 155 mm",
-      why: "Pedal and powered Diamond, sold as anti-grinder. Heavier, no mount, tight shackle.",
-    },
+      "The Gold commuter Mini versus the Diamond lock with the anti-grinder story. They are not rivals for the same rider.",
+    whoEach: [
+      "Mini-7 is Gold you will carry: 1.61 kg, mount, cable.",
+      "D1000 is Diamond with a tight shackle: 1.9 kg, no mount, 92 × 155 mm.",
+    ],
+    afterTable: [
+      "The Evolution Mini-7 is 1.61 kg, Gold, a frame mount, a cable in the box. The cable is not Gold. If that meets the policy, this is the lock that will actually be on the bike.",
+      "The D1000 is pedal and powered Diamond, sold as anti-grinder, 1.9 kg, no mount, a 92 × 155 mm hole. Worth it on a known-bad rack you have measured. If you will not carry 1.9 kg with no mount, it is a hall lock.",
+      "If neither shackle will close, look at the [ABUS 540](/reviews/abus-granit-xplus-540) — not a thicker Mini. If you wanted Diamond with a usable hole and 1.7 kg, that is the [Litelok X1](/reviews/litelok-x1), not this head-to-head.",
+    ],
+    faqs: [
+      {
+        q: "Gold or Diamond for this street?",
+        a: "Gold is what many UK household policies still name. Diamond is the higher pedal grade. Read the wording you signed. We are not your broker.",
+      },
+      {
+        q: "D1000 or DX1000?",
+        a: "D1000 is 92 × 155 mm, 1.9 kg. DX1000 is 112 × 205 mm, 2.75 kg and has no full review on this site yet. Buy the one that closes.",
+      },
+    ],
+    leadWithAntiGrinder: true,
+    tableNote:
+      "Sold as angle-grinder resistant is manufacturer language. Independent grade on the D1000 is Diamond; cut-times are marketing.",
   },
   {
     slug: "d-lock-vs-chain",
     title: "D-lock vs chain lock",
     description:
-      "A Gold Mini D-lock versus a 100 cm New York chain. Carry versus reach, from our UK slice.",
+      "A Gold Mini D-lock versus a 100 cm New York chain. Carry versus reach. Using both is common; commuting with 4.9 kg is not.",
     a: "kryptonite-evolution-mini-7",
     b: "kryptonite-new-york-fahgettaboudit-1410",
     intro:
       "A D-lock and a chain do different jobs. The Mini-7 is what you take on the bike. The New York 1410 is 4.9 kg of Gold chain for when the only solid object is too far for a Mini. Using both is common. Pretending the chain is a commute lock is how it stays in the shed.",
-    winnerFor: {
-      product: "kryptonite-evolution-mini-7",
-      reader: "anyone locking to a rack they can hug with a Mini",
-      why: "You will carry 1.61 kg. You will not carry 4.9 kg twice a day.",
-    },
-    otherFor: {
-      product: "kryptonite-new-york-fahgettaboudit-1410",
-      reader: "home, a ground anchor, or a post a D-lock cannot reach",
-      why: "100 cm of 14 mm chain. Leave it where the bike lives.",
-    },
+    whoEach: ["Mini-7 is carry.", "1410 is reach at home."],
+    afterTable: [
+      "A D-lock hugs a rack. A chain buys length. That is the whole distinction.",
+      "The Evolution Mini-7 is what you take on the bike: 1.61 kg, a mount, Gold. You will carry it. You will not carry 4.9 kg twice a day.",
+      "The New York 1410 is 100 cm of 14 mm Gold chain for a home, a garden, a ground anchor, or a post a Mini cannot hug. Leave it where the bike lives.",
+      "The mistake is treating these as rivals. Careful riders use both and only carry the D-lock. If the Mini will not close, neither of these is the answer — see the [ABUS 540](/reviews/abus-granit-xplus-540).",
+    ],
+    faqs: [
+      {
+        q: "Can I commute with the 1410?",
+        a: "Not twice a day. 4.9 kg stays by the door.",
+      },
+      {
+        q: "Does looping the chain twice make it Diamond?",
+        a: "No. It can reduce slack. It does not change the Sold Secure grade, and it does not turn a lamp-post into an approved anchor.",
+      },
+    ],
   },
 ];
 
@@ -95,13 +120,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-function ProductCol({
-  product,
-  kicker,
-}: {
-  product: Product;
-  kicker: string;
-}) {
+function ProductCol({ product, kicker }: { product: Product; kicker: string }) {
   const href = reviewHref(product);
   return (
     <div className="vs-col">
@@ -109,7 +128,9 @@ function ProductCol({
       <h3>{displayName(product)}</h3>
       {href ? (
         <p>
-          <Link href={href}>Read the review</Link>
+          <Link href={href} className="primary-link">
+            Read the review
+          </Link>
         </p>
       ) : null}
       <SeeOnAmazon asin={product.asin} className="see-on-amazon" />
@@ -123,17 +144,18 @@ export default async function VsPage({ params }: Props) {
   if (!pair) notFound();
   const a = productBySlug(pair.a)!;
   const b = productBySlug(pair.b)!;
-  const winner = productBySlug(pair.winnerFor.product)!;
-  const other = productBySlug(pair.otherFor.product)!;
 
   return (
     <>
       <JsonLd
-        data={articleJsonLd({
-          title: pair.title,
-          description: pair.description,
-          path: `/vs/${pair.slug}`,
-        })}
+        data={[
+          articleJsonLd({
+            title: pair.title,
+            description: pair.description,
+            path: `/vs/${pair.slug}`,
+          }),
+          faqJsonLd(pair.faqs),
+        ]}
       />
       <PageHero
         image={pair.slug === "d-lock-vs-chain" ? photos.vs : photos.bannerCommute}
@@ -147,35 +169,38 @@ export default async function VsPage({ params }: Props) {
         <DisclosureStrip />
       </PageHero>
       <article className="prose wrap tight">
+        <div className="who-each">
+          {pair.whoEach.map((line) => (
+            <p key={line}>{line}</p>
+          ))}
+        </div>
+        <h2>Specs side by side</h2>
+        <CompareTable
+          products={[a, b]}
+          leadWithAntiGrinder={pair.leadWithAntiGrinder}
+          caption={pair.tableNote}
+        />
+        {pair.afterTable.map((paragraph) => (
+          <p key={paragraph}>
+            <RichText text={paragraph} />
+          </p>
+        ))}
+        <h2>The two locks</h2>
         <div className="vs-split">
           <ProductCol product={a} kicker="Lock A" />
           <ProductCol product={b} kicker="Lock B" />
         </div>
-        <h2>Specs side by side</h2>
-        <CompareTable products={[a, b]} />
-        <h2>Who each is for</h2>
-        <div className="vs-split">
-          <div className="vs-col">
-            <p className="kicker">For {pair.winnerFor.reader}</p>
-            <h3>
-              <Link href={reviewHref(winner) ?? "/best"}>{displayName(winner)}</Link>
-            </h3>
-            <p>{pair.winnerFor.why}</p>
-          </div>
-          <div className="vs-col">
-            <p className="kicker">For {pair.otherFor.reader}</p>
-            <h3>
-              <Link href={reviewHref(other) ?? "/best"}>{displayName(other)}</Link>
-            </h3>
-            <p>{pair.otherFor.why}</p>
-          </div>
+        <h2>Common questions</h2>
+        <div className="faq-list">
+          {pair.faqs.map((faq) => (
+            <div className="faq-item" key={faq.q}>
+              <h3>{faq.q}</h3>
+              <p>{faq.a}</p>
+            </div>
+          ))}
         </div>
         <p>
-          We are not trashing one to sell the other. If the Mini will not close, neither “winner”
-          helps — see the <Link href="/reviews/abus-granit-xplus-540">ABUS 540</Link> or the chain.
-        </p>
-        <p>
-          <Link href="/guide">How to choose</Link> · <Link href="/best">Best bike locks</Link>
+          <Link href="/guide">How to choose</Link> · <Link href="/best">Best of</Link>
         </p>
       </article>
     </>

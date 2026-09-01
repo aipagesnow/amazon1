@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DISCLOSURE } from "@/components/DisclosureStrip";
+import { ALTERNATIVES_PATH } from "@/lib/products";
 import { pageUrl, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -13,22 +14,28 @@ export default function AboutPage() {
   return (
     <article className="prose wrap">
       <p className="kicker">Masthead</p>
-      <h1>About Lock Desk</h1>
+      <h1 id="about">About Lock Desk</h1>
+      <nav className="jump-list" aria-label="On this page">
+        <a href="#about">About</a>
+        <a href="#disclosure">Disclosure</a>
+        <a href="#privacy">Privacy</a>
+        <Link href="/method">How we work</Link>
+      </nav>
       <p className="lede">
-        A UK magazine about bike locks. Sold Secure, insurance, and the lock you will still carry.
+        A small UK magazine about D-locks and chains — Sold Secure, insurance, and the lock you
+        will still carry.
       </p>
       <p>
-        {site.name} is operated by {site.operator}. It is a product-discovery and comparison
-        publication for D-locks and chains. It is not a shop, not a marketplace, and not Amazon.
+        {site.name} is operated by {site.operator}. It is not a shop, not a marketplace, and not
+        Amazon. We write for UK riders who need a grade their insurer will accept and a weight they
+        will take out of the house. Amazon Associate links fund the site. They do not change the
+        verdict.
       </p>
       <p>
-        We write for UK commuters and cyclists who need a grade their insurer will accept and a
-        weight they will actually take out of the house. Organic search is how we hope to be read.
-        Affiliate links are how the site is funded after it is useful.
-      </p>
-      <p>
-        The magazine is small on purpose: one how-to-choose guide, one best-of, six reviews, two
-        head-to-heads, and two use-cases. We do not add extra pages just to look large.
+        The magazine is small on purpose. We would rather six honest reviews than a catalogue we
+        have not written. One extra URL exists for a search people actually type:{" "}
+        <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>. It is not in the
+        main nav. It is a landing, not a section.
       </p>
       <p>
         We do not publish a contact mailbox yet. When we do, it will be listed here. Until then,

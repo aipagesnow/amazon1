@@ -56,6 +56,8 @@ export const BEST_OF_ASINS = [
 
 export const EDITOR_PICK_ASIN = "B0BLT59NFJ";
 
+export const ALTERNATIVES_PATH = "/alternatives/kryptonite-new-york-fahgettaboudit-mini";
+
 export const products: Product[] = (raw as Omit<Product, "slug">[]).map((p) => ({
   ...p,
   slug: SLUG_BY_ASIN[p.asin] ?? p.asin.toLowerCase(),
@@ -135,5 +137,24 @@ export function specValue(product: Product, key: keyof ProductSpecs): string | n
   if (key === "chainMm" && typeof value === "number") return `${value} mm`;
   if (key === "weightKg" && typeof value === "number") return `${value} kg`;
   if (typeof value === "boolean") return value ? "Yes" : "No";
+  if (typeof value === "string") return value.replace(/\s*[xX]\s*/g, " × ");
   return String(value);
+}
+
+export function compactSpec(value: string): string {
+  return value.replace(/\s×\s/g, "×");
+}
+
+export function specLine(product: Product): string[] {
+  const mass = specValue(product, "weightKg");
+  const hole = specValue(product, "lockingArea") ?? specValue(product, "lockingLength");
+  const bar = specValue(product, "shackleMm") ?? specValue(product, "chainMm");
+  return [mass, hole ? compactSpec(hole) : null, bar].filter(Boolean) as string[];
+}
+
+export function compareCell(product: Product, key: keyof ProductSpecs): string {
+  const value = specValue(product, key);
+  if (value) return value;
+  if (key === "soldSecurePowered") return "n/a on our records";
+  return "n/a";
 }

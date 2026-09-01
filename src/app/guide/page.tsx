@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { articleJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
-import { pageUrl, site } from "@/lib/site";
+import { pageUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "How to choose a bike lock",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: pageUrl("/guide") },
   openGraph: {
     title: "How to choose a bike lock · Lock Desk",
-    description: "Gold vs Diamond, insurance, fit, and a chooser for the locks in our slice.",
+    description: "Gold vs Diamond, insurance, fit, and a chooser for the locks on this site.",
     url: pageUrl("/guide"),
     images: [{ url: photos.fit, alt: photoAlt.fit }],
   },
@@ -39,29 +39,23 @@ export default function GuidePage() {
         caption={EDITORIAL_CREDIT}
         overlay
       >
+        <p className="kicker">Start here</p>
+        <ol className="start-here">
+          <li>Policy first.</li>
+          <li>Then the rack.</li>
+          <li>Then the weight you will take out of the house.</li>
+        </ol>
+        <p>
+          <a href="#chooser" className="primary-link">
+            Jump to the chooser
+          </a>
+        </p>
         <DisclosureStrip />
       </PageHero>
-      <section className="briefing-bar" aria-label="Three specs that matter">
-        <div className="wrap briefing">
-          <article>
-            <h3>Grade</h3>
-            <p>Gold and Diamond are different tests. Neither means angle-grinder proof. Read the policy first.</p>
-          </article>
-          <article>
-            <h3>Fit</h3>
-            <p>A Mini that will not close around the stand is a paperweight. Measure post plus frame tube.</p>
-          </article>
-          <article>
-            <h3>Weight</h3>
-            <p>The lock you leave in the hall does not protect the bike at the station. Carry is a spec.</p>
-          </article>
-        </div>
-      </section>
       <article className="prose wrap tight">
         <p>
-          This page is the pillar for {site.name}. It should still help if every Amazon link
-          vanished. We have not run lab attacks. Grades come from Sold Secure; dimensions and
-          weights come from the product records on this site.
+          This page should still help if every Amazon link vanished. Grades from Sold Secure.
+          Weights and sizes from the product records here. We have not run lab attacks.
         </p>
 
         <h2>Sold Secure is not a vibe</h2>
@@ -140,9 +134,9 @@ export default function GuidePage() {
           <li>Never checking the insurer’s approved-lock PDF.</li>
         </ul>
 
-        <div className="chooser">
+        <div className="chooser" id="chooser">
           <h2>Chooser — which of these is for you</h2>
-          <p>Picks from the locks on this site only. Not a shop filter. Not a price quiz.</p>
+          <p>From the locks on this site only. Not a shop filter. Not a price quiz.</p>
           <table className="spec">
             <thead>
               <tr>
