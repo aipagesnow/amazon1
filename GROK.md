@@ -50,4 +50,4 @@ Copy `kit/SeeOnAmazon.tsx` and `kit/DisclosureStrip.tsx` into `src/components`.
 
 ## Handover
 
-Keep `HANDOVER.md` and `handover/spec.json` current for the getaipages desk. This project is listed on Flippa as domain + code + this slice. The buyer does not receive Mothership. The buyer sets `AMAZON_ASSOCIATE_TAG` on Vercel after purchase.
+Keep `HANDOVER.md` and `handover/spec.json` current for the getaipages desk. Session stop notes live in `HANDOFF.md`. Flippa package is domain + code + this slice; there is no listing URL in the repo yet. The buyer does not receive Mothership. The buyer sets `AMAZON_ASSOCIATE_TAG` on Vercel after purchase.

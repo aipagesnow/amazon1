@@ -1,0 +1,18 @@
+﻿Fill-in pass. The last punch list over-stripped the home and nav. Chris wants links back and a less empty homepage. Do not undo the magazine voice, metas, 404, slice kill, or H2 swaps.
+
+NAV
+- Header must be: How to choose · Best of · Reviews · Compare · Commuting · About
+- Relabel Mini-7 vs D1000 back to Compare. Same URL: /vs/evolution-mini-7-vs-d1000
+- Add Commuting → /for/commuting
+- Do not add Insurance or Methodology to the header (they stay in the footer)
+- Footer groups can stay. Keep the alternatives chip in the footer.
+
+HOME (https://www.lockdesk.co.uk/)
+- Keep H1, lead, Grade/Fit/Carry, Editor’s pick (X1), commuting/insurance photo pair, also-reviewed Mini line
+- The page currently feels empty after the pick: only a text line of five names. Restore ONE compact lock strip under the pick: the five compared (X1, Mini-7, D1000, 540, 1410) as small cards. Each card: name, grade, one-line stamp, Read the review. Amazon as text, not a big button
+- Do NOT bring back a second grid ("Reviewed on this desk")
+- Do NOT bring back "Six ways in"
+- Do NOT bring back "We’d buy this one"
+- The text line "Five we compared… Open the full table" can sit as a caption under that one strip, linking to /best
+
+Work only in this folder. Repo https://github.com/aipagesnow/amazon1.git — keep folder and repo in sync. Magazine not a shop. See on Amazon. Tag stays process.env.AMAZON_ASSOCIATE_TAG.
