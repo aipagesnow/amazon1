@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: pageUrl("/reviews") },
   openGraph: {
     title: "Bike lock reviews · Lock Desk",
-    description: "Six full reviews from the slice. Verdict-led. Not a product grid.",
+    description: "Six full reviews. Verdict first. Not a product grid.",
     url: pageUrl("/reviews"),
     images: [{ url: photos.pick, alt: photoAlt.pick }],
   },
@@ -55,9 +55,8 @@ export default function ReviewsIndexPage() {
       </PageHero>
       <article className="prose wrap tight">
         <p>
-          The OnGuard Pitbulls and the Hiplok DX1000 stay in the slice without a first-launch review
-          page. They are real ASINs, not filler. See them as context on{" "}
-          <Link href="/best">best bike locks UK</Link>.
+          The OnGuard Pitbulls and the Hiplok DX1000 are real products without their own review
+          pages yet. See them as context on <Link href="/best">best bike locks UK</Link>.
         </p>
         <div className="reviewed-list">
           {items.map((product) => (

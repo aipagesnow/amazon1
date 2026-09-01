@@ -151,7 +151,7 @@ export default async function VsPage({ params }: Props) {
           <ProductCol product={a} kicker="Lock A" />
           <ProductCol product={b} kicker="Lock B" />
         </div>
-        <h2>Specs from the slice</h2>
+        <h2>Specs side by side</h2>
         <CompareTable products={[a, b]} />
         <h2>Who each is for</h2>
         <div className="vs-split">

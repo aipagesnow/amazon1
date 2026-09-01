@@ -24,8 +24,7 @@ export function SiteFooter() {
           availability change on Amazon.
         </p>
         <p>
-          Photographs on this site are editorial. They are not pictures of the named products in
-          the slice.
+          Photographs on this site are editorial. They are not pictures of the named products.
         </p>
       </div>
     </footer>

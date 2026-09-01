@@ -61,7 +61,7 @@ export default function GuidePage() {
         <p>
           This page is the pillar for {site.name}. It should still help if every Amazon link
           vanished. We have not run lab attacks. Grades come from Sold Secure; dimensions and
-          weights come from our product slice.
+          weights come from the product records on this site.
         </p>
 
         <h2>Sold Secure is not a vibe</h2>
@@ -92,14 +92,14 @@ export default function GuidePage() {
         <h2>Fit is a security spec</h2>
         <p>
           A Mini that will not close around the stand is a paperweight. Compare locking area (the
-          hole) with the post plus the frame tube. Longer shackles (the ABUS 540 in this slice is
+          hole) with the post plus the frame tube. Longer shackles (the ABUS 540 here is
           300 mm) close more easily and also give a thief more room for a tool. Tight Minis (the
           D1000 is 92 × 155 mm) are awkward on fat tyres and some cargo frames.
         </p>
 
         <h2>Weight is a behaviour spec</h2>
         <p>
-          The lock you leave in the hall does not protect the bike at the station. In this slice the
+          The lock you leave in the hall does not protect the bike at the station. On this site the
           Evolution Mini-7 is 1.61 kg with a mount; the Litelok X1 is 1.7 kg; the D1000 is 1.9 kg
           with no mount listed; the New York Mini is 2.06 kg with no mount; the New York 1410 chain
           is 4.9 kg. If you already skip 1.6 kg, do not buy 2 kg because the name sounds tougher.
@@ -142,7 +142,7 @@ export default function GuidePage() {
 
         <div className="chooser">
           <h2>Chooser — which of these is for you</h2>
-          <p>Picks from this site’s slice only. Not a shop filter. Not a price quiz.</p>
+          <p>Picks from the locks on this site only. Not a shop filter. Not a price quiz.</p>
           <table className="spec">
             <thead>
               <tr>

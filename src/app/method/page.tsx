@@ -5,12 +5,12 @@ import { articleJsonLd } from "@/lib/jsonld";
 import { pageUrl, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Methodology",
+  title: "How we research bike locks",
   description:
-    "How Lock Desk researches bike locks: specifications, manufacturer materials, Sold Secure grades. Not hands-on lab tests.",
+    "Lock Desk is desk research, not a test lab. We use Sold Secure grades, manufacturer specs, and published UK insurance wording. We do not pretend we attacked these locks.",
   alternates: { canonical: pageUrl("/method") },
   openGraph: {
-    title: "Methodology · Lock Desk",
+    title: "How we research bike locks · Lock Desk",
     description: "What we will and will not claim.",
     url: pageUrl("/method"),
   },
@@ -21,55 +21,62 @@ export default function MethodPage() {
     <>
       <JsonLd
         data={articleJsonLd({
-          title: "Methodology",
+          title: "How we research bike locks",
           description: String(metadata.description),
           path: "/method",
         })}
       />
       <article className="prose wrap">
         <p className="kicker">How we work</p>
-        <h1>How Lock Desk researches locks</h1>
+        <h1>How we research bike locks</h1>
         <p className="lede">
-          These pages are desk research. They are not a test lab and they are not a shop.
+          Lock Desk is desk research. We have not cut these locks open, and we are not a shop.
         </p>
         <p>
-          If a sentence would only be true because we attacked a lock for six weeks, we do not write
-          it. The job is to help a UK rider match Sold Secure grade, fit, and carry — from facts we
-          can stand behind.
+          The point of this page is simple: you should know what stands behind a verdict. If a
+          sentence would only be true because we spent weeks attacking a lock, we do not write it.
+          We help a UK rider match Sold Secure grade, fit, and carry — from facts we can stand
+          behind.
         </p>
-        <h2>What we use</h2>
+
+        <h2>What a verdict is based on</h2>
         <ul>
-          <li>The product slice in this site’s data file: ASIN, name, brand, category, specs.</li>
-          <li>Manufacturer documentation and Sold Secure’s public product grades.</li>
-          <li>Publicly available information about how UK cycle insurance typically names Gold and Diamond.</li>
-        </ul>
-        <h2>What we will not claim</h2>
-        <ul>
-          <li>We did not grind, crop, or pick these locks.</li>
-          <li>We do not invent weights, shackle sizes, or grades. If a spec is missing, we omit it.</li>
-          <li>We do not print live prices. They change on Amazon.</li>
-          <li>We do not republish Amazon customer reviews or star ratings.</li>
+          <li>The product record on this site: UK ASIN, name, brand, and the specs we have for it.</li>
+          <li>Manufacturer documentation.</li>
+          <li>Sold Secure’s public grades for pedal cycles and, where we have it, powered cycles.</li>
           <li>
-            Photographs are editorial atmosphere — generic streets and unbranded locks — not pictures
-            of the named ASINs. Real listing photos need Amazon’s Product Advertising API, which we
-            do not have yet.
+            How UK cycle insurance typically names Gold and Diamond. We are not your broker and we
+            do not keep a live list of approved models.
           </li>
         </ul>
-        <h2>How a review is built</h2>
+
+        <h2>What we will not claim</h2>
+        <ul>
+          <li>We have not taken a grinder or cropper to these locks.</li>
+          <li>We do not invent a weight, shackle size, or grade. If a figure is missing, we leave it out.</li>
+          <li>We do not print live prices. They change on Amazon.</li>
+          <li>We do not copy Amazon customer reviews or star ratings onto these pages.</li>
+          <li>
+            Photographs here are editorial — streets, stands, unbranded locks — not pictures of the
+            named product. We cannot yet pull Amazon’s official listing photos.
+          </li>
+        </ul>
+
+        <h2>How a review is laid out</h2>
         <p>
-          Verdict first: who it is for, who should skip it. Then Best for / Skip, The good, The
-          bad, What we’d change, the spec sheet, alternatives from the same slice, and a short FAQ.
-          Internal links go up to the <Link href="/guide">how-to-choose guide</Link> and across to
-          other reviews.
+          The verdict comes first: who it is for, and who should skip it. That is also the “is it
+          worth it?” answer. Then Best for / Skip, The good, The bad, What we’d change, the spec
+          sheet, alternatives from the same set of locks, and a short FAQ. Every review links up to{" "}
+          <Link href="/guide">how to choose a bike lock</Link> and across to other reviews.
         </p>
+
         <h2>Amazon</h2>
         <p>
           {site.name} is not Amazon. Outbound buttons say See on Amazon. As an Amazon Associate we
-          earn from qualifying purchases. A buyer of this site sets their own associate tag; we do
-          not transfer an Associates account.
+          earn from qualifying purchases. Prices and stock are Amazon’s, on the day you click.
         </p>
         <p>
-          Operator: {site.operator}. We do not publish a contact mailbox yet; see{" "}
+          Operated by {site.operator}. We do not publish a contact mailbox yet — see{" "}
           <Link href="/about">About</Link>.
         </p>
       </article>

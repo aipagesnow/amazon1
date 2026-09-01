@@ -36,7 +36,7 @@ const DESK = [
     n: "01",
     href: "/best",
     title: "Best bike locks UK",
-    blurb: "Five from the slice, on grade, weight, and whether the shackle will close.",
+    blurb: "Five locks, compared on grade, weight, and whether the shackle will close.",
   },
   {
     n: "02",
@@ -176,7 +176,7 @@ export default function HomePage() {
           <div>
             <p className="kicker">Best of</p>
             <h2>
-              <Link href="/best">Five from the slice</Link>
+              <Link href="/best">Five we compared</Link>
             </h2>
           </div>
           <Link href="/best" className="primary-link">
@@ -222,8 +222,8 @@ export default function HomePage() {
           <p className="kicker">Catalogue</p>
           <h2>Reviewed on this desk</h2>
           <p className="measure">
-            Six full reviews. The OnGuard Pitbulls and the Hiplok DX1000 stay in the slice for
-            later; they appear on the best-of page as context, not as padded doorway pages.
+            Six full reviews. Two more locks appear on the best-of table as context — we did not
+            invent extra review pages to look larger.
           </p>
           <div className="reviewed-list">
             {peek.map((product) => (

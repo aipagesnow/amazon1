@@ -20,7 +20,7 @@ import { pageUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Best bike locks UK",
   description:
-    "Five D-locks and chains from our UK slice, compared on Sold Secure grade, weight, and locking area. No number one for everyone.",
+    "Five D-locks and chains compared on Sold Secure grade, weight, and locking area. No number one for everyone.",
   alternates: { canonical: pageUrl("/best") },
   openGraph: {
     title: "Best bike locks UK · Lock Desk",
@@ -78,7 +78,7 @@ export default function BestPage() {
         alt={photoAlt.cover}
         kicker="Best of"
         title="Best bike locks UK"
-        lede="Five from our slice. Criteria: Sold Secure pedal grade, whether we think you will carry it, and whether the shackle will close. Not number one for everyone."
+        lede="Five locks. Criteria: Sold Secure pedal grade, whether we think you will carry it, and whether the shackle will close. Not number one for everyone."
         caption={EDITORIAL_CREDIT}
         overlay
       >
@@ -86,8 +86,8 @@ export default function BestPage() {
       </PageHero>
       <article className="prose wrap tight">
         <p>
-          We reviewed six products in full. The OnGuard Pitbulls and the Hiplok DX1000 stay in the
-          catalogue without a first-launch review — they are real ASINs, not filler pages. Prices
+          We wrote six full reviews. The OnGuard Pitbulls and the Hiplok DX1000 are real products;
+          they sit in the catalogue as context and do not get their own review pages yet. Prices
           change on Amazon; we do not print them.
         </p>
 
@@ -106,6 +106,7 @@ export default function BestPage() {
         <p>
           Same five, as a table, if you are comparing locking area and grade in one glance.
         </p>
+        <div className="spec-scroll">
         <table className="spec">
           <thead>
             <tr>
@@ -144,6 +145,7 @@ export default function BestPage() {
             })}
           </tbody>
         </table>
+        </div>
 
         <div className="chooser">
           <h2>Chooser</h2>

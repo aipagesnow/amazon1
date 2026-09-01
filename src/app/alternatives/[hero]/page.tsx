@@ -67,7 +67,7 @@ export default async function AlternativesPage({ params }: Props) {
       </PageHero>
       <article className="prose wrap tight">
         <p>
-          Flagship in this slice:{" "}
+          The lock people search for:{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">{displayName(hero)}</Link>.
           We are not obliged to recommend it. The name is famous. The Evolution Mini-7 is the New
           York family’s better commute lock.

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { GradeStamp } from "@/components/GradeStamp";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
+import { hookFor, reviewCopy } from "@/content/editorial";
 import { displayName, Product, reviewHref, specValue } from "@/lib/products";
 
 type Props = {
@@ -14,6 +15,8 @@ export function LockTile({ product, bestFor, caveat }: Props) {
   const mass = specValue(product, "weightKg");
   const hole = specValue(product, "lockingArea") ?? specValue(product, "lockingLength");
   const kind = specValue(product, "type");
+  const job = bestFor ?? reviewCopy[product.slug]?.job ?? hookFor(product);
+  const bar = specValue(product, "shackleMm") ?? specValue(product, "chainMm");
 
   return (
     <article className="lock-tile">
@@ -25,16 +28,36 @@ export function LockTile({ product, bestFor, caveat }: Props) {
       <p className="stamp-row">
         <GradeStamp grade={product.specs?.soldSecurePedal} />
       </p>
-      <p className="mass">{mass ?? "—"}</p>
-      {hole ? <p className="meta">{hole}</p> : null}
-      {bestFor ? <p className="hook">{bestFor}</p> : null}
-      {caveat ? <p className="meta">Caveat: {caveat}</p> : null}
+      <dl className="tile-specs">
+        {mass ? (
+          <div>
+            <dt>Weight</dt>
+            <dd>{mass}</dd>
+          </div>
+        ) : null}
+        {hole ? (
+          <div>
+            <dt>{kind?.toLowerCase().includes("chain") ? "Length" : "Hole"}</dt>
+            <dd>{hole}</dd>
+          </div>
+        ) : null}
+        {bar ? (
+          <div>
+            <dt>{product.specs?.chainMm ? "Chain" : "Shackle"}</dt>
+            <dd>{bar}</dd>
+          </div>
+        ) : null}
+      </dl>
+      <p className="hook">{job}</p>
+      {caveat ? <p className="meta">Watch: {caveat}</p> : null}
       <p className="tile-actions">
         {href ? (
           <Link href={href} className="primary-link">
-            Review
+            Read the review
           </Link>
-        ) : null}
+        ) : (
+          <span className="meta">No full review yet</span>
+        )}
         <SeeOnAmazon asin={product.asin} className="see-on-amazon" />
       </p>
     </article>

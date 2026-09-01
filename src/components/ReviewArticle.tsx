@@ -30,7 +30,7 @@ function AltCard({ slug, why, kicker }: { slug: string; why: string; kicker: str
           </Link>
         </p>
       ) : (
-        <p className="meta">In the slice; no full review on first launch.</p>
+        <p className="meta">In the comparison set; no full review yet.</p>
       )}
       <SeeOnAmazon asin={product.asin} className="see-on-amazon" />
     </article>
@@ -153,13 +153,13 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
 
         <h2>The workshop sheet</h2>
         <p>
-          Figures from our product slice only. If a number is missing, we omit it rather than
-          guess. ASIN {product.asin} is the UK listing this page is about.
+          Figures from our records only. If a number is missing, we omit it rather than guess. ASIN{" "}
+          {product.asin} is the UK listing this page is about.
         </p>
         <SpecTable product={product} />
 
         <h2>If not this lock</h2>
-        <p>Same slice. Different job. Read the review before the Amazon button.</p>
+        <p>Same magazine. Different job. Read the review before the Amazon button.</p>
         <div className="alt-grid">
           <AltCard slug={copy.altBest} why={copy.altBestWhy} kicker="Buy this instead if" />
           <AltCard slug={copy.altSecond} why={copy.altSecondWhy} kicker="Or this, if" />
@@ -177,7 +177,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
 
         <p>
           Start with <Link href="/guide">how to choose a bike lock</Link> if you have not measured
-          the rack. Compare the slice on <Link href="/best">best bike locks UK</Link>. Pair this
+          the rack. Compare the set on <Link href="/best">best bike locks UK</Link>. Pair this
           with <Link href={vsHref}>{vsLabel}</Link>. How we work:{" "}
           <Link href="/method">methodology</Link>.
         </p>
@@ -185,7 +185,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         <div className="review-close">
           <p>
             Desk research, not a test lab. Grades come from Sold Secure; weights and sizes come
-            from the slice. Prices change on Amazon — we do not print them.
+            from our records. Prices change on Amazon — we do not print them.
           </p>
           <SeeOnAmazon asin={product.asin} className="btn-amazon" />
           <Link href="/reviews" className="primary-link">

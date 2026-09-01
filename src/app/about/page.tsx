@@ -27,8 +27,8 @@ export default function AboutPage() {
         Affiliate links are how the site is funded after it is useful.
       </p>
       <p>
-        The first-launch set is a small cluster: a how-to-choose pillar, one best-of table, six
-        reviews, two head-to-heads, and two use-cases. We do not add extra URLs to look large.
+        The magazine is small on purpose: one how-to-choose guide, one best-of, six reviews, two
+        head-to-heads, and two use-cases. We do not add extra pages just to look large.
       </p>
       <p>
         We do not publish a contact mailbox yet. When we do, it will be listed here. Until then,
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
       <h2 id="privacy">Privacy</h2>
       <p>
-        We do not sell personal data. This first-launch site does not run a named analytics product.
+        We do not sell personal data. This site does not currently run a named analytics product.
         If that changes, this paragraph will name it.
       </p>
       <p>
