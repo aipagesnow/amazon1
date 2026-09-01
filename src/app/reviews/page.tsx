@@ -47,7 +47,7 @@ export default function ReviewsIndexPage() {
         alt={photoAlt.pick}
         kicker="Reviews"
         title="Reviewed on this desk"
-        lede="Six full reviews. Verdict first, then the good, the bad, and what we would change. We have not cut these open."
+        lede="Six locks. Each page says who it is for, who should skip it, and what we would change. We have not cut these open."
         caption={EDITORIAL_CREDIT}
       >
         <DisclosureStrip />

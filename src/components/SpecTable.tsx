@@ -38,16 +38,48 @@ export function SpecTable({
   if (!rows.length) return null;
 
   return (
-    <table className="spec">
-      <tbody>
-        {rows.map((row) => (
-          <tr key={row.key}>
-            <th scope="row">{specLabel(row.key)}</th>
-            <td>{row.value}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div className="spec-scroll">
+      <table className="spec">
+        <tbody>
+          {rows.map((row) => (
+            <tr key={row.key}>
+              <th scope="row">{specLabel(row.key)}</th>
+              <td>{row.value}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function SpecFigures({ product }: { product: Product }) {
+  const hole = specValue(product, "lockingArea") ?? specValue(product, "lockingLength");
+  const bar = specValue(product, "chainMm") ?? specValue(product, "shackleMm");
+  const items = [
+    { label: "Weight", value: specValue(product, "weightKg") },
+    { label: "Sold Secure", value: specValue(product, "soldSecurePedal") },
+    {
+      label: (product.specs?.type ?? "").toLowerCase().includes("chain") ? "Length" : "Locking area",
+      value: hole,
+    },
+    {
+      label: product.specs?.chainMm ? "Chain" : "Shackle",
+      value: bar,
+    },
+  ].filter((item) => item.value);
+
+  if (!items.length) return null;
+
+  return (
+    <dl className="spec-figures">
+      {items.map((item) => (
+        <div key={item.label}>
+          <dt>{item.label}</dt>
+          <dd>{item.value}</dd>
+        </div>
+      ))}
+    </dl>
   );
 }
 
@@ -60,27 +92,29 @@ export function CompareTable({
 }) {
   const used = keys.filter((key) => products.some((p) => specValue(p, key)));
   return (
-    <table className="spec">
-      <thead>
-        <tr>
-          <th scope="col"> </th>
-          {products.map((p) => (
-            <th key={p.asin} scope="col">
-              {displayName(p)}
-            </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {used.map((key) => (
-          <tr key={key}>
-            <th scope="row">{specLabel(key)}</th>
+    <div className="spec-scroll">
+      <table className="spec">
+        <thead>
+          <tr>
+            <th scope="col"> </th>
             {products.map((p) => (
-              <td key={p.asin}>{specValue(p, key) ?? "—"}</td>
+              <th key={p.asin} scope="col">
+                {displayName(p)}
+              </th>
             ))}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {used.map((key) => (
+            <tr key={key}>
+              <th scope="row">{specLabel(key)}</th>
+              {products.map((p) => (
+                <td key={p.asin}>{specValue(p, key) ?? "—"}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }

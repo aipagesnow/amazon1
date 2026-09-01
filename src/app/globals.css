@@ -238,7 +238,7 @@ img { max-width: 100%; display: block; }
   line-height: 1.08;
   letter-spacing: -0.03em;
   margin: 0 0 0.7rem;
-  max-width: 18ch;
+  max-width: 22ch;
   color: #f6f8f4;
 }
 .page-hero .lede {
@@ -558,13 +558,16 @@ p { margin: 0 0 1rem; }
 .lock-tile .stamp-diamond { color: #c5d5dc; }
 .stamp-row { margin: 0 0 0.2rem; }
 
+.spec-scroll {
+  overflow-x: auto;
+  margin: 1rem 0 1.5rem;
+}
 table.spec {
   width: 100%;
+  min-width: 36rem;
   border-collapse: collapse;
   font-size: 0.88rem;
-  margin: 1rem 0 1.5rem;
-  overflow-x: auto;
-  display: block;
+  display: table;
   font-family: var(--mono);
 }
 table.spec th, table.spec td {
@@ -578,8 +581,130 @@ table.spec th {
   font-weight: 600;
   font-size: 0.92rem;
   background: var(--paper-2);
+  color: var(--ink);
+  white-space: nowrap;
+}
+table.spec th[scope="row"] {
+  width: 14rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: transparent;
 }
 table.spec td:first-child, table.spec th:first-child { padding-left: 0; }
+
+.spec-figures {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  background: var(--night);
+  color: #e4ebe5;
+  margin: 0 0 1.8rem;
+}
+.spec-figures > div {
+  padding: 1.15rem 1.2rem 1.3rem;
+  border-right: 1px solid rgba(212, 180, 58, 0.22);
+}
+.spec-figures > div:last-child { border-right: 0; }
+.spec-figures dt {
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--hivis);
+  margin: 0;
+}
+.spec-figures dd {
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+  margin: 0.3rem 0 0;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: #f6f8f4;
+}
+
+.job-line {
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  color: var(--hivis);
+  margin: 0.15rem 0 1rem;
+  max-width: 28rem;
+}
+
+.alt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+.alt-card {
+  background: var(--night);
+  color: #e4ebe5;
+  padding: 1.25rem 1.3rem 1.4rem;
+}
+.alt-card h3 {
+  margin: 0.15rem 0 0.5rem;
+  color: #f6f8f4;
+}
+.alt-card a { color: var(--hivis); }
+.alt-card .kicker { color: var(--hivis); }
+.alt-card .primary-link { color: var(--hivis); border-bottom-color: var(--hivis); }
+.alt-card p { margin: 0 0 0.8rem; color: #c5d0c8; }
+.alt-card .meta { color: #8b9890; font-size: 0.86rem; }
+
+.faq-list { margin: 1rem 0 2rem; }
+.faq-item {
+  border-top: 1px solid var(--line);
+  padding: 1rem 0 0.85rem;
+}
+.faq-item:last-child { border-bottom: 1px solid var(--line); }
+.faq-item h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.12rem;
+}
+
+.review-close {
+  background: var(--night);
+  color: #d7ddd6;
+  padding: 1.5rem 1.55rem 1.6rem;
+  margin: 2rem 0 1.5rem;
+  border-left: 6px solid var(--hivis);
+}
+.review-close p { margin: 0 0 0.85rem; }
+.review-close .btn-amazon { margin-right: 1rem; }
+.review-close .primary-link {
+  color: var(--hivis);
+  border-bottom-color: var(--hivis);
+}
+
+.review-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1.2rem;
+}
+.review-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+.review-nav .kicker { margin-bottom: 0.25rem; }
+.review-nav h3 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+.review-nav a:hover h3 { color: var(--hivis-dark); }
+.review-nav .next { text-align: right; }
+
+.change-note {
+  margin: 1.2rem 0 1.8rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--paper-2);
+  border-left: 4px solid var(--hivis);
+}
+.change-note h3 { margin-top: 0; }
 
 .goodbad {
   display: grid;
@@ -693,9 +818,13 @@ table.spec td:first-child, table.spec th:first-child { padding-left: 0; }
   .lock-board { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .briefing { grid-template-columns: 1fr; }
   .briefing article { border-right: 0; border-bottom: 1px solid rgba(212, 180, 58, 0.22); }
-  .feature-pair, .desk-toc, .reviewed-list, .vs-split, .review-top, .pick {
+  .feature-pair, .desk-toc, .reviewed-list, .vs-split, .review-top, .pick,
+  .spec-figures, .alt-grid, .review-nav {
     grid-template-columns: 1fr;
   }
+  .spec-figures > div, .briefing article { border-right: 0; border-bottom: 1px solid rgba(212, 180, 58, 0.22); }
+  .review-nav .next { text-align: left; }
+  table.spec { min-width: 28rem; }
 }
 @media (max-width: 800px) {
   .pick-art, .pick-art img { min-height: 220px; }

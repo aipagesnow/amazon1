@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { GradeStamp } from "@/components/GradeStamp";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
-import { hookFor } from "@/content/editorial";
+import { hookFor, reviewCopy } from "@/content/editorial";
 import { displayName, Product, reviewHref } from "@/lib/products";
 
 export function ProductCard({ product }: { product: Product }) {
@@ -15,7 +15,7 @@ export function ProductCard({ product }: { product: Product }) {
         <GradeStamp grade={product.specs?.soldSecurePedal} />
       </p>
       <h3>{displayName(product)}</h3>
-      <p className="hook">{hookFor(product)}</p>
+      <p className="hook">{reviewCopy[product.slug]?.job ?? hookFor(product)}</p>
       {href ? (
         <p>
           <Link href={href} className="primary-link">

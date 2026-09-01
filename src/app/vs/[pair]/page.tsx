@@ -152,16 +152,23 @@ export default async function VsPage({ params }: Props) {
         </div>
         <h2>Specs from the slice</h2>
         <CompareTable products={[a, b]} />
-        <h2>Verdict</h2>
-        <p>
-          Winner for {pair.winnerFor.reader}:{" "}
-          <Link href={reviewHref(winner) ?? "/best"}>{displayName(winner)}</Link>.{" "}
-          {pair.winnerFor.why}
-        </p>
-        <p>
-          The other lock, for {pair.otherFor.reader}:{" "}
-          <Link href={reviewHref(other) ?? "/best"}>{displayName(other)}</Link>. {pair.otherFor.why}
-        </p>
+        <h2>Who each is for</h2>
+        <div className="vs-split">
+          <div className="vs-col">
+            <p className="kicker">For {pair.winnerFor.reader}</p>
+            <h3>
+              <Link href={reviewHref(winner) ?? "/best"}>{displayName(winner)}</Link>
+            </h3>
+            <p>{pair.winnerFor.why}</p>
+          </div>
+          <div className="vs-col">
+            <p className="kicker">For {pair.otherFor.reader}</p>
+            <h3>
+              <Link href={reviewHref(other) ?? "/best"}>{displayName(other)}</Link>
+            </h3>
+            <p>{pair.otherFor.why}</p>
+          </div>
+        </div>
         <p>
           We are not trashing one to sell the other. If the Mini will not close, neither “winner”
           helps — see the <Link href="/reviews/abus-granit-xplus-540">ABUS 540</Link> or the chain.
