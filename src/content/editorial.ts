@@ -37,7 +37,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       "Who should buy this instead of a Gold Mini",
     ],
     body: [
-      "A lock only works if you take it with you. A heavy chain often stays by the door. A tiny D-lock that will not close on the stand is no use either. The X1 sits in the middle: a high official grade, and light enough that a commuter might still take it.",
+      "A lock only works if you take it with you. A heavy chain is often left at home, and a compact D-lock that will not close on the stand does not protect the bike either. The X1 sits between those two problems: Sold Secure Diamond, at a weight many commuters will still carry.",
       "The locking area — the space inside the shackle — is 101 × 197 mm. That is not huge, but it is bigger than the compact “Mini” locks we have reviewed. Measure your bike stand plus the tube of your frame. If a small lock already fails to close, do not assume this will close either — but it has a better chance than the Hiplok D1000 (92 × 155 mm).",
       "On this Amazon listing, the frame mount is sold separately. That is the practical problem. A strong lock left at home does not protect the bike. Budget for a mount or a bag, or be honest that you will carry 1.7 kg in your hand. If you already know you will skip anything that does not clip to the bike, the Evolution Mini-7 is the more realistic daily lock.",
       "Sold Secure is a UK test house that grades bike locks. The independent grade here is Diamond, for ordinary bikes and for e-bikes. Maker claims about grinders and cut-times are advertising. Check the marking on the lock you buy, and your insurer’s approved list, before you spend the money. We have not cut one open.",
@@ -64,7 +64,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       "Only two keys listed",
       "No cable, so a quick-release front wheel still needs something else to hold it",
     ],
-    change: "Put a frame mount in the box. The grade does not help if the lock stays at home.",
+    change: "Include a frame mount in the box. The Diamond grade does not help if the lock is left at home.",
     faqs: [
       {
         q: "Is the Litelok X1 Sold Secure Diamond?",
@@ -107,8 +107,8 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     body: [
       "This lock is sold on its anti-grinder design. It is not the easiest lock to live with. The locking area is Mini-sized, and it weighs more than a typical compact D-lock. Fit is the deciding factor. If the shackle will not close around your stand and your bike, nothing else on the spec sheet matters.",
       "92 × 155 mm is tight. Fat tyres, cargo bikes, and some UK bike stands will not take it. Measure the post plus the frame tube before you order. A product photo will not tell you. If a compact lock already fails on your rack, this one will not save you.",
-      "There is no frame mount on the spec we have. You carry 1.9 kg in a bag, or you leave it at home. That is as important as the weight itself. For a weekday commuter whose insurance still asks for Gold, the Evolution Mini-7 is the more practical lock: lighter, a mount, a cable in the box.",
-      "It is Diamond for ordinary bikes and Diamond for e-bikes. The two-cuts design story is Hiplok’s. The independent grade is Diamond. We do not print cut-times. Diamond is a tougher Sold Secure test than Gold; it is not a promise that a battery grinder fails.",
+      "There is no frame mount on the spec we have. You would need to carry 1.9 kg in a bag, or leave it at home. That practical issue is as important as the weight itself. For a weekday commuter whose insurance still asks for Gold, the Evolution Mini-7 is the more practical lock: lighter, a mount, and a cable in the box.",
+      "It is Diamond for ordinary bikes and Diamond for e-bikes. The two-cuts design is Hiplok’s own description. The independent grade is Diamond. We do not print cut-times. Diamond is a tougher Sold Secure test than Gold; it is not a promise that a battery grinder fails.",
       "Hiplok’s larger DX1000 (112 × 205 mm, 2.75 kg) is a real lock if the compact shackle is the problem, not the grade. We have not written a full review of it yet. If you wanted Diamond with a more usable locking area and 1.7 kg, that is the Litelok X1, not a thicker Mini. Buy the D1000 only after you have stood next to the rack with a tape measure.",
     ],
     bestFor: [
@@ -137,7 +137,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     faqs: [
       {
         q: "D1000 or DX1000?",
-        a: "D1000: 92 × 155 mm locking area, 1.9 kg. DX1000: 112 × 205 mm, 2.75 kg. Buy the one that closes. Do not guess. We have not written a full review of the DX1000 yet.",
+        a: "The D1000 has a 92 × 155 mm locking area and weighs 1.9 kg. The DX1000 has a 112 × 205 mm locking area and weighs 2.75 kg. Buy the one that closes on your stand. Do not guess from a product photo. We have not written a full review of the DX1000 yet.",
       },
       {
         q: "Gold or Diamond for this street?",
@@ -155,7 +155,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     altBest: "litelok-x1",
     altBestWhy: "Same Diamond grade, a larger locking area, and 200 g lighter.",
     altSecond: "kryptonite-evolution-mini-7",
-    altSecondWhy: "You will actually carry it, Gold meets the policy, and you want a clip on the bike.",
+    altSecondWhy: "You will actually carry it, Gold meets the policy, and you want a frame mount on the bike.",
   },
   "kryptonite-evolution-mini-7": {
     hook: "A Gold-grade compact D-lock with a frame mount and a cable.",
@@ -174,7 +174,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       "The cable is the bit people get wrong. It is for a quick-release wheel, or a helmet, if you must. It is not Sold Secure Gold. If a listing photo makes the whole kit look approved, ignore the photo. The D-lock is the graded product. Do not lock the bike to the stand with the cable alone.",
       "The locking area is 83 × 178 mm. That is a compact Mini size. It will close on a lot of UK bike stands and fail on fat lamp-posts and some cargo bikes. Measure. If it will not close, look at the ABUS 540 (a 300 mm shackle) or a chain at home — not a thicker compact lock with an even smaller locking area.",
       "Gold is still the grade a lot of UK household cycle insurance names. Diamond is a higher grade, and some e-bike policies want the powered-cycle version of that grade. If that is you, this is the wrong lock. If Gold is what the policy asks for and you will carry 1.6 kg, this is the right one of the six we have reviewed.",
-      "The New York Fahgettaboudit Mini is the thicker sibling: 18 mm, 2.06 kg, no mount, no cable, still only Gold. People search it because of the name. Most commuters should buy this Evolution Mini-7 instead. Thickness is not a reason to carry an extra 450 g every day if the grade is the same.",
+      "The New York Fahgettaboudit Mini is the thicker sibling: 18 mm, 2.06 kg, no mount, no cable, still only Gold. People search it because of the name. Most commuters should buy this Evolution Mini-7 instead. The extra thickness is not a reason to carry an extra 450 g every day if the Sold Secure grade is the same.",
     ],
     bestFor: [
       "Weekday commuting where Gold meets the policy",
@@ -209,7 +209,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       },
       {
         q: "Evolution Mini-7 or New York Mini?",
-        a: "New York Mini: 18 mm thick, 2.06 kg, no mount, no cable, Gold. Evolution: 13 mm thick, 1.61 kg, frame mount, cable, Gold. Carry the Evolution unless you specifically want the thicker Mini as a second lock.",
+        a: "The New York Mini is 18 mm thick, weighs 2.06 kg, and has no mount and no cable. The Evolution Mini-7 is 13 mm thick, weighs 1.61 kg, and includes a frame mount and a cable. Both are Gold. Carry the Evolution unless you specifically want the thicker Mini as a second lock.",
       },
       {
         q: "What should I buy instead of the New York Mini?",
@@ -223,7 +223,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     altBest: "litelok-x1",
     altBestWhy: "Step up to Diamond and a larger locking area if the bike is worth the extra weight.",
     altSecond: "abus-granit-xplus-540",
-    altSecondWhy: "The compact lock will not close, and you still want Diamond for an ordinary bike plus a clip.",
+    altSecondWhy: "The compact lock will not close, and you still want Diamond for an ordinary bike plus a frame mount.",
   },
   "abus-granit-xplus-540": {
     hook: "A long 300 mm D-lock for when a compact lock will not close.",
@@ -240,7 +240,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     ],
     body: [
       "Fit is part of security. A compact lock that will not close is zero protection. The 540 exists because UK street furniture is not all the same size. 108 × 300 mm is a long D-lock. It will close around posts that a Mini-7 cannot. That is the reason to buy it.",
-      "On the spec we have, the ordinary-bike grade is Diamond and the e-bike grade is Gold. Those are different Sold Secure tests. If you ride an ordinary bike and the policy names Diamond, this lock is a real option. If you ride an e-bike and the policy names the powered Diamond grade, it is the wrong way round — look at the X1 or the D1000.",
+      "On the spec we have, the ordinary-bike grade is Diamond and the e-bike grade is Gold. Those are different Sold Secure tests. If you ride an ordinary bike and the policy names Diamond, this lock is a real option. If you ride an e-bike and the policy names the powered Diamond grade, it does not match — look at the X1 or the D1000.",
       "The frame mount is in the box on this listing. That matters. 1.8 kg on the frame is a lock you will still have with you in the morning. There is no cable in this listing. Do not assume an ABUS cable kit from another product.",
       "It is not sold as angle-grinder resistant. Diamond is not a grinder-proof badge. If the anti-grinder marketing is why you are here, this is not the lock. If the compact lock will not fit, it might be.",
       "A longer shackle also gives a thief more room for a tool. Fill it as much as you can: frame plus rear wheel if they both fit, tight to the stand. Do not buy 300 mm because it looks more serious, then leave a big loop. If a Mini already closes on your stand, you do not need this length.",
@@ -279,7 +279,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       },
       {
         q: "ABUS 540 or Litelok X1?",
-        a: "The X1 is Diamond for e-bikes and sold as armoured, with a smaller locking area and no mount in the box. The 540 is the long shackle with a mount. Fit and policy first.",
+        a: "The X1 is Diamond for e-bikes and sold as armoured, with a smaller locking area and no mount in the box. The 540 is the long shackle with a mount. Choose based on whether it will close on your stand, and on the grade your policy asks for.",
       },
       {
         q: "Is this a commute lock?",
@@ -304,10 +304,10 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       "What most people should buy instead",
     ],
     body: [
-      "The Fahgettaboudit name is marketing. What you actually get is an 18 mm Gold compact D-lock with a smaller locking area than the Evolution Mini-7 and 450 g more steel. Thickness is the selling point. Weight is the problem.",
-      "There is no frame mount on the spec we have. There is no cable. You carry 2.06 kg in your hand, or you strap it somehow. Most commuters will not. The name people search is not the lock most of them will actually take to work.",
+      "The Fahgettaboudit name is branding. What you actually get is an 18 mm Gold compact D-lock with a smaller locking area than the Evolution Mini-7 and 450 g more steel. The extra thickness is why people look at it. The extra weight is why most commuters should choose something else.",
+      "There is no frame mount on the spec we have. There is no cable. You carry 2.06 kg in your hand, or you strap it somehow. Most commuters will not. Many people search this name, but most of them would be better with a lock they will actually take to work.",
       "83 × 153 mm is tighter than the Evolution’s 83 × 178 mm. If the Mini-7 already struggles on your stand, this will not save you. For extra length, the New York 1410 chain is the sibling — 100 cm, 4.9 kg, a home lock.",
-      "Sold Secure Gold is still only Gold. Insurers who name that grade may accept it if the exact model is on their list. They will not care that it says New York. Match the list. We do not keep one.",
+      "Sold Secure Gold is still only Gold. Insurers who name that grade may accept it if the exact model is on their list. They look at the grade and the model, not at the New York name. Match the list. We do not keep one.",
       "If you need a lock you will carry, buy the Evolution Mini-7: same brand, Gold, 1.61 kg, a mount, a cable. If the policy wants Diamond, buy the Litelok X1, not a thicker Gold Mini. If you need length at home, buy the 1410 chain. Keep this Mini only as a second lock on a heavy bike you do not mind lugging 2 kg for.",
     ],
     bestFor: [
@@ -331,11 +331,11 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       "No cable, not Diamond, not sold as angle-grinder resistant",
     ],
     change:
-      "Add a frame mount, as the Evolution Mini-7 already has. A compact lock this heavy without a mount often stays at home.",
+      "Add a frame mount, as the Evolution Mini-7 already has. A compact lock this heavy without a mount is likely to stay at home.",
     faqs: [
       {
         q: "New York Mini or Evolution Mini-7?",
-        a: "Evolution: 13 mm thick, 1.61 kg, frame mount, cable, Gold. New York Mini: 18 mm thick, 2.06 kg, no mount, no cable, Gold. That is carry versus thickness.",
+        a: "The Evolution Mini-7 is 13 mm thick, weighs 1.61 kg, and includes a frame mount and a cable. The New York Mini is 18 mm thick, weighs 2.06 kg, and has no mount and no cable. Both are Gold. For most commuters, the lighter lock is the better daily choice.",
       },
       {
         q: "What should I buy instead?",
@@ -361,7 +361,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     job: "A 4.9 kg chain for extra length at home. Do not commute with it.",
     meta: "Kryptonite New York 1410 chain review: 100 cm, 14 mm, 4.9 kg, Gold grade. A home or terrace chain. Not a commute lock.",
     verdict:
-      "Worth it as a home, garden, or café-terrace lock when a D-lock will not reach the only solid object. Not worth it as the lock you take on the bike: 4.9 kg, no mount, and too heavy for a backpack commute. Sold Secure Gold applies to the approved product, not to any chain you loop twice. We would keep this next to the door.",
+      "Worth it as a home, garden, or café-terrace lock when a D-lock will not reach the only solid object. Not worth it as the lock you take on the bike: 4.9 kg, no mount, and too heavy for a backpack commute. Sold Secure Gold applies to the approved product, not to any chain you loop twice. We would keep this at home, not on the bike.",
     subheads: [
       "Reach versus carry",
       "4.9 kg is the real weight",
@@ -369,8 +369,8 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       "How to use it with a commute D-lock",
     ],
     body: [
-      "A D-lock is for a tight stand. A chain is for extra length. That is why this lock does not belong on a best-commute-lock list. 100 cm of 14 mm New York chain will reach a ground anchor, a second bike, or a post a compact D-lock cannot close around. It will not come with you to the station twice a day.",
-      "4.9 kg is not a typo. It is the product. If a listing photo looks like a bag chain, it is a different product. People buy this because they want New York on a chain. Use it as a home lock: through the frame and a rear wheel, to something that does not move, left in place or carried a few metres from the house.",
+      "A D-lock is for a tight stand. A chain is for extra length. That is why this lock does not belong on a best-commute-lock list. 100 cm of 14 mm New York chain will reach a ground anchor, a second bike, or a post a compact D-lock cannot close around. It is not a lock most people will carry to the station twice a day.",
+      "4.9 kg is the listed weight, not a rounding error. If a listing photo looks much lighter, it is a different product. People buy this because they want New York on a chain. Use it as a home lock: through the frame and a rear wheel, to something that does not move, left in place or carried a few metres from the house.",
       "Gold is the ordinary-bike grade on the spec we have. Looping the chain twice does not make it Diamond, and it does not make an unapproved ground anchor into an approved one. If the policy names a grade, match the lock that is on Sold Secure’s list. If the policy also names a ground anchor, that is a separate product — not this page.",
       "The disc lock on the chain is part of the kit: three keys. There is no frame mount, because you would not want 4.9 kg on a down tube. Pair it with a D-lock you actually carry. For Gold commuters that is the Evolution Mini-7. If you need Diamond on the bike and the chain at home, pair it with the Litelok X1.",
       "At home, lock through the frame to something fixed — a ground anchor if the policy asks for one, not a wooden fence post. Take up slack. A long loop of Gold chain on a loose object is only as good as the object. Leave the chain where the bike lives overnight, and take the D-lock when you leave the house.",
@@ -399,7 +399,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     faqs: [
       {
         q: "D-lock or chain?",
-        a: "A D-lock for a tight stand on a commute. A chain when you need length. Many riders use both, and only carry the D-lock. That is the practical setup.",
+        a: "A D-lock is better for a tight stand on a commute. A chain is better when you need length. Many riders use both, and only carry the D-lock. That is the practical setup.",
       },
       {
         q: "Is 4.9 kg right?",
@@ -407,7 +407,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       },
       {
         q: "Can I use it on an e-bike?",
-        a: "As a home or destination lock, yes if Gold meets the policy. As the only lock you carry, almost nobody will. For Diamond on an e-bike you still take to work, look at the X1.",
+        a: "Yes, as a home or destination lock, if Gold meets the policy. Almost nobody will carry 4.9 kg as their only lock. For Diamond on an e-bike you still take to work, look at the X1.",
       },
       {
         q: "Does looping it twice make it stronger?",
@@ -424,14 +424,14 @@ export const reviewCopy: Record<string, ReviewCopy> = {
 export const catalogueHooks: Record<string, string> = {
   "litelok-x1": "Our pick: Diamond grade you can still carry.",
   "hiplok-d1000": "Small anti-grinder D-lock. Measure the stand first.",
-  "kryptonite-evolution-mini-7": "Gold compact lock with a cable and a clip.",
-  "abus-granit-xplus-540": "Long 300 mm U-bar. Diamond for ordinary bikes.",
-  "kryptonite-new-york-fahgettaboudit-mini": "Thick Gold compact lock. Heavy, no clip.",
+  "kryptonite-evolution-mini-7": "Gold compact lock with a cable and a frame mount.",
+  "abus-granit-xplus-540": "Long 300 mm D-lock. Diamond for ordinary bikes.",
+  "kryptonite-new-york-fahgettaboudit-mini": "Thick Gold compact lock. Heavy, no frame mount.",
   "kryptonite-new-york-fahgettaboudit-1410": "Gold chain for extra length at home, not commuting.",
   "hiplok-dx1000": "Larger Hiplok anti-grinder D-lock — on the spec we have, no full review yet.",
   "onguard-pitbull-dt-8005": "Gold Pitbull with a cable. Named as context only on this site.",
   "onguard-pitbull-std-8003": "Standard Gold Pitbull. Named as context only on this site.",
-  "onguard-pitbull-ls-8002": "Long U-bar Gold Pitbull. Named as context only on this site.",
+  "onguard-pitbull-ls-8002": "Long shackle Gold Pitbull. Named as context only on this site.",
 };
 
 export function hookFor(product: Product): string {

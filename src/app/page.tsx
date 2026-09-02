@@ -6,7 +6,7 @@ import { LockTile } from "@/components/LockTile";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { SiteImage } from "@/components/SiteImage";
 import { websiteJsonLd } from "@/lib/jsonld";
-import { HOME_BRIEFING, HOME_COMMUTE, HOME_INSURANCE, HOME_LEDE } from "@/content/pages";
+import { HOME_BRIEFING, HOME_COMMUTE, HOME_INSURANCE, HOME_LEDE, HOME_PICK } from "@/content/pages";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
   BEST_OF_ASINS,
@@ -104,22 +104,17 @@ export default function HomePage() {
             <h2>Editor’s pick</h2>
             <h3>{displayName(pick)}</h3>
             <p>
-              <strong>Why we like it.</strong> Sold Secure Diamond for bikes and e-bikes, 1.7 kg,
-              and a 101 × 197 mm locking area. High enough for many insurance policies, and light
-              enough that you might still take it on a commute.
+              <strong>Why we like it.</strong> {HOME_PICK.why}
             </p>
             <p>
-              <strong>Who it is for.</strong> Higher-value bikes parked in public, especially if
-              Gold is not enough for your policy.
+              <strong>Who it is for.</strong> {HOME_PICK.who}
             </p>
             <p>
-              <strong>What we’d change.</strong> Include a clip that holds it on the bike. Without
-              one, some people will not carry 1.7 kg every day.
+              <strong>What we’d change.</strong> {HOME_PICK.change}
             </p>
             <p>
               <strong>Best alternative.</strong>{" "}
-              <Link href="/reviews/hiplok-d1000">{displayName(alt)}</Link> if you want Hiplok’s
-              smaller anti-grinder D-lock and you have already measured the stand.
+              <Link href="/reviews/hiplok-d1000">{displayName(alt)}</Link> {HOME_PICK.alt}
             </p>
             <p>
               <Link href="/reviews/litelok-x1" className="primary-link">
@@ -146,7 +141,7 @@ export default function HomePage() {
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
             New York Fahgettaboudit Mini
           </Link>{" "}
-          — a thick 18 mm Gold lock at 2.06 kg, with no clip. Most commuters are better with the
+          — a thick 18 mm Gold lock at 2.06 kg, with no frame mount. Most commuters are better with the
           Evolution Mini-7.
         </p>
 
