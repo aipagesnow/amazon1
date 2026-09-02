@@ -42,7 +42,7 @@ export function LockTile({ product, bestFor, caveat, compact = false }: Props) {
           ))}
         </p>
       ) : null}
-      {!compact && caveat ? <p className="meta">Watch: {caveat}</p> : null}
+      {!compact && caveat ? <p className="meta">Watch out: {caveat}</p> : null}
       <p className="tile-actions">
         {href ? (
           <Link href={href} className="primary-link">

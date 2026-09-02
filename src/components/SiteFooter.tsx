@@ -47,7 +47,7 @@ export function SiteFooter() {
             <p className="kicker">About this site</p>
             <ul>
               <li>
-                <Link href="/method">Methodology</Link>
+                <Link href="/method">How we research</Link>
               </li>
               <li>
                 <Link href="/about">About</Link>

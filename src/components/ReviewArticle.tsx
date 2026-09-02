@@ -31,7 +31,7 @@ function AltCard({ slug, why, kicker }: { slug: string; why: string; kicker: str
           </Link>
         </p>
       ) : (
-        <p className="meta">On our records; no full review yet.</p>
+        <p className="meta">Named on this site; no full review yet.</p>
       )}
       <SeeOnAmazon asin={product.asin} className="see-on-amazon" />
     </article>
@@ -145,7 +145,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
 
         <div className="goodbad">
           <div>
-            <h3>The good</h3>
+            <h3>What’s good</h3>
             <ul>
               {copy.good.map((item) => (
                 <li key={item}>{item}</li>
@@ -153,7 +153,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
             </ul>
           </div>
           <div>
-            <h3>The bad</h3>
+            <h3>What’s not so good</h3>
             <ul>
               {copy.bad.map((item) => (
                 <li key={item}>{item}</li>
@@ -167,10 +167,10 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
           <p>{copy.change}</p>
         </div>
 
-        <h2>Spec sheet</h2>
+        <h2>The numbers</h2>
         <p>
-          Figures from our records only. If a number is missing, we omit it rather than guess. ASIN{" "}
-          {product.asin} is the UK listing this page is about.
+          These figures come from the spec we have. If a number is missing, we leave it blank rather
+          than guess. UK listing code {product.asin}.
         </p>
         <SpecTable product={product} />
 
@@ -204,9 +204,9 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
 
         <p>
           Start with <Link href="/guide">how to choose a bike lock</Link> if you have not measured
-          the rack. Compare the set on <Link href="/best">best bike locks UK</Link>. Pair this
+          the stand. Compare the set on <Link href="/best">best bike locks UK</Link>. Pair this
           with <Link href={vsHref}>{vsLabel}</Link>. How we research:{" "}
-          <Link href="/method">methodology</Link>.
+          <Link href="/method">how we research</Link>.
         </p>
 
         <div className="review-close">

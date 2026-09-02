@@ -5,50 +5,34 @@ import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
+import { ALT_FAQS, ALT_HERO, ALT_META, ALT_TITLE } from "@/content/pages";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { ALTERNATIVES_PATH, displayName, productBySlug } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
 
-const HERO = "kryptonite-new-york-fahgettaboudit-mini";
-
-const TITLE = "Best alternatives to the Kryptonite New York Mini";
-const META =
-  "The New York Mini is 2.06 kg, 18 mm Gold, with no mount. Better options: Evolution Mini-7 to carry, Litelok X1 for Diamond, or a New York chain at home.";
-
-const FAQS = [
-  {
-    q: "Should I still buy the New York Mini?",
-    a: "Only as a thick second lock you will not have to clip on every morning. Most commuters should buy the Evolution Mini-7.",
-  },
-  {
-    q: "Is the Mini on the best-of page?",
-    a: "No. The best-of page lists five locks we would pick. This Mini is reviewed because people search the name, not because we would commute with it.",
-  },
-];
-
 export function generateStaticParams() {
-  return [{ hero: HERO }];
+  return [{ hero: ALT_HERO }];
 }
 
 type Props = { params: Promise<{ hero: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { hero: heroSlug } = await params;
-  if (heroSlug !== HERO) return {};
+  if (heroSlug !== ALT_HERO) return {};
   const url = pageUrl(ALTERNATIVES_PATH);
   return {
-    title: TITLE,
-    description: META,
+    title: ALT_TITLE,
+    description: ALT_META,
     alternates: { canonical: url },
-    openGraph: { title: `${TITLE} · Lock Desk`, description: META, url },
+    openGraph: { title: `${ALT_TITLE} · Lock Desk`, description: ALT_META, url },
   };
 }
 
 export default async function AlternativesPage({ params }: Props) {
   const { hero: heroSlug } = await params;
-  if (heroSlug !== HERO) notFound();
-  const hero = productBySlug(HERO)!;
+  if (heroSlug !== ALT_HERO) notFound();
+  const hero = productBySlug(ALT_HERO)!;
   const mini7 = productBySlug("kryptonite-evolution-mini-7")!;
   const x1 = productBySlug("litelok-x1")!;
   const d1000 = productBySlug("hiplok-d1000")!;
@@ -59,11 +43,11 @@ export default async function AlternativesPage({ params }: Props) {
       <JsonLd
         data={[
           articleJsonLd({
-            title: TITLE,
-            description: META,
+            title: ALT_TITLE,
+            description: ALT_META,
             path: ALTERNATIVES_PATH,
           }),
-          faqJsonLd(FAQS),
+          faqJsonLd(ALT_FAQS),
         ]}
       />
       <PageHero
@@ -71,7 +55,7 @@ export default async function AlternativesPage({ params }: Props) {
         alt={photoAlt.bannerThick}
         kicker="Alternatives"
         title="Best alternatives to the Kryptonite New York Mini"
-        lede="The Fahgettaboudit Mini is an 18 mm Sold Secure Gold D-lock at 2.06 kg, with no mount and no cable on our records. People search it because of the name. Most riders need a lock they will actually carry, a Diamond lock for insurance, or a long chain to leave at home."
+        lede="The Fahgettaboudit Mini is an 18 mm Gold U-lock at 2.06 kg, with no clip and no cable. People search it because of the name. Most riders need a lock they will actually carry, a Diamond lock for insurance, or a long chain to leave at home."
         caption={EDITORIAL_CREDIT}
         overlay
         tight
@@ -80,8 +64,8 @@ export default async function AlternativesPage({ params }: Props) {
       </PageHero>
       <article className="prose wrap tight">
         <p>
-          Keep the New York Mini only if you want an 18 mm Gold Mini as a second lock on a heavy
-          bike, and you do not need a mount or a cable. The review is{" "}
+          Keep the New York Mini only if you want an 18 mm Gold compact lock as a second lock on a
+          heavy bike, and you do not need a clip or a cable. The review is{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">{displayName(hero)}</Link>.
         </p>
         <p className="first-pick">
@@ -91,11 +75,11 @@ export default async function AlternativesPage({ params }: Props) {
 
         <div className="fork-list">
           <article className="fork-card">
-            <p className="kicker">Best carry</p>
+            <p className="kicker">Best to carry</p>
             <h2>
               <Link href="/reviews/kryptonite-evolution-mini-7">{displayName(mini7)}</Link>
             </h2>
-            <p>1.61 kg, Gold, mount, cable in the box. The cable is not Gold.</p>
+            <p>1.61 kg, Gold, clip, cable in the box. The cable is not Gold.</p>
             <p>
               <Link href="/reviews/kryptonite-evolution-mini-7" className="primary-link">
                 Read the review
@@ -108,7 +92,7 @@ export default async function AlternativesPage({ params }: Props) {
             <h2>
               <Link href="/reviews/litelok-x1">{displayName(x1)}</Link>
             </h2>
-            <p>Pedal and powered Diamond, 1.7 kg, 101 × 197 mm.</p>
+            <p>Diamond for ordinary bikes and e-bikes, 1.7 kg, 101 × 197 mm hole.</p>
             <p>
               {displayName(d1000)} only if you have measured 92 × 155 mm.{" "}
               <Link href="/reviews/hiplok-d1000">Read the D1000 review</Link>.
@@ -143,7 +127,7 @@ export default async function AlternativesPage({ params }: Props) {
 
         <h2>Common questions</h2>
         <div className="faq-list">
-          {FAQS.map((faq) => (
+          {ALT_FAQS.map((faq) => (
             <div className="faq-item" key={faq.q}>
               <h3>{faq.q}</h3>
               <p>

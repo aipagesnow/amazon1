@@ -11,11 +11,11 @@ export default function NotFound() {
   return (
     <article className="prose wrap">
       <p className="kicker">404</p>
-      <h1>Page not found</h1>
+      <h1>That page is not on Lock Desk</h1>
       <p>
-        That page is not on Lock Desk. Try the <Link href="/">home page</Link>,{" "}
-        <Link href="/guide">how to choose</Link>, <Link href="/best">best bike locks</Link>, or{" "}
-        <Link href="/reviews">reviews</Link>.
+        The lock, comparison, or guide you asked for is not here. Try the{" "}
+        <Link href="/">home page</Link>, <Link href="/guide">how to choose</Link>,{" "}
+        <Link href="/best">best bike locks</Link>, or <Link href="/reviews">reviews</Link>.
       </p>
     </article>
   );

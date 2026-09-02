@@ -19,12 +19,12 @@ import { pageUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Bike lock reviews",
   description:
-    "Six UK D-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks. Not hands-on lab tests.",
+    "Six UK U-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks. Not hands-on lab tests.",
   alternates: { canonical: pageUrl("/reviews") },
   openGraph: {
     title: "Bike lock reviews · Lock Desk",
     description:
-      "Six UK D-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks. Not hands-on lab tests.",
+      "Six UK U-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks. Not hands-on lab tests.",
     url: pageUrl("/reviews"),
     images: [{ url: photos.pick, alt: photoAlt.pick }],
   },
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
 
 const GROUPS = [
   {
-    title: "Sold Secure Diamond D-locks",
+    title: "Diamond-grade U-locks",
     blurb:
-      "X1 (1.7 kg, pedal and powered Diamond, 101 × 197 mm); D1000 (1.9 kg, 92 × 155 mm, no mount); 540 (1.8 kg, 108 × 300 mm, pedal Diamond / powered Gold).",
+      "X1 (1.7 kg, Diamond for ordinary bikes and e-bikes, 101 × 197 mm hole); D1000 (1.9 kg, 92 × 155 mm, no clip); 540 (1.8 kg, 108 × 300 mm, Diamond for ordinary bikes / Gold for e-bikes).",
     slugs: ["litelok-x1", "hiplok-d1000", "abus-granit-xplus-540"],
   },
   {
-    title: "Sold Secure Gold D-locks",
+    title: "Gold-grade U-locks",
     blurb:
-      "Mini-7 (1.61 kg, mount, cable — the cable is not Gold); New York Mini (2.06 kg, 18 mm, no mount).",
+      "Mini-7 (1.61 kg, clip, cable — the cable is not Gold); New York Mini (2.06 kg, 18 mm, no clip).",
     slugs: ["kryptonite-evolution-mini-7", "kryptonite-new-york-fahgettaboudit-mini"],
   },
   {
@@ -75,7 +75,7 @@ export default function ReviewsIndexPage() {
         alt={photoAlt.pick}
         kicker="Reviews"
         title="Bike lock reviews"
-        lede="Six D-locks and chains, from Sold Secure Gold to Diamond. Each review says who it is for, who should skip it, and the main drawbacks. These are not hands-on lab tests."
+        lede="Six U-locks and chains, from Gold grade to Diamond. Each review says who it is for, who should skip it, and the main drawbacks. These are not hands-on lab tests."
         caption={EDITORIAL_CREDIT}
         overlay
       >
@@ -103,7 +103,7 @@ export default function ReviewsIndexPage() {
           <p>{GHOST_NOTE}</p>
         </aside>
         <p>
-          Start with <Link href="/guide">how to choose</Link> if you have not measured the rack yet.
+          Start with <Link href="/guide">how to choose</Link> if you have not measured the stand yet.
         </p>
       </article>
     </>

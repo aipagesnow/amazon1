@@ -102,15 +102,15 @@ export function specLabel(key: keyof ProductSpecs): string {
     case "type":
       return "Type";
     case "soldSecurePedal":
-      return "Sold Secure (pedal)";
+      return "Sold Secure (ordinary bikes)";
     case "soldSecurePowered":
-      return "Sold Secure (powered / e-bike)";
+      return "Sold Secure (e-bikes)";
     case "shackleMm":
-      return "Shackle";
+      return "U-bar thickness";
     case "chainMm":
-      return "Chain";
+      return "Chain thickness";
     case "lockingArea":
-      return "Locking area";
+      return "Hole size";
     case "lockingLength":
       return "Locking length";
     case "weightKg":
@@ -118,11 +118,11 @@ export function specLabel(key: keyof ProductSpecs): string {
     case "keys":
       return "Keys";
     case "frameMount":
-      return "Frame mount";
+      return "Clips to the bike";
     case "cableIncluded":
-      return "Cable in the box";
+      return "Cable included";
     case "angleGrinderResistant":
-      return "Sold as angle-grinder resistant";
+      return "Maker says it resists grinders";
     default:
       return String(key);
   }
@@ -155,6 +155,6 @@ export function specLine(product: Product): string[] {
 export function compareCell(product: Product, key: keyof ProductSpecs): string {
   const value = specValue(product, key);
   if (value) return value;
-  if (key === "soldSecurePowered") return "Not listed on our records";
+  if (key === "soldSecurePowered") return "Not listed";
   return "n/a";
 }

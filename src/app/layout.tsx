@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`,
   },
   description:
-    "Independent UK reviews of D-locks and chains. Sold Secure grades, insurance, and which lock you will actually carry. Not a shop.",
+    "Plain-English UK reviews of U-locks and chains. Official lock grades, insurance, and which lock you will actually carry. Not a shop.",
   openGraph: {
     siteName: site.name,
     locale: "en_GB",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: photos.cover,
-        alt: "A bicycle locked to a Sheffield stand on a wet UK street at night.",
+        alt: "A bicycle locked to a bike stand on a wet UK street at night.",
       },
     ],
   },

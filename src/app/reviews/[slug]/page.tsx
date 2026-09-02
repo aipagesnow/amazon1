@@ -53,7 +53,11 @@ export default async function ReviewPage({ params }: Props) {
             path: `/reviews/${product.slug}`,
           }),
           faqJsonLd(copy.faqs),
-          productJsonLd(product),
+          productJsonLd(product, {
+            name: title,
+            body: copy.verdict,
+            path: `/reviews/${product.slug}`,
+          }),
         ]}
       />
       <ReviewArticle product={product} copy={copy} />

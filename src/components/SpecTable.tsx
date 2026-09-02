@@ -25,7 +25,7 @@ const BOX_KEYS: (keyof ProductSpecs)[] = ["frameMount", "cableIncluded", "keys"]
 
 export const SPEC_GROUPS: { label: string; keys: (keyof ProductSpecs)[] }[] = [
   { label: "Grade", keys: GRADE_KEYS },
-  { label: "Size & weight", keys: SIZE_KEYS },
+  { label: "Size and weight", keys: SIZE_KEYS },
   { label: "In the box", keys: BOX_KEYS },
 ];
 
@@ -73,9 +73,9 @@ export function SpecFigures({ product }: { product: Product }) {
   const items = [
     { label: "Weight", value: specValue(product, "weightKg") },
     { label: "Sold Secure", value: specValue(product, "soldSecurePedal") },
-    { label: "Locking area / length", value: hole },
+    { label: "Hole size", value: hole },
     {
-      label: product.specs?.chainMm ? "Chain" : "Shackle",
+      label: product.specs?.chainMm ? "Chain thickness" : "U-bar thickness",
       value: bar,
     },
   ].filter((item) => item.value);
@@ -108,7 +108,7 @@ export function CompareTable({
     : GRADE_KEYS;
   const groups = [
     { label: "Grade", keys: gradeKeys },
-    { label: "Size & weight", keys: SIZE_KEYS },
+    { label: "Size and weight", keys: SIZE_KEYS },
     { label: "In the box", keys: BOX_KEYS },
   ]
     .map((group) => ({

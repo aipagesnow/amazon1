@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { GHOST_NOTE_SHORT } from "@/content/editorial";
+import { BEST_VERDICTS } from "@/content/pages";
 import { articleJsonLd, itemListJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
@@ -20,37 +21,14 @@ import { pageUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Best bike locks UK",
   description:
-    "Five D-locks and chains compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.",
+    "Five U-locks and chains compared on official lock grade, weight, and hole size. There is no single best lock for everyone.",
   alternates: { canonical: pageUrl("/best") },
   openGraph: {
     title: "Best bike locks UK · Lock Desk",
     description:
-      "Five D-locks and chains compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.",
+      "Five U-locks and chains compared on official lock grade, weight, and hole size. There is no single best lock for everyone.",
     url: pageUrl("/best"),
     images: [{ url: photos.cover, alt: photoAlt.cover }],
-  },
-};
-
-const verdicts: Record<string, { bestFor: string; caveat: string }> = {
-  B0BLT59NFJ: {
-    bestFor: "Diamond grade you can still commute with (pedal and e-bike).",
-    caveat: "No frame mount in this listing.",
-  },
-  B074K6KSY5: {
-    bestFor: "Gold commute lock with a cable and a bracket.",
-    caveat: "The cable is not Sold Secure approved.",
-  },
-  B0D77XJR4Z: {
-    bestFor: "High-theft racks you have already measured.",
-    caveat: "92 × 155 mm shackle is tight; no mount listed.",
-  },
-  B0944HG7MK: {
-    bestFor: "When a Mini D-lock will not close on the stand.",
-    caveat: "E-bike Sold Secure grade is Gold, not Diamond.",
-  },
-  B073W8N26F: {
-    bestFor: "Extra length at home, not in a backpack.",
-    caveat: "4.9 kg. Not a commute lock.",
   },
 };
 
@@ -79,7 +57,7 @@ export default function BestPage() {
         alt={photoAlt.cover}
         kicker="Best of"
         title="Best bike locks UK"
-        lede="Five D-locks and chains compared on Sold Secure grade, whether you will carry them, and whether the shackle will close. A sixth lock, the New York Mini, is reviewed separately because it is too heavy for most commutes. There is no single best lock for everyone."
+        lede="Five U-locks and chains compared on official lock grade, whether you will carry them, and whether they will close on the stand. A sixth lock, the New York Mini, is reviewed separately because it is too heavy for most commutes. There is no single best lock for everyone."
         caption={EDITORIAL_CREDIT}
         overlay
       >
@@ -99,15 +77,15 @@ export default function BestPage() {
               <Link href="/reviews/litelok-x1">Litelok X1</Link>.
             </li>
             <li>
-              Need Gold with a mount and a cable:{" "}
+              Need Gold with a clip and a cable:{" "}
               <Link href="/reviews/kryptonite-evolution-mini-7">Evolution Mini-7</Link>.
             </li>
             <li>
-              High-theft rack you have already measured:{" "}
+              High-theft stand you have already measured:{" "}
               <Link href="/reviews/hiplok-d1000">D1000</Link>.
             </li>
             <li>
-              Mini D-lock will not fit the stand:{" "}
+              Compact U-lock will not fit the stand:{" "}
               <Link href="/reviews/abus-granit-xplus-540">Granit XPlus 540</Link>.
             </li>
             <li>
@@ -121,25 +99,25 @@ export default function BestPage() {
           </p>
         </div>
 
-        <h2>Spec sheet</h2>
+        <h2>The numbers</h2>
         <div className="spec-scroll">
           <table className="spec">
-            <caption>D-locks first, then the home chain. Weights from the product records on this site.</caption>
+            <caption>U-locks first, then the home chain. Weights from the specs on this site.</caption>
             <thead>
               <tr>
                 <th>Lock</th>
                 <th>Sold Secure</th>
                 <th>Weight</th>
-                <th>Locking area</th>
+                <th>Hole size</th>
                 <th>Best for</th>
-                <th>Caveat</th>
+                <th>Watch</th>
                 <th>Review</th>
               </tr>
             </thead>
             <tbody>
               {rows.map((p) => {
                 const href = reviewHref(p);
-                const extra = verdicts[p.asin];
+                const extra = BEST_VERDICTS[p.asin];
                 return (
                   <tr key={p.asin}>
                     <td>
