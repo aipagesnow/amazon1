@@ -31,9 +31,16 @@ export default function AboutPage() {
         to work. Amazon Associate links fund the site. They do not change the verdict.
       </p>
       <p>
-        We review six locks in detail rather than listing every cable lock on Amazon. There is also
-        a page for people looking for{" "}
+        We review six locks in detail rather than listing every cable lock on Amazon: three Diamond
+        D-locks, two Gold D-locks, and one Gold chain. The reviews are desk research — Sold Secure
+        grades, manufacturer specs, and whether you will actually carry the lock — not a cutting
+        lab. There is also a page for people looking for{" "}
         <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>.
+      </p>
+      <p>
+        If you are choosing a lock, start with <Link href="/guide">how to choose a bike lock</Link>,
+        then the <Link href="/reviews">reviews</Link>. If you already know the job — commute or
+        insurance — those guides name a pick and why.
       </p>
       <p>
         We do not publish a contact email yet. When we do, it will be listed here. Until then, this

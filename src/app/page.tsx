@@ -6,6 +6,7 @@ import { LockTile } from "@/components/LockTile";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { SiteImage } from "@/components/SiteImage";
 import { websiteJsonLd } from "@/lib/jsonld";
+import { HOME_BRIEFING, HOME_COMMUTE, HOME_INSURANCE, HOME_LEDE } from "@/content/pages";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
   BEST_OF_ASINS,
@@ -54,10 +55,7 @@ export default function HomePage() {
           <div className="hero-panel">
             <p className="cover-kicker">D-locks and chains · UK</p>
             <h1>UK bike lock reviews and comparisons</h1>
-            <p className="lede">
-              We compare D-locks and chains on Sold Secure grade, insurance, and weight. The aim is
-              a lock your insurer will accept, and that you will still take to work.
-            </p>
+            <p className="lede">{HOME_LEDE}</p>
             <DisclosureStrip />
             <p className="cover-ctas">
               <Link href="/guide" className="primary-link">
@@ -73,25 +71,15 @@ export default function HomePage() {
         <div className="wrap briefing">
           <article>
             <h2>Grade</h2>
-            <p>
-              Sold Secure is a UK group that tests bike locks. Gold is the grade most home insurance
-              still asks for. Diamond is the next step up. A thin cable in the box is usually not
-              part of that grade.
-            </p>
+            <p>{HOME_BRIEFING.grade}</p>
           </article>
           <article>
             <h2>Fit</h2>
-            <p>
-              Compact U-locks do not fit every bike stand. Measure the stand plus your frame before
-              you buy.
-            </p>
+            <p>{HOME_BRIEFING.fit}</p>
           </article>
           <article>
             <h2>Carry</h2>
-            <p>
-              If a lock is too heavy, you will leave it at home. Then it does not protect the bike
-              at the station.
-            </p>
+            <p>{HOME_BRIEFING.carry}</p>
           </article>
         </div>
       </section>
@@ -178,7 +166,7 @@ export default function HomePage() {
             <div className="copy">
               <p className="kicker">Commuting</p>
               <h3>Best bike lock for commuting</h3>
-              <p>A Gold compact lock with a clip, or Diamond if the bike is worth the extra weight.</p>
+              <p>{HOME_COMMUTE}</p>
             </div>
           </Link>
           <Link href="/for/insurance" className="feature-story">
@@ -192,10 +180,7 @@ export default function HomePage() {
             <div className="copy">
               <p className="kicker">Insurance</p>
               <h3>Best bike lock for insurance</h3>
-              <p>
-                Match the Gold or Diamond grade on your policy, then check the insurer’s approved
-                list.
-              </p>
+              <p>{HOME_INSURANCE}</p>
             </div>
           </Link>
         </div>

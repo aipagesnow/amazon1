@@ -104,7 +104,9 @@ export default async function UseCasePage({ params }: Props) {
         ))}
         {item.records ? <p>{item.records}</p> : null}
         {item.body.map((p) => (
-          <p key={p}>{p}</p>
+          <p key={p}>
+            <RichText text={p} />
+          </p>
         ))}
 
         <h2>Common questions</h2>

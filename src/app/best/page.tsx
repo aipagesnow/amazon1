@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { GHOST_NOTE_SHORT } from "@/content/editorial";
-import { BEST_VERDICTS } from "@/content/pages";
+import { BEST_INTRO, BEST_LEDE, BEST_PICKS, BEST_VERDICTS } from "@/content/pages";
 import { articleJsonLd, itemListJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
@@ -57,7 +57,7 @@ export default function BestPage() {
         alt={photoAlt.cover}
         kicker="Best of"
         title="Best bike locks UK"
-        lede="Five U-locks and chains compared on official lock grade, whether you will carry them, and whether they will close on the stand. A sixth lock, the New York Mini, is reviewed separately because it is too heavy for most commutes. There is no single best lock for everyone."
+        lede={BEST_LEDE}
         caption={EDITORIAL_CREDIT}
         overlay
       >
@@ -69,29 +69,19 @@ export default function BestPage() {
           <p>{GHOST_NOTE_SHORT}</p>
         </aside>
 
+        {BEST_INTRO.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
+
         <div className="chooser" id="chooser">
           <h2>Which lock to pick</h2>
           <ul>
-            <li>
-              Need Diamond you will still carry:{" "}
-              <Link href="/reviews/litelok-x1">Litelok X1</Link>.
-            </li>
-            <li>
-              Need Gold with a mount and a cable:{" "}
-              <Link href="/reviews/kryptonite-evolution-mini-7">Evolution Mini-7</Link>.
-            </li>
-            <li>
-              High-theft stand you have already measured:{" "}
-              <Link href="/reviews/hiplok-d1000">D1000</Link>.
-            </li>
-            <li>
-              Compact D-lock will not fit the stand:{" "}
-              <Link href="/reviews/abus-granit-xplus-540">Granit XPlus 540</Link>.
-            </li>
-            <li>
-              Need a metre of chain at home:{" "}
-              <Link href="/reviews/kryptonite-new-york-fahgettaboudit-1410">New York 1410</Link>.
-            </li>
+            {BEST_PICKS.map((row) => (
+              <li key={row.slug}>
+                <strong>{row.lead}:</strong> <Link href={`/reviews/${row.slug}`}>{row.name}</Link>.{" "}
+                {row.text}
+              </li>
+            ))}
           </ul>
           <p>
             How we picked these: <Link href="/guide">how to choose a bike lock</Link> ·{" "}

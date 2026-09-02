@@ -5,7 +5,7 @@ import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
-import { ALT_FAQS, ALT_HERO, ALT_META, ALT_TITLE } from "@/content/pages";
+import { ALT_BODY, ALT_FAQS, ALT_HERO, ALT_LEDE, ALT_META, ALT_TITLE } from "@/content/pages";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { ALTERNATIVES_PATH, displayName, productBySlug } from "@/lib/products";
@@ -55,7 +55,7 @@ export default async function AlternativesPage({ params }: Props) {
         alt={photoAlt.bannerThick}
         kicker="Alternatives"
         title="Best alternatives to the Kryptonite New York Mini"
-        lede="The Fahgettaboudit Mini is an 18 mm Gold U-lock at 2.06 kg, with no clip and no cable. People search it because of the name. Most riders need a lock they will actually carry, a Diamond lock for insurance, or a long chain to leave at home."
+        lede={ALT_LEDE}
         caption={EDITORIAL_CREDIT}
         overlay
         tight
@@ -63,9 +63,11 @@ export default async function AlternativesPage({ params }: Props) {
         <DisclosureStrip />
       </PageHero>
       <article className="prose wrap tight">
+        {ALT_BODY.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
         <p>
-          Keep the New York Mini only if you want an 18 mm Gold compact lock as a second lock on a
-          heavy bike, and you do not need a clip or a cable. The review is{" "}
+          The review is{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">{displayName(hero)}</Link>.
         </p>
         <p className="first-pick">
@@ -79,7 +81,7 @@ export default async function AlternativesPage({ params }: Props) {
             <h2>
               <Link href="/reviews/kryptonite-evolution-mini-7">{displayName(mini7)}</Link>
             </h2>
-            <p>1.61 kg, Gold, clip, cable in the box. The cable is not Gold.</p>
+            <p>1.61 kg, Gold, frame mount, cable in the box. The cable is not Gold.</p>
             <p>
               <Link href="/reviews/kryptonite-evolution-mini-7" className="primary-link">
                 Read the review
