@@ -92,7 +92,7 @@ export default async function AlternativesPage({ params }: Props) {
             <h2>
               <Link href="/reviews/litelok-x1">{displayName(x1)}</Link>
             </h2>
-            <p>Diamond for ordinary bikes and e-bikes, 1.7 kg, 101 × 197 mm hole.</p>
+            <p>Diamond for bikes and e-bikes, 1.7 kg, 101 × 197 mm locking area.</p>
             <p>
               {displayName(d1000)} only if you have measured 92 × 155 mm.{" "}
               <Link href="/reviews/hiplok-d1000">Read the D1000 review</Link>.

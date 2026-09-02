@@ -106,11 +106,11 @@ export function specLabel(key: keyof ProductSpecs): string {
     case "soldSecurePowered":
       return "Sold Secure (e-bikes)";
     case "shackleMm":
-      return "U-bar thickness";
+      return "Shackle";
     case "chainMm":
       return "Chain thickness";
     case "lockingArea":
-      return "Hole size";
+      return "Locking area";
     case "lockingLength":
       return "Locking length";
     case "weightKg":
@@ -118,7 +118,7 @@ export function specLabel(key: keyof ProductSpecs): string {
     case "keys":
       return "Keys";
     case "frameMount":
-      return "Clips to the bike";
+      return "Frame mount";
     case "cableIncluded":
       return "Cable included";
     case "angleGrinderResistant":

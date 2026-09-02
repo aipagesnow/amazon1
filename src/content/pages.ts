@@ -1,15 +1,15 @@
 export const BEST_VERDICTS: Record<string, { bestFor: string; caveat: string }> = {
   B0BLT59NFJ: {
     bestFor: "Diamond grade you can still commute with — ordinary bikes and e-bikes.",
-    caveat: "No bike clip in this listing.",
+    caveat: "No frame mount in this listing.",
   },
   B074K6KSY5: {
-    bestFor: "Gold commute lock with a cable and a clip.",
+    bestFor: "Gold commute lock with a cable and a mount.",
     caveat: "The cable is not Sold Secure approved.",
   },
   B0D77XJR4Z: {
     bestFor: "High-theft stands you have already measured.",
-    caveat: "92 × 155 mm hole is tight; no clip listed.",
+    caveat: "92 × 155 mm shackle is tight; no mount listed.",
   },
   B0944HG7MK: {
     bestFor: "When a compact U-lock will not close on the stand.",
@@ -50,7 +50,7 @@ export const CASES: UseCase[] = [
     body: [
       "If you leave the lock at home, it does not protect the bike at the station. Weight, and whether it clips to the bike, decide whether you take it every day.",
       "For most UK commuters whose policy still names Sold Secure Gold, the Evolution Mini-7 is the pick here: 1.61 kg, a clip, and a cable in the box. The cable is not Gold.",
-      "If the bike is an e-bike you would hate to claim on, and you will carry 1.7 kg, take the Litelok X1 instead. Do not buy the D1000 for a commute until you have checked that the 92 × 155 mm hole closes on your stand.",
+      "If the bike is an e-bike you would hate to claim on, and you will carry 1.7 kg, take the Litelok X1 instead. Do not buy the D1000 for a commute until you have checked that the 92 × 155 mm locking area closes on your stand.",
       "A 4.9 kg chain is not a commute lock. Keep a chain at home for extra length, and a U-lock on the bike.",
     ],
     picks: ["kryptonite-evolution-mini-7", "litelok-x1"],
@@ -129,12 +129,12 @@ export const PAIRS: Pair[] = [
       "This compares a Sold Secure Gold commute lock with a Diamond U-lock sold as anti-grinder. They suit different riders.",
     whoEach: [
       "The Mini-7 is Gold you will carry: 1.61 kg, a clip, and a cable.",
-      "The D1000 is Diamond with a tight hole: 1.9 kg, no clip, 92 × 155 mm.",
+      "The D1000 is Diamond with a compact shackle: 1.9 kg, no clip, 92 × 155 mm.",
     ],
     afterTable: [
       "The Evolution Mini-7 is 1.61 kg, Gold, a bike clip, and a cable in the box. The cable is not Gold. If that meets the policy, this is the lock that will actually be on the bike.",
-      "The D1000 is Diamond for ordinary bikes and for e-bikes, sold as anti-grinder, 1.9 kg, no clip, and a 92 × 155 mm hole. Worth it on a known high-theft stand you have measured. If you will not carry 1.9 kg with no clip, it will stay at home.",
-      "If neither lock will close, look at the [ABUS 540](/reviews/abus-granit-xplus-540) — not a thicker compact lock. If you wanted Diamond with a usable hole and 1.7 kg, that is the [Litelok X1](/reviews/litelok-x1), not this comparison.",
+      "The D1000 is Diamond for ordinary bikes and for e-bikes, sold as anti-grinder, 1.9 kg, no clip, and a 92 × 155 mm locking area. Worth it on a known high-theft stand you have measured. If you will not carry 1.9 kg with no clip, it will stay at home.",
+      "If neither lock will close, look at the [ABUS 540](/reviews/abus-granit-xplus-540) — not a thicker compact lock. If you wanted Diamond with a shackle that fits most stands and 1.7 kg, that is the [Litelok X1](/reviews/litelok-x1), not this comparison.",
     ],
     faqs: [
       {
@@ -158,7 +158,7 @@ export const PAIRS: Pair[] = [
     a: "kryptonite-evolution-mini-7",
     b: "kryptonite-new-york-fahgettaboudit-1410",
     intro:
-      "A U-lock (a D-lock) and a chain do different jobs. The Mini-7 is the lock you take on the bike. The New York 1410 is a 4.9 kg Gold chain for when a compact lock cannot reach the only solid object. Using both is common. Commuting with the chain is not.",
+      "A D-lock and a chain do different jobs. The Mini-7 is the lock you take on the bike. The New York 1410 is a 4.9 kg Gold chain for when a compact lock cannot reach the only solid object. Using both is common. Commuting with the chain is not.",
     whoEach: [
       "The Mini-7 is for carrying on a commute.",
       "The 1410 is for extra length at home.",

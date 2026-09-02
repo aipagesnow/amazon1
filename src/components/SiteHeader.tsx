@@ -40,7 +40,7 @@ export function SiteHeader() {
           <LockMark className="mark" />
           <span>
             <span className="wordmark">{site.name}</span>
-            <span className="tagline">U-locks and chains · UK</span>
+            <span className="tagline">D-locks and chains · UK</span>
           </span>
         </Link>
         <nav className="nav nav-desktop" aria-label="Main">

@@ -60,7 +60,7 @@ export default function MethodPage() {
         <h2>What we will not claim</h2>
         <ul>
           <li>We have not taken a grinder or bolt cropper to these locks.</li>
-          <li>We do not invent a weight, hole size, or grade. If a figure is missing, we leave it out.</li>
+          <li>We do not invent a weight, locking area, or grade. If a figure is missing, we leave it out.</li>
           <li>We do not print live prices. They change on Amazon.</li>
           <li>We do not copy Amazon customer reviews or star ratings onto these pages.</li>
           <li>

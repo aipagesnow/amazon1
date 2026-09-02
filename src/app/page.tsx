@@ -19,12 +19,12 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: `${site.name} — UK bike lock comparisons`,
   description:
-    "Plain-English UK reviews of U-locks and chains. We explain the lock grade, insurance, and which lock you will actually carry. Not a shop.",
+    "Independent UK reviews of D-locks and chains. Sold Secure grades, insurance, and which lock you will actually carry.",
   alternates: { canonical: site.url },
   openGraph: {
     title: `${site.name} — UK bike lock comparisons`,
     description:
-      "Official lock grades, insurance, and which lock you will actually carry. UK U-lock and chain comparisons. Not a shop.",
+      "Sold Secure grades, insurance, and which lock you will actually carry. UK D-lock and chain comparisons.",
     url: site.url,
     images: [{ url: photos.cover, alt: photoAlt.cover }],
   },
@@ -52,12 +52,11 @@ export default function HomePage() {
         <div className="cover-shade" aria-hidden="true" />
         <div className="wrap cover-copy">
           <div className="hero-panel">
-            <p className="cover-kicker">U-locks and chains · UK</p>
-            <h1>UK bike lock reviews, in plain English</h1>
+            <p className="cover-kicker">D-locks and chains · UK</p>
+            <h1>UK bike lock reviews and comparisons</h1>
             <p className="lede">
-              We help you pick a U-lock or a chain you will actually take with you. We look at the
-              official UK lock grade, what insurance often asks for, and how heavy the lock is. Not
-              a shop. Not a test lab.
+              We compare D-locks and chains on Sold Secure grade, insurance, and weight. The aim is
+              a lock your insurer will accept, and that you will still take to work.
             </p>
             <DisclosureStrip />
             <p className="cover-ctas">
@@ -117,9 +116,9 @@ export default function HomePage() {
             <h2>Editor’s pick</h2>
             <h3>{displayName(pick)}</h3>
             <p>
-              <strong>Why we like it.</strong> Diamond grade for ordinary bikes and e-bikes, 1.7 kg,
-              and a 101 × 197 mm hole. High enough for many insurance policies, and light enough
-              that you might still take it on a commute.
+              <strong>Why we like it.</strong> Sold Secure Diamond for bikes and e-bikes, 1.7 kg,
+              and a 101 × 197 mm locking area. High enough for many insurance policies, and light
+              enough that you might still take it on a commute.
             </p>
             <p>
               <strong>Who it is for.</strong> Higher-value bikes parked in public, especially if
@@ -132,7 +131,7 @@ export default function HomePage() {
             <p>
               <strong>Best alternative.</strong>{" "}
               <Link href="/reviews/hiplok-d1000">{displayName(alt)}</Link> if you want Hiplok’s
-              smaller anti-grinder U-lock and you have already measured the stand.
+              smaller anti-grinder D-lock and you have already measured the stand.
             </p>
             <p>
               <Link href="/reviews/litelok-x1" className="primary-link">

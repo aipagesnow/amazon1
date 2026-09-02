@@ -73,9 +73,9 @@ export function SpecFigures({ product }: { product: Product }) {
   const items = [
     { label: "Weight", value: specValue(product, "weightKg") },
     { label: "Sold Secure", value: specValue(product, "soldSecurePedal") },
-    { label: "Hole size", value: hole },
+    { label: "Locking area", value: hole },
     {
-      label: product.specs?.chainMm ? "Chain thickness" : "U-bar thickness",
+      label: product.specs?.chainMm ? "Chain thickness" : "Shackle",
       value: bar,
     },
   ].filter((item) => item.value);

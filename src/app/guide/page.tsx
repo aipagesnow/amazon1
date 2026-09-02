@@ -10,7 +10,7 @@ import { pageUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "How to choose a bike lock",
   description:
-    "How to choose a bike lock in the UK: Gold vs Diamond, insurance lists, U-lock vs chain, and a weight you will actually carry.",
+    "How to choose a bike lock in the UK: Sold Secure Gold vs Diamond, insurance lists, D-lock vs chain, and a weight you will actually carry.",
   alternates: { canonical: pageUrl("/guide") },
   openGraph: {
     title: "How to choose a bike lock · Lock Desk",
@@ -55,9 +55,7 @@ export default function GuidePage() {
       </PageHero>
       <article className="prose wrap tight">
         <p>
-          This guide still works if every Amazon link disappeared. Grades come from Sold Secure, a
-          UK group that tests bike locks. Weights and sizes come from the specs on this site. We
-          have not run lab tests.
+          Grades come from Sold Secure. Weights and sizes come from the manufacturer specs.
         </p>
 
         <h2>What Gold and Diamond mean</h2>
@@ -86,7 +84,7 @@ export default function GuidePage() {
         <h2>Will the lock close on your stand?</h2>
         <p>
           A compact lock that will not close around the stand does not protect the bike. Compare the
-          hole in the lock with the post plus the frame tube. Longer U-bars (the ABUS 540 here is
+          locking area with the post plus the frame tube. Longer shackles (the ABUS 540 here is
           300 mm) close more easily and also give a thief more room for a tool. Tight compact locks
           (the D1000 is 92 × 155 mm) are awkward on fat tyres and some cargo frames.
         </p>
@@ -99,12 +97,12 @@ export default function GuidePage() {
           is 4.9 kg. If you already skip 1.6 kg, do not buy 2 kg because the name sounds tougher.
         </p>
 
-        <h2>U-lock or chain</h2>
+        <h2>D-lock or chain</h2>
         <p>
-          A U-lock (a D-lock) is for a tight stand on a commute. A chain is for extra length: home,
+          A D-lock is for a tight stand on a commute. A chain is for extra length: home,
           a ground anchor, two bikes, or a post a compact lock cannot close around.{" "}
           <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> is the longer comparison. Many
-          riders use both and only carry the U-lock.
+          riders use both and only carry the D-lock.
         </p>
 
         <h2>Which specs you can ignore</h2>
@@ -135,8 +133,8 @@ export default function GuidePage() {
         </ul>
 
         <div className="chooser" id="chooser">
-          <h2>Which lock on this site fits your situation</h2>
-          <p>These picks are from the locks reviewed on this site. It is not a shop filter.</p>
+          <h2>Which lock to pick</h2>
+          <p>A short match of job to the six locks we have reviewed.</p>
           <div className="spec-scroll">
           <table className="spec">
             <thead>
@@ -148,47 +146,47 @@ export default function GuidePage() {
             </thead>
             <tbody>
               <tr>
-                <td>Weekday commute, Gold is enough, you want a clip and a cable</td>
+                <td>Weekday commute, Gold is enough, you want a mount and a cable</td>
                 <td>
                   <Link href="/reviews/kryptonite-evolution-mini-7">Kryptonite Evolution Mini-7</Link>
                 </td>
-                <td>1.61 kg, Gold, clip and cable in the box. Cable is not graded.</td>
+                <td>1.61 kg, Gold, mount and cable in the box. The cable is not Gold.</td>
               </tr>
               <tr>
-                <td>High-value bike, public stands, you will carry about 1.7 kg</td>
+                <td>Higher-value bike, public racks, you will carry about 1.7 kg</td>
                 <td>
                   <Link href="/reviews/litelok-x1">Litelok X1</Link>
                 </td>
-                <td>Diamond for ordinary bikes and e-bikes, a usable hole.</td>
+                <td>Diamond for bikes and e-bikes. Shackle 101 × 197 mm.</td>
               </tr>
               <tr>
-                <td>Known theft hotspot, you have measured a small hole</td>
+                <td>High-theft street, you have measured a compact shackle</td>
                 <td>
                   <Link href="/reviews/hiplok-d1000">Hiplok D1000</Link>
                 </td>
-                <td>Diamond anti-grinder U-lock. Tight 92 × 155 mm hole.</td>
+                <td>Diamond, sold as anti-grinder. Compact 92 × 155 mm shackle.</td>
               </tr>
               <tr>
-                <td>Compact lock will not close; you still want Diamond for an ordinary bike</td>
+                <td>Compact D-lock will not close; you still want Diamond for a non-e-bike</td>
                 <td>
                   <Link href="/reviews/abus-granit-xplus-540">ABUS Granit XPlus 540</Link>
                 </td>
-                <td>300 mm U-bar. E-bike grade is Gold on the spec we have.</td>
+                <td>300 mm shackle. E-bike grade is Gold.</td>
               </tr>
               <tr>
-                <td>Home, garden, or a post a U-lock cannot reach</td>
+                <td>Home, garden, or a post a D-lock cannot reach</td>
                 <td>
                   <Link href="/reviews/kryptonite-new-york-fahgettaboudit-1410">
                     New York 1410 chain
                   </Link>
                 </td>
-                <td>100 cm, 4.9 kg. Not a commute lock.</td>
+                <td>100 cm, 4.9 kg. Leave it at home.</td>
               </tr>
             </tbody>
           </table>
           </div>
           <p>
-            Full table: <Link href="/best">best bike locks UK</Link>. Comparison:{" "}
+            Full table: <Link href="/best">best of</Link>. Comparison:{" "}
             <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs D1000</Link>.
           </p>
         </div>

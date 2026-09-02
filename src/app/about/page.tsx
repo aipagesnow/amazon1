@@ -22,8 +22,8 @@ export default function AboutPage() {
         <Link href="/method">How we research</Link>
       </nav>
       <p className="lede">
-        Lock Desk compares UK U-locks and chains in plain English. We look at the official lock
-        grade, what insurance often asks for, and whether you will actually carry the lock.
+        Lock Desk compares UK D-locks and chains. We look at Sold Secure grades, insurance
+        wording, and whether you will actually carry the lock.
       </p>
       <p>
         {site.name} is run by {site.operator}. It is not a shop, not a marketplace, and not Amazon.

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`,
   },
   description:
-    "Plain-English UK reviews of U-locks and chains. Official lock grades, insurance, and which lock you will actually carry. Not a shop.",
+    "Independent UK reviews of D-locks and chains. Sold Secure grades, insurance, and which lock you will actually carry.",
   openGraph: {
     siteName: site.name,
     locale: "en_GB",

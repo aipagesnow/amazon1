@@ -21,12 +21,12 @@ import { pageUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Best bike locks UK",
   description:
-    "Five U-locks and chains compared on official lock grade, weight, and hole size. There is no single best lock for everyone.",
+    "Five D-locks and chains compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.",
   alternates: { canonical: pageUrl("/best") },
   openGraph: {
     title: "Best bike locks UK · Lock Desk",
     description:
-      "Five U-locks and chains compared on official lock grade, weight, and hole size. There is no single best lock for everyone.",
+      "Five D-locks and chains compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.",
     url: pageUrl("/best"),
     images: [{ url: photos.cover, alt: photoAlt.cover }],
   },
@@ -77,7 +77,7 @@ export default function BestPage() {
               <Link href="/reviews/litelok-x1">Litelok X1</Link>.
             </li>
             <li>
-              Need Gold with a clip and a cable:{" "}
+              Need Gold with a mount and a cable:{" "}
               <Link href="/reviews/kryptonite-evolution-mini-7">Evolution Mini-7</Link>.
             </li>
             <li>
@@ -85,7 +85,7 @@ export default function BestPage() {
               <Link href="/reviews/hiplok-d1000">D1000</Link>.
             </li>
             <li>
-              Compact U-lock will not fit the stand:{" "}
+              Compact D-lock will not fit the stand:{" "}
               <Link href="/reviews/abus-granit-xplus-540">Granit XPlus 540</Link>.
             </li>
             <li>
@@ -102,13 +102,13 @@ export default function BestPage() {
         <h2>The numbers</h2>
         <div className="spec-scroll">
           <table className="spec">
-            <caption>U-locks first, then the home chain. Weights from the specs on this site.</caption>
+            <caption>D-locks first, then the home chain. Weights from the product specs.</caption>
             <thead>
               <tr>
                 <th>Lock</th>
                 <th>Sold Secure</th>
                 <th>Weight</th>
-                <th>Hole size</th>
+                <th>Locking area</th>
                 <th>Best for</th>
                 <th>Watch</th>
                 <th>Review</th>
