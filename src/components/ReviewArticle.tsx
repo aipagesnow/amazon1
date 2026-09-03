@@ -31,7 +31,7 @@ function AltCard({ slug, why, kicker }: { slug: string; why: string; kicker: str
           </Link>
         </p>
       ) : (
-        <p className="meta">Named on this site; no full review yet.</p>
+        <p className="meta">No full review of this lock yet.</p>
       )}
       <SeeOnAmazon asin={product.asin} className="see-on-amazon" />
     </article>
@@ -169,8 +169,8 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
 
         <h2>The numbers</h2>
         <p>
-          These figures come from the spec we have. If a number is missing, we leave it blank rather
-          than guess. UK listing code {product.asin}.
+          Weights, grades, and sizes below come from the manufacturer and from Sold Secure. If a
+          figure is missing, we leave it blank rather than guess.
         </p>
         <SpecTable product={product} />
 
@@ -223,7 +223,6 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         <span className="sticky-name">{displayName(product)}</span>
         <GradeStamp grade={product.specs?.soldSecurePedal} label={copy.stamp} />
         <SeeOnAmazon asin={product.asin} className="btn-amazon" />
-        <span className="sticky-aff">affiliate</span>
       </div>
     </article>
   );

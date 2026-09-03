@@ -37,7 +37,7 @@ export const GUIDE_LEDE =
 
 export const GUIDE_INTRO = [
   "Most people buy a lock by brand, then find out it will not close on the stand, or that the insurer wanted a different Sold Secure grade. The order below avoids that.",
-  "Sold Secure grades come from Sold Secure. Weights and shackle sizes come from the manufacturer specs we have recorded. We have not cut these locks open; the reviews are a reading of those facts, not a lab test.",
+  "Sold Secure grades come from Sold Secure. Weights and shackle sizes come from the manufacturer specs. We have not cut these locks open; the reviews are a reading of those facts, not a lab test.",
 ];
 
 export const GUIDE_START = [
@@ -51,7 +51,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
     h2: "What Sold Secure Gold and Diamond mean",
     paragraphs: [
       "Sold Secure is a UK test house owned by the Master Locksmiths Association. Bicycle locks are graded Bronze, Silver, Gold, and Diamond. Gold is still what a lot of UK household cycle insurance asks for. Diamond is the higher pedal-cycle grade. Neither grade means the lock cannot be cut with an angle grinder. Diamond is tested against a tougher set of tools than Gold; it is not a promise that a determined thief with a battery grinder will walk away.",
-      "There is a separate Sold Secure programme for powered cycles — e-bikes, and historically motorcycles. A lock can be Diamond for an ordinary pedal bike and only Gold for an e-bike. That split matters if your policy names the powered-cycle grade rather than the pedal one. The ABUS Granit XPlus 540 on these pages is the example: Diamond for ordinary bikes, Gold for e-bikes on the spec we have.",
+      "There is a separate Sold Secure programme for powered cycles — e-bikes, and historically motorcycles. A lock can be Diamond for an ordinary pedal bike and only Gold for an e-bike. That split matters if your policy names the powered-cycle grade rather than the pedal one. The ABUS Granit XPlus 540 on these pages is the example: Diamond for ordinary bikes, Gold for e-bikes on this listing.",
       "Treat manufacturer lines such as “20× more resistant” as marketing unless an independent grade is marked on the lock. Read [best bike lock for insurance](/for/insurance) after this. We do not keep a live list of which insurers accept which models — that list changes, and we are not your broker.",
     ],
   },
@@ -73,7 +73,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
     h2: "Will you actually carry it?",
     paragraphs: [
       "The lock you leave at home does not protect the bike at the station. Weight, and whether it has a frame mount, decide whether you take it every day.",
-      "On the specs we have: the Evolution Mini-7 is 1.61 kg with a mount; the Litelok X1 is 1.7 kg with no mount in the listing; the D1000 is 1.9 kg with no mount listed; the New York Mini is 2.06 kg with no mount; the New York 1410 chain is 4.9 kg. If you already find 1.6 kg too heavy, a 2 kg lock with a tougher-sounding name will not help — you are less likely to take it.",
+      "On the listings we reviewed: the Evolution Mini-7 is 1.61 kg with a mount; the Litelok X1 is 1.7 kg with no mount in the listing; the D1000 is 1.9 kg with no mount listed; the New York Mini is 2.06 kg with no mount; the New York 1410 chain is 4.9 kg. If you already find 1.6 kg too heavy, a 2 kg lock with a tougher-sounding name will not help — you are less likely to take it.",
       "A lock that clips to the frame is the one you are most likely to have with you every morning. Budget for a mount if the listing does not include one, or be honest that you will carry it in a bag.",
     ],
   },
@@ -162,7 +162,7 @@ export const GUIDE_CHOOSER: { situation: string; slug: string; name: string; why
     situation: "Compact D-lock will not close; you still want Diamond for an ordinary bike",
     slug: "abus-granit-xplus-540",
     name: "ABUS Granit XPlus 540",
-    why: "300 mm shackle. E-bike grade is Gold on the spec we have.",
+    why: "300 mm shackle. E-bike grade is Gold on this listing.",
   },
   {
     situation: "Home, garden, or a post a D-lock cannot reach",
@@ -247,7 +247,7 @@ export const BEST_PICKS: { lead: string; slug: string; name: string; text: strin
     lead: "Compact D-lock will not fit the stand",
     slug: "abus-granit-xplus-540",
     name: "Granit XPlus 540",
-    text: "300 mm shackle, frame mount, Diamond for ordinary bikes. E-bike grade is Gold on the spec we have.",
+    text: "300 mm shackle, frame mount, Diamond for ordinary bikes. E-bike grade is Gold on this listing.",
   },
   {
     lead: "Need a metre of chain at home",
@@ -264,7 +264,7 @@ export const REVIEWS_LEDE =
   "Six D-locks and chains, from Sold Secure Gold to Diamond. Each review says who it is for, who should skip it, and the main drawbacks.";
 
 export const REVIEWS_INTRO = [
-  "These are desk reviews, not a ranking of every lock on Amazon. We took six products people actually search for — three Diamond D-locks, two Gold D-locks, and one Gold chain — and wrote each one up against the same questions: grade, fit, weight, and whether you will carry it.",
+  "This is not a ranking of every lock on Amazon. We took six products people actually search for — three Diamond D-locks, two Gold D-locks, and one Gold chain — and wrote each one up against the same questions: grade, fit, weight, and whether you will carry it.",
   "Start with the group that matches the grade on your policy. Then read the verdict, not just the name. A Diamond lock left at home is worse than a Gold lock you take with you.",
 ];
 
@@ -290,13 +290,13 @@ export const REVIEW_GROUPS = [
 ] as const;
 
 export const METHOD_META =
-  "How Lock Desk researches bike locks: Sold Secure grades, manufacturer specs, and UK insurance wording. Desk research, not a cutting lab.";
+  "How Lock Desk researches bike locks: Sold Secure grades, manufacturer specs, and UK insurance wording. We have not cut these locks open.";
 
 export const METHOD_INTRO =
-  "Lock Desk is desk research. We have not cut these locks open. Every claim on a review page should be something we can point to on a spec sheet, a Sold Secure grade, or the manufacturer’s own documentation.";
+  "Lock Desk reviews locks from Sold Secure grades and manufacturer specs. We have not cut these locks open. Every claim on a review page should be something we can point to on a spec sheet, a Sold Secure grade, or the manufacturer’s own documentation.";
 
 export const METHOD_USE = [
-  "The product record: UK listing code (ASIN), name, brand, and the specs we have for it — weight, locking area, shackle or chain size, keys, frame mount, cable.",
+  "The product record: the Amazon listing we reviewed, name, brand, and the published specs — weight, locking area, shackle or chain size, keys, frame mount, cable.",
   "Manufacturer documentation, including notes on whether a cable in the box is part of the Sold Secure approval.",
   "Sold Secure’s public grades for ordinary (pedal) cycles and, where we have it, powered cycles / e-bikes.",
   "How UK cycle insurance typically names Gold and Diamond. We are not your broker, and we do not keep a live list of approved models — insurers change those lists.",
@@ -384,7 +384,7 @@ export const CASES: UseCase[] = [
     body: [
       "Sold Secure is independent. Your insurer is not obliged to accept every lock that carries the badge. Many policies ask for a minimum grade and then publish a list of approved models. Both checks matter. A Gold badge on a lock that is missing from that PDF can still be a problem at claim time.",
       "We do not keep that list current, because insurers change it. Open the document that came with your policy. If it names models, match the model — not just “a Gold D-lock”. If it only names the grade, the Sold Secure marking on the lock you buy still needs to match.",
-      "E-bike policies are where people get caught. Some name the powered-cycle grade rather than the pedal-cycle grade. A lock can be Diamond for an ordinary bike and only Gold for an e-bike. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes on the spec we have. The Litelok X1 and Hiplok D1000 are Diamond for both.",
+      "E-bike policies are where people get caught. Some name the powered-cycle grade rather than the pedal-cycle grade. A lock can be Diamond for an ordinary bike and only Gold for an e-bike. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes on this listing. The Litelok X1 and Hiplok D1000 are Diamond for both.",
     ],
     fold: {
       gold: "If your policy names Gold, look at the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7).",
@@ -396,7 +396,7 @@ export const CASES: UseCase[] = [
       "Then open the insurer’s approved-lock PDF. A lock can be Gold in Sold Secure’s database and still missing from one brand’s list. The grade is required, but it is not always enough.",
     ],
     records:
-      "On the spec we have: Evolution Mini-7, the New York Mini and the 1410 chain are Gold for ordinary bikes. Litelok X1 and Hiplok D1000 are Diamond for both ordinary bikes and e-bikes. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes, so it does not match an e-bike policy that asks for powered Diamond.",
+      "On the listings we reviewed: Evolution Mini-7, the New York Mini and the 1410 chain are Gold for ordinary bikes. Litelok X1 and Hiplok D1000 are Diamond for both ordinary bikes and e-bikes. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes, so it does not match an e-bike policy that asks for powered Diamond.",
     checklist: [
       "Read the wording you signed — Gold or Diamond, pedal or powered.",
       "Open the insurer’s approved-lock PDF.",
@@ -411,7 +411,7 @@ export const CASES: UseCase[] = [
       },
       {
         q: "Ordinary-bike Diamond or e-bike Diamond?",
-        a: "E-bike policies sometimes name the powered-cycle grade. The X1 and D1000 are Diamond for both on the spec we have. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes.",
+        a: "E-bike policies sometimes name the powered-cycle grade. The X1 and D1000 are Diamond for both on this listing. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes.",
       },
       {
         q: "Does a cable in the box count?",
@@ -534,7 +534,7 @@ export const ALT_TITLE = "Best alternatives to the Kryptonite New York Mini";
 export const ALT_META =
   "The New York Mini is 2.06 kg, 18 mm Gold, with no frame mount. Better options: Evolution Mini-7 to carry, Litelok X1 for Diamond, or a New York chain at home.";
 export const ALT_LEDE =
-  "The Fahgettaboudit Mini is an 18 mm Gold D-lock at 2.06 kg, with no frame mount and no cable on the spec we have. People search it because of the name. Most riders need a lock they will actually carry, a Diamond lock for insurance, or a long chain to leave at home.";
+  "The Fahgettaboudit Mini is an 18 mm Gold D-lock at 2.06 kg, with no frame mount and no cable on this listing. People search it because of the name. Most riders need a lock they will actually carry, a Diamond lock for insurance, or a long chain to leave at home.";
 export const ALT_BODY = [
   "Keep the New York Mini only if you want an 18 mm Gold compact D-lock as a second lock on a heavy bike, and you do not need a mount or a cable. The extra thickness is why people look at it. The extra weight is why most commuters should choose something else as their only lock.",
   "The Fahgettaboudit name is branding. What you actually get is a Gold Mini that is 450 g heavier than the Evolution Mini-7, with a smaller locking area (83 × 153 mm versus 83 × 178 mm), no mount, and no cable. Sold Secure Gold is still only Gold. Insurers who name that grade may accept it if the exact model is on their list. They look at the grade and the model, not at the New York name.",
@@ -542,7 +542,7 @@ export const ALT_BODY = [
 export const ALT_FAQS: Faq[] = [
   {
     q: "Should I still buy the New York Mini?",
-    a: "Only as a thick second lock you will not have to clip on every morning. Most commuters should buy the Evolution Mini-7.",
+    a: "Only as a thick second lock you will not have to attach every morning. Most commuters should buy the Evolution Mini-7.",
   },
   {
     q: "Is the Mini on the best-of page?",

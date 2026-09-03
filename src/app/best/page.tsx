@@ -4,7 +4,6 @@ import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
-import { GHOST_NOTE_SHORT } from "@/content/editorial";
 import { BEST_INTRO, BEST_LEDE, BEST_PICKS, BEST_VERDICTS } from "@/content/pages";
 import { articleJsonLd, itemListJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
@@ -64,10 +63,6 @@ export default function BestPage() {
         <DisclosureStrip />
       </PageHero>
       <article className="prose wrap tight">
-        <aside className="ghost-note">
-          <p className="kicker">Not reviewed yet</p>
-          <p>{GHOST_NOTE_SHORT}</p>
-        </aside>
 
         {BEST_INTRO.map((p) => (
           <p key={p}>{p}</p>
@@ -100,7 +95,7 @@ export default function BestPage() {
                 <th>Weight</th>
                 <th>Locking area</th>
                 <th>Best for</th>
-                <th>Watch</th>
+                <th>Drawback</th>
                 <th>Review</th>
               </tr>
             </thead>
@@ -115,10 +110,10 @@ export default function BestPage() {
                       <br />
                       {href ? <Link href={href}>{displayName(p)}</Link> : displayName(p)}
                     </td>
-                    <td>{specValue(p, "soldSecurePedal") ?? "n/a"}</td>
-                    <td>{specValue(p, "weightKg") ?? "n/a"}</td>
+                    <td>{specValue(p, "soldSecurePedal") ?? "—"}</td>
+                    <td>{specValue(p, "weightKg") ?? "—"}</td>
                     <td>
-                      {specValue(p, "lockingArea") ?? specValue(p, "lockingLength") ?? "n/a"}
+                      {specValue(p, "lockingArea") ?? specValue(p, "lockingLength") ?? "—"}
                     </td>
                     <td>{extra?.bestFor}</td>
                     <td>{extra?.caveat}</td>

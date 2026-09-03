@@ -42,14 +42,14 @@ export function LockTile({ product, bestFor, caveat, compact = false }: Props) {
           ))}
         </p>
       ) : null}
-      {!compact && caveat ? <p className="meta">Watch out: {caveat}</p> : null}
+      {!compact && caveat ? <p className="meta">{caveat}</p> : null}
       <p className="tile-actions">
         {href ? (
           <Link href={href} className="primary-link">
             Read the review
           </Link>
         ) : (
-          <span className="meta">No full review yet</span>
+          <span className="meta">No full review of this lock yet</span>
         )}
         <SeeOnAmazon asin={product.asin} variant="text" />
       </p>

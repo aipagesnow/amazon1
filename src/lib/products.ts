@@ -156,5 +156,5 @@ export function compareCell(product: Product, key: keyof ProductSpecs): string {
   const value = specValue(product, key);
   if (value) return value;
   if (key === "soldSecurePowered") return "Not listed";
-  return "n/a";
+  return "—";
 }

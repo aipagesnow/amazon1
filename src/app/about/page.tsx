@@ -32,9 +32,9 @@ export default function AboutPage() {
       </p>
       <p>
         We review six locks in detail rather than listing every cable lock on Amazon: three Diamond
-        D-locks, two Gold D-locks, and one Gold chain. The reviews are desk research — Sold Secure
-        grades, manufacturer specs, and whether you will actually carry the lock — not a cutting
-        lab. There is also a page for people looking for{" "}
+        D-locks, two Gold D-locks, and one Gold chain. The reviews look at Sold Secure grades,
+        manufacturer specs, and whether you will actually carry the lock. We have not cut these
+        locks open. There is also a page for people looking for{" "}
         <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>.
       </p>
       <p>

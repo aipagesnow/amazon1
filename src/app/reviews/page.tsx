@@ -4,7 +4,6 @@ import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { ProductCard } from "@/components/ProductCard";
-import { GHOST_NOTE } from "@/content/editorial";
 import { REVIEW_GROUPS, REVIEWS_INTRO, REVIEWS_LEDE } from "@/content/pages";
 import { articleJsonLd, itemListJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
@@ -84,10 +83,6 @@ export default function ReviewsIndexPage() {
             </div>
           </section>
         ))}
-        <aside className="ghost-note">
-          <p className="kicker">Not reviewed yet</p>
-          <p>{GHOST_NOTE}</p>
-        </aside>
         <p>
           Start with <Link href="/guide">how to choose</Link> if you have not measured the stand yet.
         </p>
