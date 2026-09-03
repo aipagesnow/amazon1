@@ -91,7 +91,7 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
       <p className="kicker">Quick pick</p>
       <h2 id={`${id}-title`}>Find a lock</h2>
       <p className="meta">
-        Answer three questions and we will recommend one of the six locks we have reviewed.
+        Answer three questions and we will point you to one of the locks we have reviewed.
       </p>
       <div className="finder-steps">
         <div>
@@ -155,7 +155,7 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
         </div>
       ) : (
         <p className="meta" style={{ marginTop: "1rem" }}>
-          Answer all three. We will name one lock from the set we have actually reviewed.
+          Answer all three and we will name one lock from the set we have reviewed.
         </p>
       )}
     </section>

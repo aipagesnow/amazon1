@@ -22,8 +22,8 @@ export default function AboutPage() {
         <Link href="/method">How we research</Link>
       </nav>
       <p className="lede">
-        Lock Desk compares UK D-locks and chains. We look at Sold Secure grades, insurance
-        wording, and whether you will actually carry the lock.
+        Lock Desk compares UK D-locks and chains. We look at Sold Secure grades, what your
+        insurance asks for, and whether you will actually carry the lock.
       </p>
       <p>
         {site.name} is run by {site.operator}. It is not a shop, not a marketplace, and not Amazon.
@@ -33,8 +33,8 @@ export default function AboutPage() {
       <p>
         We review six locks in detail rather than listing every cable lock on Amazon: three Diamond
         D-locks, two Gold D-locks, and one Gold chain. The reviews look at Sold Secure grades,
-        manufacturer specs, and whether you will actually carry the lock. We have not cut these
-        locks open. There is also a page for people looking for{" "}
+        the published specs, and whether you will actually carry the lock. We have not taken a
+        grinder to them. There is also a page for people looking for{" "}
         <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>.
       </p>
       <p>

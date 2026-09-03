@@ -65,7 +65,7 @@ export function SiteFooter() {
           {DISCLOSURE} {site.name} is operated by {site.operator}. We are not Amazon. Prices and
           availability change on Amazon.
         </p>
-        <p>Photographs on this site are editorial. They are not pictures of the named products.</p>
+        <p>The photographs are editorial. They are not pictures of the named products.</p>
       </div>
     </footer>
   );
