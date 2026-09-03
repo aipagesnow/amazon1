@@ -199,7 +199,7 @@ export const HOME_BRIEFING = {
     "UK bike insurance usually asks for a Sold Secure grade. Gold is what most policies still want. Diamond is a step up, often for more expensive bikes or e-bikes. Match the grade on your policy.",
   fit: "A small D-lock will not close on every stand. Measure the post and your frame together. If that is bigger than the opening in the lock, it will not fit, so do not buy it.",
   carry:
-    "A lock only protects the bike if it is with you. If it is too heavy, or it does not clip onto the frame, it tends to stay at home. Pick one you will actually take to work.",
+    "Pick a lock that is easy to take with you — light enough, or one that clips onto the bike. A lock that is too heavy tends to stay at home, and that is money wasted.",
 };
 
 export const HOME_COMMUTE =
