@@ -22,7 +22,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
-#disclosure, #privacy, #about, #chooser { scroll-margin-top: 5rem; }
+#disclosure, #privacy, #about, #chooser, #finder { scroll-margin-top: 5rem; }
 html, body { margin: 0; max-width: 100%; overflow-x: clip; }
 body {
   background: var(--paper);
@@ -1229,6 +1229,78 @@ table.spec tr.spec-group th {
   text-transform: uppercase;
   color: #8b9890;
   margin-left: auto;
+}
+
+.finder {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.3rem 1.35rem 1.45rem;
+  margin: 0 0 2.4rem;
+}
+.finder-steps {
+  display: grid;
+  gap: 1.05rem;
+}
+.finder-q {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  margin: 0 0 0.55rem;
+}
+.choice-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.choice {
+  min-height: 44px;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.choice[data-on="true"] {
+  background: var(--night);
+  color: var(--paper);
+  border-color: var(--night);
+}
+.finder-result {
+  margin-top: 1.1rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--line);
+}
+.compare-bars {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0 0 1.6rem;
+}
+.compare-row {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr auto;
+  gap: 0.7rem;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.compare-row span:last-child {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  min-width: 3.4rem;
+  text-align: right;
+}
+.weight-track {
+  height: 10px;
+  background: var(--paper-2);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.weight-fill {
+  height: 100%;
+  background: var(--steel);
+  border-radius: 999px;
 }
 
 @media (prefers-reduced-motion: reduce) {

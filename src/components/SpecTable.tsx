@@ -154,3 +154,20 @@ export function CompareTable({
     </div>
   );
 }
+
+export function WeightCompare({ items }: { items: { name: string; kg: number }[] }) {
+  const max = Math.max(...items.map((i) => i.kg), 1);
+  return (
+    <div className="compare-bars" aria-label="Weight comparison">
+      {items.map((item) => (
+        <div className="compare-row" key={item.name}>
+          <span>{item.name}</span>
+          <div className="weight-track">
+            <div className="weight-fill" style={{ width: `${(item.kg / max) * 100}%` }} />
+          </div>
+          <span>{item.kg.toFixed(2)} kg</span>
+        </div>
+      ))}
+    </div>
+  );
+}

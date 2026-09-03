@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
+import { LockFinder } from "@/components/LockFinder";
 import { LockTile } from "@/components/LockTile";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { SiteImage } from "@/components/SiteImage";
@@ -58,9 +59,10 @@ export default function HomePage() {
             <p className="lede">{HOME_LEDE}</p>
             <DisclosureStrip />
             <p className="cover-ctas">
-              <Link href="/guide" className="primary-link">
-                How to choose
-              </Link>
+              <a href="#finder" className="primary-link">
+                Find a lock
+              </a>
+              <Link href="/guide">How to choose</Link>
               <Link href="/best">Best of</Link>
             </p>
           </div>
@@ -85,6 +87,12 @@ export default function HomePage() {
       </section>
 
       <div className="wrap">
+        <p className="folio">
+          <span>Lock Desk</span>
+          <span>Find a lock</span>
+        </p>
+        <LockFinder />
+
         <p className="folio">
           <span>Lock Desk</span>
           <span>Editor’s pick</span>

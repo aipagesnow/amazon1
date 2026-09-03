@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
+import { LockFinder } from "@/components/LockFinder";
 import { PageHero } from "@/components/PageHero";
 import { RichText } from "@/components/RichText";
 import {
@@ -59,8 +60,8 @@ export default function GuidePage() {
           ))}
         </ol>
         <p>
-          <a href="#chooser" className="primary-link">
-            Jump to which lock to pick
+          <a href="#finder" className="primary-link">
+            Find a lock
           </a>
         </p>
         <DisclosureStrip />
@@ -69,6 +70,8 @@ export default function GuidePage() {
         {GUIDE_INTRO.map((p) => (
           <p key={p}>{p}</p>
         ))}
+
+        <LockFinder />
 
         {GUIDE_SECTIONS.map((section) => (
           <section key={section.h2}>

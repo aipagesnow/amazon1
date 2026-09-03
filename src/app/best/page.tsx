@@ -4,7 +4,8 @@ import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
-import { BEST_INTRO, BEST_LEDE, BEST_PICKS, BEST_VERDICTS } from "@/content/pages";
+import { WeightCompare } from "@/components/SpecTable";
+import { BEST_INTRO, BEST_LEDE, BEST_PICKS, BEST_VERDICTS, BEST_WEIGHT } from "@/content/pages";
 import { articleJsonLd, itemListJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
@@ -13,6 +14,7 @@ import {
   productByAsin,
   Product,
   reviewHref,
+  shortName,
   specValue,
 } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
@@ -33,6 +35,9 @@ export const metadata: Metadata = {
 
 export default function BestPage() {
   const rows = BEST_OF_ASINS.map((asin) => productByAsin(asin)).filter(Boolean) as Product[];
+  const weights = rows
+    .filter((p) => typeof p.specs?.weightKg === "number")
+    .map((p) => ({ name: shortName(p), kg: p.specs!.weightKg! }));
 
   return (
     <>
@@ -83,6 +88,10 @@ export default function BestPage() {
             <Link href="/method">how we research</Link>.
           </p>
         </div>
+
+        <h2>Weight you will carry</h2>
+        <p>{BEST_WEIGHT}</p>
+        <WeightCompare items={weights} />
 
         <h2>The numbers</h2>
         <div className="spec-scroll">
