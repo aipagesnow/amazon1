@@ -196,10 +196,10 @@ export const HOME_LEDE =
 
 export const HOME_BRIEFING = {
   grade:
-    "Sold Secure is the UK group that tests bike locks. Gold is the grade most household insurance still wants. Diamond is the next step up. A thin cable in the box is usually not part of that grade.",
-  fit: "A compact D-lock will not fit every bike stand. Measure the post and your frame, then check that against the space inside the lock before you buy.",
+    "UK bike insurance usually asks for a Sold Secure grade. Gold is what most policies still want. Diamond is a step up, often for more expensive bikes or e-bikes. Match the grade on your policy.",
+  fit: "A small D-lock will not close on every stand. Measure the post and your frame together. If that is bigger than the opening in the lock, it will not fit, so do not buy it.",
   carry:
-    "If a lock is heavy, or it will not clip onto the bike, it often stays at home. Then it cannot protect the bike at the station. The lock you take with you is the one that counts.",
+    "A lock only protects the bike if it is with you. If it is too heavy, or it does not clip onto the frame, it tends to stay at home. Pick one you will actually take to work.",
 };
 
 export const HOME_COMMUTE =
