@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: ALT_TITLE,
     description: ALT_META,
     alternates: { canonical: url },
-    openGraph: { title: `${ALT_TITLE} · Lock Desk`, description: ALT_META, url },
+        openGraph: { title: `${ALT_TITLE} · Lock Desk`, description: ALT_META, url, images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Lock Desk — UK bike lock comparisons" }] },
   };
 }
 
