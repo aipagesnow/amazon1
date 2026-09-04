@@ -29,6 +29,14 @@ export const metadata: Metadata = {
     description:
       "Five D-locks and chains compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.",
     url: pageUrl("/best"),
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Lock Desk — UK bike lock comparisons",
+      },
+    ],
   },
 };
 
