@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
+import { RichText } from "@/components/RichText";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
-import { ALT_BODY, ALT_FAQS, ALT_HERO, ALT_LEDE, ALT_META, ALT_TITLE } from "@/content/pages";
+import { ALT_BODY, ALT_FAQS, ALT_HERO, ALT_LEDE, ALT_TITLE } from "@/content/pages";
+import { ALT_BODY_EXTRA, ALT_META } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { ALTERNATIVES_PATH, displayName, productBySlug } from "@/lib/products";
@@ -64,7 +66,14 @@ export default async function AlternativesPage({ params }: Props) {
       </PageHero>
       <article className="prose wrap tight">
         {ALT_BODY.map((p) => (
-          <p key={p}>{p}</p>
+          <p key={p}>
+            <RichText text={p} />
+          </p>
+        ))}
+        {ALT_BODY_EXTRA.map((p) => (
+          <p key={p}>
+            <RichText text={p} />
+          </p>
         ))}
         <p>
           The review is{" "}
@@ -133,23 +142,16 @@ export default async function AlternativesPage({ params }: Props) {
             <div className="faq-item" key={faq.q}>
               <h3>{faq.q}</h3>
               <p>
-                {faq.q === "Is the Mini on the best-of page?" ? (
-                  <>
-                    No. The{" "}
-                    <Link href="/best">best bike locks UK</Link> page lists five locks we would
-                    pick. This Mini is reviewed because people search the name, not because we
-                    would commute with it.
-                  </>
-                ) : (
-                  faq.a
-                )}
+                <RichText text={faq.a} />
               </p>
             </div>
           ))}
         </div>
         <p>
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">New York Mini review</Link> ·{" "}
-          <Link href="/guide">How to choose</Link>
+          <Link href="/guide">How to choose</Link> · <Link href="/best">Best of</Link> ·{" "}
+          <Link href="/for/commuting">Commuting</Link> ·{" "}
+          <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>
         </p>
       </article>
     </>
