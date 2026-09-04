@@ -3,14 +3,16 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { RichText } from "@/components/RichText";
 import {
+  METHOD_FAQS,
   METHOD_INTRO,
   METHOD_META,
+  METHOD_MORE,
   METHOD_SHAPE,
   METHOD_USE,
   METHOD_WHY,
   METHOD_WONT,
 } from "@/content/pages";
-import { articleJsonLd } from "@/lib/jsonld";
+import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { pageUrl, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -36,11 +38,14 @@ export default function MethodPage() {
   return (
     <>
       <JsonLd
-        data={articleJsonLd({
-          title: "How we research bike locks",
-          description: METHOD_META,
-          path: "/method",
-        })}
+        data={[
+          articleJsonLd({
+            title: "How we research bike locks",
+            description: METHOD_META,
+            path: "/method",
+          }),
+          faqJsonLd(METHOD_FAQS),
+        ]}
       />
       <article className="prose wrap">
         <p className="kicker">How we work</p>
@@ -58,6 +63,9 @@ export default function MethodPage() {
         <p>
           <RichText text={METHOD_SHAPE} />
         </p>
+        {METHOD_MORE.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
 
         <h2>What we will not claim</h2>
         <ul>
@@ -74,11 +82,26 @@ export default function MethodPage() {
 
         <h2>Why this matters</h2>
         {METHOD_WHY.map((p) => (
-          <p key={p}>{p}</p>
+          <p key={p}>
+            <RichText text={p} />
+          </p>
         ))}
+
+        <h2>Common questions</h2>
+        <div className="faq-list">
+          {METHOD_FAQS.map((faq) => (
+            <div className="faq-item" key={faq.q}>
+              <h3>{faq.q}</h3>
+              <p>
+                <RichText text={faq.a} />
+              </p>
+            </div>
+          ))}
+        </div>
         <p>
           Read <Link href="/guide">how to choose a bike lock</Link> first if you have not measured the
-          stand yet.
+          stand yet. Full reviews: <Link href="/reviews">bike lock reviews</Link>. Who we are:{" "}
+          <Link href="/about">About</Link>.
         </p>
       </article>
     </>
