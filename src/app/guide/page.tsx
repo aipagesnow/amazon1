@@ -15,6 +15,7 @@ import {
   GUIDE_SECTIONS,
   GUIDE_START,
 } from "@/content/pages";
+import { GUIDE_FAQ_EXTRA } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { pageUrl } from "@/lib/site";
@@ -48,7 +49,7 @@ export default function GuidePage() {
             description: GUIDE_META,
             path: "/guide",
           }),
-          faqJsonLd(GUIDE_FAQS),
+          faqJsonLd([...GUIDE_FAQS, GUIDE_FAQ_EXTRA]),
         ]}
       />
       <PageHero
@@ -133,7 +134,7 @@ export default function GuidePage() {
 
         <h2>Common questions</h2>
         <div className="faq-list">
-          {GUIDE_FAQS.map((faq) => (
+          {[...GUIDE_FAQS, GUIDE_FAQ_EXTRA].map((faq) => (
             <div className="faq-item" key={faq.q}>
               <h3>{faq.q}</h3>
               <p>

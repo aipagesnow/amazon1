@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
+import { RichText } from "@/components/RichText";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { ProductCard } from "@/components/ProductCard";
 import { REVIEW_GROUPS, REVIEWS_INTRO, REVIEWS_LEDE } from "@/content/pages";
+import { REVIEWS_INTRO_EXTRA, REVIEWS_META } from "@/content/thickening";
 import { articleJsonLd, itemListJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
@@ -18,13 +20,11 @@ import { pageUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Bike lock reviews",
-  description:
-    "Six UK D-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks.",
+  description: REVIEWS_META,
   alternates: { canonical: pageUrl("/reviews") },
   openGraph: {
     title: "Bike lock reviews · Lock Desk",
-    description:
-      "Six UK D-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks.",
+    description: REVIEWS_META,
     url: pageUrl("/reviews"),
     images: [
       {
@@ -48,7 +48,7 @@ export default function ReviewsIndexPage() {
         data={[
           articleJsonLd({
             title: "Bike lock reviews",
-            description: String(metadata.description),
+            description: REVIEWS_META,
             path: "/reviews",
           }),
           itemListJsonLd(
@@ -72,8 +72,13 @@ export default function ReviewsIndexPage() {
       </PageHero>
       <article className="prose wrap tight">
         {REVIEWS_INTRO.map((p) => (
-          <p key={p}>{p}</p>
+          <p key={p}>
+            <RichText text={p} />
+          </p>
         ))}
+        <p>
+          <RichText text={REVIEWS_INTRO_EXTRA} />
+        </p>
         <p className="alt-chip">
           Looking for{" "}
           <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>?
@@ -91,7 +96,7 @@ export default function ReviewsIndexPage() {
           </section>
         ))}
         <p>
-          Start with <Link href="/guide">how to choose</Link> if you have not measured the stand yet.
+          Start with <Link href="/guide">how to choose</Link> if you have not measured the stand yet. Job guides: <Link href="/for/commuting">commuting</Link> · <Link href="/for/insurance">insurance</Link>. Comparisons: <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link> · <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>.
         </p>
       </article>
     </>
