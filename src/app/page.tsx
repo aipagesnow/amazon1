@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     description:
       "Sold Secure grades, insurance, and which lock you will actually carry. UK D-lock and chain comparisons.",
     url: site.url,
-    images: [{ url: photos.cover, alt: photoAlt.cover }],
   },
 };
 
