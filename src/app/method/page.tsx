@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     title: "How we research bike locks · Lock Desk",
     description: METHOD_META,
     url: pageUrl("/method"),
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Lock Desk — UK bike lock comparisons",
+      },
+    ],
   },
 };
 
