@@ -16,10 +16,22 @@ type Pick = {
   note?: string;
 };
 
+/**
+ * Decision order (reviewed locks only):
+ * 1. Home place → chain
+ * 2. Fat post → long ABUS 540 (only long Diamond/Gold-capable shackle we review)
+ * 3. Carry stays at home → chain
+ * 4. Gold or unsure → Mini-7
+ * 5. Diamond + wants a frame clip → 540 (only Diamond review with a mount)
+ * 6. Diamond + bag → X1
+ *
+ * Gaps we are honest about in notes: no compact Diamond with a mount in the
+ * current review set; D1000 is only for a measured tiny stand.
+ */
 function recommend(grade: Grade | null, place: Place | null, carry: Carry | null): Pick | null {
   if (!grade || !place || !carry) return null;
 
-  if (place === "home" || carry === "home") {
+  if (place === "home") {
     return {
       slug: "kryptonite-new-york-fahgettaboudit-1410",
       why: "A 100 cm Gold chain for extra length at home. Use it at home. Take a D-lock on the bike for the commute.",
@@ -30,34 +42,56 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
   if (place === "fat") {
     return {
       slug: "abus-granit-xplus-540",
-      why: "300 mm shackle. This is the lock that closes around posts a compact D-lock cannot.",
+      why: "300 mm shackle with a frame bracket. This is the lock that closes around posts a compact D-lock cannot.",
       note:
         grade === "diamond"
           ? "Diamond for ordinary bikes, Gold for e-bikes. If your e-bike policy wants e-bike Diamond, take the X1 instead and measure the stand."
-          : "If the 540 still will not close, you need a chain at home, not a thicker compact lock.",
+          : "If Gold is all the policy needs and a compact lock already closes on your stand, the Evolution Mini-7 is lighter for daily carry.",
     };
   }
 
-  if (grade === "gold") {
+  if (carry === "home") {
+    return {
+      slug: "kryptonite-new-york-fahgettaboudit-1410",
+      why: "If the lock can stay put, a 100 cm Gold chain gives you reach around a home stand or ground anchor.",
+      note: "Still take a D-lock when you ride away. The Mini-7 covers most Gold policies; the X1 if you need Diamond on the bike.",
+    };
+  }
+
+  // From here: place is a normal stand, and they will carry the lock daily.
+  const wantsMount = carry === "mount";
+  const needsDiamond = grade === "diamond";
+  const goldEnough = grade === "gold" || grade === "unsure";
+
+  if (goldEnough) {
     return {
       slug: "kryptonite-evolution-mini-7",
-      why: "Sold Secure Gold, 1.61 kg, a frame mount, and a cable in the box. The cable is not Gold.",
-      note: "If the bike is high-value and you will carry 1.7 kg, step up to the X1.",
+      why: wantsMount
+        ? "Sold Secure Gold, 1.61 kg, a frame mount, and a cable in the box. The cable is not Gold."
+        : "Sold Secure Gold at 1.61 kg — light enough for a bag, with a frame mount and cable in the box if you want them. The cable is not Gold.",
+      note:
+        grade === "unsure"
+          ? "Most UK home policies still name Gold. If the wording later asks for Diamond, step up to the X1."
+          : "If the bike is high-value and you will carry 1.7 kg, step up to the X1.",
     };
   }
 
-  if (carry === "bag") {
+  // Diamond + daily carry on a normal stand
+  if (needsDiamond && wantsMount) {
     return {
-      slug: "litelok-x1",
-      why: "Diamond for bikes and e-bikes at 1.7 kg, with a locking area that works for an armoured D-lock.",
-      note: "The D1000 is only the pick if you have already measured 92 × 155 mm.",
+      slug: "abus-granit-xplus-540",
+      why: "Among the locks we have reviewed, this is the only Diamond option that includes a frame mount. 300 mm shackle, 1.8 kg.",
+      note: "None of our compact Diamond reviews (X1, D1000) ship with a mount. If you would rather carry a compact lock in a bag, pick the X1 instead.",
     };
   }
 
+  // Diamond + bag (or any remaining Diamond path)
   return {
     slug: "litelok-x1",
-    why: "Diamond you can still commute with. No frame mount in this listing — budget for a bag or a separate mount.",
-    note: "If Gold already meets the policy, the Mini-7 is the lock most people will actually carry.",
+    why: "Diamond for bikes and e-bikes at 1.7 kg, with a locking area that works for an armoured D-lock.",
+    note: wantsMount
+      ? "No frame mount in this listing — budget for a bag or a separate mount. The D1000 is only the pick if you have already measured 92 × 155 mm."
+      : "No frame mount in this listing. The D1000 is only the pick if you have already measured 92 × 155 mm.",
   };
 }
 
