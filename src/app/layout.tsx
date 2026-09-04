@@ -49,7 +49,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  icons: { icon: "/icon.svg" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
