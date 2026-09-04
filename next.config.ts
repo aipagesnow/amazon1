@@ -13,6 +13,9 @@ const nextConfig: NextConfig = {
       { source: "/compare", destination: "/best", statusCode: 301 },
     ];
   },
+  async rewrites() {
+    return [{ source: "/favicon.ico", destination: "/icon" }];
+  },
 };
 
 export default nextConfig;
