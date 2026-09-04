@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { ReviewArticle } from "@/components/ReviewArticle";
 import { reviewCopy } from "@/content/editorial";
+import { REVIEW_META_OVERRIDES } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd, productJsonLd } from "@/lib/jsonld";
 import { displayName, productBySlug, REVIEW_SLUGS } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const copy = reviewCopy[slug];
   if (!product || !copy) return {};
   const title = `${displayName(product)} review`;
-  const description = copy.meta;
+  const description = REVIEW_META_OVERRIDES[slug] ?? copy.meta;
   const url = pageUrl(`/reviews/${product.slug}`);
   return {
     title,
@@ -54,7 +55,7 @@ export default async function ReviewPage({ params }: Props) {
         data={[
           articleJsonLd({
             title,
-            description: copy.meta,
+            description: REVIEW_META_OVERRIDES[slug] ?? copy.meta,
             path: `/reviews/${product.slug}`,
           }),
           faqJsonLd(copy.faqs),
