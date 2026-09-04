@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     description:
       "Six UK D-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks.",
     url: pageUrl("/reviews"),
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Lock Desk — UK bike lock comparisons",
+      },
+    ],
   },
 };
 

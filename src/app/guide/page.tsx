@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     title: "How to choose a bike lock · Lock Desk",
     description: GUIDE_META,
     url: pageUrl("/guide"),
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Lock Desk — UK bike lock comparisons",
+      },
+    ],
   },
 };
 
