@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Lock Desk">
-  <rect width="48" height="48" fill="#0b100e"/>
-  <g fill="none" stroke="#d4b43a" stroke-width="3" stroke-linecap="square">
-    <path d="M14 20v-3.5C14 11.7 18.5 7 24 7s10 4.7 10 9.5V20"/>
-    <rect x="10" y="20" width="28" height="21"/>
-    <path d="M24 32.4V38"/>
-  </g>
-  <circle cx="24" cy="30" r="2.3" fill="#d4b43a"/>
-</svg>
