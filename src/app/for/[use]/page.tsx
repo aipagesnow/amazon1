@@ -7,6 +7,11 @@ import { PageHero } from "@/components/PageHero";
 import { ProductCard } from "@/components/ProductCard";
 import { RichText } from "@/components/RichText";
 import { CASES, useOf } from "@/content/pages";
+import {
+  COMMUTE_BODY_EXTRA,
+  COMMUTE_META,
+  INSURANCE_BODY_EXTRA,
+} from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { productBySlug } from "@/lib/products";
@@ -23,11 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const item = useOf(use);
   if (!item) return {};
   const url = pageUrl(`/for/${item.slug}`);
+  const description =
+    item.slug === "commuting" ? COMMUTE_META : item.description;
   return {
     title: item.title,
-    description: item.description,
+    description,
     alternates: { canonical: url },
-        openGraph: { title: `${item.title} · Lock Desk`, description: item.description, url, images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Lock Desk — UK bike lock comparisons" }] },
+        openGraph: { title: `${item.title} · Lock Desk`, description, url, images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Lock Desk — UK bike lock comparisons" }] },
   };
 }
 
@@ -108,6 +115,13 @@ export default async function UseCasePage({ params }: Props) {
             <RichText text={p} />
           </p>
         ))}
+        {(item.slug === "commuting" ? COMMUTE_BODY_EXTRA : item.slug === "insurance" ? INSURANCE_BODY_EXTRA : []).map(
+          (p) => (
+            <p key={p}>
+              <RichText text={p} />
+            </p>
+          ),
+        )}
 
         <h2>Common questions</h2>
         <div className="faq-list">
@@ -122,6 +136,9 @@ export default async function UseCasePage({ params }: Props) {
         </div>
         <p>
           <Link href="/guide">How to choose a bike lock</Link> · <Link href="/best">Best of</Link> ·{" "}
+          <Link href="/reviews">Reviews</Link> ·{" "}
+          <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link> ·{" "}
+          <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> ·{" "}
           <Link href="/method">How we research</Link>
         </p>
       </article>

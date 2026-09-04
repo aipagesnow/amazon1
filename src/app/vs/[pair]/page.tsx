@@ -8,6 +8,7 @@ import { RichText } from "@/components/RichText";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { CompareTable } from "@/components/SpecTable";
 import { pairOf, PAIRS } from "@/content/pages";
+import { VS_AFTER_EXTRA } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import { displayName, Product, productBySlug, reviewHref } from "@/lib/products";
@@ -109,6 +110,11 @@ export default async function VsPage({ params }: Props) {
             <RichText text={paragraph} />
           </p>
         ))}
+        {VS_AFTER_EXTRA[pair.slug] ? (
+          <p>
+            <RichText text={VS_AFTER_EXTRA[pair.slug]} />
+          </p>
+        ) : null}
         <h2>Read the reviews</h2>
         <div className="vs-split">
           <ProductCol product={a} kicker={a.specs?.type ?? "Lock"} />
@@ -126,7 +132,10 @@ export default async function VsPage({ params }: Props) {
           ))}
         </div>
         <p>
-          <Link href="/guide">How to choose</Link> · <Link href="/best">Best of</Link>
+          <Link href="/guide">How to choose</Link> · <Link href="/best">Best of</Link> ·{" "}
+          <Link href="/for/commuting">Commuting</Link> ·{" "}
+          <Link href="/for/insurance">Insurance</Link> ·{" "}
+          <Link href="/reviews">Reviews</Link>
         </p>
       </article>
     </>
