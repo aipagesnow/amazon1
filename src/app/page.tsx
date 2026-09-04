@@ -23,11 +23,19 @@ export const metadata: Metadata = {
   description:
     "Independent UK reviews of D-locks and chains. Sold Secure grades, insurance, and which lock you will actually carry.",
   alternates: { canonical: site.url },
-  openGraph: {
+    openGraph: {
     title: `${site.name} — UK bike lock comparisons`,
     description:
       "Sold Secure grades, insurance, and which lock you will actually carry. UK D-lock and chain comparisons.",
     url: site.url,
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Lock Desk — UK bike lock comparisons",
+      },
+    ],
   },
 };
 
