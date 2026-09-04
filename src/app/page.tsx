@@ -4,10 +4,12 @@ import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
 import { LockFinder } from "@/components/LockFinder";
 import { LockTile } from "@/components/LockTile";
+import { RichText } from "@/components/RichText";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { SiteImage } from "@/components/SiteImage";
-import { websiteJsonLd } from "@/lib/jsonld";
 import { HOME_BRIEFING, HOME_COMMUTE, HOME_INSURANCE, HOME_LEDE, HOME_PICK } from "@/content/pages";
+import { HOME_FAQS, HOME_META, HOME_NEXT } from "@/content/thickening";
+import { faqJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
   BEST_OF_ASINS,
@@ -20,13 +22,11 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: `${site.name} — UK bike lock comparisons`,
-  description:
-    "Independent UK reviews of D-locks and chains. Sold Secure grades, insurance, and which lock you will actually carry.",
+  description: HOME_META,
   alternates: { canonical: site.url },
-    openGraph: {
+  openGraph: {
     title: `${site.name} — UK bike lock comparisons`,
-    description:
-      "Sold Secure grades, insurance, and which lock you will actually carry. UK D-lock and chain comparisons.",
+    description: HOME_META,
     url: site.url,
     images: [
       {
@@ -46,7 +46,7 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={websiteJsonLd()} />
+      <JsonLd data={[websiteJsonLd(), faqJsonLd(HOME_FAQS)]} />
       <section className="cover">
         <div className="cover-photo">
           <SiteImage
@@ -157,7 +157,11 @@ export default function HomePage() {
             New York Fahgettaboudit Mini
           </Link>{" "}
           — a thick 18 mm Gold lock at 2.06 kg, with no frame mount. Most commuters are better with the
-          Evolution Mini-7.
+          Evolution Mini-7. Looking for something else?{" "}
+          <Link href="/alternatives/kryptonite-new-york-fahgettaboudit-mini">
+            Alternatives to the New York Mini
+          </Link>
+          .
         </p>
 
         <p className="folio">
@@ -194,6 +198,29 @@ export default function HomePage() {
             </div>
           </Link>
         </div>
+
+        <section className="prose tight" aria-label="Where to go next">
+          <h2>Where to go next</h2>
+          <ul>
+            {HOME_NEXT.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href}>{item.title}</Link> — {item.blurb}
+              </li>
+            ))}
+          </ul>
+
+          <h2>Common questions</h2>
+          <div className="faq-list">
+            {HOME_FAQS.map((faq) => (
+              <div className="faq-item" key={faq.q}>
+                <h3>{faq.q}</h3>
+                <p>
+                  <RichText text={faq.a} />
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
     </>
   );
