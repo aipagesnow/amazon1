@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     description:
       "Six UK D-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks.",
     url: pageUrl("/reviews"),
-    images: [{ url: photos.pick, alt: photoAlt.pick }],
   },
 };
 

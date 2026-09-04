@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     title: "How to choose a bike lock · Lock Desk",
     description: GUIDE_META,
     url: pageUrl("/guide"),
-    images: [{ url: photos.fit, alt: photoAlt.fit }],
   },
 };
 

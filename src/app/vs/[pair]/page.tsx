@@ -24,8 +24,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pair = pairOf(slug);
   if (!pair) return {};
   const url = pageUrl(`/vs/${pair.slug}`);
-  const image = pair.slug === "d-lock-vs-chain" ? photos.vs : photos.pick;
-  const alt = pair.slug === "d-lock-vs-chain" ? photoAlt.vs : photoAlt.pick;
   return {
     title: pair.title,
     description: pair.description,
@@ -34,7 +32,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${pair.title} · Lock Desk`,
       description: pair.description,
       url,
-      images: [{ url: image, alt }],
     },
   };
 }
