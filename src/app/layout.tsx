@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { photos } from "@/lib/photos";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -42,12 +41,9 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_GB",
     type: "website",
-    images: [
-      {
-        url: photos.cover,
-        alt: "A bicycle locked to a bike stand on a wet UK street at night.",
-      },
-    ],
+  },
+  twitter: {
+    card: "summary_large_image",
   },
 };
 
