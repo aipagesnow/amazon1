@@ -6,7 +6,9 @@ import { PageHero } from "@/components/PageHero";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { WeightCompare } from "@/components/SpecTable";
 import { BEST_INTRO, BEST_LEDE, BEST_PICKS, BEST_VERDICTS, BEST_WEIGHT } from "@/content/pages";
-import { articleJsonLd, itemListJsonLd } from "@/lib/jsonld";
+import { BEST_FAQS, BEST_INTRO_EXTRA, BEST_META } from "@/content/thickening";
+import { RichText } from "@/components/RichText";
+import { articleJsonLd, faqJsonLd, itemListJsonLd } from "@/lib/jsonld";
 import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
 import {
   BEST_OF_ASINS,
@@ -21,13 +23,11 @@ import { pageUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Best bike locks UK",
-  description:
-    "Five D-locks and chains compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.",
+  description: BEST_META,
   alternates: { canonical: pageUrl("/best") },
   openGraph: {
     title: "Best bike locks UK · Lock Desk",
-    description:
-      "Five D-locks and chains compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.",
+    description: BEST_META,
     url: pageUrl("/best"),
     images: [
       {
@@ -52,9 +52,10 @@ export default function BestPage() {
         data={[
           articleJsonLd({
             title: "Best bike locks UK",
-            description: String(metadata.description),
+            description: BEST_META,
             path: "/best",
           }),
+          faqJsonLd(BEST_FAQS),
           itemListJsonLd(
             rows.map((p) => ({
               name: displayName(p),
@@ -77,8 +78,13 @@ export default function BestPage() {
       <article className="prose wrap tight">
 
         {BEST_INTRO.map((p) => (
-          <p key={p}>{p}</p>
+          <p key={p}>
+            <RichText text={p} />
+          </p>
         ))}
+        <p>
+          <RichText text={BEST_INTRO_EXTRA} />
+        </p>
 
         <div className="chooser" id="chooser">
           <h2>Which lock to pick</h2>
@@ -92,7 +98,9 @@ export default function BestPage() {
           </ul>
           <p>
             How we picked these: <Link href="/guide">how to choose a bike lock</Link> ·{" "}
-            <Link href="/method">how we research</Link>.
+            <Link href="/method">how we research</Link>. Job guides:{" "}
+            <Link href="/for/commuting">commuting</Link> ·{" "}
+            <Link href="/for/insurance">insurance</Link>.
           </p>
         </div>
 
@@ -148,6 +156,23 @@ export default function BestPage() {
             </tbody>
           </table>
         </div>
+
+        <h2>Common questions</h2>
+        <div className="faq-list">
+          {BEST_FAQS.map((faq) => (
+            <div className="faq-item" key={faq.q}>
+              <h3>{faq.q}</h3>
+              <p>
+                <RichText text={faq.a} />
+              </p>
+            </div>
+          ))}
+        </div>
+        <p>
+          <Link href="/reviews">All reviews</Link> ·{" "}
+          <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link> ·{" "}
+          <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>
+        </p>
       </article>
     </>
   );
