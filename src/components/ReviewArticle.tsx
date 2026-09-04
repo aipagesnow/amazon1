@@ -7,6 +7,7 @@ import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { SpecFigures, SpecTable } from "@/components/SpecTable";
 import { ReviewCopy } from "@/content/editorial";
 import { EDITORIAL_CREDIT, reviewBanner } from "@/lib/photos";
+import { REVIEW_RELATED_WELLS } from "@/content/thickening";
 import {
   displayName,
   Product,
@@ -69,6 +70,7 @@ function ReviewNav({ slug }: { slug: string }) {
 }
 
 export function ReviewArticle({ product, copy }: { product: Product; copy: ReviewCopy }) {
+  const related = copy.relatedWell ?? REVIEW_RELATED_WELLS[product.slug];
   const art = reviewBanner(product.slug);
   const isChain = (product.specs?.type ?? "").toLowerCase().includes("chain");
   const vsHref = isChain
@@ -180,13 +182,13 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
           <AltCard slug={copy.altSecond} why={copy.altSecondWhy} kicker="Also consider" />
         </div>
 
-        {copy.relatedWell ? (
+        {related ? (
           <aside className="chooser">
             <p className="kicker">Related</p>
             <h3>
-              <Link href={copy.relatedWell.href}>{copy.relatedWell.title}</Link>
+              <Link href={related.href}>{related.title}</Link>
             </h3>
-            <p>{copy.relatedWell.blurb}</p>
+            <p>{related.blurb}</p>
           </aside>
         ) : null}
 
