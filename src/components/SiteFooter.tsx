@@ -58,9 +58,6 @@ export function SiteFooter() {
               <li>
                 <Link href="/about#privacy">Privacy</Link>
               </li>
-              <li>
-                <a href={`mailto:${site.contact}`}>Email {site.name}</a>
-              </li>
             </ul>
           </div>
         </nav>

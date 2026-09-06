@@ -239,7 +239,7 @@ export const BEST_LEDE =
 
 export const BEST_INTRO = [
   "“Best bike lock UK” is a search, not a product. The right lock is the one that matches the grade on your policy, closes on the stand you actually use, and is light enough that you still take it to work.",
-  "We picked these from the eleven we have reviewed in full. The Evolution Mini-7 is the Gold commute lock. The Litelok X1 is the Diamond lock we would still carry in a bag. The Pitbull STD is Diamond with a frame mount on a normal stand. The D1000 is Diamond for a stand you have already measured. The ABUS 540 is the long shackle when a Mini will not close. The Bordo 6500 is Gold folding when reach matters more than Mini-7 weight. The New York 1410 is the home chain. The New York Mini is reviewed because people search the name; it is not on this table. The DX1000, Pitbull DT and Pitbull LS are on the reviews page for their specific jobs.",
+  "These are the desk shortlist from the eleven we have reviewed in full. The Evolution Mini-7 is the Gold commute lock. The Litelok X1 is the Diamond lock on the shortlist when you will still carry 1.7 kg in a bag. The Pitbull STD is Diamond with a frame mount on a normal stand. The D1000 is Diamond for a stand you have already measured. The ABUS 540 is the long shackle when a Mini will not close. The Bordo 6500 is Gold folding when reach matters more than Mini-7 weight. The New York 1410 is the home chain. The New York Mini is reviewed because people search the name; it is not on this table. The DX1000, Pitbull DT and Pitbull LS are on the reviews page for their specific jobs.",
 ];
 
 export const BEST_PICKS: { lead: string; slug: string; name: string; text: string }[] = [
@@ -302,7 +302,7 @@ export const REVIEW_GROUPS = [
   {
     title: "Sold Secure Diamond D-locks",
     blurb:
-      "For higher-value bikes and policies that name Diamond. The X1 is the one we would still carry in a bag (1.7 kg, ordinary-bike and e-bike Diamond, 101 × 197 mm). The Pitbull STD is Diamond with a frame mount (1.44 kg, 115 × 230 mm); the DT is that lock plus a cable that is not graded; the LS is the long 115 × 292 mm sibling. The D1000 is the compact anti-grinder lock (1.9 kg, 92 × 155 mm, no clip) — only if you have measured the stand. The DX1000 is the larger Hiplok (2.75 kg, 112 × 205 mm, no clip) for e-bikes and cargo when 155 mm will not close. The ABUS 540 is the long 300 mm shackle for posts a Mini cannot close around; for e-bikes the grade is Gold.",
+      "For higher-value bikes and policies that name Diamond. The X1 is the desk shortlist when you will still carry 1.7 kg in a bag (ordinary-bike and e-bike Diamond, 101 × 197 mm). The Pitbull STD is Diamond with a frame mount (1.44 kg, 115 × 230 mm); the DT is that lock plus a cable that is not graded; the LS is the long 115 × 292 mm sibling. The D1000 is the compact anti-grinder lock (1.9 kg, 92 × 155 mm, no clip) — only if you have measured the stand. The DX1000 is the larger Hiplok (2.75 kg, 112 × 205 mm, no clip) for e-bikes and cargo when 155 mm will not close. The ABUS 540 is the long 300 mm shackle for posts a Mini cannot close around; for e-bikes the grade is Gold.",
     slugs: [
       "litelok-x1",
       "onguard-pitbull-std-8003",
@@ -381,7 +381,7 @@ export const CASES: UseCase[] = [
     title: "Best bike lock for commuting",
     description:
       "A commute lock is one you will take every day. For most UK riders that is a Gold compact D-lock with a frame clip. Step up to Diamond if the bike is worth the extra weight.",
-    h2: "Two commute locks we would take",
+    h2: "Two commute locks on the desk shortlist",
     notFor:
       "Skip this page if you only need a lock for a shed, a ground anchor, or a heavy chain left at home.",
     body: [
@@ -588,7 +588,7 @@ export const ALT_FAQS: Faq[] = [
   },
   {
     q: "Is the Mini on the best-of page?",
-    a: "No. The [best bike locks UK](/best) page lists the locks we would pick. This Mini is reviewed because people search the name, not because we would commute with it.",
+    a: "No. The [best bike locks UK](/best) page lists the desk shortlist from the eleven. This Mini is reviewed because people search the name, not because it is a commute shortlist pick.",
   },
   {
     q: "New York Mini or Evolution Mini-7?",

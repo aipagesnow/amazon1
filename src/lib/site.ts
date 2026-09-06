@@ -15,9 +15,9 @@ export const site = {
   contact: "aivora@agentmail.to",
   /** Shown on Best of and reviews for Flippa / reader freshness */
   lastChecked: "6 September 2026",
-  /** Byline on review pages — desk research, not lab authority */
-  authorLine: "Written from desk research · Lock Desk",
-  authorHref: "/about#who",
+  /** Quiet research note on review pages — not a personal byline */
+  authorLine: "Based on desk research",
+  authorHref: "/method",
 } as const;
 
 export function pageUrl(path: string): string {

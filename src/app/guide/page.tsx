@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
-import { LockFinder } from "@/components/LockFinder";
 import { PageHero } from "@/components/PageHero";
 import { RichText } from "@/components/RichText";
 import {
@@ -68,9 +67,9 @@ export default function GuidePage() {
           ))}
         </ol>
         <p>
-          <a href="#finder" className="primary-link">
+          <Link href="/#finder" className="primary-link">
             Find a lock
-          </a>
+          </Link>
         </p>
         <DisclosureStrip />
       </PageHero>
@@ -78,15 +77,11 @@ export default function GuidePage() {
         {GUIDE_INTRO.map((p) => (
           <p key={p}>{p}</p>
         ))}
-      </article>
-
-      <div className="wrap">
-        <p className="folio">
-          <span>Lock Desk</span>
-          <span>Find a lock</span>
+        <p>
+          Prefer a short quiz first?{" "}
+          <Link href="/#finder">Find a lock on the home page</Link>.
         </p>
-        <LockFinder />
-      </div>
+      </article>
 
       <article className="prose wrap tight">
         {GUIDE_SECTIONS.map((section) => (

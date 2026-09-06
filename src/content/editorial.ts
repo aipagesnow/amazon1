@@ -29,7 +29,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     job: "Desk pick when the policy names Diamond and you will still carry 1.7 kg.",
     meta: "Litelok X1 review: Diamond grade for ordinary bikes and e-bikes, 1.7 kg, a shackle that fits most stands. A lock many insurers take seriously, at a weight you might still carry.",
     verdict:
-      "If we were buying one lock to take every day on a higher-value bike, this would be it. Sold Secure Diamond — the higher UK lock grade — for both ordinary bikes and e-bikes, at 1.7 kg. That is light enough that people still commute with it, and high enough for many policies that have moved past Gold. The locking area is 101 × 197 mm, which is more usable than the compact anti-grinder Minis. The practical catch: no frame mount in the box we looked at, so you carry it in a bag or buy a mount separately.",
+      "On grade, weight, and fit alone, this is the Diamond desk shortlist for a higher-value bike you take out every day. Sold Secure Diamond — the higher UK lock grade — for both ordinary bikes and e-bikes, at 1.7 kg. That is light enough that people still commute with it, and high enough for many policies that have moved past Gold. The locking area is 101 × 197 mm, which is more usable than the compact anti-grinder Minis. The practical catch: no frame mount in the box we looked at, so you carry it in a bag or buy a mount separately.",
     subheads: [
       "Will it fit your bike stand?",
       "It does not come with a frame mount",
@@ -97,7 +97,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     job: "Worth a look on high-theft streets — but only if the small shackle will actually close.",
     meta: "Hiplok D1000 review: Diamond grade, 1.9 kg, a compact shackle, no frame mount. Worth it if you have measured the stand. Skip it if Gold and a cable would do.",
     verdict:
-      "Worth buying if you park in a known theft hotspot, your insurance wants Diamond, and you can lock through a 92 × 155 mm gap. It is 1.9 kg with no frame mount in the box we looked at. We would not buy it as a first lock for someone who already skips 1.6 kg. Fit is the deciding factor — if the shackle will not close, nothing else on the sheet matters.",
+      "Worth buying if you park in a known theft hotspot, your insurance wants Diamond, and you can lock through a 92 × 155 mm gap. It is 1.9 kg with no frame mount in the box we looked at. On grade and weight alone, it is a poor first lock for someone who already skips 1.6 kg. Fit is the deciding factor — if the shackle will not close, nothing else on the sheet matters.",
     subheads: [
       "Will it fit your bike stand?",
       "No frame mount, and it weighs 1.9 kg",
@@ -162,7 +162,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     job: "Desk pick for most UK Gold commutes — grade, weight, and a clip in the box.",
     meta: "Kryptonite Evolution Mini-7 review: Gold grade, 1.61 kg, a frame mount and a cable in the box. The cable is not Gold. The commute lock most people will actually carry.",
     verdict:
-      "Worth it for a daily rider whose insurance asks for Sold Secure Gold, who wants a cable and a frame mount in one box, and who will not carry a 2 kg Diamond lock. The D-lock is Gold. The cable is not — Kryptonite says so. On grade, weight, and kit, it is the Gold commute lock we shortlist from desk research. It is not the only lock we would shortlist for a high-value e-bike in a known theft hotspot.",
+      "Worth it for a daily rider whose insurance asks for Sold Secure Gold, who wants a cable and a frame mount in one box, and who will not carry a 2 kg Diamond lock. The D-lock is Gold. The cable is not — Kryptonite says so. On grade, weight, and kit, it is the Gold commute lock on the desk shortlist from desk research. It is not the Diamond shortlist pick for a high-value e-bike in a known theft hotspot.",
     subheads: [
       "The cable is not Gold",
       "The locking area is small — measure the stand",
@@ -173,7 +173,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       "This lock is built for daily commuting. It weighs 1.61 kg. It has a frame mount, three keys, and a loop cable in the box. Because it clips to the bike, you still have it with you at the stand. That is more security than a heavier Diamond lock left at home.",
       "The cable is the bit people get wrong. It is for a quick-release wheel, or a helmet, if you must. It is not Sold Secure Gold. If a listing photo makes the whole kit look approved, ignore the photo. The D-lock is the graded product. Do not lock the bike to the stand with the cable alone.",
       "The locking area is 83 × 178 mm. That is a compact Mini size. It will close on a lot of UK bike stands and fail on fat lamp-posts and some cargo bikes. Measure. If it will not close, look at the ABUS 540 (a 300 mm shackle) or a chain at home — not a thicker compact lock with an even smaller locking area.",
-      "Gold is still the grade a lot of UK household cycle insurance names. Diamond is a higher grade, and some e-bike policies want the e-bike version of that grade. If that is you, this is the wrong lock. If Gold is what the policy asks for and you will carry 1.6 kg, this is the Gold commute lock we would actually take. If you needed Gold with more reach than 83 × 178 mm, look at the Bordo 6500 — folding, 110 cm, heavier.",
+      "Gold is still the grade a lot of UK household cycle insurance names. Diamond is a higher grade, and some e-bike policies want the e-bike version of that grade. If that is you, this is the wrong lock. If Gold is what the policy asks for and you will carry 1.6 kg, this is the Gold commute lock on the desk shortlist. If you needed Gold with more reach than 83 × 178 mm, look at the Bordo 6500 — folding, 110 cm, heavier.",
       "The New York Fahgettaboudit Mini is the thicker sibling: 18 mm, 2.06 kg, no mount, no cable, still only Gold. People search it because of the name. Most commuters should buy this Evolution Mini-7 instead. The extra thickness is not a reason to carry an extra 450 g every day if the Sold Secure grade is the same.",
     ],
     bestFor: [
@@ -205,7 +205,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       },
       {
         q: "Gold or Diamond for commuting?",
-        a: "Gold is what many UK policies still ask for. Diamond is what we would look for on a high-value e-bike. Check the wording you signed.",
+        a: "Gold is what many UK policies still ask for. Diamond is the desk shortlist grade on a high-value e-bike when the policy names it. Check the wording you signed.",
       },
       {
         q: "Evolution Mini-7 or New York Mini?",
@@ -361,7 +361,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     job: "A 4.9 kg chain for extra length at home. Do not commute with it.",
     meta: "Kryptonite New York 1410 chain review: 100 cm, 14 mm, 4.9 kg, Gold grade. A home or terrace chain. Not a commute lock.",
     verdict:
-      "Worth it as a home, garden, or café-terrace lock when a D-lock will not reach the only solid object. Not worth it as the lock you take on the bike: 4.9 kg, no mount, and too heavy for a backpack commute. Sold Secure Gold applies to the approved product, not to any chain you loop twice. We would keep this at home, not on the bike.",
+      "Worth it as a home, garden, or café-terrace lock when a D-lock will not reach the only solid object. Not worth it as the lock you take on the bike: 4.9 kg, no mount, and too heavy for a backpack commute. Sold Secure Gold applies to the approved product, not to any chain you loop twice. On weight alone, keep this at home, not on the bike.",
     subheads: [
       "Reach versus carry",
       "4.9 kg is the real weight",
@@ -548,7 +548,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     altBest: "onguard-pitbull-dt-8005",
     altBestWhy: "Same Diamond D-lock, and you want a wheel cable in the box. The cable is not graded.",
     altSecond: "litelok-x1",
-    altSecondWhy: "The policy names e-bike Diamond, or you want the armoured lock we would still carry in a bag.",
+    altSecondWhy: "The policy names e-bike Diamond, or you want the armoured lock on the desk shortlist when you will still carry 1.7 kg in a bag.",
   },
   "onguard-pitbull-dt-8005": {
     hook: "The Pitbull with a cable in the box. The cable is not Diamond.",
@@ -556,7 +556,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     meta: "OnGuard Pitbull DT 8005 review: Pedal Cycle Diamond D-lock with a cable, 1.6 kg, 14 mm, 115 × 230 mm, mount. The cable is not graded.",
     stamp: "Diamond (ordinary bikes)",
     verdict:
-      "Buy this if you want the STD Pitbull’s Diamond D-lock and you also want a wheel cable in the same box. The D-lock is Sold Secure Diamond for ordinary bikes on our records. The cable is not part of that grade — same rule as the Mini-7’s cable. 1.6 kg, 14 mm, 115 × 230 mm, a frame mount, five keys. If you do not need the cable, the STD is lighter. We would not treat the cable as a second Diamond lock.",
+      "Buy this if you want the STD Pitbull’s Diamond D-lock and you also want a wheel cable in the same box. The D-lock is Sold Secure Diamond for ordinary bikes on our records. The cable is not part of that grade — same rule as the Mini-7’s cable. 1.6 kg, 14 mm, 115 × 230 mm, a frame mount, five keys. If you do not need the cable, the STD is lighter. Do not treat the cable as a second Diamond lock.",
     subheads: [
       "The cable is not Diamond",
       "Same shackle as the STD",
@@ -687,7 +687,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     job: "Sold Secure Gold, 110 cm, 2.16 kg, SH bracket in the box. Flexible reach when a Mini will not close and you still want Gold on the bike.",
     meta: "ABUS Bordo Granit XPlus 6500 review: Sold Secure Gold folding lock, 2.16 kg, 110 cm, SH bracket. Flexible Gold when reach matters more than Mini-7 weight.",
     verdict:
-      "Worth it if Gold meets the policy, a compact D-lock will not reach the only solid object, and you still want the lock on the bike rather than a 4.9 kg chain at home. 110 cm of folding bars, 2.16 kg, SH bracket on the listing we looked at, two keys. That is 550 g more than the Mini-7, and a different shape: 5.5 mm bars, not a 13 mm D-shackle. Gold is Gold; the shape is not Diamond. We would take the Mini-7 for a classic Gold commute that already closes. We would take this when the extra reach is the point.",
+      "Worth it if Gold meets the policy, a compact D-lock will not reach the only solid object, and you still want the lock on the bike rather than a 4.9 kg chain at home. 110 cm of folding bars, 2.16 kg, SH bracket on the listing we looked at, two keys. That is 550 g more than the Mini-7, and a different shape: 5.5 mm bars, not a 13 mm D-shackle. Gold is Gold; the shape is not Diamond. Desk shortlist the Mini-7 for a classic Gold commute that already closes. Desk shortlist this when the extra reach is the point.",
     subheads: [
       "Reach you can still clip on",
       "Gold, not Diamond — 5.5 mm bars",

@@ -20,7 +20,6 @@ export default function AboutPage() {
         <a href="#who">Who writes this</a>
         <a href="#disclosure">Disclosure</a>
         <a href="#privacy">Privacy</a>
-        <a href="#contact">Contact</a>
         <Link href="/method">How we research</Link>
       </nav>
       <p className="lede">
@@ -75,14 +74,6 @@ export default function AboutPage() {
       </p>
       <p>Outbound clicks to Amazon.co.uk are their site, under their privacy notice.</p>
 
-      <h2 id="contact">Contact the desk</h2>
-      <p>
-        Email{" "}
-        <a href={`mailto:${site.contact}`}>{site.contact}</a> if something on a review needs a
-        correction, if you have a disclosure question, or if you want to flag a Sold Secure or
-        manufacturer change we should re-check. This is the desk inbox for Lock Desk — we read it.
-        It is not a shop support line, and we cannot settle insurance claims.
-      </p>
     </article>
   );
 }

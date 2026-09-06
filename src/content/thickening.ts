@@ -106,7 +106,7 @@ export const VS_AFTER_EXTRA: Record<string, string> = {
 
 export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "litelok-x1":
-    "Pedal and powered Diamond, 1.7 kg, 101 × 197 mm. Desk pick when the bike is worth Diamond and you will still carry it. Not a lab test.",
+    "Pedal and powered Diamond, 1.7 kg, 101 × 197 mm. Desk shortlist when the bike is worth Diamond and you will still carry it. Not a lab test.",
   "hiplok-d1000":
     "Diamond, 1.9 kg, 92 × 155 mm, no mount. Worth it if you have measured the rack. Skip it if Gold and a cable would do.",
   "kryptonite-evolution-mini-7":
@@ -137,7 +137,7 @@ export const REVIEW_RELATED_WELLS: Record<
     href: "/for/insurance",
     title: "Best bike lock for insurance",
     blurb:
-      "Match Sold Secure Gold or Diamond to the policy, then check the insurer’s list. The X1 is our Diamond pick when you will still carry 1.7 kg.",
+      "Match Sold Secure Gold or Diamond to the policy, then check the insurer’s list. The X1 is the Diamond desk shortlist when you will still carry 1.7 kg.",
   },
   "hiplok-d1000": {
     href: "/vs/evolution-mini-7-vs-d1000",

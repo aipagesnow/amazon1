@@ -125,9 +125,10 @@ export default function HomePage() {
           </figure>
           <div className="pick-copy">
             <h2>Desk pick</h2>
+            <p className="meta">Shortlist from the eleven — on grade, weight, and fit.</p>
             <h3>{displayName(pick)}</h3>
             <p>
-              <strong>Why we like it.</strong> {HOME_PICK.why}
+              <strong>Why it makes the shortlist.</strong> {HOME_PICK.why}
             </p>
             <p>
               <strong>Who it is for.</strong> {HOME_PICK.who}
