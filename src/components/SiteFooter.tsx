@@ -69,7 +69,7 @@ export function SiteFooter() {
           <Link href="/about#disclosure">Disclosure</Link>. {site.name} is operated by{" "}
           {site.operator}.
         </p>
-        <p>The photographs are editorial. They are not pictures of the named products.</p>
+        <p className="footer-disclosure">Photos are editorial — not named product shots.</p>
       </div>
     </footer>
   );

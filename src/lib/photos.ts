@@ -32,7 +32,7 @@ export const photoAlt = {
 } as const;
 
 export const EDITORIAL_CREDIT =
-  "This is an editorial photo of a street or an unbranded lock. It is not a picture of the named product.";
+  "Editorial photo — not the named product.";
 
 export function typePhoto(type?: string): { src: string; alt: string } {
   const kind = (type ?? "").toLowerCase();

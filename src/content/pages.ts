@@ -354,7 +354,7 @@ export const METHOD_WONT = [
   "We do not invent a weight, locking area, or grade. If a figure is missing, we leave it blank.",
   "We do not print live prices. They change on Amazon.",
   "We do not copy Amazon customer reviews or star ratings onto these pages.",
-  "Photographs are editorial — streets, stands, unbranded locks — not pictures of the named product. We cannot yet pull Amazon’s official listing photos.",
+  "Photos are editorial (streets, stands, unbranded locks) — not named product shots. We do not use Amazon listing photos.",
 ];
 
 export const METHOD_WHY = [
