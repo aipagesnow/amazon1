@@ -13,6 +13,8 @@ export const photos = {
   bannerThick: "/images/banner-thick.webp",
 } as const;
 
+export type PhotoKey = keyof typeof photos;
+
 export const photoAlt = {
   cover:
     "A bicycle locked to a bike stand on a wet UK street at night. Scene photograph for context.",
@@ -31,44 +33,64 @@ export const photoAlt = {
   bannerThick: "A thick D-lock on a bicycle frame in a wet alley. Scene photograph for context.",
 } as const;
 
-export const EDITORIAL_CREDIT =
-  "Scene photo for context.";
+/** Short figcaption per scene — honest context, not a product shot. */
+export const photoCaption: Record<PhotoKey, string> = {
+  cover: "Night rack · scene for context",
+  pick: "Dusk stand · scene for context",
+  commute: "Station rack · scene for context",
+  insurance: "Kitchen desk · scene for context",
+  vs: "Workbench pair · scene for context",
+  fit: "Wet shackle · scene for context",
+  chain: "Wet tarmac · scene for context",
+  bannerTight: "Crowded rack · scene for context",
+  bannerCommute: "Blue-hour commute · scene for context",
+  bannerLong: "Lamp-post reach · scene for context",
+  bannerHouse: "Doorstep chain · scene for context",
+  bannerThick: "Alley frame · scene for context",
+};
 
-export function typePhoto(type?: string): { src: string; alt: string } {
-  const kind = (type ?? "").toLowerCase();
-  if (kind.includes("chain")) {
-    return { src: photos.chain, alt: photoAlt.chain };
-  }
-  if (kind.includes("fold")) {
-    return { src: photos.fit, alt: photoAlt.fit };
-  }
-  return { src: photos.pick, alt: photoAlt.pick };
+export const EDITORIAL_CREDIT = "Scene photo for context.";
+
+function scene(key: PhotoKey): { src: string; alt: string; caption: string } {
+  return { src: photos[key], alt: photoAlt[key], caption: photoCaption[key] };
 }
 
-export function reviewBanner(slug: string): { src: string; alt: string } {
+export function typePhoto(type?: string): { src: string; alt: string; caption: string } {
+  const kind = (type ?? "").toLowerCase();
+  if (kind.includes("chain")) {
+    return scene("chain");
+  }
+  if (kind.includes("fold")) {
+    return scene("fit");
+  }
+  return scene("pick");
+}
+
+/** Each of the 11 review slugs gets a distinct image from /public/images (cover reserved for home). */
+export function reviewBanner(slug: string): { src: string; alt: string; caption: string } {
   switch (slug) {
     case "litelok-x1":
-      return { src: photos.cover, alt: photoAlt.cover };
+      return scene("vs");
     case "hiplok-d1000":
-      return { src: photos.bannerTight, alt: photoAlt.bannerTight };
-    case "kryptonite-evolution-mini-7":
-      return { src: photos.bannerCommute, alt: photoAlt.bannerCommute };
-    case "abus-granit-xplus-540":
-      return { src: photos.bannerLong, alt: photoAlt.bannerLong };
-    case "kryptonite-new-york-fahgettaboudit-mini":
-      return { src: photos.bannerThick, alt: photoAlt.bannerThick };
-    case "kryptonite-new-york-fahgettaboudit-1410":
-      return { src: photos.bannerHouse, alt: photoAlt.bannerHouse };
+      return scene("bannerTight");
     case "hiplok-dx1000":
-      return { src: photos.bannerLong, alt: photoAlt.bannerLong };
+      return scene("commute");
+    case "kryptonite-evolution-mini-7":
+      return scene("bannerCommute");
+    case "abus-granit-xplus-540":
+      return scene("bannerLong");
+    case "kryptonite-new-york-fahgettaboudit-mini":
+      return scene("bannerThick");
+    case "kryptonite-new-york-fahgettaboudit-1410":
+      return scene("bannerHouse");
     case "onguard-pitbull-std-8003":
-      return { src: photos.bannerCommute, alt: photoAlt.bannerCommute };
+      return scene("chain");
     case "onguard-pitbull-dt-8005":
-      return { src: photos.pick, alt: photoAlt.pick };
+      return scene("pick");
     case "onguard-pitbull-ls-8002":
-      return { src: photos.bannerLong, alt: photoAlt.bannerLong };
+      return scene("insurance");
     case "abus-bordo-granit-xplus-6500":
-      return { src: photos.fit, alt: photoAlt.fit };
+      return scene("fit");
     default:
       return typePhoto();
   }

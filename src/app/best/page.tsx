@@ -9,7 +9,7 @@ import { BEST_INTRO, BEST_LEDE, BEST_PICKS, BEST_VERDICTS, BEST_WEIGHT } from "@
 import { BEST_FAQS, BEST_INTRO_EXTRA, BEST_META } from "@/content/thickening";
 import { RichText } from "@/components/RichText";
 import { articleJsonLd, faqJsonLd, itemListJsonLd } from "@/lib/jsonld";
-import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
+import { photoAlt, photoCaption, photos } from "@/lib/photos";
 import {
   BEST_OF_ASINS,
   displayName,
@@ -65,12 +65,12 @@ export default function BestPage() {
         ]}
       />
       <PageHero
-        image={photos.cover}
-        alt={photoAlt.cover}
+        image={photos.insurance}
+        alt={photoAlt.insurance}
         kicker="Best of"
         title="Best bike locks UK"
         lede={BEST_LEDE}
-        caption={EDITORIAL_CREDIT}
+        caption={photoCaption.insurance}
         overlay
       />
       <article className="prose wrap tight">
@@ -109,52 +109,103 @@ export default function BestPage() {
         <WeightCompare items={weights} />
 
         <h2>The numbers</h2>
-        <div className="spec-scroll">
-          <table className="spec">
-            <caption>D-locks first, then the folding lock, then the home chain. Weights from the product specs.</caption>
-            <thead>
-              <tr>
-                <th>Lock</th>
-                <th>Sold Secure</th>
-                <th>Weight</th>
-                <th>Locking area</th>
-                <th>Best for</th>
-                <th>Drawback</th>
-                <th>Review</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((p) => {
-                const href = reviewHref(p);
-                const extra = BEST_VERDICTS[p.asin];
-                return (
-                  <tr key={p.asin}>
-                    <td>
-                      <span className="kicker">{specValue(p, "type") ?? "Lock"}</span>
-                      <br />
-                      {href ? <Link href={href}>{displayName(p)}</Link> : displayName(p)}
-                    </td>
-                    <td>{specValue(p, "soldSecurePedal") ?? "—"}</td>
-                    <td>{specValue(p, "weightKg") ?? "—"}</td>
-                    <td>
+        <div className="best-cards" aria-label="Best-of shortlist as cards">
+          {rows.map((p) => {
+            const href = reviewHref(p);
+            const extra = BEST_VERDICTS[p.asin];
+            return (
+              <article className="best-card card" key={p.asin}>
+                <p className="kicker">{specValue(p, "type") ?? "Lock"}</p>
+                <h3>{href ? <Link href={href}>{displayName(p)}</Link> : displayName(p)}</h3>
+                <dl className="best-card-specs">
+                  <div>
+                    <dt>Sold Secure</dt>
+                    <dd>{specValue(p, "soldSecurePedal") ?? "—"}</dd>
+                  </div>
+                  <div>
+                    <dt>Weight</dt>
+                    <dd>{specValue(p, "weightKg") ?? "—"}</dd>
+                  </div>
+                  <div>
+                    <dt>Locking area</dt>
+                    <dd>
                       {specValue(p, "lockingArea") ?? specValue(p, "lockingLength") ?? "—"}
-                    </td>
-                    <td>{extra?.bestFor}</td>
-                    <td>{extra?.caveat}</td>
-                    <td>
-                      {href ? (
-                        <Link href={href} className="primary-link">
-                          Read the review
-                        </Link>
-                      ) : null}
-                      <br />
-                      <SeeOnAmazon asin={p.asin} variant="text" />
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+                    </dd>
+                  </div>
+                </dl>
+                {extra?.bestFor ? (
+                  <p className="best-card-for">
+                    <strong>Best for:</strong> {extra.bestFor}
+                  </p>
+                ) : null}
+                {extra?.caveat ? (
+                  <p className="best-card-caveat">
+                    <strong>Caveat:</strong> {extra.caveat}
+                  </p>
+                ) : null}
+                <p className="best-card-actions">
+                  {href ? (
+                    <Link href={href} className="primary-link">
+                      Read the review
+                    </Link>
+                  ) : null}
+                  <SeeOnAmazon asin={p.asin} variant="text" />
+                </p>
+              </article>
+            );
+          })}
+        </div>
+        <div className="best-table-desktop">
+          <div className="spec-scroll-wrap">
+            <p className="spec-scroll-hint">Swipe for more columns</p>
+            <div className="spec-scroll">
+            <table className="spec">
+              <caption>D-locks first, then the folding lock, then the home chain. Weights from the product specs.</caption>
+              <thead>
+                <tr>
+                  <th>Lock</th>
+                  <th>Sold Secure</th>
+                  <th>Weight</th>
+                  <th>Locking area</th>
+                  <th>Best for</th>
+                  <th>Drawback</th>
+                  <th>Review</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((p) => {
+                  const href = reviewHref(p);
+                  const extra = BEST_VERDICTS[p.asin];
+                  return (
+                    <tr key={p.asin}>
+                      <td>
+                        <span className="kicker">{specValue(p, "type") ?? "Lock"}</span>
+                        <br />
+                        {href ? <Link href={href}>{displayName(p)}</Link> : displayName(p)}
+                      </td>
+                      <td>{specValue(p, "soldSecurePedal") ?? "—"}</td>
+                      <td>{specValue(p, "weightKg") ?? "—"}</td>
+                      <td>
+                        {specValue(p, "lockingArea") ?? specValue(p, "lockingLength") ?? "—"}
+                      </td>
+                      <td>{extra?.bestFor}</td>
+                      <td>{extra?.caveat}</td>
+                      <td>
+                        {href ? (
+                          <Link href={href} className="primary-link">
+                            Read the review
+                          </Link>
+                        ) : null}
+                        <br />
+                        <SeeOnAmazon asin={p.asin} variant="text" />
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+            </div>
+          </div>
         </div>
 
         <h2>Common questions</h2>

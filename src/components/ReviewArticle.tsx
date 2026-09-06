@@ -6,7 +6,7 @@ import { RichText } from "@/components/RichText";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { SpecFigures, SpecTable } from "@/components/SpecTable";
 import { ReviewCopy } from "@/content/editorial";
-import { EDITORIAL_CREDIT, reviewBanner } from "@/lib/photos";
+import { reviewBanner } from "@/lib/photos";
 import { REVIEW_RELATED_WELLS } from "@/content/thickening";
 import {
   displayName,
@@ -95,7 +95,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         kicker={`${product.brand} · ${product.specs?.type ?? "Lock"}`}
         title={displayName(product)}
         lede={copy.hook}
-        caption={EDITORIAL_CREDIT}
+        caption={art.caption}
         overlay
       >
         <p className="stamp-row">
