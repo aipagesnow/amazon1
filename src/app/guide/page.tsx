@@ -107,7 +107,22 @@ export default function GuidePage() {
         <div className="chooser" id="chooser">
           <h2>Which lock to pick</h2>
           <p>{GUIDE_CHOOSER_INTRO}</p>
-          <div className="spec-scroll">
+          <div className="chooser-cards" aria-label="Which lock to pick as cards">
+            {GUIDE_CHOOSER.map((row) => (
+              <article className="chooser-card card" key={row.slug}>
+                <p className="kicker">Situation</p>
+                <p className="chooser-card-situation">{row.situation}</p>
+                <p className="chooser-card-pick">
+                  <strong>Pick:</strong>{" "}
+                  <Link href={`/reviews/${row.slug}`}>{row.name}</Link>
+                </p>
+                <p className="chooser-card-why">
+                  <strong>Why:</strong> {row.why}
+                </p>
+              </article>
+            ))}
+          </div>
+          <div className="chooser-table-desktop">
             <table className="spec">
               <thead>
                 <tr>

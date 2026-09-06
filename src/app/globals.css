@@ -1177,6 +1177,67 @@ table.spec tr.spec-group th {
   padding: 1.2rem 1.4rem;
   border-left: 4px solid var(--hivis);
   background: var(--paper-2);
+  max-width: 100%;
+  overflow-x: clip;
+  min-width: 0;
+}
+
+.chooser-cards {
+  display: none;
+  gap: 0.85rem;
+  margin: 1rem 0 1.4rem;
+  min-width: 0;
+  max-width: 100%;
+}
+.chooser-card {
+  border-top-color: var(--hivis);
+  padding: 1.05rem 1.15rem 1.2rem;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.chooser-card .kicker {
+  margin: 0 0 0.25rem;
+  color: var(--hivis-dark);
+}
+.chooser-card-situation,
+.chooser-card-pick,
+.chooser-card-why {
+  margin: 0 0 0.55rem;
+  font-size: 0.95rem;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.chooser-card-situation {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  line-height: 1.4;
+  margin-bottom: 0.7rem;
+}
+.chooser-card-pick {
+  margin-bottom: 0.45rem;
+}
+.chooser-card-why {
+  margin-bottom: 0;
+  color: var(--ink);
+}
+.chooser-table-desktop {
+  margin: 1rem 0 1.4rem;
+  max-width: 100%;
+  min-width: 0;
+}
+.chooser-table-desktop table.spec {
+  min-width: 0;
+  width: 100%;
+}
+.chooser-table-desktop table.spec th,
+.chooser-table-desktop table.spec td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .vs-split {
@@ -1269,6 +1330,11 @@ table.spec tr.spec-group th {
     grid-template-columns: 1fr;
   }
   .best-table-desktop { display: none; }
+  .chooser-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .chooser-table-desktop { display: none; }
   .best-card-specs { grid-template-columns: 1fr 1fr; }
   .pick-art, .pick-art-frame { min-height: 220px; }
   .cover { min-height: min(70svh, 640px); }
