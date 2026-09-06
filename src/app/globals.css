@@ -144,7 +144,7 @@ img { max-width: 100%; display: block; }
   min-height: min(82vh, 720px);
   color: #e7ece6;
   display: grid;
-  align-items: end;
+  align-items: start;
   isolation: isolate;
 }
 .cover-photo,
@@ -170,15 +170,17 @@ img { max-width: 100%; display: block; }
   z-index: -1;
   background: linear-gradient(
     180deg,
-    rgba(16, 22, 18, 0.18) 0%,
-    rgba(16, 22, 18, 0.55) 48%,
-    rgba(16, 22, 18, 0.92) 100%
+    rgba(16, 22, 18, 0.28) 0%,
+    rgba(16, 22, 18, 0.58) 42%,
+    rgba(16, 22, 18, 0.88) 78%,
+    rgba(16, 22, 18, 0.94) 100%
   );
 }
 .cover-copy {
   position: relative;
   z-index: 3;
-  padding: 5.5rem 0 3.4rem;
+  /* Sit the title/CTAs in the upper-middle of the hero; disclosure stays on the bottom edge. */
+  padding: clamp(5.8rem, 16vh, 8.5rem) 0 4.5rem;
 }
 .cover-disclosure-bar {
   position: absolute;
@@ -1138,7 +1140,9 @@ table.spec tr.spec-group th {
   .cover { min-height: min(70svh, 640px); }
   .page-hero-overlay { min-height: min(62svh, 560px); }
   .page-hero-overlay.tight-hero { min-height: min(52svh, 480px); }
-  .cover-copy,
+  .cover-copy {
+    padding: clamp(4.6rem, 12vh, 6.2rem) 0 4.2rem;
+  }
   .page-hero-overlay .cover-copy {
     padding: 4.2rem 0 3.1rem;
   }
