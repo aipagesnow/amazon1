@@ -19,7 +19,7 @@ import {
   shortName,
   specValue,
 } from "@/lib/products";
-import { pageUrl } from "@/lib/site";
+import { pageUrl, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Best bike locks UK",
@@ -76,6 +76,7 @@ export default function BestPage() {
         <DisclosureStrip />
       </PageHero>
       <article className="prose wrap tight">
+        <p className="meta">Last checked: {site.lastChecked}. Grades and specs can change — confirm on Amazon before you buy.</p>
 
         {BEST_INTRO.map((p) => (
           <p key={p}>

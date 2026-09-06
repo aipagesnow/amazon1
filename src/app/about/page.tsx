@@ -46,8 +46,10 @@ export default function AboutPage() {
         <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>.
       </p>
       <p>
-        We do not publish a contact mailbox yet. When we do, it will be listed here. Until then, this
-        page is the record of who operates the site, how we are paid, and how we treat data.
+        Contact:{" "}
+        <a href={`mailto:${site.contact}`}>{site.contact}</a>. Questions about a review, a
+        disclosure, or this magazine go there. This page is still the record of who operates the
+        site, how we are paid, and how we treat data.
       </p>
 
       <h2 id="disclosure">Disclosure</h2>

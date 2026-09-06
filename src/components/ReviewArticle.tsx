@@ -15,6 +15,7 @@ import {
   REVIEW_SLUGS,
   reviewHref,
 } from "@/lib/products";
+import { site } from "@/lib/site";
 
 function AltCard({ slug, why, kicker }: { slug: string; why: string; kicker: string }) {
   const product = productBySlug(slug);
@@ -105,6 +106,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
       </PageHero>
 
       <div className="wrap prose tight">
+        <p className="meta">Last checked: {site.lastChecked}.</p>
         <div className="desk-verdict">
           <h2>Verdict</h2>
           <p>{copy.verdict}</p>

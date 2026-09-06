@@ -11,7 +11,9 @@ export const site = {
   url: `https://www.${siteJson.domain}`,
   locale: "en-GB",
   operator: "Aivora Digital",
-  contact: "",
+  contact: "aivora@agentmail.to",
+  /** Shown on Best of and reviews for Flippa / reader freshness */
+  lastChecked: "6 September 2026",
 } as const;
 
 export function pageUrl(path: string): string {

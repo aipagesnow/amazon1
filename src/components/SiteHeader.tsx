@@ -10,6 +10,8 @@ const LINKS = [
   { href: "/guide", label: "How to choose" },
   { href: "/best", label: "Best of" },
   { href: "/reviews", label: "Reviews" },
+  { href: "/#finder", label: "Find a lock" },
+  { href: "/compare", label: "Compare" },
   { href: "/about", label: "About" },
 ] as const;
 

@@ -16,7 +16,7 @@ import {
   REVIEW_SLUGS,
   reviewHref,
 } from "@/lib/products";
-import { pageUrl } from "@/lib/site";
+import { pageUrl, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Bike lock reviews",
@@ -71,6 +71,7 @@ export default function ReviewsIndexPage() {
         <DisclosureStrip />
       </PageHero>
       <article className="prose wrap tight">
+        <p className="meta">Last checked: {site.lastChecked}. We re-check grades and key specs when we refresh a review.</p>
         {REVIEWS_INTRO.map((p) => (
           <p key={p}>
             <RichText text={p} />
