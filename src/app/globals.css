@@ -389,11 +389,11 @@ img { max-width: 100%; display: block; }
 .briefing article:last-child { border-right: 0; }
 .briefing h2 {
   font-family: var(--mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.16em;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--hivis);
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.55rem;
 }
 .briefing p {
   margin: 0;
