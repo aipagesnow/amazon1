@@ -128,14 +128,15 @@
     "brand": "OnGuard",
     "category": "Bike locks",
     "specs": {
-      "soldSecurePedal": "Gold",
+      "soldSecurePedal": "Diamond",
       "cableIncluded": true,
       "lockingArea": "115 x 230 mm",
       "keys": 5,
       "type": "D-lock",
       "shackleMm": 14,
       "angleGrinderResistant": false,
-      "frameMount": true
+      "frameMount": true,
+      "weightKg": 1.6
     }
   },
   {
@@ -144,14 +145,15 @@
     "brand": "OnGuard",
     "category": "Bike locks",
     "specs": {
-      "soldSecurePedal": "Gold",
+      "soldSecurePedal": "Diamond",
       "cableIncluded": false,
       "lockingArea": "115 x 230 mm",
       "keys": 5,
       "type": "D-lock",
       "shackleMm": 14,
       "angleGrinderResistant": false,
-      "frameMount": true
+      "frameMount": true,
+      "weightKg": 1.44
     }
   },
   {
@@ -160,14 +162,32 @@
     "brand": "OnGuard",
     "category": "Bike locks",
     "specs": {
-      "soldSecurePedal": "Gold",
+      "soldSecurePedal": "Diamond",
       "cableIncluded": false,
       "lockingArea": "115 x 292 mm",
       "keys": 5,
       "type": "D-lock",
       "shackleMm": 14,
       "angleGrinderResistant": false,
-      "frameMount": true
+      "frameMount": true,
+      "weightKg": 1.75
+    }
+  },
+  {
+    "asin": "B071ZPJ7JY",
+    "name": "Bordo Granit XPlus 6500/110 folding lock with SH bracket",
+    "brand": "ABUS",
+    "category": "Bike locks",
+    "specs": {
+      "type": "Folding",
+      "soldSecurePedal": "Gold",
+      "frameMount": true,
+      "cableIncluded": false,
+      "angleGrinderResistant": false,
+      "weightKg": 2.16,
+      "keys": 2,
+      "lockingLength": "110 cm",
+      "shackleMm": 5.5
     }
   }
 ]

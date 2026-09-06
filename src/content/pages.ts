@@ -19,6 +19,14 @@ export const BEST_VERDICTS: Record<string, { bestFor: string; caveat: string }> 
     bestFor: "Extra reach at home — not something to put in a backpack.",
     caveat: "At 4.9 kg it is too heavy for a daily commute.",
   },
+  B01A6ZRMEK: {
+    bestFor: "Diamond you can clip to the frame on a normal stand.",
+    caveat: "No e-bike grade on our records, and no cable.",
+  },
+  B071ZPJ7JY: {
+    bestFor: "Gold with 110 cm of folding reach and an SH bracket.",
+    caveat: "Not Diamond, and heavier than the Mini-7.",
+  },
 };
 
 export type Faq = { q: string; a: string };
@@ -66,21 +74,21 @@ export const GUIDE_SECTIONS: GuideSection[] = [
     h2: "Will the lock close on your stand?",
     paragraphs: [
       "A compact D-lock that will not close around the stand does not protect the bike. The figure that matters is the locking area: the space inside the shackle. Compare that with the post plus the tube of your frame. Measuring the stand is more useful than choosing by brand.",
-      "Longer shackles close more easily. The ABUS 540 here is 300 mm, so it will take posts that a Mini cannot. The trade-off is extra room for a thief’s tool. Tight Minis — the Hiplok D1000 is 92 × 155 mm — are awkward on fat tyres, cargo frames, and some UK street furniture. If you already know a compact lock fails on your rack, do not buy a thicker Mini with an even smaller opening. Look at the 540, or a chain you leave at home.",
+      "Longer shackles close more easily. The ABUS 540 here is 300 mm; the OnGuard Pitbull LS is 115 × 292 mm. Both will take posts that a Mini cannot. The trade-off is extra room for a thief’s tool. Tight Minis — the Hiplok D1000 is 92 × 155 mm — are awkward on fat tyres, cargo frames, and some UK street furniture. The DX1000 (112 × 205 mm) is the larger Hiplok if that compact hole is the problem, not the grade. If you already know a compact lock fails on your rack, do not buy a thicker Mini with an even smaller opening. Look at the LS, the 540, the Bordo 6500 if Gold and folding reach will do, or a chain you leave at home.",
     ],
   },
   {
     h2: "Will you actually carry it?",
     paragraphs: [
       "The lock you leave at home does not protect the bike at the station. Weight, and whether it clips to the frame, decide whether you take it every day.",
-      "On the locks we reviewed: the Evolution Mini-7 is 1.61 kg with a clip; the Litelok X1 is 1.7 kg with no clip in the box; the D1000 is 1.9 kg with no clip listed; the New York Mini is 2.06 kg with no clip; the New York 1410 chain is 4.9 kg. If 1.6 kg already feels like too much, a 2 kg lock with a tougher-sounding name will not help. You are less likely to take it.",
+      "On the locks we reviewed: the Pitbull STD is 1.44 kg with a clip; the Evolution Mini-7 is 1.61 kg with a clip; the Litelok X1 is 1.7 kg with no clip in the box; the D1000 is 1.9 kg with no clip listed; the Bordo 6500 is 2.16 kg with an SH bracket; the DX1000 is 2.75 kg with no clip; the New York 1410 chain is 4.9 kg. If 1.6 kg already feels like too much, a 2 kg lock with a tougher-sounding name will not help. You are less likely to take it.",
       "A lock that clips to the frame is the one you are most likely to have with you every morning. If the box does not include a clip, budget for one, or be honest that you will carry it in a bag.",
     ],
   },
   {
     h2: "D-lock or chain",
     paragraphs: [
-      "A D-lock — sometimes sold as a U-lock — is for a tight stand on a commute. A chain is for extra reach: home, a ground anchor, two bikes, or a post a compact D-lock cannot close around. [D-lock vs chain](/vs/d-lock-vs-chain) is the longer comparison.",
+      "A D-lock — sometimes sold as a U-lock — is for a tight stand on a commute. A chain is for extra reach: home, a ground anchor, two bikes, or a post a compact D-lock cannot close around. A folding lock sits between those jobs: the Bordo 6500 is Sold Secure Gold, 110 cm, with an SH bracket, when you need Mini-7 grade and more reach than a rigid shackle, on the bike. [D-lock vs chain](/vs/d-lock-vs-chain) is the longer comparison.",
       "Many careful riders use both, and only carry the D-lock. That is a practical setup: Gold or Diamond on the bike for the station, and a heavy chain left where the bike is stored overnight. A 4.9 kg chain is too heavy for a daily commute. Most people will stop carrying it after a few days.",
     ],
   },
@@ -101,7 +109,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
       },
       {
         lead: "Ignore “Mini”",
-        text: "if your stand is a fat lamp-post. Measure, then look at the ABUS 540 or a chain at home.",
+        text: "if your stand is a fat lamp-post. Measure, then look at the Pitbull LS, the ABUS 540, the Bordo if Gold is enough, or a chain at home.",
       },
       {
         lead: "Ignore e-bike Diamond",
@@ -165,6 +173,18 @@ export const GUIDE_CHOOSER: { situation: string; slug: string; name: string; why
     why: "300 mm shackle. For e-bikes, the grade is Gold.",
   },
   {
+    situation: "Diamond, a normal stand, you want a frame clip",
+    slug: "onguard-pitbull-std-8003",
+    name: "OnGuard Pitbull STD 8003",
+    why: "1.44 kg, Pedal Cycle Diamond, 115 × 230 mm, a mount in the box. No cable. No e-bike grade on our records.",
+  },
+  {
+    situation: "Gold is enough, a Mini will not reach, you still want the lock on the bike",
+    slug: "abus-bordo-granit-xplus-6500",
+    name: "ABUS Bordo 6500",
+    why: "Sold Secure Gold, 110 cm folding, 2.16 kg, SH bracket. Not Diamond.",
+  },
+  {
     situation: "Home, garden, or a post a D-lock cannot reach",
     slug: "kryptonite-new-york-fahgettaboudit-1410",
     name: "New York 1410 chain",
@@ -183,7 +203,7 @@ export const GUIDE_FAQS: Faq[] = [
   },
   {
     q: "How do I know if a Mini will fit my stand?",
-    a: "Measure the stand plus the frame tube, then compare that with the locking area. The Evolution Mini-7 is 83 × 178 mm; the D1000 is 92 × 155 mm. If a compact lock already fails, look at the ABUS 540 (300 mm) or a chain at home — not a thicker Mini.",
+    a: "Measure the stand plus the frame tube, then compare that with the locking area. The Evolution Mini-7 is 83 × 178 mm; the D1000 is 92 × 155 mm; the Pitbull STD is 115 × 230 mm. If a compact lock already fails, look at the Pitbull LS (292 mm), the ABUS 540 (300 mm), the Bordo 6500 if Gold folding reach will do, or a chain at home — not a thicker Mini.",
   },
   {
     q: "Does a heavier lock mean a safer bike?",
@@ -217,11 +237,11 @@ export const HOME_PICK = {
 };
 
 export const BEST_LEDE =
-  "Five D-locks and chains compared on Sold Secure grade, whether you will carry them, and whether the shackle will close. A sixth lock, the New York Mini, is reviewed separately because it is too heavy for most commutes. There is no single best lock for everyone.";
+  "D-locks, a folding lock, and a chain compared on Sold Secure grade, whether you will carry them, and whether they will close. The New York Mini is reviewed separately because it is too heavy for most commutes. There is no single best lock for everyone.";
 
 export const BEST_INTRO = [
   "“Best bike lock UK” is a search, not a product. The right lock is the one that matches the grade on your policy, closes on the stand you actually use, and is light enough that you still take it to work.",
-  "We picked five locks from the six we have reviewed in full. The Evolution Mini-7 is the Gold commute lock. The Litelok X1 is the Diamond lock we would still carry. The D1000 is Diamond for a stand you have already measured. The ABUS 540 is the long shackle when a Mini will not close. The New York 1410 is the home chain. The New York Mini is reviewed because people search the name; it is not on this table.",
+  "We picked these from the eleven we have reviewed in full. The Evolution Mini-7 is the Gold commute lock. The Litelok X1 is the Diamond lock we would still carry in a bag. The Pitbull STD is Diamond with a frame mount on a normal stand. The D1000 is Diamond for a stand you have already measured. The ABUS 540 is the long shackle when a Mini will not close. The Bordo 6500 is Gold folding when reach matters more than Mini-7 weight. The New York 1410 is the home chain. The New York Mini is reviewed because people search the name; it is not on this table. The DX1000, Pitbull DT and Pitbull LS are on the reviews page for their specific jobs.",
 ];
 
 export const BEST_PICKS: { lead: string; slug: string; name: string; text: string }[] = [
@@ -238,6 +258,12 @@ export const BEST_PICKS: { lead: string; slug: string; name: string; text: strin
     text: "1.61 kg, Sold Secure Gold. The cable is not graded. The lock most UK commuters will actually take.",
   },
   {
+    lead: "Need Diamond with a frame clip",
+    slug: "onguard-pitbull-std-8003",
+    name: "Pitbull STD 8003",
+    text: "1.44 kg, Pedal Cycle Diamond, 115 × 230 mm, a mount in the box. No cable. No e-bike grade on our records.",
+  },
+  {
     lead: "Busy stand you have already measured",
     slug: "hiplok-d1000",
     name: "Hiplok D1000",
@@ -250,6 +276,12 @@ export const BEST_PICKS: { lead: string; slug: string; name: string; text: strin
     text: "300 mm shackle, frame clip, Diamond for ordinary bikes. For e-bikes, the grade is Gold.",
   },
   {
+    lead: "Need Gold with folding reach",
+    slug: "abus-bordo-granit-xplus-6500",
+    name: "Bordo 6500",
+    text: "Sold Secure Gold, 110 cm, 2.16 kg, SH bracket. Flexible Gold when a Mini will not close and you still want the lock on the bike.",
+  },
+  {
     lead: "Need a metre of chain at home",
     slug: "kryptonite-new-york-fahgettaboudit-1410",
     name: "New York 1410",
@@ -258,13 +290,13 @@ export const BEST_PICKS: { lead: string; slug: string; name: string; text: strin
 ];
 
 export const BEST_WEIGHT =
-  "The 1410 chain is almost three times the weight of the X1, which is why we treat it as a home lock rather than a commute lock. The bars are relative to the heaviest lock in this comparison.";
+  "The 1410 chain is more than three times the weight of the Pitbull STD, which is why we treat it as a home lock rather than a commute lock. The bars are relative to the heaviest lock in this comparison.";
 
 export const REVIEWS_LEDE =
-  "Six D-locks and chains, from Sold Secure Gold to Diamond. Each review says who it is for, who should skip it, and the main drawbacks.";
+  "Eleven locks — D-locks, a folding lock, and a chain — from Sold Secure Gold to Diamond. Each review says who it is for, who should skip it, and the main drawbacks.";
 
 export const REVIEWS_INTRO = [
-  "This is not a ranking of every lock on Amazon. We took six products people actually search for — three Diamond D-locks, two Gold D-locks, and one Gold chain — and wrote each one up against the same questions: grade, fit, weight, and whether you will carry it.",
+  "This is not a ranking of every lock on Amazon. We took eleven products people actually search for — Diamond D-locks, Gold D-locks, one Gold folding lock, and one Gold chain — and wrote each one up against the same questions: grade, fit, weight, and whether you will carry it.",
   "Start with the group that matches the grade on your policy. Then read the verdict, not just the name. A Diamond lock left at home is worse than a Gold lock you take with you.",
 ];
 
@@ -272,14 +304,26 @@ export const REVIEW_GROUPS = [
   {
     title: "Sold Secure Diamond D-locks",
     blurb:
-      "For higher-value bikes and policies that name Diamond. The X1 is the one we would still commute with (1.7 kg, ordinary-bike and e-bike Diamond, 101 × 197 mm). The D1000 is the compact anti-grinder lock (1.9 kg, 92 × 155 mm, no clip) — only if you have measured the stand. The ABUS 540 is the long 300 mm shackle for posts a Mini cannot close around; for e-bikes the grade is Gold.",
-    slugs: ["litelok-x1", "hiplok-d1000", "abus-granit-xplus-540"],
+      "For higher-value bikes and policies that name Diamond. The X1 is the one we would still carry in a bag (1.7 kg, ordinary-bike and e-bike Diamond, 101 × 197 mm). The Pitbull STD is Diamond with a frame mount (1.44 kg, 115 × 230 mm); the DT is that lock plus a cable that is not graded; the LS is the long 115 × 292 mm sibling. The D1000 is the compact anti-grinder lock (1.9 kg, 92 × 155 mm, no clip) — only if you have measured the stand. The DX1000 is the larger Hiplok (2.75 kg, 112 × 205 mm, no clip) for e-bikes and cargo when 155 mm will not close. The ABUS 540 is the long 300 mm shackle for posts a Mini cannot close around; for e-bikes the grade is Gold.",
+    slugs: [
+      "litelok-x1",
+      "onguard-pitbull-std-8003",
+      "onguard-pitbull-dt-8005",
+      "onguard-pitbull-ls-8002",
+      "hiplok-d1000",
+      "hiplok-dx1000",
+      "abus-granit-xplus-540",
+    ],
   },
   {
-    title: "Sold Secure Gold D-locks",
+    title: "Sold Secure Gold — D-lock and folding",
     blurb:
-      "For the many UK household policies that still name Gold. The Evolution Mini-7 is the commute lock: 1.61 kg, a frame clip, and a cable in the box — the cable is not Gold. The New York Mini is 18 mm thick and 2.06 kg, with no clip; most commuters should buy the Mini-7 instead.",
-    slugs: ["kryptonite-evolution-mini-7", "kryptonite-new-york-fahgettaboudit-mini"],
+      "For the many UK household policies that still name Gold. The Evolution Mini-7 is the commute lock: 1.61 kg, a frame clip, and a cable in the box — the cable is not Gold. The Bordo 6500 is Gold folding: 110 cm, 2.16 kg, SH bracket — when a Mini will not reach and you still want the lock on the bike. The New York Mini is 18 mm thick and 2.06 kg, with no clip; most commuters should buy the Mini-7 instead.",
+    slugs: [
+      "kryptonite-evolution-mini-7",
+      "abus-bordo-granit-xplus-6500",
+      "kryptonite-new-york-fahgettaboudit-mini",
+    ],
   },
   {
     title: "Chain for home and extra reach",
@@ -346,7 +390,7 @@ export const CASES: UseCase[] = [
       "A commute lock has to come with you every working day. The Sold Secure grade needs to match your insurance. The lock has to close on the stand you use. Weight, and whether it clips to the frame, decide whether you will actually take it.",
       "For most UK commuters whose policy still names Sold Secure Gold, the Evolution Mini-7 is the pick: 1.61 kg, a frame clip, and a cable in the box. The D-lock is Gold. The cable is not — use it for a quick-release wheel, not as a second lock. That combination is why we put it ahead of thicker, heavier Gold Minis with no clip.",
       "If you ride an e-bike, or the policy names Diamond, and you will carry 1.7 kg, take the Litelok X1 instead. It is Diamond for ordinary bikes and for e-bikes. There is no frame clip in the box we looked at, so budget for a bag or a separate clip. Without one, it is likely to stay at home.",
-      "Do not buy the Hiplok D1000 for a commute until you have checked that the 92 × 155 mm shackle closes on your stand. It is a serious Diamond lock. It is also compact, 1.9 kg, and listed without a clip. Check the fit before you buy.",
+      "Do not buy the Hiplok D1000 for a commute until you have checked that the 92 × 155 mm shackle closes on your stand. It is a serious Diamond lock. It is also compact, 1.9 kg, and listed without a clip. The DX1000 is the larger Hiplok if that hole is the problem; it is 2.75 kg, still with no clip. If you need Diamond and a clip on the bike, that is the Pitbull STD.",
       "A 4.9 kg chain is not a commute lock. Keep the New York 1410 at home for extra reach — a garden, a ground anchor, or a post a Mini cannot close around — and take a D-lock on the bike. That two-lock setup is what careful commuters actually keep using.",
       "Lock the frame to the stand, not just a wheel. If the shackle will take the rear wheel as well, do that. Fill the shackle as much as you can. Check the stand is fixed down. These steps matter more than the brand name on the box.",
     ],
@@ -362,11 +406,11 @@ export const CASES: UseCase[] = [
       },
       {
         q: "Do I need a frame clip?",
-        a: "Yes, if you are unlikely to carry a lock in a bag every day. The Mini-7 and the ABUS 540 include a clip. The X1 and D1000 we looked at do not. A Diamond lock left at home does not protect the bike; a Gold lock you take with you does.",
+        a: "Yes, if you are unlikely to carry a lock in a bag every day. The Mini-7, the Pitbulls, the ABUS 540 and the Bordo 6500 include a clip or bracket. The X1, D1000 and DX1000 we looked at do not. A Diamond lock left at home does not protect the bike; a Gold lock you take with you does.",
       },
       {
         q: "Will a Mini close on my station stand?",
-        a: "Measure the stand plus the frame tube. The Mini-7 is 83 × 178 mm; the D1000 is 92 × 155 mm. If a compact lock already fails, look at the [ABUS 540](/reviews/abus-granit-xplus-540) — 300 mm — not a thicker Mini.",
+        a: "Measure the stand plus the frame tube. The Mini-7 is 83 × 178 mm; the D1000 is 92 × 155 mm; the Pitbull STD is 115 × 230 mm. If a compact lock already fails, look at the [Pitbull LS](/reviews/onguard-pitbull-ls-8002), the [ABUS 540](/reviews/abus-granit-xplus-540) — 300 mm — or the [Bordo 6500](/reviews/abus-bordo-granit-xplus-6500) if Gold folding reach will do.",
       },
       {
         q: "Should I lock the wheels as well?",
@@ -384,19 +428,19 @@ export const CASES: UseCase[] = [
     body: [
       "Sold Secure is independent. Your insurer does not have to accept every lock that carries the badge. Many policies ask for a minimum grade and then publish a list of approved models. Both checks matter. A Gold badge on a lock that is missing from that list can still be a problem at claim time.",
       "We do not keep that list current, because insurers change it. Open the document that came with your policy. If it names models, match the model — not just “a Gold D-lock”. If it only names the grade, the Sold Secure marking on the lock you buy still needs to match.",
-      "E-bike policies are where people get caught. Some name the e-bike grade rather than the ordinary-bike grade. A lock can be Diamond for an ordinary bike and only Gold for an e-bike. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes. The Litelok X1 and Hiplok D1000 are Diamond for both.",
+      "E-bike policies are where people get caught. Some name the e-bike grade rather than the ordinary-bike grade. A lock can be Diamond for an ordinary bike and only Gold for an e-bike. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes. The Litelok X1, Hiplok D1000 and Hiplok DX1000 are Diamond for both. The OnGuard Pitbulls are Diamond for ordinary bikes on our records; we do not have an e-bike grade listed for them.",
     ],
     fold: {
-      gold: "If your policy names Gold, look at the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7).",
+      gold: "If your policy names Gold, look at the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7). If a Mini will not reach, look at the [Bordo 6500](/reviews/abus-bordo-granit-xplus-6500).",
       diamond:
-        "If your policy names Diamond, look at the [Litelok X1](/reviews/litelok-x1), or the [D1000](/reviews/hiplok-d1000) if 92 × 155 mm will close.",
+        "If your policy names Diamond, look at the [Litelok X1](/reviews/litelok-x1), the [Pitbull STD](/reviews/onguard-pitbull-std-8003) if you want a frame clip, or the [D1000](/reviews/hiplok-d1000) if 92 × 155 mm will close.",
     },
     policy: [
       "Read the wording you signed. Many UK household cycle policies still say Sold Secure Gold. Some e-bike and high-value policies ask for Diamond, and some name the e-bike grade rather than the ordinary-bike grade.",
       "Then open the insurer’s approved-lock list. A lock can be Gold in Sold Secure’s database and still missing from one brand’s list. The grade is required, but it is not always enough.",
     ],
     records:
-      "On the locks we reviewed: Evolution Mini-7, the New York Mini and the 1410 chain are Gold for ordinary bikes. Litelok X1 and Hiplok D1000 are Diamond for both ordinary bikes and e-bikes. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes, so it does not match an e-bike policy that asks for e-bike Diamond.",
+      "On the locks we reviewed: Evolution Mini-7, the Bordo 6500, the New York Mini and the 1410 chain are Gold for ordinary bikes. Litelok X1, Hiplok D1000 and Hiplok DX1000 are Diamond for both ordinary bikes and e-bikes. The three OnGuard Pitbulls are Diamond for ordinary bikes on our records; we do not have an e-bike grade listed. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes, so it does not match an e-bike policy that asks for e-bike Diamond.",
     checklist: [
       "Read the wording you signed — Gold or Diamond, ordinary bike or e-bike.",
       "Open the insurer’s approved-lock list.",
@@ -411,7 +455,7 @@ export const CASES: UseCase[] = [
       },
       {
         q: "Ordinary-bike Diamond or e-bike Diamond?",
-        a: "E-bike policies sometimes name the e-bike grade. The X1 and D1000 are Diamond for both. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes.",
+        a: "E-bike policies sometimes name the e-bike grade. The X1, D1000 and DX1000 are Diamond for both. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes. The Pitbulls are Diamond for ordinary bikes on our records; we do not have an e-bike grade listed.",
       },
       {
         q: "Does a cable in the box count?",
@@ -466,7 +510,7 @@ export const PAIRS: Pair[] = [
       },
       {
         q: "D1000 or DX1000?",
-        a: "D1000 is 92 × 155 mm, 1.9 kg. DX1000 is 112 × 205 mm, 2.75 kg, and we have not written a full review of it yet. Buy the one that closes. Do not guess from a product photo.",
+        a: "D1000 is 92 × 155 mm, 1.9 kg. DX1000 is 112 × 205 mm, 2.75 kg. Buy the one that closes. Do not guess from a product photo. Full write-up: [Hiplok DX1000](/reviews/hiplok-dx1000).",
       },
       {
         q: "Why not just buy the D1000 if it is Diamond?",
@@ -546,7 +590,7 @@ export const ALT_FAQS: Faq[] = [
   },
   {
     q: "Is the Mini on the best-of page?",
-    a: "No. The [best bike locks UK](/best) page lists five locks we would pick. This Mini is reviewed because people search the name, not because we would commute with it.",
+    a: "No. The [best bike locks UK](/best) page lists the locks we would pick. This Mini is reviewed because people search the name, not because we would commute with it.",
   },
   {
     q: "New York Mini or Evolution Mini-7?",

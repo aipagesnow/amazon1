@@ -140,19 +140,20 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="compared-strip" aria-label="Five we compared">
+        <section className="compared-strip" aria-label="Locks we would pick">
           <div className="lock-strip">
             {five.map((product) => (
               <LockTile key={product.asin} product={product} compact />
             ))}
           </div>
           <p className="five-line">
-            <strong>Five we compared.</strong>{" "}
+            <strong>Locks we would pick.</strong>{" "}
             <Link href="/best">Open the full table</Link>
           </p>
         </section>
         <p className="also-reviewed">
-          Also reviewed: the{" "}
+          Eleven full reviews live under{" "}
+          <Link href="/reviews">bike lock reviews</Link>, including the{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
             New York Fahgettaboudit Mini
           </Link>{" "}

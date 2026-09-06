@@ -20,14 +20,16 @@ type Pick = {
 /**
  * Decision order (reviewed locks only):
  * 1. Home place → chain
- * 2. Fat post → long ABUS 540 (only long Diamond/Gold-capable shackle we review)
+ * 2. Fat post:
+ *    - Stays home → chain
+ *    - Diamond + mount → Pitbull LS (note 540)
+ *    - Diamond + bag → DX1000 (needs room; larger than D1000’s 92 × 155)
+ *    - Gold/unsure + mount → 540 (Mini-7 may not fit; note Pitbull LS)
+ *    - Gold/unsure + bag → Bordo (flexible Gold reach / folding)
  * 3. Carry stays at home → chain
- * 4. Gold or unsure → Mini-7
- * 5. Diamond + wants a frame clip → 540 (only Diamond review with a mount)
- * 6. Diamond + bag → X1
- *
- * Gaps we are honest about in notes: no compact Diamond with a mount in the
- * current review set; D1000 is only for a measured tiny stand.
+ * 4. Gold or unsure + normal stand → Mini-7 (Bordo is the folding-reach alternative)
+ * 5. Diamond + wants a frame clip + normal stand → Pitbull STD (note DT for a cable)
+ * 6. Diamond + bag → X1 (D1000 only if 92 × 155 mm; DX1000 if the stand is larger)
  */
 function recommend(grade: Grade | null, place: Place | null, carry: Carry | null): Pick | null {
   if (!grade || !place || !carry) return null;
@@ -36,18 +38,50 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     return {
       slug: "kryptonite-new-york-fahgettaboudit-1410",
       why: "A 100 cm Gold chain for extra length at home. Use it at home. Take a D-lock on the bike for the commute.",
-      note: "Not a commute lock. Pair it with the Evolution Mini-7 or the X1 for the ride.",
+      note: "Not a commute lock. Pair it with the Evolution Mini-7, the Pitbull STD, or the X1 for the ride.",
     };
   }
 
   if (place === "fat") {
+    if (carry === "home") {
+      return {
+        slug: "kryptonite-new-york-fahgettaboudit-1410",
+        why: "A fat post at home is a job for 100 cm of Gold chain, not a commute D-lock. Leave it where the bike is stored.",
+        note: "If you later take a lock on the bike, a Mini may not close on that post. The Pitbull LS or the ABUS 540 are the long shackles with a mount.",
+      };
+    }
+
+    const needsDiamond = grade === "diamond";
+    const wantsMount = carry === "mount";
+
+    if (needsDiamond && wantsMount) {
+      return {
+        slug: "onguard-pitbull-ls-8002",
+        why: "Long 115 × 292 mm Diamond D-lock with a frame mount. This is the lock that closes around posts a Mini cannot, without giving up a clip.",
+        note: "The ABUS 540 is 300 mm and Diamond for ordinary bikes (Gold for e-bikes). If you wanted Hiplok’s larger anti-grinder lock instead, that is the DX1000 — 112 × 205 mm, no mount, 2.75 kg.",
+      };
+    }
+
+    if (needsDiamond) {
+      return {
+        slug: "hiplok-dx1000",
+        why: "Diamond for bikes and e-bikes, sold as anti-grinder, 112 × 205 mm — larger than the D1000’s 92 × 155 mm. 2.75 kg, no frame mount.",
+        note: "If the post is a true lamp-post, measure 205 mm. The Pitbull LS (292 mm) and the ABUS 540 (300 mm) are the longer shackles, both with mounts.",
+      };
+    }
+
+    if (wantsMount) {
+      return {
+        slug: "abus-granit-xplus-540",
+        why: "A compact Mini may not close on a fat post. 300 mm shackle, frame bracket, Diamond for ordinary bikes — Gold for e-bikes.",
+        note: "The OnGuard Pitbull LS is the other long Diamond D-lock with a mount (115 × 292 mm). The Bordo 6500 is Gold folding if you wanted 110 cm of flexible reach instead of a long shackle.",
+      };
+    }
+
     return {
-      slug: "abus-granit-xplus-540",
-      why: "300 mm shackle with a frame bracket. This is the lock that closes around posts a compact D-lock cannot.",
-      note:
-        grade === "diamond"
-          ? "Diamond for ordinary bikes, Gold for e-bikes. If your e-bike policy wants e-bike Diamond, take the X1 instead and measure the stand."
-          : "If Gold is all the policy needs and a compact lock already closes on your stand, the Evolution Mini-7 is lighter for daily carry.",
+      slug: "abus-bordo-granit-xplus-6500",
+      why: "Sold Secure Gold, 110 cm of folding bars, 2.16 kg. Flexible reach around a fat post, and it still has an SH bracket if you later want it on the bike.",
+      note: "The Mini-7 is lighter if a compact D-lock already closes. For a long D-shackle instead, the Pitbull LS or the ABUS 540.",
     };
   }
 
@@ -55,7 +89,7 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     return {
       slug: "kryptonite-new-york-fahgettaboudit-1410",
       why: "If the lock can stay put, a 100 cm Gold chain gives you reach around a home stand or ground anchor.",
-      note: "Still take a D-lock when you ride away. The Mini-7 covers most Gold policies; the X1 if you need Diamond on the bike.",
+      note: "Still take a D-lock when you ride away. The Mini-7 covers most Gold policies; the Pitbull STD or the X1 if you need Diamond on the bike.",
     };
   }
 
@@ -72,17 +106,17 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
         : "Sold Secure Gold at 1.61 kg — light enough for a bag, with a frame mount and cable in the box if you want them. The cable is not Gold.",
       note:
         grade === "unsure"
-          ? "Most UK home policies still name Gold. If the wording later asks for Diamond, step up to the X1."
-          : "If the bike is high-value and you will carry 1.7 kg, step up to the X1.",
+          ? "Most UK home policies still name Gold. If the wording later asks for Diamond, step up to the Pitbull STD (with a clip) or the X1. If you needed Gold with more reach than a Mini, that is the Bordo 6500."
+          : "If a Mini already closes, this is the commute lock. If you need folding reach instead, look at the Bordo 6500. If the bike is high-value and you will carry 1.7 kg, step up to the X1.",
     };
   }
 
   // Diamond + daily carry on a normal stand
   if (needsDiamond && wantsMount) {
     return {
-      slug: "abus-granit-xplus-540",
-      why: "Among the locks we have reviewed, this is the only Diamond option that includes a frame mount. 300 mm shackle, 1.8 kg.",
-      note: "None of our compact Diamond reviews (X1, D1000) ship with a mount. If you would rather carry a compact lock in a bag, pick the X1 instead.",
+      slug: "onguard-pitbull-std-8003",
+      why: "Sold Secure Diamond for ordinary bikes, 1.44 kg, 115 × 230 mm, frame mount in the box. This is the compact Diamond that actually clips on.",
+      note: "Want a cable in the same box? That is the Pitbull DT 8005 — the cable is not Diamond. We do not have an e-bike grade listed for the Pitbulls; if the policy names powered Diamond, check Sold Secure and look at the X1.",
     };
   }
 
@@ -90,9 +124,7 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
   return {
     slug: "litelok-x1",
     why: "Diamond for bikes and e-bikes at 1.7 kg, with a locking area that works for an armoured D-lock.",
-    note: wantsMount
-      ? "No frame mount in this listing — budget for a bag or a separate mount. The D1000 is only the pick if you have already measured 92 × 155 mm."
-      : "No frame mount in this listing. The D1000 is only the pick if you have already measured 92 × 155 mm.",
+    note: "No frame mount in this listing. The D1000 is only the pick if you have already measured 92 × 155 mm. If that hole is too small — e-bike, cargo, fatter stand — the DX1000 is 112 × 205 mm at 2.75 kg, still with no mount.",
   };
 }
 

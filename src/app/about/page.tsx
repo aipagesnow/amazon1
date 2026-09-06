@@ -32,7 +32,7 @@ export default function AboutPage() {
         may earn a small commission. That does not change the verdict.
       </p>
       <p>
-        The magazine is small on purpose. We would rather six honest reviews than a catalogue we
+        The magazine is small on purpose. We would rather eleven honest reviews than a catalogue we
         have not written. One extra URL exists for a search people actually type:{" "}
         <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>. It is not in the
         main nav. It is a landing, not a section.

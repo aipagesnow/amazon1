@@ -14,12 +14,12 @@ export const HOME_NEXT = [
   {
     href: "/best",
     title: "Best bike locks UK",
-    blurb: "Five locks compared on grade, fit, and weight. No single best lock for everyone.",
+    blurb: "Locks compared on grade, fit, and weight. No single best lock for everyone.",
   },
   {
     href: "/reviews",
     title: "Bike lock reviews",
-    blurb: "Six full reviews: who each lock is for, who should skip it, and the drawbacks.",
+    blurb: "Eleven full reviews: who each lock is for, who should skip it, and the drawbacks.",
   },
   {
     href: "/for/commuting",
@@ -44,7 +44,7 @@ export const HOME_FAQS: Faq[] = [
 ];
 
 export const BEST_META =
-  "Five D-locks and chains compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.";
+  "D-locks, a folding lock, and a chain compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.";
 
 export const BEST_INTRO_EXTRA =
   "If you already know the job, jump to [best lock for commuting](/for/commuting) or [best lock for insurance](/for/insurance). If you are stuck between two names, try [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000) or [D-lock vs chain](/vs/d-lock-vs-chain). Looking for something instead of the New York Mini? See the [alternatives page](/alternatives/kryptonite-new-york-fahgettaboudit-mini).";
@@ -59,13 +59,13 @@ export const BEST_FAQS: Faq[] = [
     a: "Only if the policy asks for it, or the bike is worth the extra weight, and you will still carry the lock. Otherwise a Gold Mini you take every day beats a Diamond lock left at home. See [commuting](/for/commuting).",
   },
   {
-    q: "How do you pick these five?",
+    q: "How do you pick these locks?",
     a: "Grade on the policy, whether the shackle will close, and whether you will carry it. Full method: [how we research](/method). Full chooser: [how to choose](/guide).",
   },
 ];
 
 export const REVIEWS_META =
-  "Six UK D-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks.";
+  "Eleven UK D-lock, folding-lock and chain reviews. Each page says who it is for, who should skip it, and the drawbacks.";
 
 export const REVIEWS_INTRO_EXTRA =
   "Need a shortlist first? Use the [best of](/best) table. Choosing from scratch? Read [how to choose a bike lock](/guide). Job-led guides: [commuting](/for/commuting) and [insurance](/for/insurance).";
@@ -82,7 +82,7 @@ export const COMMUTE_BODY_EXTRA = [
 
 export const INSURANCE_BODY_EXTRA = [
   "Grade alone is not the whole claim story. Many policies also care how you locked the bike: through the frame to a fixed object, not a wheel alone, and sometimes to a named ground anchor at home. Read those lines before you buy a thicker lock you will not use correctly.",
-  "If the policy names Gold and you will carry the lock every day, start with the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7): 1.61 kg, a frame clip, and a cable in the box. The cable is not Gold. If the policy names Diamond and you will carry 1.7 kg, start with the [Litelok X1](/reviews/litelok-x1). The [D1000](/reviews/hiplok-d1000) is Diamond too, but only after you have measured 92 × 155 mm.",
+  "If the policy names Gold and you will carry the lock every day, start with the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7): 1.61 kg, a frame clip, and a cable in the box. The cable is not Gold. If a Mini will not reach and Gold is still enough, look at the [Bordo 6500](/reviews/abus-bordo-granit-xplus-6500). If the policy names Diamond and you will carry 1.7 kg, start with the [Litelok X1](/reviews/litelok-x1). If you need Diamond with a clip, that is the [Pitbull STD](/reviews/onguard-pitbull-std-8003). The [D1000](/reviews/hiplok-d1000) is Diamond too, but only after you have measured 92 × 155 mm.",
   "Do not buy the ABUS 540 to satisfy an e-bike Diamond line. On our records it is Diamond for ordinary bikes and Gold for e-bikes. Use it when a compact D-lock will not close and the ordinary-bike grade still matches.",
   "We are not your broker. We do not sell insurance. For how we treat grades and specs, see [how we research](/method). For measuring the stand and choosing a weight you will carry, see [how to choose a bike lock](/guide).",
 ];
@@ -117,6 +117,16 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
     "18 mm Gold Mini, 2.06 kg, no mount, no cable. A thick second lock. Most commuters should buy the Evolution Mini-7.",
   "kryptonite-new-york-fahgettaboudit-1410":
     "100 cm, 14 mm, 4.9 kg, Sold Secure Gold. A house or terrace chain. Not the lock you pedal with.",
+  "hiplok-dx1000":
+    "Pedal and powered Diamond, 2.75 kg, 112 × 205 mm, no mount. Bigger brother of the D1000. Measure the stand.",
+  "onguard-pitbull-std-8003":
+    "Pedal Cycle Diamond, 1.44 kg, 14 mm, 115 × 230 mm, frame mount. Diamond you can clip on. No cable.",
+  "onguard-pitbull-dt-8005":
+    "Pedal Cycle Diamond D-lock with a cable, 1.6 kg, 115 × 230 mm, mount. The cable is not graded.",
+  "onguard-pitbull-ls-8002":
+    "Pedal Cycle Diamond, long 115 × 292 mm shackle, 1.75 kg, 14 mm, frame mount. For fat posts and cargo.",
+  "abus-bordo-granit-xplus-6500":
+    "Sold Secure Gold folding lock, 2.16 kg, 110 cm, SH bracket. Flexible Gold when reach matters more than Mini-7 weight.",
 };
 
 export const REVIEW_RELATED_WELLS: Record<
@@ -151,6 +161,35 @@ export const REVIEW_RELATED_WELLS: Record<
     title: "D-lock vs chain lock",
     blurb:
       "A D-lock for the commute, a chain for reach at home. Using both is common; commuting with 4.9 kg is not.",
+  },
+  "hiplok-dx1000": {
+    href: "/vs/evolution-mini-7-vs-d1000",
+    title: "Evolution Mini-7 vs D1000",
+    blurb:
+      "Gold you will carry versus Diamond with a tight shackle. The DX1000 is the larger Hiplok if 92 × 155 mm will not close.",
+  },
+  "onguard-pitbull-std-8003": {
+    href: "/for/commuting",
+    title: "Best bike lock for commuting",
+    blurb:
+      "A commute lock is one you take every day. This Pitbull is Diamond with a clip — the gap the X1 leaves.",
+  },
+  "onguard-pitbull-dt-8005": {
+    href: "/for/commuting",
+    title: "Best bike lock for commuting",
+    blurb:
+      "The D-lock is Diamond. The cable is not. Same rule as the Mini-7 kit: lock the frame with the graded product.",
+  },
+  "onguard-pitbull-ls-8002": {
+    href: "/guide",
+    title: "How to choose a bike lock",
+    blurb: "Measure the stand before you buy a long shackle. Fit is why the LS exists.",
+  },
+  "abus-bordo-granit-xplus-6500": {
+    href: "/vs/d-lock-vs-chain",
+    title: "D-lock vs chain lock",
+    blurb:
+      "A Mini for a tight stand, a chain for reach at home. The Bordo sits between: Gold folding reach you can still clip on.",
   },
 };
 

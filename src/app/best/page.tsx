@@ -111,7 +111,7 @@ export default function BestPage() {
         <h2>The numbers</h2>
         <div className="spec-scroll">
           <table className="spec">
-            <caption>D-locks first, then the home chain. Weights from the product specs.</caption>
+            <caption>D-locks first, then the folding lock, then the home chain. Weights from the product specs.</caption>
             <thead>
               <tr>
                 <th>Lock</th>

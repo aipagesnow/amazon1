@@ -35,8 +35,12 @@ export const EDITORIAL_CREDIT =
   "This is an editorial photo of a street or an unbranded lock. It is not a picture of the named product.";
 
 export function typePhoto(type?: string): { src: string; alt: string } {
-  if ((type ?? "").toLowerCase().includes("chain")) {
+  const kind = (type ?? "").toLowerCase();
+  if (kind.includes("chain")) {
     return { src: photos.chain, alt: photoAlt.chain };
+  }
+  if (kind.includes("fold")) {
+    return { src: photos.fit, alt: photoAlt.fit };
   }
   return { src: photos.pick, alt: photoAlt.pick };
 }
@@ -55,6 +59,16 @@ export function reviewBanner(slug: string): { src: string; alt: string } {
       return { src: photos.bannerThick, alt: photoAlt.bannerThick };
     case "kryptonite-new-york-fahgettaboudit-1410":
       return { src: photos.bannerHouse, alt: photoAlt.bannerHouse };
+    case "hiplok-dx1000":
+      return { src: photos.bannerLong, alt: photoAlt.bannerLong };
+    case "onguard-pitbull-std-8003":
+      return { src: photos.bannerCommute, alt: photoAlt.bannerCommute };
+    case "onguard-pitbull-dt-8005":
+      return { src: photos.pick, alt: photoAlt.pick };
+    case "onguard-pitbull-ls-8002":
+      return { src: photos.bannerLong, alt: photoAlt.bannerLong };
+    case "abus-bordo-granit-xplus-6500":
+      return { src: photos.fit, alt: photoAlt.fit };
     default:
       return typePhoto();
   }
