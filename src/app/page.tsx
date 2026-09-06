@@ -145,15 +145,16 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="compared-strip" aria-label="Shortlist from the eleven">
+        <section className="compared-strip" aria-label="Shortlist of seven from the eleven">
           <div className="lock-strip">
             {five.map((product) => (
               <LockTile key={product.asin} product={product} compact />
             ))}
           </div>
           <p className="five-line">
-            <strong>Shortlist from the eleven.</strong>{" "}
-            <Link href="/best">Open the full table</Link>
+            <strong>Seven locks on the shortlist</strong> — from the eleven we
+            reviewed.{" "}
+            <Link href="/best">Open the shortlist table</Link>
           </p>
         </section>
         <p className="also-reviewed">
