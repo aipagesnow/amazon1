@@ -127,6 +127,8 @@ img { max-width: 100%; display: block; }
 .nav-details .nav { display: flex; }
 .nav-details summary.nav-toggle {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
   cursor: pointer;
   font-family: var(--mono);
@@ -134,10 +136,23 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--hivis);
-  padding: 0.45rem 0.2rem;
-  border-bottom: 2px solid var(--hivis);
+  padding: 0.5rem 0.85rem;
+  border: 1px solid rgba(212, 180, 58, 0.75);
+  border-radius: 3px;
+  background: rgba(212, 180, 58, 0.08);
+  position: relative;
+  z-index: 23;
+  user-select: none;
+}
+.nav-details[open] summary.nav-toggle {
+  background: rgba(212, 180, 58, 0.18);
+  border-color: var(--hivis);
+  color: var(--hivis-hot);
 }
 .nav-details summary.nav-toggle::-webkit-details-marker { display: none; }
+.nav-backdrop {
+  display: none;
+}
 
 .cover {
   position: relative;
@@ -1188,19 +1203,47 @@ table.spec tr.spec-group th {
   .lock-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .nav-desktop { display: none; }
   .nav-details { display: block; }
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(11, 16, 14, 0.48);
+    z-index: 15;
+  }
   .nav-details .nav {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 2px);
     left: 0;
     right: 0;
-    background: var(--night);
+    width: 100%;
+    background: var(--night-2);
     flex-direction: column;
-    padding: 0.4rem 1.2rem 0.9rem;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.55rem 0.85rem 0.95rem;
     border-bottom: 2px solid var(--hivis);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.42);
     z-index: 22;
   }
   .nav-details[open] .nav { display: flex; }
+  .nav-details .nav a {
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.75rem 0.9rem;
+    border-bottom: 1px solid rgba(215, 221, 214, 0.12);
+    border-radius: 0;
+  }
+  .nav-details .nav a:last-child {
+    border-bottom: 0;
+  }
+  .nav-details .nav a:hover,
+  .nav-details .nav a:active {
+    color: var(--hivis);
+    border-bottom-color: rgba(212, 180, 58, 0.35);
+    background: rgba(212, 180, 58, 0.08);
+  }
   .briefing {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
