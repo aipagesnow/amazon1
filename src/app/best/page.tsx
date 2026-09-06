@@ -208,6 +208,22 @@ export default function BestPage() {
           </div>
         </div>
 
+        <h2>Head-to-head</h2>
+        <p>
+          Stuck between two options? These short comparisons sit beside the Best of table — they
+          do not replace it.
+        </p>
+        <ul>
+          <li>
+            <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs Hiplok D1000</Link> —
+            Gold commute Mini against a Diamond compact D-lock.
+          </li>
+          <li>
+            <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> — when to carry a D-lock, when a
+            chain earns its weight, and when both make sense.
+          </li>
+        </ul>
+
         <h2>Common questions</h2>
         <div className="faq-list">
           {BEST_FAQS.map((faq) => (
@@ -220,9 +236,7 @@ export default function BestPage() {
           ))}
         </div>
         <p>
-          <Link href="/reviews">All reviews</Link> ·{" "}
-          <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link> ·{" "}
-          <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>
+          <Link href="/reviews">All reviews</Link>
         </p>
       </article>
     </>
