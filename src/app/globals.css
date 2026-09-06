@@ -233,12 +233,12 @@ img { max-width: 100%; display: block; }
 .hero-panel .cover-kicker,
 .hero-panel .job-line {
   font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--hivis);
   font-weight: 500;
-  margin: 0 0 0.8rem;
+  margin: 0 0 0.85rem;
 }
 .cover h1,
 .page-hero h1,
