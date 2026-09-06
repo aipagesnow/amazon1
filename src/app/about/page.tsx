@@ -16,7 +16,6 @@ export default function AboutPage() {
       <p className="kicker">About</p>
       <h1 id="about">About Lock Desk</h1>
       <nav className="jump-list" aria-label="On this page">
-        <a href="#about">About</a>
         <a href="#who">Who writes this</a>
         <a href="#disclosure">Disclosure</a>
         <a href="#privacy">Privacy</a>
