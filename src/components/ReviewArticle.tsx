@@ -107,9 +107,16 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
       <div className="wrap prose tight">
         <DisclosureStrip />
         <p className="meta">Last checked: {site.lastChecked}.</p>
+        <p className="meta">
+          <Link href={site.authorHref}>{site.authorLine}</Link>
+        </p>
         <div className="desk-verdict">
           <h2>Verdict</h2>
           <p>{copy.verdict}</p>
+          <p className="meta">
+            Grade, fit, and carry basics live on{" "}
+            <Link href="/guide">how to choose a bike lock</Link>.
+          </p>
           <SeeOnAmazon asin={product.asin} className="btn-amazon" />
         </div>
 

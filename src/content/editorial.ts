@@ -26,7 +26,7 @@ export type ReviewCopy = {
 export const reviewCopy: Record<string, ReviewCopy> = {
   "litelok-x1": {
     hook: "A strong D-lock that still weighs only 1.7 kg.",
-    job: "The lock we would buy if the bike is expensive, and we still had to take the lock to work.",
+    job: "Desk pick when the policy names Diamond and you will still carry 1.7 kg.",
     meta: "Litelok X1 review: Diamond grade for ordinary bikes and e-bikes, 1.7 kg, a shackle that fits most stands. A lock many insurers take seriously, at a weight you might still carry.",
     verdict:
       "If we were buying one lock to take every day on a higher-value bike, this would be it. Sold Secure Diamond — the higher UK lock grade — for both ordinary bikes and e-bikes, at 1.7 kg. That is light enough that people still commute with it, and high enough for many policies that have moved past Gold. The locking area is 101 × 197 mm, which is more usable than the compact anti-grinder Minis. The practical catch: no frame mount in the box we looked at, so you carry it in a bag or buy a mount separately.",
@@ -159,10 +159,10 @@ export const reviewCopy: Record<string, ReviewCopy> = {
   },
   "kryptonite-evolution-mini-7": {
     hook: "A Gold-grade compact D-lock with a frame mount and a cable.",
-    job: "The lock we would buy for most UK commuters who need Gold.",
+    job: "Desk pick for most UK Gold commutes — grade, weight, and a clip in the box.",
     meta: "Kryptonite Evolution Mini-7 review: Gold grade, 1.61 kg, a frame mount and a cable in the box. The cable is not Gold. The commute lock most people will actually carry.",
     verdict:
-      "Worth it for a daily rider whose insurance asks for Sold Secure Gold, who wants a cable and a frame mount in one box, and who will not carry a 2 kg Diamond lock. The D-lock is Gold. The cable is not — Kryptonite says so. We would buy this for a mid-value commuter bike. We would not buy it as the only lock on a high-value e-bike in a known theft hotspot.",
+      "Worth it for a daily rider whose insurance asks for Sold Secure Gold, who wants a cable and a frame mount in one box, and who will not carry a 2 kg Diamond lock. The D-lock is Gold. The cable is not — Kryptonite says so. On grade, weight, and kit, it is the Gold commute lock we shortlist from desk research. It is not the only lock we would shortlist for a high-value e-bike in a known theft hotspot.",
     subheads: [
       "The cable is not Gold",
       "The locking area is small — measure the stand",
@@ -486,7 +486,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
   },
   "onguard-pitbull-std-8003": {
     hook: "A Diamond D-lock that actually clips to the frame.",
-    job: "Sold Secure Diamond, 1.44 kg, 14 mm, a frame mount, no cable. The compact Diamond we would put on the bike.",
+    job: "Sold Secure Diamond, 1.44 kg, 14 mm, a frame mount, no cable. Desk pick when you want Diamond that clips on.",
     meta: "OnGuard Pitbull STD 8003 review: Pedal Cycle Diamond, 1.44 kg, 14 mm, 115 × 230 mm, frame mount. Diamond you can clip on.",
     stamp: "Diamond (ordinary bikes)",
     verdict:

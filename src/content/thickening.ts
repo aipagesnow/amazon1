@@ -3,7 +3,7 @@ import type { Faq } from "@/content/pages";
 /** SEO metas and thin-content extras. Keeps pages.ts / editorial.ts lean on disk for MCP pushes. */
 
 export const HOME_META =
-  "Independent UK reviews of D-locks and chains. Sold Secure grades, insurance, and which lock you will actually carry.";
+  "Small UK comparison site for eleven D-locks and chains. Desk research on Sold Secure grades, insurance fit, and which lock you will actually carry.";
 
 export const HOME_NEXT = [
   {
@@ -76,15 +76,15 @@ export const GUIDE_FAQ_EXTRA: Faq = {
 };
 
 export const COMMUTE_BODY_EXTRA = [
-  "If you are stuck between Gold and Diamond, read [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000). If the question is reach at home versus carry on the bike, read [D-lock vs chain](/vs/d-lock-vs-chain). The [how to choose](/guide) page covers measuring the stand before you buy a Mini.",
-  "We have not cut these locks open. Grades and weights come from Sold Secure and the manufacturer. For how we write a review, see [how we research](/method).",
+  "Stuck between Gold and Diamond? See [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000). Reach at home versus carry on the bike: [D-lock vs chain](/vs/d-lock-vs-chain).",
+  "Grade, measuring the stand, and carry weight are covered once on [how to choose](/guide). Desk-research limits: [how we research](/method).",
 ];
 
 export const INSURANCE_BODY_EXTRA = [
-  "Grade alone is not the whole claim story. Many policies also care how you locked the bike: through the frame to a fixed object, not a wheel alone, and sometimes to a named ground anchor at home. Read those lines before you buy a thicker lock you will not use correctly.",
+  "Policies often care how you locked the bike as well as the grade — frame to a fixed object, not a wheel alone. Read those lines before you upgrade on thickness alone. Basics of grade, fit, and carry: [how to choose](/guide).",
   "If the policy names Gold and you will carry the lock every day, start with the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7): 1.61 kg, a frame clip, and a cable in the box. The cable is not Gold. If a Mini will not reach and Gold is still enough, look at the [Bordo 6500](/reviews/abus-bordo-granit-xplus-6500). If the policy names Diamond and you will carry 1.7 kg, start with the [Litelok X1](/reviews/litelok-x1). If you need Diamond with a clip, that is the [Pitbull STD](/reviews/onguard-pitbull-std-8003). The [D1000](/reviews/hiplok-d1000) is Diamond too, but only after you have measured 92 × 155 mm.",
   "Do not buy the ABUS 540 to satisfy an e-bike Diamond line. On our records it is Diamond for ordinary bikes and Gold for e-bikes. Use it when a compact D-lock will not close and the ordinary-bike grade still matches.",
-  "We are not your broker. We do not sell insurance. For how we treat grades and specs, see [how we research](/method). For measuring the stand and choosing a weight you will carry, see [how to choose a bike lock](/guide).",
+  "We are not your broker. Desk-research limits and how we treat grades: [how we research](/method).",
 ];
 
 export const ALT_META =
@@ -106,7 +106,7 @@ export const VS_AFTER_EXTRA: Record<string, string> = {
 
 export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "litelok-x1":
-    "Pedal and powered Diamond, 1.7 kg, 101 × 197 mm. The lock we would carry on a bike worth insuring. Not a lab test.",
+    "Pedal and powered Diamond, 1.7 kg, 101 × 197 mm. Desk pick when the bike is worth Diamond and you will still carry it. Not a lab test.",
   "hiplok-d1000":
     "Diamond, 1.9 kg, 92 × 155 mm, no mount. Worth it if you have measured the rack. Skip it if Gold and a cable would do.",
   "kryptonite-evolution-mini-7":

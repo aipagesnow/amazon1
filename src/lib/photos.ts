@@ -15,24 +15,24 @@ export const photos = {
 
 export const photoAlt = {
   cover:
-    "A bicycle locked to a bike stand on a wet UK street at night. Editorial photograph; not a product reviewed here.",
+    "A bicycle locked to a bike stand on a wet UK street at night. Scene photograph for context.",
   pick:
-    "A compact unbranded D-lock closed around a bicycle frame and a stand at dusk. Editorial photograph; not a named model.",
-  commute: "Commuter bicycles parked at a UK railway station in blue hour. Editorial photograph.",
+    "A compact unbranded D-lock closed around a bicycle frame and a stand at dusk. Scene photograph for context.",
+  commute: "Commuter bicycles parked at a UK railway station in blue hour. Scene photograph for context.",
   insurance:
-    "A D-lock, keys, and a folded letter on a kitchen table beside a high-visibility jacket. Editorial still life.",
-  vs: "An unbranded D-lock and a sleeved chain lock on a steel workbench. Editorial still life; not named models.",
-  fit: "A lock closing around a galvanised stand and a frame tube in the rain. Editorial photograph.",
-  chain: "A thick unbranded chain lock coiled on wet tarmac. Editorial photograph; not a named model.",
-  bannerTight: "A crowded night bike rack in the rain. Editorial photograph; not a named model.",
-  bannerCommute: "A bicycle at a UK station in blue hour. Editorial photograph; not a named model.",
-  bannerLong: "A long D-lock closed around a lamp post on a wet street. Editorial photograph; not a named model.",
-  bannerHouse: "A heavy chain lock on a doorstep beside a bicycle. Editorial photograph; not a named model.",
-  bannerThick: "A thick D-lock on a bicycle frame in a wet alley. Editorial photograph; not a named model.",
+    "A D-lock, keys, and a folded letter on a kitchen table beside a high-visibility jacket. Scene still life for context.",
+  vs: "An unbranded D-lock and a sleeved chain lock on a steel workbench. Scene still life for context.",
+  fit: "A lock closing around a galvanised stand and a frame tube in the rain. Scene photograph for context.",
+  chain: "A thick unbranded chain lock coiled on wet tarmac. Scene photograph for context.",
+  bannerTight: "A crowded night bike rack in the rain. Scene photograph for context.",
+  bannerCommute: "A bicycle at a UK station in blue hour. Scene photograph for context.",
+  bannerLong: "A long D-lock closed around a lamp post on a wet street. Scene photograph for context.",
+  bannerHouse: "A heavy chain lock on a doorstep beside a bicycle. Scene photograph for context.",
+  bannerThick: "A thick D-lock on a bicycle frame in a wet alley. Scene photograph for context.",
 } as const;
 
 export const EDITORIAL_CREDIT =
-  "Editorial photo — not the named product.";
+  "Scene photo for context.";
 
 export function typePhoto(type?: string): { src: string; alt: string } {
   const kind = (type ?? "").toLowerCase();

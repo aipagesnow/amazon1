@@ -95,6 +95,10 @@ export default function HomePage() {
             <p>{HOME_BRIEFING.carry}</p>
           </article>
         </div>
+        <p className="wrap briefing-more">
+          The full guide on grade, fit, and carry:{" "}
+          <Link href="/guide">how to choose a bike lock</Link>.
+        </p>
       </section>
 
       <div className="wrap">
@@ -106,7 +110,7 @@ export default function HomePage() {
 
         <p className="folio">
           <span>Lock Desk</span>
-          <span>Editor’s pick</span>
+          <span>Desk pick</span>
         </p>
         <section className="pick">
           <figure className="pick-art">
@@ -120,7 +124,7 @@ export default function HomePage() {
             <figcaption>{EDITORIAL_CREDIT}</figcaption>
           </figure>
           <div className="pick-copy">
-            <h2>Editor’s pick</h2>
+            <h2>Desk pick</h2>
             <h3>{displayName(pick)}</h3>
             <p>
               <strong>Why we like it.</strong> {HOME_PICK.why}
@@ -144,14 +148,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="compared-strip" aria-label="Locks we would pick">
+        <section className="compared-strip" aria-label="Shortlist from the eleven">
           <div className="lock-strip">
             {five.map((product) => (
               <LockTile key={product.asin} product={product} compact />
             ))}
           </div>
           <p className="five-line">
-            <strong>Locks we would pick.</strong>{" "}
+            <strong>Shortlist from the eleven.</strong>{" "}
             <Link href="/best">Open the full table</Link>
           </p>
         </section>

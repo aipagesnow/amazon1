@@ -1,6 +1,6 @@
 # Lock Desk
 
-UK product-discovery magazine for bike locks (D-locks and chains) at [lockdesk.co.uk](https://lockdesk.co.uk). Not a shop. Amazon Associates via **See on Amazon**.
+Small UK comparison site for bike locks (D-locks and chains) at [lockdesk.co.uk](https://lockdesk.co.uk). Eleven locks, desk research. Not a shop. Amazon Associates via **See on Amazon**.
 
 ## Stack
 

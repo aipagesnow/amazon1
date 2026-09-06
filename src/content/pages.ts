@@ -212,14 +212,12 @@ export const GUIDE_FAQS: Faq[] = [
 ];
 
 export const HOME_LEDE =
-  "We compare D-locks and chains so you can pick one your insurance will accept — and that you will actually take to work. Grade, fit, and weight matter more than the brand on the box.";
+  "A small UK comparison site for eleven D-locks and chains. Desk research on Sold Secure grades, fit, and weight — so you can pick a lock your insurance will accept and that you will still take to work.";
 
 export const HOME_BRIEFING = {
-  grade:
-    "UK bike insurance usually asks for a Sold Secure grade. Gold is what most policies still want. Diamond is a step up, often for more expensive bikes or e-bikes. Match the grade on your policy.",
-  fit: "A small D-lock will not close on every stand. Measure the post and your frame together. If that is bigger than the opening in the lock, it will not fit, so do not buy it.",
-  carry:
-    "Pick a lock that is easy to take with you — light enough, or one that clips onto the bike. A lock that is too heavy tends to stay at home, and that is money wasted.",
+  grade: "Match the Sold Secure grade your policy names — often Gold, sometimes Diamond.",
+  fit: "Measure the stand plus your frame; a Mini will not close on every post.",
+  carry: "Pick a weight (or a frame clip) you will still take out of the house.",
 };
 
 export const HOME_COMMUTE =
@@ -354,7 +352,7 @@ export const METHOD_WONT = [
   "We do not invent a weight, locking area, or grade. If a figure is missing, we leave it blank.",
   "We do not print live prices. They change on Amazon.",
   "We do not copy Amazon customer reviews or star ratings onto these pages.",
-  "Photos are editorial (streets, stands, unbranded locks) — not named product shots. We do not use Amazon listing photos.",
+  "Scene photos (streets, stands, unbranded locks) are for context. We do not use Amazon listing photos.",
 ];
 
 export const METHOD_WHY = [

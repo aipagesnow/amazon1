@@ -18,7 +18,7 @@ const METHOD_LEAD =
   "Desk research. We have not cut these locks open. If a sentence would only be true because we attacked a lock, we do not write it. Every claim on a review page should point to a spec sheet, a Sold Secure grade, or the manufacturer’s own notes.";
 
 const METHOD_MORE = [
-  "We started with locks UK riders actually search for: Sold Secure Gold and Diamond D-locks, a Gold folding lock, and one Gold chain for reach at home. That is why the site is eleven full reviews, not a catalogue of every cable lock on Amazon.",
+  "We started with locks UK riders actually search for: Sold Secure Gold and Diamond D-locks, a Gold folding lock, and one Gold chain for reach at home. That is why the site is eleven full reviews, not a catalogue of every cable lock on Amazon. Eleven is the full set for now — on purpose.",
   "When a listing photo and the Sold Secure record disagree — for example a kit that looks fully graded when only the D-lock is approved — we follow the grade and the manufacturer’s notes, not the photo.",
   "Weights and locking areas are taken from the listing or manufacturer sheet we recorded. If two listings disagree, we say what we used rather than invent a middle number.",
 ];

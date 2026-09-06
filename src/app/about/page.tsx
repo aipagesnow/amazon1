@@ -17,13 +17,15 @@ export default function AboutPage() {
       <h1 id="about">About Lock Desk</h1>
       <nav className="jump-list" aria-label="On this page">
         <a href="#about">About</a>
+        <a href="#who">Who writes this</a>
         <a href="#disclosure">Disclosure</a>
         <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
         <Link href="/method">How we research</Link>
       </nav>
       <p className="lede">
-        A small UK magazine about D-locks and chains — Sold Secure, insurance, and the lock you
-        will still carry.
+        A small UK comparison site for D-locks and chains — eleven locks, Sold Secure grades,
+        insurance wording, and the weight you will still take to work.
       </p>
       <p>
         {site.name} is operated by {site.operator}. It is not a shop, not a marketplace, and not
@@ -32,8 +34,9 @@ export default function AboutPage() {
         may earn a small commission. That does not change the verdict.
       </p>
       <p>
-        The magazine is small on purpose. We would rather eleven honest reviews than a catalogue we
-        have not written. One extra URL exists for a search people actually type:{" "}
+        The set is eleven locks on purpose. This is not a full catalogue of every cable lock on
+        Amazon. We would rather eleven honest reviews than pages we have not written. One extra URL
+        exists for a search people actually type:{" "}
         <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>. It is not in the
         main nav. It is a landing, not a section.
       </p>
@@ -45,11 +48,15 @@ export default function AboutPage() {
         <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs D1000</Link> and{" "}
         <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>.
       </p>
+
+      <h2 id="who">Who writes this</h2>
       <p>
-        Contact:{" "}
-        <a href={`mailto:${site.contact}`}>{site.contact}</a>. Questions about a review, a
-        disclosure, or this magazine go there. This page is still the record of who operates the
-        site, how we are paid, and how we treat data.
+        Lock Desk is desk research from a UK rider perspective. We read Sold Secure grades,
+        manufacturer specs, and typical insurance wording. We have not run a lab, and we have not
+        attacked these locks with grinders or bolt croppers. Verdicts are our reading of those
+        facts — grade, fit, and carry — not a hands-on security test. How that works in detail:{" "}
+        <Link href="/method">how we research bike locks</Link>. The site is operated by{" "}
+        {site.operator}.
       </p>
 
       <h2 id="disclosure">Disclosure</h2>
@@ -68,6 +75,15 @@ export default function AboutPage() {
         that changes, this paragraph will name it.
       </p>
       <p>Outbound clicks to Amazon.co.uk are their site, under their privacy notice.</p>
+
+      <h2 id="contact">Contact the desk</h2>
+      <p>
+        Email{" "}
+        <a href={`mailto:${site.contact}`}>{site.contact}</a> if something on a review needs a
+        correction, if you have a disclosure question, or if you want to flag a Sold Secure or
+        manufacturer change we should re-check. This is the desk inbox for Lock Desk — we read it.
+        It is not a shop support line, and we cannot settle insurance claims.
+      </p>
     </article>
   );
 }
