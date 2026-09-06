@@ -71,7 +71,11 @@ export default function HomePage() {
               <Link href="/guide">How to choose</Link>
               <Link href="/best">Best of</Link>
             </p>
-            <DisclosureStrip />
+          </div>
+        </div>
+        <div className="cover-disclosure-bar">
+          <div className="wrap">
+            <DisclosureStrip className="disclosure disclosure-subtle cover-disclosure" />
           </div>
         </div>
       </section>
