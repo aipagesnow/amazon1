@@ -14,8 +14,13 @@ import {
   productBySlug,
   REVIEW_SLUGS,
   reviewHref,
+  shortName,
 } from "@/lib/products";
 import { site } from "@/lib/site";
+import {
+  SOLD_SECURE_APPROVED_SEARCH,
+  soldSecureSearchHint,
+} from "@/lib/sold-secure";
 
 function AltCard({ slug, why, kicker }: { slug: string; why: string; kicker: string }) {
   const product = productBySlug(slug);
@@ -174,7 +179,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         </div>
 
         <div className="change-note">
-          <h3>What we’d change</h3>
+          <h3>Desk caveat</h3>
           <p>{copy.change}</p>
         </div>
 
@@ -184,6 +189,17 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
           figure is missing, we leave it blank rather than guess.
         </p>
         <SpecTable product={product} />
+        <p className="meta">
+          Confirm the grade on Sold Secure’s{" "}
+          <a
+            href={SOLD_SECURE_APPROVED_SEARCH}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            approved product search
+          </a>{" "}
+          before you buy. {soldSecureSearchHint(product.brand, shortName(product))}.
+        </p>
 
         <h2>Better alternatives</h2>
         <div className="alt-grid">

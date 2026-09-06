@@ -82,6 +82,15 @@ export default function BestPage() {
             <RichText text={p} />
           </p>
         ))}
+
+        <aside className="chooser" aria-label="Shortlist size">
+          <p>
+            <strong>Seven locks on this shortlist.</strong> The other four of the eleven (DX1000,
+            Pitbull DT, Pitbull LS, New York Mini) live under{" "}
+            <Link href="/reviews">Reviews</Link> for specific jobs — not the shortlist.
+          </p>
+        </aside>
+
         <p>
           <RichText text={BEST_INTRO_EXTRA} />
         </p>

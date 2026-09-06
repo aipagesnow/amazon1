@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     return [
       { source: "/privacy", destination: "/about#privacy", statusCode: 301 },
       { source: "/disclosure", destination: "/about#disclosure", statusCode: 301 },
+      { source: "/contact", destination: "/about", statusCode: 301 },
       { source: "/compare", destination: "/best", statusCode: 301 },
     ];
   },

@@ -134,7 +134,7 @@ export default function HomePage() {
               <strong>Who it is for.</strong> {HOME_PICK.who}
             </p>
             <p>
-              <strong>What we’d change.</strong> {HOME_PICK.change}
+              <strong>Desk caveat.</strong> {HOME_PICK.change}
             </p>
             <p>
               <strong>Best alternative.</strong>{" "}

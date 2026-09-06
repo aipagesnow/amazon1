@@ -16,7 +16,7 @@ export function RichText({ text }: { text: string }) {
           );
         }
         return (
-          <a key={i} href={href} rel="noopener">
+          <a key={i} href={href} target="_blank" rel="noopener noreferrer">
             {match[1]}
           </a>
         );

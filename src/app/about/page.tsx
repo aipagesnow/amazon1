@@ -34,8 +34,8 @@ export default function AboutPage() {
       </p>
       <p>
         The set is eleven locks on purpose. This is not a full catalogue of every cable lock on
-        Amazon. We would rather eleven honest reviews than pages we have not written. One extra URL
-        exists for a search people actually type:{" "}
+        Amazon. Eleven honest reviews beat pages we have not written. One extra URL exists for a
+        search people actually type:{" "}
         <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>. It is not in the
         main nav. It is a landing, not a section.
       </p>
@@ -55,6 +55,10 @@ export default function AboutPage() {
         attacked these locks with grinders or bolt croppers. Verdicts are our reading of those
         facts — grade, fit, and carry — not a hands-on security test. How that works in detail:{" "}
         <Link href="/method">how we research bike locks</Link>.
+      </p>
+      <p>
+        Independent UK desk research site. Contact details are provided on handover if you buy the
+        site.
       </p>
 
       <h2 id="disclosure">Disclosure</h2>

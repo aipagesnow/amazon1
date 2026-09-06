@@ -239,7 +239,7 @@ export const BEST_LEDE =
 
 export const BEST_INTRO = [
   "“Best bike lock UK” is a search, not a product. The right lock is the one that matches the grade on your policy, closes on the stand you actually use, and is light enough that you still take it to work.",
-  "These are the desk shortlist from the eleven we have reviewed in full. The Evolution Mini-7 is the Gold commute lock. The Litelok X1 is the Diamond lock on the shortlist when you will still carry 1.7 kg in a bag. The Pitbull STD is Diamond with a frame mount on a normal stand. The D1000 is Diamond for a stand you have already measured. The ABUS 540 is the long shackle when a Mini will not close. The Bordo 6500 is Gold folding when reach matters more than Mini-7 weight. The New York 1410 is the home chain. The New York Mini is reviewed because people search the name; it is not on this table. The DX1000, Pitbull DT and Pitbull LS are on the reviews page for their specific jobs.",
+  "On this shortlist: the Evolution Mini-7 (Gold commute), Litelok X1 (Diamond you will still carry), Pitbull STD (Diamond with a frame mount), D1000 (compact Diamond once you have measured), ABUS 540 (long shackle), Bordo 6500 (Gold folding reach), and the New York 1410 (home chain).",
 ];
 
 export const BEST_PICKS: { lead: string; slug: string; name: string; text: string }[] = [
@@ -340,12 +340,12 @@ export const METHOD_INTRO =
 export const METHOD_USE = [
   "The product record: the Amazon listing we reviewed, name, brand, and the published specs — weight, locking area, shackle or chain size, keys, frame clip, cable.",
   "Manufacturer notes, including whether a cable in the box is part of the Sold Secure approval.",
-  "Sold Secure’s public grades for ordinary bikes and, where we have it, e-bikes.",
+  "Sold Secure’s public grades for ordinary bikes and, where we have it, e-bikes — confirm on their [approved product search](https://soldsecure.com/approved-product-search) before you buy.",
   "How UK cycle insurance typically names Gold and Diamond. We do not keep a live list of approved models — insurers change those lists.",
 ];
 
 export const METHOD_SHAPE =
-  "Each review opens with a verdict: who it is for, and who should skip it. Then Best for / Skip it if, the main body, What’s good, What’s not so good, What we’d change, the numbers, alternatives from the same set of locks, and Common questions. Every review links up to [how to choose a bike lock](/guide) and across to other reviews.";
+  "Each review opens with a verdict: who it is for, and who should skip it. Then Best for / Skip it if, the main body, What’s good, What’s not so good, Desk caveat, the numbers, alternatives from the same set of locks, and Common questions. Every review links up to [how to choose a bike lock](/guide) and across to other reviews.";
 
 export const METHOD_WONT = [
   "We have not taken a grinder or bolt cropper to these locks. Advertised cut-times are the manufacturer’s, not ours.",
@@ -356,7 +356,7 @@ export const METHOD_WONT = [
 ];
 
 export const METHOD_WHY = [
-  "A lot of bike-lock writing either copies the manufacturer’s headline or pretends to be a lab. We would rather say what the grade is, what the lock weighs, whether it will close, and who should skip it.",
+  "A lot of bike-lock writing either copies the manufacturer’s headline or pretends to be a lab. This desk states the grade, the weight, whether the lock will close, and who should skip it.",
   "A verdict here is our reading of those facts, not a lab result. Use it to match Sold Secure grade, fit, and carry to your bike. Then read your policy, and measure the stand.",
 ];
 

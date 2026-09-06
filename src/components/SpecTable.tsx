@@ -4,9 +4,14 @@ import {
   displayName,
   Product,
   ProductSpecs,
+  shortName,
   specLabel,
   specValue,
 } from "@/lib/products";
+import {
+  SOLD_SECURE_APPROVED_SEARCH,
+  soldSecureSearchHint,
+} from "@/lib/sold-secure";
 
 const GRADE_KEYS: (keyof ProductSpecs)[] = [
   "soldSecurePedal",
@@ -83,14 +88,27 @@ export function SpecFigures({ product }: { product: Product }) {
   if (!items.length) return null;
 
   return (
-    <dl className="spec-figures">
-      {items.map((item) => (
-        <div key={item.label}>
-          <dt>{item.label}</dt>
-          <dd>{item.value}</dd>
-        </div>
-      ))}
-    </dl>
+    <>
+      <dl className="spec-figures">
+        {items.map((item) => (
+          <div key={item.label}>
+            <dt>{item.label}</dt>
+            <dd>{item.value}</dd>
+          </div>
+        ))}
+      </dl>
+      <p className="meta">
+        Grades should be confirmed on Sold Secure’s{" "}
+        <a
+          href={SOLD_SECURE_APPROVED_SEARCH}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          approved product search
+        </a>
+        . {soldSecureSearchHint(product.brand, shortName(product))}.
+      </p>
+    </>
   );
 }
 

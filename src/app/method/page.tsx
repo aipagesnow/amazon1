@@ -10,6 +10,10 @@ import {
 } from "@/content/pages";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { pageUrl, site } from "@/lib/site";
+import {
+  SOLD_SECURE_APPROVED_SEARCH,
+  SOLD_SECURE_PEDAL_CYCLE_RATINGS,
+} from "@/lib/sold-secure";
 
 const METHOD_META_TRIM =
   "Lock Desk is desk research, not a test lab. Sold Secure grades, manufacturer specs, and UK insurance wording. We do not pretend we attacked these locks.";
@@ -30,7 +34,7 @@ const METHOD_FAQS = [
   },
   {
     q: "Why only eleven reviews?",
-    a: "We would rather eleven honest pages than a long catalogue we have not written. Each lock here has the same facts on record: Sold Secure grade, weight, locking area or length, and whether it clips on. Names we have not recorded that way do not get a review.",
+    a: "Eleven honest pages beat a long catalogue we have not written. Each lock here has the same facts on record: Sold Secure grade, weight, locking area or length, and whether it clips on. Names we have not recorded that way do not get a review.",
   },
   {
     q: "Do Amazon links change the verdict?",
@@ -80,7 +84,9 @@ export default function MethodPage() {
         <h2>What we use</h2>
         <ul>
           {METHOD_USE.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item}>
+              <RichText text={item} />
+            </li>
           ))}
         </ul>
         <p>
@@ -89,6 +95,28 @@ export default function MethodPage() {
         {METHOD_MORE.map((p) => (
           <p key={p}>{p}</p>
         ))}
+
+        <h2>How to check a grade</h2>
+        <p>
+          Grades on Lock Desk come from Sold Secure’s public record and from manufacturer notes.
+          Before you buy, confirm the model on Sold Secure’s{" "}
+          <a
+            href={SOLD_SECURE_APPROVED_SEARCH}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            approved product search
+          </a>
+          . Pedal-cycle rating bands are explained on their{" "}
+          <a
+            href={SOLD_SECURE_PEDAL_CYCLE_RATINGS}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            pedal cycle ratings
+          </a>{" "}
+          page. This site does not invent Sold Secure product URLs.
+        </p>
 
         <h2>What we will not claim</h2>
         <ul>
