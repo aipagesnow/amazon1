@@ -71,7 +71,7 @@ export default function HomePage() {
               <Link href="/guide">How to choose</Link>
               <Link href="/best">Best of</Link>
             </p>
-            <DisclosureStrip subtle />
+            <DisclosureStrip />
           </div>
         </div>
       </section>

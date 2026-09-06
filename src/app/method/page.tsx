@@ -102,10 +102,13 @@ export default function MethodPage() {
         </ul>
 
         <h2>Amazon</h2>
+        <p className="disclosure disclosure-subtle">
+          Amazon Associate links may earn Lock Desk a commission.{" "}
+          <Link href="/about#disclosure">Disclosure</Link>
+        </p>
         <p>
-          {site.name} is not Amazon. Outbound buttons say See on Amazon. As an Amazon Associate,
-          Lock Desk earns from qualifying purchases. Prices and stock are Amazon’s, on the day you
-          click.
+          {site.name} is not Amazon. Outbound buttons say See on Amazon. Prices and stock are
+          Amazon’s on the day you click.
         </p>
 
         <h2>Why this matters</h2>

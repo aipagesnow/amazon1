@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DISCLOSURE } from "@/components/DisclosureStrip";
+import { DISCLOSURE_SUBTLE } from "@/components/DisclosureStrip";
 import { ALTERNATIVES_PATH } from "@/lib/products";
 import { site } from "@/lib/site";
 
@@ -64,8 +64,10 @@ export function SiteFooter() {
             </ul>
           </div>
         </nav>
-        <p>
-          {DISCLOSURE} {site.name} is operated by {site.operator}.
+        <p className="footer-disclosure">
+          {DISCLOSURE_SUBTLE}{" "}
+          <Link href="/about#disclosure">Disclosure</Link>. {site.name} is operated by{" "}
+          {site.operator}.
         </p>
         <p>The photographs are editorial. They are not pictures of the named products.</p>
       </div>
