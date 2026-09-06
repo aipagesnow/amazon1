@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { pageUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Compare bike locks",
