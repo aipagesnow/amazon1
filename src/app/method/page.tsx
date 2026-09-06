@@ -34,7 +34,7 @@ const METHOD_FAQS = [
   },
   {
     q: "Do Amazon links change the verdict?",
-    a: "No. Amazon Associate links fund the site. Buttons say See on Amazon. Prices and stock are Amazon’s on the day you click. See [About](/about#disclosure).",
+    a: "No. Some links go to Amazon.co.uk and may earn Lock Desk a small commission. Buttons say See on Amazon. Prices and stock are Amazon’s on the day you click. See [About](/about#disclosure).",
   },
 ];
 
@@ -103,8 +103,9 @@ export default function MethodPage() {
 
         <h2>Amazon</h2>
         <p>
-          {site.name} is not Amazon. Outbound buttons say See on Amazon. As an Amazon Associate I
-          earn from qualifying purchases. Prices and stock are Amazon’s, on the day you click.
+          {site.name} is not Amazon. Outbound buttons say See on Amazon. As an Amazon Associate,
+          Lock Desk earns from qualifying purchases. Prices and stock are Amazon’s, on the day you
+          click.
         </p>
 
         <h2>Why this matters</h2>

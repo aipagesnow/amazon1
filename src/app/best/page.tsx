@@ -72,10 +72,9 @@ export default function BestPage() {
         lede={BEST_LEDE}
         caption={EDITORIAL_CREDIT}
         overlay
-      >
-        <DisclosureStrip />
-      </PageHero>
+      />
       <article className="prose wrap tight">
+        <DisclosureStrip />
         <p className="meta">Last checked: {site.lastChecked}. Grades and specs can change — confirm on Amazon before you buy.</p>
 
         {BEST_INTRO.map((p) => (

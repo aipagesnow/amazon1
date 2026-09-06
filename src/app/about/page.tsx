@@ -28,8 +28,8 @@ export default function AboutPage() {
       <p>
         {site.name} is operated by {site.operator}. It is not a shop, not a marketplace, and not
         Amazon. We write for UK riders who need a grade their insurer will accept and a weight they
-        will take out of the house. Amazon Associate links fund the site. They do not change the
-        verdict.
+        will take out of the house. Some links go to Amazon.co.uk. If you buy through them, Lock Desk
+        may earn a small commission. That does not change the verdict.
       </p>
       <p>
         The magazine is small on purpose. We would rather six honest reviews than a catalogue we
@@ -53,11 +53,10 @@ export default function AboutPage() {
       </p>
 
       <h2 id="disclosure">Disclosure</h2>
-      <p>As an Amazon Associate I earn from qualifying purchases.</p>
       <p>
-        We are not Amazon. Prices and availability change on Amazon. Disclosure appears on every page
-        that has an affiliate link, before that link. Buttons say See on Amazon. We do not scrape
-        prices or star ratings.
+        As an Amazon Associate, Lock Desk earns from qualifying purchases. We are not Amazon.
+        Prices and availability change on Amazon. A short note appears on pages with Amazon links,
+        before those links. Buttons say See on Amazon. We do not scrape prices or star ratings.
       </p>
       <p>
         How we research: <Link href="/method">how we research bike locks</Link>.

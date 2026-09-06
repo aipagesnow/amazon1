@@ -67,10 +67,9 @@ export default function ReviewsIndexPage() {
         lede={REVIEWS_LEDE}
         caption={EDITORIAL_CREDIT}
         overlay
-      >
-        <DisclosureStrip />
-      </PageHero>
+      />
       <article className="prose wrap tight">
+        <DisclosureStrip />
         <p className="meta">Last checked: {site.lastChecked}. We re-check grades and key specs when we refresh a review.</p>
         {REVIEWS_INTRO.map((p) => (
           <p key={p}>

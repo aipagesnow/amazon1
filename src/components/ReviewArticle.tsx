@@ -102,10 +102,10 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
           <GradeStamp grade={product.specs?.soldSecurePedal} label={copy.stamp} />
         </p>
         <p className="job-line">{copy.job}</p>
-        <DisclosureStrip />
       </PageHero>
 
       <div className="wrap prose tight">
+        <DisclosureStrip />
         <p className="meta">Last checked: {site.lastChecked}.</p>
         <div className="desk-verdict">
           <h2>Verdict</h2>

@@ -65,8 +65,7 @@ export function SiteFooter() {
           </div>
         </nav>
         <p>
-          {DISCLOSURE} {site.name} is operated by {site.operator}. We are not Amazon. Prices and
-          availability change on Amazon.
+          {DISCLOSURE} {site.name} is operated by {site.operator}.
         </p>
         <p>The photographs are editorial. They are not pictures of the named products.</p>
       </div>
