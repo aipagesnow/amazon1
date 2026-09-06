@@ -11,7 +11,7 @@ export function websiteJsonLd() {
     inLanguage: site.locale,
     publisher: {
       "@type": "Organization",
-      name: site.operator,
+      name: site.name,
     },
   };
 }
@@ -29,8 +29,8 @@ export function articleJsonLd(opts: {
     description: opts.description,
     inLanguage: site.locale,
     mainEntityOfPage: pageUrl(opts.path),
-    author: { "@type": "Organization", name: site.operator },
-    publisher: { "@type": "Organization", name: site.operator },
+    author: { "@type": "Organization", name: site.name },
+    publisher: { "@type": "Organization", name: site.name },
     ...opts.extra,
   };
 }
@@ -86,8 +86,8 @@ export function productJsonLd(
     review: {
       "@type": "Review",
       name: review.name,
-      author: { "@type": "Organization", name: site.operator },
-      publisher: { "@type": "Organization", name: site.operator },
+      author: { "@type": "Organization", name: site.name },
+      publisher: { "@type": "Organization", name: site.name },
       reviewBody: body,
       inLanguage: site.locale,
       url,

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { pageUrl, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Compare bike locks",
@@ -30,7 +29,7 @@ export default function ComparePage() {
       </ul>
       <p>
         Still choosing from scratch? Start with <Link href="/guide">how to choose</Link> or the{" "}
-        <Link href="/best">best of</Link> table. Operated by {site.operator}.
+        <Link href="/best">best of</Link> table.
       </p>
     </article>
   );

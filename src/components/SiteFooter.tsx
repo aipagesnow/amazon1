@@ -66,10 +66,8 @@ export function SiteFooter() {
         </nav>
         <p className="footer-disclosure">
           {DISCLOSURE_SUBTLE}{" "}
-          <Link href="/about#disclosure">Disclosure</Link>. {site.name} is operated by{" "}
-          {site.operator}.
+          <Link href="/about#disclosure">Disclosure</Link>.
         </p>
-        <p className="footer-disclosure">Scene photos for context — honesty on grades and photos lives on About and Method.</p>
       </div>
     </footer>
   );

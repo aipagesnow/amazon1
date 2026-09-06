@@ -28,10 +28,10 @@ export default function AboutPage() {
         insurance wording, and the weight you will still take to work.
       </p>
       <p>
-        {site.name} is operated by {site.operator}. It is not a shop, not a marketplace, and not
-        Amazon. We write for UK riders who need a grade their insurer will accept and a weight they
-        will take out of the house. Some links go to Amazon.co.uk. If you buy through them, Lock Desk
-        may earn a small commission. That does not change the verdict.
+        {site.name} is an independent UK comparison site. It is not a shop, not a marketplace, and
+        not Amazon. We write for UK riders who need a grade their insurer will accept and a weight
+        they will take out of the house. Some links go to Amazon.co.uk. If you buy through them,
+        Lock Desk may earn a small commission. That does not change the verdict.
       </p>
       <p>
         The set is eleven locks on purpose. This is not a full catalogue of every cable lock on
@@ -55,8 +55,7 @@ export default function AboutPage() {
         manufacturer specs, and typical insurance wording. We have not run a lab, and we have not
         attacked these locks with grinders or bolt croppers. Verdicts are our reading of those
         facts — grade, fit, and carry — not a hands-on security test. How that works in detail:{" "}
-        <Link href="/method">how we research bike locks</Link>. The site is operated by{" "}
-        {site.operator}.
+        <Link href="/method">how we research bike locks</Link>.
       </p>
 
       <h2 id="disclosure">Disclosure</h2>
