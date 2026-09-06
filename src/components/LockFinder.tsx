@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { GradeStamp } from "@/components/GradeStamp";
 import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { displayName, productBySlug } from "@/lib/products";
@@ -209,7 +209,7 @@ function Choice<T extends string>({
     <button
       type="button"
       className="choice"
-      data-on={on}
+      data-on={on ? "true" : "false"}
       aria-pressed={on}
       onClick={() => onPick(value)}
     >
@@ -245,11 +245,21 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
   const [grade, setGrade] = useState<Grade | null>(null);
   const [place, setPlace] = useState<Place | null>(null);
   const [carry, setCarry] = useState<Carry | null>(null);
+  const resultRef = useRef<HTMLDivElement | null>(null);
   const pick = useMemo(() => recommend(grade, place, carry), [grade, place, carry]);
   const product = pick ? productBySlug(pick.slug) : undefined;
   const answered = Number(!!grade) + Number(!!place) + Number(!!carry);
+  const complete = answered === 3;
+  // Keep earlier steps open after the first pick so changing any answer feels live.
   const openStep = !grade ? 1 : !place ? 2 : !carry ? 3 : 0;
+  const stepOpen = (n: 1 | 2 | 3) => complete || openStep === n;
   const wait = waitCopy(answered);
+  const pickKey = complete && pick ? `${grade}-${place}-${carry}-${pick.slug}` : "waiting";
+
+  useEffect(() => {
+    if (!complete || !pick || !resultRef.current) return;
+    resultRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, [complete, pickKey, pick]);
 
   return (
     <section
@@ -260,16 +270,19 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
       <header className="finder-head">
         <p className="kicker">Quick pick</p>
         <h2 id={`${id}-title`}>Find a lock</h2>
-        <p className="finder-promise">Three questions. One lock from the set we have reviewed.</p>
+        <p className="finder-promise">
+          Three questions. One lock from the set we have reviewed.
+          {complete ? " Change any answer and the pick updates." : ""}
+        </p>
         <div className="finder-progress" aria-hidden="true">
-          <span data-on={Boolean(grade)} />
-          <span data-on={Boolean(place)} />
-          <span data-on={Boolean(carry)} />
+          <span data-on={grade ? "true" : "false"} />
+          <span data-on={place ? "true" : "false"} />
+          <span data-on={carry ? "true" : "false"} />
         </div>
       </header>
 
       <div className="finder-steps">
-        <div className="finder-step" data-done={Boolean(grade)} data-open={openStep === 1}>
+        <div className="finder-step" data-done={grade ? "true" : "false"} data-open={stepOpen(1) ? "true" : "false"}>
           <span className="finder-step-index" aria-hidden="true">
             1
           </span>
@@ -285,7 +298,7 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
           </div>
         </div>
 
-        <div className="finder-step" data-done={Boolean(place)} data-open={openStep === 2}>
+        <div className="finder-step" data-done={place ? "true" : "false"} data-open={stepOpen(2) ? "true" : "false"}>
           <span className="finder-step-index" aria-hidden="true">
             2
           </span>
@@ -301,7 +314,7 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
           </div>
         </div>
 
-        <div className="finder-step" data-done={Boolean(carry)} data-open={openStep === 3}>
+        <div className="finder-step" data-done={carry ? "true" : "false"} data-open={stepOpen(3) ? "true" : "false"}>
           <span className="finder-step-index" aria-hidden="true">
             3
           </span>
@@ -319,14 +332,20 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
       </div>
 
       {product && pick ? (
-        <div className="finder-result" role="status" aria-live="polite">
+        <div
+          key={pickKey}
+          ref={resultRef}
+          className="finder-result"
+          role="status"
+          aria-live="polite"
+        >
           <div className="finder-result-top">
             <p className="kicker">Your pick</p>
             <p className="stamp-row">
               <GradeStamp grade={product.specs?.soldSecurePedal} />
             </p>
           </div>
-          <h3>{displayName(product).replace(/-/g, "\u2011")}</h3>
+          <h3>{displayName(product).replace(/-/g, "‑")}</h3>
           <p className="finder-why">{pick.why}</p>
           {pick.note ? (
             <p className="finder-note">
