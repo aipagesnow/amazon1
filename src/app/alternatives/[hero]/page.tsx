@@ -9,7 +9,7 @@ import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { ALT_BODY, ALT_FAQS, ALT_HERO, ALT_LEDE, ALT_TITLE } from "@/content/pages";
 import { ALT_BODY_EXTRA, ALT_META } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
-import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
+import { photoAlt, photos } from "@/lib/photos";
 import { ALTERNATIVES_PATH, displayName, productBySlug } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
 
@@ -58,7 +58,6 @@ export default async function AlternativesPage({ params }: Props) {
         kicker="Alternatives"
         title="Best alternatives to the Kryptonite New York Mini"
         lede={ALT_LEDE}
-        caption={EDITORIAL_CREDIT}
         overlay
         tight
       >

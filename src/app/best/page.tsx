@@ -9,7 +9,7 @@ import { BEST_INTRO, BEST_LEDE, BEST_PICKS, BEST_VERDICTS, BEST_WEIGHT } from "@
 import { BEST_FAQS, BEST_INTRO_EXTRA, BEST_META } from "@/content/thickening";
 import { RichText } from "@/components/RichText";
 import { articleJsonLd, faqJsonLd, itemListJsonLd } from "@/lib/jsonld";
-import { photoAlt, photoCaption, photos } from "@/lib/photos";
+import { photoAlt, photos } from "@/lib/photos";
 import {
   BEST_OF_ASINS,
   displayName,
@@ -70,7 +70,6 @@ export default function BestPage() {
         kicker="Best of"
         title="Best bike locks UK"
         lede={BEST_LEDE}
-        caption={photoCaption.insurance}
         overlay
       />
       <article className="prose wrap tight">

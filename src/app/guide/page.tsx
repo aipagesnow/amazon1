@@ -16,7 +16,7 @@ import {
 } from "@/content/pages";
 import { GUIDE_FAQ_EXTRA } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
-import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
+import { photoAlt, photos } from "@/lib/photos";
 import { pageUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -57,7 +57,6 @@ export default function GuidePage() {
         kicker="How to choose"
         title="How to choose a bike lock"
         lede={GUIDE_LEDE}
-        caption={EDITORIAL_CREDIT}
         overlay
       >
         <p className="kicker">Start here</p>

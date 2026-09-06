@@ -10,7 +10,7 @@ import { CompareTable } from "@/components/SpecTable";
 import { pairOf, PAIRS } from "@/content/pages";
 import { VS_AFTER_EXTRA } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
-import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
+import { photoAlt, photos } from "@/lib/photos";
 import { displayName, Product, productBySlug, reviewHref } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
 
@@ -88,7 +88,6 @@ export default async function VsPage({ params }: Props) {
         kicker="Comparison"
         title={pair.title}
         lede={pair.intro}
-        caption={EDITORIAL_CREDIT}
         overlay
       >
         <DisclosureStrip />

@@ -8,7 +8,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { REVIEW_GROUPS, REVIEWS_INTRO, REVIEWS_LEDE } from "@/content/pages";
 import { REVIEWS_INTRO_EXTRA, REVIEWS_META } from "@/content/thickening";
 import { articleJsonLd, itemListJsonLd } from "@/lib/jsonld";
-import { photoAlt, photoCaption, photos } from "@/lib/photos";
+import { photoAlt, photos } from "@/lib/photos";
 import {
   ALTERNATIVES_PATH,
   displayName,
@@ -65,7 +65,6 @@ export default function ReviewsIndexPage() {
         kicker="Reviews"
         title="Bike lock reviews"
         lede={REVIEWS_LEDE}
-        caption={photoCaption.commute}
         overlay
       />
       <article className="prose wrap tight">

@@ -100,7 +100,6 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         kicker={`${product.brand} · ${product.specs?.type ?? "Lock"}`}
         title={displayName(product)}
         lede={copy.hook}
-        caption={art.caption}
         overlay
       >
         <p className="stamp-row">

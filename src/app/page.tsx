@@ -10,7 +10,7 @@ import { SiteImage } from "@/components/SiteImage";
 import { HOME_BRIEFING, HOME_COMMUTE, HOME_INSURANCE, HOME_LEDE, HOME_PICK } from "@/content/pages";
 import { HOME_FAQS, HOME_META, HOME_NEXT } from "@/content/thickening";
 import { faqJsonLd, websiteJsonLd } from "@/lib/jsonld";
-import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
+import { photoAlt, photos } from "@/lib/photos";
 import {
   BEST_OF_ASINS,
   displayName,
@@ -117,7 +117,6 @@ export default function HomePage() {
                 sizes="(max-width: 980px) 100vw, 42vw"
               />
             </div>
-            <figcaption>{EDITORIAL_CREDIT}</figcaption>
           </figure>
           <div className="pick-copy">
             <h2>Desk pick</h2>

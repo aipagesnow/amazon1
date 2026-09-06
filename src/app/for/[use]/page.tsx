@@ -13,7 +13,7 @@ import {
   INSURANCE_BODY_EXTRA,
 } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
-import { EDITORIAL_CREDIT, photoAlt, photos } from "@/lib/photos";
+import { photoAlt, photos } from "@/lib/photos";
 import { productBySlug } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
 
@@ -62,7 +62,6 @@ export default async function UseCasePage({ params }: Props) {
         kicker="Guide"
         title={item.title}
         lede={item.description}
-        caption={EDITORIAL_CREDIT}
         overlay
       >
         <DisclosureStrip />

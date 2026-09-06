@@ -16,46 +16,25 @@ export const photos = {
 export type PhotoKey = keyof typeof photos;
 
 export const photoAlt = {
-  cover:
-    "A bicycle locked to a bike stand on a wet UK street at night. Scene photograph for context.",
-  pick:
-    "A compact unbranded D-lock closed around a bicycle frame and a stand at dusk. Scene photograph for context.",
-  commute: "Commuter bicycles parked at a UK railway station in blue hour. Scene photograph for context.",
-  insurance:
-    "A D-lock, keys, and a folded letter on a kitchen table beside a high-visibility jacket. Scene still life for context.",
-  vs: "An unbranded D-lock and a sleeved chain lock on a steel workbench. Scene still life for context.",
-  fit: "A lock closing around a galvanised stand and a frame tube in the rain. Scene photograph for context.",
-  chain: "A thick unbranded chain lock coiled on wet tarmac. Scene photograph for context.",
-  bannerTight: "A crowded night bike rack in the rain. Scene photograph for context.",
-  bannerCommute: "A bicycle at a UK station in blue hour. Scene photograph for context.",
-  bannerLong: "A long D-lock closed around a lamp post on a wet street. Scene photograph for context.",
-  bannerHouse: "A heavy chain lock on a doorstep beside a bicycle. Scene photograph for context.",
-  bannerThick: "A thick D-lock on a bicycle frame in a wet alley. Scene photograph for context.",
+  cover: "A bicycle locked to a bike stand on a wet UK street at night.",
+  pick: "A compact unbranded D-lock closed around a bicycle frame and a stand at dusk.",
+  commute: "Commuter bicycles parked at a UK railway station in blue hour.",
+  insurance: "A D-lock, keys, and a folded letter on a kitchen table beside a high-visibility jacket.",
+  vs: "An unbranded D-lock and a sleeved chain lock on a steel workbench.",
+  fit: "A lock closing around a galvanised stand and a frame tube in the rain.",
+  chain: "A thick unbranded chain lock coiled on wet tarmac.",
+  bannerTight: "A crowded night bike rack in the rain.",
+  bannerCommute: "A bicycle at a UK station in blue hour.",
+  bannerLong: "A long D-lock closed around a lamp post on a wet street.",
+  bannerHouse: "A heavy chain lock on a doorstep beside a bicycle.",
+  bannerThick: "A thick D-lock on a bicycle frame in a wet alley.",
 } as const;
 
-/** Short figcaption per scene — honest context, not a product shot. */
-export const photoCaption: Record<PhotoKey, string> = {
-  cover: "Night rack · scene for context",
-  pick: "Dusk stand · scene for context",
-  commute: "Station rack · scene for context",
-  insurance: "Kitchen desk · scene for context",
-  vs: "Workbench pair · scene for context",
-  fit: "Wet shackle · scene for context",
-  chain: "Wet tarmac · scene for context",
-  bannerTight: "Crowded rack · scene for context",
-  bannerCommute: "Blue-hour commute · scene for context",
-  bannerLong: "Lamp-post reach · scene for context",
-  bannerHouse: "Doorstep chain · scene for context",
-  bannerThick: "Alley frame · scene for context",
-};
-
-export const EDITORIAL_CREDIT = "Scene photo for context.";
-
-function scene(key: PhotoKey): { src: string; alt: string; caption: string } {
-  return { src: photos[key], alt: photoAlt[key], caption: photoCaption[key] };
+function scene(key: PhotoKey): { src: string; alt: string } {
+  return { src: photos[key], alt: photoAlt[key] };
 }
 
-export function typePhoto(type?: string): { src: string; alt: string; caption: string } {
+export function typePhoto(type?: string): { src: string; alt: string } {
   const kind = (type ?? "").toLowerCase();
   if (kind.includes("chain")) {
     return scene("chain");
@@ -67,7 +46,7 @@ export function typePhoto(type?: string): { src: string; alt: string; caption: s
 }
 
 /** Each of the 11 review slugs gets a distinct image from /public/images (cover reserved for home). */
-export function reviewBanner(slug: string): { src: string; alt: string; caption: string } {
+export function reviewBanner(slug: string): { src: string; alt: string } {
   switch (slug) {
     case "litelok-x1":
       return scene("vs");
