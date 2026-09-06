@@ -95,10 +95,6 @@ export default function HomePage() {
             <p>{HOME_BRIEFING.carry}</p>
           </article>
         </div>
-        <p className="wrap briefing-more">
-          The full guide on grade, fit, and carry:{" "}
-          <Link href="/guide">how to choose a bike lock</Link>.
-        </p>
       </section>
 
       <div className="wrap">
