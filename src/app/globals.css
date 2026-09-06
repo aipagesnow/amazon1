@@ -1378,6 +1378,28 @@ table.spec tr.spec-group th {
   margin: 0;
   list-style: none;
 }
+/* Keep Find-a-lock looking like the home night panel even if nested in prose */
+.prose .finder {
+  color: var(--finder-ink);
+  max-width: none;
+}
+.prose .finder a {
+  color: var(--hivis);
+}
+.prose .finder a:hover {
+  color: #f0d56a;
+}
+.prose .finder p,
+.prose .finder h2,
+.prose .finder h3 {
+  color: inherit;
+}
+.prose .finder .choice-help {
+  color: var(--finder-muted);
+}
+.prose .finder .choice[data-on="true"] .choice-help {
+  color: rgba(11, 16, 14, 0.72);
+}
 .finder-step {
   --step-y: 1.1rem;
   display: grid;

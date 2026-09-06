@@ -78,9 +78,17 @@ export default function GuidePage() {
         {GUIDE_INTRO.map((p) => (
           <p key={p}>{p}</p>
         ))}
+      </article>
 
+      <div className="wrap">
+        <p className="folio">
+          <span>Lock Desk</span>
+          <span>Find a lock</span>
+        </p>
         <LockFinder />
+      </div>
 
+      <article className="prose wrap tight">
         {GUIDE_SECTIONS.map((section) => (
           <section key={section.h2}>
             <h2>{section.h2}</h2>
