@@ -64,7 +64,6 @@ export default function HomePage() {
             <p className="cover-kicker">D-locks and chains · UK</p>
             <h1>UK bike lock reviews and comparisons</h1>
             <p className="lede">{HOME_LEDE}</p>
-            <DisclosureStrip />
             <p className="cover-ctas">
               <a href="#finder" className="primary-link">
                 Find a lock
@@ -72,6 +71,7 @@ export default function HomePage() {
               <Link href="/guide">How to choose</Link>
               <Link href="/best">Best of</Link>
             </p>
+            <DisclosureStrip subtle />
           </div>
         </div>
       </section>
