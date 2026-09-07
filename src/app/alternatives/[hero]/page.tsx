@@ -85,7 +85,7 @@ export default async function AlternativesPage({ params }: Props) {
 
         <div className="fork-list">
           <article className="fork-card">
-            <p className="kicker">Best to carry</p>
+            <p className="kicker">Easier to carry</p>
             <h2>
               <Link href="/reviews/kryptonite-evolution-mini-7">{displayName(mini7)}</Link>
             </h2>
@@ -98,7 +98,7 @@ export default async function AlternativesPage({ params }: Props) {
             <SeeOnAmazon asin={mini7.asin} variant="text" />
           </article>
           <article className="fork-card">
-            <p className="kicker">Best for insurance</p>
+            <p className="kicker">Higher insurance grade</p>
             <h2>
               <Link href="/reviews/litelok-x1">{displayName(x1)}</Link>
             </h2>
@@ -119,7 +119,7 @@ export default async function AlternativesPage({ params }: Props) {
             </p>
           </article>
           <article className="fork-card">
-            <p className="kicker">Best reach</p>
+            <p className="kicker">Extra reach at home</p>
             <h2>
               <Link href="/reviews/kryptonite-new-york-fahgettaboudit-1410">
                 {displayName(chain)}

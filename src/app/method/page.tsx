@@ -16,10 +16,10 @@ import {
 } from "@/lib/sold-secure";
 
 const METHOD_META_TRIM =
-  "Lock Desk is desk research, not a test lab. Sold Secure grades, manufacturer specs, and UK insurance wording. We do not pretend we attacked these locks.";
+  "How Lock Desk researches bike locks: Sold Secure grades, manufacturer specs, and UK insurance wording. We have not cut these locks open.";
 
 const METHOD_LEAD =
-  "Desk research. We have not cut these locks open. If a sentence would only be true because we attacked a lock, we do not write it. Every claim on a review page should point to a spec sheet, a Sold Secure grade, or the manufacturer’s own notes.";
+  "We research locks from Sold Secure grades and manufacturer specs. We have not cut these locks open. If a sentence would only be true because we attacked a lock, we do not write it. Every claim on a review page should point to a spec sheet, a Sold Secure grade, or the manufacturer’s own notes.";
 
 const METHOD_MORE = [
   "We started with locks UK riders actually search for: Sold Secure Gold and Diamond D-locks, a Gold folding lock, and one Gold chain for reach at home. That is why the site is eleven full reviews, not a catalogue of every cable lock on Amazon. Eleven is the full set for now — on purpose.",
@@ -30,7 +30,7 @@ const METHOD_MORE = [
 const METHOD_FAQS = [
   {
     q: "Have you cut these locks open?",
-    a: "No. Lock Desk is desk research. Sold Secure grades and manufacturer specs are the evidence. Advertised cut-times are marketing, not our tests.",
+    a: "No. Lock Desk is based on Sold Secure grades and manufacturer specs. Advertised cut-times are marketing, not our tests.",
   },
   {
     q: "Why only eleven reviews?",
@@ -75,7 +75,7 @@ export default function MethodPage() {
         ]}
       />
       <article className="prose wrap">
-        <p className="kicker">How we work</p>
+        <p className="kicker">Method</p>
         <h1>How we research bike locks</h1>
         <div className="method-box">
           <p>{METHOD_LEAD}</p>
@@ -139,7 +139,7 @@ export default function MethodPage() {
           Amazon’s on the day you click.
         </p>
 
-        <h2>Why this matters</h2>
+        <h2>How to use these reviews</h2>
         {METHOD_WHY.map((p) => (
           <p key={p}>
             <RichText text={p} />

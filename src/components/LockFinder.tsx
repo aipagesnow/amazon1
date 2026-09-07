@@ -115,7 +115,7 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
   if (needsDiamond && wantsMount) {
     return {
       slug: "onguard-pitbull-std-8003",
-      why: "Sold Secure Diamond for ordinary bikes, 1.44 kg, 115 × 230 mm, frame mount in the box. This is the compact Diamond that actually clips on.",
+      why: "Sold Secure Diamond for ordinary bikes, 1.44 kg, 115 × 230 mm, and a frame mount in the box — useful when you need Diamond that clips on.",
       note: "Want a cable in the same box? That is the Pitbull DT 8005 — the cable is not Diamond. We do not have an e-bike grade listed for the Pitbulls; if the policy names powered Diamond, check Sold Secure and look at the X1.",
     };
   }
@@ -225,14 +225,14 @@ function Choice<T extends string>({
 function waitCopy(answered: number): { kicker: string; body: string } {
   if (answered === 0) {
     return {
-      kicker: "Waiting on your answers",
+      kicker: "Answer the three questions",
       body: "Grade, place, and carry — then we name one lock from the set we have reviewed.",
     };
   }
   if (answered === 1) {
     return {
       kicker: "Two questions left",
-      body: "Keep going. We name a lock once all three are answered.",
+      body: "We name a lock once all three are answered.",
     };
   }
   return {
@@ -268,10 +268,10 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
       aria-labelledby={`${id}-title`}
     >
       <header className="finder-head">
-        <p className="kicker">Quick pick</p>
+        <p className="kicker">Lock finder</p>
         <h2 id={`${id}-title`}>Find a lock</h2>
         <p className="finder-promise">
-          Three questions. One lock from the set we have reviewed.
+          Three questions, then one lock from the set we have reviewed.
           {complete ? " Change any answer and the pick updates." : ""}
         </p>
         <div className="finder-progress" aria-hidden="true">

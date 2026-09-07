@@ -106,7 +106,7 @@ export default function HomePage() {
 
         <p className="folio">
           <span>Lock Desk</span>
-          <span>Desk pick</span>
+          <span>Featured lock</span>
         </p>
         <section className="pick">
           <figure className="pick-art">
@@ -119,20 +119,20 @@ export default function HomePage() {
             </div>
           </figure>
           <div className="pick-copy">
-            <h2>Desk pick</h2>
-            <p className="meta">Shortlist from the eleven — on grade, weight, and fit.</p>
+            <h2>Featured lock</h2>
+            <p className="meta">Chosen from the eleven on grade, weight, and whether it will close.</p>
             <h3>{displayName(pick)}</h3>
             <p>
-              <strong>Why it makes the shortlist.</strong> {HOME_PICK.why}
+              <strong>Why we feature it.</strong> {HOME_PICK.why}
             </p>
             <p>
-              <strong>Who it is for.</strong> {HOME_PICK.who}
+              <strong>Who it suits.</strong> {HOME_PICK.who}
             </p>
             <p>
-              <strong>Desk caveat.</strong> {HOME_PICK.change}
+              <strong>One thing we’d change.</strong> {HOME_PICK.change}
             </p>
             <p>
-              <strong>Best alternative.</strong>{" "}
+              <strong>Also worth considering.</strong>{" "}
               <Link href="/reviews/hiplok-d1000">{displayName(alt)}</Link> {HOME_PICK.alt}
             </p>
             <p>

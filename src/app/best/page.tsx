@@ -143,7 +143,7 @@ export default function BestPage() {
                 </dl>
                 {extra?.bestFor ? (
                   <p className="best-card-for">
-                    <strong>Best for:</strong> {extra.bestFor}
+                    <strong>Suits:</strong> {extra.bestFor}
                   </p>
                 ) : null}
                 {extra?.caveat ? (
@@ -175,7 +175,7 @@ export default function BestPage() {
                   <th>Sold Secure</th>
                   <th>Weight</th>
                   <th>Locking area</th>
-                  <th>Best for</th>
+                  <th>Suits</th>
                   <th>Drawback</th>
                   <th>Review</th>
                 </tr>
@@ -218,8 +218,7 @@ export default function BestPage() {
 
         <h2>Head-to-head</h2>
         <p>
-          Stuck between two options? These short comparisons sit beside the Best of table — they
-          do not replace it.
+          If you are choosing between two locks, these short comparisons sit beside the Best of table. They do not replace it.
         </p>
         <ul>
           <li>

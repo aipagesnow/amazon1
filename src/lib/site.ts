@@ -16,7 +16,7 @@ export const site = {
   /** Shown on Best of and reviews for Flippa / reader freshness */
   lastChecked: "6 September 2026",
   /** Quiet research note on review pages — not a personal byline */
-  authorLine: "Based on desk research",
+  authorLine: "Based on published specs and Sold Secure grades",
   authorHref: "/method",
 } as const;
 

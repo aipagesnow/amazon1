@@ -49,14 +49,14 @@ export default function AboutPage() {
 
       <h2 id="who">Who writes this</h2>
       <p>
-        Lock Desk is desk research from a UK rider perspective. We read Sold Secure grades,
-        manufacturer specs, and typical insurance wording. We have not run a lab, and we have not
-        attacked these locks with grinders or bolt croppers. Verdicts are our reading of those
-        facts — grade, fit, and carry — not a hands-on security test. How that works in detail:{" "}
+        Lock Desk writes from a UK rider perspective using Sold Secure grades, manufacturer
+        specs, and typical insurance wording. We have not attacked these locks with grinders or
+        bolt croppers. Verdicts are our reading of those facts — grade, fit, and carry — not a
+        hands-on security test. How that works in detail:{" "}
         <Link href="/method">how we research bike locks</Link>.
       </p>
       <p>
-        Independent UK desk research site. Contact details are provided on handover if you buy the
+        Independent UK comparison site. Contact details are provided on handover if you buy the
         site.
       </p>
 

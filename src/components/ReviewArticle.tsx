@@ -128,7 +128,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
 
         <div className="grid-2">
           <div className="panel">
-            <h3>Best for</h3>
+            <h3>Who this suits</h3>
             <ul>
               {copy.bestFor.map((item) => (
                 <li key={item}>{item}</li>
@@ -136,7 +136,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
             </ul>
           </div>
           <div className="panel">
-            <h3>Skip it if</h3>
+            <h3>Less suitable if</h3>
             <ul>
               {copy.skipIf.map((item) => (
                 <li key={item}>{item}</li>
@@ -160,7 +160,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
 
         <div className="goodbad">
           <div>
-            <h3>What’s good</h3>
+            <h3>What works well</h3>
             <ul>
               {copy.good.map((item) => (
                 <li key={item}>{item}</li>
@@ -168,7 +168,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
             </ul>
           </div>
           <div>
-            <h3>What’s not so good</h3>
+            <h3>What to watch for</h3>
             <ul>
               {copy.bad.map((item) => (
                 <li key={item}>{item}</li>
@@ -178,7 +178,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         </div>
 
         <div className="change-note">
-          <h3>Desk caveat</h3>
+          <h3>One thing we’d change</h3>
           <p>{copy.change}</p>
         </div>
 
@@ -236,7 +236,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         </p>
 
         <div className="review-close">
-          <p>Read the review before you click through to Amazon.</p>
+          <p>Prices and stock are on Amazon on the day you click through.</p>
           <Link href="/reviews" className="primary-link">
             All reviews
           </Link>
