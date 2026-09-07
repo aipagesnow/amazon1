@@ -183,7 +183,7 @@ export function WeightCompare({ items }: { items: { name: string; kg: number }[]
           <div className="weight-track">
             <div className="weight-fill" style={{ width: `${(item.kg / max) * 100}%` }} />
           </div>
-          <span>{item.kg.toFixed(2)} kg</span>
+          <span>{item.kg.toFixed(2)}kg</span>
         </div>
       ))}
     </div>

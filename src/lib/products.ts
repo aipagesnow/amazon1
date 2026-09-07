@@ -144,7 +144,7 @@ export function specValue(product: Product, key: keyof ProductSpecs): string | n
   if (value === undefined) return null;
   if (key === "shackleMm" && typeof value === "number") return `${value} mm`;
   if (key === "chainMm" && typeof value === "number") return `${value} mm`;
-  if (key === "weightKg" && typeof value === "number") return `${value} kg`;
+  if (key === "weightKg" && typeof value === "number") return `${value}kg`;
   if (typeof value === "boolean") return value ? "Yes" : "No";
   if (typeof value === "string") return value.replace(/\s*[xX]\s*/g, " × ");
   return String(value);

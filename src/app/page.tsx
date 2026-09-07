@@ -106,7 +106,7 @@ export default function HomePage() {
 
         <p className="folio">
           <span>Lock Desk</span>
-          <span>Featured lock</span>
+          <span>A lock to start with</span>
         </p>
         <section className="pick">
           <figure className="pick-art">
@@ -119,17 +119,17 @@ export default function HomePage() {
             </div>
           </figure>
           <div className="pick-copy">
-            <h2>Featured lock</h2>
+            <h2>A lock to start with</h2>
             <p className="meta">Chosen from the eleven we reviewed, mainly on grade, weight, and whether the lock will close on a typical stand.</p>
             <h3>{displayName(pick)}</h3>
             <p>
-              <strong>Why we feature it.</strong> {HOME_PICK.why}
+              <strong>Why this one.</strong> {HOME_PICK.why}
             </p>
             <p>
               <strong>Who it suits.</strong> {HOME_PICK.who}
             </p>
             <p>
-              <strong>One thing we’d change.</strong> {HOME_PICK.change}
+              <strong>What to watch for.</strong> {HOME_PICK.change}
             </p>
             <p>
               <strong>Also worth a look.</strong>{" "}
@@ -162,7 +162,7 @@ export default function HomePage() {
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
             New York Fahgettaboudit Mini
           </Link>
-          . It is an 18 mm Sold Secure Gold lock at 2.06 kg with no frame mount. For most
+          . It is an 18 mm Sold Secure Gold lock at 2.06kg with no frame mount. For most
           daily commuting we would point you to the Evolution Mini-7 instead, because it is
           lighter and includes a mount. If you are still deciding, see{" "}
           <Link href="/alternatives/kryptonite-new-york-fahgettaboudit-mini">
