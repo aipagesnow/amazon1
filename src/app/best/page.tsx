@@ -225,7 +225,7 @@ export default function BestPage() {
         <ul>
           <li>
             <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs Hiplok D1000</Link> —
-            a Gold commute Mini compared with a Diamond compact D-lock.
+            a Gold weekday Mini compared with a Diamond compact D-lock.
           </li>
           <li>
             <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> — when a D-lock is easier to

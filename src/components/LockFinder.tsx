@@ -115,7 +115,7 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
   if (needsDiamond && wantsMount) {
     return {
       slug: "onguard-pitbull-std-8003",
-      why: "The Pitbull STD is Sold Secure Diamond for ordinary bikes, 1.44 kg, 115 × 230 mm, with a frame mount in the box — useful when you need Diamond that clips on.",
+      why: "The Pitbull STD is Sold Secure Diamond for ordinary bikes, 1.44 kg, 115 × 230 mm, with a frame mount in the box. It’s worth considering if you want Diamond security but also want to carry the lock on the bike.",
       note: "If you want a cable in the same box, that is the Pitbull DT 8005 — the cable is not Diamond. We do not have an e-bike grade listed for the Pitbulls; if the policy names powered Diamond, check Sold Secure and look at the X1.",
     };
   }

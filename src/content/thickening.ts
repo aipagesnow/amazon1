@@ -24,7 +24,7 @@ export const HOME_NEXT = [
   {
     href: "/for/commuting",
     title: "Best lock for commuting",
-    blurb: "The Gold Mini-7 suits most weekday riders. Look at the X1 if the policy names Diamond.",
+    blurb: "For most weekday riders on Gold, start with the Mini-7. Look at the X1 if the policy names Diamond.",
   },
 ] as const;
 
@@ -108,7 +108,7 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "litelok-x1":
     "Sold Secure Diamond for ordinary bikes and e-bikes, 1.7 kg, 101 × 197 mm locking area. Based on published grades and specs, not a cut test.",
   "hiplok-d1000":
-    "Diamond, 1.9 kg, 92 × 155 mm, no mount. Useful after you have measured the rack; less useful if Gold and a cable already meet the policy.",
+    "Diamond at 1.9 kg with a 92 × 155 mm locking area and no mount. Worth considering after you have measured the rack; less useful if Gold and a cable already meet the policy.",
   "kryptonite-evolution-mini-7":
     "Sold Secure Gold, 1.61 kg, mount and cable in the box. The cable is not Gold. A commute lock many UK riders will still take every day.",
   "abus-granit-xplus-540":
@@ -118,13 +118,13 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "kryptonite-new-york-fahgettaboudit-1410":
     "100 cm, 14 mm, 4.9 kg, Sold Secure Gold. Extra length for home or a terrace. The weight suits storage more than a daily commute.",
   "hiplok-dx1000":
-    "Pedal and powered Diamond, 2.75 kg, 112 × 205 mm, no mount. Larger than the D1000. Measure the stand.",
+    "Diamond for ordinary bikes and e-bikes at 2.75 kg, with a 112 × 205 mm locking area and no mount. Larger than the D1000 — measure the stand first.",
   "onguard-pitbull-std-8003":
-    "Pedal Cycle Diamond, 1.44 kg, 14 mm, 115 × 230 mm, frame mount. Diamond you can clip on. No cable.",
+    "Sold Secure Diamond for ordinary bikes, 1.44 kg, with a frame mount and a 115 × 230 mm locking area. Worth considering if you need Diamond with a clip. No cable.",
   "onguard-pitbull-dt-8005":
     "Pedal Cycle Diamond D-lock with a cable, 1.6 kg, 115 × 230 mm, mount. The cable is not graded.",
   "onguard-pitbull-ls-8002":
-    "Pedal Cycle Diamond, long 115 × 292 mm shackle, 1.75 kg, 14 mm, frame mount. For fat posts and cargo.",
+    "Sold Secure Diamond for ordinary bikes with a long 115 × 292 mm shackle, 1.75 kg, and a frame mount. Useful when a Mini will not close on a fat post or cargo bike.",
   "abus-bordo-granit-xplus-6500":
     "Sold Secure Gold folding lock, 2.16 kg, 110 cm, SH bracket. Flexible Gold when reach matters more than Mini-7 weight.",
 };
@@ -172,7 +172,7 @@ export const REVIEW_RELATED_WELLS: Record<
     href: "/for/commuting",
     title: "Best bike lock for commuting",
     blurb:
-      "A commute lock is one you take every day. This Pitbull is Diamond with a clip — useful when bag-carry Diamond locks do not suit you.",
+      "A commute lock is one you take every day. This Pitbull is worth considering if you want Diamond security but also want to carry the lock on the bike.",
   },
   "onguard-pitbull-dt-8005": {
     href: "/for/commuting",
