@@ -120,7 +120,7 @@ export default function HomePage() {
           </figure>
           <div className="pick-copy">
             <h2>Featured lock</h2>
-            <p className="meta">Chosen from the eleven on grade, weight, and whether it will close.</p>
+            <p className="meta">Chosen from the eleven we reviewed, mainly on grade, weight, and whether the lock will close on a typical stand.</p>
             <h3>{displayName(pick)}</h3>
             <p>
               <strong>Why we feature it.</strong> {HOME_PICK.why}
@@ -132,7 +132,7 @@ export default function HomePage() {
               <strong>One thing we’d change.</strong> {HOME_PICK.change}
             </p>
             <p>
-              <strong>Also worth considering.</strong>{" "}
+              <strong>Also worth a look.</strong>{" "}
               <Link href="/reviews/hiplok-d1000">{displayName(alt)}</Link> {HOME_PICK.alt}
             </p>
             <p>
@@ -151,21 +151,22 @@ export default function HomePage() {
             ))}
           </div>
           <p className="five-line">
-            <strong>Seven locks on the shortlist</strong> — from the eleven we
+            <strong>Seven locks on the shortlist</strong>, drawn from the eleven we
             reviewed.{" "}
             <Link href="/best">Open the shortlist table</Link>
           </p>
         </section>
         <p className="also-reviewed">
-          Eleven full reviews live under{" "}
+          There are eleven full reviews under{" "}
           <Link href="/reviews">bike lock reviews</Link>, including the{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
             New York Fahgettaboudit Mini
-          </Link>{" "}
-          — a thick 18 mm Gold lock at 2.06 kg, with no frame mount. Most commuters are better with the
-          Evolution Mini-7. Looking for something else?{" "}
+          </Link>
+          . It is an 18 mm Sold Secure Gold lock at 2.06 kg with no frame mount. For most
+          daily commuting we would point you to the Evolution Mini-7 instead, because it is
+          lighter and includes a mount. If you are still deciding, see{" "}
           <Link href="/alternatives/kryptonite-new-york-fahgettaboudit-mini">
-            Alternatives to the New York Mini
+            alternatives to the New York Mini
           </Link>
           .
         </p>

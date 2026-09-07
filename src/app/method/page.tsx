@@ -19,22 +19,22 @@ const METHOD_META_TRIM =
   "How Lock Desk researches bike locks: Sold Secure grades, manufacturer specs, and UK insurance wording. We have not cut these locks open.";
 
 const METHOD_LEAD =
-  "We research locks from Sold Secure grades and manufacturer specs. We have not cut these locks open. If a sentence would only be true because we attacked a lock, we do not write it. Every claim on a review page should point to a spec sheet, a Sold Secure grade, or the manufacturer’s own notes.";
+  "We research locks from Sold Secure grades and manufacturer specs. We have not cut these locks open. If a sentence would only be true because we attacked a lock, we leave it out. Every claim on a review page should point to a spec sheet, a Sold Secure grade, or the manufacturer’s own notes.";
 
 const METHOD_MORE = [
-  "We started with locks UK riders actually search for: Sold Secure Gold and Diamond D-locks, a Gold folding lock, and one Gold chain for reach at home. That is why the site is eleven full reviews, not a catalogue of every cable lock on Amazon. Eleven is the full set for now — on purpose.",
-  "When a listing photo and the Sold Secure record disagree — for example a kit that looks fully graded when only the D-lock is approved — we follow the grade and the manufacturer’s notes, not the photo.",
-  "Weights and locking areas are taken from the listing or manufacturer sheet we recorded. If two listings disagree, we say what we used rather than invent a middle number.",
+  "We started with locks UK riders often search for: Sold Secure Gold and Diamond D-locks, a Gold folding lock, and one Gold chain for reach at home. That is why there are eleven full reviews rather than a catalogue of every cable lock on Amazon. Eleven is the full set for now.",
+  "When a listing photo and the Sold Secure record disagree — for example a kit that looks fully graded when only the D-lock is approved — we follow the grade and the manufacturer’s notes rather than the photo.",
+  "Weights and locking areas come from the listing or manufacturer sheet we recorded. If two listings disagree, we say which source we used instead of inventing a middle number.",
 ];
 
 const METHOD_FAQS = [
   {
     q: "Have you cut these locks open?",
-    a: "No. Lock Desk is based on Sold Secure grades and manufacturer specs. Advertised cut-times are marketing, not our tests.",
+    a: "No. Lock Desk is based on Sold Secure grades and manufacturer specs. Advertised cut-times are marketing claims from the brand, not tests we have run.",
   },
   {
     q: "Why only eleven reviews?",
-    a: "Eleven honest pages beat a long catalogue we have not written. Each lock here has the same facts on record: Sold Secure grade, weight, locking area or length, and whether it clips on. Names we have not recorded that way do not get a review.",
+    a: "We would rather publish eleven pages with the same facts on record — Sold Secure grade, weight, locking area or length, and whether it clips on — than stretch into a long catalogue we have not researched. Names we have not recorded that way do not get a review.",
   },
   {
     q: "Do Amazon links change the verdict?",
@@ -146,8 +146,8 @@ export default function MethodPage() {
           </p>
         ))}
         <p>
-          You should know what stands behind a verdict. We help a UK rider match grade, fit, and
-          carry — from facts we can stand behind. Start with{" "}
+          You should be able to see what stands behind a verdict. These pages are meant to help a
+          UK rider match grade, fit, and carry using facts we can point to. Start with{" "}
           <Link href="/guide">how to choose</Link>, then the <Link href="/reviews">reviews</Link> or
           the <Link href="/best">best of</Link> table.
         </p>
@@ -164,8 +164,9 @@ export default function MethodPage() {
           ))}
         </div>
         <p>
-          Read <Link href="/guide">how to choose a bike lock</Link> first if you have not measured the
-          stand yet. Full reviews: <Link href="/reviews">bike lock reviews</Link>. Who we are:{" "}
+          If you have not measured the stand yet, read{" "}
+          <Link href="/guide">how to choose a bike lock</Link> first. Full reviews are under{" "}
+          <Link href="/reviews">bike lock reviews</Link>. Who we are is on{" "}
           <Link href="/about">About</Link>.
         </p>
       </article>

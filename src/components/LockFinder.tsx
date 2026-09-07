@@ -37,8 +37,8 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
   if (place === "home") {
     return {
       slug: "kryptonite-new-york-fahgettaboudit-1410",
-      why: "A 100 cm Gold chain for extra length at home. Use it at home. Take a D-lock on the bike for the commute.",
-      note: "Not a commute lock. Pair it with the Evolution Mini-7, the Pitbull STD, or the X1 for the ride.",
+      why: "This is a 100 cm Sold Secure Gold chain for longer reach where the bike is stored. Keep it at home, and take a lighter D-lock when you ride.",
+      note: "At 4.9 kg it is awkward for daily carry. Pair it with the Evolution Mini-7, the Pitbull STD, or the X1 for the commute.",
     };
   }
 
@@ -46,8 +46,8 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     if (carry === "home") {
       return {
         slug: "kryptonite-new-york-fahgettaboudit-1410",
-        why: "A fat post at home is a job for 100 cm of Gold chain, not a commute D-lock. Leave it where the bike is stored.",
-        note: "If you later take a lock on the bike, a Mini may not close on that post. The Pitbull LS or the ABUS 540 are the long shackles with a mount.",
+        why: "A thick post at home usually needs more length than a compact D-lock can offer. A 100 cm Gold chain can wrap that post and stay where the bike is stored.",
+        note: "If you later take a lock on the bike, a Mini may not close on that same post. The Pitbull LS and the ABUS 540 are the longer shackles that still include a frame mount.",
       };
     }
 
@@ -57,39 +57,39 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     if (needsDiamond && wantsMount) {
       return {
         slug: "onguard-pitbull-ls-8002",
-        why: "Long 115 × 292 mm Diamond D-lock with a frame mount. This is the lock that closes around posts a Mini cannot, without giving up a clip.",
-        note: "The ABUS 540 is 300 mm and Diamond for ordinary bikes (Gold for e-bikes). If you wanted Hiplok’s larger anti-grinder lock instead, that is the DX1000 — 112 × 205 mm, no mount, 2.75 kg.",
+        why: "The Pitbull LS is a long 115 × 292 mm Diamond D-lock with a frame mount, so it can close around posts that a Mini cannot while still clipping to the bike.",
+        note: "The ABUS 540 is 300 mm and Diamond for ordinary bikes (Gold for e-bikes). Hiplok’s larger anti-grinder option is the DX1000 — 112 × 205 mm, no mount, 2.75 kg.",
       };
     }
 
     if (needsDiamond) {
       return {
         slug: "hiplok-dx1000",
-        why: "Diamond for bikes and e-bikes, sold as anti-grinder, 112 × 205 mm — larger than the D1000’s 92 × 155 mm. 2.75 kg, no frame mount.",
-        note: "If the post is a true lamp-post, measure 205 mm. The Pitbull LS (292 mm) and the ABUS 540 (300 mm) are the longer shackles, both with mounts.",
+        why: "The DX1000 is Sold Secure Diamond for bikes and e-bikes, sold as anti-grinder, with a 112 × 205 mm locking area — larger than the D1000’s 92 × 155 mm. It weighs 2.75 kg and has no frame mount on this listing.",
+        note: "If the post is a true lamp-post, measure against 205 mm. The Pitbull LS (292 mm) and the ABUS 540 (300 mm) are longer shackles, and both include mounts.",
       };
     }
 
     if (wantsMount) {
       return {
         slug: "abus-granit-xplus-540",
-        why: "A compact Mini may not close on a fat post. 300 mm shackle, frame bracket, Diamond for ordinary bikes — Gold for e-bikes.",
-        note: "The OnGuard Pitbull LS is the other long Diamond D-lock with a mount (115 × 292 mm). The Bordo 6500 is Gold folding if you wanted 110 cm of flexible reach instead of a long shackle.",
+        why: "A compact Mini often will not close on a fat post. The ABUS 540 has a 300 mm shackle and a frame bracket. It is Diamond for ordinary bikes and Gold for e-bikes.",
+        note: "The OnGuard Pitbull LS is the other long Diamond D-lock with a mount (115 × 292 mm). If you prefer folding reach instead of a long shackle, the Bordo 6500 is Gold with 110 cm of bars.",
       };
     }
 
     return {
       slug: "abus-bordo-granit-xplus-6500",
-      why: "Sold Secure Gold, 110 cm of folding bars, 2.16 kg. Flexible reach around a fat post, and it still has an SH bracket if you later want it on the bike.",
-      note: "The Mini-7 is lighter if a compact D-lock already closes. For a long D-shackle instead, the Pitbull LS or the ABUS 540.",
+      why: "The Bordo 6500 is Sold Secure Gold with 110 cm of folding bars at 2.16 kg. That length helps around a fat post, and it still has an SH bracket if you later want it on the bike.",
+      note: "The Mini-7 is lighter when a compact D-lock already closes. If you want a long D-shackle instead, look at the Pitbull LS or the ABUS 540.",
     };
   }
 
   if (carry === "home") {
     return {
       slug: "kryptonite-new-york-fahgettaboudit-1410",
-      why: "If the lock can stay put, a 100 cm Gold chain gives you reach around a home stand or ground anchor.",
-      note: "Still take a D-lock when you ride away. The Mini-7 covers most Gold policies; the Pitbull STD or the X1 if you need Diamond on the bike.",
+      why: "When the lock can stay put, a 100 cm Gold chain gives you more reach around a home stand or ground anchor than most D-locks.",
+      note: "Take a D-lock when you ride away. The Mini-7 covers most Gold policies; use the Pitbull STD or the X1 if you need Diamond on the bike.",
     };
   }
 
@@ -102,12 +102,12 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     return {
       slug: "kryptonite-evolution-mini-7",
       why: wantsMount
-        ? "Sold Secure Gold, 1.61 kg, a frame mount, and a cable in the box. The cable is not Gold."
-        : "Sold Secure Gold at 1.61 kg — light enough for a bag, with a frame mount and cable in the box if you want them. The cable is not Gold.",
+        ? "The Evolution Mini-7 is Sold Secure Gold at 1.61 kg, with a frame mount and a cable in the box. The cable itself is not Sold Secure Gold."
+        : "The Evolution Mini-7 is Sold Secure Gold at 1.61 kg, light enough for a bag. A frame mount and cable are in the box if you want them. The cable itself is not Sold Secure Gold.",
       note:
         grade === "unsure"
-          ? "Most UK home policies still name Gold. If the wording later asks for Diamond, step up to the Pitbull STD (with a clip) or the X1. If you needed Gold with more reach than a Mini, that is the Bordo 6500."
-          : "If a Mini already closes, this is the commute lock. If you need folding reach instead, look at the Bordo 6500. If the bike is high-value and you will carry 1.7 kg, step up to the X1.",
+          ? "Most UK home policies still name Gold. If the wording later asks for Diamond, step up to the Pitbull STD (with a clip) or the X1. If you need Gold with more reach than a Mini, look at the Bordo 6500."
+          : "When a Mini closes on your stand, this is usually the easiest Gold lock to take every day. If you need folding reach, look at the Bordo 6500. If the bike is high-value and you will carry 1.7 kg, step up to the X1.",
     };
   }
 
@@ -115,16 +115,16 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
   if (needsDiamond && wantsMount) {
     return {
       slug: "onguard-pitbull-std-8003",
-      why: "Sold Secure Diamond for ordinary bikes, 1.44 kg, 115 × 230 mm, and a frame mount in the box — useful when you need Diamond that clips on.",
-      note: "Want a cable in the same box? That is the Pitbull DT 8005 — the cable is not Diamond. We do not have an e-bike grade listed for the Pitbulls; if the policy names powered Diamond, check Sold Secure and look at the X1.",
+      why: "The Pitbull STD is Sold Secure Diamond for ordinary bikes, 1.44 kg, 115 × 230 mm, with a frame mount in the box — useful when you need Diamond that clips on.",
+      note: "If you want a cable in the same box, that is the Pitbull DT 8005 — the cable is not Diamond. We do not have an e-bike grade listed for the Pitbulls; if the policy names powered Diamond, check Sold Secure and look at the X1.",
     };
   }
 
   // Diamond + bag (or any remaining Diamond path)
   return {
     slug: "litelok-x1",
-    why: "Diamond for bikes and e-bikes at 1.7 kg, with a locking area that works for an armoured D-lock.",
-    note: "No frame mount in this listing. The D1000 is only the pick if you have already measured 92 × 155 mm. If that hole is too small — e-bike, cargo, fatter stand — the DX1000 is 112 × 205 mm at 2.75 kg, still with no mount.",
+    why: "The X1 is Sold Secure Diamond for bikes and e-bikes at 1.7 kg, with a locking area that suits an armoured D-lock on a normal stand.",
+    note: "There is no frame mount in this listing. Choose the D1000 only if you have already measured 92 × 155 mm. If that hole is too small — e-bike, cargo, or a fatter stand — the DX1000 is 112 × 205 mm at 2.75 kg, still without a mount.",
   };
 }
 
@@ -226,18 +226,18 @@ function waitCopy(answered: number): { kicker: string; body: string } {
   if (answered === 0) {
     return {
       kicker: "Answer the three questions",
-      body: "Grade, place, and carry — then we name one lock from the set we have reviewed.",
+      body: "Tell us the grade you need, where you lock up, and how you will carry the lock. We will then suggest one lock from the set we have reviewed.",
     };
   }
   if (answered === 1) {
     return {
       kicker: "Two questions left",
-      body: "We name a lock once all three are answered.",
+      body: "We suggest a lock once all three answers are in.",
     };
   }
   return {
     kicker: "One question left",
-    body: "Answer the last one and we will name a lock.",
+    body: "Answer the last question and we will suggest a lock.",
   };
 }
 
@@ -271,8 +271,8 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
         <p className="kicker">Lock finder</p>
         <h2 id={`${id}-title`}>Find a lock</h2>
         <p className="finder-promise">
-          Three questions, then one lock from the set we have reviewed.
-          {complete ? " Change any answer and the pick updates." : ""}
+          Three short questions, then one suggestion from the locks we have reviewed.
+          {complete ? " Change any answer and the suggestion updates." : ""}
         </p>
         <div className="finder-progress" aria-hidden="true">
           <span data-on={grade ? "true" : "false"} />
@@ -293,7 +293,7 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
             <div className="choice-row" role="group" aria-labelledby={`${id}-q1`}>
               <Choice value="gold" current={grade} onPick={setGrade} mark="gold" label="Gold" help="Most home policies" />
               <Choice value="diamond" current={grade} onPick={setGrade} mark="diamond" label="Diamond" help="Higher grade" />
-              <Choice value="unsure" current={grade} onPick={setGrade} mark="unsure" label="Not sure" help="We’ll start from Gold" />
+              <Choice value="unsure" current={grade} onPick={setGrade} mark="unsure" label="Not sure" help="We’ll treat it as Gold for now" />
             </div>
           </div>
         </div>
@@ -340,7 +340,7 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
           aria-live="polite"
         >
           <div className="finder-result-top">
-            <p className="kicker">Your pick</p>
+            <p className="kicker">Suggested lock</p>
             <p className="stamp-row">
               <GradeStamp grade={product.specs?.soldSecurePedal} />
             </p>

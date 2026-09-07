@@ -79,7 +79,7 @@ export default async function AlternativesPage({ params }: Props) {
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">{displayName(hero)}</Link>.
         </p>
         <p className="first-pick">
-          First pick if you will carry a lock to work:{" "}
+          If you will carry a lock to work every day, start with the{" "}
           <Link href="/reviews/kryptonite-evolution-mini-7">{displayName(mini7)}</Link>.
         </p>
 
@@ -89,7 +89,10 @@ export default async function AlternativesPage({ params }: Props) {
             <h2>
               <Link href="/reviews/kryptonite-evolution-mini-7">{displayName(mini7)}</Link>
             </h2>
-            <p>1.61 kg, Gold, frame mount, cable in the box. The cable is not Gold.</p>
+            <p>
+              Sold Secure Gold at 1.61 kg, with a frame mount and a cable in the box. The cable
+              itself is not Sold Secure Gold.
+            </p>
             <p>
               <Link href="/reviews/kryptonite-evolution-mini-7" className="primary-link">
                 Read the review
@@ -102,9 +105,12 @@ export default async function AlternativesPage({ params }: Props) {
             <h2>
               <Link href="/reviews/litelok-x1">{displayName(x1)}</Link>
             </h2>
-            <p>Diamond for bikes and e-bikes, 1.7 kg, 101 × 197 mm locking area.</p>
             <p>
-              {displayName(d1000)} only if you have measured 92 × 155 mm.{" "}
+              Sold Secure Diamond for bikes and e-bikes, 1.7 kg, with a 101 × 197 mm locking
+              area.
+            </p>
+            <p>
+              Choose the {displayName(d1000)} only if you have already measured 92 × 155 mm.{" "}
               <Link href="/reviews/hiplok-d1000">Read the D1000 review</Link>.
             </p>
             <p>
@@ -125,7 +131,10 @@ export default async function AlternativesPage({ params }: Props) {
                 {displayName(chain)}
               </Link>
             </h2>
-            <p>100 cm, 14 mm, 4.9 kg. A home lock, not a commute lock.</p>
+            <p>
+              100 cm of 14 mm chain at 4.9 kg. That length is useful at home or in a shed; it is
+              usually too heavy to take on a daily commute.
+            </p>
             <p>
               <Link href="/reviews/kryptonite-new-york-fahgettaboudit-1410" className="primary-link">
                 Read the review

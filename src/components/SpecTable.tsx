@@ -98,15 +98,15 @@ export function SpecFigures({ product }: { product: Product }) {
         ))}
       </dl>
       <p className="meta">
-        Grades should be confirmed on Sold Secure’s{" "}
+        Confirm the grade on Sold Secure’s{" "}
         <a
           href={SOLD_SECURE_APPROVED_SEARCH}
           target="_blank"
           rel="noopener noreferrer"
         >
           approved product search
-        </a>
-        . {soldSecureSearchHint(product.brand, shortName(product))}.
+        </a>{" "}
+        before you buy. {soldSecureSearchHint(product.brand, shortName(product))}.
       </p>
     </>
   );

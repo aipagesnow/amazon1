@@ -103,7 +103,7 @@ export default async function UseCasePage({ params }: Props) {
         </div>
 
         <p>
-          <strong>This page is not aimed at:</strong> {item.notFor}
+          <strong>Less suitable if:</strong> {item.notFor}
         </p>
         {item.policy?.map((p) => (
           <p key={p}>{p}</p>

@@ -69,7 +69,7 @@ export default function ReviewsIndexPage() {
       />
       <article className="prose wrap tight">
         <DisclosureStrip />
-        <p className="meta">Last checked: {site.lastChecked}. We re-check grades and key specs when we refresh a review.</p>
+        <p className="meta">Last checked: {site.lastChecked}. We re-check grades and key specs whenever we refresh a review.</p>
         {REVIEWS_INTRO.map((p) => (
           <p key={p}>
             <RichText text={p} />
@@ -79,8 +79,9 @@ export default function ReviewsIndexPage() {
           <RichText text={REVIEWS_INTRO_EXTRA} />
         </p>
         <p className="alt-chip">
-          Looking for{" "}
-          <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>?
+          If you landed here looking for{" "}
+          <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>, that page is
+          separate from this index.
         </p>
         {GROUPS.map((group) => (
           <section className="card-group" key={group.title}>
@@ -95,7 +96,12 @@ export default function ReviewsIndexPage() {
           </section>
         ))}
         <p>
-          Start with <Link href="/guide">how to choose</Link> if you have not measured the stand yet. Job guides: <Link href="/for/commuting">commuting</Link> · <Link href="/for/insurance">insurance</Link>. Comparisons: <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link> · <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>.
+          If you have not measured the stand yet, start with{" "}
+          <Link href="/guide">how to choose</Link>. Job guides:{" "}
+          <Link href="/for/commuting">commuting</Link> ·{" "}
+          <Link href="/for/insurance">insurance</Link>. Comparisons:{" "}
+          <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link> ·{" "}
+          <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>.
         </p>
       </article>
     </>

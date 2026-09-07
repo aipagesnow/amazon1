@@ -4,9 +4,9 @@
   "domain": "lockdesk.co.uk",
   "slug": "lock-desk",
   "niche": "Bike locks (D-locks and chains)",
-  "audience": "UK commuters and cyclists who need a lock their insurer will accept and that they will still carry",
+  "audience": "UK commuters and cyclists matching a Sold Secure grade to a lock they will still take to work",
   "primaryKeyword": "best bike lock UK",
-  "angle": "Sold Secure ratings, insurance, and what you will actually carry — focused on graded D-locks and chains rather than every cable lock in the shop",
+  "angle": "Sold Secure grades, manufacturer specs, and UK insurance wording — graded D-locks and chains, not every cable lock on the shelf",
   "locale": "en-GB",
   "market": "United Kingdom",
   "store": "amazon.co.uk",
@@ -60,7 +60,7 @@
       "type": "home",
       "route": "/",
       "intent": "navigational",
-      "notes": "Magazine hub. Editor's pick. Not a product grid. Not fake issue numbers."
+      "notes": "Site hub with a clear pick and next steps. Not a product grid."
     },
     {
       "type": "how-to-choose",
@@ -102,7 +102,7 @@
       "type": "methodology",
       "route": "/method",
       "intent": "informational",
-      "notes": "How the site researches. Not fake lab tests."
+      "notes": "How the site researches locks from Sold Secure grades and manufacturer specs. No invented cut tests."
     },
     {
       "type": "about",

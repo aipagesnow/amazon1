@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`,
   },
   description:
-    "UK comparisons of D-locks and chains. Sold Secure grades, insurance wording, and which lock you will actually carry.",
+    "UK comparisons of D-locks and chains, covering Sold Secure grades, insurance wording, and the weight you will still take to work.",
   openGraph: {
     siteName: site.name,
     locale: "en_GB",

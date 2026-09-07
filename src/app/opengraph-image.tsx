@@ -64,7 +64,7 @@ export default function OpenGraphImage() {
             UK bike lock comparisons.
           </div>
           <div style={{ fontSize: 28, color: "#c9c2b3", maxWidth: 820 }}>
-            Sold Secure grades, insurance, and which lock you will actually carry.
+            Sold Secure grades, insurance wording, and the weight you will still take to work.
           </div>
         </div>
       </div>

@@ -49,7 +49,7 @@ export function LockTile({ product, bestFor, caveat, compact = false }: Props) {
             Read the review
           </Link>
         ) : (
-          <span className="meta">No full review of this lock yet</span>
+          <span className="meta">No full review of this lock yet.</span>
         )}
         <SeeOnAmazon asin={product.asin} variant="text" />
       </p>

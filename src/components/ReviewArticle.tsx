@@ -38,7 +38,7 @@ function AltCard({ slug, why, kicker }: { slug: string; why: string; kicker: str
           </Link>
         </p>
       ) : (
-        <p className="meta">No full review of this lock yet.</p>
+        <p className="meta">We do not have a full review of this lock yet.</p>
       )}
       <SeeOnAmazon asin={product.asin} className="see-on-amazon" />
     </article>
@@ -118,7 +118,7 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
           <h2>Verdict</h2>
           <p>{copy.verdict}</p>
           <p className="meta">
-            Grade, fit, and carry basics live on{" "}
+            If you still need help matching grade, fit, and carry, start with{" "}
             <Link href="/guide">how to choose a bike lock</Link>.
           </p>
           <SeeOnAmazon asin={product.asin} className="btn-amazon" />
@@ -184,8 +184,8 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
 
         <h2>The numbers</h2>
         <p>
-          Weights, grades, and sizes below come from the manufacturer and from Sold Secure. If a
-          figure is missing, we leave it blank rather than guess.
+          The weights, grades, and sizes below come from the manufacturer and from Sold Secure. If a
+          figure is missing, we leave the cell blank rather than guess.
         </p>
         <SpecTable product={product} />
         <p className="meta">
@@ -200,10 +200,10 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
           before you buy. {soldSecureSearchHint(product.brand, shortName(product))}.
         </p>
 
-        <h2>Better alternatives</h2>
+        <h2>Other options</h2>
         <div className="alt-grid">
-          <AltCard slug={copy.altBest} why={copy.altBestWhy} kicker="Better alternative" />
-          <AltCard slug={copy.altSecond} why={copy.altSecondWhy} kicker="Also consider" />
+          <AltCard slug={copy.altBest} why={copy.altBestWhy} kicker="Another option" />
+          <AltCard slug={copy.altSecond} why={copy.altSecondWhy} kicker="Also worth a look" />
         </div>
 
         {related ? (
@@ -229,14 +229,15 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         </div>
 
         <p>
-          Start with <Link href="/guide">how to choose a bike lock</Link> if you have not measured
-          the stand. Compare the set on <Link href="/best">best bike locks UK</Link>. Pair this
-          with <Link href={vsHref}>{vsLabel}</Link>. How we research:{" "}
+          If you have not measured the stand yet, start with{" "}
+          <Link href="/guide">how to choose a bike lock</Link>. You can compare the shortlist on{" "}
+          <Link href="/best">best bike locks UK</Link>, or read{" "}
+          <Link href={vsHref}>{vsLabel}</Link>. For how these pages are put together, see{" "}
           <Link href="/method">how we research</Link>.
         </p>
 
         <div className="review-close">
-          <p>Prices and stock are on Amazon on the day you click through.</p>
+          <p>Prices and stock on Amazon can change, so check them on the day you click through.</p>
           <Link href="/reviews" className="primary-link">
             All reviews
           </Link>

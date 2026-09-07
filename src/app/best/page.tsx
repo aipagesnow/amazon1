@@ -85,8 +85,9 @@ export default function BestPage() {
         <aside className="chooser" aria-label="Shortlist size">
           <p>
             <strong>Seven locks on this shortlist.</strong> The other four of the eleven (DX1000,
-            Pitbull DT, Pitbull LS, New York Mini) live under{" "}
-            <Link href="/reviews">Reviews</Link> for specific jobs — not the shortlist.
+            Pitbull DT, Pitbull LS, and the New York Mini) have full reviews under{" "}
+            <Link href="/reviews">Reviews</Link> because they suit more specific jobs than this
+            shortlist covers.
           </p>
         </aside>
 
@@ -168,7 +169,7 @@ export default function BestPage() {
             <p className="spec-scroll-hint">Swipe for more columns</p>
             <div className="spec-scroll">
             <table className="spec">
-              <caption>D-locks first, then the folding lock, then the home chain. Weights from the product specs.</caption>
+              <caption>D-locks first, then the folding lock, then the home chain. Weights come from the product specs we recorded.</caption>
               <thead>
                 <tr>
                   <th>Lock</th>
@@ -218,16 +219,17 @@ export default function BestPage() {
 
         <h2>Head-to-head</h2>
         <p>
-          If you are choosing between two locks, these short comparisons sit beside the Best of table. They do not replace it.
+          If you are choosing between two locks, these short comparisons sit beside the Best of
+          table. They add detail for those pairs rather than replacing the shortlist.
         </p>
         <ul>
           <li>
             <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs Hiplok D1000</Link> —
-            Gold commute Mini against a Diamond compact D-lock.
+            a Gold commute Mini compared with a Diamond compact D-lock.
           </li>
           <li>
-            <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> — when to carry a D-lock, when a
-            chain earns its weight, and when both make sense.
+            <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> — when a D-lock is easier to
+            carry, when a chain’s length is useful, and when it makes sense to use both.
           </li>
         </ul>
 

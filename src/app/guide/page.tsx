@@ -77,7 +77,7 @@ export default function GuidePage() {
           <p key={p}>{p}</p>
         ))}
         <p>
-          Prefer a short quiz first?{" "}
+          If you would rather answer three short questions first, use{" "}
           <Link href="/#finder">Find a lock on the home page</Link>.
         </p>
       </article>
@@ -144,7 +144,7 @@ export default function GuidePage() {
             </table>
           </div>
           <p>
-            Full table: <Link href="/best">best of</Link>. Comparison:{" "}
+            The full shortlist is on <Link href="/best">best of</Link>. For a direct pair, see{" "}
             <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs D1000</Link>.
           </p>
         </div>

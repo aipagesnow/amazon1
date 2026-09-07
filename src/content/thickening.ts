@@ -91,7 +91,7 @@ export const ALT_META =
   "2.06 kg, no mount, 18 mm Gold. If that is too heavy or too small, carry the Evolution Mini-7, step to Diamond, or keep a New York chain at home.";
 
 export const ALT_BODY_EXTRA = [
-  "If you need a lock you will take to work, start with the Evolution Mini-7: same brand family, Gold, 1.61 kg, a frame clip, and a cable in the box. The cable is not Gold. That is the honest commute fork for most UK riders whose policy still names Gold.",
+  "If you need a lock you will take to work, start with the Evolution Mini-7: same brand family, Gold, 1.61 kg, a frame clip, and a cable in the box. The cable is not Gold. For most UK riders whose policy still names Gold, that is the clearer daily choice in this set.",
   "If the policy names Diamond — including the e-bike grade — a thicker Gold Mini will not fix that. Look at the Litelok X1 (1.7 kg, Diamond for ordinary bikes and e-bikes, 101 × 197 mm). The Hiplok D1000 is also Diamond, but only after you have measured its 92 × 155 mm shackle.",
   "If the problem is reach at home, not thickness on a Mini, the New York 1410 chain is the sibling that uses the name well: 100 cm, 14 mm, 4.9 kg, Gold. Leave it where the bike is stored overnight. Take a D-lock when you ride away. See [D-lock vs chain](/vs/d-lock-vs-chain).",
   "This page exists because people search for alternatives to the New York Mini. Full write-ups live under [reviews](/reviews). How we pick grades and weights: [how to choose](/guide) and [how we research](/method).",
@@ -106,17 +106,17 @@ export const VS_AFTER_EXTRA: Record<string, string> = {
 
 export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "litelok-x1":
-    "Pedal and powered Diamond, 1.7 kg, 101 × 197 mm. A clear Diamond option when you will still carry it. Based on grades and specs, not a cut test.",
+    "Sold Secure Diamond for ordinary bikes and e-bikes, 1.7 kg, 101 × 197 mm locking area. Based on published grades and specs, not a cut test.",
   "hiplok-d1000":
     "Diamond, 1.9 kg, 92 × 155 mm, no mount. Useful after you have measured the rack; less useful if Gold and a cable already meet the policy.",
   "kryptonite-evolution-mini-7":
-    "Sold Secure Gold, 1.61 kg, mount and cable in the box. The cable is not Gold. The commute lock most people will actually carry.",
+    "Sold Secure Gold, 1.61 kg, mount and cable in the box. The cable is not Gold. A commute lock many UK riders will still take every day.",
   "abus-granit-xplus-540":
-    "Pedal Diamond, powered Gold, 108 × 300 mm, mount in the box. For racks a Mini will not hug. Not an anti-grinder story.",
+    "Diamond for ordinary bikes, Gold for e-bikes, 108 × 300 mm, mount in the box. For stands a compact Mini will not close on. Not listed as angle-grinder resistant.",
   "kryptonite-new-york-fahgettaboudit-mini":
-    "18 mm Gold Mini, 2.06 kg, no mount, no cable. A thick second lock. Most commuters should buy the Evolution Mini-7.",
+    "18 mm Gold Mini, 2.06 kg, no mount, no cable. A thick second lock. The Evolution Mini-7 is usually easier for daily carry.",
   "kryptonite-new-york-fahgettaboudit-1410":
-    "100 cm, 14 mm, 4.9 kg, Sold Secure Gold. A house or terrace chain. Not the lock you pedal with.",
+    "100 cm, 14 mm, 4.9 kg, Sold Secure Gold. Extra length for home or a terrace. The weight suits storage more than a daily commute.",
   "hiplok-dx1000":
     "Pedal and powered Diamond, 2.75 kg, 112 × 205 mm, no mount. Larger than the D1000. Measure the stand.",
   "onguard-pitbull-std-8003":
@@ -137,7 +137,7 @@ export const REVIEW_RELATED_WELLS: Record<
     href: "/for/insurance",
     title: "Best bike lock for insurance",
     blurb:
-      "Match Sold Secure Gold or Diamond to the policy, then check the insurer’s list. The X1 is a strong Diamond option when you will still carry 1.7 kg.",
+      "Match Sold Secure Gold or Diamond to the policy, then check the insurer’s list. The X1 is worth considering for Diamond when you will still carry 1.7 kg.",
   },
   "hiplok-d1000": {
     href: "/vs/evolution-mini-7-vs-d1000",
