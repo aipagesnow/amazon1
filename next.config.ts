@@ -15,7 +15,10 @@ const nextConfig: NextConfig = {
     ];
   },
   async rewrites() {
-    return [{ source: "/favicon.ico", destination: "/icon" }];
+    return [
+      { source: "/icon", destination: "/icon.png" },
+      { source: "/apple-icon", destination: "/apple-icon.png" },
+    ];
   },
 };
 
