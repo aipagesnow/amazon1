@@ -53,17 +53,20 @@ export function SiteFooter() {
                 <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/about#disclosure">Disclosure</Link>
+                <Link href="/disclosure">Disclosure</Link>
               </li>
               <li>
-                <Link href="/about#privacy">Privacy</Link>
+                <Link href="/privacy">Privacy</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
         </nav>
         <p className="footer-disclosure">
           {DISCLOSURE_SUBTLE}{" "}
-          <Link href="/about#disclosure">Disclosure</Link>.
+          <Link href="/disclosure">Disclosure</Link>.
         </p>
       </div>
     </footer>

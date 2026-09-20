@@ -10,10 +10,10 @@ export const site = {
   angle: siteJson.angle,
   url: `https://www.${siteJson.domain}`,
   locale: "en-GB",
-  /** Internal / handover only — do not show on public pages (Flippa buyer changes this). */
+  /** Publisher — fine to show on About / Contact. */
   operator: "Aivora Digital",
   contact: "aivora@agentmail.to",
-  /** Shown on Best of and reviews for Flippa / reader freshness */
+  /** Shown on Best of and reviews for reader freshness */
   lastChecked: "6 September 2026",
   /** Quiet research note on review pages — not a personal byline */
   authorLine: "Assessment based on published specs and Sold Secure grades",

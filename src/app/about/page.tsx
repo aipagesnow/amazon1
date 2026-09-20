@@ -4,9 +4,9 @@ import { ALTERNATIVES_PATH } from "@/lib/products";
 import { pageUrl, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About, disclosure, and privacy",
+  title: "About Lock Desk",
   description:
-    "Who operates Lock Desk, Amazon Associates disclosure, and privacy. We are not Amazon.",
+    "Who runs Lock Desk, how to contact us, and where to find our Amazon Associates disclosure and privacy notice.",
   alternates: { canonical: pageUrl("/about") },
 };
 
@@ -17,8 +17,9 @@ export default function AboutPage() {
       <h1 id="about">About Lock Desk</h1>
       <nav className="jump-list" aria-label="On this page">
         <a href="#who">Who writes this</a>
-        <a href="#disclosure">Disclosure</a>
-        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+        <Link href="/disclosure">Disclosure</Link>
+        <Link href="/privacy">Privacy</Link>
         <Link href="/method">How we research</Link>
       </nav>
       <p className="lede">
@@ -56,27 +57,21 @@ export default function AboutPage() {
         <Link href="/method">how we research bike locks</Link>.
       </p>
       <p>
-        This is an independent UK comparison site. Contact details are provided on handover if you
-        buy the site.
+        Lock Desk is published by Aivora Digital. It is an independent UK comparison site, not a
+        shop and not Amazon.
       </p>
 
-      <h2 id="disclosure">Disclosure</h2>
+      <h2 id="contact">Contact</h2>
       <p>
-        As an Amazon Associate, Lock Desk earns from qualifying purchases. We are not Amazon.
-        Prices and availability change on Amazon. A short note appears on pages with Amazon links,
-        before those links. Buttons say See on Amazon. We do not scrape prices or star ratings.
+        For questions, corrections, or anything else about this site, email{" "}
+        <a href={`mailto:${site.contact}`}>{site.contact}</a>. We read every message and aim to
+        reply within a few working days.
       </p>
       <p>
-        How we research: <Link href="/method">how we research bike locks</Link>.
+        Full affiliate disclosure: <Link href="/disclosure">Disclosure</Link>. Privacy notice:{" "}
+        <Link href="/privacy">Privacy</Link>. Or use the{" "}
+        <Link href="/contact">contact page</Link>.
       </p>
-
-      <h2 id="privacy">Privacy</h2>
-      <p>
-        We do not sell personal data. This site does not currently run a named analytics product. If
-        that changes, this paragraph will name it.
-      </p>
-      <p>Outbound clicks to Amazon.co.uk are their site, under their privacy notice.</p>
-
     </article>
   );
 }

@@ -38,7 +38,7 @@ const METHOD_FAQS = [
   },
   {
     q: "Do Amazon links change the verdict?",
-    a: "No. Some links go to Amazon.co.uk and may earn Lock Desk a small commission. Buttons say See on Amazon. Prices and stock are Amazon’s on the day you click. See [About](/about#disclosure).",
+    a: "No. Some links go to Amazon.co.uk and may earn Lock Desk a small commission. Buttons say See on Amazon. Prices and stock are Amazon’s on the day you click. See [Disclosure](/disclosure).",
   },
 ];
 
@@ -132,7 +132,7 @@ export default function MethodPage() {
         <h2>Amazon</h2>
         <p className="disclosure disclosure-subtle">
           Amazon Associate links may earn Lock Desk a commission.{" "}
-          <Link href="/about#disclosure">Disclosure</Link>
+          <Link href="/disclosure">Disclosure</Link>
         </p>
         <p>
           {site.name} is not Amazon. Outbound buttons say See on Amazon. Prices and stock are
