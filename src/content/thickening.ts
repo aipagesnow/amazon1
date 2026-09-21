@@ -26,6 +26,11 @@ export const HOME_NEXT = [
     title: "Best lock for commuting",
     blurb: "For most weekday riders on Gold, start with the Mini-7. Look at the X1 if the policy names Diamond.",
   },
+  {
+    href: "/for/anti-grinder",
+    title: "Anti-grinder bike locks",
+    blurb: "What Diamond, locking area, and carry mean when a lock is sold against angle grinders.",
+  },
 ] as const;
 
 export const HOME_FAQS: Faq[] = [
@@ -47,7 +52,7 @@ export const BEST_META =
   "D-locks, a folding lock, and a chain compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.";
 
 export const BEST_INTRO_EXTRA =
-  "If you already know the job, jump to [best lock for commuting](/for/commuting) or [best lock for insurance](/for/insurance). If you are stuck between two names, try [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000) or [D-lock vs chain](/vs/d-lock-vs-chain). Looking for something instead of the New York Mini? See the [alternatives page](/alternatives/kryptonite-new-york-fahgettaboudit-mini).";
+  "If you already know the job, jump to [best lock for commuting](/for/commuting) or [best lock for insurance](/for/insurance). Comparing locks sold against grinders? See [what to look for in an anti-grinder lock](/for/anti-grinder). If you are stuck between two names, try [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000) or [D-lock vs chain](/vs/d-lock-vs-chain). Looking for something instead of the New York Mini? See the [alternatives page](/alternatives/kryptonite-new-york-fahgettaboudit-mini).";
 
 export const BEST_FAQS: Faq[] = [
   {
@@ -68,7 +73,7 @@ export const REVIEWS_META =
   "Eleven UK D-lock, folding-lock and chain reviews. Each page says who the lock suits, when another is a better fit, and the drawbacks.";
 
 export const REVIEWS_INTRO_EXTRA =
-  "Need a shortlist first? Use the [best of](/best) table. Choosing from scratch? Read [how to choose a bike lock](/guide). Job-led guides: [commuting](/for/commuting) and [insurance](/for/insurance).";
+  "Need a shortlist first? Use the [best of](/best) table. Choosing from scratch? Read [how to choose a bike lock](/guide). Job-led guides: [commuting](/for/commuting), [insurance](/for/insurance), and [anti-grinder](/for/anti-grinder).";
 
 export const GUIDE_FAQ_EXTRA: Faq = {
   q: "Where do I match a lock to my insurance?",
@@ -76,12 +81,12 @@ export const GUIDE_FAQ_EXTRA: Faq = {
 };
 
 export const COMMUTE_BODY_EXTRA = [
-  "Stuck between Gold and Diamond? See [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000). Reach at home versus carry on the bike: [D-lock vs chain](/vs/d-lock-vs-chain).",
+  "Shopping locks sold as anti-grinder? See [what to look for in an anti-grinder bike lock](/for/anti-grinder) before you upgrade on marketing alone. Stuck between Gold and Diamond? See [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000). Reach at home versus carry on the bike: [D-lock vs chain](/vs/d-lock-vs-chain).",
   "Grade, measuring the stand, and carry weight are covered once on [how to choose](/guide). Limits of our method: [how we research](/method).",
 ];
 
 export const INSURANCE_BODY_EXTRA = [
-  "Policies often care how you locked the bike as well as the grade — frame to a fixed object, not a wheel alone. Read those lines before you upgrade on thickness alone. Basics of grade, fit, and carry: [how to choose](/guide).",
+  "If the policy already names Diamond and you are comparing locks sold against grinders, see [what to look for in an anti-grinder bike lock](/for/anti-grinder). Policies often care how you locked the bike as well as the grade — frame to a fixed object, not a wheel alone. Read those lines before you upgrade on thickness alone. Basics of grade, fit, and carry: [how to choose](/guide).",
   "If the policy names Gold and you will carry the lock every day, start with the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7): 1.61kg, a frame clip, and a cable in the box. The cable is not Gold. If a Mini will not reach and Gold is still enough, look at the [Bordo 6500](/reviews/abus-bordo-granit-xplus-6500). If the policy names Diamond and you will carry 1.7kg, start with the [Litelok X1](/reviews/litelok-x1). If you need Diamond with a clip, that is the [Pitbull STD](/reviews/onguard-pitbull-std-8003). The [D1000](/reviews/hiplok-d1000) is Diamond too, but only after you have measured 92 × 155 mm.",
   "Do not buy the ABUS 540 to satisfy an e-bike Diamond line. On our records it is Diamond for ordinary bikes and Gold for e-bikes. Use it when a compact D-lock will not close and the ordinary-bike grade still matches.",
   "We are not your broker. How we treat grades and what we will not claim: [how we research](/method).",
@@ -99,7 +104,7 @@ export const ALT_BODY_EXTRA = [
 
 export const VS_AFTER_EXTRA: Record<string, string> = {
   "evolution-mini-7-vs-d1000":
-    "For the weekday ride, see [best bike lock for commuting](/for/commuting). For the policy wording, see [best bike lock for insurance](/for/insurance). The wider chooser is [how to choose a bike lock](/guide).",
+    "For the weekday ride, see [best bike lock for commuting](/for/commuting). For the policy wording, see [best bike lock for insurance](/for/insurance). For Diamond locks sold against grinders, see [what to look for in an anti-grinder lock](/for/anti-grinder). The wider chooser is [how to choose a bike lock](/guide).",
   "d-lock-vs-chain":
     "Still choosing a daily lock? [Best lock for commuting](/for/commuting) names the Mini-7 and the X1. The [best of](/best) table puts both next to the home chain so the weight difference is obvious.",
 };
@@ -134,16 +139,16 @@ export const REVIEW_RELATED_WELLS: Record<
   { href: string; title: string; blurb: string }
 > = {
   "litelok-x1": {
-    href: "/for/insurance",
-    title: "Best bike lock for insurance",
+    href: "/for/anti-grinder",
+    title: "What to look for in an anti-grinder lock",
     blurb:
-      "Match Sold Secure Gold or Diamond to the policy, then check the insurer’s list. The X1 is the usual Diamond pick when you will still carry 1.7kg.",
+      "The X1 is the usual Diamond starting point when a lock is sold against grinders and you will still carry 1.7kg.",
   },
   "hiplok-d1000": {
-    href: "/vs/evolution-mini-7-vs-d1000",
-    title: "Evolution Mini-7 vs D1000",
+    href: "/for/anti-grinder",
+    title: "What to look for in an anti-grinder lock",
     blurb:
-      "Gold you will carry versus Diamond with a tight shackle. Read this before you upgrade on weight alone.",
+      "Diamond, locking area, and carry when a lock is sold against angle grinders. Measure 92 × 155 mm before you buy this one.",
   },
   "kryptonite-evolution-mini-7": {
     href: "/for/commuting",
@@ -163,10 +168,10 @@ export const REVIEW_RELATED_WELLS: Record<
       "A D-lock for the commute, a chain for reach at home. Using both is common; commuting with 4.9kg is not.",
   },
   "hiplok-dx1000": {
-    href: "/vs/evolution-mini-7-vs-d1000",
-    title: "Evolution Mini-7 vs D1000",
+    href: "/for/anti-grinder",
+    title: "What to look for in an anti-grinder lock",
     blurb:
-      "Gold you will carry versus Diamond with a tight shackle. The DX1000 is the larger Hiplok if 92 × 155 mm will not close.",
+      "When to pick the larger Hiplok hole (112 × 205 mm) versus the X1 or the compact D1000.",
   },
   "onguard-pitbull-std-8003": {
     href: "/for/commuting",
@@ -192,6 +197,14 @@ export const REVIEW_RELATED_WELLS: Record<
       "A Mini for a tight stand, a chain for reach at home. The Bordo sits between: Gold folding reach you can still clip on.",
   },
 };
+
+export const ANTI_GRINDER_META =
+  "What to look for in an anti-grinder bike lock in the UK — Sold Secure Diamond, locking area, and weight you will still carry. Specs and maker claims, not cut tests.";
+
+export const ANTI_GRINDER_BODY_EXTRA = [
+  "Still choosing on a weekday Gold policy? See [best bike lock for commuting](/for/commuting). Matching a Diamond line on the policy: [best bike lock for insurance](/for/insurance). Head-to-head Gold Mini versus the compact Hiplok: [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000).",
+  "Full write-ups: [Litelok X1](/reviews/litelok-x1), [Hiplok D1000](/reviews/hiplok-d1000), [Hiplok DX1000](/reviews/hiplok-dx1000). How we treat grades and claims: [how we research](/method).",
+];
 
 export const COMMUTE_META =
   "A commute lock is one you take every day. For most UK riders that is a Gold Mini with a frame clip. Step up to Diamond if the bike is worth the weight.";

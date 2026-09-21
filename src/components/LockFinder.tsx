@@ -352,6 +352,11 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
               <span className="finder-note-label">Note</span> {pick.note}
             </p>
           ) : null}
+          {["litelok-x1", "hiplok-d1000", "hiplok-dx1000"].includes(pick.slug) ? (
+            <p className="finder-note">
+              <Link href="/for/anti-grinder">Anti-grinder buyer’s guide</Link>
+            </p>
+          ) : null}
           <p className="tile-actions">
             <Link href={`/reviews/${product.slug}`} className="primary-link">
               Read the review

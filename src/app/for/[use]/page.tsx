@@ -8,6 +8,8 @@ import { ProductCard } from "@/components/ProductCard";
 import { RichText } from "@/components/RichText";
 import { CASES, useOf } from "@/content/pages";
 import {
+  ANTI_GRINDER_BODY_EXTRA,
+  ANTI_GRINDER_META,
   COMMUTE_BODY_EXTRA,
   COMMUTE_META,
   INSURANCE_BODY_EXTRA,
@@ -29,7 +31,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!item) return {};
   const url = pageUrl(`/for/${item.slug}`);
   const description =
-    item.slug === "commuting" ? COMMUTE_META : item.description;
+    item.slug === "commuting"
+      ? COMMUTE_META
+      : item.slug === "anti-grinder"
+        ? ANTI_GRINDER_META
+        : item.description;
   return {
     title: item.title,
     description,
@@ -57,8 +63,20 @@ export default async function UseCasePage({ params }: Props) {
         ]}
       />
       <PageHero
-        image={item.slug === "insurance" ? photos.insurance : photos.commute}
-        alt={item.slug === "insurance" ? photoAlt.insurance : photoAlt.commute}
+        image={
+          item.slug === "insurance"
+            ? photos.insurance
+            : item.slug === "anti-grinder"
+              ? photos.pick
+              : photos.commute
+        }
+        alt={
+          item.slug === "insurance"
+            ? photoAlt.insurance
+            : item.slug === "anti-grinder"
+              ? photoAlt.pick
+              : photoAlt.commute
+        }
         kicker="Guide"
         title={item.title}
         lede={item.description}
@@ -114,7 +132,14 @@ export default async function UseCasePage({ params }: Props) {
             <RichText text={p} />
           </p>
         ))}
-        {(item.slug === "commuting" ? COMMUTE_BODY_EXTRA : item.slug === "insurance" ? INSURANCE_BODY_EXTRA : []).map(
+        {(item.slug === "commuting"
+          ? COMMUTE_BODY_EXTRA
+          : item.slug === "insurance"
+            ? INSURANCE_BODY_EXTRA
+            : item.slug === "anti-grinder"
+              ? ANTI_GRINDER_BODY_EXTRA
+              : []
+        ).map(
           (p) => (
             <p key={p}>
               <RichText text={p} />

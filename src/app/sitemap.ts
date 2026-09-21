@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/vs/d-lock-vs-chain",
     "/for/commuting",
     "/for/insurance",
+    "/for/anti-grinder",
     "/alternatives/kryptonite-new-york-fahgettaboudit-mini",
     ...REVIEW_SLUGS.map((slug) => `/reviews/${slug}`),
   ];

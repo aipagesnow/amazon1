@@ -60,7 +60,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
     paragraphs: [
       "Sold Secure is the UK group that tests bike locks. Locks are graded Bronze, Silver, Gold, and Diamond. Gold is still what a lot of household cycle insurance asks for. Diamond is the next step up. Neither grade means the lock cannot be cut. Diamond is tested against a tougher set of tools than Gold. It is not a promise that a thief with a battery grinder will walk away.",
       "There is a separate Sold Secure test for e-bikes. A lock can be Diamond for an ordinary bike and only Gold for an e-bike. That split matters if your policy names the e-bike grade. The ABUS Granit XPlus 540 is the example on these pages: Diamond for ordinary bikes, Gold for e-bikes.",
-      "Treat lines such as “20× more resistant” as advertising unless an independent grade is marked on the lock. After this page, read [best bike lock for insurance](/for/insurance). We do not keep a live list of which insurers accept which models. Those lists change, and we are not selling you a policy.",
+      "Treat lines such as “20× more resistant” as advertising unless an independent grade is marked on the lock. If you are shopping locks sold against angle grinders, read [what to look for in an anti-grinder bike lock](/for/anti-grinder). After this page, read [best bike lock for insurance](/for/insurance). We do not keep a live list of which insurers accept which models. Those lists change, and we are not selling you a policy.",
     ],
   },
   {
@@ -474,6 +474,52 @@ export const CASES: UseCase[] = [
       {
         q: "Will you tell me which insurer accepts which lock?",
         a: "No. Lists change, and we do not sell insurance. Read the list that belongs to your policy. Then match the model.",
+      },
+    ],
+  },
+  {
+    slug: "anti-grinder",
+    title: "What to look for in an anti-grinder bike lock",
+    description:
+      "A UK buyer’s guide to anti-angle-grinder bike locks: Sold Secure Diamond, locking area, and weight you will still carry. Based on published specs and maker claims — not cut tests.",
+    h2: "Three Diamond locks sold with anti-grinder claims",
+    notFor:
+      "This page is for riders who already need Diamond and are comparing locks marketed against angle grinders. If your policy still names Gold and you will carry a compact Mini every day, start with the commuting guide instead.",
+    body: [
+      "“Anti-grinder” on a product page is the maker’s language. It is not a Sold Secure grade on its own. In the UK, the independent mark you match to insurance is still Sold Secure Gold or Diamond (and, on some policies, the e-bike grade). Treat cut-time claims and “20× more resistant” lines as advertising unless an independent grade is marked on the lock.",
+      "Start with the policy. If it still names Gold, an anti-grinder Diamond lock is the wrong upgrade for most weekday riders — a Gold Mini you take every day beats a heavier Diamond lock left at home. If the policy names Diamond, or the bike’s value and the street make Diamond the honest choice, then compare the three locks below on grade, locking area, and carry.",
+      "All three are Sold Secure Diamond for ordinary bikes and for e-bikes on the records we use. All three are sold with anti-grinder marketing. None of the listings we looked at include a frame clip, so budget for a bag or a separate mount. A Diamond lock that stays indoors does not protect the bike.",
+      "Measure the stand plus the frame tube before you order. The Hiplok D1000’s locking area is 92 × 155 mm. That is compact. Fat tyres, cargo frames, and some UK street furniture will not take it. The Hiplok DX1000 opens that to 112 × 205 mm at 2.75kg. The Litelok X1 sits between them on size at 101 × 197 mm and is the lightest of the three at 1.7kg.",
+      "For most people who need Diamond they will still carry, and who have not already measured a tiny shackle, the X1 is the clearer starting point. Choose the D1000 only after 92 × 155 mm closes on your stand and you specifically want Hiplok’s compact anti-grinder design. Choose the DX1000 when the D1000 will not close and you still want that Hiplok design on a larger hole.",
+      "Lock the frame to a fixed stand. Fill the shackle as much as you can. Check the stand is fixed down. Those habits matter as much as the marketing line on the box. For Gold daily carry, see the commuting guide. For matching a policy to a grade, see the insurance guide.",
+    ],
+    picks: ["litelok-x1", "hiplok-d1000", "hiplok-dx1000"],
+    checklist: [
+      "Confirm the policy names Diamond (ordinary bike or e-bike) before you shop on anti-grinder marketing alone.",
+      "Measure the stand plus the frame tube — do not guess from a product photo.",
+      "Decide how you will carry the lock; none of these three ships with a frame clip on the listings we checked.",
+      "Treat maker cut-time claims as advertising; match the Sold Secure mark on the lock you receive.",
+    ],
+    faqs: [
+      {
+        q: "Is “anti-grinder” the same as Sold Secure Diamond?",
+        a: "No. Anti-grinder is maker language. Diamond is the Sold Secure grade. A lock can be sold as anti-grinder and still need the Diamond mark to match a policy that names Diamond. Cut-times on a product page are advertising, not a grade.",
+      },
+      {
+        q: "Which anti-grinder lock should I buy first?",
+        a: "If you need Diamond you will still carry, and you have not measured a very small shackle, start with the [Litelok X1](/reviews/litelok-x1): 1.7kg, 101 × 197 mm, Diamond for ordinary bikes and e-bikes. Choose the [D1000](/reviews/hiplok-d1000) only after 92 × 155 mm closes. Choose the [DX1000](/reviews/hiplok-dx1000) when you want Hiplok’s larger 112 × 205 mm hole.",
+      },
+      {
+        q: "Will a Gold Mini stop an angle grinder?",
+        a: "Sold Secure Gold is not an anti-grinder claim. If your policy still names Gold and you will take the lock every day, a Gold Mini can still be the right commute lock. If the street or the policy is why you are shopping for anti-grinder marketing, you are in Diamond territory — and you still have to carry the lock.",
+      },
+      {
+        q: "Do any of these clip to the frame?",
+        a: "Not on the listings we looked at. The X1, D1000 and DX1000 are bag or separate-mount carries. If you need Diamond and a clip on the bike, look at the [Pitbull STD](/reviews/onguard-pitbull-std-8003) instead — knowing it is not sold as anti-grinder.",
+      },
+      {
+        q: "D1000 or DX1000?",
+        a: "Same Diamond grade for ordinary bikes and e-bikes. The D1000 is 1.9kg with a 92 × 155 mm locking area. The DX1000 is 2.75kg with 112 × 205 mm. Measure the stand. If the smaller hole closes and you want the lighter Hiplok, take the D1000. If it will not close, take the DX1000 or look at the X1’s 101 × 197 mm area.",
       },
     ],
   },

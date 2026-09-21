@@ -27,6 +27,9 @@ export function SiteFooter() {
               <li>
                 <Link href="/for/insurance">For insurance</Link>
               </li>
+              <li>
+                <Link href="/for/anti-grinder">Anti-grinder locks</Link>
+              </li>
             </ul>
           </div>
           <div>
