@@ -18,6 +18,7 @@ import {
   productByAsin,
   productBySlug,
 } from "@/lib/products";
+import { resolveAssociateTag } from "@/lib/amazon";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -43,6 +44,7 @@ export default function HomePage() {
   const pick = productByAsin(EDITOR_PICK_ASIN)!;
   const alt = productBySlug("hiplok-d1000")!;
   const five = BEST_OF_ASINS.map((asin) => productByAsin(asin)!).filter(Boolean);
+  const associateTag = resolveAssociateTag();
 
   return (
     <>
@@ -102,7 +104,7 @@ export default function HomePage() {
           <span>Lock Desk</span>
           <span>Find a lock</span>
         </p>
-        <LockFinder />
+        <LockFinder associateTag={associateTag} />
 
         <p className="folio">
           <span>Lock Desk</span>

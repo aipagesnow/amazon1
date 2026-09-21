@@ -241,7 +241,7 @@ function waitCopy(answered: number): { kicker: string; body: string } {
   };
 }
 
-export function LockFinder({ id = "finder" }: { id?: string }) {
+export function LockFinder({ id = "finder", associateTag }: { id?: string; associateTag?: string }) {
   const [grade, setGrade] = useState<Grade | null>(null);
   const [place, setPlace] = useState<Place | null>(null);
   const [carry, setCarry] = useState<Carry | null>(null);
@@ -361,7 +361,7 @@ export function LockFinder({ id = "finder" }: { id?: string }) {
             <Link href={`/reviews/${product.slug}`} className="primary-link">
               Read the review
             </Link>
-            <SeeOnAmazon asin={product.asin} variant="text" />
+            <SeeOnAmazon asin={product.asin} variant="text" associateTag={associateTag} />
           </p>
         </div>
       ) : (
