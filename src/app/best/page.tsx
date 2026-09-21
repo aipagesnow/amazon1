@@ -84,10 +84,13 @@ export default function BestPage() {
 
         <aside className="chooser" aria-label="Shortlist size">
           <p>
-            <strong>Seven locks on this shortlist.</strong> The other four of the eleven (DX1000,
-            Pitbull DT, Pitbull LS, and the New York Mini) have full reviews under{" "}
-            <Link href="/reviews">Reviews</Link> because they suit more specific jobs than this
-            shortlist covers.
+            <strong>Seven locks on this shortlist.</strong> The other four of the eleven (
+            <Link href="/reviews/hiplok-dx1000">DX1000</Link>,{" "}
+            <Link href="/reviews/onguard-pitbull-dt-8005">Pitbull DT</Link>,{" "}
+            <Link href="/reviews/onguard-pitbull-ls-8002">Pitbull LS</Link>, and the{" "}
+            <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">New York Mini</Link>
+            ) have full reviews because they suit more specific jobs than this shortlist covers. See
+            also <Link href="/reviews">all reviews</Link>.
           </p>
         </aside>
 
