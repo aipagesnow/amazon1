@@ -262,6 +262,18 @@ export const BEST_PICKS: { lead: string; slug: string; name: string; text: strin
     text: "Diamond with a frame mount in the box, and more room inside the shackle than the Mini-7. No e-bike grade on our records.",
   },
   {
+    lead: "Need Diamond with a longer shackle",
+    slug: "onguard-pitbull-ls-8002",
+    name: "Pitbull LS 8002",
+    text: "Same Diamond family as the STD with a longer 115 × 292 mm shackle when a Mini or STD will not close on a fat post or cargo bike. Frame mount; 1.75kg.",
+  },
+  {
+    lead: "Need Diamond with a cable in the box",
+    slug: "onguard-pitbull-dt-8005",
+    name: "Pitbull DT 8005",
+    text: "Diamond D-lock with a cable and mount at 1.6kg. The cable is not graded — use it for wheels or accessories, not as the main lock.",
+  },
+  {
     lead: "Busy stand you have already measured",
     slug: "hiplok-d1000",
     name: "Hiplok D1000",
