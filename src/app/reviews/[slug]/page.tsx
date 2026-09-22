@@ -4,7 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ReviewArticle } from "@/components/ReviewArticle";
 import { reviewCopy } from "@/content/editorial";
 import { REVIEW_META_OVERRIDES } from "@/content/thickening";
-import { articleJsonLd, faqJsonLd, productJsonLd } from "@/lib/jsonld";
+import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { displayName, productBySlug, REVIEW_SLUGS } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
 
@@ -59,11 +59,6 @@ export default async function ReviewPage({ params }: Props) {
             path: `/reviews/${product.slug}`,
           }),
           faqJsonLd(copy.faqs),
-          productJsonLd(product, {
-            name: title,
-            body: copy.verdict,
-            path: `/reviews/${product.slug}`,
-          }),
         ]}
       />
       <ReviewArticle product={product} copy={copy} />
