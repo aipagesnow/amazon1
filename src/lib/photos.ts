@@ -45,7 +45,7 @@ export function typePhoto(type?: string): { src: string; alt: string } {
   return scene("pick");
 }
 
-/** Each of the 11 review slugs gets a distinct image from /public/images (cover reserved for home). */
+/** Each review slug gets a distinct image from /public/images (cover reserved for home). */
 export function reviewBanner(slug: string): { src: string; alt: string } {
   switch (slug) {
     case "litelok-x1":
@@ -70,6 +70,8 @@ export function reviewBanner(slug: string): { src: string; alt: string } {
       return scene("insurance");
     case "abus-bordo-granit-xplus-6500":
       return scene("fit");
+    case "seatylock-mason-140":
+      return scene("pick");
     default:
       return typePhoto();
   }

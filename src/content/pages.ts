@@ -27,6 +27,10 @@ export const BEST_VERDICTS: Record<string, { bestFor: string; caveat: string }> 
     bestFor: "Gold folding reach on the bike when a Mini will not close, if you would rather not leave a chain at home.",
     caveat: "Not Diamond, and heavier than the Mini-7.",
   },
+  B0D3RGPXWN: {
+    bestFor: "Pedal Cycle Diamond at about 0.97kg when carry weight is the limit and 140 × 85 mm will close.",
+    caveat: "Mount sold separately; confirm e-bike grade on Sold Secure.",
+  },
 };
 
 export type Faq = { q: string; a: string };
@@ -81,7 +85,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
     h2: "Will you actually carry it?",
     paragraphs: [
       "The lock you leave at home does not protect the bike at the station. Weight, and whether it clips to the frame, decide whether you take it every day.",
-      "Among the locks we reviewed, the clipped options sit at the lighter end — the Pitbull STD at 1.44kg and the Evolution Mini-7 at 1.61kg — while bag-carry Diamond locks such as the Litelok X1 (1.7kg) and the D1000 (1.9kg) run a little heavier, and the Bordo 6500, DX1000, and New York 1410 chain climb from 2.16kg up to 4.9kg. If 1.6kg already feels like too much, a 2kg lock with a tougher-sounding name will not help.",
+      "Among the locks we reviewed, the lightest Diamond D-lock is the Seatylock Mason 140 at about 0.97kg (mount sold separately). The clipped options sit next — the Pitbull STD at 1.44kg and the Evolution Mini-7 at 1.61kg — while bag-carry Diamond locks such as the Litelok X1 (1.7kg) and the D1000 (1.9kg) run heavier, and the Bordo 6500, DX1000, and New York 1410 chain climb from 2.16kg up to 4.9kg. If 1.6kg already feels like too much, a 2kg lock with a tougher-sounding name will not help.",
       "A lock that clips to the frame is the one you are most likely to have with you every morning. If the box does not include a clip, budget for one, or be honest that you will carry it in a bag.",
     ],
   },
@@ -161,6 +165,12 @@ export const GUIDE_CHOOSER: { situation: string; slug: string; name: string; why
     why: "When the policy names Diamond and you still need a weekday carry, start here. Locking area 101 × 197 mm.",
   },
   {
+    situation: "Pedal Cycle Diamond required, and about 0.97kg is the carry you will keep using",
+    slug: "seatylock-mason-140",
+    name: "Seatylock Mason 140",
+    why: "Lightest published Diamond D-lock in this set. Measure 140 × 85 mm; mount sold separately; confirm e-bike grade on Sold Secure.",
+  },
+  {
     situation: "Known theft hotspot, you have measured a compact shackle",
     slug: "hiplok-d1000",
     name: "Hiplok D1000",
@@ -212,7 +222,7 @@ export const GUIDE_FAQS: Faq[] = [
 ];
 
 export const HOME_LEDE =
-  "A small UK comparison site for eleven D-locks and chains. We compare Sold Secure grades, whether the lock will close on a typical stand, and how heavy it is to carry — so you can pick something your insurance will accept and that you will still take to work.";
+  "A small UK comparison site for twelve D-locks and chains. We compare Sold Secure grades, whether the lock will close on a typical stand, and how heavy it is to carry — so you can pick something your insurance will accept and that you will still take to work.";
 
 export const HOME_BRIEFING = {
   grade: "Match the Sold Secure grade your policy names — often Gold, sometimes Diamond.",
@@ -239,7 +249,7 @@ export const BEST_LEDE =
 
 export const BEST_INTRO = [
   "People search for the best bike lock in the UK, but the useful answer is usually more specific. Match the Sold Secure grade on your policy, check that the lock will close on the stand you use, and pick a weight you will still take to work.",
-  "On this shortlist: the Evolution Mini-7 for a Gold weekday commute, the Litelok X1 when you need Diamond you will still carry, the Pitbull STD when you need Diamond with a frame mount, the D1000 once you have measured a compact stand, the ABUS 540 for a long shackle, the Bordo 6500 for Gold folding reach, and the New York 1410 as a home chain.",
+  "On this shortlist: the Evolution Mini-7 for a Gold weekday commute, the Litelok X1 when you need Diamond you will still carry, the Pitbull STD when you need Diamond with a frame mount, the D1000 once you have measured a compact stand, the ABUS 540 for a long shackle, the Bordo 6500 for Gold folding reach, and the New York 1410 as a home chain. For Pedal Cycle Diamond under 1kg, see the [Seatylock Mason 140](/reviews/seatylock-mason-140) review outside this table.",
 ];
 
 export const BEST_PICKS: { lead: string; slug: string; name: string; text: string }[] = [
@@ -248,6 +258,12 @@ export const BEST_PICKS: { lead: string; slug: string; name: string; text: strin
     slug: "litelok-x1",
     name: "Litelok X1",
     text: "When the policy names Diamond and you still need a weekday carry, start here. No frame clip in the box we looked at.",
+  },
+  {
+    lead: "Need the lightest published Pedal Cycle Diamond",
+    slug: "seatylock-mason-140",
+    name: "Seatylock Mason 140",
+    text: "About 0.97kg with a 140 × 85 mm locking area. Measure the stand; mount sold separately; confirm e-bike grade on Sold Secure.",
   },
   {
     lead: "Need Gold with a clip and a cable",
@@ -303,10 +319,10 @@ export const BEST_WEIGHT =
   "The 1410 chain is more than three times the weight of the Pitbull STD, which is why we treat it as a home lock rather than a commute lock. The bars are relative to the heaviest lock in this comparison.";
 
 export const REVIEWS_LEDE =
-  "Eleven locks — D-locks, a folding lock, and a chain — from Sold Secure Gold to Diamond. Each review explains who it suits, when another lock is a better fit, and what to watch for.";
+  "Twelve locks — D-locks, a folding lock, and a chain — from Sold Secure Gold to Diamond. Each review explains who it suits, when another lock is a better fit, and what to watch for.";
 
 export const REVIEWS_INTRO = [
-  "This is not a ranking of every lock on Amazon. We took eleven products people actually search for — Diamond D-locks, Gold D-locks, one Gold folding lock, and one Gold chain — and wrote each one up against the same questions: grade, fit, weight, and whether you will carry it.",
+  "This is not a ranking of every lock on Amazon. We took twelve products people actually search for — Diamond D-locks, Gold D-locks, one Gold folding lock, and one Gold chain — and wrote each one up against the same questions: grade, fit, weight, and whether you will carry it.",
   "Start with the group that matches the grade on your policy. Then read the verdict, not just the name. A Diamond lock left at home protects the bike less than a Gold lock you take with you.",
 ];
 
@@ -314,8 +330,9 @@ export const REVIEW_GROUPS = [
   {
     title: "Sold Secure Diamond D-locks",
     blurb:
-      "For higher-value bikes and policies that name Diamond. The X1 is ordinary-bike and e-bike Diamond at 1.7kg with a 101 × 197 mm locking area, carried in a bag on the listing we looked at. The Pitbull STD is Diamond with a frame mount (1.44kg, 115 × 230 mm); the DT is that lock plus a cable that is not graded; the LS is the long 115 × 292 mm sibling. The D1000 is the compact anti-grinder lock (1.9kg, 92 × 155 mm, no clip) — only if you have measured the stand. The DX1000 is the larger Hiplok (2.75kg, 112 × 205 mm, no clip) for e-bikes and cargo when 155 mm will not close. The ABUS 540 is the long 300 mm shackle for posts a Mini cannot close around; for e-bikes the grade is Gold.",
+      "For higher-value bikes and policies that name Diamond. The Seatylock Mason 140 is Pedal Cycle Diamond at about 0.97kg with a compact 140 × 85 mm locking area (mount sold separately — confirm e-bike grade on Sold Secure). The X1 is ordinary-bike and e-bike Diamond at 1.7kg with a 101 × 197 mm locking area, carried in a bag on the listing we looked at. The Pitbull STD is Diamond with a frame mount (1.44kg, 115 × 230 mm); the DT is that lock plus a cable that is not graded; the LS is the long 115 × 292 mm sibling. The D1000 is the compact anti-grinder lock (1.9kg, 92 × 155 mm, no clip) — only if you have measured the stand. The DX1000 is the larger Hiplok (2.75kg, 112 × 205 mm, no clip) for e-bikes and cargo when 155 mm will not close. The ABUS 540 is the long 300 mm shackle for posts a Mini cannot close around; for e-bikes the grade is Gold.",
     slugs: [
+      "seatylock-mason-140",
       "litelok-x1",
       "onguard-pitbull-std-8003",
       "onguard-pitbull-dt-8005",
@@ -399,7 +416,7 @@ export const CASES: UseCase[] = [
     body: [
       "A commute lock has to come with you every working day. The Sold Secure grade needs to match your insurance. The lock has to close on the stand you use. Weight, and whether it clips to the frame, decide whether you will actually take it.",
       "For most UK commuters whose policy still names Sold Secure Gold, the Evolution Mini-7 fits the job well: 1.61kg, a frame clip, and a cable in the box. The D-lock is Gold. The cable is not — use it for a quick-release wheel rather than as a second lock. That combination is why it sits ahead of thicker, heavier Gold Minis with no clip.",
-      "If you ride an e-bike, or the policy names Diamond, and you will carry 1.7kg, take the Litelok X1 instead. It is Diamond for ordinary bikes and for e-bikes. There is no frame clip in the box we looked at, so budget for a bag or a separate clip. Without one, it is likely to stay at home.",
+      "If you ride an ordinary bike, the policy names Pedal Cycle Diamond, and about 0.97kg is the carry you will keep using, look at the [Seatylock Mason 140](/reviews/seatylock-mason-140). Measure 140 × 85 mm first; the mount is sold separately; confirm any e-bike grade on Sold Secure. If you ride an e-bike, or the policy names Diamond for bikes and e-bikes, and you will carry 1.7kg, take the Litelok X1 instead. It is Diamond for ordinary bikes and for e-bikes on our records. There is no frame clip in the box we looked at, so budget for a bag or a separate clip. Without one, it is likely to stay at home.",
       "Do not buy the Hiplok D1000 for a commute until you have checked that the 92 × 155 mm shackle closes on your stand. It is a serious Diamond lock. It is also compact, 1.9kg, and listed without a clip. The DX1000 is the larger Hiplok if that hole is the problem; it is 2.75kg, still with no clip. If you need Diamond and a clip on the bike, that is the Pitbull STD.",
       "The 4.9kg weight of the New York 1410 makes it much more suitable to leave at home than to take on a daily commute. Use it for extra reach — a garden, a ground anchor, or a post a Mini cannot close around — and take a D-lock on the bike. That two-lock setup is what careful commuters usually keep using.",
       "Lock the frame to the stand, not just a wheel. If the shackle will take the rear wheel as well, do that. Fill the shackle as much as you can. Check the stand is fixed down. These steps matter more than the brand name on the box.",
@@ -412,7 +429,7 @@ export const CASES: UseCase[] = [
       },
       {
         q: "Gold or Diamond for commuting?",
-        a: "For most UK commuters whose policy still names Sold Secure Gold, the Evolution Mini-7 fits well: 1.61kg, a frame clip, and a cable in the box. The cable is not Gold. If you ride an e-bike, or the policy names Diamond, and you will carry 1.7kg, look at the Litelok X1.",
+        a: "For most UK commuters whose policy still names Sold Secure Gold, the Evolution Mini-7 fits well: 1.61kg, a frame clip, and a cable in the box. The cable is not Gold. If you need Pedal Cycle Diamond and about 0.97kg carry, look at the [Mason 140](/reviews/seatylock-mason-140) after measuring 140 × 85 mm. If you ride an e-bike, or need Diamond for bikes and e-bikes, and you will carry 1.7kg, look at the Litelok X1.",
       },
       {
         q: "Do I need a frame clip?",
@@ -646,7 +663,7 @@ export const ALT_FAQS: Faq[] = [
   },
   {
     q: "Is the Mini on the best-of page?",
-    a: "No. The [best bike locks UK](/best) page lists the shortlist from the eleven. This Mini is reviewed because people search the name, not because it is a commute shortlist pick.",
+    a: "No. The [best bike locks UK](/best) page lists the shortlist from the twelve. This Mini is reviewed because people search the name, not because it is a commute shortlist pick.",
   },
   {
     q: "New York Mini or Evolution Mini-7?",

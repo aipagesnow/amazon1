@@ -122,7 +122,7 @@ export default function HomePage() {
           </figure>
           <div className="pick-copy">
             <h2>A lock to start with</h2>
-            <p className="meta">Chosen from the eleven we reviewed, mainly on grade, weight, and whether the lock will close on a typical stand.</p>
+            <p className="meta">Chosen from the twelve we reviewed, mainly on grade, weight, and whether the lock will close on a typical stand.</p>
             <h3>{displayName(pick)}</h3>
             <p>
               <strong>Why this one.</strong> {HOME_PICK.why}
@@ -146,20 +146,20 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="compared-strip" aria-label="Shortlist of seven from the eleven">
+        <section className="compared-strip" aria-label="Shortlist of seven from the twelve">
           <div className="lock-strip">
             {five.map((product) => (
               <LockTile key={product.asin} product={product} compact />
             ))}
           </div>
           <p className="five-line">
-            <strong>Seven locks on the shortlist</strong>, drawn from the eleven we
+            <strong>Seven locks on the shortlist</strong>, drawn from the twelve we
             reviewed.{" "}
             <Link href="/best">Open the shortlist table</Link>
           </p>
         </section>
         <p className="also-reviewed">
-          There are eleven full reviews under{" "}
+          There are twelve full reviews under{" "}
           <Link href="/reviews">bike lock reviews</Link>, including the{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
             New York Fahgettaboudit Mini

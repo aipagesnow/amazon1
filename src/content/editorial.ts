@@ -739,6 +739,82 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     altSecond: "abus-granit-xplus-540",
     altSecondWhy: "You need a long rigid shackle, and Diamond for an ordinary bike, rather than 110 cm of folding bars.",
   },
+  "seatylock-mason-140": {
+    hook: "A Sold Secure Diamond D-lock that weighs about 0.97kg.",
+    job: "The lightest published Diamond D-lock in this set for daily bag carry — after you have measured the short 140 × 85 mm locking area.",
+    meta: "Seatylock Mason 140 review: Sold Secure Pedal Cycle Diamond, about 0.97kg, 140 × 85 mm locking area, mount sold separately. Light weekday Diamond carry — confirm e-bike grade on Sold Secure.",
+    stamp: "Diamond (ordinary bikes)",
+    verdict:
+      "The Mason 140 is Sold Secure Pedal Cycle Diamond on the official Sold Secure record we checked. Manufacturer and retailer sheets put the weight at about 0.97kg and the locking area at 140 × 85 mm. That is meaningfully lighter than the Diamond D-locks already on this site. The shackle is a triangular profile rather than a round bar, so millimetre comparisons with other locks are not direct. The frame mount is sold separately. Powered Cycle (e-bike) Diamond is not listed on that Sold Secure product page — confirm on Sold Secure if your policy names the e-bike grade. Skip it if Gold is enough, if you need a longer shackle, or if you want a clip in the box.",
+    subheads: [
+      "Weight under 1kg, and what that means for a commute",
+      "The short 140 × 85 mm locking area",
+      "Pedal Cycle Diamond — check e-bike grades separately",
+      "Mount sold separately, and triangular shackle numbers",
+    ],
+    body: [
+      "Among the Diamond D-locks reviewed here, the next lightest clipped option is the Pitbull STD at 1.44kg, and the bag-carry X1 and D1000 sit at 1.7kg and 1.9kg. A published weight of about 0.97kg is the reason this lock exists on Lock Desk: it is for riders whose policy names Diamond and who will not take 1.4–1.9kg every day. A lighter lock you take still beats a heavier Diamond lock left at home.",
+      "The locking area is compact: 140 × 85 mm on manufacturer and retailer sheets. That is short and narrow next to the Pitbull STD (115 × 230 mm) and the X1 (101 × 197 mm). It is closer in spirit to a Mini. Measure the stand plus the frame tube before you buy. Fat tyres, cargo frames, and many UK lamp-posts will not close. If a compact lock already fails on your rack, look at the Pitbull LS, the ABUS 540, or a longer Mason size rather than guessing from a photo.",
+      "Sold Secure lists Pedal Cycle Diamond for the Mason U Lock 140. The public product page we checked does not show a Powered Cycle grade. Category labels for e-bike security on that site are not the same as a Powered Cycle Diamond row. If you ride an e-bike and the policy names the powered grade, confirm the exact model on Sold Secure and on the insurer’s list before you treat this as an e-bike Diamond lock. On our records the X1, D1000 and DX1000 are Diamond for both ordinary bikes and e-bikes.",
+      "Amazon’s listing for this size states that the mounting bracket is sold separately. Budget for Seatylock’s bracket, or carry the lock in a bag. The shackle uses a patented triangular crossbar profile. Retailer sheets often quote about 13.7 mm; that is not a round-bar figure you can line up cleanly with the 14 mm Pitbull or the 20 mm Hiplok. Rely on the Sold Secure grade and whether the lock closes, not on a millimetre contest. Maker lines about uncuttable locks or grinders are advertising. Diamond is a tougher Sold Secure test than Gold. It is not a promise that a battery grinder will fail.",
+      "Choose the Mason 140 when Pedal Cycle Diamond matches the policy, 140 × 85 mm will close, and carry weight is the limiting factor. Choose the Pitbull STD if you need Diamond with a clip in the box and more room inside the shackle. Choose the X1 if you need Diamond for ordinary bikes and e-bikes with a larger locking area at about 1.7kg. Choose the D1000 only after you have measured its 92 × 155 mm hole. Choose the Evolution Mini-7 if Gold is enough and you want a mount and cable in one kit.",
+    ],
+    bestFor: [
+      "Ordinary bikes where the policy names Pedal Cycle Diamond and carry weight is the main limit",
+      "Weekday bag carry when about 0.97kg is realistic and 1.4–1.9kg is not",
+      "Tight stands you have already measured against 140 × 85 mm",
+    ],
+    skipIf: [
+      "Gold meets the policy — the Evolution Mini-7 is the clearer Gold commute kit with a mount and cable",
+      "You need a longer shackle or more internal room than 140 × 85 mm",
+      "You want a frame mount in the box",
+      "The policy names Powered Cycle Diamond and you have not confirmed this model on Sold Secure",
+    ],
+    good: [
+      "Sold Secure Pedal Cycle Diamond on the official record we checked",
+      "Published weight about 0.97kg — lighter than the other Diamond D-locks on this site",
+      "Compact form many people will actually take every day",
+      "Three keys and a key-duplication card listed on the Amazon kit we looked at",
+    ],
+    bad: [
+      "140 × 85 mm is small; many UK stands will not close — measure first",
+      "Frame mount sold separately",
+      "No Powered Cycle grade on the Sold Secure product page we checked",
+      "Triangular shackle — published millimetre figures are not directly comparable to round bars",
+    ],
+    change:
+      "Include a frame mount as standard, and publish the ordinary-bike grade next to a clear e-bike line so buyers are not left guessing from category labels.",
+    faqs: [
+      {
+        q: "Is the Seatylock Mason 140 Sold Secure Diamond?",
+        a: "Yes for ordinary bikes — Pedal Cycle Diamond on the Sold Secure Mason U Lock 140 page we checked. Powered Cycle (e-bike) Diamond was not listed on that page. Confirm the marking on the lock you buy, and your insurer’s list.",
+      },
+      {
+        q: "Is it really under 1kg?",
+        a: "Manufacturer and retailer sheets put this 140 mm size at about 0.97kg. That is the published figure used here. We have not weighed a sample on a scale.",
+      },
+      {
+        q: "Will it fit my bike stand?",
+        a: "Only after you measure. The locking area is 140 × 85 mm. That is short. If a Mini already fails on your stand, this one may fail too. Look at the [Pitbull LS](/reviews/onguard-pitbull-ls-8002) or the [ABUS 540](/reviews/abus-granit-xplus-540) for longer shackles.",
+      },
+      {
+        q: "Does it come with a frame mount?",
+        a: "No. The Amazon listing for this size says the mounting bracket is sold separately. Plan on a bag or buying Seatylock’s bracket.",
+      },
+      {
+        q: "Mason 140 or Litelok X1?",
+        a: "The Mason is lighter (about 0.97kg) with a smaller locking area, and Pedal Cycle Diamond on our Sold Secure check. The [X1](/reviews/litelok-x1) is 1.7kg with 101 × 197 mm and Diamond for ordinary bikes and e-bikes on our records. Choose on e-bike grade, fit, and whether you will carry 1.7kg.",
+      },
+      {
+        q: "Mason 140 or Hiplok D1000?",
+        a: "Both are compact Diamond options. The D1000 is 1.9kg with a 92 × 155 mm hole and is sold as anti-grinder; it is also Diamond for e-bikes on our records. The Mason is lighter. Measure both holes before you pick on marketing alone. Full D1000 write-up: [Hiplok D1000](/reviews/hiplok-d1000).",
+      },
+    ],
+    altBest: "onguard-pitbull-std-8003",
+    altBestWhy: "You need Pedal Cycle Diamond with a frame mount in the box and more room inside the shackle (115 × 230 mm at 1.44kg).",
+    altSecond: "litelok-x1",
+    altSecondWhy: "You need Diamond for ordinary bikes and e-bikes on our records, with a larger locking area, and you will still carry about 1.7kg.",
+  },
 };
 
 export const catalogueHooks: Record<string, string> = {
@@ -753,6 +829,7 @@ export const catalogueHooks: Record<string, string> = {
   "onguard-pitbull-std-8003": "Diamond with a frame mount in the box, and more room than the Mini-7.",
   "onguard-pitbull-ls-8002": "A longer Diamond Pitbull when a Mini will not close on a fat post.",
   "abus-bordo-granit-xplus-6500": "Gold folding reach when a Mini will not close and you still want the lock on the bike.",
+  "seatylock-mason-140": "The lightest published Diamond D-lock in this set — about 0.97kg, after you measure 140 × 85 mm.",
 };
 
 export function hookFor(product: Product): string {

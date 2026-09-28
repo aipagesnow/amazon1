@@ -29,7 +29,7 @@ type Pick = {
  * 3. Carry stays at home → chain
  * 4. Gold or unsure + normal stand → Mini-7 (Bordo is the folding-reach alternative)
  * 5. Diamond + wants a frame clip + normal stand → Pitbull STD (note DT for a cable)
- * 6. Diamond + bag → X1 (D1000 only if 92 × 155 mm; DX1000 if the stand is larger)
+ * 6. Diamond + bag → Mason 140 (lightest Pedal Cycle Diamond; X1 if e-bike Diamond / more room; D1000 if 92 × 155 mm)
  */
 function recommend(grade: Grade | null, place: Place | null, carry: Carry | null): Pick | null {
   if (!grade || !place || !carry) return null;
@@ -120,11 +120,11 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     };
   }
 
-  // Diamond + bag (or any remaining Diamond path)
+  // Diamond + bag (or any remaining Diamond path) — lightest published Pedal Cycle Diamond first
   return {
-    slug: "litelok-x1",
-    why: "The X1 is Sold Secure Diamond for bikes and e-bikes at 1.7 kg, with a locking area that suits an armoured D-lock on a normal stand.",
-    note: "There is no frame mount in this listing. Choose the D1000 only if you have already measured 92 × 155 mm. If that hole is too small — e-bike, cargo, or a fatter stand — the DX1000 is 112 × 205 mm at 2.75 kg, still without a mount.",
+    slug: "seatylock-mason-140",
+    why: "The Mason 140 is Sold Secure Pedal Cycle Diamond at about 0.97 kg, with a compact 140 × 85 mm locking area. It suits weekday bag carry when Diamond is required and 1.4–1.9 kg feels like too much.",
+    note: "Measure 140 × 85 mm before you buy — many UK stands will not close. The mount is sold separately. Powered Cycle Diamond was not listed on the Sold Secure page we checked; if the policy names e-bike Diamond, confirm on Sold Secure and look at the X1 (1.7 kg, Diamond for bikes and e-bikes, 101 × 197 mm). Choose the D1000 only after measuring 92 × 155 mm. If you want Diamond with a clip, that is the Pitbull STD.",
   };
 }
 

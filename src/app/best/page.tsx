@@ -84,7 +84,8 @@ export default function BestPage() {
 
         <aside className="chooser" aria-label="Shortlist size">
           <p>
-            <strong>Seven locks on this shortlist.</strong> The other four of the eleven (
+            <strong>Seven locks on this shortlist.</strong> The other five of the twelve (
+            <Link href="/reviews/seatylock-mason-140">Mason 140</Link>,{" "}
             <Link href="/reviews/hiplok-dx1000">DX1000</Link>,{" "}
             <Link href="/reviews/onguard-pitbull-dt-8005">Pitbull DT</Link>,{" "}
             <Link href="/reviews/onguard-pitbull-ls-8002">Pitbull LS</Link>, and the{" "}

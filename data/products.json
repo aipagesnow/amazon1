@@ -189,5 +189,21 @@
       "lockingLength": "110 cm",
       "shackleMm": 5.5
     }
+  },
+  {
+    "asin": "B0D3RGPXWN",
+    "name": "Mason Sold Secure Diamond Heavy Duty Bike U Lock, 14 CM",
+    "brand": "Seatylock",
+    "category": "Bike locks",
+    "specs": {
+      "soldSecurePedal": "Diamond",
+      "cableIncluded": false,
+      "lockingArea": "140 x 85 mm",
+      "keys": 3,
+      "type": "D-lock",
+      "angleGrinderResistant": false,
+      "frameMount": false,
+      "weightKg": 0.97
+    }
   }
 ]
