@@ -144,7 +144,7 @@ export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
   "abus-granit-xplus-540":
     "ABUS Granit XPlus 540 Review (UK): Sold Secure Diamond, 300mm Shackle",
   "seatylock-mason-140":
-    "Seatylock Mason 140 review — lightweight Diamond D-lock | Lock Desk",
+    "Seatylock Mason 140 review — lightweight Diamond D-lock",
 };
 
 export const REVIEW_DIRECT_ANSWERS: Record<string, string> = {
