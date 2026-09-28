@@ -1106,6 +1106,17 @@ table.spec tr.spec-group th {
 .goodbad ul { margin: 0; padding-left: 1.1rem; }
 .goodbad li { margin-bottom: 0.4rem; }
 
+
+.direct-answer {
+  margin: 0.85rem 0 0;
+  padding: 0.95rem 1.1rem;
+  background: #eef3ec;
+  border-left: 4px solid var(--hivis);
+  font-size: 1.02rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
 .desk-verdict {
   background: var(--night);
   color: #e7ece6;

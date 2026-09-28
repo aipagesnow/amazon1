@@ -75,7 +75,7 @@ function ReviewNav({ slug }: { slug: string }) {
   );
 }
 
-export function ReviewArticle({ product, copy }: { product: Product; copy: ReviewCopy }) {
+export function ReviewArticle({ product, copy, directAnswer }: { product: Product; copy: ReviewCopy; directAnswer?: string }) {
   const related = copy.relatedWell ?? REVIEW_RELATED_WELLS[product.slug];
   const art = reviewBanner(product.slug);
   const isChain = (product.specs?.type ?? "").toLowerCase().includes("chain");
@@ -114,6 +114,9 @@ export function ReviewArticle({ product, copy }: { product: Product; copy: Revie
         <p className="meta">
           <Link href={site.authorHref}>{site.authorLine}</Link>
         </p>
+        {directAnswer ? (
+          <p className="direct-answer">{directAnswer}</p>
+        ) : null}
         <div className="desk-verdict">
           <h2>Verdict</h2>
           <p>{copy.verdict}</p>

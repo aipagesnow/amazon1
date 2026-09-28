@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { ReviewArticle } from "@/components/ReviewArticle";
 import { reviewCopy } from "@/content/editorial";
-import { REVIEW_META_OVERRIDES } from "@/content/thickening";
+import { REVIEW_DIRECT_ANSWERS, REVIEW_META_OVERRIDES, REVIEW_TITLE_OVERRIDES } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { displayName, productBySlug, REVIEW_SLUGS } from "@/lib/products";
 import { pageUrl } from "@/lib/site";
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = productBySlug(slug);
   const copy = reviewCopy[slug];
   if (!product || !copy) return {};
-  const title = `${displayName(product)} review`;
+  const title = REVIEW_TITLE_OVERRIDES[slug] ?? `${displayName(product)} review`;
   const description = REVIEW_META_OVERRIDES[slug] ?? copy.meta;
   const url = pageUrl(`/reviews/${product.slug}`);
   return {
@@ -48,7 +48,7 @@ export default async function ReviewPage({ params }: Props) {
   const copy = reviewCopy[slug];
   if (!product || !copy) notFound();
 
-  const title = `${displayName(product)} review`;
+  const title = REVIEW_TITLE_OVERRIDES[slug] ?? `${displayName(product)} review`;
   return (
     <>
       <JsonLd
@@ -61,7 +61,7 @@ export default async function ReviewPage({ params }: Props) {
           faqJsonLd(copy.faqs),
         ]}
       />
-      <ReviewArticle product={product} copy={copy} />
+      <ReviewArticle product={product} copy={copy} directAnswer={REVIEW_DIRECT_ANSWERS[slug]} />
     </>
   );
 }

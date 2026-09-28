@@ -134,6 +134,24 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
     "Sold Secure Gold folding lock, 2.16kg, 110 cm, SH bracket. Flexible Gold when reach matters more than Mini-7 weight.",
 };
 
+export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
+  "onguard-pitbull-std-8003":
+    "OnGuard Pitbull 8003 Review: Sold Secure Diamond D-Lock (UK)",
+  "kryptonite-evolution-mini-7":
+    "Kryptonite Evolution Mini-7 Review (UK): Sold Secure Gold, 1.61kg",
+  "abus-granit-xplus-540":
+    "ABUS Granit XPlus 540 Review (UK): Sold Secure Diamond, 300mm Shackle",
+};
+
+export const REVIEW_DIRECT_ANSWERS: Record<string, string> = {
+  "onguard-pitbull-std-8003":
+    "Sold Secure Diamond for ordinary bikes, 1.44kg, with a frame mount and a 115 × 230 mm locking area. No cable in the box. It suits riders who need Diamond and will clip the lock to the bike.",
+  "kryptonite-evolution-mini-7":
+    "Sold Secure Gold on the D-lock, 1.61kg, with a frame mount and a cable in the box. The cable is not Gold — lock the frame with the graded D-lock.",
+  "abus-granit-xplus-540":
+    "Sold Secure Diamond for ordinary bikes with a long 300 mm shackle when a Mini will not close. On our records the e-bike grade is Gold, not Diamond. Frame mount in the box; not sold as anti-grinder.",
+};
+
 export const REVIEW_RELATED_WELLS: Record<
   string,
   { href: string; title: string; blurb: string }
