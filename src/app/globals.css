@@ -1901,3 +1901,24 @@ table.spec tr.spec-group th {
   .finder-result { animation: none; }
   .choice { transition: none; }
 }
+
+/* Inline links inside dark (night) components: gold accent + underline.
+   --hivis #d4b43a on --night #0b100e = 9.49:1 (8.59:1 on --night-2);
+   hover --hivis-hot #e8c94a = 11.77:1. Class-less prose links only, so
+   buttons (.btn-amazon, .see-on-amazon, .primary-link) and Amazon links
+   keep their own styles. Light-background links are untouched. */
+:is(.desk-verdict, .review-close, .method-box, .fold-block article, .fork-card, .alt-card, .vs-col, .pick-copy, .feature-story, .finder-result, .spec-figures, .review-sticky)
+  :is(p, li, dd, dt, td, blockquote):not(.disclosure-subtle)
+  a:not([class]):not([href*="amazon."]) {
+  color: var(--hivis);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+:is(.desk-verdict, .review-close, .method-box, .fold-block article, .fork-card, .alt-card, .vs-col, .pick-copy, .feature-story, .finder-result, .spec-figures, .review-sticky)
+  :is(p, li, dd, dt, td, blockquote):not(.disclosure-subtle)
+  a:not([class]):not([href*="amazon."]):is(:hover, :focus-visible) {
+  color: var(--hivis-hot);
+  text-decoration-thickness: 2px;
+}
