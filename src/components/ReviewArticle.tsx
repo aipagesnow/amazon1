@@ -81,10 +81,17 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
   const isChain = (product.specs?.type ?? "").toLowerCase().includes("chain");
   const vsHref = isChain
     ? "/vs/d-lock-vs-chain"
-    : product.slug === "hiplok-d1000" || product.slug === "kryptonite-evolution-mini-7"
-      ? "/vs/evolution-mini-7-vs-d1000"
-      : "/vs/d-lock-vs-chain";
-  const vsLabel = vsHref === "/vs/d-lock-vs-chain" ? "D-lock vs chain" : "Mini-7 vs D1000";
+    : product.slug === "hiplok-d1000" || product.slug === "hiplok-dx1000"
+      ? "/vs/d1000-vs-dx1000"
+      : product.slug === "kryptonite-evolution-mini-7"
+        ? "/vs/evolution-mini-7-vs-d1000"
+        : "/vs/d-lock-vs-chain";
+  const vsLabel =
+    vsHref === "/vs/d-lock-vs-chain"
+      ? "D-lock vs chain"
+      : vsHref === "/vs/d1000-vs-dx1000"
+        ? "D1000 vs DX1000"
+        : "Mini-7 vs D1000";
   const lead = copy.body[0];
   const headed = copy.subheads.map((heading, i) => ({
     heading,

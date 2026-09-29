@@ -145,7 +145,7 @@ export default function GuidePage() {
           </div>
           <p>
             The full shortlist is on <Link href="/best">best of</Link>. For a direct pair, see{" "}
-            <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs D1000</Link>.
+            <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs D1000</Link>. Choosing between the two Hiplok Diamonds: <Link href="/vs/d1000-vs-dx1000">D1000 vs DX1000</Link>.
           </p>
         </div>
 

@@ -52,7 +52,7 @@ export const BEST_META =
   "D-locks, a folding lock, and a chain compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.";
 
 export const BEST_INTRO_EXTRA =
-  "If you already know the job, jump to [best lock for commuting](/for/commuting) or [best lock for insurance](/for/insurance). Comparing locks sold against grinders? See [what to look for in an anti-grinder lock](/for/anti-grinder). If you are stuck between two names, try [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000) or [D-lock vs chain](/vs/d-lock-vs-chain). Looking for something instead of the New York Mini? See the [alternatives page](/alternatives/kryptonite-new-york-fahgettaboudit-mini).";
+  "If you already know the job, jump to [best lock for commuting](/for/commuting) or [best lock for insurance](/for/insurance). Comparing locks sold against grinders? See [what to look for in an anti-grinder lock](/for/anti-grinder). If you are stuck between two names, try [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000), [D1000 vs DX1000](/vs/d1000-vs-dx1000), or [D-lock vs chain](/vs/d-lock-vs-chain). Looking for something instead of the New York Mini? See the [alternatives page](/alternatives/kryptonite-new-york-fahgettaboudit-mini).";
 
 export const BEST_FAQS: Faq[] = [
   {
@@ -81,7 +81,7 @@ export const GUIDE_FAQ_EXTRA: Faq = {
 };
 
 export const COMMUTE_BODY_EXTRA = [
-  "Shopping locks sold as anti-grinder? See [what to look for in an anti-grinder bike lock](/for/anti-grinder) before you upgrade on marketing alone. Stuck between Gold and Diamond? See [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000). Reach at home versus carry on the bike: [D-lock vs chain](/vs/d-lock-vs-chain).",
+  "Shopping locks sold as anti-grinder? See [what to look for in an anti-grinder bike lock](/for/anti-grinder) before you upgrade on marketing alone. Stuck between Gold and Diamond? See [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000). Choosing between the two Hiplok Diamonds: [D1000 vs DX1000](/vs/d1000-vs-dx1000). Reach at home versus carry on the bike: [D-lock vs chain](/vs/d-lock-vs-chain).",
   "Grade, measuring the stand, and carry weight are covered once on [how to choose](/guide). Limits of our method: [how we research](/method).",
 ];
 
@@ -105,6 +105,8 @@ export const ALT_BODY_EXTRA = [
 export const VS_AFTER_EXTRA: Record<string, string> = {
   "evolution-mini-7-vs-d1000":
     "For the weekday ride, see [best bike lock for commuting](/for/commuting). For the policy wording, see [best bike lock for insurance](/for/insurance). For Diamond locks sold against grinders, see [what to look for in an anti-grinder lock](/for/anti-grinder). The wider chooser is [how to choose a bike lock](/guide).",
+  "d1000-vs-dx1000":
+    "Measure first, then read the full write-ups: [Hiplok D1000](/reviews/hiplok-d1000) and [Hiplok DX1000](/reviews/hiplok-dx1000). For locks sold against grinders, see [what to look for in an anti-grinder lock](/for/anti-grinder). Want lighter Diamond carry? The [Litelok X1](/reviews/litelok-x1) sits on the [best of](/best) shortlist.",
   "d-lock-vs-chain":
     "Still choosing a daily lock? [Best lock for commuting](/for/commuting) names the Mini-7 and the X1. The [best of](/best) table puts both next to the home chain so the weight difference is obvious.",
 };
@@ -169,10 +171,10 @@ export const REVIEW_RELATED_WELLS: Record<
       "The X1 is the usual Diamond starting point when a lock is sold against grinders and you will still carry 1.7kg.",
   },
   "hiplok-d1000": {
-    href: "/for/anti-grinder",
-    title: "What to look for in an anti-grinder lock",
+    href: "/vs/d1000-vs-dx1000",
+    title: "Hiplok D1000 vs DX1000",
     blurb:
-      "Diamond, locking area, and carry when a lock is sold against angle grinders. Measure 92 × 155 mm before you buy this one.",
+      "Same Diamond grade. Choose by locking area and weight after you have measured the stand.",
   },
   "kryptonite-evolution-mini-7": {
     href: "/for/commuting",
@@ -192,10 +194,10 @@ export const REVIEW_RELATED_WELLS: Record<
       "A D-lock for the commute, a chain for reach at home. Using both is common; commuting with 4.9kg is not.",
   },
   "hiplok-dx1000": {
-    href: "/for/anti-grinder",
-    title: "What to look for in an anti-grinder lock",
+    href: "/vs/d1000-vs-dx1000",
+    title: "Hiplok D1000 vs DX1000",
     blurb:
-      "When to pick the larger Hiplok hole (112 × 205 mm) versus the X1 or the compact D1000.",
+      "Same Diamond grade. The DX1000 is the larger sibling when the D1000 will not close — measure first.",
   },
   "onguard-pitbull-std-8003": {
     href: "/for/commuting",
@@ -232,7 +234,7 @@ export const ANTI_GRINDER_META =
   "What to look for in an anti-grinder bike lock in the UK — Sold Secure Diamond, locking area, and weight you will still carry. Specs and maker claims, not cut tests.";
 
 export const ANTI_GRINDER_BODY_EXTRA = [
-  "Still choosing on a weekday Gold policy? See [best bike lock for commuting](/for/commuting). Matching a Diamond line on the policy: [best bike lock for insurance](/for/insurance). Head-to-head Gold Mini versus the compact Hiplok: [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000).",
+  "Still choosing on a weekday Gold policy? See [best bike lock for commuting](/for/commuting). Matching a Diamond line on the policy: [best bike lock for insurance](/for/insurance). Head-to-head Gold Mini versus the compact Hiplok: [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000). Choosing between the two Hiplok Diamonds: [D1000 vs DX1000](/vs/d1000-vs-dx1000).",
   "Full write-ups: [Litelok X1](/reviews/litelok-x1), [Hiplok D1000](/reviews/hiplok-d1000), [Hiplok DX1000](/reviews/hiplok-dx1000). How we treat grades and claims: [how we research](/method).",
 ];
 

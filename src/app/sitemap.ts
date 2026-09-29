@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/disclosure",
     "/privacy",
     "/vs/evolution-mini-7-vs-d1000",
+    "/vs/d1000-vs-dx1000",
     "/vs/d-lock-vs-chain",
     "/for/commuting",
     "/for/insurance",

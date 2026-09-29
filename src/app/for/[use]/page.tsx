@@ -162,6 +162,7 @@ export default async function UseCasePage({ params }: Props) {
           <Link href="/guide">How to choose a bike lock</Link> · <Link href="/best">Best of</Link> ·{" "}
           <Link href="/reviews">Reviews</Link> ·{" "}
           <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link> ·{" "}
+          <Link href="/vs/d1000-vs-dx1000">D1000 vs DX1000</Link> ·{" "}
           <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> ·{" "}
           <Link href="/method">How we research</Link>
         </p>

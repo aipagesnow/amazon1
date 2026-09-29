@@ -44,7 +44,8 @@ export default function AboutPage() {
         then the <Link href="/reviews">reviews</Link> or the <Link href="/best">best of</Link>{" "}
         table. There are also job-led pages for <Link href="/for/commuting">commuting</Link> and{" "}
         <Link href="/for/insurance">insurance</Link>, and side-by-side pages for{" "}
-        <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs D1000</Link> and{" "}
+        <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs D1000</Link>,{" "}
+        <Link href="/vs/d1000-vs-dx1000">D1000 vs DX1000</Link>, and{" "}
         <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>.
       </p>
 

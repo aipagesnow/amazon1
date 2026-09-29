@@ -136,7 +136,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     faqs: [
       {
         q: "D1000 or DX1000?",
-        a: "The D1000 has a 92 × 155 mm locking area and weighs 1.9kg. The DX1000 has a 112 × 205 mm locking area and weighs 2.75kg. Choose the one that closes on your stand. Do not guess from a product photo. Full DX1000 write-up: [Hiplok DX1000](/reviews/hiplok-dx1000).",
+        a: "The D1000 has a 92 × 155 mm locking area and weighs 1.9kg. The DX1000 has a 112 × 205 mm locking area and weighs 2.75kg. Choose the one that closes on your stand. Do not guess from a product photo. Side-by-side: [D1000 vs DX1000](/vs/d1000-vs-dx1000). Full DX1000 write-up: [Hiplok DX1000](/reviews/hiplok-dx1000).",
       },
       {
         q: "Gold or Diamond for this street?",
@@ -459,7 +459,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     faqs: [
       {
         q: "D1000 or DX1000?",
-        a: "The D1000 is 92 × 155 mm and 1.9kg. The DX1000 is 112 × 205 mm and 2.75kg. Same Diamond grade for ordinary bikes and e-bikes, still no mount. Choose the one that closes. Full D1000 write-up: [Hiplok D1000](/reviews/hiplok-d1000).",
+        a: "The D1000 is 92 × 155 mm and 1.9kg. The DX1000 is 112 × 205 mm and 2.75kg. Same Diamond grade for ordinary bikes and e-bikes, still no mount. Choose the one that closes. Side-by-side: [D1000 vs DX1000](/vs/d1000-vs-dx1000). Full D1000 write-up: [Hiplok D1000](/reviews/hiplok-d1000).",
       },
       {
         q: "DX1000 or Litelok X1?",

@@ -101,6 +101,7 @@ export default function ReviewsIndexPage() {
           <Link href="/for/commuting">commuting</Link> ·{" "}
           <Link href="/for/insurance">insurance</Link>. Comparisons:{" "}
           <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link> ·{" "}
+          <Link href="/vs/d1000-vs-dx1000">D1000 vs DX1000</Link> ·{" "}
           <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link>.
         </p>
       </article>

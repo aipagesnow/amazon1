@@ -232,6 +232,10 @@ export default function BestPage() {
             a Gold weekday Mini compared with a Diamond compact D-lock.
           </li>
           <li>
+            <Link href="/vs/d1000-vs-dx1000">Hiplok D1000 vs DX1000</Link> — same Diamond grade;
+            choose by locking area and weight after you have measured the stand.
+          </li>
+          <li>
             <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> — when a D-lock is easier to
             carry, when a chain’s length is useful, and when it makes sense to use both.
           </li>
