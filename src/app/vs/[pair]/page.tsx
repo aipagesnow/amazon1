@@ -87,12 +87,18 @@ export default async function VsPage({ params }: Props) {
         alt={pair.slug === "d-lock-vs-chain" ? photoAlt.vs : photoAlt.bannerCommute}
         kicker="Comparison"
         title={pair.title}
-        lede={pair.intro}
+        lede={pair.directAnswer ? undefined : pair.intro}
         overlay
       >
         <DisclosureStrip />
       </PageHero>
       <article className="prose wrap tight">
+        {pair.directAnswer ? (
+          <>
+            <p className="direct-answer">{pair.directAnswer}</p>
+            <p className="lede">{pair.intro}</p>
+          </>
+        ) : null}
         <div className="who-each">
           {pair.whoEach.map((line) => (
             <p key={line}>{line}</p>

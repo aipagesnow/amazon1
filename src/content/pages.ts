@@ -548,6 +548,8 @@ export type Pair = {
   description: string;
   a: string;
   b: string;
+  /** Owen locked direct answer — shown above the visitor-first intro when set. */
+  directAnswer?: string;
   intro: string;
   whoEach: [string, string];
   afterTable: string[];
@@ -605,39 +607,35 @@ export const PAIRS: Pair[] = [
       "Hiplok D1000 vs DX1000: both Sold Secure Diamond. D1000 is 1.9 kg with a 92 × 155 mm hole; DX1000 is 2.75 kg with 112 × 205 mm. Measure the stand first.",
     a: "hiplok-d1000",
     b: "hiplok-dx1000",
-    intro:
+    directAnswer:
       "Both locks are Sold Secure Diamond for ordinary bikes and for e-bikes, and both are sold as Hiplok anti-grinder D-locks with no frame mount on the listings we checked. The buying difference is the locking area and the weight. The D1000 is 1.9 kg with a 92 × 155 mm hole — the compact Mini you only buy after you have measured the stand. The DX1000 is 2.75 kg with a 112 × 205 mm hole — the larger sibling when the D1000 will not close on an e-bike, fat tyre or fatter post. Neither page invents cut times; see the anti-grinder guide for how we read those claims.",
+    intro:
+      "These two Hiplok D-locks sit in the same Sold Secure Diamond band, including the powered-cycle grade for e-bikes. Neither listing we checked includes a frame mount. The real split is the hole and the weight. The D1000 is the compact Mini: 1.9 kg with a 92 × 155 mm locking area. The DX1000 is the larger sibling: 2.75 kg with a 112 × 205 mm locking area. Measure the stand and the frame first. If the shackle will not close, the grade on the box does not help.",
     whoEach: [
-      "The D1000 is 1.9 kg with a 92 × 155 mm hole — the compact Mini you only buy after you have measured the stand.",
-      "The DX1000 is 2.75 kg with a 112 × 205 mm hole — the larger sibling when the D1000 will not close on an e-bike, fat tyre or fatter post.",
+      "The D1000 suits a rider who needs Diamond on a known high-theft rack and has already checked that a 92 × 155 mm hole will close through the frame and the stand.",
+      "The DX1000 suits the same Diamond brief when the Mini hole is too tight — fat tyres, some e-bike frames, cargo bikes, or a fatter post — and the rider will still carry about 2.75 kg with no mount.",
     ],
     afterTable: [
-      "Both locks share Sold Secure Diamond for ordinary bikes and for e-bikes, and both are sold as anti-grinder D-locks. On the listings we checked, neither includes a frame mount. The comparison is not about grade — it is about whether the shackle closes, and whether you will carry the weight.",
-      "The D1000 is the compact Hiplok: 1.9 kg, a 20 mm shackle, and a 92 × 155 mm locking area. Fat tyres, cargo frames, and some UK street furniture will not take it. Measure the post plus the frame tube before you order. Full write-up: [Hiplok D1000](/reviews/hiplok-d1000).",
-      "The DX1000 is the larger sibling: 2.75 kg, a 32 mm shackle, and a 112 × 205 mm locking area. That is 850 g more than the D1000. Choose it when you already know the D1000 will not close — e-bike, fat tyre, or a fatter post — and you have measured 112 × 205 mm. Full write-up: [Hiplok DX1000](/reviews/hiplok-dx1000).",
-      "If you wanted Diamond you will still carry, with a shackle that fits more stands than the D1000 at less weight than the DX1000, look at the [Litelok X1](/reviews/litelok-x1): 1.7 kg and 101 × 197 mm. The [best of](/best) table puts the shortlist next to each other. How we treat locks sold against grinders: [what to look for in an anti-grinder lock](/for/anti-grinder).",
+      "On the published sheet both locks are Sold Secure Diamond for ordinary bikes and for e-bikes, and both are sold as anti-grinder D-locks. This page does not invent cut times. Read [what to look for in an anti-grinder lock](/for/anti-grinder) for how those claims sit next to the Sold Secure grade.",
+      "The D1000’s locking area is 92 × 155 mm with a 20 mm shackle, at 1.9 kg. That is a tight Mini. Fat tyres, cargo frames, and some Sheffield-style stands will not take it. Buy it only after you have stood next to the rack with a tape measure. Full write-up: [Hiplok D1000](/reviews/hiplok-d1000).",
+      "The DX1000’s locking area is 112 × 205 mm with a 32 mm shackle, at 2.75 kg. That larger hole is the reason to step up when the D1000 will not close. You pay for it in bag weight, and there is still no frame mount on the listing. Full write-up: [Hiplok DX1000](/reviews/hiplok-dx1000).",
+      "Carry is the shared catch. Neither lock is designed to live on the bike the way a Mini with a clip does. Upgrading to Diamond only helps if you still take the lock with you every time you leave the bike.",
+      "If neither shackle will close, look at a longer D-lock such as the [ABUS Granit XPlus 540](/reviews/abus-granit-xplus-540) rather than guessing from a product photo. If you need Diamond you will actually carry, with a more usable hole than the D1000 and less weight than the DX1000, start with the [Litelok X1](/reviews/litelok-x1).",
+      "Skip both if Gold on the policy is enough and you want a clip and a cable for the weekday commute — that is closer to the Evolution Mini-7 lane. Skip both if you will not carry roughly 2–3 kg in a bag. Skip both if you have not measured the stand.",
     ],
     faqs: [
       {
-        q: "D1000 or DX1000?",
-        a: "Choose the one that closes on your stand. The D1000 is 92 × 155 mm and 1.9 kg. The DX1000 is 112 × 205 mm and 2.75 kg. Same Diamond grade for ordinary bikes and e-bikes, still no mount on the listings we checked. Do not guess from a product photo.",
+        q: "Same Diamond grade — why not always buy the bigger hole?",
+        a: "Because you still have to carry it. The DX1000 is 2.75 kg with no mount. If the D1000 closes on your stand, the smaller lock is the one you are more likely to take every day.",
       },
       {
-        q: "Do they share the same Sold Secure grade?",
-        a: "Yes. Both are Sold Secure Diamond for ordinary bikes and for e-bikes on the records we checked. The buying difference is locking area and weight, not the grade line.",
-      },
-      {
-        q: "Is either lock lighter Diamond carry?",
-        a: "No. If you want Diamond you will still carry at lower weight, start with the [Litelok X1](/reviews/litelok-x1) at 1.7 kg and 101 × 197 mm. The D1000 and DX1000 are the Hiplok pair sold as anti-grinder D-locks.",
-      },
-      {
-        q: "Do cut-times decide this?",
-        a: "No. Neither page invents cut times. Read [what to look for in an anti-grinder lock](/for/anti-grinder) for how we treat those claims against the Sold Secure grade.",
+        q: "Do these pages prove how long a grinder takes?",
+        a: "No. Sold Secure Diamond is the independent grade on the sheet. Anti-grinder wording is the maker’s. See [anti-grinder](/for/anti-grinder).",
       },
     ],
     leadWithAntiGrinder: true,
     tableNote:
-      "“Sold as angle-grinder resistant” is the maker’s language. Both locks are Sold Secure Diamond on the records we checked. Cut-times are advertising.",
+      "“Sold as angle-grinder resistant” is the maker’s language. The Sold Secure grade on both locks is Diamond. This comparison does not invent cut times.",
   },
   {
     slug: "d-lock-vs-chain",
