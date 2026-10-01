@@ -1,5 +1,7 @@
 const ASIN_RE = /^[A-Z0-9]{10}$/;
 const PLACEHOLDER_TAG = "your-tag-21";
+/** Live Lock Desk Associates tag. Env still wins if set to a different tag. */
+const SITE_TAG = "lockdesk-21";
 
 /** Resolve Associates tag: explicit prop, then NEXT_PUBLIC, then server-only env. */
 export function resolveAssociateTag(explicit?: string): string {
@@ -10,7 +12,7 @@ export function resolveAssociateTag(explicit?: string): string {
         ""
       : "";
   const t = String(explicit ?? fromEnv).trim();
-  if (!t || t === PLACEHOLDER_TAG) return "";
+  if (!t || t === PLACEHOLDER_TAG) return SITE_TAG;
   return t;
 }
 

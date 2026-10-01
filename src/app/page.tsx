@@ -17,6 +17,7 @@ import {
   EDITOR_PICK_ASIN,
   productByAsin,
   productBySlug,
+  reviewHref,
 } from "@/lib/products";
 import { resolveAssociateTag } from "@/lib/amazon";
 import { site } from "@/lib/site";
@@ -66,10 +67,22 @@ export default function HomePage() {
             <p className="cover-kicker">D-locks and chains · UK</p>
             <h1>UK bike lock reviews and comparisons</h1>
             <p className="lede">{HOME_LEDE}</p>
+            <div className="cover-pick">
+              <p className="cover-pick-kicker">A lock to start with</p>
+              <p className="cover-pick-name">{displayName(pick)}</p>
+              <p className="cover-pick-ctas">
+                <Link href={reviewHref(pick) ?? "/reviews"} className="primary-link">
+                  Read the review
+                </Link>
+                <SeeOnAmazon
+                  asin={pick.asin}
+                  className="btn-amazon"
+                  associateTag={associateTag}
+                />
+              </p>
+            </div>
             <p className="cover-ctas">
-              <a href="#finder" className="primary-link">
-                Find a lock
-              </a>
+              <a href="#finder">Find a lock</a>
               <Link href="/guide">How to choose</Link>
               <Link href="/best">Best of</Link>
             </p>
@@ -137,12 +150,16 @@ export default function HomePage() {
               <strong>Also worth a look.</strong>{" "}
               <Link href="/reviews/hiplok-d1000">{displayName(alt)}</Link> {HOME_PICK.alt}
             </p>
-            <p>
+            <p className="pick-ctas">
               <Link href="/reviews/litelok-x1" className="primary-link">
                 Read the X1 review
               </Link>
+              <SeeOnAmazon
+                asin={pick.asin}
+                className="btn-amazon"
+                associateTag={associateTag}
+              />
             </p>
-            <SeeOnAmazon asin={pick.asin} className="btn-amazon" />
           </div>
         </section>
 
