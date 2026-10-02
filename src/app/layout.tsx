@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { AssociateTagProvider } from "@/components/SeeOnAmazon";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { resolveAssociateTag } from "@/lib/amazon";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -60,10 +62,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-GB" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <body>
-        <GoogleAnalytics />
-        <SiteHeader />
-        <main>{children}</main>
-        <SiteFooter />
+        <AssociateTagProvider tag={resolveAssociateTag()}>
+          <GoogleAnalytics />
+          <SiteHeader />
+          <main>{children}</main>
+          <SiteFooter />
+        </AssociateTagProvider>
       </body>
     </html>
   );
