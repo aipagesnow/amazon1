@@ -25,12 +25,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pair = pairOf(slug);
   if (!pair) return {};
   const url = pageUrl(`/vs/${pair.slug}`);
+  const documentTitle = pair.documentTitle ?? pair.title;
   return {
-    title: pair.title,
+    title: documentTitle,
     description: pair.description,
     alternates: { canonical: url },
         openGraph: {
-      title: `${pair.title} · Lock Desk`,
+      title: `${documentTitle} · Lock Desk`,
       description: pair.description,
       url,
       images: [

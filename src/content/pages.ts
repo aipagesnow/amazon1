@@ -545,6 +545,8 @@ export const CASES: UseCase[] = [
 export type Pair = {
   slug: string;
   title: string;
+  /** Browser title when it should differ from the visible H1. Layout adds " · Lock Desk". */
+  documentTitle?: string;
   description: string;
   a: string;
   b: string;
@@ -640,10 +642,13 @@ export const PAIRS: Pair[] = [
   {
     slug: "d-lock-vs-chain",
     title: "D-lock vs chain lock",
+    documentTitle: "Cable vs chain vs D-lock bike locks",
     description:
-      "A Gold compact D-lock versus a 100 cm New York chain. Carry versus extra reach. Using both is common; commuting with 4.9kg is not.",
+      "A cable is a light secondary tether, not a Sold Secure main lock. The Mini-7 (1.61 kg, Gold) is the commute D-lock; the 1410 (4.9 kg) is home reach.",
     a: "kryptonite-evolution-mini-7",
     b: "kryptonite-new-york-fahgettaboudit-1410",
+    directAnswer:
+      "A cable lock is light and easy to carry, but on this site it is not treated as a Sold Secure main lock — it is a secondary tether for a wheel or accessory. A D-lock is a rigid shackle for a stand you have measured; the Evolution Mini-7 on this page is the commute example (1.61 kg, Gold, frame mount). A chain adds flexible length for an awkward post or a home anchor; the New York 1410 here is the 4.9 kg home example, not a daily carry.",
     intro:
       "A D-lock and a chain do different jobs. The Mini-7 is the lock you take on the bike. The New York 1410 is a 4.9kg Gold chain for when a Mini cannot reach the only solid object. Using both is common. Commuting with the chain is not.",
     whoEach: [
@@ -657,6 +662,10 @@ export const PAIRS: Pair[] = [
       "Careful riders use both and only carry the D-lock. If the compact lock will not close on the only stand at work, neither of these is the answer for that stand — see the [ABUS 540](/reviews/abus-granit-xplus-540). If you need Diamond on the bike and length at home, pair the [Litelok X1](/reviews/litelok-x1) with the chain.",
     ],
     faqs: [
+      {
+        q: "What is the difference between a bike cable lock, a chain lock and a D-lock?",
+        a: "A cable lock is light and easy to carry, but on this site it is not treated as a Sold Secure main lock — it is a secondary tether for a wheel or accessory. A D-lock is a rigid shackle for a stand you have measured; the Evolution Mini-7 on this page is the commute example (1.61 kg, Gold, frame mount). A chain adds flexible length for an awkward post or a home anchor; the New York 1410 here is the 4.9 kg home example, not a daily carry.",
+      },
       {
         q: "Can I commute with the 1410?",
         a: "No. At 4.9kg the 1410 is too heavy to carry to work and back every day. Use the chain at home when you need extra reach, and take a D-lock on the bike for the commute.",
