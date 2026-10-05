@@ -13,8 +13,13 @@ export const site = {
   /** Publisher — fine to show on About / Contact. */
   operator: "Aivora Digital",
   contact: "aivora@agentmail.to",
-  /** Shown on Best of and reviews for reader freshness */
-  lastChecked: "5 October 2026",
+  /**
+   * Site-wide default "last checked" (Best of, reviews hub, and any review
+   * without its own date). Only bump this when every review is re-checked.
+   * A single review re-check goes on that product's `lastChecked` in
+   * data/products.json instead.
+   */
+  lastChecked: "28 September 2026",
   /** Quiet research note on review pages — not a personal byline */
   authorLine: "Assessment based on published specs and Sold Secure grades",
   authorHref: "/method",

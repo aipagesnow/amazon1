@@ -117,7 +117,7 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
 
       <div className="wrap prose tight">
         <DisclosureStrip />
-        <p className="meta">Last checked: {site.lastChecked}.</p>
+        <p className="meta">Last checked: {product.lastChecked ?? site.lastChecked}.</p>
         <p className="meta">
           <Link href={site.authorHref}>{site.authorLine}</Link>
         </p>

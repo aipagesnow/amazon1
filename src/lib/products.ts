@@ -21,6 +21,8 @@ export type Product = {
   brand: string;
   category: string;
   specs?: ProductSpecs;
+  /** Per-review "last checked" date when this lock was re-checked after the site-wide date. */
+  lastChecked?: string;
   slug: string;
 };
 
