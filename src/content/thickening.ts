@@ -43,6 +43,10 @@ export const HOME_FAQS: Faq[] = [
     a: "Read the wording you signed. Many UK household policies still name Gold. Some e-bike and high-value policies ask for Diamond. Then check the insurer’s approved-lock list. See [best bike lock for insurance](/for/insurance).",
   },
   {
+    q: "Are D-locks accepted by insurers?",
+    a: "Only when the Sold Secure grade matches your policy and, where the insurer publishes a list, the exact model is on that list. A badge alone is not always enough. See [best bike lock for insurance](/for/insurance).",
+  },
+  {
     q: "D-lock or chain for a commute?",
     a: "A compact D-lock for the station. A heavy chain for reach at home. [D-lock vs chain](/vs/d-lock-vs-chain) explains why using both is common.",
   },
@@ -73,7 +77,7 @@ export const REVIEWS_META =
   "Twelve UK D-lock, folding-lock and chain reviews. Each page says who the lock suits, when another is a better fit, and the drawbacks.";
 
 export const REVIEWS_INTRO_EXTRA =
-  "Need a shortlist first? Use the [best of](/best) table. Choosing from scratch? Read [how to choose a bike lock](/guide). Job-led guides: [commuting](/for/commuting), [insurance](/for/insurance), and [anti-grinder](/for/anti-grinder).";
+  "Need a shortlist first? Use the [best of](/best) table. Choosing from scratch? Read [how to choose a bike lock](/guide). Job-led guides: [commuting](/for/commuting), [insurance](/for/insurance), and [anti-grinder](/for/anti-grinder). Most-asked locks: [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7) (Gold with a clip), [Pitbull STD 8003](/reviews/onguard-pitbull-std-8003) (Diamond with a clip), [Pitbull DT 8005](/reviews/onguard-pitbull-dt-8005) (the STD plus a cable), [ABUS Granit XPlus 540](/reviews/abus-granit-xplus-540) (long shackle) and [Bordo 6500](/reviews/abus-bordo-granit-xplus-6500) (Gold folding reach).";
 
 export const GUIDE_FAQ_EXTRA: Faq = {
   q: "Where do I match a lock to my insurance?",
@@ -121,7 +125,7 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "abus-granit-xplus-540":
     "Diamond for ordinary bikes, Gold for e-bikes, 108 × 300 mm, mount in the box. For stands a compact Mini will not close on. Not listed as angle-grinder resistant.",
   "kryptonite-new-york-fahgettaboudit-mini":
-    "18 mm Gold Mini, 2.06kg, no mount, no cable. A thick second lock. The Evolution Mini-7 is usually easier for daily carry.",
+    "New York Fahgettaboudit Mini: Sold Secure Gold, 2.06 kg, no mount, no cable — a thick second lock; the Evolution Mini-7 is usually easier to carry.",
   "kryptonite-new-york-fahgettaboudit-1410":
     "100 cm, 14 mm, 4.9kg, Sold Secure Gold. Extra length for home or a terrace. The weight suits storage more than a daily commute.",
   "hiplok-dx1000":
@@ -129,11 +133,11 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "onguard-pitbull-std-8003":
     "Sold Secure Diamond for ordinary bikes, 1.44kg, with a frame mount and a 115 × 230 mm locking area. Fits if you need Diamond with a clip. No cable.",
   "onguard-pitbull-dt-8005":
-    "Pedal Cycle Diamond D-lock with a cable, 1.6kg, 115 × 230 mm, mount. The cable is not graded.",
+    "OnGuard Pitbull DT 8005: Sold Secure Diamond D-lock, ~1.6 kg, cable and mount in the box — the cable is not graded.",
   "onguard-pitbull-ls-8002":
     "Sold Secure Diamond for ordinary bikes with a long 115 × 292 mm shackle, 1.75kg, and a frame mount. Useful when a Mini will not close on a fat post or cargo bike.",
   "abus-bordo-granit-xplus-6500":
-    "Sold Secure Gold folding lock, 2.16kg, 110 cm, SH bracket. Flexible Gold when reach matters more than Mini-7 weight.",
+    "ABUS Bordo 6500: Sold Secure Gold folding lock, 2.16 kg, 110 cm reach, SH bracket — flexible Gold when a Mini will not close.",
   "seatylock-mason-140":
     "Sold Secure Pedal Cycle Diamond D-lock at about 0.97kg with a 140 × 85 mm locking area. Light weekday Diamond carry — measure the stand; mount sold separately; confirm e-bike grade on Sold Secure.",
 };
@@ -147,6 +151,10 @@ export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
     "ABUS Granit XPlus 540 Review (UK): Sold Secure Diamond, 300mm Shackle",
   "seatylock-mason-140":
     "Seatylock Mason 140 review — lightweight Diamond D-lock",
+  "onguard-pitbull-dt-8005": "OnGuard Pitbull DT 8005: Diamond D-lock with cable",
+  "kryptonite-new-york-fahgettaboudit-mini":
+    "Kryptonite New York Fahgettaboudit Mini: Gold Mini, 2.06 kg",
+  "abus-bordo-granit-xplus-6500": "ABUS Bordo Granit XPlus 6500: Gold folding lock",
 };
 
 export const REVIEW_DIRECT_ANSWERS: Record<string, string> = {
@@ -158,6 +166,8 @@ export const REVIEW_DIRECT_ANSWERS: Record<string, string> = {
     "Sold Secure Diamond for ordinary bikes with a long 300 mm shackle when a Mini will not close. On our records the e-bike grade is Gold, not Diamond. Frame mount in the box; not sold as anti-grinder.",
   "seatylock-mason-140":
     "Sold Secure Pedal Cycle Diamond at about 0.97kg with a compact 140 × 85 mm locking area. It suits ordinary-bike Diamond when carry weight is the limit. Measure the stand; mount sold separately; confirm e-bike grade on Sold Secure.",
+  "onguard-pitbull-dt-8005":
+    "Sold Secure Diamond on the D-lock, about 1.6 kg, with a cable and frame mount. Use the graded D-lock on the frame; the cable is not Diamond.",
 };
 
 export const REVIEW_RELATED_WELLS: Record<
