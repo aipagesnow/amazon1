@@ -134,7 +134,7 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "onguard-pitbull-std-8003":
     "Sold Secure Diamond for ordinary bikes, 1.44kg, with a frame mount and a 115 × 230 mm locking area. Fits if you need Diamond with a clip. No cable.",
   "onguard-pitbull-dt-8005":
-    "OnGuard Pitbull DT 8005: Sold Secure Diamond D-lock, ~1.6 kg, cable and mount in the box — the cable is not graded.",
+    "OnGuard Pitbull DT 8005 review: Sold Secure Diamond D-lock, ~1.6 kg, cable and mount in the box — worth it if you need Diamond plus a cable kit; the cable is not graded.",
   "onguard-pitbull-ls-8002":
     "Sold Secure Diamond for ordinary bikes with a long 115 × 292 mm shackle, 1.75kg, and a frame mount. Useful when a Mini will not close on a fat post or cargo bike.",
   "abus-bordo-granit-xplus-6500":
@@ -154,7 +154,8 @@ export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
     "ABUS Granit XPlus 540 Review (UK): Sold Secure Diamond, 300mm Shackle",
   "seatylock-mason-140":
     "Seatylock Mason 140 review — lightweight Diamond D-lock",
-  "onguard-pitbull-dt-8005": "OnGuard Pitbull DT 8005: Diamond D-lock with cable",
+  "onguard-pitbull-dt-8005":
+    "OnGuard Pitbull DT 8005 Review (UK): Sold Secure Diamond + Cable — Worth It?",
   "kryptonite-new-york-fahgettaboudit-mini":
     "Kryptonite New York Fahgettaboudit Mini: Gold Mini, 2.06 kg",
   "abus-bordo-granit-xplus-6500": "ABUS Bordo Granit XPlus 6500: Gold folding lock",
@@ -171,7 +172,7 @@ export const REVIEW_DIRECT_ANSWERS: Record<string, string> = {
   "seatylock-mason-140":
     "Sold Secure Pedal Cycle Diamond at about 0.97kg with a compact 140 × 85 mm locking area. It suits ordinary-bike Diamond when carry weight is the limit. Measure the stand; mount sold separately; confirm e-bike grade on Sold Secure.",
   "onguard-pitbull-dt-8005":
-    "Sold Secure Diamond on the D-lock, about 1.6 kg, with a cable and frame mount. Use the graded D-lock on the frame; the cable is not Diamond.",
+    "Worth picking if you want Sold Secure Diamond on the D-lock plus a cable and frame mount in one box (~1.6 kg). Lock the frame with the graded D-lock; the cable is not Diamond. Skip it if you already have a cable or prefer the lighter STD 8003 without one.",
   "kryptonite-new-york-fahgettaboudit-1415":
     "Sold Secure lists the 1415 chain with its New York disc lock as Diamond for ordinary bikes and Gold for e-bikes. It is 150 cm long and weighs 6.92kg, so it is a chain to leave at home when you need extra reach. If 100 cm is enough, the New York 1410 has the same grades at 4.9kg.",
 };
@@ -216,21 +217,22 @@ export const REVIEW_RELATED_WELLS: Record<
       "Same Diamond grade. The DX1000 is the larger sibling when the D1000 will not close — measure first.",
   },
   "onguard-pitbull-std-8003": {
-    href: "/for/commuting",
-    title: "Best bike lock for commuting",
+    href: "/reviews/onguard-pitbull-dt-8005",
+    title: "OnGuard Pitbull DT 8005",
     blurb:
-      "A commute lock is one you take every day. This Pitbull fits if you want Diamond security but also want to carry the lock on the bike.",
+      "Same Pitbull Diamond D-lock family with a cable and mount in the box. The cable is not Diamond — use the graded D-lock on the frame.",
   },
   "onguard-pitbull-dt-8005": {
-    href: "/for/commuting",
-    title: "Best bike lock for commuting",
+    href: "/reviews/onguard-pitbull-std-8003",
+    title: "OnGuard Pitbull STD 8003",
     blurb:
-      "The D-lock is Diamond. The cable is not. Same rule as the Mini-7 kit: lock the frame with the graded product.",
+      "Same Diamond D-lock without the cable — lighter kit if you already carry a cable or do not need one. See also the best of shortlist.",
   },
   "onguard-pitbull-ls-8002": {
-    href: "/guide",
-    title: "How to choose a bike lock",
-    blurb: "Measure the stand before you buy a long shackle. Fit is why the LS exists.",
+    href: "/reviews/onguard-pitbull-dt-8005",
+    title: "OnGuard Pitbull DT 8005",
+    blurb:
+      "If you need Diamond with a cable kit rather than a longer shackle, the DT 8005 is the Pitbull with cable and mount — cable not graded.",
   },
   "abus-bordo-granit-xplus-6500": {
     href: "/vs/d-lock-vs-chain",
