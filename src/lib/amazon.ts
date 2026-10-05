@@ -1,9 +1,11 @@
 const ASIN_RE = /^[A-Z0-9]{10}$/;
 const PLACEHOLDER_TAG = "your-tag-21";
-/** Live Lock Desk Associates tag. Env still wins if set to a different tag. */
-const SITE_TAG = "lockdesk-21";
 
-/** Resolve Associates tag: explicit prop, then NEXT_PUBLIC, then server-only env. */
+/**
+ * Resolve Associates tag: explicit prop, then NEXT_PUBLIC, then server-only env.
+ * The tag comes from site settings (Vercel env AMAZON_ASSOCIATE_TAG) only — no
+ * tag is hardcoded here. Production builds fail in next.config.ts if it is unset.
+ */
 export function resolveAssociateTag(explicit?: string): string {
   const fromEnv =
     typeof process !== "undefined"
@@ -12,7 +14,7 @@ export function resolveAssociateTag(explicit?: string): string {
         ""
       : "";
   const t = String(explicit ?? fromEnv).trim();
-  if (!t || t === PLACEHOLDER_TAG) return SITE_TAG;
+  if (!t || t === PLACEHOLDER_TAG) return "";
   return t;
 }
 
