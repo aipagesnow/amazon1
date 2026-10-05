@@ -72,6 +72,8 @@ export function reviewBanner(slug: string): { src: string; alt: string } {
       return scene("fit");
     case "seatylock-mason-140":
       return scene("pick");
+    case "kryptonite-new-york-fahgettaboudit-1415":
+      return scene("chain");
     default:
       return typePhoto();
   }

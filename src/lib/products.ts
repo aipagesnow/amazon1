@@ -37,6 +37,7 @@ const SLUG_BY_ASIN: Record<string, string> = {
   B01KT86YWU: "onguard-pitbull-ls-8002",
   B071ZPJ7JY: "abus-bordo-granit-xplus-6500",
   B0D3RGPXWN: "seatylock-mason-140",
+  B08LXM56RD: "kryptonite-new-york-fahgettaboudit-1415",
 };
 
 export const REVIEW_SLUGS = [
@@ -48,6 +49,7 @@ export const REVIEW_SLUGS = [
   "abus-bordo-granit-xplus-6500",
   "kryptonite-new-york-fahgettaboudit-mini",
   "kryptonite-new-york-fahgettaboudit-1410",
+  "kryptonite-new-york-fahgettaboudit-1415",
   "onguard-pitbull-dt-8005",
   "onguard-pitbull-std-8003",
   "onguard-pitbull-ls-8002",
@@ -102,6 +104,7 @@ export function shortName(product: Product): string {
   if (product.asin === "B01KT86YWU") return "Pitbull LS 8002";
   if (product.asin === "B071ZPJ7JY") return "Bordo 6500";
   if (product.asin === "B0D3RGPXWN") return "Mason 140";
+  if (product.asin === "B08LXM56RD") return "New York Fahgettaboudit 1415 chain";
   return product.name;
 }
 
@@ -160,7 +163,7 @@ export function compactSpec(value: string): string {
 export function specLine(product: Product): string[] {
   const mass = specValue(product, "weightKg");
   const hole = specValue(product, "lockingArea") ?? specValue(product, "lockingLength");
-  const bar = specValue(product, "shackleMm") ?? specValue(product, "chainMm");
+  const bar = specValue(product, "chainMm") ?? specValue(product, "shackleMm");
   return [mass, hole ? compactSpec(hole) : null, bar].filter(Boolean) as string[];
 }
 

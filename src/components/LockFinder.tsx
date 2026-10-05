@@ -19,14 +19,15 @@ type Pick = {
 
 /**
  * Decision order (reviewed locks only):
- * 1. Home place → chain
+ * 1. Home place → 1410 chain (stays home: note the 150 cm 1415 if 100 cm will not reach)
  * 2. Fat post:
- *    - Stays home → chain
+ *    - Stays home + Diamond → 1415 chain (150 cm reach; Pedal Diamond, Powered Gold — note e-bike Diamond and the 1410)
+ *    - Stays home + Gold/unsure → 1410 chain (note the 1415 if 100 cm will not go round)
  *    - Diamond + mount → Pitbull LS (note 540)
  *    - Diamond + bag → DX1000 (needs room; larger than D1000’s 92 × 155)
  *    - Gold/unsure + mount → 540 (Mini-7 may not fit; note Pitbull LS)
  *    - Gold/unsure + bag → Bordo (flexible Gold reach / folding)
- * 3. Carry stays at home → chain
+ * 3. Carry stays at home → 1410 chain (note the 1415 for extra reach)
  * 4. Gold or unsure + normal stand → Mini-7 (Bordo is the folding-reach alternative)
  * 5. Diamond + wants a frame clip + normal stand → Pitbull STD (note DT for a cable)
  * 6. Diamond + bag → Mason 140 (lightest Pedal Cycle Diamond; X1 if e-bike Diamond / more room; D1000 if 92 × 155 mm)
@@ -37,17 +38,27 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
   if (place === "home") {
     return {
       slug: "kryptonite-new-york-fahgettaboudit-1410",
-      why: "This is a 100 cm Sold Secure Gold chain for longer reach where the bike is stored. Keep it at home, and take a lighter D-lock when you ride.",
-      note: "At 4.9 kg it is awkward for daily carry. Pair it with the Evolution Mini-7, the Pitbull STD, or the X1 for the commute.",
+      why: "This is a 100 cm chain for longer reach where the bike is stored. Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes. Keep it at home, and take a lighter D-lock when you ride.",
+      note:
+        carry === "home"
+          ? "At 4.9 kg it is awkward for daily carry. Pair it with the Evolution Mini-7, the Pitbull STD, or the X1 for the commute. If 100 cm will not reach the anchor or a second bike, the New York 1415 is the 150 cm version with the same grades, at 6.92 kg."
+          : "At 4.9 kg it is awkward for daily carry. Pair it with the Evolution Mini-7, the Pitbull STD, or the X1 for the commute.",
     };
   }
 
   if (place === "fat") {
     if (carry === "home") {
+      if (grade === "diamond") {
+        return {
+          slug: "kryptonite-new-york-fahgettaboudit-1415",
+          why: "A thick post at home usually needs more length than a compact D-lock can offer. The New York 1415 is 150 cm of chain, and Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes. At 6.92 kg it stays where the bike is stored.",
+          note: "If the policy names e-bike (Powered Cycle) Diamond, this chain does not match; the DX1000 is Diamond for bikes and e-bikes with a 112 × 205 mm locking area. If 100 cm goes round the post and the frame, the New York 1410 has the same grades at 4.9 kg.",
+        };
+      }
       return {
         slug: "kryptonite-new-york-fahgettaboudit-1410",
-        why: "A thick post at home usually needs more length than a compact D-lock can offer. A 100 cm Gold chain can wrap that post and stay where the bike is stored.",
-        note: "If you later take a lock on the bike, a Mini may not close on that same post. The Pitbull LS and the ABUS 540 are the longer shackles that still include a frame mount.",
+        why: "A thick post at home usually needs more length than a compact D-lock can offer. A 100 cm chain can wrap that post and stay where the bike is stored. Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes.",
+        note: "If 100 cm will not go round the post with the frame, the New York 1415 is the 150 cm version at 6.92 kg. If you later take a lock on the bike, a Mini may not close on that same post. The Pitbull LS and the ABUS 540 are the longer shackles that still include a frame mount.",
       };
     }
 
@@ -88,8 +99,8 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
   if (carry === "home") {
     return {
       slug: "kryptonite-new-york-fahgettaboudit-1410",
-      why: "When the lock can stay put, a 100 cm Gold chain gives you more reach around a home stand or ground anchor than most D-locks.",
-      note: "Take a D-lock when you ride away. The Mini-7 covers most Gold policies; use the Pitbull STD or the X1 if you need Diamond on the bike.",
+      why: "When the lock can stay put, a 100 cm chain gives you more reach around a home stand or ground anchor than most D-locks. Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes.",
+      note: "Take a D-lock when you ride away. The Mini-7 covers most Gold policies; use the Pitbull STD or the X1 if you need Diamond on the bike. If 100 cm will not reach, the New York 1415 is the 150 cm version at 6.92 kg.",
     };
   }
 

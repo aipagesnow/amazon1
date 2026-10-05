@@ -23,7 +23,7 @@ export default function AboutPage() {
         <Link href="/method">How we research</Link>
       </nav>
       <p className="lede">
-        Lock Desk is a small UK comparison site for D-locks and chains. We cover twelve locks,
+        Lock Desk is a small UK comparison site for D-locks and chains. We cover thirteen locks,
         Sold Secure grades, insurance wording, and whether you will still take the lock to work.
       </p>
       <p>
@@ -33,7 +33,7 @@ export default function AboutPage() {
         commission. That commission does not change our verdicts.
       </p>
       <p>
-        We keep the set to twelve locks because we would rather publish full reviews we can stand
+        We keep the set to thirteen locks because we would rather publish full reviews we can stand
         behind than stretch into a catalogue of every cable lock on Amazon. There is also one
         extra page for a search people often type:{" "}
         <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>. It sits outside

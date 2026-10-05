@@ -354,20 +354,21 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     },
   },
   "kryptonite-new-york-fahgettaboudit-1410": {
-    hook: "A Sold Secure Gold chain, 100 cm long, listed at 4.9kg.",
+    hook: "A 100 cm chain listed at 4.9kg. Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes.",
     job: "The 4.9kg weight makes this much more suitable for use at home than for a daily commute.",
-    meta: "Kryptonite New York 1410 chain review: 100 cm, 14 mm, 4.9kg, Gold grade. Extra length for home or a terrace. Based on published grades and specs.",
+    meta: "Kryptonite New York 1410 chain review: 100 cm, 14 mm, 4.9kg. Sold Secure Diamond for ordinary bikes, Gold for e-bikes. Extra length for home or a terrace. Based on published grades and specs.",
+    stamp: "Diamond (ordinary bikes)",
     verdict:
-      "This suits home, garden, or café-terrace use when a D-lock will not reach the only solid object. The 4.9kg weight, with no mount, makes it a poor daily commute lock. Sold Secure Gold applies to the approved product; looping the chain twice does not change the grade. Leave this where the bike is stored overnight and take a D-lock when you ride away.",
+      "This suits home, garden, or café-terrace use when a D-lock will not reach the only solid object. The 4.9kg weight, with no mount, makes it a poor daily commute lock. Sold Secure lists the chain with its New York disc lock as Diamond for ordinary bikes and Gold for e-bikes; looping the chain twice does not change the grade. Leave this where the bike is stored overnight and take a D-lock when you ride away.",
     subheads: [
       "Reach versus carry",
       "The listed weight is 4.9kg",
-      "Gold grade, and what looping twice does not change",
+      "Diamond for ordinary bikes, Gold for e-bikes, and what looping twice does not change",
       "Using it with a commute D-lock",
     ],
     body: [
       "A D-lock suits a tight stand. A chain suits extra length. 100 cm of 14 mm New York chain will reach a ground anchor, a second bike, or a post a compact D-lock cannot close around. The 4.9kg weight makes it much more suitable to leave at home than to carry in a backpack every day.",
-      "Gold is the ordinary-bike grade on the lock we looked at. Looping the chain twice can take up slack, but it does not change the Sold Secure grade, and it does not turn an unapproved lamp-post into an approved anchor. Match the lock on Sold Secure’s list, and treat a ground anchor as a separate product if the policy names one.",
+      "Sold Secure lists this chain with its New York disc lock as Pedal Cycle Diamond for ordinary bikes and Powered Cycle Gold for e-bikes. Looping the chain twice can take up slack, but it does not change the Sold Secure grade, and it does not turn an unapproved lamp-post into an approved anchor. Match the lock on Sold Secure’s list, and treat a ground anchor as a separate product if the policy names one.",
       "The disc lock is part of the kit, with three keys and no frame mount. Pair it with a D-lock you actually carry — often the Evolution Mini-7 for Gold, or the Litelok X1 if you need Diamond on the bike. At home, lock through the frame to something fixed, take up slack, leave the chain where the bike lives overnight, and take the D-lock when you leave the house.",
     ],
     bestFor: [
@@ -377,12 +378,12 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     ],
     skipIf: [
       "You need something you will carry five miles to work",
-      "You want Diamond, or a lock sold as anti-grinder",
+      "Your e-bike policy names Powered Cycle Diamond, or you want a lock sold as anti-grinder",
       "You expected a lightweight chain",
     ],
     good: [
       "100 cm of 14 mm chain — reach a D-lock cannot match",
-      "Sold Secure Gold on the ordinary-bike listing",
+      "Sold Secure Diamond for ordinary bikes, and Gold for e-bikes",
       "New York disc lock on the chain; three keys listed",
     ],
     bad: [
@@ -402,7 +403,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       },
       {
         q: "Can I use it on an e-bike?",
-        a: "Yes, as a home or destination lock, if Gold meets the policy. Almost nobody will carry 4.9kg as their only lock. For Diamond on an e-bike you still take to work, look at the X1.",
+        a: "Yes, as a home or destination lock, if the policy accepts Gold for e-bikes — that is the Powered Cycle grade Sold Secure lists for this chain. Almost nobody will carry 4.9kg as their only lock. For Diamond on an e-bike you still take to work, look at the X1.",
       },
       {
         q: "Does looping it twice make it stronger?",
@@ -411,8 +412,8 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     ],
     altBest: "kryptonite-evolution-mini-7",
     altBestWhy: "A Gold D-lock you can take on the ride to work, while leaving the chain where the bike is stored.",
-    altSecond: "litelok-x1",
-    altSecondWhy: "You need Diamond on a lock you still have to carry: 1.7kg, on the bike.",
+    altSecond: "kryptonite-new-york-fahgettaboudit-1415",
+    altSecondWhy: "100 cm will not reach the anchor or a second bike. The 1415 is the 150 cm version with the same Sold Secure grades, at 6.92kg.",
   },
   "hiplok-dx1000": {
     hook: "The larger Hiplok anti-grinder D-lock. For stands the D1000 will not close on.",
@@ -691,7 +692,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       "Sold Secure Gold is the ordinary-bike grade on the lock we looked at. We do not have an e-bike grade listed. The bars are 5.5 mm. That is not a 14 mm Pitbull and it is not a 32 mm Hiplok. Gold is still the grade a lot of UK household policies name. If the policy names Diamond, look at the X1, a Pitbull, or a Hiplok. Maker talk about saw protection and security levels is ABUS’s. The grade we will stand behind is Gold.",
       "2.16kg with an SH bracket is a commute lock only if you will fit the bracket and use it. That is a lot of lock on a down tube. If 1.6kg already feels like too much, this will stay at home. The Mini-7 is the lighter Gold lock with a clip and a cable.",
       "If the problem is a fat post and you still want a D-shackle, the ABUS 540 (108 × 300 mm) or the Pitbull LS (115 × 292 mm) are the long D-locks. The Bordo helps when the object is awkward — a tree guard, a railing, a second bike — and a rigid shackle will not snake through. It does not win on weight or on Diamond.",
-      "Keep the 1410 chain at home if you need 14 mm Gold through a ground anchor. Take this Bordo when Gold is enough and the extra reach has to come with you.",
+      "Keep the 1410 chain at home if you need 14 mm chain through a ground anchor. Take this Bordo when Gold is enough and the extra reach has to come with you.",
     ],
     bestFor: [
       "Gold policies where a Mini will not reach the only solid object",
@@ -817,6 +818,76 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     altSecond: "litelok-x1",
     altSecondWhy: "You need Diamond for ordinary bikes and e-bikes on our records, with a larger locking area, and you will still carry about 1.7kg.",
   },
+  "kryptonite-new-york-fahgettaboudit-1415": {
+    hook: "A 150 cm New York chain that Sold Secure lists as Diamond for ordinary bikes and Gold for e-bikes.",
+    job: "At 6.92kg this is a chain to leave where the bike is stored. It is the longer option when 100 cm will not reach the post, the anchor, or a second bike.",
+    meta: "Kryptonite New York Fahgettaboudit 1415 chain review: Sold Secure Diamond for ordinary bikes, Gold for e-bikes. 150 cm, 6.92kg, for reach at home rather than a commute. Compared with the 1410.",
+    stamp: "Diamond (ordinary bikes)",
+    verdict:
+      "The Kryptonite New York Fahgettaboudit 1415 is a 150 cm chain with a New York disc lock. Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes, and Kryptonite’s published sheet puts the chain at 14 mm and the weight at 6.92kg. It suits a bike that stays at home, in a shed, or by a post that a 100 cm chain will not reach, when the policy names Diamond for an ordinary bike and the chain can stay where the bike is stored. It is a poor match for a commute, because it is about 2kg heavier than the New York 1410, and that chain is already too heavy to take to work. It is also a poor match if an e-bike policy asks for Powered Cycle Diamond, because the Sold Secure record for this model is Gold on powered cycles.",
+    subheads: [
+      "When 150 cm is worth the extra weight",
+      "Diamond for ordinary bikes, Gold for e-bikes",
+      "The grade covers the chain and the disc lock together",
+      "Weight, keys, and what is not in the box",
+      "When to choose this chain or another",
+    ],
+    body: [
+      "Lock Desk already covers the New York 1410, which is 100 cm long. The 1415 is the same family with 50 cm more chain. Kryptonite lists 14 mm six-sided links, a 15 mm shackle on the disc lock, and a nylon cover. The extra length is the reason to choose it. It also adds about 2kg, which is why it is a lock for home rather than for a bag.",
+      "A longer chain helps when the only fixed object is some distance from where the bike stands, when a ground anchor sits low against a wall, or when two bikes share one point. Measure the route the chain will take before you buy: through the frame, through a wheel if you can, and around the anchor. If 100 cm closes comfortably, the 1410 does the same job with less weight and less slack for a thief to work with. If it does not, the 1415 gives you the extra half metre.",
+      "Sold Secure lists the NY Fahgettaboudit Chain 1415 & NY Disc Lock as Pedal Cycle Diamond and Powered Cycle Gold. Those are separate tests. If you ride an ordinary bike and the policy names Diamond, this chain matches the grade. If you ride an e-bike and the policy names the Powered Cycle Diamond grade, it does not. The Sold Secure page also lists Thatcham CAT3, which is a separate scheme rather than a Sold Secure grade, and Kryptonite’s own security rating is the maker’s scale rather than a Sold Secure result.",
+      "The Sold Secure record is for the chain sold with the New York disc lock. If you use a different padlock, do not assume the grade carries over. Looping the chain twice can take up slack, but it does not change the grade, and it does not turn a loose object into an anchor. Lock through the frame to something that does not move, and treat a ground anchor as a separate product if the policy names one. Confirm the pairing on Sold Secure’s approved product search and on the insurer’s own list before you buy.",
+      "At 6.92kg this is not a lock to carry on the bike. Neither Kryptonite nor Sold Secure lists a frame mount or a cable with it, which is normal for a chain of this size. Kryptonite lists three stainless keys, one of them with a light and a replaceable battery. The nylon cover helps stop the links marking the frame when the chain is pulled tight.",
+      "Choose the 1415 when the bike stays at home, the policy names Diamond for an ordinary bike, and you have measured that 100 cm is not enough. Choose the New York 1410 if 100 cm reaches, since it has the same Sold Secure grades at 4.9kg. For riding away from home, pair either chain with a D-lock you will carry: the Evolution Mini-7 if Gold is enough, or the Litelok X1 if you need Diamond for an ordinary bike or an e-bike and will carry 1.7kg. If Gold is enough and the extra reach has to come with you on the bike, the ABUS Bordo 6500 folds into a frame bracket.",
+    ],
+    bestFor: [
+      "Ordinary bikes kept at home or in a garden, where the policy names Pedal Cycle Diamond",
+      "A post, railing, or ground anchor that 100 cm will not reach, once you have measured for 150 cm",
+      "Two bikes on the same fixed point, if the chain still closes through each frame",
+      "Riders who already carry a D-lock and want the chain to stay where the bike is stored",
+    ],
+    skipIf: [
+      "You want a lock to carry every day — it weighs 6.92kg and has no frame mount",
+      "Your e-bike policy names Powered Cycle Diamond — this chain is Gold for e-bikes",
+      "A compact D-lock already closes on the stand you use",
+      "100 cm is enough — the New York 1410 is shorter and lighter, with the same grades",
+    ],
+    good: [
+      "Sold Secure Diamond for ordinary bikes, for the chain and disc lock sold together",
+      "150 cm of chain, which is 50 cm more than the 1410",
+      "14 mm links and a 15 mm disc-lock shackle on Kryptonite’s published sheet",
+      "Three keys listed by Kryptonite, one of them with a light",
+      "A nylon cover, which helps protect the frame from the links",
+    ],
+    bad: [
+      "The e-bike (Powered Cycle) grade is Gold",
+      "6.92kg is about 2kg more than the 1410, and too heavy for a bag",
+      "The grade applies to this chain with its New York disc lock; a different padlock may not keep it",
+      "No frame mount and no cable listed",
+      "Thatcham CAT3 appears on the Sold Secure page, but it is a separate scheme from the Sold Secure grade",
+      "A chain only protects as well as the object it goes around",
+    ],
+    change:
+      "A clear line on Kryptonite’s UK listings that this is the 150 cm chain, so buyers do not order it expecting the 100 cm 1410, or the other way round.",
+    faqs: [
+      {
+        q: "Kryptonite 1415 or 1410?",
+        a: "Both are New York chains with the same disc lock, and Sold Secure lists both as Diamond for ordinary bikes and Gold for e-bikes. The 1415 is 150 cm and 6.92kg. The [1410](/reviews/kryptonite-new-york-fahgettaboudit-1410) is 100 cm and 4.9kg. Measure the route around the anchor, and choose the shorter chain if it reaches.",
+      },
+      {
+        q: "Will it meet an e-bike insurance policy?",
+        a: "Only if the policy accepts Gold for e-bikes. Sold Secure lists this chain as Powered Cycle Gold. If the wording names Powered Cycle Diamond, look at a lock with that grade, such as the [Litelok X1](/reviews/litelok-x1), and check the insurer’s approved list. More on matching grades: [best bike lock for insurance](/for/insurance).",
+      },
+      {
+        q: "Can I carry it on the bike?",
+        a: "Not realistically for daily riding. It weighs 6.92kg and there is no frame mount in the box. Leave it where the bike is stored and carry a D-lock. [D-lock vs chain](/vs/d-lock-vs-chain) explains how the two work together.",
+      },
+    ],
+    altBest: "kryptonite-new-york-fahgettaboudit-1410",
+    altBestWhy: "100 cm is enough to reach the anchor. It has the same Sold Secure grades and is about 2kg lighter.",
+    altSecond: "litelok-x1",
+    altSecondWhy: "You need a Diamond lock to take with you, including the e-bike grade, and you will carry 1.7kg.",
+  },
 };
 
 export const catalogueHooks: Record<string, string> = {
@@ -832,6 +903,7 @@ export const catalogueHooks: Record<string, string> = {
   "onguard-pitbull-ls-8002": "A longer Diamond Pitbull when a Mini will not close on a fat post.",
   "abus-bordo-granit-xplus-6500": "Gold folding reach when a Mini will not close and you still want the lock on the bike.",
   "seatylock-mason-140": "The lightest published Diamond D-lock in this set — about 0.97kg, after you measure 140 × 85 mm.",
+  "kryptonite-new-york-fahgettaboudit-1415": "The longer New York chain, for when 100 cm will not reach. At 6.92kg it stays at home.",
 };
 
 export function hookFor(product: Product): string {

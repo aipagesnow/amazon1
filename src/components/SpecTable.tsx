@@ -60,7 +60,11 @@ export function SpecTable({ product }: { product: Product }) {
               </tr>
               {group.rows.map((row) => (
                 <tr key={row.key}>
-                  <th scope="row">{specLabel(row.key)}</th>
+                  <th scope="row">
+                    {row.key === "shackleMm" && product.specs?.chainMm
+                      ? "Disc-lock shackle"
+                      : specLabel(row.key)}
+                  </th>
                   <td>{row.value}</td>
                 </tr>
               ))}

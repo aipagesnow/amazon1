@@ -14,7 +14,7 @@ export const site = {
   operator: "Aivora Digital",
   contact: "aivora@agentmail.to",
   /** Shown on Best of and reviews for reader freshness */
-  lastChecked: "28 September 2026",
+  lastChecked: "5 October 2026",
   /** Quiet research note on review pages — not a personal byline */
   authorLine: "Assessment based on published specs and Sold Secure grades",
   authorHref: "/method",

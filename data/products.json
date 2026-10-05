@@ -47,7 +47,8 @@
       "chainMm": 14,
       "keys": 3,
       "weightKg": 4.9,
-      "soldSecurePedal": "Gold"
+      "soldSecurePedal": "Diamond",
+      "soldSecurePowered": "Gold"
     }
   },
   {
@@ -204,6 +205,25 @@
       "angleGrinderResistant": false,
       "frameMount": false,
       "weightKg": 0.97
+    }
+  },
+  {
+    "asin": "B08LXM56RD",
+    "name": "New York Fahgettaboudit 1415 chain (150 cm) with New York disc lock",
+    "brand": "Kryptonite",
+    "category": "Bike locks",
+    "specs": {
+      "frameMount": false,
+      "cableIncluded": false,
+      "type": "Chain",
+      "lockingLength": "150 cm",
+      "angleGrinderResistant": false,
+      "chainMm": 14,
+      "shackleMm": 15,
+      "keys": 3,
+      "weightKg": 6.92,
+      "soldSecurePedal": "Diamond",
+      "soldSecurePowered": "Gold"
     }
   }
 ]

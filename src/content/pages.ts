@@ -200,6 +200,12 @@ export const GUIDE_CHOOSER: { situation: string; slug: string; name: string; why
     name: "New York 1410 chain",
     why: "The 4.9kg weight makes this much more suitable for use at home than for a daily commute.",
   },
+  {
+    situation: "Two bikes, or an anchor or post that 100 cm will not reach",
+    slug: "kryptonite-new-york-fahgettaboudit-1415",
+    name: "New York 1415 chain",
+    why: "The 150 cm version of the 1410, with the same Sold Secure grades. At 6.92kg it stays where the bike is stored.",
+  },
 ];
 
 export const GUIDE_FAQS: Faq[] = [
@@ -222,7 +228,7 @@ export const GUIDE_FAQS: Faq[] = [
 ];
 
 export const HOME_LEDE =
-  "A small UK comparison site for twelve D-locks and chains. We compare Sold Secure grades, whether the lock will close on a typical stand, and how heavy it is to carry — so you can pick something your insurance will accept and that you will still take to work.";
+  "A small UK comparison site for thirteen D-locks and chains. We compare Sold Secure grades, whether the lock will close on a typical stand, and how heavy it is to carry — so you can pick something your insurance will accept and that you will still take to work.";
 
 export const HOME_BRIEFING = {
   grade: "Match the Sold Secure grade your policy names — often Gold, sometimes Diamond.",
@@ -313,16 +319,22 @@ export const BEST_PICKS: { lead: string; slug: string; name: string; text: strin
     name: "New York 1410",
     text: "The 4.9kg weight makes this much more suitable for use at home than for a daily commute. Take a D-lock on the bike for the commute.",
   },
+  {
+    lead: "Need more than a metre of chain at home",
+    slug: "kryptonite-new-york-fahgettaboudit-1415",
+    name: "New York 1415",
+    text: "The 150 cm version of the 1410, for two bikes or an anchor the shorter chain will not reach. It weighs 6.92kg, so it is a lock to leave at home.",
+  },
 ];
 
 export const BEST_WEIGHT =
   "The 1410 chain is more than three times the weight of the Pitbull STD, which is why we treat it as a home lock rather than a commute lock. The bars are relative to the heaviest lock in this comparison.";
 
 export const REVIEWS_LEDE =
-  "Twelve locks — D-locks, a folding lock, and a chain — from Sold Secure Gold to Diamond. Each review explains who it suits, when another lock is a better fit, and what to watch for.";
+  "Thirteen locks — D-locks, a folding lock, and two chains — from Sold Secure Gold to Diamond. Each review explains who it suits, when another lock is a better fit, and what to watch for.";
 
 export const REVIEWS_INTRO = [
-  "This is not a ranking of every lock on Amazon. We took twelve products people actually search for — Diamond D-locks, Gold D-locks, one Gold folding lock, and one Gold chain — and wrote each one up against the same questions: grade, fit, weight, and whether you will carry it.",
+  "This is not a ranking of every lock on Amazon. We took thirteen products people actually search for — Diamond D-locks, Gold D-locks, one Gold folding lock, and two New York chains — and wrote each one up against the same questions: grade, fit, weight, and whether you will carry it.",
   "Start with the group that matches the grade on your policy. Then read the verdict, not just the name. A Diamond lock left at home protects the bike less than a Gold lock you take with you.",
 ];
 
@@ -355,8 +367,8 @@ export const REVIEW_GROUPS = [
   {
     title: "Chain for home and extra reach",
     blurb:
-      "The New York 1410 is 100 cm of 14 mm Gold chain at 4.9kg. Use it at home, in the garden, or on a post a D-lock cannot reach. It is too heavy for a daily commute. Pair it with a D-lock you actually carry.",
-    slugs: ["kryptonite-new-york-fahgettaboudit-1410"],
+      "The New York 1410 is 100 cm of 14 mm chain at 4.9kg. Use it at home, in the garden, or on a post a D-lock cannot reach. It is too heavy for a daily commute. Pair it with a D-lock you actually carry. The New York 1415 is the same chain at 150 cm and 6.92kg, for two bikes or an anchor that 100 cm will not reach. Sold Secure lists both as Diamond for ordinary bikes and Gold for e-bikes.",
+    slugs: ["kryptonite-new-york-fahgettaboudit-1410", "kryptonite-new-york-fahgettaboudit-1415"],
   },
 ] as const;
 
@@ -467,7 +479,7 @@ export const CASES: UseCase[] = [
       "Then open the insurer’s approved-lock list. A lock can be Gold in Sold Secure’s database and still missing from one brand’s list. The grade is required, but it is not always enough.",
     ],
     records:
-      "On the locks we reviewed: Evolution Mini-7, the Bordo 6500, the New York Mini and the 1410 chain are Gold for ordinary bikes. Litelok X1, Hiplok D1000 and Hiplok DX1000 are Diamond for both ordinary bikes and e-bikes. The three OnGuard Pitbulls are Diamond for ordinary bikes on our records; we do not have an e-bike grade listed. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes, so it does not match an e-bike policy that asks for e-bike Diamond.",
+      "On the locks we reviewed: Evolution Mini-7, the Bordo 6500 and the New York Mini are Gold for ordinary bikes. Litelok X1, Hiplok D1000 and Hiplok DX1000 are Diamond for both ordinary bikes and e-bikes. The three OnGuard Pitbulls are Diamond for ordinary bikes on our records; we do not have an e-bike grade listed. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes, so it does not match an e-bike policy that asks for e-bike Diamond. The New York 1410 and 1415 chains have the same split: Diamond for ordinary bikes, Gold for e-bikes.",
     checklist: [
       "Read the wording you signed — Gold or Diamond, ordinary bike or e-bike.",
       "Open the insurer’s approved-lock list.",
@@ -650,7 +662,7 @@ export const PAIRS: Pair[] = [
     directAnswer:
       "A cable lock is light and easy to carry, but on this site it is not treated as a Sold Secure main lock — it is a secondary tether for a wheel or accessory. A D-lock is a rigid shackle for a stand you have measured; the Evolution Mini-7 on this page is the commute example (1.61 kg, Gold, frame mount). A chain adds flexible length for an awkward post or a home anchor; the New York 1410 here is the 4.9 kg home example, not a daily carry.",
     intro:
-      "A D-lock and a chain do different jobs. The Mini-7 is the lock you take on the bike. The New York 1410 is a 4.9kg Gold chain for when a Mini cannot reach the only solid object. Using both is common. Commuting with the chain is not.",
+      "A D-lock and a chain do different jobs. The Mini-7 is the lock you take on the bike. The New York 1410 is a 4.9kg chain for when a Mini cannot reach the only solid object. Using both is common. Commuting with the chain is not.",
     whoEach: [
       "The Mini-7 is for carrying on a commute.",
       "The 1410 is for extra reach at home.",
@@ -658,7 +670,7 @@ export const PAIRS: Pair[] = [
     afterTable: [
       "A D-lock is for a tight stand. A chain is for extra reach. That is the main difference, and it is why these two are not rivals.",
       "The Evolution Mini-7 is what you take on the bike: 1.61kg, a frame clip, Sold Secure Gold. You will carry it. You will not carry 4.9kg twice a day, and you should not plan as if you will.",
-      "The New York 1410 is 100 cm of 14 mm Gold chain for a home, a garden, a ground anchor, or a post a compact D-lock cannot close around. Leave it where the bike is stored. Use it through the frame, to something that does not move.",
+      "The New York 1410 is 100 cm of 14 mm chain, Sold Secure Diamond for ordinary bikes and Gold for e-bikes, for a home, a garden, a ground anchor, or a post a compact D-lock cannot close around. Leave it where the bike is stored. Use it through the frame, to something that does not move.",
       "Careful riders use both and only carry the D-lock. If the compact lock will not close on the only stand at work, neither of these is the answer for that stand — see the [ABUS 540](/reviews/abus-granit-xplus-540). If you need Diamond on the bike and length at home, pair the [Litelok X1](/reviews/litelok-x1) with the chain.",
     ],
     faqs: [
@@ -671,7 +683,7 @@ export const PAIRS: Pair[] = [
         a: "No. At 4.9kg the 1410 is too heavy to carry to work and back every day. Use the chain at home when you need extra reach, and take a D-lock on the bike for the commute.",
       },
       {
-        q: "Does looping the chain twice make it Diamond?",
+        q: "Does looping the chain twice change the grade?",
         a: "No. It can take up slack, which is useful. It does not change the Sold Secure grade, and it does not turn a lamp-post into an approved anchor.",
       },
       {
@@ -711,7 +723,7 @@ export const ALT_FAQS: Faq[] = [
   },
   {
     q: "Is the Mini on the best-of page?",
-    a: "No. The [best bike locks UK](/best) page lists the shortlist from the twelve. This Mini is reviewed because people search the name, not because it is a commute shortlist pick.",
+    a: "No. The [best bike locks UK](/best) page lists the shortlist from the thirteen. This Mini is reviewed because people search the name, not because it is a commute shortlist pick.",
   },
   {
     q: "New York Mini or Evolution Mini-7?",
