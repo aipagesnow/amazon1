@@ -1,0 +1,26 @@
+# Lock Desk
+
+> UK bike lock reviews and comparisons.
+
+Lock Desk is a small UK comparison site for thirteen D-locks and chains. It covers Sold Secure grades, insurance fit, and which lock you will actually carry, based on published specs, not cut tests. Amazon Associate links may earn Lock Desk a commission.
+
+## Main pages
+
+- [Home](https://www.lockdesk.co.uk/): UK bike lock reviews and comparisons
+- [How to choose a bike lock](https://www.lockdesk.co.uk/guide)
+- [Best bike locks UK](https://www.lockdesk.co.uk/best)
+- [Bike lock reviews](https://www.lockdesk.co.uk/reviews)
+- [Cable vs chain vs D-lock](https://www.lockdesk.co.uk/vs/d-lock-vs-chain)
+- [Hiplok D1000 vs DX1000](https://www.lockdesk.co.uk/vs/d1000-vs-dx1000)
+- [Kryptonite Evolution Mini-7 vs Hiplok D1000](https://www.lockdesk.co.uk/vs/evolution-mini-7-vs-d1000)
+- [Best bike lock for commuting](https://www.lockdesk.co.uk/for/commuting)
+- [Best bike lock for insurance](https://www.lockdesk.co.uk/for/insurance)
+- [What to look for in an anti-grinder bike lock](https://www.lockdesk.co.uk/for/anti-grinder)
+- [How we research bike locks](https://www.lockdesk.co.uk/method)
+
+## About
+
+- [About Lock Desk](https://www.lockdesk.co.uk/about)
+- [Contact](https://www.lockdesk.co.uk/contact)
+- [Disclosure](https://www.lockdesk.co.uk/disclosure)
+- [Privacy](https://www.lockdesk.co.uk/privacy)
