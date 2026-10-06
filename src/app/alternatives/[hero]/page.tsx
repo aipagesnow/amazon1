@@ -121,7 +121,11 @@ export default async function AlternativesPage({ params }: Props) {
             <p>
               <SeeOnAmazon asin={x1.asin} variant="text" />
               {" · "}
-              <SeeOnAmazon asin={d1000.asin} variant="text" />
+              <SeeOnAmazon
+                asin={d1000.asin}
+                variant="text"
+                label={`See ${displayName(d1000)} on Amazon`}
+              />
             </p>
           </article>
           <article className="fork-card">

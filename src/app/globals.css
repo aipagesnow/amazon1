@@ -1470,6 +1470,15 @@ table.spec tr.spec-group th {
 .pick-copy .amazon-text {
   color: var(--hivis);
 }
+.amazon-unavailable {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.8;
+}
 .five-line, .also-reviewed, .alt-chip, .first-pick {
   max-width: var(--measure);
 }

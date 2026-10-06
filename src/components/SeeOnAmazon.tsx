@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useRef } from "react";
-import { amazonUrl } from "@/lib/amazon";
+import { amazonUrl, isOnAmazonUk } from "@/lib/amazon";
 
 type Props = {
   asin: string;
@@ -9,6 +9,8 @@ type Props = {
   variant?: "button" | "text";
   /** Pass from a Server Component so client finders get a real tag. */
   associateTag?: string;
+  /** Link text. Defaults to "See on Amazon"; name the product when a card has more than one. */
+  label?: string;
 };
 
 type AmazonClickParams = {
@@ -59,11 +61,22 @@ function reportAmazonClick(anchor: HTMLAnchorElement, asinProp: string) {
   }
 }
 
-export function SeeOnAmazon({ asin, className, variant = "button", associateTag }: Props) {
+export function SeeOnAmazon({
+  asin,
+  className,
+  variant = "button",
+  associateTag,
+  label = "See on Amazon",
+}: Props) {
   const fromProvider = useContext(AssociateTagContext);
+  const skipClick = useRef(false);
+
+  if (!isOnAmazonUk(asin)) {
+    return <span className="amazon-unavailable">Not currently available on Amazon UK</span>;
+  }
+
   const href = amazonUrl(asin, associateTag?.trim() || fromProvider);
   const cls = className ?? (variant === "text" ? "amazon-text" : "see-on-amazon");
-  const skipClick = useRef(false);
 
   return (
     <a
@@ -89,7 +102,7 @@ export function SeeOnAmazon({ asin, className, variant = "button", associateTag 
         }, 0);
       }}
     >
-      See on Amazon
+      {label}
     </a>
   );
 }
