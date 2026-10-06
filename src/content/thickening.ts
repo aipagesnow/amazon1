@@ -77,7 +77,7 @@ export const REVIEWS_META =
   "Thirteen UK D-lock, folding-lock and chain reviews. Each page says who the lock suits, when another is a better fit, and the drawbacks.";
 
 export const REVIEWS_INTRO_EXTRA =
-  "Need a shortlist first? Use the [best of](/best) table. Choosing from scratch? Read [how to choose a bike lock](/guide). Job-led guides: [commuting](/for/commuting), [insurance](/for/insurance), and [anti-grinder](/for/anti-grinder). Most-asked locks: [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7) (Gold with a clip), [Pitbull STD 8003](/reviews/onguard-pitbull-std-8003) (Diamond with a clip), [Pitbull DT 8005](/reviews/onguard-pitbull-dt-8005) (the STD plus a cable), [ABUS Granit XPlus 540](/reviews/abus-granit-xplus-540) (long shackle) and [Bordo 6500](/reviews/abus-bordo-granit-xplus-6500) (Gold folding reach).";
+  "Need a shortlist first? Use the [best of](/best) table. Choosing from scratch? Read [how to choose a bike lock](/guide). Job-led guides: [commuting](/for/commuting), [insurance](/for/insurance), and [anti-grinder](/for/anti-grinder). Most-asked locks: [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7) (Gold with a clip), [Pitbull STD 8003](/reviews/onguard-pitbull-std-8003) (Diamond with a clip), [Pitbull DT 8005](/reviews/onguard-pitbull-dt-8005) (the STD plus a cable), [ABUS Granit XPlus 540](/reviews/abus-granit-xplus-540) (long shackle) and [Bordo 6500K](/reviews/abus-bordo-granit-6500k) (Gold folding reach).";
 
 export const GUIDE_FAQ_EXTRA: Faq = {
   q: "Where do I match a lock to my insurance?",
@@ -91,7 +91,7 @@ export const COMMUTE_BODY_EXTRA = [
 
 export const INSURANCE_BODY_EXTRA = [
   "If the policy already names Diamond and you are comparing locks sold against grinders, see [what to look for in an anti-grinder bike lock](/for/anti-grinder). Policies often care how you locked the bike as well as the grade — frame to a fixed object, not a wheel alone. Read those lines before you upgrade on thickness alone. Basics of grade, fit, and carry: [how to choose](/guide).",
-  "If the policy names Gold and you will carry the lock every day, start with the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7): 1.61kg, a frame clip, and a cable in the box. The cable is not Gold. If a Mini will not reach and Gold is still enough, look at the [Bordo 6500](/reviews/abus-bordo-granit-xplus-6500). If the policy names Pedal Cycle Diamond and carry weight is the limit, look at the [Seatylock Mason 140](/reviews/seatylock-mason-140) (about 0.97kg — measure 140 × 85 mm). If you need Diamond for ordinary bikes and e-bikes and will carry 1.7kg, start with the [Litelok X1](/reviews/litelok-x1). If you need Diamond with a clip, that is the [Pitbull STD](/reviews/onguard-pitbull-std-8003). The [D1000](/reviews/hiplok-d1000) is Diamond too, but only after you have measured 92 × 155 mm.",
+  "If the policy names Gold and you will carry the lock every day, start with the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7): 1.61kg, a frame clip, and a cable in the box. The cable is not Gold. If a Mini will not reach and Gold is still enough, look at the [Bordo 6500K](/reviews/abus-bordo-granit-6500k). If the policy names Pedal Cycle Diamond and carry weight is the limit, look at the [Seatylock Mason 140](/reviews/seatylock-mason-140) (about 0.97kg — measure 140 × 85 mm). If you need Diamond for ordinary bikes and e-bikes and will carry 1.7kg, start with the [Litelok X1](/reviews/litelok-x1). If you need Diamond with a clip, that is the [Pitbull STD](/reviews/onguard-pitbull-std-8003). The [D1000](/reviews/hiplok-d1000) is Diamond too, but only after you have measured 92 × 155 mm.",
   "Do not buy the ABUS 540 to satisfy an e-bike Diamond line. On our records it is Diamond for ordinary bikes and Gold for e-bikes. Use it when a compact D-lock will not close and the ordinary-bike grade still matches.",
   "The two New York chains follow the same split. Sold Secure lists the [New York 1410](/reviews/kryptonite-new-york-fahgettaboudit-1410) (100 cm) and the [New York 1415](/reviews/kryptonite-new-york-fahgettaboudit-1415) (150 cm) as Diamond for ordinary bikes and Gold for e-bikes. Either can meet an ordinary-bike Diamond line at home. Neither meets a policy that names Powered Cycle Diamond.",
   "We are not your broker. How we treat grades and what we will not claim: [how we research](/method).",
@@ -137,8 +137,8 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
     "OnGuard Pitbull DT 8005 review: Sold Secure Diamond D-lock, ~1.6 kg, cable and mount in the box — worth it if you need Diamond plus a cable kit; the cable is not graded.",
   "onguard-pitbull-ls-8002":
     "Sold Secure Diamond for ordinary bikes with a long 115 × 292 mm shackle, 1.75kg, and a frame mount. Useful when a Mini will not close on a fat post or cargo bike.",
-  "abus-bordo-granit-xplus-6500":
-    "ABUS Bordo 6500: Sold Secure Gold folding lock, 2.16 kg, 110 cm reach, SH bracket — flexible Gold when a Mini will not close.",
+  "abus-bordo-granit-6500k":
+    "ABUS Bordo 6500K: Sold Secure Gold folding lock, 2.47 kg, 120 cm reach, SH bracket — flexible Gold when a Mini will not close.",
   "seatylock-mason-140":
     "Sold Secure Pedal Cycle Diamond D-lock at about 0.97kg with a 140 × 85 mm locking area. Light weekday Diamond carry — measure the stand; mount sold separately; confirm e-bike grade on Sold Secure.",
   "kryptonite-new-york-fahgettaboudit-1415":
@@ -158,7 +158,7 @@ export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
     "OnGuard Pitbull DT 8005 Review (UK): Sold Secure Diamond + Cable — Worth It?",
   "kryptonite-new-york-fahgettaboudit-mini":
     "Kryptonite New York Fahgettaboudit Mini: Gold Mini, 2.06 kg",
-  "abus-bordo-granit-xplus-6500": "ABUS Bordo Granit XPlus 6500: Gold folding lock",
+  "abus-bordo-granit-6500k": "ABUS Bordo Granit 6500K: Gold folding lock",
   "kryptonite-new-york-fahgettaboudit-1415": "New York Fahgettaboudit 1415 chain review",
 };
 
@@ -234,11 +234,11 @@ export const REVIEW_RELATED_WELLS: Record<
     blurb:
       "If you need Diamond with a cable kit rather than a longer shackle, the DT 8005 is the Pitbull with cable and mount — cable not graded.",
   },
-  "abus-bordo-granit-xplus-6500": {
+  "abus-bordo-granit-6500k": {
     href: "/vs/d-lock-vs-chain",
     title: "D-lock vs chain lock",
     blurb:
-      "A Mini for a tight stand, a chain for reach at home. The Bordo sits between: Gold folding reach you can still clip on.",
+      "A Mini for a tight stand, a chain for reach at home. The Bordo 6500K sits between: Gold folding reach you can still clip on.",
   },
   "seatylock-mason-140": {
     href: "/for/commuting",

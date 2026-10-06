@@ -176,8 +176,9 @@
     }
   },
   {
-    "asin": "B071ZPJ7JY",
-    "name": "Bordo Granit XPlus 6500/110 folding lock with SH bracket",
+    "asin": "B0BDML8H3N",
+    "lastChecked": "6 October 2026",
+    "name": "Bordo Granit 6500K/120 folding lock with SH bracket",
     "brand": "ABUS",
     "category": "Bike locks",
     "specs": {
@@ -186,9 +187,9 @@
       "frameMount": true,
       "cableIncluded": false,
       "angleGrinderResistant": false,
-      "weightKg": 2.16,
+      "weightKg": 2.47,
       "keys": 2,
-      "lockingLength": "110 cm",
+      "lockingLength": "120 cm",
       "shackleMm": 5.5
     }
   },

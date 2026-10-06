@@ -37,7 +37,7 @@ const SLUG_BY_ASIN: Record<string, string> = {
   B07DXW7YJJ: "onguard-pitbull-dt-8005",
   B01A6ZRMEK: "onguard-pitbull-std-8003",
   B01KT86YWU: "onguard-pitbull-ls-8002",
-  B071ZPJ7JY: "abus-bordo-granit-xplus-6500",
+  B0BDML8H3N: "abus-bordo-granit-6500k",
   B0D3RGPXWN: "seatylock-mason-140",
   B08LXM56RD: "kryptonite-new-york-fahgettaboudit-1415",
 };
@@ -48,7 +48,7 @@ export const REVIEW_SLUGS = [
   "hiplok-dx1000",
   "kryptonite-evolution-mini-7",
   "abus-granit-xplus-540",
-  "abus-bordo-granit-xplus-6500",
+  "abus-bordo-granit-6500k",
   "kryptonite-new-york-fahgettaboudit-mini",
   "kryptonite-new-york-fahgettaboudit-1410",
   "kryptonite-new-york-fahgettaboudit-1415",
@@ -64,7 +64,7 @@ export const BEST_OF_ASINS = [
   "B01A6ZRMEK",
   "B0D77XJR4Z",
   "B0944HG7MK",
-  "B071ZPJ7JY",
+  "B0BDML8H3N",
   "B073W8N26F",
 ] as const;
 
@@ -104,7 +104,7 @@ export function shortName(product: Product): string {
   if (product.asin === "B07DXW7YJJ") return "Pitbull DT 8005";
   if (product.asin === "B01A6ZRMEK") return "Pitbull STD 8003";
   if (product.asin === "B01KT86YWU") return "Pitbull LS 8002";
-  if (product.asin === "B071ZPJ7JY") return "Bordo 6500";
+  if (product.asin === "B0BDML8H3N") return "Bordo 6500K";
   if (product.asin === "B0D3RGPXWN") return "Mason 140";
   if (product.asin === "B08LXM56RD") return "New York Fahgettaboudit 1415 chain";
   return product.name;

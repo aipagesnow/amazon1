@@ -68,7 +68,7 @@ export function reviewBanner(slug: string): { src: string; alt: string } {
       return scene("pick");
     case "onguard-pitbull-ls-8002":
       return scene("insurance");
-    case "abus-bordo-granit-xplus-6500":
+    case "abus-bordo-granit-6500k":
       return scene("fit");
     case "seatylock-mason-140":
       return scene("pick");

@@ -26,9 +26,9 @@ type Pick = {
  *    - Diamond + mount → Pitbull LS (note 540)
  *    - Diamond + bag → DX1000 (needs room; larger than D1000’s 92 × 155)
  *    - Gold/unsure + mount → 540 (Mini-7 may not fit; note Pitbull LS)
- *    - Gold/unsure + bag → Bordo (flexible Gold reach / folding)
+ *    - Gold/unsure + bag → Bordo 6500K (flexible Gold reach / folding)
  * 3. Carry stays at home → 1410 chain (note the 1415 for extra reach)
- * 4. Gold or unsure + normal stand → Mini-7 (Bordo is the folding-reach alternative)
+ * 4. Gold or unsure + normal stand → Mini-7 (Bordo 6500K is the folding-reach alternative)
  * 5. Diamond + wants a frame clip + normal stand → Pitbull STD (note DT for a cable)
  * 6. Diamond + bag → Mason 140 (lightest Pedal Cycle Diamond; X1 if e-bike Diamond / more room; D1000 if 92 × 155 mm)
  */
@@ -85,13 +85,13 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
       return {
         slug: "abus-granit-xplus-540",
         why: "A compact Mini often will not close on a fat post. The ABUS 540 has a 300 mm shackle and a frame bracket. It is Diamond for ordinary bikes and Gold for e-bikes.",
-        note: "The OnGuard Pitbull LS is the other long Diamond D-lock with a mount (115 × 292 mm). If you prefer folding reach instead of a long shackle, the Bordo 6500 is Gold with 110 cm of bars.",
+        note: "The OnGuard Pitbull LS is the other long Diamond D-lock with a mount (115 × 292 mm). If you prefer folding reach instead of a long shackle, the Bordo 6500K is Gold with 120 cm of bars.",
       };
     }
 
     return {
-      slug: "abus-bordo-granit-xplus-6500",
-      why: "The Bordo 6500 is Sold Secure Gold with 110 cm of folding bars at 2.16 kg. That length helps around a fat post, and it still has an SH bracket if you later want it on the bike.",
+      slug: "abus-bordo-granit-6500k",
+      why: "The Bordo 6500K is Sold Secure Gold with 120 cm of folding bars at 2.47 kg. That length helps around a fat post, and it still has an SH bracket if you later want it on the bike.",
       note: "The Mini-7 is lighter when a compact D-lock already closes. If you want a long D-shackle instead, look at the Pitbull LS or the ABUS 540.",
     };
   }
@@ -117,8 +117,8 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
         : "The Evolution Mini-7 is Sold Secure Gold at 1.61 kg, light enough for a bag. A frame mount and cable are in the box if you want them. The cable itself is not Sold Secure Gold.",
       note:
         grade === "unsure"
-          ? "Most UK home policies still name Gold. If the wording later asks for Diamond, step up to the Pitbull STD (with a clip) or the X1. If you need Gold with more reach than a Mini, look at the Bordo 6500."
-          : "When a Mini closes on your stand, this is usually the easiest Gold lock to take every day. If you need folding reach, look at the Bordo 6500. If the bike is high-value and you will carry 1.7 kg, step up to the X1.",
+          ? "Most UK home policies still name Gold. If the wording later asks for Diamond, step up to the Pitbull STD (with a clip) or the X1. If you need Gold with more reach than a Mini, look at the Bordo 6500K."
+          : "When a Mini closes on your stand, this is usually the easiest Gold lock to take every day. If you need folding reach, look at the Bordo 6500K. If the bike is high-value and you will carry 1.7 kg, step up to the X1.",
     };
   }
 

@@ -22,6 +22,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: "/compare", destination: "/best", statusCode: 301 },
+      {
+        source: "/reviews/abus-bordo-granit-xplus-6500",
+        destination: "/reviews/abus-bordo-granit-6500k",
+        statusCode: 301,
+      },
     ];
   },
   async rewrites() {
