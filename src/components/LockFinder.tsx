@@ -41,8 +41,8 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
       why: "This is a 100 cm chain for longer reach where the bike is stored. Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes. Keep it at home, and take a lighter D-lock when you ride.",
       note:
         carry === "home"
-          ? "At 4.9 kg it is awkward for daily carry. Pair it with the Evolution Mini-7, the Pitbull STD, or the X1 for the commute. If 100 cm will not reach the anchor or a second bike, the New York 1415 is the 150 cm version with the same grades, at 6.92 kg."
-          : "At 4.9 kg it is awkward for daily carry. Pair it with the Evolution Mini-7, the Pitbull STD, or the X1 for the commute.",
+          ? "At 4.9 kg it’s awkward for daily carry. Pair it with the Evolution Mini-7, the Pitbull STD, or the X1 for the commute. If 100 cm won’t reach the anchor or a second bike, the New York 1415 is the 150 cm version with the same grades, at 6.92 kg."
+          : "At 4.9 kg it’s awkward for daily carry. Pair it with the Evolution Mini-7, the Pitbull STD, or the X1 for the commute.",
     };
   }
 
@@ -52,13 +52,13 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
         return {
           slug: "kryptonite-new-york-fahgettaboudit-1415",
           why: "A thick post at home usually needs more length than a compact D-lock can offer. The New York 1415 is 150 cm of chain, and Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes. At 6.92 kg it stays where the bike is stored.",
-          note: "If the policy names e-bike (Powered Cycle) Diamond, this chain does not match; the DX1000 is Diamond for bikes and e-bikes with a 112 × 205 mm locking area. If 100 cm goes round the post and the frame, the New York 1410 has the same grades at 4.9 kg.",
+          note: "If the policy names e-bike (Powered Cycle) Diamond, this chain doesn’t match; the DX1000 is Diamond for bikes and e-bikes with a 112 × 205 mm locking area. If 100 cm goes round the post and the frame, the New York 1410 has the same grades at 4.9 kg.",
         };
       }
       return {
         slug: "kryptonite-new-york-fahgettaboudit-1410",
         why: "A thick post at home usually needs more length than a compact D-lock can offer. A 100 cm chain can wrap that post and stay where the bike is stored. Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes.",
-        note: "If 100 cm will not go round the post with the frame, the New York 1415 is the 150 cm version at 6.92 kg. If you later take a lock on the bike, a Mini may not close on that same post. The Pitbull LS and the ABUS 540 are the longer shackles that still include a frame mount.",
+        note: "If 100 cm won’t go round the post with the frame, the New York 1415 is the 150 cm version at 6.92 kg. If you later take a lock on the bike, a Mini may not close on that same post. The Pitbull LS and the ABUS 540 are the longer shackles that still include a frame mount.",
       };
     }
 
@@ -68,7 +68,7 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     if (needsDiamond && wantsMount) {
       return {
         slug: "onguard-pitbull-ls-8002",
-        why: "The Pitbull LS is a long 115 × 292 mm Diamond D-lock with a frame mount, so it can close around posts that a Mini cannot while still clipping to the bike.",
+        why: "The Pitbull LS is a long 115 × 292 mm Diamond D-lock with a frame mount, so it can close around posts that a Mini can’t while still clipping to the bike.",
         note: "The ABUS 540 is 300 mm and Diamond for ordinary bikes (Gold for e-bikes). Hiplok’s larger anti-grinder option is the DX1000 — 112 × 205 mm, no mount, 2.75 kg.",
       };
     }
@@ -84,7 +84,7 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     if (wantsMount) {
       return {
         slug: "abus-granit-xplus-540",
-        why: "A compact Mini often will not close on a fat post. The ABUS 540 has a 300 mm shackle and a frame bracket. It is Diamond for ordinary bikes and Gold for e-bikes.",
+        why: "A compact Mini often won’t close on a fat post. The ABUS 540 has a 300 mm shackle and a frame bracket. It’s Diamond for ordinary bikes and Gold for e-bikes.",
         note: "The OnGuard Pitbull LS is the other long Diamond D-lock with a mount (115 × 292 mm). If you prefer folding reach instead of a long shackle, the Bordo 6500K is Gold with 120 cm of bars.",
       };
     }
@@ -100,7 +100,7 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     return {
       slug: "kryptonite-new-york-fahgettaboudit-1410",
       why: "When the lock can stay put, a 100 cm chain gives you more reach around a home stand or ground anchor than most D-locks. Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes.",
-      note: "Take a D-lock when you ride away. The Mini-7 covers most Gold policies; use the Pitbull STD or the X1 if you need Diamond on the bike. If 100 cm will not reach, the New York 1415 is the 150 cm version at 6.92 kg.",
+      note: "Take a D-lock when you ride away. The Mini-7 covers most Gold policies; use the Pitbull STD or the X1 if you need Diamond on the bike. If 100 cm won’t reach, the New York 1415 is the 150 cm version at 6.92 kg.",
     };
   }
 
@@ -113,12 +113,12 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     return {
       slug: "kryptonite-evolution-mini-7",
       why: wantsMount
-        ? "The Evolution Mini-7 is Sold Secure Gold at 1.61 kg, with a frame mount and a cable in the box. The cable itself is not Sold Secure Gold."
-        : "The Evolution Mini-7 is Sold Secure Gold at 1.61 kg, light enough for a bag. A frame mount and cable are in the box if you want them. The cable itself is not Sold Secure Gold.",
+        ? "The Evolution Mini-7 is Sold Secure Gold at 1.61 kg, with a frame mount and a cable in the box. The cable itself isn’t Sold Secure Gold."
+        : "The Evolution Mini-7 is Sold Secure Gold at 1.61 kg, light enough for a bag. A frame mount and cable are in the box if you want them. The cable itself isn’t Sold Secure Gold.",
       note:
         grade === "unsure"
           ? "Most UK home policies still name Gold. If the wording later asks for Diamond, step up to the Pitbull STD (with a clip) or the X1. If you need Gold with more reach than a Mini, look at the Bordo 6500K."
-          : "When a Mini closes on your stand, this is usually the easiest Gold lock to take every day. If you need folding reach, look at the Bordo 6500K. If the bike is high-value and you will carry 1.7 kg, step up to the X1.",
+          : "When a Mini closes on your stand, this is usually the easiest Gold lock to take every day. If you need folding reach, look at the Bordo 6500K. If the bike is high-value and you’ll carry 1.7 kg, step up to the X1.",
     };
   }
 
@@ -127,7 +127,7 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
     return {
       slug: "onguard-pitbull-std-8003",
       why: "The Pitbull STD is Sold Secure Diamond for ordinary bikes, 1.44 kg, 115 × 230 mm, with a frame mount in the box. It’s worth considering if you want Diamond security but also want to carry the lock on the bike.",
-      note: "If you want a cable in the same box, that is the Pitbull DT 8005 — the cable is not Diamond. We do not have an e-bike grade listed for the Pitbulls; if the policy names powered Diamond, check Sold Secure and look at the X1.",
+      note: "If you want a cable in the same box, that’s the Pitbull DT 8005 — the cable isn’t Diamond. There’s no e-bike grade listed for the Pitbulls; if the policy names powered Diamond, check Sold Secure and look at the X1.",
     };
   }
 
@@ -135,7 +135,7 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
   return {
     slug: "seatylock-mason-140",
     why: "The Mason 140 is Sold Secure Pedal Cycle Diamond at about 0.97 kg, with a compact 140 × 85 mm locking area. It suits weekday bag carry when Diamond is required and 1.4–1.9 kg feels like too much.",
-    note: "Measure 140 × 85 mm before you buy — many UK stands will not close. The mount is sold separately. Powered Cycle Diamond was not listed on the Sold Secure page we checked; if the policy names e-bike Diamond, confirm on Sold Secure and look at the X1 (1.7 kg, Diamond for bikes and e-bikes, 101 × 197 mm). Choose the D1000 only after measuring 92 × 155 mm. If you want Diamond with a clip, that is the Pitbull STD.",
+    note: "Measure 140 × 85 mm before you buy — many UK stands won’t close. The mount is sold separately. Powered Cycle Diamond wasn’t listed on the Sold Secure page; if the policy names e-bike Diamond, confirm on Sold Secure and look at the X1 (1.7 kg, Diamond for bikes and e-bikes, 101 × 197 mm). Choose the D1000 only after measuring 92 × 155 mm. If you want Diamond with a clip, that’s the Pitbull STD.",
   };
 }
 
@@ -237,7 +237,7 @@ function waitCopy(answered: number): { kicker: string; body: string } {
   if (answered === 0) {
     return {
       kicker: "Answer the three questions",
-      body: "Tell us the grade you need, where you lock up, and how you will carry the lock. We will then suggest one lock from the set we have reviewed.",
+      body: "Tell us the grade you need, where you lock up, and how you’ll carry the lock. We’ll then suggest one lock from the set we’ve reviewed.",
     };
   }
   if (answered === 1) {
@@ -248,7 +248,7 @@ function waitCopy(answered: number): { kicker: string; body: string } {
   }
   return {
     kicker: "One question left",
-    body: "Answer the last question and we will suggest a lock.",
+    body: "Answer the last question and we’ll suggest a lock.",
   };
 }
 

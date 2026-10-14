@@ -127,6 +127,17 @@ export default async function VsPage({ params }: Props) {
           <ProductCol product={a} kicker={a.specs?.type ?? "Lock"} />
           <ProductCol product={b} kicker={b.specs?.type ?? "Lock"} />
         </div>
+        {pair.slug === "d-lock-vs-chain" ? (
+          <>
+            <h2>Are D-locks better than chains?</h2>
+            <p>
+              Not as a class, no. We’d carry a D-lock to the station and leave the chain at home.
+              The Mini-7 is 1.61 kg and Gold, with a frame mount, so it’s the one you’ll actually
+              take. The 1410 is 4.9 kg, and it’s the one with the reach when a D-lock won’t close.
+              Grade, and whether you’ll use it, matter more than the shape.
+            </p>
+          </>
+        ) : null}
         <h2>Common questions</h2>
         <div className="faq-list">
           {pair.faqs.map((faq) => (

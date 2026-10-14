@@ -137,7 +137,7 @@ export default function HomePage() {
           </figure>
           <div className="pick-copy">
             <h2>A lock to start with</h2>
-            <p className="meta">Chosen from the thirteen we reviewed, mainly on grade, weight, and whether the lock will close on a typical stand.</p>
+            <p className="meta">We’ve narrowed the thirteen we’ve reviewed down to these, mostly on three things: the grade, the weight, and whether it’ll actually close round the stand you lock up at.</p>
             <h3>{displayName(pick)}</h3>
             <p>
               <strong>Why this one.</strong> {HOME_PICK.why}
@@ -172,7 +172,7 @@ export default function HomePage() {
             ))}
           </div>
           <p className="five-line">
-            <strong>Seven locks on the shortlist</strong>, drawn from the thirteen we
+            <strong>Seven locks on the shortlist</strong>, from the thirteen we’ve
             reviewed.{" "}
             <Link href="/best">Open the shortlist table</Link>
           </p>
@@ -183,9 +183,9 @@ export default function HomePage() {
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
             New York Fahgettaboudit Mini
           </Link>
-          . It is an 18 mm Sold Secure Gold lock at 2.06kg with no frame mount. For most
-          daily commuting we would point you to the Evolution Mini-7 instead, because it is
-          lighter and includes a mount. If you are still deciding, see{" "}
+          . It’s an 18 mm Sold Secure Gold lock at 2.06kg with no frame mount. For most
+          daily commuting we’d point you to the Evolution Mini-7 instead, because it’s
+          lighter and it includes a mount. If you’re still deciding, see{" "}
           <Link href="/alternatives/kryptonite-new-york-fahgettaboudit-mini">
             alternatives to the New York Mini
           </Link>

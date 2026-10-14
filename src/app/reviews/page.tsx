@@ -79,7 +79,7 @@ export default function ReviewsIndexPage() {
           <RichText text={REVIEWS_INTRO_EXTRA} />
         </p>
         <p className="alt-chip">
-          If you landed here looking for{" "}
+          If you’ve come here for{" "}
           <Link href={ALTERNATIVES_PATH}>alternatives to the New York Mini</Link>, that page is
           separate from this index.
         </p>
@@ -96,7 +96,7 @@ export default function ReviewsIndexPage() {
           </section>
         ))}
         <p>
-          If you have not measured the stand yet, start with{" "}
+          If you haven’t measured your stand yet, start with{" "}
           <Link href="/guide">how to choose</Link>. Job guides:{" "}
           <Link href="/for/commuting">commuting</Link> ·{" "}
           <Link href="/for/insurance">insurance</Link>. Comparisons:{" "}

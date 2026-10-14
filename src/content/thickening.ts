@@ -9,7 +9,7 @@ export const HOME_NEXT = [
   {
     href: "/guide",
     title: "How to choose a bike lock",
-    blurb: "Sold Secure Gold or Diamond, whether it will close on your stand, and whether you will carry it.",
+    blurb: "Sold Secure Gold or Diamond, whether it’ll close on your stand, and whether you’ll carry it.",
   },
   {
     href: "/best",
@@ -44,7 +44,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "Are D-locks accepted by insurers?",
-    a: "Only when the Sold Secure grade matches your policy and, where the insurer publishes a list, the exact model is on that list. A badge alone is not always enough. See [best bike lock for insurance](/for/insurance).",
+    a: "Only when the Sold Secure grade matches your policy and, where the insurer publishes a list, the exact model is on that list. A badge alone isn’t always enough. See [best bike lock for insurance](/for/insurance).",
   },
   {
     q: "D-lock or chain for a commute?",
@@ -61,15 +61,15 @@ export const BEST_INTRO_EXTRA =
 export const BEST_FAQS: Faq[] = [
   {
     q: "Why is the New York Mini not on this table?",
-    a: "It is Sold Secure Gold at 2.06kg with no frame clip. Most commuters are better with the Evolution Mini-7. We still review it because people search the name — see [alternatives to the New York Mini](/alternatives/kryptonite-new-york-fahgettaboudit-mini).",
+    a: "It’s Sold Secure Gold at 2.06kg with no frame clip. You’d usually be better with the Evolution Mini-7. We still review it because people search the name — see [alternatives to the New York Mini](/alternatives/kryptonite-new-york-fahgettaboudit-mini).",
   },
   {
     q: "Should I buy Diamond for a weekday commute?",
-    a: "Only if the policy asks for it, or the bike is worth the extra weight, and you will still carry the lock. Otherwise a Gold Mini you take every day beats a Diamond lock left at home. See [commuting](/for/commuting).",
+    a: "Only if the policy asks for it, or the bike is worth the extra weight, and you’ll still carry the lock. Otherwise a Gold Mini you take every day beats a Diamond lock left at home. See [commuting](/for/commuting).",
   },
   {
     q: "How do you pick these locks?",
-    a: "Grade on the policy, whether the shackle will close, and whether you will carry it. Full method: [how we research](/method). Full chooser: [how to choose](/guide).",
+    a: "Grade on the policy, whether the shackle will close, and whether you’ll carry it. Full method: [how we research](/method). Full chooser: [how to choose](/guide).",
   },
   {
     q: "Which Sold Secure grade do insurers want?",
@@ -78,6 +78,14 @@ export const BEST_FAQS: Faq[] = [
   {
     q: "Is Diamond angle-grinder proof?",
     a: "No. Explicit angle-grinder testing is part of the Powered Cycle Diamond standard. The published cut times further up this page are from BikeRadar and Cycling UK, and they show a Diamond lock can still be cut.",
+  },
+  {
+    q: "What is the best rated bike lock?",
+    a: "There isn’t one. We’d go by the Sold Secure grade your insurer asks for, whether the lock closes on your stand, and whether you’ll carry it. We don’t use Amazon stars.",
+  },
+  {
+    q: "What lock works in a block of flats car park?",
+    a: "We’d leave a chain on a ground anchor there, and take a D-lock when you ride. The New York 1410 is 100 cm at 4.9kg. If that won’t reach, the New York 1415 is 150 cm at 6.92kg. We don’t review the anchors themselves.",
   },
 ];
 
@@ -121,7 +129,7 @@ export const VS_AFTER_EXTRA: Record<string, string> = {
   "d1000-vs-dx1000":
     "Measure first, then read the full write-ups: [Hiplok D1000](/reviews/hiplok-d1000) and [Hiplok DX1000](/reviews/hiplok-dx1000). For locks sold against grinders, see [what to look for in an anti-grinder lock](/for/anti-grinder). Want lighter Diamond carry? The [Litelok X1](/reviews/litelok-x1) sits on the [best of](/best) shortlist.",
   "d-lock-vs-chain":
-    "Still choosing a daily lock? [Best lock for commuting](/for/commuting) names the Mini-7 and the X1. The [best of](/best) table puts both next to the home chain so the weight difference is obvious. If 100 cm of chain will not reach, the [New York 1415](/reviews/kryptonite-new-york-fahgettaboudit-1415) is the 150 cm version at 6.92kg.",
+    "Still choosing a daily lock? [Best lock for commuting](/for/commuting) names the Mini-7 and the X1. The [best of](/best) table puts both next to the home chain so the weight difference is obvious. If 100 cm of chain won’t reach, the [New York 1415](/reviews/kryptonite-new-york-fahgettaboudit-1415) is the 150 cm version at 6.92kg.",
 };
 
 export const REVIEW_META_OVERRIDES: Record<string, string> = {
@@ -174,15 +182,15 @@ export const REVIEW_DIRECT_ANSWERS: Record<string, string> = {
   "onguard-pitbull-std-8003":
     "Sold Secure Diamond for ordinary bikes, 1.44kg, with a frame mount and a 115 × 230 mm locking area. No cable in the box. It suits riders who need Diamond and will clip the lock to the bike.",
   "kryptonite-evolution-mini-7":
-    "Sold Secure Gold on the D-lock, 1.61kg, with a frame mount and a cable in the box. The cable is not Gold — lock the frame with the graded D-lock.",
+    "Sold Secure Gold on the D-lock, 1.61kg, with a frame mount and a cable in the box. The cable isn’t Gold — lock the frame with the graded D-lock.",
   "abus-granit-xplus-540":
-    "Sold Secure Diamond for ordinary bikes with a long 300 mm shackle when a Mini will not close. On our records the e-bike grade is Gold, not Diamond. Frame mount in the box; not sold as anti-grinder.",
+    "Sold Secure Diamond for ordinary bikes with a long 300 mm shackle when a Mini won’t close. For e-bikes the grade is Gold, not Diamond. Frame mount in the box; not sold as anti-grinder.",
   "seatylock-mason-140":
     "Sold Secure Pedal Cycle Diamond at about 0.97kg with a compact 140 × 85 mm locking area. It suits ordinary-bike Diamond when carry weight is the limit. Measure the stand; mount sold separately; confirm e-bike grade on Sold Secure.",
   "onguard-pitbull-dt-8005":
-    "Worth picking if you want Sold Secure Diamond on the D-lock plus a cable and frame mount in one box (~1.6 kg). Lock the frame with the graded D-lock; the cable is not Diamond. Skip it if you already have a cable or prefer the lighter STD 8003 without one.",
+    "Worth picking if you want Sold Secure Diamond on the D-lock plus a cable and frame mount in one box (~1.6 kg). Lock the frame with the graded D-lock; the cable isn’t Diamond. Skip it if you’ve a cable already, or prefer the lighter STD 8003 without one.",
   "kryptonite-new-york-fahgettaboudit-1415":
-    "Sold Secure lists the 1415 chain with its New York disc lock as Diamond for ordinary bikes and Gold for e-bikes. It is 150 cm long and weighs 6.92kg, so it is a chain to leave at home when you need extra reach. If 100 cm is enough, the New York 1410 has the same grades at 4.9kg.",
+    "Sold Secure lists the 1415 chain with its New York disc lock as Diamond for ordinary bikes and Gold for e-bikes. It’s 150 cm long and weighs 6.92kg, so it’s a chain to leave at home when you need extra reach. If 100 cm is enough, the New York 1410 has the same grades at 4.9kg.",
 };
 
 export const REVIEW_RELATED_WELLS: Record<
@@ -193,48 +201,48 @@ export const REVIEW_RELATED_WELLS: Record<
     href: "/for/anti-grinder",
     title: "What to look for in an anti-grinder lock",
     blurb:
-      "The X1 is the usual Diamond starting point when a lock is sold against grinders and you will still carry 1.7kg.",
+      "The X1 is the usual Diamond starting point when a lock is sold against grinders and you’ll still carry 1.7kg.",
   },
   "hiplok-d1000": {
     href: "/vs/d1000-vs-dx1000",
     title: "Hiplok D1000 vs DX1000",
     blurb:
-      "Same Diamond grade. Choose by locking area and weight after you have measured the stand.",
+      "Same Diamond grade. Choose by locking area and weight after you’ve measured the stand.",
   },
   "kryptonite-evolution-mini-7": {
     href: "/for/commuting",
     title: "Best bike lock for commuting",
     blurb:
-      "A commute lock is one you take every day. For most UK riders on Gold, that is this Mini-7.",
+      "A commute lock is one you take every day. For most UK riders on Gold, that’s this Mini-7.",
   },
   "abus-granit-xplus-540": {
     href: "/guide",
     title: "How to choose a bike lock",
-    blurb: "Measure the stand before you buy a long shackle. Fit is why the 540 exists.",
+    blurb: "Measure your stand before you buy a long shackle. Fit is why the 540 exists.",
   },
   "kryptonite-new-york-fahgettaboudit-1410": {
     href: "/vs/d-lock-vs-chain",
     title: "D-lock vs chain lock",
     blurb:
-      "A D-lock for the commute, a chain for reach at home. Using both is common; commuting with 4.9kg is not.",
+      "A D-lock for the commute, a chain for reach at home. Using both is common; commuting with 4.9kg isn’t.",
   },
   "hiplok-dx1000": {
     href: "/vs/d1000-vs-dx1000",
     title: "Hiplok D1000 vs DX1000",
     blurb:
-      "Same Diamond grade. The DX1000 is the larger sibling when the D1000 will not close — measure first.",
+      "Same Diamond grade. The DX1000 is the larger sibling when the D1000 won’t close — measure first.",
   },
   "onguard-pitbull-std-8003": {
     href: "/reviews/onguard-pitbull-dt-8005",
     title: "OnGuard Pitbull DT 8005",
     blurb:
-      "Same Pitbull Diamond D-lock family with a cable and mount in the box. The cable is not Diamond — use the graded D-lock on the frame.",
+      "Same Pitbull Diamond D-lock family with a cable and mount in the box. The cable isn’t Diamond — use the graded D-lock on the frame.",
   },
   "onguard-pitbull-dt-8005": {
     href: "/reviews/onguard-pitbull-std-8003",
     title: "OnGuard Pitbull STD 8003",
     blurb:
-      "Same Diamond D-lock without the cable — lighter kit if you already carry a cable or do not need one. See also the best of shortlist.",
+      "Same Diamond D-lock without the cable — lighter kit if you already carry a cable or don’t need one. See also the best of shortlist.",
   },
   "onguard-pitbull-ls-8002": {
     href: "/reviews/onguard-pitbull-dt-8005",
@@ -252,7 +260,7 @@ export const REVIEW_RELATED_WELLS: Record<
     href: "/for/commuting",
     title: "Best bike lock for commuting",
     blurb:
-      "A commute lock is one you take every day. The Mason fits when Pedal Cycle Diamond is required and about 0.97kg is the carry you will keep using.",
+      "A commute lock is one you take every day. The Mason fits when Pedal Cycle Diamond is required and about 0.97kg is the carry you’ll keep using.",
   },
   "kryptonite-new-york-fahgettaboudit-1415": {
     href: "/vs/d-lock-vs-chain",

@@ -38,7 +38,7 @@ function AltCard({ slug, why, kicker }: { slug: string; why: string; kicker: str
           </Link>
         </p>
       ) : (
-        <p className="meta">We do not have a full review of this lock yet.</p>
+        <p className="meta">We don’t have a full review of this lock yet.</p>
       )}
       <SeeOnAmazon asin={product.asin} className="see-on-amazon" />
     </article>
@@ -129,7 +129,7 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
           <h2>Verdict</h2>
           <p>{copy.verdict}</p>
           <p className="meta">
-            If you still need help matching grade, fit, and carry, start with{" "}
+            If you’re still matching grade, fit and carry, start with{" "}
             <Link href="/guide">how to choose a bike lock</Link>.
           </p>
           <SeeOnAmazon asin={product.asin} className="btn-amazon" />
@@ -195,12 +195,12 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
 
         <h2>The numbers</h2>
         <p>
-          The weights, grades, and sizes below come from the manufacturer and from Sold Secure. If a
-          figure is missing, we leave the cell blank rather than guess.
+          The weights, grades and sizes below come from the maker and from Sold Secure. If a
+          figure’s missing, we’d rather leave the cell blank than guess.
         </p>
         <SpecTable product={product} />
         <p className="meta">
-          Confirm the grade on Sold Secure’s{" "}
+          It’s worth confirming the grade on Sold Secure’s{" "}
           <a
             href={SOLD_SECURE_APPROVED_SEARCH}
             target="_blank"
@@ -240,15 +240,15 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
         </div>
 
         <p>
-          If you have not measured the stand yet, start with{" "}
+          If you haven’t measured your stand yet, start with{" "}
           <Link href="/guide">how to choose a bike lock</Link>. You can compare the shortlist on{" "}
           <Link href="/best">best bike locks UK</Link>, or read{" "}
-          <Link href={vsHref}>{vsLabel}</Link>. For how these pages are put together, see{" "}
+          <Link href={vsHref}>{vsLabel}</Link>. For how the research is put together, see{" "}
           <Link href="/method">how we research</Link>.
         </p>
 
         <div className="review-close">
-          <p>Prices and stock on Amazon can change, so check them on the day you click through.</p>
+          <p>Prices and stock on Amazon can change, so it’s worth a check on the day you click through.</p>
           <Link href="/reviews" className="primary-link">
             All reviews
           </Link>

@@ -316,7 +316,7 @@ export default function BestPage() {
 
         <h2>2026 models we are tracking</h2>
         <p>
-          We have not yet confirmed the UK Amazon listings for these models, so there are no buy
+          We haven’t confirmed the UK Amazon listings for these models yet, so there aren’t buy
           links.
         </p>
         <div className="spec-scroll-wrap">
@@ -346,7 +346,7 @@ export default function BestPage() {
         </div>
 
         <h2>Published cut times</h2>
-        <p>Lock Desk has not cut these locks; times are from the named tests.</p>
+        <p>Lock Desk hasn’t cut these locks. The times come from the named tests.</p>
         <div className="spec-scroll-wrap">
           <p className="spec-scroll-hint">Swipe for more columns</p>
           <div className="spec-scroll">
@@ -375,20 +375,20 @@ export default function BestPage() {
 
         <h2>Head-to-head</h2>
         <p>
-          If you are choosing between two locks, these short comparisons sit beside the Best of
-          table. They add detail for those pairs rather than replacing the shortlist.
+          If you’re choosing between two locks, these short comparisons sit beside the Best of
+          table. They add detail on those pairs, and they don’t replace the shortlist.
         </p>
         <ul>
           <li>
             <Link href="/vs/evolution-mini-7-vs-d1000">Evolution Mini-7 vs Hiplok D1000</Link> —
-            a Gold weekday Mini compared with a Diamond compact D-lock.
+            a Gold weekday Mini, set against a Diamond compact D-lock.
           </li>
           <li>
-            <Link href="/vs/d1000-vs-dx1000">Hiplok D1000 vs DX1000</Link> — same Diamond grade;
-            choose by locking area and weight after you have measured the stand.
+            <Link href="/vs/d1000-vs-dx1000">Hiplok D1000 vs DX1000</Link> — same Diamond grade.
+            We’d choose by locking area and weight after you’ve measured your stand.
           </li>
           <li>
-            <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> — when a D-lock is easier to
+            <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> — when a D-lock’s easier to
             carry, when a chain’s length is useful, and when it makes sense to use both.
           </li>
         </ul>
