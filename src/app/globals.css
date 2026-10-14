@@ -1172,6 +1172,55 @@ table.spec tr.spec-group th {
 .desk-verdict h2 { color: #f6f8f4; margin: 0 0 0.55rem; font-size: 1.35rem; }
 .desk-verdict .btn-amazon { margin-top: 0.95rem; }
 
+.byline {
+  margin: 0.15rem 0 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.verdict {
+  margin: 0.4rem 0 1.5rem;
+  padding: 1.1rem 1.2rem 1.25rem;
+  background: #f3f6f1;
+  border-left: 4px solid var(--hivis);
+}
+.prose .verdict h2 {
+  margin: 0 0 0.85rem;
+  font-size: 1.45rem;
+}
+.verdict-picks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.95rem;
+}
+.prose .verdict-picks > li { margin: 0; }
+.prose .verdict-picks h3 {
+  margin: 0 0 0.15rem;
+  font-size: 1.08rem;
+}
+.verdict-picks p { margin: 0; }
+.verdict-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.9rem;
+  margin-top: 0.45rem;
+}
+@media (min-width: 800px) {
+  .verdict-picks { grid-template-columns: 1fr 1fr; }
+}
+table.spec.best-compare { min-width: 54rem; }
+table.spec caption {
+  caption-side: bottom;
+  text-align: left;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  color: var(--muted);
+  padding: 0.75rem 0.2rem 0.2rem;
+}
+
 .review-top {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(200px, 0.7fr);

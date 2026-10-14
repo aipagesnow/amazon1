@@ -71,6 +71,14 @@ export const BEST_FAQS: Faq[] = [
     q: "How do you pick these locks?",
     a: "Grade on the policy, whether the shackle will close, and whether you will carry it. Full method: [how we research](/method). Full chooser: [how to choose](/guide).",
   },
+  {
+    q: "Which Sold Secure grade do insurers want?",
+    a: "Sold Secure says Gold is typically the minimum grade insurers ask for on higher-value bikes. Always check your own policy wording.",
+  },
+  {
+    q: "Is Diamond angle-grinder proof?",
+    a: "No. Explicit angle-grinder testing is part of the Powered Cycle Diamond standard. The published cut times further up this page are from BikeRadar and Cycling UK, and they show a Diamond lock can still be cut.",
+  },
 ];
 
 export const REVIEWS_META =
@@ -124,40 +132,40 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "kryptonite-evolution-mini-7":
     "Sold Secure Gold, 1.61kg, mount and cable in the box. The cable is not Gold. A commute lock many UK riders will still take every day.",
   "abus-granit-xplus-540":
-    "Diamond for ordinary bikes, Gold for e-bikes, 108 × 300 mm, mount in the box. For stands a compact Mini will not close on. Not listed as angle-grinder resistant.",
+    "Diamond for ordinary bikes, Gold for e-bikes, 108 × 300 mm, mount in the box. For stands a compact Mini will not close. Not listed as angle-grinder resistant.",
   "kryptonite-new-york-fahgettaboudit-mini":
     "New York Fahgettaboudit Mini: Sold Secure Gold, 2.06 kg, no mount, no cable — a thick second lock; the Evolution Mini-7 is usually easier to carry.",
   "kryptonite-new-york-fahgettaboudit-1410":
-    "100 cm, 14 mm, 4.9kg. Sold Secure Diamond for ordinary bikes, Gold for e-bikes. Extra length for home or a terrace. The weight suits storage more than a daily commute.",
+    "100 cm, 14 mm, 4.9kg. Sold Secure Diamond for ordinary bikes, Gold for e-bikes. Extra length for home. The weight suits storage more than a daily commute.",
   "hiplok-dx1000":
     "Diamond for ordinary bikes and e-bikes at 2.75kg, with a 112 × 205 mm locking area and no mount. Larger than the D1000 — measure the stand first.",
   "onguard-pitbull-std-8003":
     "Sold Secure Diamond for ordinary bikes, 1.44kg, with a frame mount and a 115 × 230 mm locking area. Fits if you need Diamond with a clip. No cable.",
   "onguard-pitbull-dt-8005":
-    "OnGuard Pitbull DT 8005 review: Sold Secure Diamond D-lock, ~1.6 kg, cable and mount in the box — worth it if you need Diamond plus a cable kit; the cable is not graded.",
+    "OnGuard Pitbull DT 8005 is Sold Secure Diamond at about 1.6 kg. A cable is in the box, and the cable is not graded.",
   "onguard-pitbull-ls-8002":
-    "Sold Secure Diamond for ordinary bikes with a long 115 × 292 mm shackle, 1.75kg, and a frame mount. Useful when a Mini will not close on a fat post or cargo bike.",
+    "Sold Secure Diamond for ordinary bikes with a long 115 × 292 mm shackle, 1.75kg, and a frame mount. Useful when a Mini will not close on a fat post.",
   "abus-bordo-granit-6500k":
     "ABUS Bordo 6500K: Sold Secure Gold folding lock, 2.47 kg, 120 cm reach, SH bracket — flexible Gold when a Mini will not close.",
   "seatylock-mason-140":
-    "Sold Secure Pedal Cycle Diamond D-lock at about 0.97kg with a 140 × 85 mm locking area. Light weekday Diamond carry — measure the stand; mount sold separately; confirm e-bike grade on Sold Secure.",
+    "Sold Secure Pedal Cycle Diamond at about 0.97kg, 140 × 85 mm. Measure the stand. The mount is sold separately. Confirm the e-bike grade on Sold Secure.",
   "kryptonite-new-york-fahgettaboudit-1415":
     "Sold Secure Diamond for ordinary bikes, Gold for e-bikes. A 150 cm chain at 6.92kg for reach at home rather than a commute, compared with the 1410.",
 };
 
 export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
   "onguard-pitbull-std-8003":
-    "OnGuard Pitbull 8003 Review: Sold Secure Diamond D-Lock (UK)",
+    "OnGuard Pitbull STD 8003 review: Sold Secure Diamond, 1.44kg",
   "kryptonite-evolution-mini-7":
-    "Kryptonite Evolution Mini-7 Review (UK): Sold Secure Gold, 1.61kg",
+    "Kryptonite Evolution Mini-7 review: Sold Secure Gold, 1.61kg",
   "abus-granit-xplus-540":
-    "ABUS Granit XPlus 540 Review (UK): Sold Secure Diamond, 300mm Shackle",
+    "ABUS Granit XPlus 540 review: Sold Secure Diamond, 1.8kg",
   "seatylock-mason-140":
     "Seatylock Mason 140 review — lightweight Diamond D-lock",
   "onguard-pitbull-dt-8005":
-    "OnGuard Pitbull DT 8005 Review (UK): Sold Secure Diamond + Cable — Worth It?",
+    "OnGuard Pitbull DT 8005 review: Sold Secure Diamond, 1.6kg + cable",
   "kryptonite-new-york-fahgettaboudit-mini":
-    "Kryptonite New York Fahgettaboudit Mini: Gold Mini, 2.06 kg",
+    "Kryptonite Fahgettaboudit Mini review: Sold Secure Gold, 2.06kg",
   "abus-bordo-granit-6500k": "ABUS Bordo Granit 6500K: Gold folding lock",
   "kryptonite-new-york-fahgettaboudit-1415": "New York Fahgettaboudit 1415 chain review",
 };
