@@ -2032,3 +2032,4 @@ table.spec caption {
   color: var(--hivis-hot);
   text-decoration-thickness: 2px;
 }
+.illustrative-caption{position:absolute;right:.375rem;bottom:.375rem;z-index:1;padding:.0625rem .375rem;border-radius:.25rem;background:rgba(0,0,0,.55);color:#fff;font-size:.625rem;line-height:1rem;letter-spacing:.01em;pointer-events:none}

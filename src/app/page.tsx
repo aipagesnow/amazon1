@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { IllustrativeCaption } from "@/components/IllustrativeCaption";
 import Link from "next/link";
 import { DisclosureStrip } from "@/components/DisclosureStrip";
 import { JsonLd } from "@/components/JsonLd";
@@ -131,6 +132,7 @@ export default function HomePage() {
                 alt={photoAlt.pick}
                 sizes="(max-width: 980px) 100vw, 42vw"
               />
+              <IllustrativeCaption />
             </div>
           </figure>
           <div className="pick-copy">

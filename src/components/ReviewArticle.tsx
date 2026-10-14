@@ -103,6 +103,7 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
     <article>
       <PageHero
         image={art.src}
+        illustrative
         alt={art.alt}
         kicker={`${product.brand} · ${product.specs?.type ?? "Lock"}`}
         title={displayName(product)}

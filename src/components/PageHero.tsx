@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Photo } from "@/components/Photo";
+import { IllustrativeCaption } from "@/components/IllustrativeCaption";
 import { SiteImage } from "@/components/SiteImage";
 
 type Props = {
@@ -10,6 +11,7 @@ type Props = {
   lede?: string;
   caption?: string;
   overlay?: boolean;
+  illustrative?: boolean;
   tight?: boolean;
   children?: ReactNode;
 };
@@ -22,6 +24,7 @@ export function PageHero({
   lede,
   caption,
   overlay,
+  illustrative,
   tight,
   children,
 }: Props) {
@@ -37,6 +40,7 @@ export function PageHero({
             width={1280}
             height={720}
           />
+          {illustrative ? <IllustrativeCaption /> : null}
           <div className="cover-shade" aria-hidden="true" />
           {caption ? <figcaption>{caption}</figcaption> : null}
         </figure>
@@ -54,7 +58,7 @@ export function PageHero({
 
   return (
     <header className="page-hero">
-      <Photo src={image} alt={alt} caption={caption} className="page-hero-media" priority />
+      <Photo src={image} alt={alt} caption={caption} className="page-hero-media" priority illustrative={illustrative} />
       <div className="wrap page-hero-copy">
         <p className="kicker">{kicker}</p>
         <h1>{title}</h1>

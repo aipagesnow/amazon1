@@ -87,6 +87,7 @@ export default async function VsPage({ params }: Props) {
         image={pair.slug === "d-lock-vs-chain" ? photos.vs : photos.bannerCommute}
         alt={pair.slug === "d-lock-vs-chain" ? photoAlt.vs : photoAlt.bannerCommute}
         kicker="Comparison"
+        illustrative
         title={pair.title}
         lede={pair.directAnswer ? undefined : pair.intro}
         overlay

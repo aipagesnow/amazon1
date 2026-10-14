@@ -56,6 +56,7 @@ export default async function AlternativesPage({ params }: Props) {
         image={photos.bannerThick}
         alt={photoAlt.bannerThick}
         kicker="Alternatives"
+        illustrative
         title="Best alternatives to the Kryptonite New York Mini"
         lede={ALT_LEDE}
         overlay
