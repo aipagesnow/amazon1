@@ -132,7 +132,7 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "kryptonite-evolution-mini-7":
     "Sold Secure Gold, 1.61kg, mount and cable in the box. The cable is not Gold. A commute lock many UK riders will still take every day.",
   "abus-granit-xplus-540":
-    "Diamond for ordinary bikes, Gold for e-bikes, 108 × 300 mm, mount in the box. For stands a compact Mini will not close. Not listed as angle-grinder resistant.",
+    "ABUS Granit XPlus 540: Sold Secure Diamond (Gold on e-bikes), 1.8kg, with a long 108 × 300 mm shackle and mount for stands a compact Mini will not close around.",
   "kryptonite-new-york-fahgettaboudit-mini":
     "New York Fahgettaboudit Mini: Sold Secure Gold, 2.06 kg, no mount, no cable — a thick second lock; the Evolution Mini-7 is usually easier to carry.",
   "kryptonite-new-york-fahgettaboudit-1410":

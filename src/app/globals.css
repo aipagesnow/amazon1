@@ -2033,3 +2033,6 @@ table.spec caption {
   text-decoration-thickness: 2px;
 }
 .illustrative-caption{position:absolute;right:.375rem;bottom:.375rem;z-index:1;padding:.0625rem .375rem;border-radius:.25rem;background:rgba(0,0,0,.55);color:#fff;font-size:.625rem;line-height:1rem;letter-spacing:.01em;pointer-events:none}
+.cover-pick p.cover-pick-name{margin:0.15rem 0 1.1rem}
+.cover-pick p.cover-pick-ctas{row-gap:0.9rem}
+.illustrative-caption{background:rgba(0,0,0,.72);color:#fff;font-weight:500;text-shadow:0 1px 2px rgba(0,0,0,.9);box-shadow:0 0 0 1px rgba(255,255,255,.18)}
