@@ -68,7 +68,7 @@ export const BEST_OF_ASINS = [
   "B073W8N26F",
 ] as const;
 
-export const EDITOR_PICK_ASIN = "B0BLT59NFJ";
+export const EDITOR_PICK_ASIN = "B0D77XJR4Z";
 
 export const ALTERNATIVES_PATH = "/alternatives/kryptonite-new-york-fahgettaboudit-mini";
 

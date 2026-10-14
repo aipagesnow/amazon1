@@ -243,11 +243,11 @@ export const HOME_INSURANCE =
   "Match the Sold Secure grade on your policy, then check the insurer’s approved-lock list. A badge on its own is not always enough.";
 
 export const HOME_PICK = {
-  why: "Sold Secure Diamond for ordinary bikes and e-bikes, 1.7kg, and a 101 × 197 mm locking area. We put it here because insurance often wants Diamond and the weight is still in weekday-carry range.",
-  who: "Higher-value bikes parked in public, especially if Gold is not enough for your policy. If Gold is enough, the extra weight may not be worthwhile.",
+  why: "Sold Secure Diamond for ordinary bikes and e-bikes, sold as anti-angle-grinder, 1.9kg, with a 92 × 155 mm locking area. We put it here because insurance often wants Diamond and it still packs into a bag.",
+  who: "Higher-value bikes and e-bikes parked in public, where Gold is not enough for your policy. If Gold is enough, a lighter lock may be easier to carry every day.",
   change:
-    "A frame clip in the box would make daily carry more realistic. Without one, some people will not take 1.7kg every day.",
-  alt: "if you want Hiplok’s smaller anti-grinder D-lock and you have already measured the stand.",
+    "The locking area is small and there is no frame mount in the box. Measure the stand and your frame before you buy.",
+  alt: "if you need the same Diamond grade with a larger 112 × 205 mm locking area and can carry 2.75kg.",
 };
 
 export const BEST_LEDE =

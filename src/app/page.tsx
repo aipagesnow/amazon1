@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const pick = productByAsin(EDITOR_PICK_ASIN)!;
-  const alt = productBySlug("hiplok-d1000")!;
+  const alt = productBySlug("hiplok-dx1000")!;
   const five = BEST_OF_ASINS.map((asin) => productByAsin(asin)!).filter(Boolean);
   const associateTag = resolveAssociateTag();
 
@@ -150,11 +150,11 @@ export default function HomePage() {
             </p>
             <p>
               <strong>Also worth a look.</strong>{" "}
-              <Link href="/reviews/hiplok-d1000">{displayName(alt)}</Link> {HOME_PICK.alt}
+              <Link href="/reviews/hiplok-dx1000">{displayName(alt)}</Link> {HOME_PICK.alt}
             </p>
             <p className="pick-ctas">
-              <Link href="/reviews/litelok-x1" className="primary-link">
-                Read the X1 review
+              <Link href="/reviews/hiplok-d1000" className="primary-link">
+                Read the D1000 review
               </Link>
               <SeeOnAmazon
                 asin={pick.asin}
