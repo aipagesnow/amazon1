@@ -2036,3 +2036,4 @@ table.spec caption {
 .cover-pick p.cover-pick-name{margin:0.15rem 0 1.1rem}
 .cover-pick p.cover-pick-ctas{row-gap:0.9rem}
 .illustrative-caption{background:rgba(0,0,0,.72);color:#fff;font-weight:500;text-shadow:0 1px 2px rgba(0,0,0,.9);box-shadow:0 0 0 1px rgba(255,255,255,.18)}
+.page-hero-overlay .cover-photo .illustrative-caption{z-index:2;font-size:.6875rem}
