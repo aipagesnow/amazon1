@@ -684,7 +684,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     job: "Gold folding reach on the bike when a Mini will not close. At 120 cm it still clips on, if you would rather not leave a chain at home.",
     meta: "ABUS Bordo Granit 6500K review: Sold Secure Pedal Cycle Gold folding lock, 2.47kg, 120 cm, SH bracket. Flexible Gold when reach matters more than Mini-7 weight.",
     verdict:
-      "This suits you when Gold meets the policy, a compact D-lock won’t reach the only solid object, and you still want the lock on the bike rather than a 4.9kg chain at home. ABUS lists the weight at 2.47kg, which is 860 g more than the Mini-7. Unfolded it’s 120 cm, with an SH bracket and two keys on the listing. The bars are 5.5 mm, a different shape from a D-shackle. Sold Secure Pedal Cycle Gold is the grade. We’d take the Mini-7 for a classic Gold commute that already closes. We’d take this when the extra reach is the point.",
+      "This suits you when Gold meets the policy, a compact D-lock won’t reach the only solid object, and you still want the lock on the bike rather than a 4.9kg chain at home. ABUS lists the weight at 2.47kg, which is 860 g more than the Mini-7. Unfolded it’s 120 cm, with an SH bracket and two keys on the listing. The bars are 5.5 mm, a different shape from a D-shackle. Sold Secure Pedal Cycle Gold is the grade. We’d take the Mini-7 if a Gold D-lock already closes, and this when you need the reach.",
     subheads: [
       "Reach you can still clip on",
       "Pedal Cycle Gold, and 5.5 mm bars",
