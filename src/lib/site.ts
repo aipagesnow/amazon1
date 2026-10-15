@@ -12,7 +12,7 @@ export const site = {
   locale: "en-GB",
   /** Publisher — fine to show on About / Contact. */
   operator: "Aivora Digital",
-  contact: "aivora@agentmail.to",
+  contact: "vora+lockdesk@mail.grokbot.com",
   /**
    * Site-wide default "last checked" (Best of, reviews hub, and any review
    * without its own date). Only bump this when every review is re-checked.
