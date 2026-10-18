@@ -3,7 +3,7 @@ import type { Faq } from "@/content/pages";
 /** SEO metas and thin-content extras. Keeps pages.ts / editorial.ts lean on disk for MCP pushes. */
 
 export const HOME_META =
-  "Small UK comparison site for thirteen D-locks and chains. Sold Secure grades, insurance fit, and which lock you will actually carry — based on published specs, not cut tests.";
+  "Small UK comparison site for thirteen D-locks and chains. Sold Secure grades, insurance fit, and which lock you will carry, from published specs.";
 
 export const HOME_NEXT = [
   {
@@ -271,7 +271,7 @@ export const REVIEW_RELATED_WELLS: Record<
 };
 
 export const ANTI_GRINDER_META =
-  "What to look for in an anti-grinder bike lock in the UK — Sold Secure Diamond, locking area, and weight you will still carry. Specs and maker claims, not cut tests.";
+  "What to look for in an anti-grinder bike lock in the UK: Sold Secure Diamond, locking area, and weight you will still carry. Specs, not cut tests.";
 
 export const ANTI_GRINDER_BODY_EXTRA = [
   "Still choosing on a weekday Gold policy? See [best bike lock for commuting](/for/commuting). Matching a Diamond line on the policy: [best bike lock for insurance](/for/insurance). Head-to-head Gold Mini versus the compact Hiplok: [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000). Choosing between the two Hiplok Diamonds: [D1000 vs DX1000](/vs/d1000-vs-dx1000).",
