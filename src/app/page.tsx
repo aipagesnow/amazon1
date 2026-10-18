@@ -137,7 +137,7 @@ export default function HomePage() {
           </figure>
           <div className="pick-copy">
             <h2>A lock to start with</h2>
-            <p className="meta">We’ve narrowed the thirteen we’ve reviewed down to these, mostly on three things: the grade, the weight, and whether it’ll actually close round the stand you lock up at.</p>
+            <p className="meta">We’ve narrowed the eighteen we’ve reviewed down to these, mostly on three things: the grade, the weight, and whether it’ll actually close round the stand you lock up at.</p>
             <h3>{displayName(pick)}</h3>
             <p>
               <strong>Why this one.</strong> {HOME_PICK.why}
@@ -165,20 +165,20 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="compared-strip" aria-label="Shortlist of seven from the thirteen">
+        <section className="compared-strip" aria-label="Shortlist of seven from the eighteen">
           <div className="lock-strip">
             {five.map((product) => (
               <LockTile key={product.asin} product={product} compact />
             ))}
           </div>
           <p className="five-line">
-            <strong>Seven locks on the shortlist</strong>, from the thirteen we’ve
+            <strong>Seven locks on the shortlist</strong>, from the eighteen we’ve
             reviewed.{" "}
             <Link href="/best">Open the shortlist table</Link>
           </p>
         </section>
         <p className="also-reviewed">
-          There are thirteen full reviews under{" "}
+          There are eighteen full reviews under{" "}
           <Link href="/reviews">bike lock reviews</Link>, including the{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
             New York Fahgettaboudit Mini

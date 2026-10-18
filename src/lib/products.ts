@@ -40,6 +40,11 @@ const SLUG_BY_ASIN: Record<string, string> = {
   B0BDML8H3N: "abus-bordo-granit-6500k",
   B0D3RGPXWN: "seatylock-mason-140",
   B08LXM56RD: "kryptonite-new-york-fahgettaboudit-1415",
+  B0DQVJLGM2: "kryptonite-new-york-diamond",
+  B0D6GQR2ST: "squire-stronghold-d16-max",
+  B0H75MQQRT: "oxford-grinder-s1",
+  B0CCRZHBFV: "abus-granit-super-extreme-2500",
+  B0DG73D13P: "onguard-rocksolid-8590",
 };
 
 export const REVIEW_SLUGS = [
@@ -56,6 +61,11 @@ export const REVIEW_SLUGS = [
   "onguard-pitbull-std-8003",
   "onguard-pitbull-ls-8002",
   "seatylock-mason-140",
+  "kryptonite-new-york-diamond",
+  "onguard-rocksolid-8590",
+  "oxford-grinder-s1",
+  "abus-granit-super-extreme-2500",
+  "squire-stronghold-d16-max",
 ] as const;
 
 export const BEST_OF_ASINS = [
@@ -107,6 +117,11 @@ export function shortName(product: Product): string {
   if (product.asin === "B0BDML8H3N") return "Bordo 6500K";
   if (product.asin === "B0D3RGPXWN") return "Mason 140";
   if (product.asin === "B08LXM56RD") return "New York Fahgettaboudit 1415 chain";
+  if (product.asin === "B0DQVJLGM2") return "New York Diamond";
+  if (product.asin === "B0D6GQR2ST") return "Stronghold D16 MAX";
+  if (product.asin === "B0H75MQQRT") return "Grinder S1 (320 mm)";
+  if (product.asin === "B0CCRZHBFV") return "Granit Super Extreme 2500";
+  if (product.asin === "B0DG73D13P") return "RockSolid 8590";
   return product.name;
 }
 

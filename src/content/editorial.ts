@@ -892,6 +892,319 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     altSecond: "litelok-x1",
     altSecondWhy: "You need a Diamond lock to take with you, including the e-bike grade, and you’ll carry 1.7kg.",
   },
+  "kryptonite-new-york-diamond": {
+    hook: "If you want Diamond for your bike and your e-bike in a lock that clips on, the New York Diamond is the one we’d look at, as long as 2.3kg doesn’t put you off.",
+    job: "Diamond for bikes and e-bikes, bracket in the box, 95 × 204 mm.",
+    meta: "Kryptonite New York Diamond review: Sold Secure Diamond for bikes and e-bikes, 2.3kg, 95 × 204 mm, FlexFrame-U bracket included. Sold as angle-grinder resistant.",
+    stamp: "Diamond (bikes and e-bikes)",
+    verdict:
+      "The New York Lock Diamond Standard is Sold Secure Diamond for ordinary bikes and for e-bikes on the Sold Secure record. Kryptonite puts it at 2.3kg with a 95 × 204 mm locking area, and there’s a FlexFrame-U bracket in the box, so you can carry it on the bike rather than in a bag. It suits you if the policy names Diamond, the bike lives outside the office or the station all day, and you’d rather clip the lock on than carry it. Here’s the catch: 2.3kg is a lot to take every day, and if your policy only asks for Gold, the Evolution Mini-7 does that job at 1.61kg.",
+    subheads: [
+      "Diamond on both Sold Secure tests",
+      "Will 95 × 204 mm close on your stand?",
+      "Carrying 2.3kg, and the bracket in the box",
+      "When to choose this lock or another",
+    ],
+    body: [
+      "Short answer: it’s Kryptonite’s grinder-resistant D-lock, and it holds the top Sold Secure grade on both the ordinary-bike and e-bike tests. Kryptonite describes a 26 mm diamond-coated, double-layered shackle (that’s the outer, coated figure, so don’t line it up against a plain steel bar) and a double deadbolt, which means a thief has to cut both sides to get it off. That’s maker wording; the Sold Secure grade is the independent part.",
+      "Sold Secure lists the New York Lock Diamond STD as Pedal Cycle Diamond and Powered Cycle Diamond. That matters if you ride an e-bike, because several locks on Lock Desk are Diamond for ordinary bikes but only Gold for e-bikes. If your policy names the e-bike grade, this one matches it. Check the exact model on your insurer’s list too, since some insurers keep their own.",
+      "Kryptonite puts the inside of the shackle at 95 × 204 mm. That’s roomier than the D1000’s 92 × 155 mm and a touch longer than the Litelok X1’s 101 × 197 mm, so it’ll go round most Sheffield stands with a frame tube inside. Worth knowing: a thick e-bike down tube eats into that width quickly, so measure your frame and the stand together before you buy.",
+      "At 2.3kg it’s heavier than the X1 (1.7kg) and the Pitbull STD (1.44kg). The good news is the FlexFrame-U bracket comes in the box, so you can leave it on the bike instead of in a rucksack. If you know you won’t carry 2.3kg, a lighter lock you actually take does more for your bike than this one left in the hallway. One more thing: in 2025 The Best Bike Lock reported an early unit with no anti-grinder layer at the base of the shackle, and found later units fixed, so we’d buy from a seller with easy returns and check the shackle ends show the textured coating.",
+      "Choose the New York Diamond when the policy names Diamond (especially on an e-bike), you want a bracket in the box, and 2.3kg is a weight you’ll still clip on every day. Choose the Litelok X1 if you want Diamond for bikes and e-bikes at 1.7kg and don’t mind carrying it in a bag. Choose the OnGuard RockSolid 8590 if lighter matters more than room inside the shackle. Choose the Evolution Mini-7 if Gold is all your policy asks for.",
+    ],
+    bestFor: [
+      "E-bikes and ordinary bikes where the policy names Sold Secure Diamond",
+      "Riders who want the lock on the bike, with a bracket in the box",
+      "Long days outside the office or the station, on stands you’ve already measured against 95 × 204 mm",
+    ],
+    skipIf: [
+      "Gold meets your policy — the Evolution Mini-7 is lighter at 1.61kg",
+      "You won’t carry 2.3kg every day",
+      "A fat e-bike down tube plus your stand won’t fit inside 95 mm",
+    ],
+    good: [
+      "Sold Secure Diamond for ordinary bikes and for e-bikes",
+      "FlexFrame-U bracket in the box",
+      "95 × 204 mm locking area, roomier than the compact anti-grinder locks",
+      "Double deadbolt, so both sides of the shackle have to be cut",
+      "Three keys on Kryptonite’s sheet",
+    ],
+    bad: [
+      "2.3kg is heavy for a daily carry",
+      "The Best Bike Lock reported an early 2025 unit with an unprotected shackle base; later units were fixed",
+      "The 26 mm shackle figure includes the coating, so it isn’t a like-for-like steel measurement",
+    ],
+    change:
+      "A lighter, shorter version for riders who only need a tight Sheffield stand, so Diamond for e-bikes doesn’t always mean 2.3kg.",
+    faqs: [
+      {
+        q: "Is the Kryptonite New York Diamond Sold Secure Diamond?",
+        a: "Yes. Sold Secure lists the New York Lock Diamond STD as Pedal Cycle Diamond and Powered Cycle Diamond, so it covers ordinary bikes and e-bikes. Check the marking on the lock you receive and your insurer’s own list.",
+      },
+      {
+        q: "How heavy is the New York Diamond?",
+        a: "Kryptonite says 2.3kg. That’s more than the [Litelok X1](/reviews/litelok-x1) at 1.7kg, but the New York Diamond comes with a bracket, so you can carry it on the frame.",
+      },
+      {
+        q: "New York Diamond or Litelok X1?",
+        a: "Both are Diamond for bikes and e-bikes. The New York Diamond is 2.3kg with a bracket and 95 × 204 mm inside. The X1 is 1.7kg with 101 × 197 mm and no clip in the box. We’d pick on how you’ll carry it.",
+      },
+    ],
+    altBest: "litelok-x1",
+    altBestWhy: "You want Diamond for bikes and e-bikes at 1.7kg and you’re happy to carry it in a bag.",
+    altSecond: "onguard-rocksolid-8590",
+    altSecondWhy: "You need Diamond for bikes and e-bikes at about 1.4kg, and 90 × 175 mm closes on your stand.",
+  },
+  "squire-stronghold-d16-max": {
+    hook: "If your e-bike policy names Powered Cycle Diamond and the lock can live on the bike or in a pannier, the Squire D16 MAX is a solid British-made option at 2.84kg.",
+    job: "Powered Cycle Diamond, 94 × 218 mm, 2.84kg.",
+    meta: "Squire Stronghold D16 MAX review: Sold Secure Powered Cycle Diamond, 2.84kg, 94 × 218 mm, 16 mm shackle. Sold as anti-angle-grinder; heavy for a daily carry.",
+    stamp: "Powered Cycle Diamond",
+    verdict:
+      "The Stronghold D16 MAX is Sold Secure Powered Cycle Diamond on the Sold Secure record, the grade e-bike policies tend to name. Squire puts it at 2.84kg with a 16 mm boron steel shackle and a 94 × 218 mm locking area, wrapped in tungsten carbide armour that the maker sells as anti-angle-grinder. It suits an e-bike or cargo bike that’s left in the same spot a lot, where you can keep the lock on the bike or in a pannier. Here’s the catch: 2.84kg is the heaviest D-lock on Lock Desk, so it’s a poor match if you’ll be carrying it in a bag every day.",
+    subheads: [
+      "Powered Cycle Diamond, and what it means for an ordinary bike",
+      "A 94 × 218 mm locking area",
+      "2.84kg, and how you’ll carry it",
+      "When to choose this lock or another",
+    ],
+    body: [
+      "Short answer: it’s Squire’s armoured D-lock, made in Britain, with a 16 mm boron hardened steel shackle and a 25 mm hardened steel body, both sheathed in tungsten carbide. Squire lists a 6-pin cylinder with a restricted key section, two keys and a key card for copies. The tungsten carbide is there to wear grinder discs down; that’s the maker’s claim, and the Sold Secure grade is the independent check.",
+      "Sold Secure lists the Squire Stronghold D16 Max as Powered Cycle Diamond. The public product page doesn’t show a separate Pedal Cycle row. The Powered Cycle test is the tougher of the two, but if your policy names Pedal Cycle Diamond word for word, confirm with your insurer that they’ll accept the powered grade before you buy.",
+      "Squire puts the inside at 94 × 218 mm. That’s long enough to go round a Sheffield stand with the frame inside, and longer than the D1000 (92 × 155 mm) or the RockSolid 8590 (90 × 175 mm). The width is similar to the other compact anti-grinder locks, so a fat e-bike down tube is still the thing to measure.",
+      "At 2.84kg it’s heavier than the Hiplok DX1000 (2.75kg) and well over the Litelok X1 (1.7kg). Squire doesn’t list a frame bracket in the box, so plan on a pannier, a rack strap or leaving it on the bike at home. If you’d be carrying it in a rucksack five days a week, honestly, a lighter Diamond lock you’ll keep using is the better bet.",
+      "Choose the D16 MAX when your policy names Powered Cycle Diamond, the bike is an e-bike or cargo bike, and you’ve a way to carry 2.84kg on the bike. Choose the Kryptonite New York Diamond if you want Diamond on both tests with a bracket in the box at 2.3kg. Choose the Hiplok DX1000 if you want more width inside the shackle (112 × 205 mm). Choose the Litelok X1 if weight is the deciding factor.",
+    ],
+    bestFor: [
+      "E-bikes and cargo bikes where the policy names Powered Cycle Diamond",
+      "Bikes left in the same spot for long stretches, with a pannier or rack to carry the lock",
+      "Stands you’ve measured against 94 × 218 mm",
+    ],
+    skipIf: [
+      "You’ll carry it in a bag every day — 2.84kg is a lot",
+      "Your policy names Pedal Cycle Diamond and your insurer won’t confirm the powered grade covers it",
+      "Gold is enough — the Evolution Mini-7 is 1.61kg with a clip and cable",
+    ],
+    good: [
+      "Sold Secure Powered Cycle Diamond",
+      "16 mm boron steel shackle with tungsten carbide armour",
+      "94 × 218 mm locking area, longer than the compact anti-grinder locks",
+      "Restricted key section with a key card for copies",
+      "Made in Britain, per Squire",
+    ],
+    bad: [
+      "2.84kg, the heaviest D-lock on Lock Desk",
+      "No frame bracket listed in the box",
+      "Only a Powered Cycle row on the Sold Secure product page",
+    ],
+    change:
+      "A frame bracket in the box. At 2.84kg, most riders will want the lock on the bike rather than in a bag.",
+    faqs: [
+      {
+        q: "Is the Squire Stronghold D16 MAX Sold Secure Diamond?",
+        a: "Yes, Powered Cycle Diamond on the Sold Secure product page. There’s no separate Pedal Cycle row on that page, so if your policy names the ordinary-bike grade, check your insurer accepts the powered grade.",
+      },
+      {
+        q: "How heavy is the D16 MAX?",
+        a: "Squire says 2.84kg. That’s heavier than the [Hiplok DX1000](/reviews/hiplok-dx1000) at 2.75kg, so it’s best kept on the bike or in a pannier.",
+      },
+      {
+        q: "D16 MAX or Kryptonite New York Diamond?",
+        a: "Both are Powered Cycle Diamond. The [New York Diamond](/reviews/kryptonite-new-york-diamond) is lighter at 2.3kg, comes with a bracket and also lists Pedal Cycle Diamond. The D16 MAX has a longer 94 × 218 mm locking area. Measure the stand and choose on fit and carry.",
+      },
+    ],
+    altBest: "kryptonite-new-york-diamond",
+    altBestWhy: "You want Diamond on both Sold Secure tests with a bracket in the box, at 2.3kg.",
+    altSecond: "hiplok-dx1000",
+    altSecondWhy: "You need more width inside the shackle (112 × 205 mm) for a fat e-bike frame.",
+  },
+  "oxford-grinder-s1": {
+    hook: "If you need Diamond for an e-bike and want a frame bracket and a roomy shackle, the 320 mm Oxford Grinder S1 is the one we’d look at, at about 2.36kg.",
+    job: "Diamond for bikes and e-bikes, bracket included, about 115 × 247 mm.",
+    meta: "Oxford Grinder S1 (320 mm, LK376) review: Sold Secure Diamond for bikes and e-bikes, about 2.36kg, roomy shackle, carry bracket included. Sold as anti-grinder.",
+    stamp: "Diamond (bikes and e-bikes)",
+    verdict:
+      "The Oxford Grinder S1 in the long 320 mm size (LK376) is Sold Secure Diamond for ordinary bikes and for e-bikes on the Sold Secure listing. Oxford gives a 14 mm hardened steel core under a carbide coating and a carry bracket in the box. Oxford doesn’t publish the weight or inside size, but Bennetts BikeSocial measured the long S1 at 2,355g with about 247 × 115 mm inside. It suits an e-bike or chunky frame where the compact anti-grinder locks won’t close. Here’s the catch: at about 2.36kg it’s a lock for the bracket, not the rucksack.",
+    subheads: [
+      "Diamond on both Sold Secure tests",
+      "A roomy shackle for chunky frames",
+      "Weight, bracket and keys",
+      "When to choose this lock or another",
+    ],
+    body: [
+      "Short answer: it’s Oxford’s grinder-resistant D-lock, with a square 14 mm hardened steel core under a faceted carbide coating, a double-locking shackle and a disc detainer cylinder. Oxford claims it takes an average of 10 grinder discs to cut one side. That’s the maker’s figure; BikeSocial’s own attack took almost three discs for one cut, so treat any disc count as a rough guide and the Sold Secure grade as the bit that matters.",
+      "Sold Secure lists the Grinder Shackle 1 U-Lock 320mm as Pedal Cycle Diamond and Powered Cycle Diamond. If your e-bike policy names the powered grade, this matches it. The shorter 260 mm Grinder S1 (LK375) has the same grades on that listing, so check the code on the box (LK376 is the long one).",
+      "Bennetts BikeSocial measured the inside of the long S1 at about 247 × 115 mm. That’s much roomier than the D1000 (92 × 155 mm) or the RockSolid 8590 (90 × 175 mm), so it’ll take a fat e-bike down tube and a stand, or go round a lamp-post. Oxford only publishes the outside size (320 × 184 mm), so we’d plan on BikeSocial’s figure and measure your frame and stand to be sure.",
+      "BikeSocial weighed the long S1 at 2,355g. Oxford includes a carry bracket, with a thinner sleeve on one side of the shackle so it slides into the clip; you’ll want a bit of clearance on the frame to get it in and out. There are three keys and a replacement-key service, plus a 10-year guarantee against defects, per Oxford.",
+      "Choose the Grinder S1 when the policy names Diamond (bike or e-bike), the frame or stand is too chunky for the compact anti-grinder locks, and you’ll carry about 2.36kg in the bracket. Choose the Kryptonite New York Diamond if 95 × 204 mm is enough and you’d like it a little lighter at 2.3kg. Choose the Hiplok DX1000 if you prefer Hiplok’s design at 112 × 205 mm. Choose the Litelok X1 if weight matters most.",
+    ],
+    bestFor: [
+      "E-bikes and ordinary bikes where the policy names Sold Secure Diamond",
+      "Chunky frames and fat stands that compact anti-grinder locks won’t close around",
+      "Riders who want the lock in a frame bracket",
+    ],
+    skipIf: [
+      "You’d carry it in a bag every day — it’s about 2.36kg",
+      "A compact Diamond lock already closes on your stand",
+      "Gold meets your policy",
+    ],
+    good: [
+      "Sold Secure Diamond for ordinary bikes and for e-bikes",
+      "Roomy shackle, about 247 × 115 mm inside on BikeSocial’s measurement",
+      "Carry bracket in the box",
+      "Double-locking shackle, so both sides need cutting",
+      "Replacement-key service and a 10-year guarantee from Oxford",
+    ],
+    bad: [
+      "About 2.36kg",
+      "Oxford doesn’t publish the weight or inside size; the figures come from BikeSocial",
+      "Two lengths with similar names — check the LK376 code for the 320 mm lock",
+    ],
+    change:
+      "Publish the weight and inside size on the product page, so riders don’t have to look to a review to see whether it’ll close.",
+    faqs: [
+      {
+        q: "Is the Oxford Grinder S1 Sold Secure Diamond?",
+        a: "Yes. Sold Secure lists the Grinder Shackle 1 U-Lock 320mm as Pedal Cycle Diamond and Powered Cycle Diamond. The 260 mm version has the same grades on that listing.",
+      },
+      {
+        q: "How big is the inside of the Grinder S1 320 mm?",
+        a: "Bennetts BikeSocial measured about 247 × 115 mm. Oxford only publishes the outside size, 320 × 184 mm. Measure your frame and stand together before you buy.",
+      },
+      {
+        q: "Grinder S1 or Hiplok DX1000?",
+        a: "Both are bigger anti-grinder D-locks. The Grinder S1 320 mm is Diamond for bikes and e-bikes with a bracket and a longer shackle. The [DX1000](/reviews/hiplok-dx1000) is 2.75kg, 112 × 205 mm, with no clip listed. Choose on fit and how you’ll carry it.",
+      },
+    ],
+    altBest: "kryptonite-new-york-diamond",
+    altBestWhy: "95 × 204 mm is enough for your stand and you’d like Diamond for bikes and e-bikes with a bracket at 2.3kg.",
+    altSecond: "hiplok-dx1000",
+    altSecondWhy: "You prefer Hiplok’s anti-grinder design with a 112 × 205 mm locking area.",
+  },
+  "abus-granit-super-extreme-2500": {
+    hook: "If you ride an e-bike or cargo bike and want ABUS’s grinder-resistant D-lock with a holder in the box, the Granit Super Extreme 2500 is worth a look at 2.47kg.",
+    job: "Powered Cycle Diamond on Sold Secure, 102 × 230 mm, USH 2500 holder.",
+    meta: "ABUS Granit Super Extreme 2500 review: Sold Secure Powered Cycle Diamond, 2.47kg, 102 × 230 mm, tungsten carbide armour and a USH 2500 holder in the box.",
+    stamp: "Powered Cycle Diamond",
+    verdict:
+      "The ABUS Granit Super Extreme 2500/165HB230 is Sold Secure Powered Cycle Diamond on the Sold Secure record, and ABUS also lists Pedal Cycle Diamond. ABUS puts it at 2.47kg with a 102 × 230 mm locking area and a tungsten carbide shell over the shackle and body. There’s a USH 2500 holder in the box. It suits an e-bike, cargo bike or bulky frame where you want a roomy Diamond lock that rides on the bike. Here’s the catch: 2.47kg is heavy for a bag, so it really wants that holder.",
+    subheads: [
+      "Powered Cycle Diamond, and the Pedal Cycle grade",
+      "102 × 230 mm for bulky frames",
+      "Weight and the USH 2500 holder",
+      "When to choose this lock or another",
+    ],
+    body: [
+      "Short answer: it’s ABUS’s grinder-resistant D-lock, made in Germany, with a hardened square shackle (Sold Secure’s page gives 20 mm square with a 7 mm plastic casing) wrapped in a tungsten carbide compound, a double-locking shackle and an XPlus cylinder. ABUS sells the carbide shell against battery angle grinders; that’s maker wording, and the Sold Secure grade is the independent part.",
+      "Sold Secure lists the ABUS 2500/165HB230 as Powered Cycle Diamond. ABUS’s own product page also shows a Sold Secure Pedal Cycle Diamond seal, but the Sold Secure product record only carries the powered row. The powered test is the tougher of the two. If your policy names Pedal Cycle Diamond word for word, check your insurer accepts this listing.",
+      "ABUS gives the locking area as 102 × 230 mm. That’s a little wider than the D1000 and the RockSolid 8590, and long enough for most Sheffield stands with a chunky frame inside, which is why ABUS pitches it at e-bikes and cargo bikes. As always, measure your down tube and the stand together.",
+      "At 2.47kg it sits between the New York Diamond (2.3kg) and the Squire D16 MAX (2.84kg). The USH 2500 holder fixes to the frame or rack with coated metal straps and holds both ends of the shackle so it doesn’t rattle. You get two keys and an ABUS code card for replacements.",
+      "Choose the Super Extreme 2500 when the bike is an e-bike or bulky frame, the policy names Powered Cycle Diamond, and the lock can ride in its holder. Choose the Oxford Grinder S1 320 mm if you need even more length inside. Choose the Kryptonite New York Diamond if you want Diamond on both Sold Secure records at 2.3kg. Choose the ABUS Granit XPlus 540 if Pedal Cycle Diamond is enough and you don’t need grinder armour.",
+    ],
+    bestFor: [
+      "E-bikes, cargo bikes and bulky frames where the policy names Powered Cycle Diamond",
+      "Riders who want the lock in a holder on the bike",
+      "Stands you’ve measured against 102 × 230 mm",
+    ],
+    skipIf: [
+      "You’d carry it in a bag every day — 2.47kg is a lot",
+      "Your policy names Pedal Cycle Diamond and your insurer wants that exact Sold Secure row",
+      "Gold meets your policy",
+    ],
+    good: [
+      "Sold Secure Powered Cycle Diamond",
+      "Tungsten carbide shell over the shackle and body",
+      "102 × 230 mm locking area for chunkier frames",
+      "USH 2500 holder in the box",
+      "ABUS code card for replacement keys",
+    ],
+    bad: [
+      "2.47kg",
+      "The Sold Secure product record shows the Powered Cycle row only; Pedal Cycle Diamond comes from ABUS",
+    ],
+    change:
+      "Get the Pedal Cycle Diamond grade showing on the Sold Secure record too, so riders with ordinary-bike policies don’t have to ask.",
+    faqs: [
+      {
+        q: "Is the ABUS Granit Super Extreme 2500 Sold Secure Diamond?",
+        a: "Yes, Powered Cycle Diamond on the Sold Secure record for the 2500/165HB230. ABUS also shows a Pedal Cycle Diamond seal. Check the marking on the lock and your insurer’s list.",
+      },
+      {
+        q: "How heavy is the Super Extreme 2500?",
+        a: "ABUS says 2.47kg, with the USH 2500 holder in the box so you can carry it on the bike.",
+      },
+      {
+        q: "Super Extreme 2500 or Granit XPlus 540?",
+        a: "The Super Extreme is Powered Cycle Diamond with grinder armour at 2.47kg. The [Granit XPlus 540](/reviews/abus-granit-xplus-540) is Pedal Cycle Diamond and Gold for e-bikes, with a long 300 mm shackle. For an e-bike policy that names Diamond, the Super Extreme is the one that matches.",
+      },
+    ],
+    altBest: "oxford-grinder-s1",
+    altBestWhy: "You need Diamond for bikes and e-bikes with a bracket and even more room inside the shackle.",
+    altSecond: "kryptonite-new-york-diamond",
+    altSecondWhy: "You want Diamond on both Sold Secure records with a bracket, at 2.3kg.",
+  },
+  "onguard-rocksolid-8590": {
+    hook: "If you need Diamond for your bike or e-bike at the lowest weight in the anti-grinder group, the RockSolid 8590 is about 1.4kg, once its small shackle fits.",
+    job: "Diamond for bikes and e-bikes; measure the 90 × 175 mm locking area first.",
+    meta: "OnGuard RockSolid 8590 review: Sold Secure Diamond for bikes and e-bikes, about 1.4kg, 90 × 175 mm. The lightest anti-grinder lock here — measure your stand.",
+    stamp: "Diamond (bikes and e-bikes)",
+    verdict:
+      "The OnGuard RockSolid 8590 is Sold Secure Diamond for ordinary bikes and for e-bikes on the Sold Secure record. OnGuard gives a 14 mm shackle and a 90 × 175 mm locking area, and UK retailers list about 1.4kg, which makes it the lightest of the anti-grinder locks on Lock Desk. It suits a weekday commute where Diamond is required and you’ll actually carry it. Here’s the catch: reviews disagree on how well it resists a grinder. road.cc rated it highly, while Bennetts BikeSocial found it only average against an angle grinder, and the 90 mm width is tight on chunky frames.",
+    subheads: [
+      "Diamond on both Sold Secure tests",
+      "A small 90 × 175 mm locking area",
+      "About 1.4kg, with no frame mount",
+      "When to choose this lock or another",
+    ],
+    body: [
+      "Short answer: it’s OnGuard’s grinder-resistant D-lock, with a 14 mm hardened steel shackle under a proprietary coating and an X4P mechanism that bolts the shackle to the crossbar in four places. There are five keys. OnGuard’s marketing is big on what it can withstand; the Sold Secure grade is the independent part, and published reviews are where the disagreement shows.",
+      "Sold Secure lists the OnGuard RockSolid Shackle Lock 8590 as Pedal Cycle Diamond and Powered Cycle Diamond. If your e-bike policy names the powered grade, this matches it. To be fair, Bennetts BikeSocial’s review in May 2025 only saw Pedal Cycle Diamond at the time, so check the marking on the lock you receive.",
+      "OnGuard gives the inside as 90 × 175 mm; BikeSocial measured closer to 80 × 170 mm. Either way it’s small, much like the Hiplok D1000’s 92 × 155 mm. road.cc found it fitted a road bike and a standard stand but not every e-bike frame. Measure your frame and the stand together before you buy.",
+      "UK retailers list about 1.4kg, and BikeSocial and road.cc both weighed it at about 1.34kg. That’s lighter than the Litelok X1 (1.7kg) and much lighter than the other anti-grinder locks here (2.3–2.84kg). There’s no frame mount in the box, so plan on a bag or a separate clip.",
+      "Choose the RockSolid 8590 when Diamond is required, about 1.4kg is the weight you’ll keep carrying, and 90 × 175 mm closes on your stand. Choose the Litelok X1 if you want a bit more room (101 × 197 mm) at 1.7kg. Choose the Kryptonite New York Diamond if you want a bracket in the box and a roomier shackle at 2.3kg. Choose the Pitbull STD if you need Pedal Cycle Diamond with a clip, and grinder armour isn’t the point.",
+    ],
+    bestFor: [
+      "Weekday commutes where the policy names Diamond and you’ll carry about 1.4kg",
+      "Road bikes and slim frames on stands you’ve measured against 90 × 175 mm",
+      "E-bikes with slim tubes where the policy names Powered Cycle Diamond",
+    ],
+    skipIf: [
+      "Your frame or stand won’t close inside 90 mm",
+      "You want a frame mount in the box",
+      "Gold meets your policy — the Evolution Mini-7 comes with a clip and cable",
+    ],
+    good: [
+      "Sold Secure Diamond for ordinary bikes and for e-bikes",
+      "About 1.4kg, the lightest anti-grinder lock on Lock Desk",
+      "X4P mechanism locks the shackle in four places",
+      "Five keys",
+    ],
+    bad: [
+      "Small 90 × 175 mm locking area; chunky frames may not fit",
+      "No frame mount in the box",
+      "Published grinder reviews disagree: road.cc rated it highly, Bennetts BikeSocial rated it average",
+    ],
+    change:
+      "A longer version at a similar weight, so riders with chunkier frames can get Diamond without moving up to 2.3kg.",
+    faqs: [
+      {
+        q: "Is the OnGuard RockSolid 8590 Sold Secure Diamond?",
+        a: "Yes. Sold Secure lists the RockSolid Shackle Lock 8590 as Pedal Cycle Diamond and Powered Cycle Diamond. Check the marking on the lock you buy and your insurer’s list.",
+      },
+      {
+        q: "How heavy is the RockSolid 8590?",
+        a: "UK retailers list about 1.4kg, and Bennetts BikeSocial and road.cc both weighed it at about 1.34kg. That’s lighter than the [Litelok X1](/reviews/litelok-x1) at 1.7kg.",
+      },
+      {
+        q: "RockSolid 8590 or Litelok X1?",
+        a: "Both are Diamond for bikes and e-bikes with no clip in the box. The RockSolid is lighter at about 1.4kg but smaller inside (90 × 175 mm). The X1 is 1.7kg with 101 × 197 mm. If the RockSolid closes on your stand and frame, it’s the lighter carry.",
+      },
+    ],
+    altBest: "litelok-x1",
+    altBestWhy: "You want a bit more room inside the shackle (101 × 197 mm) with Diamond for bikes and e-bikes at 1.7kg.",
+    altSecond: "kryptonite-new-york-diamond",
+    altSecondWhy: "You want a bracket in the box and a roomier 95 × 204 mm shackle, and 2.3kg is fine.",
+  },
 };
 
 export const catalogueHooks: Record<string, string> = {
@@ -908,6 +1221,11 @@ export const catalogueHooks: Record<string, string> = {
   "abus-bordo-granit-6500k": "Gold folding reach when a Mini will not close and you still want the lock on the bike.",
   "seatylock-mason-140": "The lightest published Diamond D-lock in this set — about 0.97kg, after you measure 140 × 85 mm.",
   "kryptonite-new-york-fahgettaboudit-1415": "The longer New York chain, for when 100 cm will not reach. At 6.92kg it stays at home.",
+  "kryptonite-new-york-diamond": "Diamond for bikes and e-bikes with a bracket in the box, if 2.3kg is a carry you’ll keep up.",
+  "onguard-rocksolid-8590": "The lightest anti-grinder Diamond lock here, about 1.4kg, once 90 × 175 mm closes on your stand.",
+  "oxford-grinder-s1": "Diamond for bikes and e-bikes with a roomy shackle and a bracket, for chunky frames, at about 2.36kg.",
+  "abus-granit-super-extreme-2500": "Powered Cycle Diamond with a holder in the box, for e-bikes and bulky frames, at 2.47kg.",
+  "squire-stronghold-d16-max": "Powered Cycle Diamond at 2.84kg — one to keep on the bike or in a pannier.",
 };
 
 export function hookFor(product: Product): string {

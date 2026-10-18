@@ -3,7 +3,7 @@ import type { Faq } from "@/content/pages";
 /** SEO metas and thin-content extras. Keeps pages.ts / editorial.ts lean on disk for MCP pushes. */
 
 export const HOME_META =
-  "Small UK comparison site for thirteen D-locks and chains. Sold Secure grades, insurance fit, and which lock you will actually carry — based on published specs, not cut tests.";
+  "Small UK comparison site for eighteen D-locks and chains. Sold Secure grades, insurance fit, and which lock you will actually carry — based on published specs, not cut tests.";
 
 export const HOME_NEXT = [
   {
@@ -19,7 +19,7 @@ export const HOME_NEXT = [
   {
     href: "/reviews",
     title: "Bike lock reviews",
-    blurb: "Thirteen full reviews: who each lock suits, when another is a better fit, and the drawbacks.",
+    blurb: "Eighteen full reviews: who each lock suits, when another is a better fit, and the drawbacks.",
   },
   {
     href: "/for/commuting",
@@ -102,7 +102,7 @@ export const BEST_FAQS: Faq[] = [
 ];
 
 export const REVIEWS_META =
-  "Thirteen UK D-lock, folding-lock and chain reviews. Each page says who the lock suits, when another is a better fit, and the drawbacks.";
+  "Eighteen UK D-lock, folding-lock and chain reviews. Each page says who the lock suits, when another is a better fit, and the drawbacks.";
 
 export const REVIEWS_INTRO_EXTRA =
   "Need a shortlist first? Use the [best of](/best) table. Choosing from scratch? Read [how to choose a bike lock](/guide). Job-led guides: [commuting](/for/commuting), [insurance](/for/insurance), and [anti-grinder](/for/anti-grinder). Most-asked locks: [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7) (Gold with a clip), [Pitbull STD 8003](/reviews/onguard-pitbull-std-8003) (Diamond with a clip), [Pitbull DT 8005](/reviews/onguard-pitbull-dt-8005) (the STD plus a cable), [ABUS Granit XPlus 540](/reviews/abus-granit-xplus-540) (long shackle) and [Bordo 6500K](/reviews/abus-bordo-granit-6500k) (Gold folding reach).";
@@ -169,6 +169,16 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
     "ABUS Bordo Granit 6500K: Sold Secure Gold folding lock, 2.47kg, 120 cm reach and an SH bracket, for when a compact D-lock won’t close.",
   "seatylock-mason-140":
     "Seatylock Mason 140: Sold Secure Pedal Cycle Diamond at about 0.97kg, 140 × 85 mm. Measure the stand; the mount is sold separately.",
+  "kryptonite-new-york-diamond":
+    "Kryptonite New York Diamond: Sold Secure Diamond for bikes and e-bikes, 2.3kg, 95 × 204 mm, bracket in the box. Sold as angle-grinder resistant.",
+  "onguard-rocksolid-8590":
+    "OnGuard RockSolid 8590: Sold Secure Diamond for bikes and e-bikes, about 1.4kg, 90 × 175 mm, no mount. The lightest anti-grinder lock here; measure first.",
+  "oxford-grinder-s1":
+    "Oxford Grinder S1 320 mm (LK376): Sold Secure Diamond for bikes and e-bikes, about 2.36kg, roomy 247 × 115 mm shackle, carry bracket included.",
+  "abus-granit-super-extreme-2500":
+    "ABUS Granit Super Extreme 2500: Sold Secure Powered Cycle Diamond, 2.47kg, 102 × 230 mm, USH 2500 holder. For e-bikes and bulky frames.",
+  "squire-stronghold-d16-max":
+    "Squire Stronghold D16 MAX: Sold Secure Powered Cycle Diamond, 2.84kg, 94 × 218 mm, 16 mm shackle. Heavy, so best kept on the bike or in a pannier.",
   "kryptonite-new-york-fahgettaboudit-1415":
     "Kryptonite New York 1415: 150 cm chain, 6.92kg, Sold Secure Diamond for bikes, Gold for e-bikes. The longer home chain when 100 cm won’t reach.",
 };
@@ -182,6 +192,11 @@ export const REVIEW_RETITLED = new Set<string>([
   "onguard-pitbull-ls-8002",
   "seatylock-mason-140",
   "abus-bordo-granit-6500k",
+  "kryptonite-new-york-diamond",
+  "onguard-rocksolid-8590",
+  "oxford-grinder-s1",
+  "abus-granit-super-extreme-2500",
+  "squire-stronghold-d16-max",
 ]);
 
 export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
@@ -202,9 +217,24 @@ export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
   "onguard-pitbull-ls-8002": "OnGuard Pitbull LS 8002 Review: Sold Secure Diamond, 1.75kg",
   "seatylock-mason-140": "Seatylock Mason 140 Review: Sold Secure Diamond, 0.97kg",
   "abus-bordo-granit-6500k": "ABUS Bordo 6500K Review: Sold Secure Gold, 2.47kg, Folding",
+  "kryptonite-new-york-diamond": "Kryptonite New York Diamond Review: Sold Secure Diamond, 2.3kg",
+  "onguard-rocksolid-8590": "OnGuard RockSolid 8590 Review: Sold Secure Diamond, 1.4kg",
+  "oxford-grinder-s1": "Oxford Grinder S1 320mm Review: Sold Secure Diamond, 2.36kg",
+  "abus-granit-super-extreme-2500": "ABUS Granit Super Extreme 2500 Review: Diamond, 2.47kg",
+  "squire-stronghold-d16-max": "Squire Stronghold D16 MAX Review: Sold Secure Diamond, 2.84kg",
 };
 
 export const REVIEW_DIRECT_ANSWERS: Record<string, string> = {
+  "kryptonite-new-york-diamond":
+    "Sold Secure Diamond for ordinary bikes and e-bikes, 2.3kg, with a FlexFrame-U bracket and a 95 × 204 mm locking area. It suits a policy that names Diamond when you’d rather clip the lock on than bag it.",
+  "onguard-rocksolid-8590":
+    "Sold Secure Diamond for ordinary bikes and e-bikes at about 1.4kg, the lightest anti-grinder lock on Lock Desk. The 90 × 175 mm locking area is small and there’s no mount, so measure your frame and stand first.",
+  "oxford-grinder-s1":
+    "Sold Secure Diamond for ordinary bikes and e-bikes in the 320 mm size, with a carry bracket. Bennetts BikeSocial measured about 2.36kg and 247 × 115 mm inside, so it suits chunky frames and fat stands.",
+  "abus-granit-super-extreme-2500":
+    "Sold Secure Powered Cycle Diamond (ABUS also lists Pedal Cycle Diamond), 2.47kg, 102 × 230 mm, with a USH 2500 holder in the box. It suits e-bikes and bulky frames where the lock rides on the bike.",
+  "squire-stronghold-d16-max":
+    "Sold Secure Powered Cycle Diamond, 2.84kg, 16 mm shackle, 94 × 218 mm locking area. It suits an e-bike or cargo bike where the lock lives on the bike or in a pannier; it’s heavy for a daily bag.",
   "onguard-pitbull-std-8003":
     "Sold Secure Diamond for ordinary bikes, 1.44kg, with a frame mount and a 115 × 230 mm locking area. No cable in the box. It suits riders who need Diamond and will clip the lock to the bike.",
   "kryptonite-evolution-mini-7":
@@ -288,6 +318,31 @@ export const REVIEW_RELATED_WELLS: Record<
     blurb:
       "A commute lock is one you take every day. The Mason fits when Pedal Cycle Diamond is required and about 0.97kg is the carry you’ll keep using.",
   },
+  "kryptonite-new-york-diamond": {
+    href: "/for/anti-grinder",
+    title: "What to look for in an anti-grinder lock",
+    blurb: "Anti-grinder is maker wording; Diamond is the grade. The guide compares locks sold against grinders on grade, fit and carry.",
+  },
+  "onguard-rocksolid-8590": {
+    href: "/for/anti-grinder",
+    title: "What to look for in an anti-grinder lock",
+    blurb: "The RockSolid is the lightest anti-grinder lock here. The guide puts it next to the X1 and Hiplok on fit and carry.",
+  },
+  "oxford-grinder-s1": {
+    href: "/for/anti-grinder",
+    title: "What to look for in an anti-grinder lock",
+    blurb: "If your frame is chunky, the locking area matters as much as the grinder claim. The guide shows how to compare them.",
+  },
+  "abus-granit-super-extreme-2500": {
+    href: "/for/insurance",
+    title: "Best bike lock for insurance",
+    blurb: "Powered Cycle and Pedal Cycle Diamond are separate Sold Secure rows. Here’s how to match the one your policy names.",
+  },
+  "squire-stronghold-d16-max": {
+    href: "/for/insurance",
+    title: "Best bike lock for insurance",
+    blurb: "The D16 MAX lists Powered Cycle Diamond. Here’s how to match that against the grade your policy names.",
+  },
   "kryptonite-new-york-fahgettaboudit-1415": {
     href: "/vs/d-lock-vs-chain",
     title: "D-lock vs chain lock",
@@ -302,6 +357,7 @@ export const ANTI_GRINDER_META =
 export const ANTI_GRINDER_BODY_EXTRA = [
   "Still choosing on a weekday Gold policy? See [best bike lock for commuting](/for/commuting). Matching a Diamond line on the policy: [best bike lock for insurance](/for/insurance). Head-to-head Gold Mini versus the compact Hiplok: [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000). Choosing between the two Hiplok Diamonds: [D1000 vs DX1000](/vs/d1000-vs-dx1000).",
   "Full write-ups: [Litelok X1](/reviews/litelok-x1), [Hiplok D1000](/reviews/hiplok-d1000), [Hiplok DX1000](/reviews/hiplok-dx1000). How we treat grades and claims: [how we research](/method).",
+  "More anti-grinder D-locks, each with its own review: the [OnGuard RockSolid 8590](/reviews/onguard-rocksolid-8590) is the lightest at about 1.4kg, if 90 × 175 mm closes on your stand. The [Kryptonite New York Diamond](/reviews/kryptonite-new-york-diamond) is Diamond for bikes and e-bikes with a bracket at 2.3kg. For chunky frames, the [Oxford Grinder S1 320 mm](/reviews/oxford-grinder-s1) has about 247 × 115 mm inside and a bracket. On e-bike policies that name Powered Cycle Diamond, look at the [ABUS Granit Super Extreme 2500](/reviews/abus-granit-super-extreme-2500) (2.47kg, holder in the box) and the [Squire Stronghold D16 MAX](/reviews/squire-stronghold-d16-max) (2.84kg).",
 ];
 
 export const COMMUTE_META =

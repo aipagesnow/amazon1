@@ -228,5 +228,92 @@
       "soldSecurePedal": "Diamond",
       "soldSecurePowered": "Gold"
     }
+  },
+  {
+    "asin": "B0DQVJLGM2",
+    "lastChecked": "18 October 2026",
+    "name": "New York Lock Diamond Standard U-lock with FlexFrame-U bracket",
+    "brand": "Kryptonite",
+    "category": "Bike locks",
+    "specs": {
+      "type": "D-lock",
+      "soldSecurePedal": "Diamond",
+      "soldSecurePowered": "Diamond",
+      "lockingArea": "95 x 204 mm",
+      "weightKg": 2.3,
+      "keys": 3,
+      "frameMount": true,
+      "cableIncluded": false,
+      "angleGrinderResistant": true
+    }
+  },
+  {
+    "asin": "B0D6GQR2ST",
+    "lastChecked": "18 October 2026",
+    "name": "Stronghold D16 MAX anti-angle-grinder D-lock",
+    "brand": "Squire",
+    "category": "Bike locks",
+    "specs": {
+      "type": "D-lock",
+      "soldSecurePowered": "Diamond",
+      "shackleMm": 16,
+      "lockingArea": "94 x 218 mm",
+      "weightKg": 2.84,
+      "keys": 2,
+      "angleGrinderResistant": true
+    }
+  },
+  {
+    "asin": "B0H75MQQRT",
+    "lastChecked": "18 October 2026",
+    "name": "Grinder S1 U-lock LK376 (14 x 320 mm) with carry bracket",
+    "brand": "Oxford",
+    "category": "Bike locks",
+    "specs": {
+      "type": "D-lock",
+      "soldSecurePedal": "Diamond",
+      "soldSecurePowered": "Diamond",
+      "shackleMm": 14,
+      "lockingArea": "115 x 247 mm",
+      "weightKg": 2.36,
+      "keys": 3,
+      "frameMount": true,
+      "angleGrinderResistant": true
+    }
+  },
+  {
+    "asin": "B0CCRZHBFV",
+    "lastChecked": "18 October 2026",
+    "name": "Granit Super Extreme 2500/165HB230 U-lock with USH 2500 holder",
+    "brand": "ABUS",
+    "category": "Bike locks",
+    "specs": {
+      "type": "D-lock",
+      "soldSecurePowered": "Diamond",
+      "shackleMm": 20,
+      "lockingArea": "102 x 230 mm",
+      "weightKg": 2.47,
+      "keys": 2,
+      "frameMount": true,
+      "angleGrinderResistant": true
+    }
+  },
+  {
+    "asin": "B0DG73D13P",
+    "lastChecked": "18 October 2026",
+    "name": "RockSolid 8590 anti-angle-grinder U-lock",
+    "brand": "OnGuard",
+    "category": "Bike locks",
+    "specs": {
+      "type": "D-lock",
+      "soldSecurePedal": "Diamond",
+      "soldSecurePowered": "Diamond",
+      "shackleMm": 14,
+      "lockingArea": "90 x 175 mm",
+      "weightKg": 1.4,
+      "keys": 5,
+      "frameMount": false,
+      "angleGrinderResistant": true
+    }
   }
 ]

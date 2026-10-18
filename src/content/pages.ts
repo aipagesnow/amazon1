@@ -228,7 +228,7 @@ export const GUIDE_FAQS: Faq[] = [
 ];
 
 export const HOME_LEDE =
-  "We’ll help you pick a lock you’ll still take to work. It’s a small UK comparison of thirteen D-locks and chains: Sold Secure grade, whether it’ll close on your stand, and how heavy it is to carry.";
+  "We’ll help you pick a lock you’ll still take to work. It’s a small UK comparison of eighteen D-locks and chains: Sold Secure grade, whether it’ll close on your stand, and how heavy it is to carry.";
 
 export const HOME_BRIEFING = {
   grade: "Match the Sold Secure grade your policy names — often Gold, sometimes Diamond.",
@@ -331,10 +331,10 @@ export const BEST_WEIGHT =
   "The 1410 chain is more than three times the weight of the Pitbull STD, which is why we treat it as a home lock rather than a commute lock. The bars are relative to the heaviest lock in this comparison.";
 
 export const REVIEWS_LEDE =
-  "Thirteen locks, from Sold Secure Gold to Diamond: D-locks, a folding lock, and two chains. Each review says who it suits, when another lock fits you better, and what to watch for.";
+  "Eighteen locks, from Sold Secure Gold to Diamond: D-locks, a folding lock, and two chains. Each review says who it suits, when another lock fits you better, and what to watch for.";
 
 export const REVIEWS_INTRO = [
-  "This isn’t a ranking of every lock on Amazon. We took thirteen products people actually search for — Diamond D-locks, Gold D-locks, one Gold folding lock, and two New York chains — and wrote each one up against the same questions: grade, fit, weight, and whether you’ll carry it.",
+  "This isn’t a ranking of every lock on Amazon. We took eighteen products people actually search for — Diamond D-locks, Gold D-locks, one Gold folding lock, and two New York chains — and wrote each one up against the same questions: grade, fit, weight, and whether you’ll carry it.",
   "Start with the group that matches the grade on your policy. Then read the verdict, not the name. A Diamond lock left at home protects your bike less than a Gold lock you take with you.",
 ];
 
@@ -352,6 +352,18 @@ export const REVIEW_GROUPS = [
       "hiplok-d1000",
       "hiplok-dx1000",
       "abus-granit-xplus-540",
+    ],
+  },
+  {
+    title: "Anti-grinder Diamond D-locks",
+    blurb:
+      "Locks sold against angle grinders, all Sold Secure Diamond. The RockSolid 8590 is the lightest at about 1.4kg, with a small 90 × 175 mm locking area and no mount. The Kryptonite New York Diamond is Diamond for bikes and e-bikes at 2.3kg with a bracket. The Oxford Grinder S1 320 mm is roomy (about 247 × 115 mm) with a bracket, at about 2.36kg. The ABUS Granit Super Extreme 2500 (2.47kg, holder in the box) and the Squire Stronghold D16 MAX (2.84kg) are Powered Cycle Diamond on the Sold Secure record. The Litelok X1, D1000 and DX1000 above are sold against grinders too.",
+    slugs: [
+      "onguard-rocksolid-8590",
+      "kryptonite-new-york-diamond",
+      "oxford-grinder-s1",
+      "abus-granit-super-extreme-2500",
+      "squire-stronghold-d16-max",
     ],
   },
   {
@@ -795,7 +807,7 @@ export const ALT_FAQS: Faq[] = [
   },
   {
     q: "Is the Mini on the best-of page?",
-    a: "No. The [best bike locks UK](/best) page lists the shortlist from the thirteen. This Mini is reviewed because people search the name, not because it is a commute shortlist pick.",
+    a: "No. The [best bike locks UK](/best) page lists the shortlist from the eighteen. This Mini is reviewed because people search the name, not because it is a commute shortlist pick.",
   },
   {
     q: "New York Mini or Evolution Mini-7?",

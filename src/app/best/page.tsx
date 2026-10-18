@@ -51,26 +51,37 @@ const TRACKING = [
     why: "Cycling UK’s most secure in its group test; Bennetts BikeSocial (February 2026) lists about £270 and 2.36 kg.",
     source: "Bennetts BikeSocial",
     href: "https://www.bennetts.co.uk/bikesocial/",
+    review: "/reviews/kryptonite-new-york-diamond",
   },
   {
     model: "OnGuard RockSolid",
     why: "Cycling Weekly’s 2026 group-test winner.",
     source: "Cycling Weekly",
     href: "https://www.cyclingweekly.com/",
+    review: "/reviews/onguard-rocksolid-8590",
   },
   {
     model: "ABUS Granit Super Extreme 2500",
     why: "Tungsten-carbide shell that fits bulky and e-bike frames.",
     source: "Cyclist",
     href: "https://www.cyclist.co.uk/",
+    review: "/reviews/abus-granit-super-extreme-2500",
   },
   {
     model: "Squire Stronghold D16 Max",
     why: "Powered Cycle Diamond, with a 218 × 94 mm inner area.",
     source: "Cyclist",
     href: "https://www.cyclist.co.uk/",
+    review: "/reviews/squire-stronghold-d16-max",
   },
-] as const;
+  {
+    model: "Oxford Grinder S1 (320 mm)",
+    why: "Diamond for bikes and e-bikes; Bennetts BikeSocial measured 2,355g and about 247 × 115 mm inside.",
+    source: "Bennetts BikeSocial",
+    href: "https://www.bennetts.co.uk/bikesocial/reviews/products/security/motorcycle-chains-and-locks/oxford-grinder-s1-s2-review-d-lock",
+    review: "/reviews/oxford-grinder-s1",
+  },
+] as const satisfies readonly { model: string; why: string; source: string; href: string; review?: string }[];
 
 const CUT_TIMES = [
   {
@@ -315,8 +326,9 @@ export default function BestPage() {
 
         <h2>2026 models we are tracking</h2>
         <p>
-          We haven’t confirmed the UK Amazon listings for these models yet, so there aren’t buy
-          links.
+          Most of these now have a full review, linked below. They sit outside the shortlist
+          table for now. The Litelok X3 doesn’t have a confirmed UK Amazon listing yet, so there’s
+          no review or buy link for it.
         </p>
         <div className="spec-scroll-wrap">
           <p className="spec-scroll-hint">Swipe for more columns</p>
@@ -332,7 +344,9 @@ export default function BestPage() {
               <tbody>
                 {TRACKING.map((row) => (
                   <tr key={row.model}>
-                    <td>{row.model}</td>
+                    <td>
+                      {"review" in row ? <Link href={row.review}>{row.model}</Link> : row.model}
+                    </td>
                     <td>{row.why}</td>
                     <td>
                       <SourceLink href={row.href}>{row.source}</SourceLink>
