@@ -12,7 +12,7 @@ import { VS_AFTER_EXTRA } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { photoAlt, photos } from "@/lib/photos";
 import { displayName, Product, productBySlug, reviewHref } from "@/lib/products";
-import { pageUrl } from "@/lib/site";
+import { docTitle, pageUrl } from "@/lib/site";
 
 export function generateStaticParams() {
   return PAIRS.map((p) => ({ pair: p.slug }));
@@ -27,11 +27,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = pageUrl(`/vs/${pair.slug}`);
   const documentTitle = pair.documentTitle ?? pair.title;
   return {
-    title: documentTitle,
+    title: pair.documentTitle ? docTitle(documentTitle) : documentTitle,
     description: pair.description,
     alternates: { canonical: url },
         openGraph: {
-      title: `${documentTitle} · Lock Desk`,
+      title: pair.documentTitle ? docTitle(documentTitle).absolute : `${documentTitle} · Lock Desk`,
       description: pair.description,
       url,
       images: [
@@ -89,18 +89,13 @@ export default async function VsPage({ params }: Props) {
         kicker="Comparison"
         illustrative
         title={pair.title}
-        lede={pair.directAnswer ? undefined : pair.intro}
+        lede={pair.answer}
         overlay
       >
         <DisclosureStrip />
       </PageHero>
       <article className="prose wrap tight">
-        {pair.directAnswer ? (
-          <>
-            <p className="direct-answer">{pair.directAnswer}</p>
-            <p className="lede">{pair.intro}</p>
-          </>
-        ) : null}
+        {pair.intro ? <p className="lede">{pair.intro}</p> : null}
         <div className="who-each">
           {pair.whoEach.map((line) => (
             <p key={line}>{line}</p>

@@ -53,7 +53,7 @@ export const HOME_FAQS: Faq[] = [
 ];
 
 export const BEST_META =
-  "D-locks, a folding lock, and a chain compared on Sold Secure grade, weight, and locking area. There is no single best lock for everyone.";
+  "Our UK picks by situation: Litelok X1 for Diamond, Pitbull STD 8003 for Diamond with a mount, Evolution Mini-7 for Gold commutes. Grades, kg, cut times.";
 
 export const BEST_INTRO_EXTRA =
   "If you already know the job, jump to [best lock for commuting](/for/commuting) or [best lock for insurance](/for/insurance). Comparing locks sold against grinders? See [what to look for in an anti-grinder lock](/for/anti-grinder). If you are stuck between two names, try [Evolution Mini-7 vs D1000](/vs/evolution-mini-7-vs-d1000), [D1000 vs DX1000](/vs/d1000-vs-dx1000), or [D-lock vs chain](/vs/d-lock-vs-chain). Looking for something instead of the New York Mini? See the [alternatives page](/alternatives/kryptonite-new-york-fahgettaboudit-mini).";
@@ -86,6 +86,18 @@ export const BEST_FAQS: Faq[] = [
   {
     q: "What lock works in a block of flats car park?",
     a: "We’d leave a chain on a ground anchor there, and take a D-lock when you ride. The New York 1410 is 100 cm at 4.9kg. If that won’t reach, the New York 1415 is 150 cm at 6.92kg. We don’t review the anchors themselves.",
+  },
+  {
+    q: "Do I need the e-bike (Powered Cycle) grade?",
+    a: "If you ride an e-bike and your policy names it, yes. On this shortlist the Litelok X1 and Hiplok D1000 are Diamond for e-bikes too. The ABUS 540 and the New York 1410 drop to Gold on e-bikes, and we don’t have an e-bike grade listed for the Pitbull STD.",
+  },
+  {
+    q: "Is a heavier lock more secure?",
+    a: "Not by grade. The Pitbull STD 8003 is Sold Secure Diamond at 1.44kg, while the Bordo 6500K is Gold at 2.47kg. Check the grade marked on the lock, then pick the lightest one that meets your policy and closes on your stand.",
+  },
+  {
+    q: "What’s the lightest Diamond lock with a mount here?",
+    a: "The OnGuard Pitbull STD 8003: Sold Secure Diamond for ordinary bikes, 1.44kg, with a frame mount and a 115 × 230 mm locking area. We don’t have an e-bike grade listed for it, so if you ride an e-bike we’d look at the Litelok X1.",
   },
 ];
 
@@ -134,9 +146,9 @@ export const VS_AFTER_EXTRA: Record<string, string> = {
 
 export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "litelok-x1":
-    "Sold Secure Diamond for ordinary bikes and e-bikes, 1.7kg, 101 × 197 mm locking area. Based on published grades and specs, not a cut test.",
+    "Litelok X1: Sold Secure Diamond for bikes and e-bikes, 1.7kg, 101 × 197 mm. Our first look for Diamond you’ll still carry; no frame clip in the box.",
   "hiplok-d1000":
-    "Diamond at 1.9kg with a 92 × 155 mm locking area and no mount. Only after you have measured the rack; less useful if Gold and a cable already meet the policy.",
+    "Hiplok D1000: Sold Secure Diamond for bikes and e-bikes, 1.9kg, 92 × 155 mm, no mount. Worth it once you’ve measured your stand and plan to bag it.",
   "kryptonite-evolution-mini-7":
     "Sold Secure Gold, 1.61kg, mount and cable in the box. The cable is not Gold. A commute lock many UK riders will still take every day.",
   "abus-granit-xplus-540":
@@ -144,7 +156,7 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "kryptonite-new-york-fahgettaboudit-mini":
     "New York Fahgettaboudit Mini: Sold Secure Gold, 2.06 kg, no mount, no cable — a thick second lock; the Evolution Mini-7 is usually easier to carry.",
   "kryptonite-new-york-fahgettaboudit-1410":
-    "100 cm, 14 mm, 4.9kg. Sold Secure Diamond for ordinary bikes, Gold for e-bikes. Extra length for home. The weight suits storage more than a daily commute.",
+    "Kryptonite New York 1410: 100 cm of 14 mm chain, 4.9kg, Sold Secure Diamond for bikes, Gold for e-bikes. One to leave at home for reach.",
   "hiplok-dx1000":
     "Diamond for ordinary bikes and e-bikes at 2.75kg, with a 112 × 205 mm locking area and no mount. Larger than the D1000 — measure the stand first.",
   "onguard-pitbull-std-8003":
@@ -152,14 +164,25 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "onguard-pitbull-dt-8005":
     "OnGuard Pitbull DT 8005 is Sold Secure Diamond at about 1.6 kg. A cable is in the box, and the cable is not graded.",
   "onguard-pitbull-ls-8002":
-    "Sold Secure Diamond for ordinary bikes with a long 115 × 292 mm shackle, 1.75kg, and a frame mount. Useful when a Mini will not close on a fat post.",
+    "OnGuard Pitbull LS 8002: Sold Secure Diamond, 1.75kg, long 115 × 292 mm shackle with a frame mount, for when a Mini won’t close on a fat post.",
   "abus-bordo-granit-6500k":
-    "ABUS Bordo 6500K: Sold Secure Gold folding lock, 2.47 kg, 120 cm reach, SH bracket — flexible Gold when a Mini will not close.",
+    "ABUS Bordo Granit 6500K: Sold Secure Gold folding lock, 2.47kg, 120 cm reach and an SH bracket, for when a compact D-lock won’t close.",
   "seatylock-mason-140":
-    "Sold Secure Pedal Cycle Diamond at about 0.97kg, 140 × 85 mm. Measure the stand. The mount is sold separately. Confirm the e-bike grade on Sold Secure.",
+    "Seatylock Mason 140: Sold Secure Pedal Cycle Diamond at about 0.97kg, 140 × 85 mm. Measure the stand; the mount is sold separately.",
   "kryptonite-new-york-fahgettaboudit-1415":
-    "Sold Secure Diamond for ordinary bikes, Gold for e-bikes. A 150 cm chain at 6.92kg for reach at home rather than a commute, compared with the 1410.",
+    "Kryptonite New York 1415: 150 cm chain, 6.92kg, Sold Secure Diamond for bikes, Gold for e-bikes. The longer home chain when 100 cm won’t reach.",
 };
+
+/** Reviews retitled to the "{Model} Review: Sold Secure {grade}, {kg}" pattern; no site suffix past 60 characters. */
+export const REVIEW_RETITLED = new Set<string>([
+  "hiplok-d1000",
+  "litelok-x1",
+  "kryptonite-new-york-fahgettaboudit-1410",
+  "kryptonite-new-york-fahgettaboudit-1415",
+  "onguard-pitbull-ls-8002",
+  "seatylock-mason-140",
+  "abus-bordo-granit-6500k",
+]);
 
 export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
   "onguard-pitbull-std-8003":
@@ -168,14 +191,17 @@ export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
     "Kryptonite Evolution Mini-7 review: Sold Secure Gold, 1.61kg",
   "abus-granit-xplus-540":
     "ABUS Granit XPlus 540 review: Sold Secure Diamond, 1.8kg",
-  "seatylock-mason-140":
-    "Seatylock Mason 140 review — lightweight Diamond D-lock",
   "onguard-pitbull-dt-8005":
     "OnGuard Pitbull DT 8005 review: Sold Secure Diamond, 1.6kg + cable",
   "kryptonite-new-york-fahgettaboudit-mini":
     "Kryptonite Fahgettaboudit Mini review: Sold Secure Gold, 2.06kg",
-  "abus-bordo-granit-6500k": "ABUS Bordo Granit 6500K: Gold folding lock",
-  "kryptonite-new-york-fahgettaboudit-1415": "New York Fahgettaboudit 1415 chain review",
+  "hiplok-d1000": "Hiplok D1000 Review: Diamond Anti-Grinder D-Lock, 1.9kg",
+  "litelok-x1": "Litelok X1 Review: Sold Secure Diamond, 1.7kg, Bikes & E-Bikes",
+  "kryptonite-new-york-fahgettaboudit-1410": "Kryptonite NY 1410 Review: Diamond Chain, 4.9kg, Home Use",
+  "kryptonite-new-york-fahgettaboudit-1415": "Kryptonite NY 1415 Review: Diamond Chain, 6.92kg, Home Use",
+  "onguard-pitbull-ls-8002": "OnGuard Pitbull LS 8002 Review: Sold Secure Diamond, 1.75kg",
+  "seatylock-mason-140": "Seatylock Mason 140 Review: Sold Secure Diamond, 0.97kg",
+  "abus-bordo-granit-6500k": "ABUS Bordo 6500K Review: Sold Secure Gold, 2.47kg, Folding",
 };
 
 export const REVIEW_DIRECT_ANSWERS: Record<string, string> = {
@@ -280,3 +306,90 @@ export const ANTI_GRINDER_BODY_EXTRA = [
 
 export const COMMUTE_META =
   "A commute lock is one you take every day. For most UK riders that is a Gold Mini with a frame clip. Step up to Diamond if the bike is worth the weight.";
+
+export const REVIEW_FAQ_EXTRA: Record<string, Faq[]> = {
+  "onguard-pitbull-dt-8005": [
+    {
+      q: "Is the DT 8005 Diamond on an e-bike?",
+      a: "We don’t have a Powered Cycle (e-bike) grade listed for it. On our records it’s Sold Secure Diamond for ordinary bikes. If your e-bike policy names e-bike Diamond, the Litelok X1 is Diamond for both.",
+    },
+    {
+      q: "Is Diamond what my insurer wants?",
+      a: "Only if your policy names it. Many UK household policies still name Gold, and a Diamond lock meets that line too. If the insurer publishes an approved list, match the exact model. See [bike lock for insurance](/for/insurance).",
+    },
+    {
+      q: "Does the cable make it heavier than the STD 8003?",
+      a: "A little. The DT 8005 is about 1.6kg with the cable; the STD 8003 is 1.44kg without one. It’s the same Diamond D-lock with the same 115 × 230 mm locking area.",
+    },
+  ],
+  "kryptonite-evolution-mini-7": [
+    {
+      q: "Is the Mini-7 Gold on an e-bike?",
+      a: "We don’t have a Powered Cycle (e-bike) grade listed for it; it’s Sold Secure Gold for ordinary bikes. If your e-bike policy names an e-bike grade, the Litelok X1 is Diamond for both.",
+    },
+    {
+      q: "Will my insurer accept a Gold lock?",
+      a: "If the policy names Gold and the model is on any list the insurer publishes, it should. Some high-value and e-bike policies ask for Diamond instead. See [bike lock for insurance](/for/insurance).",
+    },
+    {
+      q: "Is a heavier Gold lock safer?",
+      a: "Not by the grade. The New York Mini is 2.06kg and also Gold. The Mini-7 is 1.61kg with a frame clip, so it’s the one you’re more likely to have with you.",
+    },
+  ],
+  "onguard-pitbull-std-8003": [
+    {
+      q: "Is the STD 8003 Diamond on an e-bike?",
+      a: "We don’t have a Powered Cycle (e-bike) grade listed for it. On our records it’s Sold Secure Diamond for ordinary bikes. If your e-bike policy names e-bike Diamond, the Litelok X1 is Diamond for both.",
+    },
+    {
+      q: "Is Diamond what my insurer wants?",
+      a: "Only if your policy names it. Many UK household policies still name Gold, and a Diamond lock meets that line too. If the insurer publishes an approved list, match the exact model. See [bike lock for insurance](/for/insurance).",
+    },
+    {
+      q: "Is it the lightest Diamond lock with a mount?",
+      a: "In this set, yes: 1.44kg with a frame mount in the box. The Seatylock Mason 140 is lighter at about 0.97kg, but its mount is sold separately and its 140 × 85 mm locking area is much shorter.",
+    },
+  ],
+  "kryptonite-new-york-fahgettaboudit-1415": [
+    {
+      q: "Is a 6.92kg chain more secure than a 1.9kg D-lock?",
+      a: "Not by grade alone. The 1415 is Diamond for ordinary bikes; so is the Hiplok D1000 at 1.9kg, which is Diamond on e-bikes too. The chain’s weight buys you 150 cm of reach, not a higher grade.",
+    },
+    {
+      q: "Does my insurer care how I lock it at home?",
+      a: "Often, yes. Policies can care how you locked the bike as well as the grade: frame to a fixed object, not a wheel alone. Read those lines in your policy. See [bike lock for insurance](/for/insurance).",
+    },
+    {
+      q: "What grade do insurers usually ask for?",
+      a: "Sold Secure says Gold is typically the minimum insurers ask for on higher-value bikes; some policies ask for Diamond. The 1415 is Diamond for ordinary bikes and Gold for e-bikes.",
+    },
+  ],
+  "onguard-pitbull-ls-8002": [
+    {
+      q: "Is the LS 8002 Diamond on an e-bike?",
+      a: "We don’t have a Powered Cycle (e-bike) grade listed for it. On our records it’s Sold Secure Diamond for ordinary bikes. If your e-bike policy names e-bike Diamond, the Litelok X1 is Diamond for both.",
+    },
+    {
+      q: "Is Diamond what my insurer wants?",
+      a: "Only if your policy names it. Many UK household policies still name Gold, and a Diamond lock meets that line too. If the insurer publishes an approved list, match the exact model. See [bike lock for insurance](/for/insurance).",
+    },
+    {
+      q: "Does the longer shackle make it heavier?",
+      a: "A bit: 1.75kg against 1.44kg for the STD 8003, with the same Diamond grade. You’re paying for 115 × 292 mm of room, not a higher grade.",
+    },
+  ],
+  "abus-granit-xplus-540": [
+    {
+      q: "What does Powered Cycle mean for the 540?",
+      a: "It’s Sold Secure’s e-bike grade. The 540 is Gold there, not Diamond, so it won’t match a policy that asks for e-bike Diamond. On an ordinary bike it’s Diamond.",
+    },
+    {
+      q: "Is Diamond what my insurer wants?",
+      a: "Only if your policy names it. Many UK household policies still name Gold, and a Diamond lock meets that line too. If the insurer publishes an approved list, match the exact model. See [bike lock for insurance](/for/insurance).",
+    },
+    {
+      q: "Is 1.8kg heavy for a Diamond lock?",
+      a: "It’s mid-pack in this set: the Litelok X1 is 1.7kg and the Pitbull LS 8002 is 1.75kg, both Diamond. The 540’s weight goes on its 300 mm shackle, which is why it closes where a Mini won’t.",
+    },
+  ],
+};

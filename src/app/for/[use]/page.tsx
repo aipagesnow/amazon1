@@ -17,7 +17,7 @@ import {
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { photoAlt, photos } from "@/lib/photos";
 import { productBySlug } from "@/lib/products";
-import { pageUrl } from "@/lib/site";
+import { docTitle, pageUrl } from "@/lib/site";
 
 export function generateStaticParams() {
   return CASES.map((c) => ({ use: c.slug }));
@@ -36,11 +36,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : item.slug === "anti-grinder"
         ? ANTI_GRINDER_META
         : item.description;
+  const title = item.documentTitle ? docTitle(item.documentTitle) : { absolute: `${item.title} · Lock Desk` };
   return {
-    title: item.title,
+    title: item.documentTitle ? title : item.title,
     description,
     alternates: { canonical: url },
-        openGraph: { title: `${item.title} · Lock Desk`, description, url, images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Lock Desk — UK bike lock comparisons" }] },
+        openGraph: { title: title.absolute, description, url, images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Lock Desk — UK bike lock comparisons" }] },
   };
 }
 
@@ -79,7 +80,7 @@ export default async function UseCasePage({ params }: Props) {
         }
         kicker="Guide"
         title={item.title}
-        lede={item.description}
+        lede={item.answer}
         overlay
       >
         <DisclosureStrip />
@@ -123,6 +124,14 @@ export default async function UseCasePage({ params }: Props) {
         <p>
           <strong>Less suitable if:</strong> {item.notFor}
         </p>
+        {item.questions?.map((qa) => (
+          <section key={qa.q}>
+            <h2>{qa.q}</h2>
+            <p>
+              <RichText text={qa.a} />
+            </p>
+          </section>
+        ))}
         {item.policy?.map((p) => (
           <p key={p}>{p}</p>
         ))}
@@ -147,6 +156,7 @@ export default async function UseCasePage({ params }: Props) {
           ),
         )}
 
+        {item.lastReviewed ? <p className="meta">Last reviewed: {item.lastReviewed}</p> : null}
         <h2>Common questions</h2>
         <div className="faq-list">
           {item.faqs.map((faq) => (

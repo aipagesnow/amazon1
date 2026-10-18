@@ -111,7 +111,10 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
         overlay
       >
         <p className="stamp-row">
-          <GradeStamp grade={product.specs?.soldSecurePedal} label={copy.stamp} />
+          <GradeStamp grade={product.specs?.soldSecurePedal} label={copy.stamp} />{" "}
+          <Link href="/for/insurance" className="stamp-link">
+            Grades for insurance
+          </Link>
         </p>
         <p className="job-line">{copy.job}</p>
       </PageHero>

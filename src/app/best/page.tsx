@@ -20,9 +20,9 @@ import {
   shortName,
   specValue,
 } from "@/lib/products";
-import { pageUrl, site } from "@/lib/site";
+import { docTitle, pageUrl } from "@/lib/site";
 
-const PAGE_TITLE = "Best bike locks UK 2026: Sold Secure grades, weights and cut times";
+const PAGE_TITLE = "Best Bike Locks UK 2026: Sold Secure Grades & Cut Times";
 
 const BIKERADAR_LOCKS = "https://www.bikeradar.com/advice/buyers-guides/best-bike-lock";
 
@@ -94,11 +94,11 @@ const CUT_TIMES = [
 ] as const;
 
 export const metadata: Metadata = {
-  title: PAGE_TITLE,
+  title: docTitle(PAGE_TITLE),
   description: BEST_META,
   alternates: { canonical: pageUrl("/best") },
   openGraph: {
-    title: `${PAGE_TITLE} · Lock Desk`,
+    title: docTitle(PAGE_TITLE).absolute,
     description: BEST_META,
     url: pageUrl("/best"),
     images: [
@@ -174,8 +174,7 @@ export default function BestPage() {
       />
       <article className="prose wrap tight">
         <p className="byline">
-          By Lock Desk · Desk research from published specs and Sold Secure grades · Last checked{" "}
-          {site.lastChecked} · <Link href="/method">How we research</Link>
+          By Lock Desk · Desk research from published specs and Sold Secure grades · Last reviewed: 18 Oct 2026 · <Link href="/method">How we research</Link>
         </p>
         <DisclosureStrip />
 
@@ -390,6 +389,10 @@ export default function BestPage() {
           <li>
             <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> — when a D-lock’s easier to
             carry, when a chain’s length is useful, and when it makes sense to use both.
+          </li>
+          <li>
+            <Link href="/for/commuting">Best bike lock for commuting</Link> — the lock you’ll
+            actually take to the office every day, and when a larger shackle earns its weight.
           </li>
         </ul>
 

@@ -29,3 +29,9 @@ export function pageUrl(path: string): string {
   if (!path || path === "/") return site.url;
   return `${site.url}${path.startsWith("/") ? path : `/${path}`}`;
 }
+
+/** Browser title: add " · Lock Desk" only when the result stays within 60 characters. */
+export function docTitle(title: string): { absolute: string } {
+  const withSuffix = `${title} · ${site.name}`;
+  return { absolute: withSuffix.length <= 60 ? withSuffix : title };
+}
