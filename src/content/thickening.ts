@@ -209,7 +209,7 @@ export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
   "onguard-pitbull-dt-8005":
     "OnGuard Pitbull DT 8005 review: Sold Secure Diamond, 1.6kg + cable",
   "kryptonite-new-york-fahgettaboudit-mini":
-    "Kryptonite Fahgettaboudit Mini review: Sold Secure Gold, 2.06kg",
+    "Kryptonite Fahgettaboudit Mini review: Sold Secure Diamond, 2.06kg",
   "hiplok-d1000": "Hiplok D1000 Review: Diamond Anti-Grinder D-Lock, 1.9kg",
   "litelok-x1": "Litelok X1 Review: Sold Secure Diamond, 1.7kg, Bikes & E-Bikes",
   "kryptonite-new-york-fahgettaboudit-1410": "Kryptonite NY 1410 Review: Diamond Chain, 4.9kg, Home Use",
