@@ -18,6 +18,7 @@
   },
   {
     "asin": "B0CW175JJ8",
+    "lastChecked": "19 October 2026",
     "name": "New York Fahgettaboudit Mini U-lock",
     "brand": "Kryptonite",
     "category": "Bike locks",
@@ -30,7 +31,8 @@
       "weightKg": 2.06,
       "keys": 3,
       "lockingArea": "83 x 153 mm",
-      "soldSecurePedal": "Gold"
+      "soldSecurePedal": "Diamond",
+      "soldSecurePowered": "Gold"
     }
   },
   {

@@ -177,7 +177,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       "The cable is for a quick-release wheel, or a helmet, if you must. It isn’t Sold Secure Gold. If a listing photo makes the whole kit look approved, ignore the photo. The D-lock is the graded product. Don’t lock the bike to the stand with the cable alone.",
       "The locking area is 83 × 178 mm. That’s a compact Mini size. It’ll close on a lot of UK bike stands and fail on fat lamp-posts and some cargo bikes. Measure first. If it won’t close, look at the ABUS 540 (a 300 mm shackle) or a chain at home, rather than a thicker compact lock with an even smaller locking area.",
       "Gold is still the grade a lot of UK household cycle insurance names. Diamond is higher, and some e-bike policies want the e-bike version of that grade. If that’s your situation, look elsewhere. If Gold is what the policy asks for and you’ll carry 1.6kg, this kit fits that job well. If you need Gold with more reach than 83 × 178 mm, the Bordo 6500K offers 120 cm of folding length at a higher weight.",
-      "The New York Fahgettaboudit Mini is the thicker sibling: 18 mm, 2.06kg, no mount, no cable, still only Gold. People search it because of the name. You’d usually be better with this Evolution Mini-7. The extra thickness isn’t usually worth an extra 450 g every day when the Sold Secure grade is the same.",
+      "The New York Fahgettaboudit Mini is the thicker sibling: 18 mm, 2.06kg, no mount, no cable, and Sold Secure Diamond for ordinary bikes (Gold for e-bikes). So it’s heavier, but Diamond. If your policy is happy with Gold, you’d usually be better with this Evolution Mini-7: 450 g less to carry every day, plus a mount and a cable. If the policy names Diamond for an ordinary bike, the New York Mini is one way to get it in a compact shape.",
     ],
     bestFor: [
       "Weekday commuting where Gold meets the policy",
@@ -212,11 +212,11 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       },
       {
         q: "Evolution Mini-7 or New York Mini?",
-        a: "The New York Mini is 18 mm thick, weighs 2.06kg, and has no mount and no cable. The Evolution Mini-7 is 13 mm thick, weighs 1.61kg, and includes a frame mount and a cable. Both are Gold. Carry the Evolution unless you specifically want the thicker Mini as a second lock.",
+        a: "The New York Mini is 18 mm thick, weighs 2.06kg, and has no mount and no cable. The Evolution Mini-7 is 13 mm thick, weighs 1.61kg, and includes a frame mount and a cable. The New York Mini is Diamond for ordinary bikes; the Evolution is Gold for ordinary bikes. Carry the Evolution if Gold is enough, and look at the New York Mini if your policy asks for Diamond.",
       },
       {
         q: "What should I buy instead of the New York Mini?",
-        a: "This lock, if you need Gold you’ll carry. Diamond: [Litelok X1](/reviews/litelok-x1). Extra length at home: the [New York 1410 chain](/reviews/kryptonite-new-york-fahgettaboudit-1410). Longer version: [alternatives to the New York Mini](/alternatives/kryptonite-new-york-fahgettaboudit-mini).",
+        a: "This lock, if you need Gold you’ll carry. Diamond on an e-bike: [Litelok X1](/reviews/litelok-x1). Extra length at home: the [New York 1410 chain](/reviews/kryptonite-new-york-fahgettaboudit-1410). Longer version: [alternatives to the New York Mini](/alternatives/kryptonite-new-york-fahgettaboudit-mini).",
       },
       {
         q: "Will it fit a Sheffield stand?",
@@ -295,62 +295,62 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     altSecondWhy: "Gold and a cable are enough, and you want less lock to carry.",
   },
   "kryptonite-new-york-fahgettaboudit-mini": {
-    hook: "If you want a thick 18 mm Gold Mini as a second lock, this is it, but it’s 2.06kg with no frame mount.",
-    job: "For daily carry, the Evolution Mini-7 is easier in the same grade.",
-    meta: "Kryptonite New York Mini review: 18 mm Gold compact D-lock, 2.06kg, no frame mount, no cable. A thick second lock. Based on published grades and specs.",
+    hook: "If you want a thick 18 mm Mini that’s Sold Secure Diamond on an ordinary bike, this is it, but it’s 2.06kg with no frame mount.",
+    job: "If Gold is enough, the Evolution Mini-7 is easier to carry every day.",
+    meta: "Kryptonite New York Mini review: 18 mm compact D-lock, Sold Secure Diamond for bikes, Gold for e-bikes, 2.06kg, no frame mount, no cable. Based on published grades and specs.",
     verdict:
-      "This can work as a small, thick Gold D-lock you leave on a heavy bike or at a regular stand. It’s a poorer fit as your only commute lock if 1.6kg already feels like too much. Specs: 2.06kg, 83 × 153 mm locking area, no frame mount, and no cable. In this family, the Evolution Mini-7 is usually easier to take every day, because it’s lighter and includes a mount and a cable.",
+      "This can work as a small, thick Diamond D-lock (ordinary bikes; Gold for e-bikes) you leave on a heavy bike or at a regular stand. It’s a poorer fit as your only commute lock if 1.6kg already feels like too much. Specs: 2.06kg, 83 × 153 mm locking area, no frame mount, and no cable. In this family, the Evolution Mini-7 is usually easier to take every day, because it’s lighter and includes a mount and a cable.",
     subheads: [
       "Thickness versus daily carry",
       "No frame mount and no cable",
-      "Sold Secure Gold, not Diamond",
+      "Sold Secure Diamond for ordinary bikes, Gold for e-bikes",
       "When the Evolution Mini-7 is the clearer daily choice",
     ],
     body: [
-      "The Fahgettaboudit name is branding. What you get is an 18 mm Gold compact D-lock with a smaller locking area than the Evolution Mini-7 and 450 g more steel. There’s no frame mount in the box, and no cable, so you carry 2.06kg by hand or strap it somehow.",
-      "83 × 153 mm is tighter than the Evolution’s 83 × 178 mm. If the Mini-7 already struggles on your stand, this won’t save you. Sold Secure Gold is still Gold: insurers look at the grade and the exact model, not the New York name. We don’t keep a live list.",
-      "If you need a lock you’ll carry, the Evolution Mini-7 is usually the clearer daily choice in this family: lighter, with a mount and a cable. If the policy wants Diamond, look at the Litelok X1. If you need length at home, the New York 1410 chain is the sibling. Keep this Mini only as a second lock on a heavy bike.",
+      "The Fahgettaboudit name is branding. What you get is an 18 mm compact D-lock, Diamond for ordinary bikes, with a smaller locking area than the Evolution Mini-7 and 450 g more steel. There’s no frame mount in the box, and no cable, so you carry 2.06kg by hand or strap it somehow.",
+      "83 × 153 mm is tighter than the Evolution’s 83 × 178 mm. If the Mini-7 already struggles on your stand, this won’t save you. Sold Secure lists it as Pedal Cycle Diamond and Powered Cycle Gold: insurers look at the grade and the exact model, not the New York name. We don’t keep a live list.",
+      "If Gold is enough and you need a lock you’ll carry, the Evolution Mini-7 is usually the clearer daily choice in this family: lighter, with a mount and a cable. If the policy wants Diamond on an e-bike, look at the Litelok X1. If you need length at home, the New York 1410 chain is the sibling. Keep this Mini only as a second lock on a heavy bike.",
     ],
     bestFor: [
       "A second lock that lives in a pannier or on a heavy bike",
-      "Riders who want the thickest compact Gold D-lock we’ve reviewed (18 mm)",
+      "Riders who want an 18 mm compact D-lock that’s Diamond for ordinary bikes",
       "Pairing a New York chain with a New York D-lock at home",
     ],
     skipIf: [
       "You need a frame mount or a cable in the box",
-      "You want Diamond, or a lock sold as anti-grinder",
+      "You need Diamond on an e-bike, or a lock sold as anti-grinder",
       "You’ll only use a lock that clips to a bottle-cage boss",
     ],
     good: [
       "18 mm shackle — the thickest compact D-lock we’ve reviewed",
-      "Sold Secure Gold on the ordinary-bike listing",
+      "Sold Secure Diamond on the ordinary-bike listing (Gold for e-bikes)",
       "Compact 83 × 153 mm locking area, tight to the stand if it fits",
     ],
     bad: [
       "2.06kg and no frame mount listed — a lot of loose steel",
       "Smaller locking area than the Evolution Mini-7",
-      "No cable; Sold Secure Gold only; not sold as angle-grinder resistant",
+      "No cable; only Gold for e-bikes; not sold as angle-grinder resistant",
     ],
     change:
       "A frame mount, as on the Evolution Mini-7, would make this compact lock more realistic for daily carry.",
     faqs: [
       {
         q: "New York Mini or Evolution Mini-7?",
-        a: "The Evolution Mini-7 is 13 mm thick, weighs 1.61kg, and includes a frame mount and a cable. The New York Mini is 18 mm thick, weighs 2.06kg, and has no mount and no cable. Both are Gold. For most commuters, the lighter lock is the better daily choice.",
+        a: "The Evolution Mini-7 is 13 mm thick, weighs 1.61kg, and includes a frame mount and a cable. The New York Mini is 18 mm thick, weighs 2.06kg, and has no mount and no cable. It’s Diamond for ordinary bikes; the Mini-7 is Gold. If Gold meets your policy, the lighter Mini-7 is the better daily choice.",
       },
       {
         q: "What should I buy instead?",
-        a: "If you need a lock you’ll carry, the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7). If you need Diamond, the [Litelok X1](/reviews/litelok-x1). If you need extra length at home, the [New York 1410 chain](/reviews/kryptonite-new-york-fahgettaboudit-1410). The longer version is [Instead of the New York Mini](/alternatives/kryptonite-new-york-fahgettaboudit-mini).",
+        a: "If Gold is enough and you need a lock you’ll carry, the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7). If you need Diamond on an e-bike, the [Litelok X1](/reviews/litelok-x1). If you need extra length at home, the [New York 1410 chain](/reviews/kryptonite-new-york-fahgettaboudit-1410). The longer version is [Instead of the New York Mini](/alternatives/kryptonite-new-york-fahgettaboudit-mini).",
       },
       {
         q: "Will insurers accept it?",
-        a: "Gold is widely named. Always match the exact model to your insurer’s list. We don’t keep a live list.",
+        a: "Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes, so it covers most policies that name either grade for a pedal bike. Always match the exact model to your insurer’s list. We don’t keep a live list.",
       },
     ],
     altBest: "kryptonite-evolution-mini-7",
-    altBestWhy: "Same brand, Gold, and you’ll actually carry it.",
+    altBestWhy: "Same brand, Gold is enough for your policy, and you’ll actually carry it.",
     altSecond: "litelok-x1",
-    altSecondWhy: "You were buying New York for maximum thickness, and the policy would rather see Diamond.",
+    altSecondWhy: "Your e-bike policy wants Diamond, which this Mini only reaches on an ordinary bike.",
     relatedWell: {
       href: "/alternatives/kryptonite-new-york-fahgettaboudit-mini",
       title: "Instead of the New York Mini",
@@ -1212,7 +1212,7 @@ export const catalogueHooks: Record<string, string> = {
   "hiplok-d1000": "A compact anti-grinder D-lock — only after you have measured the stand.",
   "kryptonite-evolution-mini-7": "The straightforward choice for a weekday commute when Gold is enough.",
   "abus-granit-xplus-540": "Useful when a compact D-lock will not reach around the stand.",
-  "kryptonite-new-york-fahgettaboudit-mini": "A thick Gold Mini at 2.06kg; the Evolution Mini-7 is usually easier for daily carry.",
+  "kryptonite-new-york-fahgettaboudit-mini": "A thick 2.06kg Mini, Diamond for ordinary bikes; the Evolution Mini-7 is easier to carry if Gold will do.",
   "kryptonite-new-york-fahgettaboudit-1410": "The 4.9kg weight makes this much more suitable for use at home than for a daily commute.",
   "hiplok-dx1000": "The larger Hiplok when the D1000’s shackle will not close. Measure the stand first.",
   "onguard-pitbull-dt-8005": "The Pitbull with a cable in the box — remember the cable is not graded.",

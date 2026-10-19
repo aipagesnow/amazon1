@@ -183,8 +183,9 @@ export default function HomePage() {
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
             New York Fahgettaboudit Mini
           </Link>
-          . It’s an 18 mm Sold Secure Gold lock at 2.06kg with no frame mount. For most
-          daily commuting we’d point you to the Evolution Mini-7 instead, because it’s
+          . It’s an 18 mm lock at 2.06kg with no frame mount, and Sold Secure lists it as
+          Diamond for ordinary bikes and Gold for e-bikes. If Gold is enough for daily
+          commuting, we’d point you to the Evolution Mini-7 instead, because it’s
           lighter and it includes a mount. If you’re still deciding, see{" "}
           <Link href="/alternatives/kryptonite-new-york-fahgettaboudit-mini">
             alternatives to the New York Mini

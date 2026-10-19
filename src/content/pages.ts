@@ -223,7 +223,7 @@ export const GUIDE_FAQS: Faq[] = [
   },
   {
     q: "Does a heavier lock mean a safer bike?",
-    a: "Only if you take it with you. The New York Mini is 2.06kg and Gold; the Evolution Mini-7 is 1.61kg and also Gold. Most commuters are better with the lock they will actually carry.",
+    a: "Only if you take it with you. The New York Mini is 2.06kg and Diamond for ordinary bikes; the Evolution Mini-7 is 1.61kg and Gold. If Gold is enough, most commuters are better with the lock they will actually carry.",
   },
 ];
 
@@ -342,7 +342,7 @@ export const REVIEW_GROUPS = [
   {
     title: "Sold Secure Diamond D-locks",
     blurb:
-      "For higher-value bikes and policies that name Diamond. The Seatylock Mason 140 is Pedal Cycle Diamond at about 0.97kg with a compact 140 × 85 mm locking area (mount sold separately — confirm e-bike grade on Sold Secure). The X1 is ordinary-bike and e-bike Diamond at 1.7kg with a 101 × 197 mm locking area, carried in a bag on the listing. The Pitbull STD is Diamond with a frame mount (1.44kg, 115 × 230 mm); the DT is that lock plus a cable that isn’t graded; the LS is the long 115 × 292 mm sibling. The D1000 is the compact anti-grinder lock (1.9kg, 92 × 155 mm, no clip) — only if you’ve measured the stand. The DX1000 is the larger Hiplok (2.75kg, 112 × 205 mm, no clip) for e-bikes and cargo when 155 mm won’t close. The ABUS 540 is the long 300 mm shackle for posts a Mini can’t close around; for e-bikes the grade is Gold.",
+      "For higher-value bikes and policies that name Diamond. The Seatylock Mason 140 is Pedal Cycle Diamond at about 0.97kg with a compact 140 × 85 mm locking area (mount sold separately — confirm e-bike grade on Sold Secure). The X1 is ordinary-bike and e-bike Diamond at 1.7kg with a 101 × 197 mm locking area, carried in a bag on the listing. The Pitbull STD is Diamond with a frame mount (1.44kg, 115 × 230 mm); the DT is that lock plus a cable that isn’t graded; the LS is the long 115 × 292 mm sibling. The D1000 is the compact anti-grinder lock (1.9kg, 92 × 155 mm, no clip) — only if you’ve measured the stand. The DX1000 is the larger Hiplok (2.75kg, 112 × 205 mm, no clip) for e-bikes and cargo when 155 mm won’t close. The ABUS 540 is the long 300 mm shackle for posts a Mini can’t close around; for e-bikes the grade is Gold. The New York Mini is Diamond for ordinary bikes (Gold for e-bikes), 18 mm and 2.06kg with no clip.",
     slugs: [
       "seatylock-mason-140",
       "litelok-x1",
@@ -352,6 +352,7 @@ export const REVIEW_GROUPS = [
       "hiplok-d1000",
       "hiplok-dx1000",
       "abus-granit-xplus-540",
+      "kryptonite-new-york-fahgettaboudit-mini",
     ],
   },
   {
@@ -369,11 +370,10 @@ export const REVIEW_GROUPS = [
   {
     title: "Sold Secure Gold — D-lock and folding",
     blurb:
-      "For the many UK household policies that still name Gold. The Evolution Mini-7 is the straightforward choice for a weekday commute when Gold is enough: 1.61kg, a frame clip, and a cable in the box — the cable isn’t Gold. The Bordo 6500K is useful when you need Gold with more folding reach than a Mini and you still want the lock on the bike (120 cm, 2.47kg, SH bracket). The New York Mini is 18 mm thick and 2.06kg, with no clip; most weekday riders are better served by the Mini-7.",
+      "For the many UK household policies that still name Gold. The Evolution Mini-7 is the straightforward choice for a weekday commute when Gold is enough: 1.61kg, a frame clip, and a cable in the box — the cable isn’t Gold. The Bordo 6500K is useful when you need Gold with more folding reach than a Mini and you still want the lock on the bike (120 cm, 2.47kg, SH bracket).",
     slugs: [
       "kryptonite-evolution-mini-7",
       "abus-bordo-granit-6500k",
-      "kryptonite-new-york-fahgettaboudit-mini",
     ],
   },
   {
@@ -464,7 +464,7 @@ export const CASES: UseCase[] = [
       "This page is aimed at daily riders. If you only need a lock for a shed, a ground anchor, or a heavy chain left at home, the home-chain and long-shackle reviews are a better place to start.",
     body: [
       "A commute lock has to come with you every working day. The Sold Secure grade needs to match your insurance. The lock has to close on the stand you use. Weight, and whether it clips to the frame, decide whether you will actually take it.",
-      "For most UK commuters whose policy still names Sold Secure Gold, the Evolution Mini-7 fits the job well: 1.61kg, a frame clip, and a cable in the box. The D-lock is Gold. The cable is not — use it for a quick-release wheel rather than as a second lock. That combination is why it sits ahead of thicker, heavier Gold Minis with no clip.",
+      "For most UK commuters whose policy still names Sold Secure Gold, the Evolution Mini-7 fits the job well: 1.61kg, a frame clip, and a cable in the box. The D-lock is Gold. The cable is not — use it for a quick-release wheel rather than as a second lock. That combination is why it sits ahead of thicker, heavier Minis with no clip.",
       "If you ride an ordinary bike, the policy names Pedal Cycle Diamond, and about 0.97kg is the carry you will keep using, look at the [Seatylock Mason 140](/reviews/seatylock-mason-140). Measure 140 × 85 mm first; the mount is sold separately; confirm any e-bike grade on Sold Secure. If you ride an e-bike, or the policy names Diamond for bikes and e-bikes, and you will carry 1.7kg, take the Litelok X1 instead. It is Diamond for ordinary bikes and for e-bikes on our records. There is no frame clip in the box we looked at, so budget for a bag or a separate clip. Without one, it is likely to stay at home.",
       "Do not buy the Hiplok D1000 for a commute until you have checked that the 92 × 155 mm shackle closes on your stand. It is a serious Diamond lock. It is also compact, 1.9kg, and listed without a clip. The DX1000 is the larger Hiplok if that hole is the problem; it is 2.75kg, still with no clip. If you need Diamond and a clip on the bike, that is the Pitbull STD.",
       "The 4.9kg weight of the New York 1410 makes it much more suitable to leave at home than to take on a daily commute. Use it for extra reach — a garden, a ground anchor, or a post a Mini cannot close around — and take a D-lock on the bike. That two-lock setup is what careful commuters usually keep using.",
@@ -532,7 +532,7 @@ export const CASES: UseCase[] = [
       "Then open the insurer’s approved-lock list. A lock can be Gold in Sold Secure’s database and still missing from one brand’s list. The grade is required, but it is not always enough.",
     ],
     records:
-      "On the locks we reviewed: Evolution Mini-7, the Bordo 6500K and the New York Mini are Gold for ordinary bikes. Litelok X1, Hiplok D1000 and Hiplok DX1000 are Diamond for both ordinary bikes and e-bikes. The three OnGuard Pitbulls are Diamond for ordinary bikes on our records; we do not have an e-bike grade listed. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes, so it does not match an e-bike policy that asks for e-bike Diamond. The New York 1410 and 1415 chains have the same split: Diamond for ordinary bikes, Gold for e-bikes.",
+      "On the locks we reviewed: Evolution Mini-7 and the Bordo 6500K are Gold for ordinary bikes. The New York Mini is Diamond for ordinary bikes and Gold for e-bikes. Litelok X1, Hiplok D1000 and Hiplok DX1000 are Diamond for both ordinary bikes and e-bikes. The three OnGuard Pitbulls are Diamond for ordinary bikes on our records; we do not have an e-bike grade listed. The ABUS 540 is Diamond for ordinary bikes and Gold for e-bikes, so it does not match an e-bike policy that asks for e-bike Diamond. The New York 1410 and 1415 chains have the same split: Diamond for ordinary bikes, Gold for e-bikes.",
     checklist: [
       "Read the wording you signed — Gold or Diamond, ordinary bike or e-bike.",
       "Open the insurer’s approved-lock list.",
@@ -567,7 +567,7 @@ export const CASES: UseCase[] = [
       },
       {
         q: "Is a heavier lock always a higher grade?",
-        a: "No. The Seatylock Mason 140 is Pedal Cycle Diamond at about 0.97kg, while the New York Mini is Gold at 2.06kg. Check the grade on the lock, not the weight, then pick the lightest one that meets your policy and closes on your stand.",
+        a: "No. The Seatylock Mason 140 is Pedal Cycle Diamond at about 0.97kg, and the Evolution Mini-7 is Gold at 1.61kg. The New York Mini is heavier at 2.06kg and is Diamond on an ordinary bike, but only Gold on an e-bike. Check the grade on the lock, not the weight, then pick the lightest one that meets your policy and closes on your stand.",
       },
     ],
   },
@@ -793,17 +793,17 @@ export function pairOf(slug: string) {
 export const ALT_HERO = "kryptonite-new-york-fahgettaboudit-mini";
 export const ALT_TITLE = "Best alternatives to the Kryptonite New York Mini";
 export const ALT_META =
-  "The New York Mini is 2.06kg, 18 mm Gold, with no frame clip. Better options: Evolution Mini-7 to carry, Litelok X1 for Diamond, or a New York chain at home.";
+  "The New York Mini is 2.06kg, 18 mm, Diamond for ordinary bikes (Gold for e-bikes), with no frame clip. Better options: Evolution Mini-7 to carry, Litelok X1 for e-bike Diamond, or a New York chain at home.";
 export const ALT_LEDE =
-  "The Fahgettaboudit Mini is an 18 mm Gold D-lock at 2.06kg, with no frame clip and no cable. People search it because of the name. Most riders need a lock they will actually carry, a Diamond lock for insurance, or a long chain to leave at home.";
+  "The Fahgettaboudit Mini is an 18 mm D-lock at 2.06kg, Diamond for ordinary bikes and Gold for e-bikes, with no frame clip and no cable. People search it because of the name. Most riders need a lock they will actually carry, Diamond on an e-bike for insurance, or a long chain to leave at home.";
 export const ALT_BODY = [
-  "Keep the New York Mini only if you want an 18 mm Gold compact D-lock as a second lock on a heavy bike, and you do not need a clip or a cable. The extra thickness is why people look at it. The extra weight is why most commuters should choose something else as their only lock.",
-  "The Fahgettaboudit name is branding. What you actually get is a Gold Mini that is 450 g heavier than the Evolution Mini-7, with a smaller locking area (83 × 153 mm versus 83 × 178 mm), no clip, and no cable. Sold Secure Gold is still Gold. Insurers who name that grade may accept it if the exact model is on their list. They look at the grade and the model, not at the New York name.",
+  "Keep the New York Mini if you want an 18 mm compact D-lock that’s Diamond for ordinary bikes, as a second lock on a heavy bike, and you do not need a clip or a cable. The extra thickness is why people look at it. The extra weight is why most commuters should choose something else as their only lock.",
+  "The Fahgettaboudit name is branding. What you actually get is a Mini that is 450 g heavier than the Evolution Mini-7, with a smaller locking area (83 × 153 mm versus 83 × 178 mm), no clip, and no cable. Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes. Insurers who name those grades may accept it if the exact model is on their list. They look at the grade and the model, not at the New York name.",
 ];
 export const ALT_FAQS: Faq[] = [
   {
     q: "Should I still buy the New York Mini?",
-    a: "Only as a thick second lock you will not have to attach every morning. For most weekday riders, the Evolution Mini-7 is easier to take every day.",
+    a: "Yes, if your policy wants Diamond on an ordinary bike and you don’t mind 2.06kg with no clip, or as a thick second lock you will not have to attach every morning. If Gold is enough, the Evolution Mini-7 is easier to take every day.",
   },
   {
     q: "Is the Mini on the best-of page?",
@@ -811,10 +811,10 @@ export const ALT_FAQS: Faq[] = [
   },
   {
     q: "New York Mini or Evolution Mini-7?",
-    a: "The Evolution Mini-7 has a 13 mm shackle, weighs 1.61kg, and includes a frame clip and a cable. The New York Mini has an 18 mm shackle, weighs 2.06kg, and has no clip and no cable. Both are Sold Secure Gold. For most commuters, the lighter lock that is easier to take every day is the better choice.",
+    a: "The Evolution Mini-7 has a 13 mm shackle, weighs 1.61kg, and includes a frame clip and a cable. The New York Mini has an 18 mm shackle, weighs 2.06kg, and has no clip and no cable. It’s Sold Secure Diamond for ordinary bikes; the Mini-7 is Gold. If Gold meets your policy, the lighter lock that is easier to take every day is the better choice.",
   },
   {
     q: "What if I wanted New York for maximum security?",
-    a: "If the policy wants Diamond, look at the [Litelok X1](/reviews/litelok-x1), not a thicker Gold Mini. If you need length at home, the [New York 1410 chain](/reviews/kryptonite-new-york-fahgettaboudit-1410) is the sibling that actually uses the name well.",
+    a: "If the policy wants Diamond on an e-bike, look at the [Litelok X1](/reviews/litelok-x1); the New York Mini is only Gold for e-bikes. If you need length at home, the [New York 1410 chain](/reviews/kryptonite-new-york-fahgettaboudit-1410) is the sibling that actually uses the name well.",
   },
 ];

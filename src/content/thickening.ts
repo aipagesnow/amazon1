@@ -61,7 +61,7 @@ export const BEST_INTRO_EXTRA =
 export const BEST_FAQS: Faq[] = [
   {
     q: "Why is the New York Mini not on this table?",
-    a: "It’s Sold Secure Gold at 2.06kg with no frame clip. You’d usually be better with the Evolution Mini-7. We still review it because people search the name — see [alternatives to the New York Mini](/alternatives/kryptonite-new-york-fahgettaboudit-mini).",
+    a: "It’s Sold Secure Diamond for ordinary bikes (Gold for e-bikes) at 2.06kg with no frame clip. If Gold is enough, you’d usually be better with the Evolution Mini-7. We still review it because people search the name — see [alternatives to the New York Mini](/alternatives/kryptonite-new-york-fahgettaboudit-mini).",
   },
   {
     q: "Should I buy Diamond for a weekday commute?",
@@ -126,11 +126,11 @@ export const INSURANCE_BODY_EXTRA = [
 ];
 
 export const ALT_META =
-  "2.06kg, no mount, 18 mm Gold. If that is too heavy or too small, carry the Evolution Mini-7, step to Diamond, or keep a New York chain at home.";
+  "2.06kg, no mount, 18 mm, Diamond for ordinary bikes (Gold for e-bikes). If that is too heavy or too small, carry the Evolution Mini-7, look at e-bike Diamond, or keep a New York chain at home.";
 
 export const ALT_BODY_EXTRA = [
   "If you need a lock you will take to work, start with the Evolution Mini-7: same brand family, Gold, 1.61kg, a frame clip, and a cable in the box. The cable is not Gold. For most UK riders whose policy still names Gold, that is the clearer daily choice in this set.",
-  "If the policy names Diamond — including the e-bike grade — a thicker Gold Mini will not fix that. Look at the Litelok X1 (1.7kg, Diamond for ordinary bikes and e-bikes, 101 × 197 mm). The Hiplok D1000 is also Diamond, but only after you have measured its 92 × 155 mm shackle.",
+  "If the policy names Diamond for an e-bike, the New York Mini won’t cover it: it’s Diamond for ordinary bikes but Gold for e-bikes. Look at the Litelok X1 (1.7kg, Diamond for ordinary bikes and e-bikes, 101 × 197 mm). The Hiplok D1000 is also Diamond, but only after you have measured its 92 × 155 mm shackle.",
   "If the problem is reach at home, not thickness on a Mini, the New York 1410 chain is the sibling that uses the name well: 100 cm, 14 mm, 4.9kg, and Sold Secure Diamond for ordinary bikes (Gold for e-bikes). Leave it where the bike is stored overnight. Take a D-lock when you ride away. See [D-lock vs chain](/vs/d-lock-vs-chain).",
   "This page exists because people search for alternatives to the New York Mini. Full write-ups live under [reviews](/reviews). How we pick grades and weights: [how to choose](/guide) and [how we research](/method).",
 ];
@@ -154,7 +154,7 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "abus-granit-xplus-540":
     "ABUS Granit XPlus 540: Sold Secure Diamond (Gold on e-bikes), 1.8kg, with a long 108 × 300 mm shackle and mount for stands a compact Mini will not close around.",
   "kryptonite-new-york-fahgettaboudit-mini":
-    "New York Fahgettaboudit Mini: Sold Secure Gold, 2.06 kg, no mount, no cable — a thick second lock; the Evolution Mini-7 is usually easier to carry.",
+    "New York Fahgettaboudit Mini: Sold Secure Diamond (ordinary bikes), Gold (e-bikes), 2.06 kg, no mount, no cable. If Gold will do, the Evolution Mini-7 is easier to carry.",
   "kryptonite-new-york-fahgettaboudit-1410":
     "Kryptonite New York 1410: 100 cm of 14 mm chain, 4.9kg, Sold Secure Diamond for bikes, Gold for e-bikes. One to leave at home for reach.",
   "hiplok-dx1000":
@@ -389,7 +389,7 @@ export const REVIEW_FAQ_EXTRA: Record<string, Faq[]> = {
     },
     {
       q: "Is a heavier Gold lock safer?",
-      a: "Not by the grade. The New York Mini is 2.06kg and also Gold. The Mini-7 is 1.61kg with a frame clip, so it’s the one you’re more likely to have with you.",
+      a: "Not by weight alone. The New York Mini is heavier at 2.06kg, but it’s Diamond for ordinary bikes, so that’s a different grade, not just more steel. If Gold is enough, the Mini-7 is 1.61kg with a frame clip, so it’s the one you’re more likely to have with you.",
     },
   ],
   "onguard-pitbull-std-8003": [
