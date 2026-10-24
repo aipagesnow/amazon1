@@ -3,8 +3,20 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { GradeStamp } from "@/components/GradeStamp";
-import { SeeOnAmazon } from "@/components/SeeOnAmazon";
+import { SeeOnAmazonLink } from "@/components/SeeOnAmazonLink";
 import { displayName, productBySlug } from "@/lib/products";
+
+
+/** Build tagged href from the server-passed tag only — never read browser env. */
+function finderAmazonHref(asin: string, associateTag?: string): string | null {
+  const tag = associateTag?.trim();
+  if (!tag) return null;
+  const id = String(asin || "").trim().toUpperCase();
+  // Mirror lib/amazon UNAVAILABLE_ASINS (Litelok X1) without importing server env helpers.
+  if (id === "B0BLT59NFJ") return null;
+  if (!/^[A-Z0-9]{10}$/.test(id)) return null;
+  return `https://www.amazon.co.uk/dp/${id}?tag=${encodeURIComponent(tag)}`;
+}
 
 type Grade = "gold" | "diamond" | "unsure";
 type Place = "stand" | "fat" | "home";
@@ -259,6 +271,7 @@ export function LockFinder({ id = "finder", associateTag }: { id?: string; assoc
   const resultRef = useRef<HTMLDivElement | null>(null);
   const pick = useMemo(() => recommend(grade, place, carry), [grade, place, carry]);
   const product = pick ? productBySlug(pick.slug) : undefined;
+  const amazonHref = product ? finderAmazonHref(product.asin, associateTag) : null;
   const answered = Number(!!grade) + Number(!!place) + Number(!!carry);
   const complete = answered === 3;
   // Keep earlier steps open after the first pick so changing any answer feels live.
@@ -372,7 +385,15 @@ export function LockFinder({ id = "finder", associateTag }: { id?: string; assoc
             <Link href={`/reviews/${product.slug}`} className="primary-link">
               Read the review
             </Link>
-            <SeeOnAmazon asin={product.asin} variant="text" associateTag={associateTag} />
+            {amazonHref ? (
+              <SeeOnAmazonLink
+                asin={product.asin}
+                href={amazonHref}
+                className="amazon-text"
+              />
+            ) : (
+              <span className="amazon-unavailable">Not currently available on Amazon UK</span>
+            )}
           </p>
         </div>
       ) : (
