@@ -154,7 +154,7 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "onguard-pitbull-ls-8002":
     "Sold Secure Diamond for ordinary bikes with a long 115 × 292 mm shackle, 1.75kg, and a frame mount. Useful when a Mini will not close on a fat post.",
   "abus-bordo-granit-6500k":
-    "ABUS Bordo 6500K: Sold Secure Gold folding lock, 2.47 kg, 120 cm reach, SH bracket — flexible Gold when a Mini will not close.",
+    "ABUS Bordo Granit XPlus 6500 review: Sold Secure Gold folding lock, 2.47 kg, 120 cm reach, SH bracket — flexible Gold when a Mini will not close.",
   "seatylock-mason-140":
     "Sold Secure Pedal Cycle Diamond at about 0.97kg, 140 × 85 mm. Measure the stand. The mount is sold separately. Confirm the e-bike grade on Sold Secure.",
   "kryptonite-new-york-fahgettaboudit-1415":
@@ -174,7 +174,7 @@ export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
     "OnGuard Pitbull DT 8005 review: Sold Secure Diamond, 1.6kg + cable",
   "kryptonite-new-york-fahgettaboudit-mini":
     "Kryptonite Fahgettaboudit Mini review: Sold Secure Gold, 2.06kg",
-  "abus-bordo-granit-6500k": "ABUS Bordo Granit 6500K: Gold folding lock",
+  "abus-bordo-granit-6500k": "ABUS Bordo Granit XPlus 6500 review",
   "kryptonite-new-york-fahgettaboudit-1415": "New York Fahgettaboudit 1415 chain review",
 };
 
