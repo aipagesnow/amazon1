@@ -231,9 +231,11 @@ export const HOME_LEDE =
   "We’ll help you pick a lock you’ll still take to work. It’s a small UK comparison of thirteen D-locks and chains: Sold Secure grade, whether it’ll close on your stand, and how heavy it is to carry.";
 
 export const HOME_BRIEFING = {
-  grade: "Match the Sold Secure grade your policy names — often Gold, sometimes Diamond.",
-  fit: "Measure your stand plus your frame; a Mini won’t close on every post.",
-  carry: "Pick a weight (or a frame clip) you’ll still take out of the house.",
+  grade:
+    "Match the Sold Secure grade your policy names — often Gold, sometimes Diamond. Then check the insurer’s approved-lock list; a badge on its own isn’t always enough.",
+  fit: "Measure your stand plus your frame before you buy — a Mini won’t close on every post. If a compact shackle already fails on your rack, look at a longer D-lock, a folding lock, or a home chain rather than a thicker Mini.",
+  carry:
+    "Pick a weight — or a frame clip — you’ll still take out of the house. A heavier Diamond lock left at home protects the bike less than a Gold lock you take every day.",
 };
 
 export const HOME_COMMUTE =
@@ -328,7 +330,7 @@ export const BEST_PICKS: { lead: string; slug: string; name: string; text: strin
 ];
 
 export const BEST_WEIGHT =
-  "The 1410 chain is more than three times the weight of the Pitbull STD, which is why we treat it as a home lock rather than a commute lock. The bars are relative to the heaviest lock in this comparison.";
+  "You’ll carry from about 1.44kg (Pitbull STD 8003) up to 4.9kg (New York 1410 chain) on this shortlist — the 1410 is more than three times the Pitbull STD, so we treat it as a home lock rather than a commute lock. The bars below are relative to the heaviest lock in this comparison.";
 
 export const REVIEWS_LEDE =
   "Thirteen locks, from Sold Secure Gold to Diamond: D-locks, a folding lock, and two chains. Each review says who it suits, when another lock fits you better, and what to watch for.";

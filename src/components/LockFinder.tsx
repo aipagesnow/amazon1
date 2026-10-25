@@ -295,7 +295,7 @@ export function LockFinder({ id = "finder", associateTag }: { id?: string; assoc
         <p className="kicker">Lock finder</p>
         <h2 id={`${id}-title`}>Find a lock</h2>
         <p className="finder-promise">
-          Three short questions, then one suggestion from the locks we have reviewed.
+          Answer three short questions — grade, where you lock up, and how you’ll carry — and you’ll get one suggestion from the locks we’ve reviewed. It’s a starting point, not a claim that one lock fits every bike.
           {complete ? " Change any answer and the suggestion updates." : ""}
         </p>
         <div className="finder-progress" aria-hidden="true">

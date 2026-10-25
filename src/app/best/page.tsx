@@ -181,6 +181,14 @@ export default function BestPage() {
 
         <aside className="verdict" aria-label="Picks by situation">
           <h2>Picks by situation</h2>
+          <p>
+            There isn’t one best lock for every rider — pick by Sold Secure
+            grade, whether the shackle will close on your stand, and whether
+            you’ll still carry it. On this shortlist: Litelok X1 for Diamond
+            you’ll carry, OnGuard Pitbull STD 8003 for lightest Diamond with a
+            mount, Evolution Mini-7 for a Gold commute, and Hiplok D1000 for a
+            compact anti-grinder once you’ve measured the stand.
+          </p>
           <ul className="verdict-picks">
             {picks.map(({ situation, product }) => {
               const href = reviewHref(product);
@@ -206,6 +214,13 @@ export default function BestPage() {
         </aside>
 
         <h2>Comparison</h2>
+        <p>
+          This table compares the shortlist on Sold Secure grade (pedal /
+          powered), weight, inside size, and whether it meets the usual Gold
+          insurer minimum. Sold Secure says Gold is typically the minimum grade
+          insurers ask for on higher-value bikes — always check your own policy
+          wording.
+        </p>
         <div className="spec-scroll-wrap">
           <p className="spec-scroll-hint">Swipe for more columns</p>
           <div className="spec-scroll">
@@ -316,8 +331,9 @@ export default function BestPage() {
 
         <h2>2026 models we are tracking</h2>
         <p>
-          We haven’t confirmed the UK Amazon listings for these models yet, so there aren’t buy
-          links.
+          These 2026 models are worth watching, but we haven’t confirmed UK
+          Amazon listings yet, so there aren’t buy links. Until those listings
+          are clear, stick to the shortlist above for a buy decision.
         </p>
         <div className="spec-scroll-wrap">
           <p className="spec-scroll-hint">Swipe for more columns</p>
@@ -346,7 +362,11 @@ export default function BestPage() {
         </div>
 
         <h2>Published cut times</h2>
-        <p>Lock Desk hasn’t cut these locks. The times come from the named tests.</p>
+        <p>
+          Lock Desk hasn’t cut these locks — the times in the table come from
+          named tests (BikeRadar, Cycling UK). Use them as published lab
+          context, not a promise your street will match.
+        </p>
         <div className="spec-scroll-wrap">
           <p className="spec-scroll-hint">Swipe for more columns</p>
           <div className="spec-scroll">
@@ -375,8 +395,9 @@ export default function BestPage() {
 
         <h2>Head-to-head</h2>
         <p>
-          If you’re choosing between two locks, these short comparisons sit beside the Best of
-          table. They add detail on those pairs, and they don’t replace the shortlist.
+          If you’re down to two locks, use these head-to-heads beside the Best of
+          table — Mini-7 vs D1000, D1000 vs DX1000, and D-lock vs chain. They add
+          detail on those pairs; they don’t replace the shortlist.
         </p>
         <ul>
           <li>
@@ -394,6 +415,12 @@ export default function BestPage() {
         </ul>
 
         <h2>Common questions</h2>
+        <p>
+          Common questions on this page cover why the New York Mini isn’t on the
+          table, Diamond for a weekday commute, how we pick, insurer grades,
+          angle grinders, and “best rated”. Answers match Sold Secure grades,
+          weights and fit notes already on the page — we don’t use Amazon stars.
+        </p>
         <div className="faq-list">
           {BEST_FAQS.map((faq) => (
             <div className="faq-item" key={faq.q}>

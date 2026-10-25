@@ -137,7 +137,7 @@ export default function HomePage() {
           </figure>
           <div className="pick-copy">
             <h2>A lock to start with</h2>
-            <p className="meta">We’ve narrowed the thirteen we’ve reviewed down to these, mostly on three things: the grade, the weight, and whether it’ll actually close round the stand you lock up at.</p>
+            <p className="meta">We’ve narrowed the thirteen we’ve reviewed down to these on three things: Sold Secure grade, weight, and whether it’ll close round the stand you lock up at. The featured start is the Hiplok D1000 (Diamond for ordinary bikes and e-bikes, 1.9kg, 92 × 155 mm locking area) — measure the stand first; there’s no frame mount in the box.</p>
             <h3>{displayName(pick)}</h3>
             <p>
               <strong>Why this one.</strong> {HOME_PICK.why}
@@ -238,6 +238,11 @@ export default function HomePage() {
           </ul>
 
           <h2>Common questions</h2>
+          <p>
+            There’s no single best UK bike lock — match Sold Secure grade, fit
+            and carry. The FAQ below covers Gold vs Diamond, insurer lists, and
+            D-lock vs chain.
+          </p>
           <div className="faq-list">
             {HOME_FAQS.map((faq) => (
               <div className="faq-item" key={faq.q}>
