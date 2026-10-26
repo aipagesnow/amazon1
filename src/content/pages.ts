@@ -85,7 +85,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
     h2: "Will you actually carry it?",
     paragraphs: [
       "The lock you leave at home does not protect the bike at the station. Weight, and whether it clips to the frame, decide whether you take it every day.",
-      "Among the locks we reviewed, the lightest Diamond D-lock is the Seatylock Mason 140 at about 0.97kg (mount sold separately). The clipped options sit next — the Pitbull STD at 1.44kg and the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7) at 1.61kg — while bag-carry Diamond locks such as the Litelok X1 (1.7kg) and the D1000 (1.9kg) run heavier, and the Bordo 6500K, DX1000, and New York 1410 chain climb from 2.47kg up to 4.9kg. If 1.6kg already feels like too much, a 2kg lock with a tougher-sounding name will not help.",
+      "Among the locks we reviewed, the lightest Diamond D-lock is the [Seatylock Mason 140](/reviews/seatylock-mason-140) at about 0.97kg (mount sold separately). The clipped options sit next — the [Pitbull STD](/reviews/onguard-pitbull-std-8003) at 1.44kg and the [Evolution Mini-7](/reviews/kryptonite-evolution-mini-7) at 1.61kg — while bag-carry Diamond locks such as the Litelok X1 (1.7kg) and the D1000 (1.9kg) run heavier, and the Bordo 6500K, DX1000, and New York 1410 chain climb from 2.47kg up to 4.9kg. If 1.6kg already feels like too much, a 2kg lock with a tougher-sounding name will not help.",
       "A lock that clips to the frame is the one you are most likely to have with you every morning. If the box does not include a clip, budget for one, or be honest that you will carry it in a bag.",
     ],
   },

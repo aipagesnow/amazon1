@@ -663,7 +663,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       },
       {
         q: "LS or STD 8003?",
-        a: "Same 14 mm family, same mount, same ordinary-bike Diamond. The STD is 115 × 230 mm at 1.44kg. The LS is 115 × 292 mm at 1.75kg. Choose the STD if a compact lock already closes. Choose the LS if it doesn’t.",
+        a: "Same 14 mm family, same mount, same ordinary-bike Diamond. The [Pitbull STD 8003](/reviews/onguard-pitbull-std-8003) is 115 × 230 mm at 1.44kg. The LS is 115 × 292 mm at 1.75kg. Choose the STD if a compact lock already closes. Choose the LS if it doesn’t.",
       },
       {
         q: "Will it replace a chain at home?",

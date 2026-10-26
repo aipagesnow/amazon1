@@ -185,9 +185,15 @@ export default function BestPage() {
             There isn’t one best lock for every rider — pick by Sold Secure
             grade, whether the shackle will close on your stand, and whether
             you’ll still carry it. On this shortlist: Litelok X1 for Diamond
-            you’ll carry, OnGuard Pitbull STD 8003 for lightest Diamond with a
-            mount, Evolution Mini-7 for a Gold commute, and Hiplok D1000 for a
-            compact anti-grinder once you’ve measured the stand.
+            you’ll carry,{" "}
+            <Link href="/reviews/onguard-pitbull-std-8003">OnGuard Pitbull STD 8003</Link>{" "}
+            for lightest Diamond with a mount,{" "}
+            <Link href="/reviews/onguard-pitbull-dt-8005">Pitbull DT 8005</Link>{" "}
+            when you want that D-lock with a cable in the box,{" "}
+            <Link href="/reviews/seatylock-mason-140">Seatylock Mason 140</Link>{" "}
+            for Pedal Cycle Diamond under 1kg, Evolution Mini-7 for a Gold
+            commute, and Hiplok D1000 for a compact anti-grinder once you’ve
+            measured the stand.
           </p>
           <ul className="verdict-picks">
             {picks.map(({ situation, product }) => {

@@ -180,15 +180,15 @@ export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
 
 export const REVIEW_DIRECT_ANSWERS: Record<string, string> = {
   "onguard-pitbull-std-8003":
-    "Sold Secure Diamond for ordinary bikes, 1.44kg, with a frame mount and a 115 × 230 mm locking area. No cable in the box. It suits riders who need Diamond and will clip the lock to the bike.",
+    "This suits you if your policy names Sold Secure Diamond for an ordinary bike and you want the lock clipped to the frame. It weighs 1.44kg, with a 115 × 230 mm locking area and a mount in the box. There is no cable, and no e-bike grade is listed on our records.",
   "kryptonite-evolution-mini-7":
     "Short answer: if your policy names Sold Secure Gold and you want a lock you’ll actually carry every day, the Evolution Mini-7 is where we’d start. The D-lock is Gold, it weighs 1.61kg, and there’s a frame mount and a cable in the box. The cable isn’t Gold, though, so always lock the frame to the stand with the D-lock.",
   "abus-granit-xplus-540":
     "Short answer: the ABUS Granit XPlus 540 is the lock we’d reach for when a compact D-lock won’t close round your stand. Its 108 × 300 mm shackle is Sold Secure Diamond for ordinary bikes, and there’s a frame mount in the box. If you ride an e-bike, the grade is Gold rather than Diamond, and ABUS doesn’t sell it as anti-grinder.",
   "seatylock-mason-140":
-    "Sold Secure Pedal Cycle Diamond at about 0.97kg with a compact 140 × 85 mm locking area. It suits ordinary-bike Diamond when carry weight is the limit. Measure the stand; mount sold separately; confirm e-bike grade on Sold Secure.",
+    "The Mason 140 is Sold Secure Pedal Cycle Diamond at about 0.97kg, which suits ordinary-bike Diamond when carry weight is the limit. The locking area is a compact 140 × 85 mm, so measure your stand first. The mount is sold separately, and you should confirm any e-bike grade on Sold Secure.",
   "onguard-pitbull-dt-8005":
-    "Worth picking if you want Sold Secure Diamond on the D-lock plus a cable and frame mount in one box (~1.6 kg). Lock the frame with the graded D-lock; the cable isn’t Diamond. Skip it if you’ve a cable already, or prefer the lighter STD 8003 without one.",
+    "Choose the Pitbull DT 8005 when you want Sold Secure Diamond on the D-lock, plus a cable and frame mount in one box at about 1.6kg. Lock the frame with the graded D-lock — the cable is not Diamond. Prefer the lighter STD 8003 if you already have a cable or do not need one.",
   "kryptonite-new-york-fahgettaboudit-1415":
     "Short answer: the New York Fahgettaboudit 1415 is a home chain for when 100 cm won’t reach your post, ground anchor or second bike. Sold Secure lists it as Diamond for ordinary bikes and Gold for e-bikes, and at 150 cm and 6.92kg it stays where the bike is stored. If 100 cm is enough, the New York 1410 has the same grades at 4.9kg.",
   "hiplok-dx1000":

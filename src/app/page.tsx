@@ -180,10 +180,12 @@ export default function HomePage() {
         <p className="also-reviewed">
           There are thirteen full reviews under{" "}
           <Link href="/reviews">bike lock reviews</Link>, including the{" "}
+          <Link href="/reviews/seatylock-mason-140">Seatylock Mason 140</Link>{" "}
+          for Pedal Cycle Diamond at about 0.97kg, and the{" "}
           <Link href="/reviews/kryptonite-new-york-fahgettaboudit-mini">
             New York Fahgettaboudit Mini
           </Link>
-          . It’s an 18 mm Sold Secure Gold lock at 2.06kg with no frame mount. For most
+          . The Mini is an 18 mm Sold Secure Gold lock at 2.06kg with no frame mount. For most
           daily commuting we’d point you to the Evolution Mini-7 instead, because it’s
           lighter and it includes a mount. If you’re still deciding, see{" "}
           <Link href="/alternatives/kryptonite-new-york-fahgettaboudit-mini">
