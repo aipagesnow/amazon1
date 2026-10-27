@@ -641,6 +641,10 @@ export const PAIRS: Pair[] = [
     ],
     faqs: [
       {
+        q: "Is the Hiplok DX1000 stronger than the D1000?",
+        a: "No. Hiplok rates both locks to the same anti-grinder construction and the same Sold Secure security standard. The DX1000 is larger and heavier; the D1000 is smaller and lighter to carry. The graded security level is the same — the difference is size and carry weight. (Hiplok guide; Sold Secure. Checked 27 Oct 2026.)",
+      },
+      {
         q: "Same Diamond grade — why not always buy the bigger hole?",
         a: "Because you’ve still got to carry it. The DX1000 is 2.75 kg and doesn’t come with a mount. If the D1000 closes round your stand, we’d go for the smaller one, because it’s the lock you’re more likely to take every day.",
       },
