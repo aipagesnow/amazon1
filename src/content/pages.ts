@@ -1,7 +1,7 @@
 export const BEST_VERDICTS: Record<string, { bestFor: string; caveat: string }> = {
   B0BLT59NFJ: {
-    bestFor: "Reference Diamond when the listing is back in stock — ordinary-bike and e-bike Diamond at about 1.7kg.",
-    caveat: "Not currently available on Amazon UK (listing shows a Moto variant). No frame clip in the box.",
+    bestFor: "Still the clear Diamond-for-bikes-and-e-bikes option on paper (1.7kg, 101 × 197 mm) when a bike listing is back on Amazon UK.",
+    caveat: "Not currently available on Amazon UK — keep the review for grades and fit; buy from the Pitbull STD or D1000 while this listing is down.",
   },
   B074K6KSY5: {
     bestFor: "The straightforward choice for a weekday commute when Gold is enough. It has a frame mount and cable and weighs 1.61kg.",
@@ -20,8 +20,8 @@ export const BEST_VERDICTS: Record<string, { bestFor: string; caveat: string }> 
     caveat: "At 4.9kg it’s too heavy for a daily commute.",
   },
   B01A6ZRMEK: {
-    bestFor: "A weekday D-lock with a frame mount in the box, and more room inside the shackle than the Mini-7.",
-    caveat: "Confirm the Sold Secure marking on the lock you buy (Amazon UK currently titles this Gold). No e-bike grade listed, and no cable.",
+    bestFor: "Sold Secure Diamond for an ordinary bike, with a frame mount in the box, at 1.44kg — the Diamond pick on this shortlist you can open on Amazon UK today.",
+    caveat: "No powered/e-bike grade on our records, and no cable. If the policy needs e-bike Diamond, use the D1000 after measuring the stand, or wait for the X1 listing to return.",
   },
   B0BDML8H3N: {
     bestFor: "Gold folding reach on the bike when a Mini won’t close, if you’d rather not leave a chain at home.",
@@ -257,15 +257,15 @@ export const BEST_LEDE =
 
 export const BEST_INTRO = [
   "People search for the best bike lock in the UK, but the useful answer is usually more specific. Match the Sold Secure grade on your policy, check that the lock will close on the stand you use, and pick a weight you will still take to work.",
-  "On this shortlist: the Evolution Mini-7 for a Gold weekday commute, the Litelok X1 when you need Diamond you will still carry, the Pitbull STD when you need Diamond with a frame mount, the D1000 once you have measured a compact stand, the ABUS 540 for a long shackle, the Bordo 6500K for Gold folding reach, and the New York 1410 as a home chain. For Pedal Cycle Diamond under 1kg, see the [Seatylock Mason 140](/reviews/seatylock-mason-140) review outside this table.",
+  "On this shortlist: the Pitbull STD when you need Diamond with a frame mount and a live Amazon UK listing, the Evolution Mini-7 for a Gold weekday commute, the D1000 once you have measured a compact stand, the ABUS 540 for a long shackle, the Bordo 6500K for Gold folding reach, and the New York 1410 as a home chain. The Litelok X1 stays on the page for grades and fit while Amazon UK has no bike buy link. For Pedal Cycle Diamond under 1kg, see the [Seatylock Mason 140](/reviews/seatylock-mason-140) review outside this table.",
 ];
 
 export const BEST_PICKS: { lead: string; slug: string; name: string; text: string }[] = [
   {
-    lead: "Need Diamond you will still carry",
-    slug: "litelok-x1",
-    name: "Litelok X1",
-    text: "When the policy names Diamond and you still need a weekday carry, start here. No frame clip in the box we looked at.",
+    lead: "Need Diamond with a mount you can buy today",
+    slug: "onguard-pitbull-std-8003",
+    name: "Pitbull STD 8003",
+    text: "Diamond with a frame mount in the box, and more room inside the shackle than the Mini-7. No e-bike grade on our records. Amazon UK link is live on this shortlist.",
   },
   {
     lead: "Need the lightest published Pedal Cycle Diamond",
@@ -278,12 +278,6 @@ export const BEST_PICKS: { lead: string; slug: string; name: string; text: strin
     slug: "kryptonite-evolution-mini-7",
     name: "Evolution Mini-7",
     text: "The straightforward choice for a weekday commute when Gold is enough. It has a frame mount and cable and weighs 1.61kg. The cable is not graded.",
-  },
-  {
-    lead: "Need Diamond with a frame clip",
-    slug: "onguard-pitbull-std-8003",
-    name: "Pitbull STD 8003",
-    text: "Diamond with a frame mount in the box, and more room inside the shackle than the Mini-7. No e-bike grade on our records.",
   },
   {
     lead: "Need Diamond with a longer shackle",
@@ -326,6 +320,12 @@ export const BEST_PICKS: { lead: string; slug: string; name: string; text: strin
     slug: "kryptonite-new-york-fahgettaboudit-1415",
     name: "New York 1415",
     text: "The 150 cm version of the 1410, for two bikes or an anchor the shorter chain will not reach. It weighs 6.92kg, so it is a lock to leave at home.",
+  },
+  {
+    lead: "Need Diamond for bikes and e-bikes when Amazon restocks",
+    slug: "litelok-x1",
+    name: "Litelok X1",
+    text: "Keep the review for Sold Secure grades and the 101 × 197 mm locking area. There is no Amazon UK buy button while the listing is unavailable.",
   },
 ];
 

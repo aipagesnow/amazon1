@@ -27,10 +27,10 @@ const PAGE_TITLE = "Best bike locks UK 2026: Sold Secure grades, weights and cut
 const BIKERADAR_LOCKS = "https://www.bikeradar.com/advice/buyers-guides/best-bike-lock";
 
 const VERDICT_ROWS = [
-  { situation: "Best overall", slug: "onguard-pitbull-std-8003" },
+  { situation: "Best Diamond you can buy today", slug: "onguard-pitbull-std-8003" },
   { situation: "Gold commute", slug: "kryptonite-evolution-mini-7" },
   { situation: "Anti-grinder compact", slug: "hiplok-d1000" },
-  { situation: "Diamond reference (check stock)", slug: "litelok-x1" },
+  { situation: "Diamond when Amazon restocks", slug: "litelok-x1" },
 ] as const;
 
 /** Brand RRPs we can stand behind. Every other shortlist lock stays "Check price". */
@@ -185,13 +185,15 @@ export default function BestPage() {
           <p>
             There isn’t one best lock for every rider — pick by Sold Secure
             grade, whether the shackle will close on your stand, and whether
-            you’ll still carry it. The buyable lead here is the{" "}
-            <Link href="/reviews/onguard-pitbull-std-8003">OnGuard Pitbull STD 8003</Link>
-            : a weekday D-lock with a frame mount. Evolution Mini-7 covers a Gold
-            commute with a clip and cable. Hiplok D1000 is the compact
-            anti-grinder once you’ve measured the stand. The{" "}
-            <Link href="/reviews/litelok-x1">Litelok X1</Link> stays as a Diamond
-            reference when Amazon UK stock returns.
+            you’ll still carry it. On this shortlist today: the{" "}
+            <Link href="/reviews/onguard-pitbull-std-8003">OnGuard Pitbull STD 8003</Link>{" "}
+            for Diamond you can buy on Amazon UK with a mount, the Evolution
+            Mini-7 for a Gold commute, the Hiplok D1000 for a compact
+            anti-grinder once you’ve measured the stand, and the Litelok X1 as
+            a Diamond reference until the Amazon UK bike listing returns. For
+            Pedal Cycle Diamond under 1kg see the{" "}
+            <Link href="/reviews/seatylock-mason-140">Seatylock Mason 140</Link>{" "}
+            review.
           </p>
           <ul className="verdict-picks">
             {picks.map(({ situation, product }, index) => {
@@ -455,7 +457,7 @@ export default function BestPage() {
         </p>
       </article>
       {lead ? (
-        <div className="review-sticky" aria-label="Buy the Best overall pick">
+        <div className="review-sticky" aria-label="Buy Best Diamond you can buy today">
           <span className="sticky-name">{displayName(lead)}</span>
           <SeeOnAmazon asin={lead.asin} className="btn-amazon" label="See on Amazon" />
         </div>
