@@ -27,10 +27,10 @@ const PAGE_TITLE = "Best bike locks UK 2026: Sold Secure grades, weights and cut
 const BIKERADAR_LOCKS = "https://www.bikeradar.com/advice/buyers-guides/best-bike-lock";
 
 const VERDICT_ROWS = [
-  { situation: "Best overall Diamond", slug: "litelok-x1" },
-  { situation: "Lightest Diamond with mount", slug: "onguard-pitbull-std-8003" },
+  { situation: "Best overall", slug: "onguard-pitbull-std-8003" },
   { situation: "Gold commute", slug: "kryptonite-evolution-mini-7" },
   { situation: "Anti-grinder compact", slug: "hiplok-d1000" },
+  { situation: "Diamond reference (check stock)", slug: "litelok-x1" },
 ] as const;
 
 /** Brand RRPs we can stand behind. Every other shortlist lock stays "Check price". */
@@ -145,6 +145,7 @@ export default function BestPage() {
     const product = productBySlug(row.slug);
     return product ? [{ ...row, product }] : [];
   });
+  const lead = picks[0]?.product;
 
   return (
     <>
@@ -184,34 +185,46 @@ export default function BestPage() {
           <p>
             There isn’t one best lock for every rider — pick by Sold Secure
             grade, whether the shackle will close on your stand, and whether
-            you’ll still carry it. On this shortlist: Litelok X1 for Diamond
-            you’ll carry,{" "}
-            <Link href="/reviews/onguard-pitbull-std-8003">OnGuard Pitbull STD 8003</Link>{" "}
-            for lightest Diamond with a mount,{" "}
-            <Link href="/reviews/onguard-pitbull-dt-8005">Pitbull DT 8005</Link>{" "}
-            when you want that D-lock with a cable in the box,{" "}
-            <Link href="/reviews/seatylock-mason-140">Seatylock Mason 140</Link>{" "}
-            for Pedal Cycle Diamond under 1kg, Evolution Mini-7 for a Gold
-            commute, and Hiplok D1000 for a compact anti-grinder once you’ve
-            measured the stand.
+            you’ll still carry it. The buyable lead here is the{" "}
+            <Link href="/reviews/onguard-pitbull-std-8003">OnGuard Pitbull STD 8003</Link>
+            : a weekday D-lock with a frame mount. Evolution Mini-7 covers a Gold
+            commute with a clip and cable. Hiplok D1000 is the compact
+            anti-grinder once you’ve measured the stand. The{" "}
+            <Link href="/reviews/litelok-x1">Litelok X1</Link> stays as a Diamond
+            reference when Amazon UK stock returns.
           </p>
           <ul className="verdict-picks">
-            {picks.map(({ situation, product }) => {
+            {picks.map(({ situation, product }, index) => {
               const href = reviewHref(product);
+              const isLead = index === 0;
+              const amazon = (
+                <SeeOnAmazon
+                  asin={product.asin}
+                  className={isLead ? "btn-amazon" : undefined}
+                  label={isLead ? "See on Amazon" : `See ${displayName(product)} on Amazon`}
+                />
+              );
+              const review = href ? (
+                <Link href={href} className="primary-link">
+                  Read the review
+                </Link>
+              ) : null;
               return (
                 <li key={product.asin}>
                   <h3>{situation}</h3>
                   <p>{displayName(product)}</p>
                   <p className="verdict-actions">
-                    {href ? (
-                      <Link href={href} className="primary-link">
-                        Read the review
-                      </Link>
-                    ) : null}
-                    <SeeOnAmazon
-                      asin={product.asin}
-                      label={`See ${displayName(product)} on Amazon`}
-                    />
+                    {isLead ? (
+                      <>
+                        {amazon}
+                        {review}
+                      </>
+                    ) : (
+                      <>
+                        {review}
+                        {amazon}
+                      </>
+                    )}
                   </p>
                 </li>
               );
@@ -441,6 +454,12 @@ export default function BestPage() {
           <Link href="/reviews">All reviews</Link>
         </p>
       </article>
+      {lead ? (
+        <div className="review-sticky" aria-label="Buy the Best overall pick">
+          <span className="sticky-name">{displayName(lead)}</span>
+          <SeeOnAmazon asin={lead.asin} className="btn-amazon" label="See on Amazon" />
+        </div>
+      ) : null}
     </>
   );
 }

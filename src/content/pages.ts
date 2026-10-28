@@ -1,7 +1,7 @@
 export const BEST_VERDICTS: Record<string, { bestFor: string; caveat: string }> = {
   B0BLT59NFJ: {
-    bestFor: "When the policy names Diamond and you still need a weekday carry, start here.",
-    caveat: "No frame clip in the box.",
+    bestFor: "Reference Diamond when the listing is back in stock — ordinary-bike and e-bike Diamond at about 1.7kg.",
+    caveat: "Not currently available on Amazon UK (listing shows a Moto variant). No frame clip in the box.",
   },
   B074K6KSY5: {
     bestFor: "The straightforward choice for a weekday commute when Gold is enough. It has a frame mount and cable and weighs 1.61kg.",
@@ -20,8 +20,8 @@ export const BEST_VERDICTS: Record<string, { bestFor: string; caveat: string }> 
     caveat: "At 4.9kg it’s too heavy for a daily commute.",
   },
   B01A6ZRMEK: {
-    bestFor: "Diamond with a frame mount in the box, and more room inside the shackle than the Mini-7.",
-    caveat: "No e-bike grade listed, and no cable.",
+    bestFor: "A weekday D-lock with a frame mount in the box, and more room inside the shackle than the Mini-7.",
+    caveat: "Confirm the Sold Secure marking on the lock you buy (Amazon UK currently titles this Gold). No e-bike grade listed, and no cable.",
   },
   B0BDML8H3N: {
     bestFor: "Gold folding reach on the bike when a Mini won’t close, if you’d rather not leave a chain at home.",

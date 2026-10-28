@@ -59,13 +59,13 @@ export const REVIEW_SLUGS = [
 ] as const;
 
 export const BEST_OF_ASINS = [
-  "B0BLT59NFJ",
-  "B074K6KSY5",
   "B01A6ZRMEK",
+  "B074K6KSY5",
   "B0D77XJR4Z",
   "B0944HG7MK",
   "B0BDML8H3N",
   "B073W8N26F",
+  "B0BLT59NFJ",
 ] as const;
 
 export const EDITOR_PICK_ASIN = "B0D77XJR4Z";
