@@ -27,10 +27,10 @@ const PAGE_TITLE = "Best bike locks UK 2026: Sold Secure grades, weights and cut
 const BIKERADAR_LOCKS = "https://www.bikeradar.com/advice/buyers-guides/best-bike-lock";
 
 const VERDICT_ROWS = [
-  { situation: "Best Diamond you can buy today", slug: "onguard-pitbull-std-8003" },
+  { situation: "Lightest Diamond with mount", slug: "onguard-pitbull-std-8003" },
   { situation: "Gold commute", slug: "kryptonite-evolution-mini-7" },
   { situation: "Anti-grinder compact", slug: "hiplok-d1000" },
-  { situation: "Diamond when Amazon restocks", slug: "litelok-x1" },
+  { situation: "Diamond you’d carry (when listed)", slug: "litelok-x1" },
 ] as const;
 
 /** Brand RRPs we can stand behind. Every other shortlist lock stays "Check price". */
@@ -185,15 +185,12 @@ export default function BestPage() {
           <p>
             There isn’t one best lock for every rider — pick by Sold Secure
             grade, whether the shackle will close on your stand, and whether
-            you’ll still carry it. On this shortlist today: the{" "}
+            you’ll still carry it. On this shortlist: the{" "}
             <Link href="/reviews/onguard-pitbull-std-8003">OnGuard Pitbull STD 8003</Link>{" "}
-            for Diamond you can buy on Amazon UK with a mount, the Evolution
-            Mini-7 for a Gold commute, the Hiplok D1000 for a compact
-            anti-grinder once you’ve measured the stand, and the Litelok X1 as
-            a Diamond reference until the Amazon UK bike listing returns. For
-            Pedal Cycle Diamond under 1kg see the{" "}
-            <Link href="/reviews/seatylock-mason-140">Seatylock Mason 140</Link>{" "}
-            review.
+            for Diamond with a mount you can buy on Amazon UK today, Evolution
+            Mini-7 for a Gold commute, Hiplok D1000 for a compact anti-grinder
+            once you’ve measured the stand, and Litelok X1 as a Diamond spec
+            pick when the Amazon UK bike listing returns.
           </p>
           <ul className="verdict-picks">
             {picks.map(({ situation, product }, index) => {
@@ -215,6 +212,13 @@ export default function BestPage() {
                 <li key={product.asin}>
                   <h3>{situation}</h3>
                   <p>{displayName(product)}</p>
+                  {product.asin === "B0BLT59NFJ" ? (
+                    <p className="meta">
+                      Spec shortlist pick — no live Amazon UK bike listing at
+                      last check; see Pitbull STD 8003 or D1000 if you need a
+                      buyable Diamond option.
+                    </p>
+                  ) : null}
                   <p className="verdict-actions">
                     {isLead ? (
                       <>
@@ -457,7 +461,7 @@ export default function BestPage() {
         </p>
       </article>
       {lead ? (
-        <div className="review-sticky" aria-label="Buy Best Diamond you can buy today">
+        <div className="review-sticky" aria-label="Buy Lightest Diamond with mount">
           <span className="sticky-name">{displayName(lead)}</span>
           <SeeOnAmazon asin={lead.asin} className="btn-amazon" label="See on Amazon" />
         </div>

@@ -1,7 +1,7 @@
 export const BEST_VERDICTS: Record<string, { bestFor: string; caveat: string }> = {
   B0BLT59NFJ: {
-    bestFor: "Still the clear Diamond-for-bikes-and-e-bikes option on paper (1.7kg, 101 × 197 mm) when a bike listing is back on Amazon UK.",
-    caveat: "Not currently available on Amazon UK — keep the review for grades and fit; buy from the Pitbull STD or D1000 while this listing is down.",
+    bestFor: "Spec shortlist pick for Diamond on ordinary bikes and e-bikes (1.7kg, 101 × 197 mm) when a bike listing is back.",
+    caveat: "Not currently available on Amazon UK. See Pitbull STD 8003 or D1000 if you need a buyable Diamond option now.",
   },
   B074K6KSY5: {
     bestFor: "The straightforward choice for a weekday commute when Gold is enough. It has a frame mount and cable and weighs 1.61kg.",
@@ -20,8 +20,8 @@ export const BEST_VERDICTS: Record<string, { bestFor: string; caveat: string }> 
     caveat: "At 4.9kg it’s too heavy for a daily commute.",
   },
   B01A6ZRMEK: {
-    bestFor: "Sold Secure Diamond for an ordinary bike, with a frame mount in the box, at 1.44kg — the Diamond pick on this shortlist you can open on Amazon UK today.",
-    caveat: "No powered/e-bike grade on our records, and no cable. If the policy needs e-bike Diamond, use the D1000 after measuring the stand, or wait for the X1 listing to return.",
+    bestFor: "Sold Secure Pedal Cycle Diamond on the official listing, with a frame mount in the box, at 1.44kg — a Diamond option you can open on Amazon UK today.",
+    caveat: "Amazon UK’s title still says Gold; trust Sold Secure and the marking on the lock you receive. No powered/e-bike grade on our records, and no cable.",
   },
   B0BDML8H3N: {
     bestFor: "Gold folding reach on the bike when a Mini won’t close, if you’d rather not leave a chain at home.",

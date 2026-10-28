@@ -81,6 +81,11 @@ export default function HomePage() {
                   associateTag={associateTag}
                 />
               </p>
+              <p className="meta cover-pick-method">
+                Desk research from Sold Secure grades and published specs — not a
+                hands-on cut test.{" "}
+                <Link href="/method">How we research</Link>.
+              </p>
             </div>
             <p className="cover-ctas">
               <a href="#finder">Find a lock</a>
