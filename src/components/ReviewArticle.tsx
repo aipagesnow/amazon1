@@ -243,7 +243,15 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
           If you haven’t measured your stand yet, start with{" "}
           <Link href="/guide">how to choose a bike lock</Link>. You can compare the shortlist on{" "}
           <Link href="/best">best bike locks UK</Link>, or read{" "}
-          <Link href={vsHref}>{vsLabel}</Link>. For how the research is put together, see{" "}
+          <Link href={vsHref}>{vsLabel}</Link>. For the differences between lock types, see{" "}
+          <Link href="/guide/bike-lock-types">bike lock types explained</Link>
+          {isChain ? null : (
+            <>
+              , and for sizing, see{" "}
+              <Link href="/guide/shackle-size-lock-security">shackle size and lock security</Link>
+            </>
+          )}
+          . For how the research is put together, see{" "}
           <Link href="/method">how we research</Link>.
         </p>
 

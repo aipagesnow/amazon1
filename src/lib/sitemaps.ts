@@ -54,6 +54,9 @@ export function reviewsPaths(): string[] {
 export function guidesPaths(): string[] {
   return [
     "/guide",
+    "/guide/bike-lock-types",
+    "/guide/shackle-size-lock-security",
+    "/best/compact-bike-locks-small-flats",
     "/best",
     "/vs/evolution-mini-7-vs-d1000",
     "/vs/d1000-vs-dx1000",

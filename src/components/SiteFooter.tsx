@@ -16,6 +16,15 @@ export function SiteFooter() {
                 <Link href="/guide">How to choose</Link>
               </li>
               <li>
+                <Link href="/guide/bike-lock-types">Bike lock types</Link>
+              </li>
+              <li>
+                <Link href="/guide/shackle-size-lock-security">Shackle size and security</Link>
+              </li>
+              <li>
+                <Link href="/best/compact-bike-locks-small-flats">Compact locks for flats</Link>
+              </li>
+              <li>
                 <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link>
               </li>
               <li>

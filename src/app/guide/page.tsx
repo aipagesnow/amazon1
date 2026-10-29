@@ -149,6 +149,22 @@ export default function GuidePage() {
           </p>
         </div>
 
+        <h2>More guides</h2>
+        <ul>
+          <li>
+            <Link href="/guide/bike-lock-types">Bike lock types explained</Link> — cable, chain,
+            D-lock and folding locks side by side.
+          </li>
+          <li>
+            <Link href="/guide/shackle-size-lock-security">Shackle size and lock security</Link> —
+            locking area, shackle thickness and what the Sold Secure grade tells you.
+          </li>
+          <li>
+            <Link href="/best/compact-bike-locks-small-flats">Compact bike locks for flats</Link> —
+            light locks for small storage and frequent errands.
+          </li>
+        </ul>
+
         <h2>Common questions</h2>
         <div className="faq-list">
           {[...GUIDE_FAQS, GUIDE_FAQ_EXTRA].map((faq) => (

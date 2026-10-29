@@ -91,6 +91,7 @@ export default function HomePage() {
               <a href="#finder">Find a lock</a>
               <Link href="/guide">How to choose</Link>
               <Link href="/best">Best of</Link>
+              <Link href="/best/compact-bike-locks-small-flats">Compact locks</Link>
             </p>
           </div>
         </div>

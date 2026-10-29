@@ -437,6 +437,10 @@ export default function BestPage() {
             <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> — when a D-lock’s easier to
             carry, when a chain’s length is useful, and when it makes sense to use both.
           </li>
+          <li>
+            <Link href="/best/compact-bike-locks-small-flats">Compact bike locks for flats</Link> —
+            the lightest locks here for small storage and frequent errands.
+          </li>
         </ul>
 
         <h2>Common questions</h2>

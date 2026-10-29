@@ -122,6 +122,18 @@ export default async function VsPage({ params }: Props) {
             <RichText text={VS_AFTER_EXTRA[pair.slug]} />
           </p>
         ) : null}
+        {pair.slug === "d-lock-vs-chain" ? (
+          <p>
+            Weighing up cable and folding locks too? See{" "}
+            <Link href="/guide/bike-lock-types">bike lock types explained</Link>.
+          </p>
+        ) : null}
+        {pair.slug === "d1000-vs-dx1000" ? (
+          <p>
+            For how locking area and shackle thickness relate to the grade, see{" "}
+            <Link href="/guide/shackle-size-lock-security">shackle size and lock security</Link>.
+          </p>
+        ) : null}
         <h2>Read the reviews</h2>
         <div className="vs-split">
           <ProductCol product={a} kicker={a.specs?.type ?? "Lock"} />
