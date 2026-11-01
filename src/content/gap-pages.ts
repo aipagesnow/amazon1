@@ -144,7 +144,7 @@ export const COMPACT_SECTIONS: GapSection[] = [
   {
     h2: "If you ride for delivery work",
     paragraphs: [
-      "The same picks apply, with one difference: you lock up many times a shift, so the frame mount matters. The Pitbull STD and Mini-7 both clip on. We'd check your stops have Sheffield stands before relying on a narrow shackle, and see [best bike lock for commuting](/for/commuting) for the weekday picks in more detail.",
+      "The same picks apply, with one difference: you lock up many times a shift, so the frame mount matters. The Pitbull STD and Mini-7 both clip on. We'd check your stops have Sheffield stands before relying on a narrow shackle, and see [bike locks for delivery riders and e-bikes](/for/delivery-riders) for e-bike grades and quick-access picks.",
     ],
   },
 ];

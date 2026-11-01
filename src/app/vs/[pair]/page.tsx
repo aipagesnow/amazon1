@@ -125,7 +125,8 @@ export default async function VsPage({ params }: Props) {
         {pair.slug === "d-lock-vs-chain" ? (
           <p>
             Weighing up cable and folding locks too? See{" "}
-            <Link href="/guide/bike-lock-types">bike lock types explained</Link>.
+            <Link href="/guide/bike-lock-types">bike lock types explained</Link>, or{" "}
+            <Link href="/guide/cable-locks">when a cable lock is enough</Link>.
           </p>
         ) : null}
         {pair.slug === "d1000-vs-dx1000" ? (

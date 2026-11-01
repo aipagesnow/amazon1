@@ -56,6 +56,8 @@ export function guidesPaths(): string[] {
     "/guide",
     "/guide/bike-lock-types",
     "/guide/shackle-size-lock-security",
+    "/guide/cable-locks",
+    "/guide/ground-anchors-flats-car-parks",
     "/best/compact-bike-locks-small-flats",
     "/best",
     "/vs/evolution-mini-7-vs-d1000",
@@ -64,6 +66,7 @@ export function guidesPaths(): string[] {
     "/for/commuting",
     "/for/insurance",
     "/for/anti-grinder",
+    "/for/delivery-riders",
     "/alternatives/kryptonite-new-york-fahgettaboudit-mini",
   ];
 }

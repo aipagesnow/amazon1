@@ -25,6 +25,15 @@ export function SiteFooter() {
                 <Link href="/best/compact-bike-locks-small-flats">Compact locks for flats</Link>
               </li>
               <li>
+                <Link href="/guide/cable-locks">Cable locks</Link>
+              </li>
+              <li>
+                <Link href="/guide/ground-anchors-flats-car-parks">Ground anchors</Link>
+              </li>
+              <li>
+                <Link href="/for/delivery-riders">Delivery riders</Link>
+              </li>
+              <li>
                 <Link href="/vs/evolution-mini-7-vs-d1000">Mini-7 vs D1000</Link>
               </li>
               <li>

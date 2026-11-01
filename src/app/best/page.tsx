@@ -441,6 +441,14 @@ export default function BestPage() {
             <Link href="/best/compact-bike-locks-small-flats">Compact bike locks for flats</Link> —
             the lightest locks here for small storage and frequent errands.
           </li>
+          <li>
+            <Link href="/for/delivery-riders">Bike locks for delivery riders and e-bikes</Link> —
+            quick-to-use locks with e-bike grades.
+          </li>
+          <li>
+            <Link href="/guide/ground-anchors-flats-car-parks">Ground anchors for flats and car parks</Link> —
+            what to fit and which chain to pair it with.
+          </li>
         </ul>
 
         <h2>Common questions</h2>

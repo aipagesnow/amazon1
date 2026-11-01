@@ -163,6 +163,18 @@ export default function GuidePage() {
             <Link href="/best/compact-bike-locks-small-flats">Compact bike locks for flats</Link> —
             light locks for small storage and frequent errands.
           </li>
+          <li>
+            <Link href="/guide/cable-locks">How to choose a cable lock</Link> — length, thickness
+            and when a cable is enough.
+          </li>
+          <li>
+            <Link href="/guide/ground-anchors-flats-car-parks">Ground anchors for flats and car parks</Link> —
+            securing a bike where it lives.
+          </li>
+          <li>
+            <Link href="/for/delivery-riders">Bike locks for delivery riders and e-bikes</Link> — quick
+            locks for many stops a shift.
+          </li>
         </ul>
 
         <h2>Common questions</h2>

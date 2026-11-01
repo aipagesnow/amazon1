@@ -165,6 +165,8 @@ export default async function UseCasePage({ params }: Props) {
           <Link href="/vs/d1000-vs-dx1000">D1000 vs DX1000</Link> ·{" "}
           <Link href="/vs/d-lock-vs-chain">D-lock vs chain</Link> ·{" "}
           <Link href="/best/compact-bike-locks-small-flats">Compact locks for flats</Link> ·{" "}
+          <Link href="/for/delivery-riders">Delivery riders and e-bikes</Link> ·{" "}
+          <Link href="/guide/ground-anchors-flats-car-parks">Ground anchors</Link> ·{" "}
           <Link href="/method">How we research</Link>
         </p>
       </article>
