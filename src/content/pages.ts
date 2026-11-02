@@ -463,7 +463,7 @@ export const CASES: UseCase[] = [
     slug: "insurance",
     title: "Best bike lock for insurance",
     description:
-      "Match Sold Secure Gold or Diamond to the policy, then check the insurer’s approved list. We do not sell insurance.",
+      "If your policy names Sold Secure Gold, look at the Evolution Mini-7; if it names Diamond, look at the Litelok X1, the Pitbull STD if you want a frame clip, or the D1000. Check the insurer’s approved-lock list too, because a grade alone is not always enough.",
     h2: "Three locks that can meet a typical policy",
     notFor: "We do not sell insurance, and we do not keep a live list of approved models.",
     body: [
