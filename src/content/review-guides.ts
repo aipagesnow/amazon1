@@ -129,4 +129,47 @@ export const REVIEW_GUIDES: Record<string, ReviewGuide> = {
     summary:
       "A long, Diamond-rated (ordinary bikes) D-lock with a frame bracket, for posts and railings a compact lock won’t reach. It is Gold for e-bikes and isn’t sold as anti-grinder. If a compact lock already fits your stands, a shorter lock will sit tighter.",
   },
+  "hiplok-d1000": {
+    sections: [
+      {
+        heading: "How we put this review together",
+        paragraphs: [
+          "This is desk research. We haven’t cut, ground or carried a D1000 ourselves. The figures come from [Hiplok’s own D1000 page](https://hiplok.com/products/hiplok-d1000) and Sold Secure’s listings, and the worked examples below are arithmetic on those numbers, not test results.",
+        ],
+      },
+      {
+        heading: "What Hiplok publishes",
+        paragraphs: [
+          "Hiplok lists an internal locking area of 92 × 155 mm, a 32 mm shackle, a weight of 1.93 kg and an outside size of 230 × 155 × 40 mm. It comes with three coded, replaceable keys and a key code card, and Hiplok offers a lifetime warranty if you register within 30 days.",
+          "On security, Hiplok names Sold Secure Diamond for pedal cycles and for powered cycles (e-bikes), plus ART 4 Star. The anti-grinder claim is Hiplok’s description of the shackle material, which is designed to wear down cutting discs. Sold Secure’s grade is the independent part; the cut-time claims are the maker’s.",
+        ],
+      },
+      {
+        heading: "Will 92 × 155 mm close round your e-bike? A worked example",
+        paragraphs: [
+          "Here is an example: say your stand is a round Sheffield tube about 60 mm across, and your e-bike has an oval down tube about 65 mm deep. Side by side, that is 125 mm, far wider than the 92 mm opening. End to end along the 155 mm length, it fits with about 30 mm to spare. The lock closes, but there is no room for the rear wheel as well.",
+          "Now say it’s an e-scooter: a stem about 45 mm across against a railing bar about 25 mm. Side by side that is 70 mm, which sits inside the 92 mm width with room left over. These are example figures. Measure your own stand and frame, or use Hiplok’s free size checker, before you buy.",
+        ],
+      },
+      {
+        heading: "Carrying it without a mount: a worked example",
+        paragraphs: [
+          "There is no frame mount in the box, so it goes in a bag. Say your rucksack’s laptop sleeve is about 25 cm tall: the D1000’s 230 mm outside length fits upright, and at 40 mm deep it sits flatter than most D-locks with a thick shackle. The weight is the harder part. At 1.93 kg it is about 230 g heavier than the Litelok X1, and you’ll notice that on a daily commute.",
+        ],
+        bullets: [
+          "High-theft stands you have already measured: the D1000 earns its place.",
+          "Fat-tyre, cargo or chunky e-bike frames with a wide stand: look at the [DX1000](/reviews/hiplok-dx1000) and its 112 × 205 mm area.",
+          "Diamond with more room and less weight: the [Litelok X1](/reviews/litelok-x1).",
+        ],
+      },
+      {
+        heading: "Checking the grade yourself",
+        paragraphs: [
+          `Grades can change, so check the exact model on [Sold Secure’s approved products search](${SS}) and match it to the wording on your insurance policy. Hiplok’s specifications are on [hiplok.com](https://hiplok.com/products/hiplok-d1000).`,
+        ],
+      },
+    ],
+    summary:
+      "A compact, Sold Secure Diamond D-lock for bikes and e-bikes, sold as angle-grinder resistant, at 1.93 kg with no mount. Its 92 × 155 mm locking area is the thing to check: measure your stand and frame first. If it won’t close, the [DX1000](/reviews/hiplok-dx1000) is the larger Hiplok.",
+  },
 };
