@@ -58,7 +58,7 @@ export default function AboutPage() {
         <Link href="/method">how we research bike locks</Link>.
       </p>
       <p>
-        Lock Desk is published by Aivora Digital. It is an independent UK comparison site, not a
+        Lock Desk is published by Aivora Digital, edited by the Lock Desk editors. It is an independent UK comparison site, not a
         shop and not Amazon.
       </p>
 

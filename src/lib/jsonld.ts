@@ -8,10 +8,29 @@ export function websiteJsonLd() {
     name: site.name,
     url: site.url,
     inLanguage: site.locale,
-    publisher: {
-      "@type": "Organization",
-      name: site.name,
+    publisher: AIVORA,
+  };
+}
+
+export const AIVORA = {
+  "@type": "Organization",
+  name: "Aivora Digital",
+  url: "https://aivora.digital",
+};
+
+export function organizationJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${site.url}/#organization`,
+    name: site.name,
+    url: site.url,
+    logo: {
+      "@type": "ImageObject",
+      url: `${site.url}/icon.png`,
     },
+    publisher: AIVORA,
+    parentOrganization: AIVORA,
   };
 }
 

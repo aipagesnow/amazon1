@@ -10,7 +10,7 @@ import { SeeOnAmazon } from "@/components/SeeOnAmazon";
 import { SiteImage } from "@/components/SiteImage";
 import { HOME_BRIEFING, HOME_COMMUTE, HOME_INSURANCE, HOME_LEDE, HOME_PICK } from "@/content/pages";
 import { HOME_FAQS, HOME_META, HOME_NEXT } from "@/content/thickening";
-import { faqJsonLd, websiteJsonLd } from "@/lib/jsonld";
+import { faqJsonLd, organizationJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import { photoAlt, photos } from "@/lib/photos";
 import {
   BEST_OF_ASINS,
@@ -50,7 +50,7 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={[websiteJsonLd(), faqJsonLd(HOME_FAQS)]} />
+      <JsonLd data={[websiteJsonLd(), organizationJsonLd(), faqJsonLd(HOME_FAQS)]} />
       <section className="cover">
         <div className="cover-photo">
           <SiteImage
