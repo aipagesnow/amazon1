@@ -14,13 +14,13 @@ export const DELIVERY_H1 = "Best bike locks for delivery riders and e-bikes";
 export const DELIVERY_META =
   "Bike locks for delivery work and e-bikes: quick to use at every drop, Sold Secure graded for e-bikes where it matters, with weights and locking areas.";
 export const DELIVERY_DIRECT =
-  "Short answer: if you're on an e-bike, we'd carry the Hiplok D1000. It's Sold Secure Diamond for e-bikes as well as ordinary bikes, at 1.9kg, though it has no frame mount. On a pedal bike, the OnGuard Pitbull STD 8003 is Diamond at 1.44kg and clips to the frame, so it's quicker to grab at every drop.";
+  "Short answer: if you're on an e-bike, we'd carry the Hiplok D1000. It's Sold Secure Diamond for e-bikes as well as ordinary bikes, at 1.93kg, though it has no frame mount. On a pedal bike, the OnGuard Pitbull STD 8003 is Diamond at 1.44kg and clips to the frame, so it's quicker to grab at every drop.";
 
 export const DELIVERY_PICKS: GapPick[] = [
   {
     asin: "B0D77XJR4Z",
     situation: "If you deliver on an e-bike",
-    why: "The D1000 is Sold Secure Diamond for ordinary bikes and for e-bikes, and it's sold as anti-angle-grinder. At 1.9kg with a 92 × 155 mm locking area, it's compact enough for a bag or a rear rack.",
+    why: "The D1000 is Sold Secure Diamond for ordinary bikes and for e-bikes, and it's sold as anti-angle-grinder. At 1.93kg with a 92 × 155 mm locking area, it's compact enough for a bag or a rear rack.",
     caveat: "There's no frame mount, and that small loop needs a slim stand. Measure the posts at your usual drops first.",
   },
   {

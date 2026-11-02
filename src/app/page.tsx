@@ -143,7 +143,7 @@ export default function HomePage() {
           </figure>
           <div className="pick-copy">
             <h2>A lock to start with</h2>
-            <p className="meta">We’ve narrowed the thirteen we’ve reviewed down to these on three things: Sold Secure grade, weight, and whether it’ll close round the stand you lock up at. The featured start is the Hiplok D1000 (Diamond for ordinary bikes and e-bikes, 1.9kg, 92 × 155 mm locking area) — measure the stand first; there’s no frame mount in the box.</p>
+            <p className="meta">We’ve narrowed the thirteen we’ve reviewed down to these on three things: Sold Secure grade, weight, and whether it’ll close round the stand you lock up at. The featured start is the Hiplok D1000 (Diamond for ordinary bikes and e-bikes, 1.93kg, 92 × 155 mm locking area) — measure the stand first; there’s no frame mount in the box.</p>
             <h3>{displayName(pick)}</h3>
             <p>
               <strong>Why this one.</strong> {HOME_PICK.why}

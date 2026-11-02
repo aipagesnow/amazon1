@@ -146,7 +146,7 @@ function recommend(grade: Grade | null, place: Place | null, carry: Carry | null
   // Diamond + bag (or any remaining Diamond path) — lightest published Pedal Cycle Diamond first
   return {
     slug: "seatylock-mason-140",
-    why: "The Mason 140 is Sold Secure Pedal Cycle Diamond at about 0.97 kg, with a compact 140 × 85 mm locking area. It suits weekday bag carry when Diamond is required and 1.4–1.9 kg feels like too much.",
+    why: "The Mason 140 is Sold Secure Pedal Cycle Diamond at about 0.97 kg, with a compact 140 × 85 mm locking area. It suits weekday bag carry when Diamond is required and 1.4–1.93 kg feels like too much.",
     note: "Measure 140 × 85 mm before you buy — many UK stands won’t close. The mount is sold separately. Powered Cycle Diamond wasn’t listed on the Sold Secure page; if the policy names e-bike Diamond, confirm on Sold Secure and look at the X1 (1.7 kg, Diamond for bikes and e-bikes, 101 × 197 mm). Choose the D1000 only after measuring 92 × 155 mm. If you want Diamond with a clip, that’s the Pitbull STD.",
   };
 }

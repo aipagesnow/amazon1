@@ -136,7 +136,7 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
   "litelok-x1":
     "Sold Secure Diamond for ordinary bikes and e-bikes, 1.7kg, 101 × 197 mm locking area. Based on published grades and specs, not a cut test.",
   "hiplok-d1000":
-    "Diamond at 1.9kg with a 92 × 155 mm locking area and no mount. Only after you have measured the rack; less useful if Gold and a cable already meet the policy.",
+    "Diamond at 1.93kg with a 92 × 155 mm locking area and no mount. Only after you have measured the rack; less useful if Gold and a cable already meet the policy.",
   "kryptonite-evolution-mini-7":
     "Sold Secure Gold, 1.61kg, mount and cable in the box. The cable is not Gold. A commute lock many UK riders will still take every day.",
   "abus-granit-xplus-540":
@@ -162,6 +162,8 @@ export const REVIEW_META_OVERRIDES: Record<string, string> = {
 };
 
 export const REVIEW_TITLE_OVERRIDES: Record<string, string> = {
+  "hiplok-d1000":
+    "Hiplok D1000 review: Sold Secure Diamond, 1.93kg",
   "onguard-pitbull-std-8003":
     "OnGuard Pitbull STD 8003 review: Sold Secure Diamond, 1.44kg",
   "kryptonite-evolution-mini-7":
