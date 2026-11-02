@@ -618,9 +618,9 @@ export const PAIRS: Pair[] = [
   },
   {
     slug: "d1000-vs-dx1000",
-    title: "Hiplok D1000 vs DX1000: which Diamond D-lock fits the rack",
+    title: "Hiplok D1000 vs DX1000: is one harder to cut, or just bigger?",
     description:
-      "Hiplok D1000 vs DX1000: both Sold Secure Diamond. D1000 is 1.9 kg with a 92 × 155 mm hole; DX1000 is 2.75 kg with 112 × 205 mm. Measure the stand first.",
+      "Is the Hiplok DX1000 harder to cut than the D1000? Both are Sold Secure Diamond. The D1000 is 1.9 kg and compact; the DX1000 is 2.75 kg and larger.",
     a: "hiplok-d1000",
     b: "hiplok-dx1000",
     directAnswer:
