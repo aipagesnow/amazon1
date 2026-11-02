@@ -75,6 +75,14 @@ function ReviewNav({ slug }: { slug: string }) {
   );
 }
 
+/** Reviews with GSC clicks but no Amazon clicks: top-pick CTA moved into the hero so it sits above the fold on mobile (layout only). */
+const HERO_CTA_SLUGS = new Set([
+  "onguard-pitbull-dt-8005",
+  "seatylock-mason-140",
+  "onguard-pitbull-std-8003",
+  "kryptonite-new-york-fahgettaboudit-mini",
+]);
+
 export function ReviewArticle({ product, copy, directAnswer }: { product: Product; copy: ReviewCopy; directAnswer?: string }) {
   const related = copy.relatedWell ?? REVIEW_RELATED_WELLS[product.slug];
   const art = reviewBanner(product.slug);
@@ -98,6 +106,7 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
     text: copy.body[i + 1],
   }));
   const rest = copy.body.slice(copy.subheads.length + 1);
+  const heroCta = HERO_CTA_SLUGS.has(product.slug);
 
   return (
     <article>
@@ -113,11 +122,17 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
         <p className="stamp-row">
           <GradeStamp grade={product.specs?.soldSecurePedal} label={copy.stamp} />
         </p>
+        {heroCta ? (
+          <div className="hero-amazon-cta">
+            <DisclosureStrip className="disclosure disclosure-subtle hero-disclosure" />
+            <SeeOnAmazon asin={product.asin} className="btn-amazon" />
+          </div>
+        ) : null}
         <p className="job-line">{copy.job}</p>
       </PageHero>
 
       <div className="wrap prose tight">
-        <DisclosureStrip />
+        {heroCta ? null : <DisclosureStrip />}
         <p className="meta">Last checked: {product.lastChecked ?? site.lastChecked}.</p>
         <p className="meta">
           <Link href={site.authorHref}>{site.authorLine}</Link>
