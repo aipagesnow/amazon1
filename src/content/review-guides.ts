@@ -25,8 +25,8 @@ export const REVIEW_GUIDES: Record<string, ReviewGuide> = {
         heading: "Will it fit your stand? A worked example",
         paragraphs: [
           "The locking area is 83 × 153 mm. Width matters more than people expect, because a stand tube and a frame tube have to sit side by side or one behind the other inside that space.",
-          "Take a Sheffield stand with a tube about 50 mm across and a down tube about 40 mm across. Side by side, that is 90 mm, which is wider than the 83 mm opening. So in practice the two tubes sit end to end along the 153 mm length: 50 + 40 = 90 mm, leaving about 63 mm. That is enough to close the lock, but usually not enough to take in a rear wheel as well.",
-          "The Evolution Mini-7 has the same 83 mm width but 178 mm of length, which leaves about 88 mm with the same two tubes. That extra 25 mm is often the difference between locking the frame only and locking the frame plus the rim. Measure your own stand and tubes; these are example figures, not a standard.",
+          "Here is an example: say your stand is a round post about 48 mm across and your down tube is about 38 mm. Side by side, that is 86 mm, just over the 83 mm opening, so the two sit end to end along the 153 mm length instead, leaving about 67 mm. That closes the lock, but the thick 18 mm shackle bars eat into the gap, so a rear wheel usually won’t fit as well.",
+          "With the same example tubes, the Evolution Mini-7 (83 × 178 mm) would leave about 92 mm, which is often the difference between the frame only and the frame plus the rim. Measure your own stand and tubes; these are example figures, not a standard.",
         ],
       },
       {
@@ -76,7 +76,7 @@ export const REVIEW_GUIDES: Record<string, ReviewGuide> = {
       {
         heading: "Using the 115 × 230 mm locking area well",
         paragraphs: [
-          "At 115 mm wide, this Pitbull is roomier than the 83 mm compact locks. With a 50 mm stand tube and a 40 mm frame tube side by side, that is 90 mm, leaving about 25 mm across. That often leaves room to take in the rear rim with the frame, which a compact lock can’t do.",
+          "At 115 mm wide, this Pitbull is roomier than the 83 mm compact locks. Say your stand is a square street post about 60 mm across and your seat tube is about 32 mm (example figures; measure your own). Side by side, that is 92 mm, leaving about 23 mm across, and along the 230 mm length there is space for a rear rim as well. Keep the 14 mm shackle filled so there is little room for a jack.",
           "The trade-off is that spare space gives a thief room for a lever or jack. Fill the shackle as much as you can: frame and rear wheel together, tight to the stand, with the keyway facing down. Thread the cable through the front wheel and back into the D-lock.",
         ],
       },
@@ -103,7 +103,7 @@ export const REVIEW_GUIDES: Record<string, ReviewGuide> = {
       {
         heading: "Filling the shackle: a worked example",
         paragraphs: [
-          "Take a 50 mm stand tube, a 40 mm frame tube and a 25 mm rim. Stacked along the length, that is 115 mm of the 300 mm, leaving 185 mm of open shackle. That gap is the main weakness of any long lock, because it leaves room for a jack or a lever.",
+          "Here is an example: say you lock to a lamp post about 76 mm across, through a fat e-bike down tube about 55 mm deep and a 30 mm rim. Stacked along the length, that is 161 mm of the 300 mm, leaving about 139 mm of open shackle. These are example figures, so measure your own. That gap is the main weakness of any long lock, because it leaves room for a jack or a lever.",
           "So use the length only when you need it. Put the lock high on the stand, take in the frame and the rear wheel, and turn the bike so the shackle sits as full as possible. If a compact lock already closes on the stands you use, the extra length gains you nothing.",
         ],
         bullets: [
