@@ -194,7 +194,7 @@ export const SHACKLE_SECTIONS: GapSection[] = [
     h2: "Does a thicker shackle mean a higher grade?",
     paragraphs: [
       "Not on its own. The ABUS Granit XPlus 540 has a 13 mm shackle and is Sold Secure Diamond for ordinary bikes. The Evolution Mini-7 also has a 13 mm shackle and is Gold. The grade depends on how the whole lock performs in Sold Secure's attack testing, including the steel and the locking mechanism.",
-      "Thickness does follow the grinder-rated locks, though. The D1000 (20 mm) and DX1000 (32 mm) are Sold Secure Diamond for ordinary bikes and for e-bikes, and both are sold as anti-angle-grinder.",
+      "Thickness does follow the grinder-rated locks, though. The D1000 and DX1000 (both 32 mm, per Hiplok) are Sold Secure Diamond for ordinary bikes and for e-bikes, and both are sold as anti-angle-grinder.",
     ],
   },
   {
