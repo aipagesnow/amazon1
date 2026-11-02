@@ -2043,3 +2043,8 @@ table.spec caption {
 .hero-amazon-cta .btn-amazon { display: inline-flex; background: var(--hivis); color: #111; border-color: var(--hivis); }
 .hero-amazon-cta .hero-disclosure { margin: 0 0 0.45rem; font-size: 0.8rem; color: inherit; opacity: 0.9; }
 .hero-amazon-cta .hero-disclosure a { color: inherit; }
+
+.review-guide-section { margin-top: 2rem; }
+.review-guide-section ul { padding-left: 1.1rem; }
+.review-guide-section li { margin-bottom: 0.4rem; }
+.review-summary { margin-top: 2rem; }

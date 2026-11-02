@@ -8,6 +8,7 @@ import { SpecFigures, SpecTable } from "@/components/SpecTable";
 import { ReviewCopy } from "@/content/editorial";
 import { reviewBanner } from "@/lib/photos";
 import { REVIEW_RELATED_WELLS } from "@/content/thickening";
+import { REVIEW_GUIDES } from "@/content/review-guides";
 import {
   displayName,
   Product,
@@ -107,6 +108,7 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
   }));
   const rest = copy.body.slice(copy.subheads.length + 1);
   const heroCta = HERO_CTA_SLUGS.has(product.slug);
+  const guide = REVIEW_GUIDES[product.slug];
 
   return (
     <article>
@@ -184,6 +186,28 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
           <p key={paragraph}>{paragraph}</p>
         ))}
 
+        {guide?.sections.map((section) => (
+          <section key={section.heading} className="review-guide-section">
+            <h2>{section.heading}</h2>
+            {section.paragraphs.map((paragraph) => (
+              <p key={paragraph.slice(0, 48)}>
+                <RichText text={paragraph} />
+              </p>
+            ))}
+            {section.bullets?.length ? (
+              <ul>
+                {section.bullets.map((bullet) => (
+                  <li key={bullet}>
+                    <RichText text={bullet} />
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </section>
+        ))}
+
+        {guide ? null : (
+        <>
         <div className="goodbad">
           <div>
             <h3>What works well</h3>
@@ -207,6 +231,8 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
           <h3>One thing we’d change</h3>
           <p>{copy.change}</p>
         </div>
+        </>
+        )}
 
         <h2>The numbers</h2>
         <p>
@@ -269,6 +295,15 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
           . For how the research is put together, see{" "}
           <Link href="/method">how we research</Link>.
         </p>
+
+        {guide ? (
+          <div className="change-note review-summary">
+            <h3>In short</h3>
+            <p>
+              <RichText text={guide.summary} />
+            </p>
+          </div>
+        ) : null}
 
         <div className="review-close">
           <p>Prices and stock on Amazon can change, so it’s worth a check on the day you click through.</p>
