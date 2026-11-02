@@ -12,6 +12,7 @@ import {
   ANTI_GRINDER_META,
   COMMUTE_BODY_EXTRA,
   COMMUTE_META,
+  INSURANCE_META,
   INSURANCE_BODY_EXTRA,
 } from "@/content/thickening";
 import { articleJsonLd, faqJsonLd } from "@/lib/jsonld";
@@ -35,7 +36,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? COMMUTE_META
       : item.slug === "anti-grinder"
         ? ANTI_GRINDER_META
-        : item.description;
+        : item.slug === "insurance"
+          ? INSURANCE_META
+          : item.description;
   return {
     title: item.title,
     description,

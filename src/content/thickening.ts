@@ -282,3 +282,6 @@ export const ANTI_GRINDER_BODY_EXTRA = [
 
 export const COMMUTE_META =
   "A commute lock is one you take every day. For most UK riders that is a Gold Mini with a frame clip. Step up to Diamond if the bike is worth the weight.";
+
+export const INSURANCE_META =
+  "If your policy names Sold Secure Gold, look at the Evolution Mini-7; for Diamond, the Litelok X1, Pitbull STD or D1000. Check the insurer’s list too.";
