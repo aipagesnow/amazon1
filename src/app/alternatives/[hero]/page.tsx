@@ -83,6 +83,7 @@ export default async function AlternativesPage({ params }: Props) {
           If you will carry a lock to work every day, start with the{" "}
           <Link href="/reviews/kryptonite-evolution-mini-7">{displayName(mini7)}</Link>.
         </p>
+        <SeeOnAmazon asin={mini7.asin} variant="text" />
 
         <div className="fork-list">
           <article className="fork-card">
@@ -99,7 +100,6 @@ export default async function AlternativesPage({ params }: Props) {
                 Read the review
               </Link>
             </p>
-            <SeeOnAmazon asin={mini7.asin} variant="text" />
           </article>
           <article className="fork-card">
             <p className="kicker">Higher insurance grade</p>

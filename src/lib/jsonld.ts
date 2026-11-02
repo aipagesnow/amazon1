@@ -25,6 +25,8 @@ export function organizationJsonLd() {
     "@id": `${site.url}/#organization`,
     name: site.name,
     url: site.url,
+    description:
+      "UK bike lock guides and reviews that compare Sold Secure ratings, weight and how each lock fits your bike, using published specs and owner feedback.",
     logo: {
       "@type": "ImageObject",
       url: `${site.url}/icon.png`,
