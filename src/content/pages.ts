@@ -45,7 +45,7 @@ export const GUIDE_META =
   "How to choose a bike lock in the UK: Sold Secure Gold or Diamond, what your insurance asks for, D-lock or chain, and a weight you will take with you.";
 
 export const GUIDE_LEDE =
-  "Three things matter more than the brand name. What grade your insurance asks for. Whether the lock will close on your stand. And whether you will actually take it with you.";
+  "To choose a bike lock in the UK, check three things before the brand name: the Sold Secure grade your insurance asks for (usually Gold or Diamond), whether the lock will close on the stand you use, and whether it is light enough that you will actually take it with you.";
 
 export const GUIDE_INTRO = [
   "Most people start with a brand they recognise. Then they find the lock will not close on the stand, or the insurer wanted a different grade. It is better to reverse that order.",
@@ -666,7 +666,7 @@ export const PAIRS: Pair[] = [
     a: "kryptonite-evolution-mini-7",
     b: "kryptonite-new-york-fahgettaboudit-1410",
     directAnswer:
-      "A cable lock is light and easy to carry, but it isn’t treated as a Sold Secure main lock — it’s a secondary tether for a wheel or accessory. A D-lock is a rigid shackle for a stand you’ve measured; the Evolution Mini-7 is the commute example (1.61 kg, Gold, frame mount). A chain adds flexible length for an awkward post or a home anchor; the New York 1410 here is the 4.9 kg home example, not a daily carry.",
+      "A D-lock is the lock you carry on the bike, and a chain is for extra reach at home. The Evolution Mini-7 is a 1.61kg Sold Secure Gold D-lock with a frame clip. The New York 1410 is a 4.9kg chain for a garden, a ground anchor or a post a compact D-lock can’t close around. A cable lock isn’t treated as a Sold Secure main lock; use it as a secondary tether for a wheel or accessory.",
     intro:
       "A D-lock and a chain do different jobs. The Mini-7 is the lock you take on the bike. The New York 1410 is a 4.9kg chain for when a Mini can’t reach the only solid object. Using both is common. Commuting with the chain isn’t.",
     whoEach: [
