@@ -29,6 +29,10 @@ const METHOD_MORE = [
 
 const METHOD_FAQS = [
   {
+    q: "Can customer reviews tell you how secure a bike lock is?",
+    a: "Not really. Owner reviews are useful for fit, keys and the mount, but very few owners have tried to cut their own lock. For how well it resists attack, go by the Sold Secure grade and shackle thickness. See [shackle size and lock security](/guide/shackle-size-lock-security).",
+  },
+  {
     q: "Have you cut these locks open?",
     a: "No. Lock Desk is based on Sold Secure grades and manufacturer specs. Advertised cut-times are marketing claims from the brand, not tests we have run.",
   },
@@ -80,6 +84,13 @@ export default function MethodPage() {
         <div className="method-box">
           <p>{METHOD_LEAD}</p>
         </div>
+        <p>
+          <strong>Can customer reviews tell you how secure a bike lock is?</strong> Not really.
+          Owner reviews are useful for fit, keys and the mount, but very few owners have tried to
+          cut their own lock. For how well it resists attack, go by the Sold Secure grade and
+          shackle thickness. See{" "}
+          <Link href="/guide/shackle-size-lock-security">shackle size and lock security</Link>.
+        </p>
 
         <h2>What we use</h2>
         <ul>
