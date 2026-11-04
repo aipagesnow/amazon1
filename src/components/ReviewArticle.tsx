@@ -173,17 +173,17 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
           </div>
         </div>
 
-        {lead ? <p>{lead}</p> : null}
+        {lead ? <p><RichText text={lead} /></p> : null}
         {headed.map((section) =>
           section.text ? (
             <section key={section.heading}>
               <h3>{section.heading}</h3>
-              <p>{section.text}</p>
+              <p><RichText text={section.text} /></p>
             </section>
           ) : null,
         )}
         {rest.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
+          <p key={paragraph}><RichText text={paragraph} /></p>
         ))}
 
         {guide?.sections.map((section) => (
