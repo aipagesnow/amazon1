@@ -675,7 +675,7 @@ export const PAIRS: Pair[] = [
     ],
     afterTable: [
       "A D-lock is for a tight stand. A chain is for extra reach. That’s the main difference, and it’s why these two aren’t rivals.",
-      "The Evolution Mini-7 is what you take on the bike: 1.61kg, a frame clip, Sold Secure Gold. You’ll carry it. You won’t carry 4.9kg twice a day, and you shouldn’t plan as if you will.",
+      "The Evolution Mini-7 is what you take on the bike: 1.61kg, a frame clip, Sold Secure Gold. You’ll carry it. You won’t carry 4.9kg twice a day, and you shouldn’t plan as if you will. If you want Diamond on the D-lock and a cable in the same box, look at the [OnGuard Pitbull DT 8005](/reviews/onguard-pitbull-dt-8005).",
       "The New York 1410 is 100 cm of 14 mm chain, Sold Secure Diamond for ordinary bikes and Gold for e-bikes, for a home, a garden, a ground anchor, or a post a compact D-lock can’t close around. Leave it where the bike is stored. Use it through the frame, to something that doesn’t move.",
       "Careful riders use both and only carry the D-lock. If the compact lock won’t close on the only stand at work, neither of these is the answer for that stand — see the [ABUS 540](/reviews/abus-granit-xplus-540). If you need Diamond on the bike and length at home, pair the [Litelok X1](/reviews/litelok-x1) with the chain.",
     ],

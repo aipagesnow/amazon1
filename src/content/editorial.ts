@@ -41,7 +41,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
       "The locking area is 101 × 197 mm. That’s larger than the compact Hiplok D1000 (92 × 155 mm), though it’s still not a long shackle. Measure your stand plus the frame tube before you order. If a small lock already fails to close on your rack, don’t assume this one will either.",
       "The frame mount is sold separately. Budget for a mount or a bag, or be honest that you’ll carry 1.7kg by hand. If you know you’ll only use a lock that clips to the bike, you’d usually prefer the Evolution Mini-7 for that reason alone.",
       "Maker claims about grinders and cut-times are advertising. Diamond is Sold Secure’s higher bike grade, tested against a tougher tool set than Gold. It isn’t a promise that a battery grinder will fail. Check the marking on the lock you buy, and your insurer’s approved list, before you spend the money.",
-      "This lock makes sense when Gold isn’t enough for the policy, or the bike is valuable enough that the extra grade is worth carrying. If you need a 300 mm shackle for a fat post, look at the ABUS 540 instead, and read the e-bike grade on that page carefully.",
+      "This lock makes sense when Gold isn’t enough for the policy, or the bike is valuable enough that the extra grade is worth carrying. If you need a 300 mm shackle for a fat post, look at [the ABUS 540](/reviews/abus-granit-xplus-540) instead, and read the e-bike grade on that page carefully.",
     ],
     bestFor: [
       "A higher-value bike parked in public where the policy names Diamond",
@@ -106,7 +106,7 @@ export const reviewCopy: Record<string, ReviewCopy> = {
     ],
     body: [
       "Hiplok sells this lock on its anti-grinder design. The locking area is Mini-sized at 92 × 155 mm, and it weighs more than a typical compact D-lock. Fat tyres, cargo bikes, and some UK stands won’t take it. Measure the post plus the frame tube before you order. A product photo won’t answer that question.",
-      "There’s no frame mount in the box. You would need to carry 1.93kg in a bag, or leave it at home. For a weekday commuter whose insurance still asks for Gold, the Evolution Mini-7 is lighter, includes a mount, and comes with a cable.",
+      "There’s no frame mount in the box. You would need to carry 1.93kg in a bag, or leave it at home. For a weekday commuter whose insurance still asks for Gold, the Evolution Mini-7 is lighter, includes a mount, and comes with a cable. If you need Diamond for an ordinary bike and want a frame mount, look at the [OnGuard Pitbull STD 8003](/reviews/onguard-pitbull-std-8003).",
       "The grade is Diamond for ordinary bikes and Diamond for e-bikes. The two-cuts design is Hiplok’s own description. Cut-times on the box are advertising. Diamond is a tougher Sold Secure test than Gold; it isn’t a promise that a battery grinder fails.",
       "Hiplok’s larger DX1000 (112 × 205 mm, 2.75kg) is the sibling if the compact shackle is the problem. It’s also Diamond for ordinary bikes and for e-bikes, still with no frame mount, and 850 g heavier. If you wanted Diamond with a more usable locking area at 1.7kg, look at the Litelok X1. Choose the D1000 only after you’ve stood next to the rack with a tape measure.",
     ],
