@@ -117,7 +117,7 @@ export function ReviewArticle({ product, copy, directAnswer }: { product: Produc
         illustrative
         alt={art.alt}
         kicker={`${product.brand} · ${product.specs?.type ?? "Lock"}`}
-        title={displayName(product)}
+        title={product.slug === "abus-granit-xplus-540" ? "ABUS Granit X Plus 540" : displayName(product)}
         lede={copy.hook}
         overlay
       >
