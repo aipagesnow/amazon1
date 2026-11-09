@@ -253,7 +253,7 @@ export const HOME_PICK = {
 };
 
 export const BEST_LEDE =
-  "There’s no single best lock for everyone. We’ve compared D-locks, a folding lock and a chain on Sold Secure grade, whether you’ll carry them, and whether they’ll close. The New York Mini is reviewed separately: at 2.06kg, with no frame clip, it’s a poorer daily commute.";
+  "For a Gold commute, the Kryptonite Evolution Mini-7 is the straightforward pick at 1.61kg, and if your insurance asks for Diamond, the OnGuard Pitbull STD 8003 is the lightest Diamond lock on this shortlist at 1.44kg and you can buy a mount for it. The Litelok X1 is the Diamond pick on spec, and BikeRadar timed 4 min 38 s to cut one side, but it had no live Amazon UK bike listing at the last check on 28 October 2026.";
 
 export const BEST_INTRO = [
   "People search for the best bike lock in the UK, but the useful answer is usually more specific. Match the Sold Secure grade on your policy, check that the lock will close on the stand you use, and pick a weight you will still take to work.",
