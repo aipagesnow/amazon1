@@ -1,0 +1,33 @@
+# IndexNow ping of changed URLs after a successful Vercel PRODUCTION deploy. No build/page/URL changes.
+# The IndexNow key is public by design (served at /<key>.txt); the existing key is reused, not rotated.
+name: Post-deploy (IndexNow)
+on:
+  deployment_status:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+jobs:
+  indexnow:
+    if: github.event_name == 'workflow_dispatch' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      SITE_URL: https://www.lockdesk.co.uk
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY || 'edfa38497b984ec6962046950295c2ea' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/cache@v4
+        with:
+          path: .indexnow-cache
+          key: indexnow-${{ github.run_id }}
+          restore-keys: indexnow-
+      - name: Wait for live site to settle
+        run: sleep 30
+      - name: IndexNow ping of changed URLs
+        run: node scripts/indexnow-ping.mjs
