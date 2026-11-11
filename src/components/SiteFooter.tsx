@@ -85,6 +85,12 @@ export function SiteFooter() {
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
+              <li>
+                <Link href="/sitemap">All pages</Link>
+              </li>
+              <li>
+                <a href="/sitemap.xml">XML sitemap</a>
+              </li>
             </ul>
           </div>
         </nav>

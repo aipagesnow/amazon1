@@ -1,4 +1,4 @@
-import { REVIEW_SLUGS } from "@/lib/products";
+import { REVIEW_SLUGS, productBySlug } from "@/lib/products";
 import { site } from "@/lib/site";
 
 export const BASE = site.url.replace(/\/$/, "");
@@ -72,7 +72,7 @@ export function guidesPaths(): string[] {
 }
 
 export function corePaths(): string[] {
-  return ["/", "/method", "/about", "/contact", "/disclosure", "/privacy"];
+  return ["/", "/method", "/about", "/contact", "/disclosure", "/privacy", "/sitemap"];
 }
 
 export function allPaths(): string[] {
@@ -101,4 +101,56 @@ export function coreUrlset(): string {
 }
 export function indexXml(): string {
   return sitemapIndexXml(CHILD_SITEMAP_PATHS, BASE);
+}
+
+export type SitemapLink = { href: string; label: string };
+export type SitemapGroup = { heading: string; links: SitemapLink[] };
+
+const LABELS: Record<string, string> = {
+  "/": "Home",
+  "/method": "How we research",
+  "/about": "About",
+  "/contact": "Contact",
+  "/disclosure": "Disclosure",
+  "/privacy": "Privacy",
+  "/sitemap": "All pages",
+  "/reviews": "Reviews",
+  "/guide": "How to choose",
+  "/guide/bike-lock-types": "Bike lock types",
+  "/guide/shackle-size-lock-security": "Shackle size and security",
+  "/guide/cable-locks": "Cable locks",
+  "/guide/ground-anchors-flats-car-parks": "Ground anchors",
+  "/best": "Best of",
+  "/best/compact-bike-locks-small-flats": "Compact locks for flats",
+  "/vs/evolution-mini-7-vs-d1000": "Mini-7 vs D1000",
+  "/vs/d1000-vs-dx1000": "D1000 vs DX1000",
+  "/vs/d-lock-vs-chain": "D-lock vs chain",
+  "/for/commuting": "For commuting",
+  "/for/insurance": "For insurance",
+  "/for/anti-grinder": "Anti-grinder locks",
+  "/for/delivery-riders": "Delivery riders",
+  "/alternatives/kryptonite-new-york-fahgettaboudit-mini": "Instead of the New York Mini",
+};
+
+function labelFor(path: string): string {
+  if (LABELS[path]) return LABELS[path];
+  const review = path.match(/^\/reviews\/(.+)$/);
+  if (review) {
+    const product = productBySlug(review[1]);
+    if (product) return product.name;
+  }
+  return path;
+}
+
+function linksFor(paths: string[]): SitemapLink[] {
+  return paths.map((href) => ({ href, label: labelFor(href) }));
+}
+
+/** Grouped indexable pages for the HTML sitemap. Same set as the XML sitemaps. */
+export function htmlSitemapGroups(): SitemapGroup[] {
+  return [
+    { heading: "Reviews", links: linksFor(reviewsPaths()) },
+    { heading: "Guides and comparisons", links: linksFor(guidesPaths()) },
+    { heading: "This site", links: linksFor(corePaths()) },
+  ];
 }
