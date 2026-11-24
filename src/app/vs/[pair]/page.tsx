@@ -106,6 +106,15 @@ export default async function VsPage({ params }: Props) {
             <p key={line}>{line}</p>
           ))}
         </div>
+        {/* Early Amazon buttons for both locks so mobile readers can reach them without scrolling past the table. Layout only. */}
+        <div className="vs-quick">
+          {[a, b].map((p) => (
+            <div key={p.slug} className="vs-quick-item">
+              <p>{displayName(p)}</p>
+              <SeeOnAmazon asin={p.asin} className="see-on-amazon" />
+            </div>
+          ))}
+        </div>
         <h2>Side by side</h2>
         <CompareTable
           products={[a, b]}

@@ -2048,3 +2048,9 @@ table.spec caption {
 .review-guide-section ul { padding-left: 1.1rem; }
 .review-guide-section li { margin-bottom: 0.4rem; }
 .review-summary { margin-top: 2rem; }
+
+.vs-quick { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; margin: 18px 0 8px; }
+.vs-quick-item { border: 1px solid var(--line, rgba(0,0,0,.15)); padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; justify-content: space-between; }
+.vs-quick-item p { margin: 0; font-weight: 600; font-size: .95rem; }
+.vs-quick-item .see-on-amazon { text-align: center; }
+@media (max-width: 420px) { .vs-quick { grid-template-columns: 1fr; } }
